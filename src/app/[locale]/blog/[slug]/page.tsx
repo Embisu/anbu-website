@@ -64,14 +64,19 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
       );
     case "image":
       return (
-        <figure className="my-8 overflow-hidden rounded-3xl border border-navy-100 bg-cloud shadow-sm">
-          <EditorialMedia
-            src={block.src}
-            alt={t(block.alt, locale)}
-            className="aspect-[16/9] w-full object-cover"
-          />
+        <figure className="my-8 overflow-hidden rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
+          <div className="flex w-full items-center justify-center bg-slate-50/80 p-1 sm:p-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={block.src}
+              alt={t(block.alt, locale)}
+              className="h-auto max-h-[640px] w-full rounded-2xl object-contain md:max-h-[720px]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
           {block.caption && (
-            <figcaption className="border-t border-navy-100/60 bg-white/70 px-5 py-3 text-sm leading-relaxed text-navy-500">
+            <figcaption className="border-t border-navy-100/60 bg-white px-5 py-3.5 text-sm leading-relaxed text-navy-600">
               {t(block.caption, locale)}
             </figcaption>
           )}
@@ -369,13 +374,18 @@ export default async function BlogPostPage({
                   <div key={i}>
                     <BlockRenderer block={block} locale={locale} headingId={block.type === "h2" ? `section-${i}` : undefined} />
                     {image ? (
-                      <figure className="my-10 overflow-hidden rounded-3xl border border-navy-100 bg-cloud shadow-sm">
-                        <EditorialMedia
-                          src={image.src}
-                          alt={`${image.alt[locale]}. ${t(post.title, locale)}`}
-                          className="aspect-[16/9] w-full object-cover"
-                        />
-                        <figcaption className="px-5 py-3 text-sm leading-relaxed text-navy-500">
+                      <figure className="my-10 overflow-hidden rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
+                        <div className="flex w-full items-center justify-center bg-slate-50/80 p-1 sm:p-3">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={image.src}
+                            alt={`${image.alt[locale]}. ${t(post.title, locale)}`}
+                            className="h-auto max-h-[640px] w-full rounded-2xl object-contain md:max-h-[720px]"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <figcaption className="border-t border-navy-100/60 bg-white px-5 py-3.5 text-sm leading-relaxed text-navy-600">
                           {image.caption[locale]}
                         </figcaption>
                       </figure>
