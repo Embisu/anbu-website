@@ -62,6 +62,21 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
           ))}
         </ul>
       );
+    case "image":
+      return (
+        <figure className="my-8 overflow-hidden rounded-3xl border border-navy-100 bg-cloud shadow-sm">
+          <EditorialMedia
+            src={block.src}
+            alt={t(block.alt, locale)}
+            className="aspect-[16/9] w-full object-cover"
+          />
+          {block.caption && (
+            <figcaption className="border-t border-navy-100/60 bg-white/70 px-5 py-3 text-sm leading-relaxed text-navy-500">
+              {t(block.caption, locale)}
+            </figcaption>
+          )}
+        </figure>
+      );
     default:
       return null;
   }
@@ -345,27 +360,30 @@ export default async function BlogPostPage({
                 </ol>
               </nav>
             )}
-            {articleBlocks.map((block, i) => {
-              const shouldInsertImage = (i === 1 || (i > 1 && i % 5 === 0)) && i < articleBlocks.length - 1;
-              const image = shouldInsertImage ? inlineEditorialImage(post.slug, Math.floor(i / 5)) : null;
-              return (
-                <div key={i}>
-                  <BlockRenderer block={block} locale={locale} headingId={block.type === "h2" ? `section-${i}` : undefined} />
-                  {image ? (
-                    <figure className="my-10 overflow-hidden rounded-3xl border border-navy-100 bg-cloud shadow-sm">
-                      <EditorialMedia
-                        src={image.src}
-                        alt={`${image.alt[locale]}. ${t(post.title, locale)}`}
-                        className="aspect-[16/9] w-full object-cover"
-                      />
-                      <figcaption className="px-5 py-3 text-sm leading-relaxed text-navy-500">
-                        {image.caption[locale]}
-                      </figcaption>
-                    </figure>
-                  ) : null}
-                </div>
-              );
-            })}
+            {(() => {
+              const hasExplicitImages = articleBlocks.some((b) => b.type === "image");
+              return articleBlocks.map((block, i) => {
+                const shouldInsertImage = !hasExplicitImages && (i === 1 || (i > 1 && i % 5 === 0)) && i < articleBlocks.length - 1;
+                const image = shouldInsertImage ? inlineEditorialImage(post.slug, Math.floor(i / 5)) : null;
+                return (
+                  <div key={i}>
+                    <BlockRenderer block={block} locale={locale} headingId={block.type === "h2" ? `section-${i}` : undefined} />
+                    {image ? (
+                      <figure className="my-10 overflow-hidden rounded-3xl border border-navy-100 bg-cloud shadow-sm">
+                        <EditorialMedia
+                          src={image.src}
+                          alt={`${image.alt[locale]}. ${t(post.title, locale)}`}
+                          className="aspect-[16/9] w-full object-cover"
+                        />
+                        <figcaption className="px-5 py-3 text-sm leading-relaxed text-navy-500">
+                          {image.caption[locale]}
+                        </figcaption>
+                      </figure>
+                    ) : null}
+                  </div>
+                );
+              });
+            })()}
             {post.sources?.length ? (
               <aside className="mt-10 rounded-3xl border border-navy-100 bg-cloud p-6">
                 <h2 className="font-display text-lg font-bold text-navy-800">

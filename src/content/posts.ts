@@ -5,7 +5,8 @@ export type Block =
   | { type: "p"; text: L10n }
   | { type: "h2"; text: L10n }
   | { type: "quote"; text: L10n }
-  | { type: "ul"; items: L10n[] };
+  | { type: "ul"; items: L10n[] }
+  | { type: "image"; src: string; alt: L10n; caption?: L10n };
 
 export type Post = {
   slug: string;
@@ -83,11 +84,23 @@ export const posts: Post[] = [
         vi: "Hệ sinh thái game Việt Nam có những doanh nghiệp lâu năm với nền tảng công nghệ và người dùng lớn; những đơn vị mạnh về esports; các nhà phát hành mobile có tốc độ thử nghiệm nhanh; và những đội ngũ tập trung sâu vào một nhóm người chơi cụ thể. Vì vậy, danh sách dưới đây không phải bảng xếp hạng thắng–thua. Đây là bản đồ để thương hiệu nhận ra mình đang cần loại năng lực nào.",
         en: "Vietnam's gaming ecosystem includes long-established businesses with large technology and user platforms, esports specialists, fast-moving mobile publishers and operators focused on particular player segments. The following is not a winner-takes-all ranking; it is a map for identifying the capabilities a title actually needs.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/vietnam-game-publishers-map.png",
+        alt: { vi: "Bản đồ phân khúc các nhà phát hành game tại thị trường Việt Nam", en: "Vietnam game publisher landscape and ecosystem map" },
+        caption: { vi: "Bản đồ tổng thể hệ sinh thái và phân khúc các nhà phát hành game nổi bật tại thị trường Việt Nam.", en: "Overview map of the game publishing ecosystem and major publisher segments in Vietnam." },
+      },
       { type: "h2", text: { vi: "VNGGames: năng lực vận hành quy mô và hệ sinh thái lâu dài", en: "VNGGames: scaled operations and a long-term ecosystem" } },
       { type: "p", text: {
         vi: "VNG bắt đầu từ lĩnh vực trò chơi trực tuyến vào năm 2004. Qua nhiều thế hệ sản phẩm, VNGGames xây được kinh nghiệm phát hành, bản địa hóa, vận hành dịch vụ và phát triển cộng đồng ở cả Việt Nam lẫn khu vực. Đây là cái tên phù hợp để nghiên cứu khi một sản phẩm cần năng lực vận hành lớn, lộ trình dài hơi, kết nối nhiều lớp dịch vụ hoặc tham vọng mở rộng Đông Nam Á.",
         en: "VNG began in online games in 2004. Across multiple product generations, VNGGames has built publishing, localization, live operations and community experience in Vietnam and the wider region. It is worth studying when a title needs scaled operations, a long roadmap, multiple service layers or Southeast Asian ambitions.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/publishers/vng-cookierun.jpg",
+        alt: { vi: "Hệ sinh thái phát hành game và tựa game CookieRun của VNGGames", en: "VNGGames game publishing ecosystem and CookieRun title" },
+        caption: { vi: "Hình ảnh tựa game CookieRun trên hệ sinh thái phát hành và vận hành quy mô của VNGGames.", en: "CookieRun within the scaled publishing and live-ops ecosystem of VNGGames in Vietnam & SEA." },
+      },
       { type: "ul", items: [
         { vi: "Phù hợp để cân nhắc: MMORPG, sản phẩm IP lớn, game cần live-ops lâu dài hoặc chiến lược khu vực", en: "Worth considering for: MMORPGs, major IP, long-running live operations and regional strategies" },
         { vi: "Điểm cần làm rõ khi trao đổi: mức độ ưu tiên trong danh mục, quyền chủ động marketing và cách chia sẻ dữ liệu người chơi", en: "Clarify during discussions: portfolio priority, marketing autonomy and player-data collaboration" },
@@ -97,6 +110,12 @@ export const posts: Post[] = [
         vi: "Garena tạo dấu ấn rõ với những sản phẩm có tính cạnh tranh cao, nhịp vận hành liên tục và cộng đồng được nuôi bằng giải đấu, nội dung lẫn hoạt động trực tiếp. Với một tựa game có tiềm năng trở thành môn chơi lâu dài thay vì chỉ là nội dung giải trí ngắn hạn, năng lực biến người chơi thành cộng đồng theo dõi và thi đấu là một lợi thế đáng chú ý.",
         en: "Garena is strongly associated with competitive products, continuous operations and communities sustained through tournaments, content and live events. For a title with the potential to become a long-term competitive pursuit rather than short-lived entertainment, its ability to turn players into participating audiences is especially relevant.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/esports-vietnam-stage.jpg",
+        alt: { vi: "Mô hình giải đấu và sân khấu esports chuyên nghiệp của Garena", en: "Garena professional esports tournament stage and community ecosystem" },
+        caption: { vi: "Hệ sinh thái giải đấu quy mô và sân khấu esports chuyên nghiệp nuôi dưỡng cộng đồng cạnh tranh dài hạn.", en: "Large-scale tournament ecosystem and professional esports stage sustaining a long-term competitive community." },
+      },
       { type: "ul", items: [
         { vi: "Phù hợp để cân nhắc: MOBA, battle royale, thể thao, shooter và sản phẩm có vòng đời esports", en: "Worth considering for: MOBA, battle royale, sports, shooters and titles with esports potential" },
         { vi: "Điểm cần làm rõ: kế hoạch xây giải đấu từ grassroots đến chuyên nghiệp và vai trò của creator trong hệ sinh thái", en: "Clarify: the grassroots-to-professional tournament path and creators' role in the ecosystem" },
@@ -111,11 +130,23 @@ export const posts: Post[] = [
         vi: "Nhóm nhà phát hành mobile nội địa này góp phần làm thị trường đa dạng hơn. Mỗi đơn vị có lịch sử sản phẩm và tập người chơi khác nhau, nhưng điểm đáng quan tâm chung là khả năng đưa sản phẩm đến đúng phân khúc, phản ứng nhanh với hành vi cộng đồng và triển khai marketing bản địa ở quy mô linh hoạt. Với game mid-core, nhập vai, chiến thuật hoặc sản phẩm cần kiểm chứng thị trường nhanh, đây là nhóm đối tác không nên bị bỏ qua.",
         en: "These local mobile publishers add diversity to the market. Each has a different catalogue and player base, but their shared relevance lies in reaching specific segments, reacting quickly to community behavior and executing local marketing at flexible scale. For mid-core, RPG, strategy or market-testing titles, they should not be overlooked.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/publishers/funtap-game.jpg",
+        alt: { vi: "Danh mục sản phẩm game mobile của Funtap", en: "Funtap mobile game portfolio" },
+        caption: { vi: "Danh mục sản phẩm đa dạng và khả năng phản ứng nhanh với thị trường của nhóm NPH mobile nội địa.", en: "Diverse mobile game portfolio and agile market response of local Vietnamese publishers." },
+      },
       { type: "h2", text: { vi: "JoyGames: một lựa chọn đang mở rộng ở phân khúc game mobile", en: "JoyGames: a growing option in mobile publishing" } },
       { type: "p", text: {
         vi: "JoyGames là một cái tên đáng theo dõi trong lớp nhà phát hành đang mở rộng hiện diện. Website chính thức công khai giấy phép cung cấp dịch vụ trò chơi điện tử G1 và một danh mục game riêng, cho thấy đơn vị này đang xây năng lực phát hành theo hướng bài bản hơn thay vì chỉ đóng vai trò kênh phân phối. Với studio quốc tế, điểm đáng quan tâm không nằm ở việc gọi JoyGames là “lớn” hay “nhỏ”, mà ở khả năng một sản phẩm phù hợp có thể nhận được mức độ tập trung cao hơn trong danh mục.",
         en: "JoyGames is worth watching among publishers expanding their presence. Its official website displays a G1 online-game service license and a dedicated catalogue, indicating a more structured publishing operation rather than a simple distribution channel. For international studios, the relevant question is not whether JoyGames is labelled large or small, but whether a well-matched title could receive greater focus within its portfolio.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/publishers/joygames-game.png",
+        alt: { vi: "Cổng game và danh mục sản phẩm của JoyGames", en: "JoyGames portal and game catalogue" },
+        caption: { vi: "Hình ảnh tựa game Pixel Đại Chiến trên cổng phát hành chính thức của JoyGames.", en: "Pixel Dai Chien artwork from the official JoyGames publishing portal." },
+      },
       { type: "ul", items: [
         { vi: "Nên kiểm tra: kinh nghiệm với đúng thể loại, quy mô đội live-ops, năng lực mua người dùng và kế hoạch cộng đồng sau 90 ngày", en: "Assess: genre experience, live-ops team size, user-acquisition capability and the community plan beyond day 90" },
         { vi: "Cơ hội tiềm năng: tốc độ ra quyết định và mức độ ưu tiên dành cho sản phẩm phù hợp", en: "Potential advantage: decision speed and priority for a well-matched title" },
@@ -125,6 +156,12 @@ export const posts: Post[] = [
         vi: "VPlay có một góc tiếp cận khác: game nằm trong hệ sinh thái giải trí có livestream, nội dung và kết nối với hạ tầng truyền thông. Điều này có thể tạo lợi thế cho sản phẩm cần nhiều điểm chạm hơn quảng cáo cài đặt đơn thuần — chẳng hạn ra mắt gắn với chương trình nội dung, giải đấu, creator hoặc hoạt động cộng đồng được phát sóng. Tuy nhiên, thương hiệu vẫn cần làm rõ phần nào của hệ sinh thái thực sự được huy động cho game của mình, thay vì mặc định mọi nguồn lực đều đi cùng một hợp đồng phát hành.",
         en: "VPlay approaches the market differently by placing games within an entertainment ecosystem that includes livestreaming, content and media infrastructure. This can benefit titles that need more than install advertising—for example, launches tied to programming, tournaments, creators or broadcast community activity. Brands should still clarify which parts of that ecosystem will actually support their title rather than assume every resource comes with a publishing agreement.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/publishers/vplay-game.jpg",
+        alt: { vi: "Hệ sinh thái game và giải trí trực tuyến của VPlay", en: "VPlay online entertainment and gaming ecosystem" },
+        caption: { vi: "Hệ sinh thái game kết hợp livestream, nội dung số và truyền thông giải trí của VPlay.", en: "VPlay gaming ecosystem integrated with livestreaming, digital content and entertainment media." },
+      },
       { type: "ul", items: [
         { vi: "Phù hợp để tìm hiểu: game có khả năng phát triển nội dung xem được, giải đấu hoặc cộng đồng tương tác thường xuyên", en: "Worth exploring for: games with watchable content, tournament potential or frequent community interaction" },
         { vi: "Cần làm rõ: quyền truy cập inventory truyền thông, dữ liệu người xem và cam kết cross-promotion", en: "Clarify: access to media inventory, audience data and cross-promotion commitments" },
@@ -170,6 +207,12 @@ export const posts: Post[] = [
         vi: "Nhiều studio có sản phẩm tốt nhưng chưa biết bắt đầu cuộc trò chuyện với thị trường Việt Nam từ đâu. ANBU có thể đứng ở phía thương hiệu như một đầu mối phát triển thị trường: chuyển thông tin kỹ thuật và dữ liệu sản phẩm thành một hồ sơ cơ hội đủ rõ, tìm kiếm nhà phát hành phù hợp, mở cuộc trao đổi và giúp hai bên đi từ buổi giới thiệu đầu tiên đến một phương án hợp tác có thể triển khai.",
         en: "Many studios have strong products but do not know how to begin a serious conversation with the Vietnamese market. ANBU can work on the brand's side as a market-development lead: turning technical and product data into a clear opportunity profile, identifying suitable publishers, opening discussions and helping both sides move from the first introduction to an executable partnership model.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/real-team.jpg",
+        alt: { vi: "Đội ngũ ANBU làm việc và kết nối đối tác phát hành game", en: "ANBU team working on publisher matchmaking and launch strategy" },
+        caption: { vi: "Đội ngũ ANBU hỗ trợ studio quốc tế đánh giá sản phẩm, xây dựng hồ sơ và kết nối nhà phát hành phù hợp tại Việt Nam.", en: "ANBU team supporting international studios in assessing titles, structuring pitches and connecting with suitable Vietnamese publishers." },
+      },
       { type: "h2", text: { vi: "Bước 1: đánh giá game trước khi giới thiệu ra thị trường", en: "Step 1: assess the game before taking it to market" } },
       { type: "p", text: {
         vi: "Một bộ pitch chỉ có trailer và vài con số tải toàn cầu thường chưa đủ để nhà phát hành Việt Nam ra quyết định. ANBU cùng khách hàng làm rõ thể loại, vòng lặp gameplay, mô hình kiếm tiền, mức độ hoàn thiện, yêu cầu localization, cấu hình máy, chân dung người chơi và bằng chứng vận hành ở thị trường khác. Mục tiêu là trả lời thẳng ba câu hỏi: game này có cơ hội ở Việt Nam không, cơ hội nằm ở phân khúc nào và đối tác cần đầu tư bao nhiêu để kiểm chứng giả thuyết đó.",
@@ -252,6 +295,12 @@ export const posts: Post[] = [
           en: "Players constantly see trailers, gift codes, livestreams and server-opening messages. When every campaign uses the same language, a new release feels like another version of something already available. The challenge is therefore not only how many people are reached, but whether the brand owns a distinct idea in their minds.",
         },
       },
+      {
+        type: "image",
+        src: "/blog-covers/vietnam-game-saturation.png",
+        alt: { vi: "Biểu đồ phân tích độ bão hòa và mật độ cạnh tranh game tại Việt Nam", en: "Vietnam game market saturation and competition analysis" },
+        caption: { vi: "Phân tích mức độ cạnh tranh và điểm bão hòa sự chú ý của game thủ tại thị trường Việt Nam.", en: "Analysis of competition levels and player attention saturation in Vietnam." },
+      },
       { type: "h2", text: { vi: "Năm dấu hiệu một chiến dịch game đang thiếu chiến lược", en: "Five signs a game campaign lacks strategy" } },
       {
         type: "ul",
@@ -270,6 +319,12 @@ export const posts: Post[] = [
           vi: "Một game không thể đồng thời là lựa chọn tốt nhất cho tất cả mọi người. Thương hiệu cần xác định nhóm người chơi ưu tiên, động lực cốt lõi của họ và bằng chứng sản phẩm có thể chứng minh lời hứa. Định vị tốt phải đủ cụ thể để hướng dẫn creative, tuyển chọn KOL và quyết định điều gì không nên nói.",
           en: "A game cannot be the best choice for everyone at once. The brand must define its priority players, their core motivation and the product evidence supporting its promise. Strong positioning is specific enough to guide creative, creator selection and what the campaign should refuse to say.",
         },
+      },
+      {
+        type: "image",
+        src: "/blog-covers/real-mobile-gaming.jpg",
+        alt: { vi: "Hành vi và thói quen trải nghiệm game của người chơi mobile Việt Nam", en: "Mobile gaming habits and player behavior in Vietnam" },
+        caption: { vi: "Hiểu sâu thói quen và động lực cốt lõi của game thủ mobile là chìa khóa mở ra định vị khác biệt.", en: "Deep understanding of mobile players' motivations is key to unlocking distinct positioning." },
       },
       { type: "h2", text: { vi: "Bước 2: xây creator portfolio theo vai trò", en: "Step 2: build a creator portfolio by role" } },
       {
@@ -297,6 +352,12 @@ export const posts: Post[] = [
           vi: "KOL tạo chất liệu và sự chú ý; social tái cấu trúc chất liệu thành nhịp kể chuyện; PR xây bối cảnh và độ tin cậy; community biến quan tâm thành đối thoại và duy trì. Khi bốn phần dùng chung insight, thông điệp và lịch kích hoạt, mỗi nội dung không còn là một bài đăng đơn lẻ mà trở thành đầu vào cho điểm chạm tiếp theo.",
           en: "Creators generate material and attention; social turns that material into an ongoing narrative; PR creates context and credibility; community converts interest into dialogue and retention. When all four share one insight, message and activation calendar, content stops being isolated posts and becomes input for the next touchpoint.",
         },
+      },
+      {
+        type: "image",
+        src: "/blog-covers/real-analytics-game.jpg",
+        alt: { vi: "Hệ thống đo lường đa kênh và hiệu quả chuyển đổi chiến dịch game", en: "Multi-channel measurement and conversion tracking system for games" },
+        caption: { vi: "Đo lường hiệu quả chuyển đổi và tương tác cộng đồng để tối ưu ngân sách theo thời gian thực.", en: "Measuring conversion efficiency and community engagement to optimize budgets in real time." },
       },
       { type: "h2", text: { vi: "ANBU giúp thương hiệu game như thế nào?", en: "How ANBU helps game brands" } },
       {
@@ -2060,6 +2121,12 @@ export const posts: Post[] = [
         vi: "Liên Minh Huyền Thoại mở bản thử nghiệm tại Việt Nam vào tháng 8 năm 2012, theo ghi nhận của ONE Esports. Từ đó, các đội tuyển Việt Nam dần bước vào hệ thống giải khu vực, các mùa giải có tính liên tục và một lứa tuyển thủ được đào tạo bài bản hơn. Những cái tên như GAM Esports cho thấy một đội tuyển có thể trở thành thương hiệu nội dung, tạo cộng đồng riêng và đại diện cho Việt Nam trên sân khấu quốc tế. Bước ngoặt nằm ở chỗ người hâm mộ không chỉ xem một trận đấu, họ theo dõi cả hành trình của đội.",
         en: "League of Legends entered Vietnam with a closed beta in August 2012, according to ONE Esports. Vietnamese teams then moved into regional competition, recurring seasons and more structured player development. Teams such as GAM Esports showed how a roster could become a content brand, build its own community and represent Vietnam internationally. The key shift was that fans no longer watched one match; they followed a team's whole journey.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/esports-vietnam-stage.jpg",
+        alt: { vi: "Sân khấu chung kết giải đấu Esports chuyên nghiệp tại Việt Nam", en: "Professional esports tournament grand finals stage in Vietnam" },
+        caption: { vi: "Sân khấu giải đấu chuyên nghiệp và hệ thống giải thể thao điện tử quy mô lớn tại Việt Nam.", en: "Professional league stage and large-scale esports competition system in Vietnam." },
+      },
       { type: "h2", text: { vi: "Esports mobile mở rộng tệp người chơi", en: "Mobile esports expands the player base" } },
       { type: "p", text: {
         vi: "Nếu PC tạo ra nền văn hóa thi đấu chuyên sâu, mobile giúp esports tiếp cận đại chúng nhanh hơn. Liên Quân Mobile, Free Fire, PUBG Mobile, Mobile Legends và các game cạnh tranh khác đưa việc thi đấu vào thiết bị mà phần lớn người chơi đã có sẵn. Các giải mobile có thể kết hợp livestream, creator, hoạt động tại trường học hoặc trung tâm thương mại, nhờ vậy rút ngắn khoảng cách giữa người xem phổ thông và tuyển thủ. Với nhà phát hành, đây là cơ hội lớn nhưng cũng là lời nhắc rằng trải nghiệm trên máy yếu, mạng không ổn định và thanh toán địa phương phải được tính từ đầu.",
@@ -2070,11 +2137,23 @@ export const posts: Post[] = [
         vi: "Việc esports xuất hiện trong chương trình thi đấu khu vực đã thay đổi cách xã hội nhìn về bộ môn này. VIRESA ghi nhận vai trò của mình trong quá trình xây dựng hệ thống thể thao điện tử và các cột mốc SEA Games, đặc biệt kỳ SEA Games 31 tại Việt Nam. Khi đội tuyển khoác áo quốc gia, esports có thêm câu chuyện về thành tích, kỷ luật và trách nhiệm đại diện. Đây là nền tảng quan trọng để các liên đoàn, nhà phát hành và câu lạc bộ cùng bàn về đào tạo, tuyển chọn, y tế, chống gian lận và quyền lợi tuyển thủ.",
         en: "Esports entering a regional multi-sport program changed how society viewed the discipline. VIRESA describes its role in building Vietnam's esports system and supporting SEA Games milestones, especially the 31st SEA Games hosted in Vietnam. Once players competed under the national flag, esports gained a story about achievement, discipline and representation. That created a stronger basis for discussing training, selection, health, anti-cheating and player welfare across federations, publishers and clubs.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/esports-vietnam-sea-games.jpg",
+        alt: { vi: "Đội tuyển Thể thao điện tử Việt Nam tại Đại hội Thể thao Đông Nam Á SEA Games", en: "Vietnam national esports team at the Southeast Asian Games (SEA Games)" },
+        caption: { vi: "Đội tuyển Esports Việt Nam tranh tài và giành huy chương danh giá tại đấu trường SEA Games.", en: "Vietnam national esports squad competing and winning medals on the SEA Games stage." },
+      },
       { type: "h2", text: { vi: "Từ SEA Games đến Asian Games: bước ra sân chơi quốc tế", en: "From SEA Games to the Asian Games" } },
       { type: "p", text: {
         vi: "Tại Asian Games Hàng Châu, esports được đưa vào chương trình tranh huy chương và Việt Nam tham dự ở những nội dung như Arena of Valor và Liên Minh Huyền Thoại. Những giải đấu này đặt tuyển thủ trước yêu cầu khác hẳn một mùa giải câu lạc bộ: thời gian tập trung ngắn, áp lực truyền thông lớn, tiêu chuẩn đại diện quốc gia và đối thủ đến từ nhiều nền esports mạnh. Kinh nghiệm quốc tế vì vậy không chỉ được đo bằng huy chương, mà còn bằng khả năng chuẩn bị, thích nghi và duy trì phong độ.",
         en: "At the Hangzhou Asian Games, esports became a medal event and Vietnam competed in titles including Arena of Valor and League of Legends. These tournaments place different demands on players than a club season: short preparation windows, national-team pressure, media attention and opponents from mature esports markets. International experience should therefore be measured not only by medals, but also by preparation, adaptation and consistency under pressure.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/esports-vietnam-asiad.jpg",
+        alt: { vi: "Tuyển thủ Esports Việt Nam thi đấu tại Đại hội Thể thao Châu Á Asian Games", en: "Vietnamese esports athletes competing at the Asian Games" },
+        caption: { vi: "Tuyển thủ Việt Nam đại diện quốc gia tranh tài tại đấu trường thể thao điện tử Asian Games.", en: "Vietnamese athletes representing the nation at the Asian Games esports arena." },
+      },
       { type: "h2", text: { vi: "Khi esports trở thành hệ sinh thái nội dung và kinh doanh", en: "When esports becomes a content and business ecosystem" } },
       { type: "p", text: {
         vi: "Một trận đấu ngày nay tạo ra nhiều lớp nội dung: livestream chính thức, co-stream của creator, video phân tích, short video, meme, fan art và hoạt động tại cộng đồng. Báo cáo thường niên 2024 của VNG cho biết lượng khán giả esports tại Việt Nam đã tăng thêm hơn 10 triệu người, cho thấy quy mô tiếp cận không còn giới hạn ở người chơi chuyên nghiệp. Vì vậy, một giải đấu tốt cần đồng thời phục vụ người xem hardcore, người mới biết game và nhãn hàng muốn tham gia mà không phá vỡ trải nghiệm cộng đồng.",
@@ -2126,6 +2205,7 @@ export function getPost(slug: string): Post | undefined {
   if (!post) return undefined;
   const currentLength = post.body.reduce((total, block) => {
     if (block.type === "ul") return total + block.items.reduce((sum, item) => sum + item.vi.length + item.en.length, 0);
+    if (block.type === "image") return total + (block.caption ? block.caption.vi.length + block.caption.en.length : 0);
     return total + block.text.vi.length + block.text.en.length;
   }, 0);
   // Short briefs receive the deeper editorial layer below so every rendered article
