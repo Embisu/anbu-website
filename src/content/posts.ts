@@ -97,6 +97,12 @@ export const posts: Post[] = [
       } },
       {
         type: "image",
+        src: "/blog-covers/vng-campus-hq.jpg",
+        alt: { vi: "Trụ sở quy mô lớn của các nhà phát hành công nghệ hàng đầu Việt Nam", en: "Modern headquarters and large-scale operations of leading Vietnamese tech publishers" },
+        caption: { vi: "Trụ sở hiện đại và không gian làm việc quy mô lớn của các tập đoàn công nghệ phát hành game hàng đầu tại Việt Nam.", en: "Modern corporate campus and scaled workspace of leading game publishing technology enterprises in Vietnam." },
+      },
+      {
+        type: "image",
         src: "/blog-covers/publishers/vng-cookierun.jpg",
         alt: { vi: "Hệ sinh thái phát hành game và tựa game CookieRun của VNGGames", en: "VNGGames game publishing ecosystem and CookieRun title" },
         caption: { vi: "Hình ảnh tựa game CookieRun trên hệ sinh thái phát hành và vận hành quy mô của VNGGames.", en: "CookieRun within the scaled publishing and live-ops ecosystem of VNGGames in Vietnam & SEA." },
@@ -112,9 +118,9 @@ export const posts: Post[] = [
       } },
       {
         type: "image",
-        src: "/blog-covers/esports-vietnam-stage.jpg",
-        alt: { vi: "Mô hình giải đấu và sân khấu esports chuyên nghiệp của Garena", en: "Garena professional esports tournament stage and community ecosystem" },
-        caption: { vi: "Hệ sinh thái giải đấu quy mô và sân khấu esports chuyên nghiệp nuôi dưỡng cộng đồng cạnh tranh dài hạn.", en: "Large-scale tournament ecosystem and professional esports stage sustaining a long-term competitive community." },
+        src: "/blog-covers/garena-arena-crowd.jpg",
+        alt: { vi: "Sân khấu thi đấu và dàn máy giải đấu Esports chuyên nghiệp Garena", en: "Garena professional esports tournament arena and competition stage" },
+        caption: { vi: "Đấu trường giải đấu quy mô với dàn máy thi đấu chuẩn quốc tế nuôi dưỡng cộng đồng cạnh tranh dài hạn.", en: "Full-scale competitive arena and international-standard tournament stations sustaining a long-term player community." },
       },
       { type: "ul", items: [
         { vi: "Phù hợp để cân nhắc: MOBA, battle royale, thể thao, shooter và sản phẩm có vòng đời esports", en: "Worth considering for: MOBA, battle royale, sports, shooters and titles with esports potential" },
@@ -218,6 +224,12 @@ export const posts: Post[] = [
         vi: "Một bộ pitch chỉ có trailer và vài con số tải toàn cầu thường chưa đủ để nhà phát hành Việt Nam ra quyết định. ANBU cùng khách hàng làm rõ thể loại, vòng lặp gameplay, mô hình kiếm tiền, mức độ hoàn thiện, yêu cầu localization, cấu hình máy, chân dung người chơi và bằng chứng vận hành ở thị trường khác. Mục tiêu là trả lời thẳng ba câu hỏi: game này có cơ hội ở Việt Nam không, cơ hội nằm ở phân khúc nào và đối tác cần đầu tư bao nhiêu để kiểm chứng giả thuyết đó.",
         en: "A pitch containing only a trailer and global download numbers is rarely enough for a Vietnamese publisher to decide. ANBU helps clarify genre, gameplay loop, monetization, product readiness, localization needs, device requirements, player profile and evidence from other markets. The goal is to answer three questions directly: can this title work in Vietnam, where is the opportunity and what investment is needed to validate it?",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/game-studio-dev.jpg",
+        alt: { vi: "Đội ngũ phát triển game và bàn làm việc kỹ thuật sản phẩm", en: "Game development studio and technical product setup" },
+        caption: { vi: "Quy trình đánh giá vòng lặp gameplay, tối ưu hiệu năng thiết bị và chuẩn bị sản phẩm trước khi tiếp cận NPH bản địa.", en: "Evaluating core gameplay loops, optimizing device performance and preparing builds before local publisher outreach." },
+      },
       { type: "ul", items: [
         { vi: "Rà soát product–market fit và xác định điểm bán hàng phù hợp với người chơi Việt Nam", en: "Review product–market fit and define a relevant value proposition for Vietnamese players" },
         { vi: "Chuẩn hóa publisher deck, gameplay footage, KPI lịch sử, kế hoạch nội dung và yêu cầu kỹ thuật", en: "Prepare the publisher deck, gameplay footage, historical KPIs, content roadmap and technical requirements" },
@@ -233,6 +245,12 @@ export const posts: Post[] = [
         vi: "Tìm được tên liên hệ mới chỉ là điểm khởi đầu. ANBU có thể hỗ trợ chuẩn bị buổi pitching, điều phối Q&A giữa đội sản phẩm và nhà phát hành, theo dõi các yêu cầu bổ sung và hệ thống hóa đề xuất của từng bên. Khi có nhiều lựa chọn, chúng tôi giúp khách hàng so sánh trên cùng một khung: phạm vi lãnh thổ, mô hình cấp quyền, minimum guarantee nếu có, tỷ lệ chia sẻ, ngân sách marketing, trách nhiệm xin phép, quyền dữ liệu, KPI, thời hạn và điều kiện kết thúc hợp tác.",
         en: "Finding a contact is only the beginning. ANBU can prepare the pitch, coordinate Q&A between product teams and publishers, track follow-up requests and structure each proposal. When several options emerge, we help clients compare them on one framework: territory, licensing model, any minimum guarantee, revenue share, marketing investment, regulatory responsibilities, data rights, KPIs, term and exit conditions.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/team-strategy-meeting.jpg",
+        alt: { vi: "Buổi làm việc chiến lược và đàm phán phương án hợp tác phát hành", en: "Strategic publishing partnership negotiation and alignment session" },
+        caption: { vi: "ANBU đồng hành cùng thương hiệu trong các buổi trao đổi, đàm phán điều khoản và so sánh đề xuất giữa các NPH.", en: "ANBU partnering with brands through publisher pitches, commercial term negotiations and proposal comparisons." },
+      },
       { type: "quote", text: {
         vi: "Mục tiêu không phải tìm nhà phát hành đồng ý nhanh nhất, mà tìm đối tác có đủ động lực, năng lực và cơ chế hợp tác để đưa game đi đường dài.",
         en: "The goal is not to find the publisher that says yes fastest, but the partner with the motivation, capability and operating model to build the title for the long term.",
@@ -418,6 +436,12 @@ export const posts: Post[] = [
         vi: "CPI (chi phí mỗi lượt cài), ROAS (doanh thu trên chi phí quảng cáo) và LTV (giá trị vòng đời người dùng) cần được đọc cùng nhau, không tách rời. Một kênh có CPI thấp nhưng kéo về người chơi có LTV thấp thực chất đắt hơn một kênh CPI cao nhưng LTV tốt. Quy tắc đơn giản: chỉ mở rộng ngân sách khi tỷ lệ LTV/CPI đã chứng minh lành mạnh ở quy mô nhỏ, trên ít nhất vài trăm người dùng mỗi kênh — mẫu quá nhỏ sẽ cho số liệu nhiễu và dễ khiến đội ngũ ra quyết định sai.",
         en: "CPI (cost per install), ROAS (return on ad spend) and LTV (user lifetime value) need to be read together, not separately. A channel with low CPI that attracts low-LTV players is actually more expensive than a channel with higher CPI and strong LTV. The rule is simple: only scale budget once the LTV/CPI ratio has proven healthy at small scale, across at least a few hundred users per channel — too small a sample gives noisy numbers and leads teams to the wrong call.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/growth-analytics-chart.jpg",
+        alt: { vi: "Phân tích số liệu và biểu đồ đo lường hiệu quả tăng trưởng CPI và ROAS", en: "Analytics charts and growth metrics for mobile game CPI and ROAS" },
+        caption: { vi: "Đo lường chi tiết tương quan giữa CPI, ROAS và LTV theo từng nhóm người chơi để đưa ra quyết định tăng ngân sách chính xác.", en: "Detailed tracking of CPI, ROAS and LTV correlations across player cohorts to guide scaling decisions." },
+      },
       { type: "h2", text: { vi: "2. Bản địa hóa theo từng thị trường, không dùng chung một bản", en: "2. Localize per market instead of reusing one version" } },
       { type: "p", text: {
         vi: "Một quảng cáo thắng ở Đông Nam Á chưa chắc thắng ở Đài Loan hay Brazil — hành vi xem video, nền tảng phổ biến và cách người chơi phản ứng với influencer đều khác nhau. Với game nhập vai, người chơi Việt Nam thường phản hồi tốt với creative nhấn vào cộng đồng và tính cạnh tranh; một thị trường khác có thể phản hồi tốt hơn với đồ họa hoặc cốt truyện. Đừng dịch nguyên một bản quảng cáo — hãy hỏi lại insight gốc có còn đúng ở thị trường mới hay không.",
@@ -471,6 +495,12 @@ export const posts: Post[] = [
         vi: "Bạn cần nhận biết, cân nhắc hay chuyển đổi? Ba mục tiêu này cần ba kiểu creator khác nhau. Nhận biết thường cần KOL lớn để tạo độ phủ nhanh trong thời gian ngắn. Cân nhắc cần creator có tiếng nói đáng tin trong đúng cộng đồng ngách — người xem tin lời họ hơn tin quảng cáo. Chuyển đổi lại thường hiệu quả hơn với nhóm KOC nhỏ nhưng gần gũi, vì tỷ lệ hành động sau khi xem nội dung của họ cao hơn hẳn.",
         en: "Do you need awareness, consideration or conversion? Each goal calls for a different type of creator. Awareness usually needs big KOLs to build reach quickly. Consideration needs a voice trusted within a specific niche community — viewers believe them more than they believe an ad. Conversion typically works better with smaller KOCs, because the action rate after their content tends to be much higher.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/livestream-creator-setup.jpg",
+        alt: { vi: "Không gian livestream và góc làm việc của Gaming Creator / Streamer", en: "Livestream studio setup and workstation of gaming creators" },
+        caption: { vi: "Góc làm việc và phát sóng trực tiếp của các creator, nơi xây dựng lòng tin và gắn kết người xem trung thành.", en: "Broadcast workstation of gaming creators, building high trust and loyal community engagement." },
+      },
       { type: "h2", text: { vi: "Đánh giá chất lượng, không chỉ số lượng", en: "Judge quality, not just quantity" } },
       { type: "ul", items: [
         { vi: "Mức độ phù hợp giữa tệp người xem và khách hàng mục tiêu — không chỉ ngành nghề mà cả độ tuổi, thu nhập và thói quen mua", en: "Fit between the audience and target customers — not just industry, but age, income and buying habits" },
@@ -521,6 +551,12 @@ export const posts: Post[] = [
         vi: "Chọn vài tuyến nội dung cố định — giải trí, hướng dẫn, hậu trường, sản phẩm — để kênh vừa đa dạng vừa dễ nhận diện. Một sai lầm phổ biến là đổi định dạng liên tục để chạy theo trend: kênh trông sinh động trong ngắn hạn nhưng người xem không hình dung được nên kỳ vọng gì ở lần xem tiếp theo, nên họ không bấm follow.",
         en: "Pick a few fixed pillars — entertainment, how-to, behind-the-scenes, product — so the channel stays both varied and recognizable. A common mistake is switching formats constantly to chase trends: the channel looks lively short-term, but viewers can't predict what to expect next time, so they never hit follow.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/creator-tiktok-studio.jpg",
+        alt: { vi: "Studio sản xuất video ngắn TikTok và sáng tạo nội dung", en: "TikTok short-form video production and creative studio" },
+        caption: { vi: "Quy trình sản xuất nội dung video ngắn với nhịp cắt gọn và thông điệp chạm đúng 3 giây đầu tiên.", en: "Short-form video production workflow with tight pacing and strong 3-second hooks." },
+      },
       { type: "h2", text: { vi: "3 giây đầu quyết định tất cả", en: "The first 3 seconds decide everything" } },
       { type: "ul", items: [
         { vi: "Mở đầu bằng một hook rõ ràng, gây tò mò — không phải logo hay lời chào", en: "Open with a clear, curiosity-driving hook — not a logo or a greeting" },
@@ -741,6 +777,12 @@ export const posts: Post[] = [
         vi: "Tên game và short description cần nói rõ giá trị ngay lập tức. Icon phải dễ nhận diện ở kích thước nhỏ. Screenshot nên kể một câu chuyện theo thứ tự: game là gì, khoảnh khắc hấp dẫn nhất, vì sao nên chơi ngay. Video preview chỉ nên giữ lại những cảnh phản ánh đúng trải nghiệm thật.",
         en: "The game title and short description should communicate value immediately. The icon must remain recognizable at small sizes. Screenshots should tell a story: what the game is, its strongest moment and why players should start now. A preview video should reflect the real experience.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/mobile-app-ux.jpg",
+        alt: { vi: "Tối ưu hóa hình ảnh và giao diện người dùng trên kho ứng dụng App Store và Google Play", en: "Optimizing visuals and mobile user experience on App Store and Google Play" },
+        caption: { vi: "Thử nghiệm icon, video preview và screenshot trực quan giúp tăng tỷ lệ chuyển đổi từ lượt xem sang lượt cài đặt.", en: "Testing icons, preview videos and screenshots to boost conversion from views to installs." },
+      },
       { type: "h2", text: { vi: "3. Dùng thử nghiệm thay vì phỏng đoán", en: "3. Test instead of guessing" } },
       { type: "p", text: {
         vi: "Hãy thử từng biến số có chủ đích: icon, screenshot đầu tiên, headline, video hoặc thông điệp theo từng nhóm người chơi. Google Play hỗ trợ thử nghiệm store listing; App Store cũng cho phép tối ưu product page. Mỗi thử nghiệm cần một giả thuyết, thời gian đủ dài và tiêu chí đánh giá rõ ràng.",
@@ -871,6 +913,12 @@ export const posts: Post[] = [
         vi: "Facebook group phù hợp cho thông báo, thảo luận và hỗ trợ rộng. Discord mạnh hơn với chat nhanh, clan và hoạt động theo vai trò. TikTok, YouTube và creator giúp mở rộng câu chuyện ra ngoài cộng đồng lõi. Không cần mở mọi kênh cùng lúc; hãy chọn nơi người chơi mục tiêu đã quen tương tác.",
         en: "Facebook groups work well for announcements, discussion and broad support. Discord is stronger for fast chat, clans and role-based activity. TikTok, YouTube and creators extend the story beyond the core community. Do not open every channel at once; start where target players already interact.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/community-meetup-collab.jpg",
+        alt: { vi: "Hoạt động gắn kết và gặp gỡ cộng đồng game thủ", en: "Player community meetup and collaborative engagement" },
+        caption: { vi: "Tổ chức các hoạt động gắn kết, offline bang hội và giải đấu cộng đồng giúp nuôi dưỡng lòng trung thành lâu dài.", en: "Organizing engagement events, clan meetups and community tournaments sustains long-term loyalty." },
+      },
       { type: "h2", text: { vi: "2. Xây content pillar cho từng giai đoạn", en: "2. Build content pillars for each phase" } },
       { type: "p", text: {
         vi: "Trước launch cần nội dung giải thích thế giới, nhân vật và lý do nên thử. Trong launch cần hướng dẫn, event, creator content và phản hồi nhanh. Sau launch cần roadmap, patch note, câu chuyện người chơi và hoạt động giữ nhịp. Mỗi nội dung nên có mục tiêu: nhận biết, kích hoạt, hỗ trợ hay giữ chân.",
@@ -1961,8 +2009,20 @@ export const posts: Post[] = [
       { type: "p", text: { vi: "Thị trường Thái Lan là một trong những thị trường game tiềm năng ở khu vực Đông Nam Á, với cộng đồng người chơi năng động và nhiều cơ hội cho các tựa game mobile mới. Tuy nhiên, việc phát hành game tại thị trường Thái không đơn giản là copy paste kế hoạch từ Việt Nam hay một thị trường khác rồi thay ngôn ngữ. Đội ngũ cần đầu tư vào chiến lược bản địa hóa, lựa chọn nền tảng, creator phù hợp và cách xây dựng cộng đồng. Hãy cùng ANBU tìm hiểu một playbook thực tế để chuẩn bị tốt hơn cho ngày game ra mắt tại Thái Lan.", en: "Thailand is one of Southeast Asia's most promising gaming markets, with an active player community and real room for new mobile games. Yet launching there is not as simple as copy and pasting a plan from Vietnam or another market and changing the language. Teams need to invest in localization, platform selection, the right creators and community building. In this guide, ANBU shares a practical playbook for preparing a stronger mobile game launch in Thailand." } },
       { type: "h2", text: { vi: "Bắt đầu bằng bản đồ thị trường", en: "Start with a market map" } },
       { type: "p", text: { vi: "Trước khi mua media, hãy phân nhóm người chơi theo thể loại, thiết bị, mức chi tiêu và cộng đồng họ tham gia. Facebook, YouTube, TikTok, livestream và các cộng đồng game có vai trò khác nhau; không nên mặc định một format thắng ở Việt Nam sẽ thắng ở Thái Lan.", en: "Before buying media, segment players by genre, device, spending profile and communities. Facebook, YouTube, TikTok, livestreams and gaming communities play different roles; never assume a format that wins in Vietnam will win in Thailand." } },
+      {
+        type: "image",
+        src: "/blog-covers/thailand-game-expo.jpg",
+        alt: { vi: "Triển lãm và sự kiện game quy mô lớn tại Bangkok Thái Lan", en: "Large-scale gaming exhibition and conference in Bangkok Thailand" },
+        caption: { vi: "Không gian sự kiện triển lãm game và ngày hội văn hóa game thủ tại Bangkok, Thái Lan.", en: "Gaming exhibition hall and player cultural festival in Bangkok, Thailand." },
+      },
       { type: "h2", text: { vi: "Creator và nội dung bản địa", en: "Creators and local content" } },
       { type: "ul", items: [{ vi: "Chọn creator theo thể loại và chất lượng bình luận, không chỉ follower", en: "Choose creators by genre fit and comment quality, not follower count alone" }, { vi: "Brief bằng insight và proof nhưng giữ giọng nói tự nhiên của creator", en: "Brief with insight and proof while preserving the creator's natural voice" }, { vi: "Chuẩn bị metadata, screenshot và support content bằng tiếng Thái", en: "Prepare Thai metadata, screenshots and support content" }] },
+      {
+        type: "image",
+        src: "/blog-covers/real-thailand.jpg",
+        alt: { vi: "Hoạt động marketing và cộng đồng game thủ tại Thái Lan", en: "Game marketing and player community activities in Thailand" },
+        caption: { vi: "Cộng đồng game thủ và các sự kiện offline tại thị trường Thái Lan có sức lan tỏa rất nhanh khi chạm đúng văn hóa bản địa.", en: "Thai player communities and offline activations spread rapidly when aligned with local culture." },
+      },
       { type: "h2", text: { vi: "Soft launch và 90 ngày đầu", en: "Soft launch and the first 90 days" } },
       { type: "p", text: { vi: "Soft launch tại Thái Lan nên kiểm tra conversion của store, activation trong onboarding, thanh toán, phản hồi về bản dịch và tốc độ hỗ trợ. Sau launch, chia kế hoạch thành ba nhịp: sửa friction trong 30 ngày đầu, xây thói quen cộng đồng ở ngày 31–60 và mở rộng creator hoặc event ở ngày 61–90 khi cohort cho thấy retention ổn định.", en: "A Thai soft launch should validate store conversion, onboarding activation, payments, translation feedback and support speed. After launch, use three waves: remove friction in days 1–30, build community habits in days 31–60 and scale creators or events in days 61–90 once cohorts show stable retention." } },
       { type: "h2", text: { vi: "Checklist trước khi scale", en: "Pre-scale checklist" } },
