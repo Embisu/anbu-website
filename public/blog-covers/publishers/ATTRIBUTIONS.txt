@@ -1,0 +1,11 @@
+Images in this folder are used as editorial references for the Vietnam game publisher landscape article.
+
+vng-logo.png — official VNGGames logo: https://vnggames.com/en/logo/
+vng-cookierun.jpg — official VNGGames game artwork: https://vnggames.com/en/games/
+funtap-logo.jpg — official Funtap website asset: https://funtap.vn/
+funtap-game.jpg — official Funtap website asset: https://funtap.vn/
+joygames-game.png — official JoyGames website asset: https://joygames.vn/
+gosu-event.jpg — official GOSU website asset: https://gosu.vn/vi
+vplay-game.jpg — official VPlay landing-page asset: https://qaphl.vplay.vn/landing/invite
+
+The article uses these marks and artworks only to identify the publishers and products discussed; no endorsement is implied.

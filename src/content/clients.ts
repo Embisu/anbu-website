@@ -1,0 +1,36 @@
+// Real clients & partners (logos provided by ANBU, stored in public/logo/clients/).
+// `file` is the logo path; if it fails to load, the wall falls back to the styled name.
+export type Client = { name: string; file: string };
+
+export const clients: Client[] = [
+  { name: "NetEase Games", file: "/logo/clients/netease.webp" },
+  { name: "HoYoverse", file: "/logo/clients/hoyoverse.png" },
+  { name: "Krafton", file: "/logo/clients/krafton.png" },
+  { name: "VNG", file: "/logo/clients/vng.webp" },
+  { name: "Com2uS", file: "/logo/clients/com2us.svg" },
+  { name: "Funtap", file: "/logo/clients/funtap.png" },
+  { name: "MoMo", file: "/logo/clients/momo.svg" },
+  { name: "Panasonic", file: "/logo/clients/pana.webp" },
+  { name: "QANDA", file: "/logo/clients/qanda.png" },
+  { name: "Revu", file: "/logo/clients/revu.svg" },
+  { name: "THS Game", file: "/logo/clients/thsgame.png" },
+  { name: "Tier One", file: "/logo/clients/tierone.png" },
+  { name: "Nam Dược", file: "/logo/clients/namduoc.png" },
+  { name: "DHG Pharma", file: "/logo/clients/dhg.svg" },
+  { name: "Klout", file: "/logo/clients/klout.png" },
+  { name: "SCgate", file: "/logo/clients/scgate.png" },
+  { name: "Overhere", file: "/logo/clients/overhere.png" },
+  { name: "Asim Group", file: "/logo/clients/asim.svg" },
+  { name: "LeafSeal", file: "/logo/clients/leafseal.png" },
+  { name: "Planup", file: "/logo/clients/planup.webp" },
+  { name: "Focallure", file: "/logo/clients/focallure.png" },
+  { name: "Abib", file: "/logo/clients/abib.png" },
+  { name: "Jumiso", file: "/logo/clients/jumiso.png" },
+  { name: "Kiara", file: "/logo/clients/kiara.png" },
+  { name: "wakemake", file: "/logo/clients/wakemake.png" },
+  { name: "StyleKorean", file: "/logo/clients/style.webp" },
+  { name: "Alfe", file: "/logo/clients/alfe.png" },
+  { name: "BOX Studio", file: "/logo/clients/box.png" },
+  { name: "Local SIM", file: "/logo/clients/localsim.svg" },
+  { name: "Vinalike", file: "/logo/clients/vinalike.png" },
+];

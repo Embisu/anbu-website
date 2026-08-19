@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #012f87;
+  --orange: #f5501e;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: theme("colors.ink");
+  background: #ffffff;
+}
+
+::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+/* Utility layer */
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-orange-500 text-white hover:bg-orange-600 focus-visible:ring-orange-500;
+    box-shadow: 0 10px 30px -8px rgba(245, 80, 30, 0.5);
+  }
+  .btn-navy {
+    @apply btn bg-navy-600 text-white hover:bg-navy-700 focus-visible:ring-navy-600;
+  }
+  .btn-ghost {
+    @apply btn border border-navy-100 bg-white text-navy-700 hover:border-navy-200 hover:bg-navy-50 focus-visible:ring-navy-300;
+  }
+  .btn-white {
+    @apply btn bg-white text-navy-700 hover:bg-cloud focus-visible:ring-white;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-orange-600;
+  }
+  .card {
+    @apply rounded-3xl border border-navy-100/70 bg-white p-7 transition-all duration-300;
+  }
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-orange-200 hover:shadow-[0_24px_60px_-20px_rgba(1,47,135,0.25)];
+  }
+  .link-underline {
+    @apply relative font-semibold text-navy-700 after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-0 after:bg-orange-500 after:transition-all hover:after:w-full;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--orange), #ff8a4c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(1, 47, 135, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(1, 47, 135, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.mask-fade-x {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Reveal on scroll.
+   Content is VISIBLE by default so it never disappears without JS, on old
+   browsers, or when the user scrolls faster than the observer can react.
+   The hidden/animated state only kicks in when scripting is enabled, and is
+   fully switched off on mobile (≤768px) to avoid blank sections on fast scroll. */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+@media (scripting: enabled) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1), transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (scripting: enabled) and (max-width: 768px) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  /* Silence every looping/entrance animation for users who ask for less motion. */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Page transition — shuriken springs in, then the panel wipes upward to reveal the page */
+@keyframes anbu-panel-up {
+  0%, 58% { transform: translateY(0); }
+  100% { transform: translateY(-105%); }
+}
+@keyframes anbu-mark-in {
+  0% { transform: scale(0.25) rotate(-170deg); opacity: 0; }
+  45% { transform: scale(1.12) rotate(14deg); opacity: 1; }
+  70% { transform: scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+@keyframes anbu-ring-in {
+  0% { transform: scale(0.4); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+.anbu-panel {
+  animation: anbu-panel-up 1.35s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+.anbu-shuriken {
+  animation: anbu-mark-in 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+.anbu-ring {
+  animation: anbu-ring-in 1s ease-out forwards;
+}
