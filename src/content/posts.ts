@@ -590,7 +590,7 @@ export const posts: Post[] = [
     author: "ANBU Team",
     color: "from-navy-600 to-navy-800",
     variant: "seo",
-    cover: "/blog-covers/seo-strategy.jpg",
+    cover: "/blog-covers/seo-organic-ranking.jpg",
     sources: [
       { label: { vi: "Google Search Central — SEO Starter Guide", en: "Google Search Central — SEO Starter Guide" }, href: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
       { label: { vi: "Google Search Central — structured data", en: "Google Search Central — structured data" }, href: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" },
@@ -605,6 +605,12 @@ export const posts: Post[] = [
         vi: "Google ngày càng ưu tiên nội dung thể hiện Kinh nghiệm, Chuyên môn, Thẩm quyền và Độ tin cậy — viết tắt là E-E-A-T. Cụ thể: gắn tên tác giả thật thay vì “Admin”, dẫn nguồn có thể kiểm chứng thay vì số liệu chung chung, và ưu tiên nội dung kể lại trải nghiệm thực tế (đã tự làm, đã tự đo) thay vì tổng hợp lại điều ai cũng biết. Một bài viết do một AI viết nhanh, không ai kiểm tra và không có ví dụ thật rất dễ bị xếp vào nhóm nội dung mỏng dù đúng ngữ pháp.",
         en: "Google increasingly rewards content that demonstrates Experience, Expertise, Authoritativeness and Trust — E-E-A-T. In practice: credit a real author instead of \"Admin,\" cite verifiable sources instead of vague figures, and favor content grounded in real experience (something you actually did or measured) over a rehash of common knowledge. An article written quickly by AI, never reviewed and without real examples, is easy to classify as thin content even when the grammar is perfect.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/content-editorial-writing.jpg",
+        alt: { vi: "Nghiên cứu nội dung chuyên sâu và xây dựng bài viết chuẩn E-E-A-T", en: "In-depth editorial content research and E-E-A-T writing workflow" },
+        caption: { vi: "Nội dung chất lượng cao đòi hỏi sự đầu tư nghiên cứu thực tế, số liệu dẫn chứng và trải nghiệm thực tiễn của tác giả.", en: "High-quality content demands real-world research, verified evidence and firsthand author expertise." },
+      },
       { type: "h2", text: { vi: "2. Tối ưu cho tìm kiếm AI", en: "2. Optimize for AI search" } },
       { type: "p", text: {
         vi: "Khi AI tổng hợp câu trả lời, nội dung có cấu trúc rõ ràng, dữ liệu có cấu trúc (schema) và câu trả lời trực tiếp sẽ dễ được trích dẫn hơn. Hãy viết đoạn mở đầu trả lời thẳng câu hỏi của người dùng — đừng bắt người đọc (hay AI) phải cuộn qua ba đoạn giới thiệu mới đến ý chính.",
@@ -647,7 +653,7 @@ export const posts: Post[] = [
     author: "ANBU Team",
     color: "from-orange-500 to-orange-700",
     variant: "branding",
-    cover: "/blog-covers/brand-foundation.jpg",
+    cover: "/blog-covers/brand-identity-design.jpg",
     sources: [
       { label: { vi: "Google — hướng dẫn nội dung hữu ích", en: "Google — helpful content guidance" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
       { label: { vi: "WIPO — thương hiệu và tài sản trí tuệ", en: "WIPO — brands and intellectual property" }, href: "https://www.wipo.int/trademarks/en/" },
@@ -672,6 +678,12 @@ export const posts: Post[] = [
         vi: "Định vị tốt trả lời được câu hỏi: nếu khách hàng chỉ nhớ một điều về bạn, đó nên là điều gì, và vì sao đối thủ chưa chiếm được chỗ đó? Một định vị mơ hồ như “chất lượng tốt, giá hợp lý” không giúp ích gì vì ai cũng nói vậy.",
         en: "Strong positioning answers one question: if a customer remembers only one thing about you, what should it be, and why hasn't a competitor already claimed it? A vague positioning like \"good quality, fair price\" helps nobody, because everyone says the same thing.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/brand-strategy-board.jpg",
+        alt: { vi: "Quy trình thiết kế nhận diện và bảng chiến lược định vị thương hiệu", en: "Brand identity design workflow and strategic positioning moodboard" },
+        caption: { vi: "Thiết kế bảng định vị và moodboard giúp các điểm chạm hình ảnh luôn nhất quán với cốt lõi thương hiệu.", en: "Developing a positioning moodboard ensures all visual touchpoints align with the brand core." },
+      },
       { type: "h2", text: { vi: "Bước 4 và 5: Nhận diện và nhất quán", en: "Steps 4 and 5: Identity and consistency" } },
       { type: "ul", items: [
         { vi: "Nhận diện: hình ảnh, giọng nói và ngôn ngữ thiết kế phải thể hiện đúng định vị đã chọn, không phải chỉ đẹp", en: "Identity: visuals, voice and design language must express the chosen position, not just look good" },
@@ -718,6 +730,16 @@ export const posts: Post[] = [
         en: "Great ads can't save a bad product or a leaky conversion funnel.",
       } },
       { type: "h2", text: { vi: "Kiểm thử có kỷ luật", en: "Test with discipline" } },
+      { type: "p", text: {
+        vi: "Khi triển khai quảng cáo chuyển đổi, việc thử nghiệm liên tục các biến số sáng tạo (hook 3 giây đầu, lời kêu gọi hành động CTA, định dạng video dọc và landing page) là yếu tố quyết định giúp hạ giá thành mỗi lượt chuyển đổi.",
+        en: "In conversion advertising, continuously testing creative variables (first 3-second hooks, call-to-action, vertical video formats and landing pages) is key to driving down acquisition costs.",
+      } },
+      {
+        type: "image",
+        src: "/blog-covers/performance-ad-campaigns.jpg",
+        alt: { vi: "Hệ thống quản lý chiến dịch quảng cáo hiệu suất đa kênh và chỉ số ROI", en: "Multi-channel performance ad management and ROI metrics" },
+        caption: { vi: "Quản lý chiến dịch performance bằng cách đối chiếu dữ liệu chuyển đổi thực tế với chi phí trên từng kênh.", en: "Managing performance campaigns by cross-referencing actual conversion data with cost per channel." },
+      },
       { type: "ul", items: [
         { vi: "Kiểm thử từng biến số một cách rõ ràng — đổi cả hình ảnh lẫn thông điệp cùng lúc sẽ không biết yếu tố nào tạo ra kết quả", en: "Test one variable at a time — changing both the visual and the message together means you'll never know which one moved the result" },
         { vi: "Cho mỗi thử nghiệm đủ dữ liệu để kết luận, đừng dừng sớm chỉ vì hai ngày đầu trông không ổn", en: "Give each test enough data to conclude — don't stop early just because the first two days look shaky" },
@@ -948,6 +970,7 @@ export const posts: Post[] = [
     excerpt: { vi: "UGC cho game mobile: biến người chơi thành creator là chủ đề nhiều đội ngũ game quan tâm khi muốn tiếp cận người chơi Việt Nam. Một clip highlight từ người chơi thuyết phục hơn cả quảng cáo đắt tiền — nhưng chỉ khi bạn cho họ lý do để quay, không chỉ lời kêu gọi suông. Trong bài viết này, ANBU chia sẻ cách tiếp cận thực tế để bạn có thể áp dụng cho kế hoạch của mình.", en: "A player's highlight clip convinces better than an expensive ad — but only if you give them a reason to film, not just a request to be creative." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" },
     date: "2026-08-15", readingTime: 2, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
+    cover: "/blog-covers/ugc-creator-community.jpg",
     sources: [{ label: { vi: "Google Play — chính sách nội dung do người dùng tạo", en: "Google Play — user-generated content policy" }, href: "https://support.google.com/googleplay/android-developer/answer/9876937" }, { label: { vi: "Discord — nguyên tắc cộng đồng", en: "Discord — community guidelines" }, href: "https://discord.com/guidelines" }],
     body: [
       { type: "p", text: { vi: "Một video highlight, meme về nhân vật hay câu chuyện vượt ải có thể thuyết phục người mới tốt hơn một quảng cáo bóng bẩy. UGC game mobile tạo ra lớp bằng chứng xã hội này, nhưng không thể chỉ kêu gọi người chơi “hãy sáng tạo”. Thương hiệu cần biến ý tưởng thành một hành trình đơn giản: dễ bắt đầu, dễ chia sẻ và đáng được ghi nhận.", en: "A highlight clip, character meme or boss-clear story can persuade new players better than a polished ad. UGC for mobile games creates this social proof, but a brand cannot simply ask players to be creative. It must make the journey easy to start, easy to share and worth being recognized." } },
@@ -957,6 +980,12 @@ export const posts: Post[] = [
         { vi: "Ảnh và meme: skin, đội hình, câu thoại hoặc tình huống cộng đồng dễ nhận ra", en: "Images and memes: skins, team builds, quotes or recognizable community moments" },
         { vi: "Hướng dẫn: build nhân vật, mẹo tân thủ và chiến thuật theo mùa", en: "Guides: builds, beginner tips and seasonal tactics" },
       ] },
+      {
+        type: "image",
+        src: "/blog-covers/ugc-creator-community.jpg",
+        alt: { vi: "Cộng đồng người sáng tạo nội dung và phong trào UGC game", en: "User-generated content creator community and gaming trends" },
+        caption: { vi: "Phong trào UGC phát triển mạnh khi cộng đồng người chơi được trao công cụ và động lực sáng tạo nội dung.", en: "UGC momentum flourishes when player communities are empowered with tools and creative incentives." },
+      },
       { type: "h2", text: { vi: "Thiết kế campaign UGC có thể tham gia trong 10 phút", en: "Design a UGC campaign people can join in ten minutes" } },
       { type: "p", text: { vi: "Một brief tốt chỉ cần nói rõ chủ đề, thời hạn, cách tham gia, tiêu chí nhận quà và quyền sử dụng nội dung. Cung cấp template, âm thanh, hashtag và ví dụ mẫu giúp giảm ma sát. Phần thưởng không nhất thiết phải lớn: được xuất hiện trên kênh chính thức, nhận title trong game hoặc được đội ngũ phản hồi cũng là động lực mạnh.", en: "A good brief only needs a clear theme, deadline, entry method, reward criteria and content-use terms. Templates, sounds, hashtags and examples reduce friction. Rewards do not have to be large: featuring a creator on official channels, granting an in-game title or getting a team response can be powerful motivation." } },
       { type: "h2", text: { vi: "Đo chất lượng thay vì chỉ đếm lượt xem", en: "Measure quality, not just views" } },
@@ -1005,6 +1034,7 @@ export const posts: Post[] = [
     title: { vi: "LiveOps game mobile: xây lịch sự kiện giữ người chơi quanh năm", en: "Mobile game LiveOps: building an event calendar that retains players" },
     excerpt: { vi: "Thị trường game thay đổi nhanh khiến liveops game mobile: xây lịch sự kiện giữ người chơi quanh năm trở thành một bài toán cần được chuẩn bị kỹ. LiveOps dồn dập khiến người chơi mệt; LiveOps thưa thớt khiến họ quên game tồn tại. Cách lập lịch sự kiện giữ đúng nhịp mà không đốt sức đội vận hành. Trong bài viết này, ANBU chia sẻ cách tiếp cận thực tế để bạn có thể áp dụng cho kế hoạch của mình.", en: "Too much LiveOps exhausts players; too little makes them forget the game exists. How to pace an event calendar without burning out the ops team." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-15", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-teal-700", variant: "game",
+    cover: "/blog-covers/game-liveops-monitoring.jpg",
     sources: [{ label: { vi: "Unity — live game operations", en: "Unity — live game operations" }, href: "https://unity.com/solutions/gaming-services" }],
     body: [
       { type: "p", text: {
@@ -1016,6 +1046,12 @@ export const posts: Post[] = [
         vi: "Một lịch LiveOps chồng chéo, không tầng lớp sẽ khiến người chơi mệt và đội vận hành cháy sức trước khi hết mùa. Tách rõ ba nhịp sau và đừng để chúng cạnh tranh sự chú ý của người chơi cùng lúc:",
         en: "A LiveOps calendar without layers exhausts both players and the operations team before the season ends. Separate these three rhythms clearly, and don't let them compete for player attention at the same time:",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/game-liveops-monitoring.jpg",
+        alt: { vi: "Hệ thống giám sát vận hành LiveOps và chỉ số hoạt động của game", en: "LiveOps monitoring and in-game activity metrics system" },
+        caption: { vi: "Giám sát thời gian thực các chỉ số server, sự kiện và phản hồi để điều chỉnh nhịp LiveOps chính xác.", en: "Real-time tracking of server metrics, active events and player feedback to fine-tune LiveOps pacing." },
+      },
       { type: "ul", items: [
         { vi: "Nhịp hằng ngày: nhiệm vụ, phần thưởng đăng nhập và hoạt động ngắn không đòi hỏi cam kết dài", en: "Daily rhythm: missions, login rewards and short activities that ask for no long commitment" },
         { vi: "Nhịp hằng tuần: thử thách, leaderboard và nội dung nhóm để tạo động lực cạnh tranh vừa phải", en: "Weekly rhythm: challenges, leaderboards and group content that build moderate competitive motivation" },
@@ -1038,12 +1074,19 @@ export const posts: Post[] = [
     title: { vi: "Localization game mobile Việt Nam: dịch hay bản địa hóa?", en: "Mobile game localization in Vietnam: translation or localization?" },
     excerpt: { vi: "Việt Nam là thị trường game nhiều tiềm năng, nhưng một bản dịch đúng nghĩa chưa chắc đã tạo được trải nghiệm đúng với người chơi. Bản địa hóa game cần quan tâm đến giọng điệu, văn hóa và cả cách thanh toán. Hãy cùng ANBU tìm hiểu đâu là khác biệt giữa dịch thuật và bản địa hóa.", en: "Vietnamese players spot instantly when a translation was lifted from another market. Real localization goes past the words — tone, payments, everything." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-15", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
+    cover: "/blog-covers/localization-translation-team.jpg",
     sources: [{ label: { vi: "Google Play — app localization", en: "Google Play — app localization" }, href: "https://developer.android.com/distribute/best-practices/launch/localize" }, { label: { vi: "Apple — localize your app", en: "Apple — localize your app" }, href: "https://developer.apple.com/app-store/localization/" }],
     body: [
       { type: "p", text: {
         vi: "Dịch đúng câu chưa chắc tạo ra trải nghiệm đúng. Người chơi Việt Nam nhận ra ngay khi tên vật phẩm, cách xưng hô, thông báo sự kiện hoặc hình thức thanh toán được bê nguyên từ thị trường khác — và họ không tha thứ dễ dàng như người chơi ở thị trường lâu năm hơn, vì bản dịch cẩu thả đọc như một tín hiệu game không thực sự nghiêm túc với thị trường này. Localization game mobile tốt phải giữ được ý đồ thiết kế nhưng nói bằng ngôn ngữ và bối cảnh quen thuộc.",
         en: "Accurate translation does not guarantee the right experience. Vietnamese players notice immediately when item names, address terms, event messages or payment flows are copied straight from another market — and they forgive it less readily than players in more mature markets, because sloppy translation reads as a signal the game isn't taking Vietnam seriously. Good localization preserves design intent while speaking through familiar language and context.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/localization-translation-team.jpg",
+        alt: { vi: "Đội ngũ bản địa hóa ngôn ngữ và văn hóa game cho thị trường bản địa", en: "Game language and cultural localization team collaborating" },
+        caption: { vi: "Bản địa hóa chuyên sâu kết hợp chuyên gia ngôn ngữ, văn hóa địa phương và game thủ bản xứ.", en: "In-depth localization combining linguistic experts, local cultural insights and native gamers." },
+      },
       { type: "h2", text: { vi: "Bốn lớp cần bản địa hóa", en: "Four layers to localize" } },
       { type: "ul", items: [
         { vi: "Ngôn ngữ: thuật ngữ, đại từ xưng hô (rất khác biệt trong tiếng Việt), giọng điệu và giới hạn ký tự trên UI", en: "Language: terminology, address pronouns (highly distinctive in Vietnamese), tone and on-screen character limits" },
@@ -1067,6 +1110,7 @@ export const posts: Post[] = [
     title: { vi: "User acquisition game mobile: chọn kênh quảng cáo nào?", en: "Mobile game user acquisition: choosing the right ad channel" },
     excerpt: { vi: "Thu hút người chơi mới là bài toán quan trọng với mọi game mobile khi bước vào Việt Nam. Tuy nhiên, chọn kênh quảng cáo chỉ vì CPI thấp có thể khiến ngân sách nhanh chóng bị lãng phí. Trong bài viết này, ANBU chia sẻ cách chọn kênh user acquisition dựa trên hành vi và chất lượng người chơi.", en: "Dumping the whole budget into the cheapest-CPI channel is the most common mistake ANBU sees from studios new to Vietnam. How to pick a UA channel by player behavior, not price." },
     category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-15", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    cover: "/blog-covers/performance-ad-campaigns.jpg",
     sources: [{ label: { vi: "Meta — App campaigns", en: "Meta — App campaigns" }, href: "https://www.facebook.com/business/ads/app-ads" }, { label: { vi: "TikTok — app promotion", en: "TikTok — app promotion" }, href: "https://ads.tiktok.com/business/en/apps" }, { label: { vi: "Google — App campaigns", en: "Google — App campaigns" }, href: "https://support.google.com/google-ads/answer/6247380" }],
     body: [
       { type: "p", text: {
@@ -1090,13 +1134,20 @@ export const posts: Post[] = [
     slug: "monetization-game-mobile-iap-battle-pass",
     title: { vi: "Monetization game mobile: chọn quảng cáo, IAP hay battle pass?", en: "Mobile game monetization: ads, IAP or battle pass?" },
     excerpt: { vi: "Với các studio và nhà phát hành, monetization game mobile: chọn quảng cáo, iap hay battle pass? thường bắt đầu từ những câu hỏi rất thực tế về người chơi và tăng trưởng. Ads, IAP hay battle pass — chọn sai mô hình không giết game ngay, nó âm thầm bào mòn niềm tin người chơi mỗi ngày. Cách chọn đúng theo hành vi, không theo xu hướng. Trong bài viết này, ANBU chia sẻ cách tiếp cận thực tế để bạn có thể áp dụng cho kế hoạch của mình.", en: "Ads, IAP or battle pass — picking the wrong model doesn't kill a game outright, it quietly erodes player trust every day. How to choose by behavior, not trend." },
-    category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-15", readingTime: 3, author: "ANBU Team", color: "from-teal-700 to-orange-600", variant: "strategy", cover: "/blog-covers/monetization-trust.jpg",
+    category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-15", readingTime: 3, author: "ANBU Team", color: "from-teal-700 to-orange-600", variant: "strategy",
+    cover: "/blog-covers/in-app-purchase-mobile.jpg",
     sources: [{ label: { vi: "Google Play — payments policy", en: "Google Play — payments policy" }, href: "https://support.google.com/googleplay/android-developer/answer/10281818" }, { label: { vi: "Apple — In-App Purchase", en: "Apple — In-App Purchase" }, href: "https://developer.apple.com/in-app-purchase/" }],
     body: [
       { type: "p", text: {
         vi: "Monetization game mobile không phải chọn một nút kiếm tiền rồi gắn vào sản phẩm. Mô hình phù hợp phụ thuộc vào nhịp chơi, mức độ cạnh tranh, vị trí của người chơi trong funnel và giá trị mà game tạo ra ở từng giai đoạn. Nhiều studio copy nguyên mô hình monetization của game thành công khác mà quên rằng người chơi Việt Nam có hành vi chi tiêu và độ nhạy giá khác với thị trường gốc của game đó.",
         en: "Mobile game monetization is not selecting one revenue button and attaching it to a product. The right model depends on play rhythm, competition, funnel stage and the value the game creates at each moment. Many studios copy the monetization model of another successful game wholesale, forgetting that Vietnamese players have different spending behavior and price sensitivity than that game's original market.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/in-app-purchase-mobile.jpg",
+        alt: { vi: "Mô hình thanh toán và doanh thu trong game mobile (IAP, Battle Pass)", en: "Mobile game monetization and in-app purchase economy (IAP, Battle Pass)" },
+        caption: { vi: "Xây dựng hệ thống vật phẩm và gói ưu đãi hợp lý giúp thúc đẩy chuyển đổi thanh toán mà vẫn bảo toàn tính cân bằng của game.", en: "Designing balanced itemization and offers drives conversion while maintaining game balance." },
+      },
       { type: "h2", text: { vi: "Ba mô hình phổ biến — và khi nào mỗi mô hình phù hợp", en: "Three common models — and when each fits" } },
       { type: "ul", items: [
         { vi: "Quảng cáo: phù hợp với lượt chơi ngắn và phần thưởng rõ ràng, nhưng dùng quá tay sẽ đẩy người chơi trả tiền cao nhất rời đi vì trải nghiệm bị ngắt quãng", en: "Ads: fit short sessions with clear rewarded value, but overusing them pushes away the highest-paying players by breaking up the experience" },
@@ -1234,13 +1285,19 @@ export const posts: Post[] = [
     title: { vi: "PR game mobile tại Việt Nam: xây câu chuyện trước ngày ra mắt", en: "Mobile game PR in Vietnam: build the story before launch day" },
     excerpt: { vi: "Một tựa game mới luôn cần được biết đến trước khi người chơi quyết định tải xuống. Tuy nhiên, PR game không chỉ là gửi thông cáo báo chí vào ngày ra mắt mà cần bắt đầu từ một câu chuyện đủ hấp dẫn để báo chí, creator và cộng đồng cùng chia sẻ. Hãy cùng ANBU xây dựng kế hoạch PR hiệu quả hơn.", en: "A new game isn't news just because it's new. Effective game PR starts with a story worth media, creators and players retelling." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-16", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
-    cover: "/blog-covers/game-pr-launch.jpg",
+    cover: "/blog-covers/pr-media-press-conference.jpg",
     sources: [{ label: { vi: "Google — hướng dẫn nội dung hữu ích", en: "Google — helpful content guidance" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" }],
     body: [
       { type: "p", text: {
         vi: "Một tựa game mới không được nhắc đến chỉ vì nó mới. PR cần biến đặc điểm sản phẩm, đội ngũ hoặc cộng đồng thành một góc nhìn có ý nghĩa với độc giả Việt Nam. Khi câu chuyện rõ, báo chí, creator và người chơi có thể kể lại bằng ngôn ngữ của họ — và đó mới là mục tiêu thật của PR, không phải số lượng bài đăng.",
         en: "A new game is not news simply because it is new. PR turns a product, team or community truth into a story that matters to Vietnamese audiences. When the story is clear, media, creators and players can retell it in their own language — that's the real goal of PR, not the number of articles published.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/pr-media-press-conference.jpg",
+        alt: { vi: "Họp báo ra mắt sản phẩm game và kết nối cơ quan truyền thông báo chí", en: "Game product launch press conference and media relations" },
+        caption: { vi: "Xây dựng mối quan hệ truyền thông và họp báo ra mắt chuyên nghiệp tạo độ phủ tin cậy ngay từ giai đoạn đầu.", en: "Cultivating media relations and press briefings creates trustworthy early-stage coverage." },
+      },
       { type: "h2", text: { vi: "Ba lớp câu chuyện ra mắt", en: "Three launch-story layers" } },
       { type: "ul", items: [
         { vi: "Câu chuyện sản phẩm: game giải quyết trải nghiệm nào tốt hơn những gì người chơi đã có?", en: "Product story: which player experience does the game solve better than what's already out there?" },
@@ -1259,13 +1316,19 @@ export const posts: Post[] = [
     title: { vi: "Đo lường influencer marketing cho game mobile: ngoài lượt xem", en: "Measuring influencer marketing for mobile games beyond views" },
     excerpt: { vi: "Thị trường game thay đổi nhanh khiến đo lường influencer marketing cho game mobile: ngoài lượt xem trở thành một bài toán cần được chuẩn bị kỹ. Lượt xem chỉ là điểm khởi đầu, không phải kết quả. Cách đo influencer marketing game mobile để biết ai thật sự tạo ra người chơi, không chỉ tạo ra view. Trong bài viết này, ANBU chia sẻ cách tiếp cận thực tế để bạn có thể áp dụng cho kế hoạch của mình.", en: "Views are a starting point, not a result. How to measure mobile game influencer marketing to see who actually creates players, not just views." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-16", readingTime: 3, author: "ANBU Team", color: "from-orange-500 to-navy-800", variant: "influencer",
-    cover: "/blog-covers/influencer-measurement.jpg",
+    cover: "/blog-covers/livestream-creator-setup.jpg",
     sources: [{ label: { vi: "Google Analytics — campaign measurement", en: "Google Analytics — campaign measurement" }, href: "https://support.google.com/analytics/answer/10917952" }, { label: { vi: "TikTok for Business — creator campaigns", en: "TikTok for Business — creator campaigns" }, href: "https://www.tiktok.com/business/en/solutions/creator-marketplace" }],
     body: [
       { type: "p", text: {
         vi: "Influencer marketing cho game mobile có thể tạo nhận biết, hướng dẫn tân thủ, bằng chứng xã hội hoặc thúc đẩy cài đặt. Vì mỗi mục tiêu khác nhau, KPI cũng phải khác nhau. Đặt tất cả creator vào cùng một bảng xếp hạng lượt xem sẽ làm mất giá trị thật của chiến dịch — một video hướng dẫn tân thủ và một video kêu gọi cài đặt trực tiếp không nên bị đo bằng cùng một thước.",
         en: "Influencer marketing for mobile games can build awareness, teach beginners, create social proof or drive installs. Each objective needs different KPIs. Ranking every creator by views hides the real value of the campaign — a beginner's guide video and a direct install-driving video shouldn't be measured by the same yardstick.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/livestream-creator-setup.jpg",
+        alt: { vi: "Góc phát sóng trực tiếp và sản xuất nội dung gaming influencer", en: "Gaming influencer livestreaming and creator setup" },
+        caption: { vi: "Đo lường chi tiết tương tác của streamer và tỷ lệ người xem chuyển đổi thành người chơi thực tế.", en: "Detailed tracking of streamer engagement and audience conversion into active players." },
+      },
       { type: "h2", text: { vi: "Framework đo theo hành trình", en: "Measure across the journey" } },
       { type: "ul", items: [
         { vi: "Reach và tỷ lệ xem sâu cho mục tiêu nhận biết", en: "Reach and watch depth for awareness" },
@@ -1284,13 +1347,19 @@ export const posts: Post[] = [
     title: { vi: "Tăng conversion rate trang store cho game mobile", en: "How to improve mobile game app store conversion rate" },
     excerpt: { vi: "Với các studio và nhà phát hành, tăng conversion rate trang store cho game mobile thường bắt đầu từ những câu hỏi rất thực tế về người chơi và tăng trưởng. Ba câu hỏi người xem trang store cần được trả lời trong vài giây: game này là gì, khác gì và có nên tin không. Cách tăng conversion khi bạn chỉ có vài giây đó. Trong bài viết này, ANBU chia sẻ cách tiếp cận thực tế để bạn có thể áp dụng cho kế hoạch của mình.", en: "Three questions a store visitor needs answered in seconds: what is this, what's different, should I trust it? How to raise conversion when you only get those seconds." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-16", readingTime: 3, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
-    cover: "/blog-covers/store-conversion.jpg",
+    cover: "/blog-covers/app-store-conversion-funnel.jpg",
     sources: [{ label: { vi: "Google Play Console — store listing experiments", en: "Google Play Console — store listing experiments" }, href: "https://support.google.com/googleplay/android-developer/answer/6227309" }, { label: { vi: "Apple — product page optimization", en: "Apple — product page optimization" }, href: "https://developer.apple.com/app-store/product-page-optimization/" }],
     body: [
       { type: "p", text: {
         vi: "Conversion rate trên store là tỷ lệ người xem trang ứng dụng thực hiện cài đặt. Muốn tăng chỉ số này, đội ngũ cần trả lời nhanh ba câu hỏi: game này là gì, có gì khác biệt và tôi có nên tin lời hứa đó không. Nếu một trong ba câu chưa được trả lời trong vài giây đầu, người xem sẽ rời đi trước khi đọc hết mô tả.",
         en: "Store conversion rate is the share of app-page visitors who install. To improve it, quickly answer three questions: what is this game, what makes it different and why should I trust the promise? If any of these three goes unanswered in the first few seconds, the visitor leaves before reading the description.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/app-store-conversion-funnel.jpg",
+        alt: { vi: "Tối ưu hóa tỷ lệ chuyển đổi trang App Store và Google Play", en: "App Store and Google Play listing conversion rate optimization" },
+        caption: { vi: "A/B testing hình ảnh icon, screenshot và video preview để tối đa tỷ lệ tải về tự nhiên.", en: "A/B testing icons, screenshots and preview videos to maximize organic download conversion." },
+      },
       { type: "h2", text: { vi: "Thiết kế theo thứ tự đọc", en: "Design for the reading order" } },
       { type: "ul", items: [
         { vi: "Icon và video thumbnail tạo nhận diện trong kết quả tìm kiếm — trước cả khi người dùng chạm vào trang", en: "Icon and video thumbnail create recognition in search results — before the user even taps into the page" },
@@ -2108,12 +2177,19 @@ export const posts: Post[] = [
     title: { vi: "Đo ROI tài trợ esports tại Việt Nam: khung dành cho nhãn hàng", en: "Measuring esports sponsorship ROI in Vietnam" },
     excerpt: { vi: "Đo ROI tài trợ esports tại Việt Nam: khung dành cho nhãn hàng là chủ đề nhiều đội ngũ game quan tâm khi muốn tiếp cận người chơi Việt Nam. Chỉ báo cáo tổng lượt xem sẽ khiến một khoản tài trợ tạo ra hiệu ứng thương hiệu thật vẫn bị coi là thất bại. Khung đo ROI tài trợ esports mà nhãn hàng nên dùng. Trong bài viết này, ANBU chia sẻ cách tiếp cận thực tế để bạn có thể áp dụng cho kế hoạch của mình.", en: "Reporting only total views can make a sponsorship that created real brand lift look like a failure. A framework brands should use to measure esports sponsorship ROI." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-23", readingTime: 3, author: "ANBU Team", color: "from-blue-950 to-orange-700", variant: "performance",
+    cover: "/blog-covers/esports-arena-lights.jpg",
     sources: [{ label: { vi: "Nielsen Esports Insights", en: "Nielsen esports insights" }, href: "https://www.nielsen.com/insights/2022/esports-sponsorships/" }, { label: { vi: "VIRESA", en: "VIRESA" }, href: "https://viresa.org.vn/" }],
     body: [
       { type: "p", text: {
         vi: "Nhãn hàng thường hỏi tài trợ esports tại Việt Nam có đáng tiền không. Câu trả lời phụ thuộc vào mục tiêu: awareness, trial, lead hay doanh thu. Nếu chỉ lấy tổng lượt xem để báo cáo, đội ngũ sẽ bỏ qua chất lượng người xem, tần suất tiếp xúc và hành động sau sự kiện — và đó thường là lúc một khoản tài trợ lớn bị coi là thất bại dù thực ra nó đã tạo ra hiệu ứng thương hiệu thật, chỉ là không ai đo đúng cách.",
         en: "Brands often ask whether esports sponsorship in Vietnam is worth the money. The answer depends on the goal: awareness, trial, leads or revenue. Reporting only total views hides audience quality, frequency and post-event actions — and that's often when a major sponsorship gets labeled a failure even though it created real brand lift, just not measured the right way.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/esports-arena-lights.jpg",
+        alt: { vi: "Không khí thi đấu và khán đài cuồng nhiệt tại đấu trường Esports", en: "Electric tournament atmosphere and cheering crowd at esports arena" },
+        caption: { vi: "Không khí sôi động và lượng khán giả trung thành tại các giải đấu Esports mở ra cơ hội tài trợ lớn cho các nhãn hàng.", en: "Passionate stadium atmosphere and loyal fans at esports leagues offer high-impact sponsorship opportunities." },
+      },
       { type: "h2", text: { vi: "Thiết kế tầng đo lường", en: "Design measurement layers" } },
       { type: "ul", items: [
         { vi: "Media: reach, unique viewers, view-through và frequency", en: "Media: reach, unique viewers, view-through and frequency" },
