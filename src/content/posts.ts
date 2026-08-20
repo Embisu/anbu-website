@@ -1578,13 +1578,20 @@ export const posts: Post[] = [
     slug: "quang-cao-game-mobile-viet-nam-ke-hoach-ngan-sach",
     title: { vi: "Quảng cáo game mobile Việt Nam: lập ngân sách theo giai đoạn", en: "Mobile game advertising in Vietnam: budget by launch stage" },
     excerpt: { vi: "Đổ hết ngân sách vào ngày ra mắt là cách nhanh nhất để hết tiền đúng lúc dữ liệu bắt đầu đủ để ra quyết định. Cách chia ngân sách theo ba giai đoạn thay vì một cú đánh.", en: "Spending the whole budget on launch day is the fastest way to run out of money right when the data becomes useful. How to split budget across three stages instead of one big swing." },
-    category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-18", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-18", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    cover: "/blog-covers/performance-ad-campaigns.jpg",
     sources: [{ label: { vi: "Google Ads — App campaigns", en: "Google Ads — App campaigns" }, href: "https://support.google.com/google-ads/answer/6247380" }, { label: { vi: "Meta — quảng cáo ứng dụng", en: "Meta — app advertising" }, href: "https://www.facebook.com/business/ads/app-ads" }],
     body: [
       { type: "p", text: {
         vi: "Quảng cáo game mobile tại Việt Nam hiệu quả khi ngân sách được chia theo câu hỏi cần trả lời, không theo lịch phát hành. Giai đoạn đầu cần biết creative nào kéo đúng người chơi, giai đoạn tăng trưởng cần tìm cohort có LTV tốt và giai đoạn mở rộng cần bảo vệ chất lượng traffic. Sai lầm phổ biến là đổ toàn bộ ngân sách vào tuần ra mắt rồi hết tiền đúng lúc dữ liệu bắt đầu đủ để ra quyết định đúng.",
         en: "Mobile game advertising in Vietnam works best when budget follows the questions the team needs to answer, not the release calendar. Early spend finds winning creative, growth spend finds high-LTV cohorts and scaling protects traffic quality. A common mistake is spending the entire budget in launch week, then running out of money right as the data becomes enough to make good decisions.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/performance-ad-campaigns.jpg",
+        alt: { vi: "Phân bổ ngân sách chiến dịch quảng cáo game theo từng giai đoạn", en: "Mobile game ad budget allocation across test, scale and retargeting stages" },
+        caption: { vi: "Phân chia ngân sách theo 3 giai đoạn giúp bảo toàn vốn và tăng tỷ lệ hoàn vốn ROAS.", en: "Phased ad budget allocation preserves capital and increases cumulative ROAS." },
+      },
       { type: "h2", text: { vi: "Chia ngân sách theo ba giai đoạn", en: "Split budget across three stages" } },
       { type: "ul", items: [
         { vi: "Test: nhiều concept, ngân sách nhỏ, ưu tiên tốc độ học hơn là hiệu quả tức thì", en: "Test: multiple concepts, small budgets, prioritizing learning speed over immediate efficiency" },
@@ -1602,13 +1609,20 @@ export const posts: Post[] = [
     slug: "tiktok-marketing-cho-game-mobile-viet-nam",
     title: { vi: "TikTok marketing game mobile: creative khiến người chơi dừng lại", en: "TikTok marketing for mobile games: stop-scrolling creative" },
     excerpt: { vi: "Người xem TikTok quyết định dừng lại hay lướt qua gần như trước khi kịp nhận ra đó là quảng cáo. Một vài nguyên tắc creative giúp tăng khả năng họ chọn ở lại xem tiếp.", en: "TikTok viewers decide to stop or scroll almost before they register it's an ad at all. A few creative principles that improve the odds they stay." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-18", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "social",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-18", readingTime: 4, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "social",
+    cover: "/blog-covers/tiktok-social.jpg",
     sources: [{ label: { vi: "TikTok Creative Center", en: "TikTok Creative Center" }, href: "https://ads.tiktok.com/business/creativecenter/" }],
     body: [
       { type: "p", text: {
         vi: "TikTok marketing cho game mobile cần tư duy như một format nội dung, không phải một banner chuyển thành video. Người xem phải hiểu bối cảnh đủ nhanh, thấy một khoảnh khắc đáng chia sẻ và nhận ra hành động tiếp theo — và họ quyết định điều đó trong chưa đầy hai giây đầu tiên, trước cả khi kịp nhận ra đây là quảng cáo.",
         en: "TikTok marketing for mobile games should be treated as a content format, not a banner turned into video. Viewers need fast context, a shareable moment and a clear next action — and they decide all of that in under two seconds, before they even register it's an ad.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/creator-tiktok-studio.jpg",
+        alt: { vi: "Sản xuất video ngắn TikTok và livestream game cùng Creator", en: "Short-form TikTok video production and game livestreaming with creators" },
+        caption: { vi: "Hook 2 giây đầu kết hợp gameplay thực tế tạo cảm xúc chân thật cho người xem TikTok.", en: "A 2-second hook combined with authentic gameplay creates genuine engagement on TikTok." },
+      },
       { type: "h2", text: { vi: "Công thức creative dễ kiểm thử", en: "A testable creative formula" } },
       { type: "ul", items: [
         { vi: "0–2 giây: mở bằng tình huống hoặc kết quả bất ngờ, không mở bằng logo hay tên game", en: "0–2 seconds: open with a situation or surprising result, never with a logo or the game's name" },
@@ -1626,13 +1640,20 @@ export const posts: Post[] = [
     slug: "pheu-marketing-game-mobile-tu-nhan-biet-den-retention",
     title: { vi: "Phễu marketing game mobile: từ nhận biết đến retention", en: "The mobile game marketing funnel: from awareness to retention" },
     excerpt: { vi: "Bỏ quên một tầng phễu marketing khiến mọi nỗ lực ở các tầng trước đó bị lãng phí. Bốn tầng cần theo dõi từ quảng cáo đến người chơi quay lại.", en: "Neglect one funnel stage and every effort spent on the stages before it goes to waste. Four stages to track from the first ad to a returning player." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-19", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "strategy",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-19", readingTime: 4, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "strategy",
+    cover: "/blog-covers/growth-analytics-chart.jpg",
     sources: [{ label: { vi: "Google Analytics — đo lường hành trình", en: "Google Analytics — journey measurement" }, href: "https://support.google.com/analytics/answer/9304153" }],
     body: [
       { type: "p", text: {
         vi: "Phễu marketing game mobile không kết thúc ở lượt cài. Mỗi tầng phải trả lời một câu hỏi: người chơi có chú ý, tin lời hứa, bắt đầu chơi và có lý do quay lại hay không? Khi các tầng được thiết kế liền mạch, ngân sách quảng cáo tạo ra tài sản tăng trưởng thay vì chỉ tạo traffic — và khi một tầng bị bỏ quên, mọi nỗ lực ở các tầng trước đó đều bị lãng phí.",
         en: "The mobile game marketing funnel does not end at install. Each stage should answer a question: did the player notice, trust the promise, start playing and find a reason to return? A connected funnel turns ad spend into a growth asset — and when one stage is neglected, every effort spent on the stages before it goes to waste.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/game-liveops-monitoring.jpg",
+        alt: { vi: "Theo dõi dữ liệu hành trình người chơi từ Acquisition đến D30 Retention", en: "Tracking full-funnel player journey metrics from Acquisition to D30 Retention" },
+        caption: { vi: "Giám sát dữ liệu phễu giúp xác định chính xác mắt xích bị rò rỉ trước khi mở rộng ngân sách.", en: "Full-funnel telemetry identifies conversion leaks before expanding acquisition budget." },
+      },
       { type: "h2", text: { vi: "Bốn tầng cần theo dõi", en: "Four stages to track" } },
       { type: "ul", items: [
         { vi: "Awareness: reach, video completion và branded search — dấu hiệu người chơi đã bắt đầu tò mò", en: "Awareness: reach, video completion and branded search — signs curiosity has started" },
@@ -1651,13 +1672,20 @@ export const posts: Post[] = [
     slug: "thanh-toan-game-mobile-viet-nam-tang-conversion",
     title: { vi: "Thanh toán game mobile Việt Nam: giảm ma sát, tăng conversion", en: "Mobile game payments in Vietnam: reduce friction, grow conversion" },
     excerpt: { vi: "Nhiều thất thoát doanh thu không nằm ở giá — mà ở một bước xác thực bị lỗi trên một nhà mạng cụ thể mà không ai để ý. Cách tối ưu trải nghiệm thanh toán từng bước.", en: "A lot of revenue leakage isn't about price — it's a verification step failing on one specific carrier nobody noticed. How to optimize payment step by step." },
-    category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-19", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-19", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    cover: "/blog-covers/in-app-purchase-mobile.jpg",
     sources: [{ label: { vi: "Google Play — payments policy", en: "Google Play — payments policy" }, href: "https://support.google.com/googleplay/android-developer/answer/10281818" }, { label: { vi: "Apple — In-App Purchase", en: "Apple — In-App Purchase" }, href: "https://developer.apple.com/in-app-purchase/" }],
     body: [
       { type: "p", text: {
         vi: "Thanh toán game mobile tại Việt Nam là một phần của trải nghiệm sản phẩm, không chỉ là bước cuối của phễu. Người chơi cần biết mình mua gì, giá bao nhiêu, giao dịch có an toàn không và phải làm gì nếu vật phẩm chưa được ghi nhận — và vì phần lớn giao dịch game vẫn còn mới với nhiều người chơi Việt Nam, một trải nghiệm thanh toán mơ hồ dễ khiến họ bỏ ngang ngay cả khi đã sẵn sàng chi tiền.",
         en: "Mobile game payments in Vietnam are part of the product experience, not merely the end of the funnel. Players need to know what they're buying, the price, whether the transaction is safe and what to do if an item goes missing — and since in-game purchases are still relatively new for many Vietnamese players, an ambiguous payment experience can make them abandon it even when they were ready to spend.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/monetization-trust.jpg",
+        alt: { vi: "Giao diện thanh toán nạp game in-app an toàn và thuận tiện", en: "Secure and seamless in-app payment and monetization flow" },
+        caption: { vi: "Tối ưu hóa các bước thanh toán in-app giúp nâng cao tỷ lệ chuyển đổi nạp tiền thành công.", en: "Streamlining in-app purchase flows boosts payment completion and conversion rates." },
+      },
       { type: "h2", text: { vi: "Ba điểm cần tối ưu", en: "Three areas to optimize" } },
       { type: "ul", items: [
         { vi: "Thông tin: tên gói, giá, vật phẩm và điều kiện phải dễ hiểu ngay từ lần đọc đầu tiên", en: "Information: package name, price, items and conditions must be clear on the first read" },
@@ -1675,13 +1703,20 @@ export const posts: Post[] = [
     slug: "community-manager-game-mobile-kpi",
     title: { vi: "KPI community manager game mobile: đo sức khỏe cộng đồng", en: "Mobile game community manager KPIs: measuring health" },
     excerpt: { vi: "Số lượng thành viên trong group nói lên rất ít về sức khỏe cộng đồng. Bốn nhóm KPI giúp community manager nhìn rõ hơn điều gì thực sự đang diễn ra bên trong.", en: "Member count says surprisingly little about a community's health. Four KPI groups that help community managers see what's actually happening underneath the numbers." },
-    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-19", readingTime: 3, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "social",
+    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-19", readingTime: 4, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "social",
+    cover: "/blog-covers/community-meetup-collab.jpg",
     sources: [{ label: { vi: "Discord — Community Guidelines", en: "Discord — Community Guidelines" }, href: "https://discord.com/guidelines" }],
     body: [
       { type: "p", text: {
         vi: "Community manager game mobile tạo giá trị bằng cách biến phản hồi thành niềm tin, nội dung và insight cho sản phẩm. Vì vậy, số người trong group chỉ là chỉ số đầu phễu; KPI cần cho thấy cộng đồng có đang hoạt động lành mạnh và giúp người chơi quay lại hay không — một group 50.000 thành viên im lặng không có giá trị bằng một group 2.000 thành viên thường xuyên góp ý và quay lại chơi mỗi tuần.",
         en: "A mobile game community manager creates value by turning feedback into trust, content and product insight. Member count is only a top-funnel metric; KPIs should show whether the community is healthy and brings players back — a silent group of 50,000 members isn't worth as much as an active group of 2,000 who give feedback and return to play every week.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/discord-community.jpg",
+        alt: { vi: "Quản lý cộng đồng game thủ qua Discord và các kênh mạng xã hội", en: "Managing gaming communities on Discord and social channels" },
+        caption: { vi: "Đo lường sức khỏe cộng đồng qua tỷ lệ tương tác và phản hồi giải quyết thắc mắc của game thủ.", en: "Measuring community health through active engagement and support resolution rates." },
+      },
       { type: "h2", text: { vi: "Bốn nhóm KPI nên dùng", en: "Four KPI groups to use" } },
       { type: "ul", items: [
         { vi: "Tham gia: active members, bài đăng, bình luận và event participation", en: "Participation: active members, posts, comments and event participation" },
@@ -1700,13 +1735,20 @@ export const posts: Post[] = [
     slug: "localization-game-mobile-chi-phi-va-quy-trinh",
     title: { vi: "Localization game mobile: chi phí và kiểm soát chất lượng", en: "Mobile game localization: cost and quality control" },
     excerpt: { vi: "Ngân sách localization thường bị tính thiếu, không phải vì sai số mà vì bỏ sót những phần chi phí ẩn sau mỗi bản cập nhật. Một quy trình bốn bước để nhìn thấy bức tranh đầy đủ hơn.", en: "Localization budgets usually fall short not from bad math, but from overlooking the hidden costs that surface after every update. A four-step workflow for seeing the fuller picture." },
-    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-20", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
+    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-20", readingTime: 4, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
+    cover: "/blog-covers/localization-translation-team.jpg",
     sources: [{ label: { vi: "Apple — localization", en: "Apple — localization" }, href: "https://developer.apple.com/app-store/localization/" }],
     body: [
       { type: "p", text: {
         vi: "Chi phí localization game mobile không chỉ là số từ cần dịch. Đội ngũ còn phải tính glossary, QA, voice, hình ảnh, cập nhật live-ops và thời gian sửa lỗi khi nội dung thay đổi — nhiều studio lập ngân sách theo từ, rồi bất ngờ khi chi phí thực tế vượt xa dự tính vì quên tính vòng lặp sửa lỗi sau mỗi bản cập nhật.",
         en: "Mobile game localization cost is more than the word count. Teams must also account for glossaries, QA, voice, visuals, live-ops updates and revision time — many studios budget per word, then get blindsided when actual costs run far higher because they forgot to account for the fix cycle after every update.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/pr-media-press-conference.jpg",
+        alt: { vi: "Quy trình bản địa hóa và kiểm thử ngôn ngữ LQA trên game mobile", en: "Localization workflow and in-game linguistic QA testing on mobile devices" },
+        caption: { vi: "Kiểm thử LQA trực tiếp trên thiết bị giúp loại bỏ triệt để lỗi tràn khung chữ và sai ngữ cảnh.", en: "On-device LQA testing completely eliminates text overflow and out-of-context errors." },
+      },
       { type: "h2", text: { vi: "Quy trình bốn bước", en: "A four-step workflow" } },
       { type: "ul", items: [
         { vi: "Chuẩn hóa thuật ngữ và giọng thương hiệu trước khi dịch bất kỳ dòng nào", en: "Standardize terminology and brand voice before translating a single line" },
@@ -1725,13 +1767,20 @@ export const posts: Post[] = [
     slug: "creative-strategy-game-mobile-test-hook",
     title: { vi: "Creative strategy game mobile: test hook trước khi scale", en: "Mobile game creative strategy: test hooks before scaling" },
     excerpt: { vi: "Biết một creative thắng ở đâu thường quan trọng hơn biết nó có thắng hay không. Cách tách hook, gameplay và lời hứa để kiểm thử từng phần trước khi sản xuất hàng loạt.", en: "Knowing where a creative wins usually matters more than just knowing that it won. How to separate hook, gameplay and promise to test each piece before scaling production." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-20", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "game",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-20", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "game",
+    cover: "/blog-covers/creative-testing-lab.jpg",
     sources: [{ label: { vi: "TikTok Creative Center", en: "TikTok Creative Center" }, href: "https://ads.tiktok.com/business/creativecenter/" }],
     body: [
       { type: "p", text: {
         vi: "Creative strategy cho game mobile bắt đầu từ giả thuyết về lý do người chơi dừng lại. Thay vì làm một video hoàn chỉnh rồi chờ kết quả, hãy tách hook, cảnh gameplay và lời hứa để kiểm thử nhanh — cách này giúp đội ngũ biết chính xác yếu tố nào đang thắng thay vì đoán mò sau khi cả video đã ra mắt.",
         en: "Mobile game creative strategy starts with a hypothesis about why players stop. Instead of producing one polished video and waiting, isolate the hook, gameplay moment and promise for fast testing — this way the team knows exactly which element is winning instead of guessing after the whole video has already launched.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/livestream-creator-setup.jpg",
+        alt: { vi: "Quy trình thử nghiệm Creative Hook và concept quảng cáo game", en: "Creative hook testing workflow and mobile game ad concept discovery" },
+        caption: { vi: "Thử nghiệm tách biệt giữa Hook, Fantasy và Proof giúp tìm ra công thức quảng cáo thắng bền vững.", en: "Isolating Hook, Fantasy, and Proof unlocks sustainable winning ad formulas." },
+      },
       { type: "h2", text: { vi: "Ba loại hook nên thử", en: "Three hook types to test" } },
       { type: "ul", items: [
         { vi: "Hook fantasy: cho thấy thế giới hoặc vai trò người chơi muốn sở hữu", en: "Fantasy hook: show the world or role players want to own" },
@@ -1749,13 +1798,20 @@ export const posts: Post[] = [
     slug: "game-marketing-b2b-case-study-viet-nam",
     title: { vi: "Case study marketing game Việt Nam: viết để tăng niềm tin", en: "Vietnam game marketing case studies that build buyer trust" },
     excerpt: { vi: "Một case study chỉ liệt kê con số đẹp mà không giải thích lý do phía sau khó thuyết phục khách hàng đang cân nhắc kỹ. Cấu trúc để viết case study đáng tin.", en: "A case study that lists impressive numbers without explaining the reasoning struggles to convince a careful buyer. A structure for writing one that's actually credible." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-20", readingTime: 3, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "strategy",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-20", readingTime: 4, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "strategy",
+    cover: "/blog-covers/brand-strategy-board.jpg",
     sources: [{ label: { vi: "Google — helpful content", en: "Google — helpful content" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" }],
     body: [
       { type: "p", text: {
         vi: "Case study marketing game tại Việt Nam không nên là một bài khoe thành tích. Người đọc cần biết bối cảnh, vấn đề, lựa chọn chiến lược, cách đo và điều gì có thể áp dụng cho sản phẩm tương tự — một case study chỉ liệt kê con số đẹp mà không giải thích lý do phía sau sẽ khó thuyết phục một khách hàng đang cân nhắc kỹ.",
         en: "A Vietnam game marketing case study should not be a trophy post. Readers need the context, problem, strategic choices, measurement and lessons applicable to similar products — a case study that only lists impressive numbers without explaining the reasoning behind them struggles to convince a client who is weighing their options carefully.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/content-editorial-writing.jpg",
+        alt: { vi: "Xây dựng tài liệu chiến lược và báo cáo Case Study marketing game", en: "Developing strategic documentation and credible game marketing case studies" },
+        caption: { vi: "Case study minh bạch với bối cảnh và số liệu rõ ràng tạo dựng niềm tin vững chắc cho đối tác.", en: "Transparent case studies with clear context build lasting credibility with partners." },
+      },
       { type: "h2", text: { vi: "Cấu trúc case study đáng tin", en: "A credible case study structure" } },
       { type: "ul", items: [
         { vi: "Bối cảnh: thị trường, sản phẩm và mục tiêu ban đầu của khách hàng", en: "Context: market, product and the client's original goal" },
@@ -1774,13 +1830,20 @@ export const posts: Post[] = [
     slug: "mobile-game-user-acquisition-vietnam-benchmark",
     title: { vi: "User acquisition game mobile Việt Nam: benchmark cần theo dõi", en: "Mobile game user acquisition in Vietnam: key benchmarks" },
     excerpt: { vi: "So sánh CPI giữa một game hyper-casual và một game RPG nặng gần như vô nghĩa. Cách đọc benchmark UA đúng — theo xu hướng của chính sản phẩm, không theo ngành.", en: "Comparing CPI between a hyper-casual game and a heavy RPG is nearly meaningless. How to read UA benchmarks the right way — by your own trend, not the industry average." },
-    category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "performance",
+    category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "performance",
+    cover: "/blog-covers/analytics-dashboard.jpg",
     sources: [{ label: { vi: "Firebase Analytics", en: "Firebase Analytics" }, href: "https://firebase.google.com/docs/analytics" }],
     body: [
       { type: "p", text: {
         vi: "Không có một benchmark user acquisition đúng cho mọi game. Một game hyper-casual và một game RPG nặng có chi phí và hành vi hoàn toàn khác nhau, nên so sánh chéo giữa hai thể loại gần như vô nghĩa. Điều thật sự đáng theo dõi là xu hướng của chính sản phẩm theo kênh, creative, quốc gia và cohort người chơi — benchmark ngành chỉ nên dùng để biết mình đang ở đâu trong bức tranh lớn, không phải để đặt mục tiêu tuyệt đối.",
         en: "There is no universal user acquisition benchmark. A hyper-casual game and a heavy RPG have completely different cost structures and behavior, so cross-genre comparison is nearly meaningless. What actually matters is your own product's trend by channel, creative, country and player cohort — industry benchmarks are useful only to know roughly where you stand, not as an absolute target.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/growth-analytics-chart.jpg",
+        alt: { vi: "Bảng phân tích chỉ số User Acquisition và điểm hòa vốn LTV/CAC", en: "User acquisition dashboard analyzing cohort LTV and payback period" },
+        caption: { vi: "Theo dõi chỉ số User Acquisition theo từng kênh giúp tối ưu chi phí CPI và nâng cao chất lượng người chơi.", en: "Tracking acquisition metrics by channel optimizes CPI and player lifetime value." },
+      },
       { type: "h2", text: { vi: "Bốn chỉ số nền tảng cần theo dõi song song", en: "Four core metrics to track together" } },
       { type: "ul", items: [
         { vi: "CPI và tỷ lệ cài đặt hợp lệ (loại trừ traffic gian lận hoặc chất lượng thấp)", en: "CPI and qualified install rate (excluding fraudulent or low-quality traffic)" },
@@ -1799,13 +1862,20 @@ export const posts: Post[] = [
     slug: "aso-game-mobile-title-description-screenshot",
     title: { vi: "ASO game mobile: tối ưu title, mô tả và screenshot", en: "Mobile game ASO: optimize title, description and screenshots" },
     excerpt: { vi: "Trang store thường được xem như một khâu kỹ thuật cần hoàn thành, dù thực chất đó là lời giới thiệu đầu tiên của game với người chơi. Vài điều đáng cân nhắc khi tối ưu title, mô tả và screenshot.", en: "A store page often gets treated as a technical checkbox, when it's really a game's first introduction to its players. A few things worth considering when optimizing title, description and screenshots." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
+    cover: "/blog-covers/app-store-conversion-funnel.jpg",
     sources: [{ label: { vi: "Google Play Console", en: "Google Play Console" }, href: "https://support.google.com/googleplay/android-developer/answer/9859152" }],
     body: [
       { type: "p", text: {
         vi: "ASO game mobile không phải nhồi từ khóa vào title cho đến khi đọc lên không còn giống tiếng người. Title, mô tả và screenshot phải cùng truyền một lời hứa rõ ràng, đúng với trải nghiệm sau khi cài — vì trang store là hợp đồng đầu tiên giữa game và người chơi, và bất kỳ khoảng cách nào giữa lời hứa và trải nghiệm thật đều trả giá bằng uninstall sớm và review một sao.",
         en: "Mobile game ASO is not stuffing keywords into a title until it no longer reads like language a person would use. Title, description and screenshots should communicate one clear promise that matches the post-install experience — the store page is the first contract between game and player, and any gap between promise and reality gets paid back in early uninstalls and one-star reviews.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/aso-store-optimization.jpg",
+        alt: { vi: "Tối ưu hóa hình ảnh Title, Icon và Screenshots trên trang App Store", en: "Optimizing Title, Icon, and Screenshot assets on App Store listings" },
+        caption: { vi: "Thiết kế bộ screenshots truyền tải đúng gameplay chính giúp nâng cao tỷ lệ chuyển đổi cài đặt.", en: "Screenshot sets highlighting core gameplay mechanics significantly improve store conversion." },
+      },
       { type: "h2", text: { vi: "Ưu tiên thứ tự đọc, vì không ai đọc hết", en: "Prioritize the reading order, because nobody reads it all" } },
       { type: "ul", items: [
         { vi: "Title nói rõ thể loại và điểm khác biệt trong vài từ đầu tiên", en: "Title states genre and differentiation within the first few words" },
@@ -1823,13 +1893,20 @@ export const posts: Post[] = [
     slug: "game-mobile-retention-push-notification",
     title: { vi: "Tăng retention game mobile bằng push notification đúng cách", en: "Improve mobile game retention with better push notifications" },
     excerpt: { vi: "Một khi người chơi tắt thông báo, gần như không có cách nào lấy lại kênh đó. Cách dùng push notification như một tài nguyên hữu hạn, không phải công cụ dùng thoải mái.", en: "Once a player disables notifications, there's almost no way to win that channel back. How to treat push as a finite resource, not a tool to reach for anytime." },
-    category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "social",
+    category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "social",
+    cover: "/blog-covers/onboarding-activation.jpg",
     sources: [{ label: { vi: "Firebase Cloud Messaging", en: "Firebase Cloud Messaging" }, href: "https://firebase.google.com/docs/cloud-messaging" }],
     body: [
       { type: "p", text: {
         vi: "Push notification chỉ giúp retention khi nhắc người chơi về một giá trị thật: phần thưởng, event, bạn bè hoặc tiến độ đang dang dở. Gửi quá nhiều sẽ làm giảm niềm tin và tăng opt-out — và một khi người chơi đã tắt thông báo, gần như không có cách nào lấy lại kênh đó. Đây là lý do push notification nên được coi là tài nguyên hữu hạn, không phải công cụ dùng thoải mái mỗi khi cần tăng số liệu ngắn hạn.",
         en: "Push notifications improve retention only when they remind players of real value: rewards, events, friends or unfinished progress. Over-messaging reduces trust and increases opt-outs — and once a player disables notifications, there's almost no way to win that channel back. That's why push should be treated as a finite resource, not a tool to reach for whenever a short-term metric needs a boost.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/game-liveops-monitoring.jpg",
+        alt: { vi: "Chiến lược gửi Push Notification theo từng phân khúc người chơi", en: "Segmented push notification strategy for player retention" },
+        caption: { vi: "Gửi thông báo cá nhân hóa theo tiến độ chơi giúp gia tăng tỷ lệ quay lại game tự nhiên.", en: "Personalized notifications based on player progress drive higher organic return rates." },
+      },
       { type: "h2", text: { vi: "Phân nhóm trước khi gửi, không gửi hàng loạt", en: "Segment before sending, never broadcast to everyone" } },
       { type: "ul", items: [
         { vi: "Người mới chưa hoàn thành onboarding — cần nhắc nhẹ, không cần khuyến mãi", en: "New players who haven't completed onboarding — need a gentle nudge, not a promotion" },
@@ -1847,13 +1924,20 @@ export const posts: Post[] = [
     slug: "game-mobile-influencer-brief-mau",
     title: { vi: "Brief influencer game mobile: giúp creator nói tự nhiên", en: "Mobile game influencer briefs that sound authentic" },
     excerpt: { vi: "Một brief quá chi tiết khiến video nghe như quảng cáo đọc kịch bản — và khán giả của creator nhận ra ngay. Cách viết brief đủ rõ mà vẫn giữ được giọng riêng của họ.", en: "An overly detailed brief makes a video sound like a read-aloud ad — and the creator's audience notices immediately. How to brief clearly while keeping their voice intact." },
-    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "influencer",
+    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "influencer",
+    cover: "/blog-covers/livestream-creator-setup.jpg",
     sources: [{ label: { vi: "TikTok Creator Marketplace", en: "TikTok Creator Marketplace" }, href: "https://creatormarketplace.tiktok.com/" }],
     body: [
       { type: "p", text: {
         vi: "Influencer marketing game mobile hiệu quả khi creator hiểu điều cần truyền đạt nhưng không bị buộc đọc một kịch bản cứng. Một brief quá chi tiết khiến video nghe như quảng cáo đọc kịch bản — khán giả của creator nhận ra ngay và phản ứng ngược lại với cả creator lẫn thương hiệu. Brief tốt nên mô tả audience, proof point, điều không được nói và cách disclosure, rồi để phần còn lại cho giọng riêng của creator.",
         en: "Mobile game influencer marketing works when creators understand the message without being forced to read a rigid script. An overly detailed brief makes the video sound like a read-aloud ad — the creator's audience notices immediately and reacts against both the creator and the brand. A good brief defines the audience, proof point, guardrails and disclosure, then leaves the rest to the creator's own voice.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/influencer-measurement.jpg",
+        alt: { vi: "Tổ chức chiến dịch hợp tác Creator và đo lường chuyển đổi thực tế", en: "Creator partnership campaign operations and performance tracking" },
+        caption: { vi: "Bản brief rõ ràng về thông điệp và điều cấm giúp Creator tự do sáng tạo nội dung gần gũi với người xem.", en: "A concise brief with clear guardrails enables creators to produce authentic, high-converting content." },
+      },
       { type: "h2", text: { vi: "Brief gồm năm phần", en: "Five parts of a brief" } },
       { type: "ul", items: [
         { vi: "Mục tiêu và nhóm người xem cụ thể, không chỉ \"tăng nhận diện\"", en: "A specific goal and audience, not just \"raise awareness\"" },
