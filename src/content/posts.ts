@@ -1957,13 +1957,20 @@ export const posts: Post[] = [
     slug: "monetization-game-mobile-arppu-arpu",
     title: { vi: "ARPU và ARPPU game mobile: đọc doanh thu đúng cách", en: "Mobile game ARPU and ARPPU: reading revenue correctly" },
     excerpt: { vi: "ARPU và ARPPU kể hai câu chuyện khác nhau về doanh thu, và nhầm lẫn giữa hai chỉ số này dễ dẫn đến những kết luận vội vàng. Cách đọc chúng cùng nhau để hiểu đúng bức tranh monetization.", en: "ARPU and ARPPU tell two different stories about revenue, and mixing them up leads to conclusions drawn too quickly. How to read them together for a clearer view of monetization." },
-    category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "performance",
+    category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "performance",
+    cover: "/blog-covers/in-app-purchase-mobile.jpg",
     sources: [{ label: { vi: "Unity — game analytics", en: "Unity — game analytics" }, href: "https://unity.com/solutions/gaming-services" }],
     body: [
       { type: "p", text: {
         vi: "ARPU là doanh thu trung bình trên toàn bộ người chơi, còn ARPPU chỉ tính nhóm đã trả tiền. Đọc cùng payer conversion, retention và cohort sẽ giúp tránh kết luận sai về monetization — một mình ARPU tăng có thể chỉ vì mất bớt người chơi không trả tiền, chứ không phải vì game đang kiếm tiền tốt hơn.",
         en: "ARPU is average revenue per player while ARPPU covers paying players only. Read both alongside payer conversion, retention and cohort data to avoid false conclusions about monetization — ARPU rising on its own can simply mean losing non-paying players, not that the game is monetizing better.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/growth-analytics-chart.jpg",
+        alt: { vi: "Phân tích xu hướng ARPU và ARPPU theo từng cohort người chơi nạp", en: "Analyzing ARPU and ARPPU trends across paying player cohorts" },
+        caption: { vi: "Đọc ARPU song song với tỷ lệ chuyển đổi nạp tiền giúp tránh sai lầm khi định giá gói vật phẩm.", en: "Reviewing ARPU alongside payer conversion prevents costly monetization misjudgments." },
+      },
       { type: "h2", text: { vi: "Ba cách phân tích", en: "Three ways to analyze" } },
       { type: "ul", items: [
         { vi: "So sánh theo cohort ngày cài để loại trừ nhiễu từ các đợt UA khác nhau", en: "Compare by install cohort to remove noise from different UA waves" },
@@ -2039,13 +2046,20 @@ export const posts: Post[] = [
     slug: "marketing-game-mobile-mua-tet-viet-nam",
     title: { vi: "Marketing game mobile mùa Tết: nội dung và event đúng văn hóa", en: "Tet marketing for mobile games: culturally relevant content" },
     excerpt: { vi: "Tết là một trong số ít dịp trong năm mà thời gian rảnh và mức sẵn sàng chi tiêu của người chơi Việt cùng tăng. Bỏ lỡ cửa sổ này nghĩa là chờ thêm một năm.", en: "Tet is one of the rare windows when Vietnamese players' free time and spending willingness rise together. Miss it and you wait another year." },
-    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "branding",
+    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "branding",
+    cover: "/blog-covers/community-launch.jpg",
     sources: [{ label: { vi: "Google — helpful content", en: "Google — helpful content" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" }],
     body: [
       { type: "p", text: {
         vi: "Marketing game mobile mùa Tết không chỉ là thay màu đỏ và thêm lời chúc. Đội ngũ cần hiểu lịch nghỉ, thói quen online, ngôn ngữ và những moment khiến người chơi muốn chia sẻ cùng bạn bè — vì Tết là một trong số ít dịp trong năm mà thời gian rảnh và tâm lý sẵn sàng chi tiêu của người chơi Việt Nam cùng tăng đồng thời. Bỏ lỡ cửa sổ này nghĩa là chờ thêm một năm.",
         en: "Tet marketing for mobile games is more than red colors and greetings. Teams should understand holiday schedules, online habits, language and moments players want to share — Tet is one of the rare windows in the year when Vietnamese players' free time and willingness to spend rise together. Missing this window means waiting another year.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/ugc-creator-community.jpg",
+        alt: { vi: "Kích hoạt chuỗi sự kiện Tết và nội dung tương tác cộng đồng game thủ", en: "Activating Tet holiday campaign events and community engagement" },
+        caption: { vi: "Sự kiện Tết thành công cần kết hợp giữa câu chuyện văn hóa, quà tặng may mắn và hoạt động bang hội.", en: "Successful Tet events integrate cultural narratives, seasonal rewards, and guild activations." },
+      },
       { type: "h2", text: { vi: "Ba lớp nội dung cần đi cùng nhau", en: "Three content layers that need to move together" } },
       { type: "ul", items: [
         { vi: "Brand: lời chúc và câu chuyện phù hợp văn hóa, không phải bản dịch nguyên xi từ chiến dịch quốc tế", en: "Brand: culturally relevant greetings and stories, not a straight translation of an international campaign" },
@@ -2063,13 +2077,20 @@ export const posts: Post[] = [
     slug: "seo-game-marketing-viet-nam-internal-link",
     title: { vi: "Internal link website game: xây topic cluster cho SEO", en: "Internal linking for game websites: building SEO topic clusters" },
     excerpt: { vi: "Hàng chục bài viết tốt nhưng không link đến nhau khiến mỗi bài phải tự gánh toàn bộ sức mạnh SEO của mình. Cách xây internal link để cả cụm bài cùng hỗ trợ nhau.", en: "Dozens of good posts that never link to each other force each one to carry its SEO weight alone. How to build internal links so the whole cluster supports itself." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
+    cover: "/blog-covers/game-seo-cluster.jpg",
     sources: [{ label: { vi: "Google Search Central — SEO Starter Guide", en: "Google Search Central — SEO Starter Guide" }, href: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" }],
     body: [
       { type: "p", text: {
         vi: "Website game có thể tăng độ phủ tìm kiếm bằng cách liên kết bài viết theo hành trình: thị trường, chiến lược, triển khai, đo lường và case study. Mỗi link cần giúp người đọc trả lời câu hỏi tiếp theo, chứ không chỉ nhét thêm một đường link cho có. Nhiều website game có hàng chục bài viết tốt nhưng chúng nằm cô lập, không link đến nhau — kết quả là mỗi bài phải tự gánh toàn bộ sức mạnh SEO của mình thay vì được cả cụm bài hỗ trợ.",
         en: "A game website can grow search visibility by linking content along the journey: market, strategy, execution, measurement and case studies. Each link should answer the reader's next question, not just be inserted for the sake of having a link. Many game websites have dozens of solid posts that sit isolated, never linking to each other — the result is that each post has to carry its entire SEO weight alone instead of being supported by a whole content cluster.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/seo-strategy.jpg",
+        alt: { vi: "Cấu trúc Topic Cluster và hệ thống Internal Link tối ưu SEO cho website game", en: "Topic cluster architecture and internal linking structure for game SEO" },
+        caption: { vi: "Liên kết nội bộ có chủ đích giúp Googlebot thu thập dữ liệu nhanh và đẩy mạnh sức mạnh cụm bài viết.", en: "Intentional internal links accelerate crawl efficiency and amplify topic cluster authority." },
+      },
       { type: "h2", text: { vi: "Nguyên tắc liên kết", en: "Linking principles" } },
       { type: "ul", items: [
         { vi: "Dẫn từ bài rộng (pillar) đến bài chuyên sâu (cluster) và ngược lại", en: "Link from broad pillar pages to deep cluster pages and back" },
@@ -2087,13 +2108,20 @@ export const posts: Post[] = [
     slug: "ab-test-store-listing-game-mobile",
     title: { vi: "A/B test store listing game mobile: nên thử gì?", en: "Mobile game store listing A/B tests: what to test" },
     excerpt: { vi: "Thay nhiều biến cùng lúc có thể cho kết quả tốt hơn — nhưng bạn sẽ không bao giờ biết chính xác điều gì tạo ra sự khác biệt đó. Cách chạy A/B test store listing đúng cách.", en: "Changing several variables at once might win — but you'll never know exactly what caused it. How to run store listing A/B tests the right way." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
+    cover: "/blog-covers/store-conversion.jpg",
     sources: [{ label: { vi: "Google Play store listing experiments", en: "Google Play store listing experiments" }, href: "https://support.google.com/googleplay/android-developer/answer/6227309" }],
     body: [
       { type: "p", text: {
         vi: "A/B test store listing game mobile giúp trả lời câu hỏi cụ thể: người chơi phản ứng với fantasy nào, screenshot nào truyền tải gameplay tốt hơn và lời hứa nào tạo conversion. Mỗi lần nên thay một biến chính — thay nhiều biến cùng lúc có thể cho kết quả tốt hơn, nhưng đội ngũ sẽ không bao giờ biết chính xác điều gì đã tạo ra sự khác biệt đó để lặp lại ở lần sau.",
         en: "Mobile game store listing experiments answer specific questions: which fantasy, screenshot or promise improves conversion. Change one primary variable at a time — changing several at once might produce a better result, but the team will never know exactly what caused it, and can't repeat it deliberately next time.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/app-store-conversion-funnel.jpg",
+        alt: { vi: "Quy trình thử nghiệm A/B Icon và Screenshots trên trang App Store & Google Play", en: "A/B testing workflow for icons and screenshot assets on Google Play & App Store" },
+        caption: { vi: "Chỉ thay đổi một biến số duy nhất trong mỗi lần thử nghiệm để xác định chính xác nguyên nhân tăng tỷ lệ cài đặt.", en: "Testing one variable at a time ensures clear attribution for conversion rate lifts." },
+      },
       { type: "h2", text: { vi: "Ưu tiên biến có tác động lớn", en: "Prioritize high-impact variables" } },
       { type: "ul", items: [
         { vi: "Icon và frame đầu tiên của video — thứ đầu tiên người dùng nhìn thấy trước khi quyết định lướt tiếp hay dừng lại", en: "Icon and the first video frame — the first thing a user sees before deciding to scroll past or stop" },
@@ -2111,13 +2139,20 @@ export const posts: Post[] = [
     slug: "game-marketing-localization-vietnam-keyword",
     title: { vi: "Marketing game tại Việt Nam: bản địa hóa keyword và thông điệp", en: "Game marketing in Vietnam: localizing keywords and messaging" },
     excerpt: { vi: "Cộng đồng game Việt tự sáng tạo thuật ngữ riêng, pha trộn tiếng Anh và tiếng Việt theo cách không công cụ nghiên cứu từ khóa nào đoán được. Cách tìm đúng từ khóa người chơi thật sự gõ.", en: "Vietnamese gaming communities coin their own slang, blending English and Vietnamese in ways no keyword tool predicts. How to find the terms players actually type." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-22", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-22", readingTime: 4, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
+    cover: "/blog-covers/localization-translation-team.jpg",
     sources: [{ label: { vi: "Google Search Central — nội dung hữu ích", en: "Google Search Central — helpful content" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" }],
     body: [
       { type: "p", text: {
         vi: "Keyword tiếng Anh dịch sang tiếng Việt chưa chắc là keyword người chơi sử dụng. Marketing game tại Việt Nam cần nghiên cứu cách cộng đồng gọi thể loại, tính năng, nhân vật và lợi ích của game trong ngữ cảnh thật — cộng đồng game Việt thường tự sáng tạo ra thuật ngữ riêng, pha trộn tiếng Anh và tiếng Việt theo cách không có công cụ nghiên cứu từ khóa nào đoán trước được.",
         en: "An English keyword translated into Vietnamese may not be how players actually search. Vietnam game marketing should study how communities describe genres, features, characters and benefits in real context — Vietnamese gaming communities often coin their own terms, blending English and Vietnamese in ways no keyword tool can predict in advance.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/brand-strategy-board.jpg",
+        alt: { vi: "Nghiên cứu từ khóa bản địa hóa và thuật ngữ cộng đồng game thủ Việt", en: "Keyword localization research and Vietnamese gaming community terminology" },
+        caption: { vi: "Sử dụng đúng tiếng lóng và thói quen tìm kiếm của game thủ Việt giúp tăng tỷ lệ chuyển đổi tự nhiên.", en: "Aligning metadata with authentic gamer slang significantly boosts organic store search volume." },
+      },
       { type: "h2", text: { vi: "Tìm keyword từ ngôn ngữ cộng đồng", en: "Find keywords from community language" } },
       { type: "ul", items: [
         { vi: "Đọc bình luận, group và video review để thấy cách người chơi thật sự gọi tên mọi thứ", en: "Read comments, groups and review videos to see how players actually name things" },
@@ -2135,13 +2170,20 @@ export const posts: Post[] = [
     slug: "game-mobile-user-acquisition-creative-fatigue",
     title: { vi: "Creative fatigue trong quảng cáo game mobile: dấu hiệu và cách xử lý", en: "Mobile game creative fatigue: signs and ways to respond" },
     excerpt: { vi: "Phản ứng sai lầm phổ biến nhất khi creative mệt mỏi là đổ lỗi cho kênh quảng cáo rồi rút ngân sách. Ba dấu hiệu nhận biết fatigue trước khi mắc sai lầm đó.", en: "The most common wrong reaction to creative fatigue is blaming the ad channel and pulling budget. Three signs to catch fatigue before making that mistake." },
-    category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-22", readingTime: 3, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-22", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    cover: "/blog-covers/creative-testing-lab.jpg",
     sources: [{ label: { vi: "Meta — creative diversification", en: "Meta — creative diversification" }, href: "https://www.facebook.com/business/m/creative-diversification" }],
     body: [
       { type: "p", text: {
         vi: "Creative fatigue xuất hiện khi cùng một góc nhìn đã bị người dùng thấy quá nhiều. Chỉ số xấu dần không nhất thiết nghĩa là game hoặc kênh quảng cáo có vấn đề; có thể đội ngũ đang thiếu vòng lặp creative mới — và phản ứng sai lầm phổ biến nhất là đổ lỗi cho kênh hoặc sản phẩm rồi rút ngân sách, trong khi giải pháp thực ra chỉ là làm mới creative.",
         en: "Creative fatigue appears when audiences see the same angle too often. Worsening metrics don't necessarily mean the game or channel is broken; the team may simply lack a fresh creative pipeline — the most common wrong reaction is to blame the channel or product and pull budget, when the real fix is just refreshing creative.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/performance-ad-campaigns.jpg",
+        alt: { vi: "Theo dõi chỉ số tần suất hiển thị (Frequency) và tỷ lệ CTR để phát hiện Creative Fatigue", en: "Monitoring ad frequency and CTR metrics to detect creative fatigue" },
+        caption: { vi: "Làm mới góc tiếp cận (Angle) và bối cảnh gameplay thay vì chỉ đổi màu sắc khi phát hiện dấu hiệu fatigue.", en: "Refreshing creative angles and narrative hooks restores campaign efficiency faster than cosmetic tweaks." },
+      },
       { type: "h2", text: { vi: "Ba dấu hiệu cần theo dõi", en: "Three signs to watch" } },
       { type: "ul", items: [
         { vi: "CTR giảm trong khi frequency tăng — dấu hiệu rõ nhất của fatigue", en: "CTR falls as frequency rises — the clearest sign of fatigue" },
@@ -2159,13 +2201,20 @@ export const posts: Post[] = [
     slug: "game-community-moderation-vietnam",
     title: { vi: "Moderation cộng đồng game: xây quy tắc an toàn cho người chơi Việt", en: "Game community moderation: building a safer space for Vietnamese players" },
     excerpt: { vi: "Một cộng đồng game phát triển nhanh mang lại niềm vui, nhưng cũng kéo theo rủi ro moderation mà nhiều đội ngũ chỉ nhận ra khi đã muộn. Cách chuẩn bị policy trước khi mọi thứ tăng tốc.", en: "A fast-growing game community is exciting, but it carries moderation risks many teams only notice once it's too late. How to prepare a policy before things accelerate." },
-    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-22", readingTime: 3, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
+    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-22", readingTime: 4, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
+    cover: "/blog-covers/discord-community.jpg",
     sources: [{ label: { vi: "Discord — Community Guidelines", en: "Discord — Community Guidelines" }, href: "https://discord.com/guidelines" }],
     body: [
       { type: "p", text: {
         vi: "Cộng đồng game Việt có thể tăng rất nhanh sau một event hoặc creator campaign — có khi vài nghìn thành viên mới trong một đêm. Nếu quy tắc, vai trò và quy trình xử lý chưa rõ trước khi làn sóng đó ập đến, spam và xung đột sẽ làm người chơi tốt rời đi trước khi đội ngũ kịp phản ứng. Moderation không phải việc dọn dẹp sau khi có vấn đề; nó phải được thiết kế trước khi cộng đồng lớn lên.",
         en: "A Vietnamese game community can grow very fast after an event or creator campaign — sometimes thousands of new members overnight. Without clear rules, roles and escalation already in place before that wave hits, spam and conflict drive good players away before the team can react. Moderation isn't cleanup after a problem appears; it needs to be designed before the community grows.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/community-meetup-collab.jpg",
+        alt: { vi: "Xây dựng môi trường thảo luận an toàn và quy tắc ứng xử cho cộng đồng game thủ", en: "Building safe discussion spaces and moderation code of conduct for gaming communities" },
+        caption: { vi: "Quy chuẩn kiểm duyệt rõ ràng và đội ngũ Mod nhiệt huyết giúp bảo vệ văn hóa cộng đồng lành mạnh.", en: "Transparent moderation guidelines and dedicated community managers protect healthy player culture." },
+      },
       { type: "h2", text: { vi: "Một policy moderation cần có", en: "What a moderation policy needs" } },
       { type: "ul", items: [
         { vi: "Hành vi được phép và không được phép, viết rõ ràng và công khai, không chỉ tồn tại trong đầu admin", en: "Allowed and prohibited behavior, written clearly and public, not just in the admin's head" },
@@ -2184,13 +2233,20 @@ export const posts: Post[] = [
     slug: "ai-search-seo-game-marketing",
     title: { vi: "AI search và SEO game marketing: làm sao để được trích dẫn?", en: "AI search and game marketing SEO: how to become a cited source" },
     excerpt: { vi: "Hệ thống AI có xu hướng trích dẫn nội dung trả lời thẳng câu hỏi hơn là mở đầu bằng một đoạn giới thiệu dài dòng. Cách viết để website game được chọn làm nguồn.", en: "AI systems tend to cite content that answers a question directly, not one that opens with a long preamble. How to write so your game website gets picked as the source." },
-    category: { vi: "SEO", en: "SEO" }, date: "2026-08-22", readingTime: 3, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
+    category: { vi: "SEO", en: "SEO" }, date: "2026-08-22", readingTime: 4, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
+    cover: "/blog-covers/analytics-dashboard.jpg",
     sources: [{ label: { vi: "Google Search Central — AI features", en: "Google Search Central — AI features" }, href: "https://developers.google.com/search/docs/appearance/ai-features" }],
     body: [
       { type: "p", text: {
         vi: "AI search không thay thế SEO nền tảng. Nó làm rõ hơn yêu cầu về nguồn, cấu trúc và tính hữu ích. Bài viết marketing game nên trả lời câu hỏi cụ thể, nêu bối cảnh Việt Nam và cho người đọc biết dữ liệu đến từ đâu — hệ thống AI có xu hướng ưu tiên trích dẫn nội dung trả lời thẳng vào câu hỏi hơn là nội dung mở đầu bằng một đoạn giới thiệu dài dòng.",
         en: "AI search does not replace foundational SEO. It raises the bar for sourcing, structure and usefulness. Game marketing content should answer specific questions, add Vietnam context and show where evidence comes from — AI systems tend to favor citing content that answers a question directly over content that opens with a long preamble.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/content-editorial-writing.jpg",
+        alt: { vi: "Tối ưu hóa cấu trúc nội dung và thẩm quyền E-E-A-T cho AI Search Engine", en: "Optimizing content structure and E-E-A-T authority for AI Search citation" },
+        caption: { vi: "Cung cấp câu trả lời trực diện kèm dữ liệu kiểm chứng giúp bài viết dễ dàng được các mô hình AI trích dẫn.", en: "Direct answers backed by verifiable data maximize citations in generative AI search engines." },
+      },
       { type: "h2", text: { vi: "Tăng khả năng được chọn trích dẫn", en: "Improve selection chances" } },
       { type: "ul", items: [
         { vi: "Dùng heading như câu hỏi người dùng thật sẽ gõ vào ô tìm kiếm", en: "Use headings that mirror real questions users would type" },
@@ -2208,10 +2264,17 @@ export const posts: Post[] = [
     slug: "game-launch-marketing-thailand",
     title: { vi: "Ra mắt game mobile tại Thái Lan: playbook marketing thực tế", en: "How to Launch a Mobile Game in Thailand: A Marketing Playbook" },
     excerpt: { vi: "Ra mắt game tại Thái Lan không phải là thay chữ Việt Nam bằng chữ Thái trong một media plan. Playbook thực tế cho nền tảng, creator và nhịp cộng đồng riêng của thị trường này.", en: "Launching a game in Thailand isn't swapping Vietnam for Thailand in a media plan. A real playbook for this market's own platforms, creators and community rhythm." },
-    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-23", readingTime: 3, author: "ANBU Team", color: "from-blue-950 to-orange-600", variant: "game",
+    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-23", readingTime: 4, author: "ANBU Team", color: "from-blue-950 to-orange-600", variant: "game",
+    cover: "/blog-covers/launch-checklist.jpg",
     sources: [{ label: { vi: "Google Play — store listing experiments", en: "Google Play — store listing experiments" }, href: "https://support.google.com/googleplay/android-developer/answer/6223646" }],
     body: [
       { type: "p", text: { vi: "Ra mắt game mobile tại Thái Lan không phải là thay chữ Việt Nam bằng chữ Thái trong một media plan. Đội ngũ cần hiểu cách người chơi Thái tìm game, creator nào có uy tín trong đúng thể loại, kênh nào tạo thảo luận và đối tác nào có thể hỗ trợ vận hành sau ngày launch.", en: "Launching a mobile game in Thailand is not a matter of replacing Vietnam with Thai in a media plan. Teams need to understand how Thai players search, which creators are trusted in the genre, which channels create conversation and which partners can support operations after launch." } },
+      {
+        type: "image",
+        src: "/blog-covers/pr-media-press-conference.jpg",
+        alt: { vi: "Lộ trình ra mắt game mobile và hợp tác Creator tại thị trường Thái Lan", en: "Mobile game launch roadmap and creator collaborations in the Thai market" },
+        caption: { vi: "Thấu hiểu văn hóa tiêu dùng và kênh truyền thông bản địa là chìa khóa mở rộng thành công tại Thái Lan.", en: "Local cultural alignment and tailored creator partnerships drive sustainable growth in Thailand." },
+      },
       { type: "h2", text: { vi: "Bắt đầu bằng bản đồ thị trường", en: "Start with a market map" } },
       { type: "p", text: { vi: "Trước khi mua media, hãy phân nhóm người chơi theo thể loại, thiết bị, mức chi tiêu và cộng đồng họ tham gia. Facebook, YouTube, TikTok, livestream và các cộng đồng game có vai trò khác nhau; không nên mặc định một format thắng ở Việt Nam sẽ thắng ở Thái Lan.", en: "Before buying media, segment players by genre, device, spending profile and communities. Facebook, YouTube, TikTok, livestreams and gaming communities play different roles; never assume a format that wins in Vietnam will win in Thailand." } },
       { type: "h2", text: { vi: "Creator và nội dung bản địa", en: "Creators and local content" } },
@@ -2226,13 +2289,20 @@ export const posts: Post[] = [
     slug: "app-review-management-game-vietnam",
     title: { vi: "Quản lý review app game tại Việt Nam: biến phản hồi thành tăng trưởng", en: "Managing mobile game app reviews in Vietnam for growth" },
     excerpt: { vi: "Một review một sao về lỗi crash quan trọng hơn nhiều một review một sao vì thua trận — dù cả hai kéo rating trung bình xuống như nhau. Cách quản lý review để sửa đúng vấn đề.", en: "A one-star review about a crash matters far more than one from a player who just lost a match — even though both hurt the average equally. How to manage reviews and fix the right problem." },
-    category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-22", readingTime: 3, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "game",
+    category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-22", readingTime: 4, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "game",
+    cover: "/blog-covers/onboarding-activation.jpg",
     sources: [{ label: { vi: "Google Play — ratings and reviews", en: "Google Play — ratings and reviews" }, href: "https://support.google.com/googleplay/android-developer/answer/138230" }],
     body: [
       { type: "p", text: {
         vi: "Review app game tại Việt Nam thường phản ánh cả lỗi sản phẩm, kỳ vọng chưa đúng và cách đội ngũ hỗ trợ người chơi. Đừng chỉ nhìn điểm sao; hãy phân loại chủ đề và phản hồi theo mức độ ảnh hưởng — một review một sao về lỗi crash quan trọng hơn nhiều review một sao vì người chơi thua trận, dù cả hai đều kéo rating trung bình xuống như nhau.",
         en: "Vietnamese mobile game reviews reflect product issues, mismatched expectations and support quality. Don't look only at star ratings; classify themes and respond by impact — a one-star review about a crash matters far more than a one-star review from a player who simply lost a match, even though both drag the average rating down equally.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/game-liveops-monitoring.jpg",
+        alt: { vi: "Theo dõi và phân loại đánh giá người dùng trên kho ứng dụng để cải thiện sản phẩm", en: "Monitoring and categorizing store reviews to drive product quality improvements" },
+        caption: { vi: "Phản hồi tận tâm và xử lý nhanh các sự cố kỹ thuật giúp biến đánh giá 1 sao thành người chơi trung thành.", en: "Empathetic, swift technical issue resolution turns critical reviews into loyal community advocates." },
+      },
       { type: "h2", text: { vi: "Quy trình bốn bước", en: "A four-step process" } },
       { type: "ul", items: [
         { vi: "Gom review theo lỗi, thanh toán, gameplay và support để thấy pattern thay vì từng review đơn lẻ", en: "Group reviews by bugs, payments, gameplay and support to spot patterns rather than one-off comments" },
@@ -2251,12 +2321,19 @@ export const posts: Post[] = [
     slug: "micro-influencer-game-campaign-vietnam",
     title: { vi: "Micro influencer cho game tại Việt Nam: cách chọn và đo hiệu quả", en: "Micro influencers for games in Vietnam: selection and measurement" },
     excerpt: { vi: "Với ngân sách hạn chế, mười micro creator phù hợp thường hiệu quả hơn một creator lớn không thật sự hiểu game. Cách chọn và đo lường đúng nhóm creator này.", en: "On a limited budget, ten well-matched micro creators often outperform one big creator who doesn't understand the game. How to choose and measure them right." },
-    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-23", readingTime: 3, author: "ANBU Team", color: "from-orange-700 to-navy-900", variant: "social",
+    category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-23", readingTime: 4, author: "ANBU Team", color: "from-orange-700 to-navy-900", variant: "social",
+    cover: "/blog-covers/creator-program.jpg",
     body: [
       { type: "p", text: {
         vi: "Một micro influencer game tại Việt Nam không chỉ là một vị trí đặt quảng cáo. Creator hiểu cộng đồng, biết ngôn ngữ của thể loại và có thể biến tính năng thành câu chuyện dễ tin. Vì vậy, chiến dịch nên đánh giá chất lượng tương tác và mức độ phù hợp trước khi so follower — với ngân sách hạn chế, mười micro creator phù hợp thường tạo hiệu quả tốt hơn một creator lớn không thật sự hiểu game.",
         en: "A gaming micro influencer in Vietnam is more than an ad placement. The creator understands the community, speaks the genre's language and can turn a feature into a credible story. Evaluate engagement quality and fit before comparing follower counts — on a limited budget, ten well-matched micro creators often outperform one large creator who doesn't genuinely understand the game.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/influencer-measurement.jpg",
+        alt: { vi: "Lựa chọn và đo lường hiệu quả chiến dịch Micro Influencer cho game mobile", en: "Selecting and attributing micro-influencer campaigns for mobile games" },
+        caption: { vi: "Tập trung vào độ gắn kết cộng đồng và sự thấu hiểu thể loại game mang lại tỷ lệ cài đặt vượt trội.", en: "Prioritizing authentic genre enthusiasm and community trust drives superior post-install activation." },
+      },
       { type: "h2", text: { vi: "Chọn creator theo ba lớp phù hợp", en: "Select creators across three fit layers" } },
       { type: "ul", items: [
         { vi: "Genre fit: creator có chơi và hiểu đúng thể loại, không chỉ đọc kịch bản đã soạn sẵn", en: "Genre fit: the creator genuinely plays and understands the genre, not just reading a prepared script" },
@@ -2274,12 +2351,19 @@ export const posts: Post[] = [
     slug: "aso-localization-vietnam-mobile-game",
     title: { vi: "ASO bản địa hóa cho game mobile Việt Nam: tối ưu từ khóa", en: "Vietnam mobile game ASO: localization beyond translation" },
     excerpt: { vi: "Metadata đúng với tài liệu quốc tế nhưng sai với cách người chơi Việt tìm kiếm sẽ không bao giờ chuyển thành lượt cài chất lượng. Cách bản địa hóa ASO thật sự, không chỉ dịch.", en: "Metadata that matches an international doc but not how Vietnamese players actually search will never convert into quality installs. How to truly localize ASO, not just translate it." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-23", readingTime: 3, author: "ANBU Team", color: "from-teal-800 to-blue-900", variant: "seo",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-23", readingTime: 4, author: "ANBU Team", color: "from-teal-800 to-blue-900", variant: "seo",
+    cover: "/blog-covers/aso-store-optimization.jpg",
     body: [
       { type: "p", text: {
         vi: "ASO bản địa hóa cho game mobile Việt Nam bắt đầu từ nghiên cứu ngôn ngữ người chơi. Cùng một tính năng có thể được gọi bằng tiếng Anh, tiếng Việt hoặc tiếng lóng cộng đồng. Nếu metadata dùng từ đúng với tài liệu quốc tế nhưng sai với cách người chơi tìm, traffic sẽ không chuyển thành lượt cài chất lượng — đây là lỗi rất phổ biến ở các studio quốc tế chỉ dịch nguyên bộ keyword gốc sang tiếng Việt.",
         en: "Localized ASO for a Vietnam mobile game starts with player language research. The same feature may be described in English, Vietnamese or community slang. Metadata that matches an international document but not real search behavior won't convert into quality installs — this is a very common mistake among international studios that simply translate their original keyword set into Vietnamese.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/store-conversion.jpg",
+        alt: { vi: "Tối ưu hóa toàn diện Store Listing chuẩn văn hóa và thói quen tìm kiếm của game thủ Việt", en: "Comprehensive store listing localization tailored to Vietnamese gaming habits" },
+        caption: { vi: "Bản địa hóa hình ảnh và thông điệp store giúp gia tăng tỷ lệ chuyển đổi từ lượt xem sang lượt cài đặt thật.", en: "Culturally resonant visuals and localized store copy significantly lift view-to-install conversion." },
+      },
       { type: "h2", text: { vi: "Nghiên cứu keyword theo ý định tìm kiếm", en: "Research keywords by search intent" } },
       { type: "ul", items: [
         { vi: "Từ khóa thể loại và fantasy — cách người chơi mô tả trải nghiệm họ muốn", en: "Genre and fantasy terms — how players describe the experience they want" },
