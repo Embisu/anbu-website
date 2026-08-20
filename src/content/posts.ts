@@ -2157,9 +2157,9 @@ export const posts: Post[] = [
       } },
       {
         type: "image",
-        src: "/blog-covers/discord-community.jpg",
-        alt: { vi: "Kiến trúc server Discord phân tầng và hệ thống phân quyền tự động cho cộng đồng game thủ", en: "Layered Discord server architecture and automated role permission system for gaming communities" },
-        caption: { vi: "Server Discord chuẩn hóa phân cấp kênh rõ ràng: Khu vực chào mừng, Bảng tin NPH, Phòng đàm thoại Bang hội và Kênh hỗ trợ Ticket 1:1.", en: "Standardized Discord channel hierarchy: Clear separation between Onboarding, Official Broadcasts, Guild Voice Squads, and 1-on-1 Support Tickets." },
+        src: "/blog-covers/discord-voice-channel-gameplay.png",
+        alt: { vi: "Giao diện cấu trúc kênh Discord phân tầng và tính năng phát trực tiếp livestream gameplay trên kênh Voice", en: "Discord server channel hierarchy interface and live gameplay streaming feature in voice channel" },
+        caption: { vi: "Cấu trúc kênh Discord thực tế: Phân tách rõ ràng giữa kênh văn bản (#welcome, #faq, #memes) và phòng đàm thoại Voice kèm tính năng Go Live livestream trận đấu.", en: "Real Discord server structure: Clear separation of text channels (#welcome, #faq, #memes) and voice channels with live gameplay broadcasting." },
       },
       { type: "h2", text: { vi: "1. Kiến trúc Server 4 tầng: Tối giản và chống ngợp", en: "1. The 4-Tier Server Architecture: Clean and Overwhelm-Free" } },
       { type: "p", text: {
@@ -2185,9 +2185,9 @@ export const posts: Post[] = [
       ] },
       {
         type: "image",
-        src: "/blog-covers/community-meetup-collab.jpg",
-        alt: { vi: "Tổ chức giải đấu cộng đồng và hoạt động gắn kết game thủ trên Voice channel Discord", en: "Hosting community tournaments and engaging gamers on Discord voice channels" },
-        caption: { vi: "Tổ chức sự kiện Mini-tournament định kỳ trên kênh Voice giúp tăng tỷ lệ Daily Active Voice (DAV) và giữ chân người chơi lâu dài.", en: "Hosting weekly community tournaments on voice channels significantly lifts Daily Active Voice (DAV) metrics and long-term player retention." },
+        src: "/blog-covers/discord-game-hub-activity.png",
+        alt: { vi: "Giao diện trung tâm hoạt động game trên Discord kết nối nhà phát triển với cộng đồng người chơi", en: "Discord game activity hub connecting developers with player communities" },
+        caption: { vi: "Trung tâm hoạt động Discord cho phép NPH cập nhật tin tức Dev Watercooler, theo dõi bạn bè đang chơi (Now Playing) và đồng bộ danh sách game.", en: "Discord Game Hub enables publishers to publish developer updates, display friend activity feeds, and coordinate game squads." },
       },
       { type: "h2", text: { vi: "3. Kịch bản Onboarding 30 ngày: Giữ lửa cho cộng đồng", en: "3. The 30-Day Onboarding Roadmap: Sustaining Community Momentum" } },
       { type: "p", text: {
@@ -2200,6 +2200,12 @@ export const posts: Post[] = [
         { vi: "Tuần 3 (Ủy quyền cho Thủ lĩnh cộng đồng): Trao quyền quản trị viên danh dự cho các Bang chủ uy tín, hỗ trợ tạo phòng Voice riêng có logo Bang hội.", en: "Week 3 (Guild Leader Empowerment): Grant verified ambassador status to top guild masters, providing custom voice rooms and guild branding." },
         { vi: "Tuần 4 (Vòng lặp phản hồi sản phẩm): Mở phiên AMA (Hỏi đáp trực tiếp) giữa Producer/Game Designer của NPH với game thủ trên kênh Voice.", en: "Week 4 (Product Feedback Loop): Host live AMA (Ask-Me-Anything) voice sessions connecting game producers directly with core players." },
       ] },
+      {
+        type: "image",
+        src: "/blog-covers/discord-community-game-night.png",
+        alt: { vi: "Tổ chức sự kiện Community Game Night và giải đấu giao hữu trực tiếp trên phòng Voice Discord", en: "Hosting community game nights and live interactive sessions in Discord voice rooms" },
+        caption: { vi: "Tổ chức các buổi Community Game Night định kỳ giúp gắn kết các thành viên, biến server từ nơi nhận tin thụ động thành điểm hẹn sinh hoạt hàng tuần.", en: "Hosting regular Community Game Nights transforms the server from a passive notification feed into an active weekly hangout." },
+      },
       { type: "h2", text: { vi: "4. Bốn chỉ số đo lường sức khỏe cộng đồng thực chất", en: "4. Four Core Metrics for True Community Health" } },
       { type: "p", text: {
         vi: "Đừng đánh giá sự thành công của Discord bằng tổng số lượng thành viên (Members Count). Hãy theo dõi 4 chỉ số thể hiện chất lượng gắn kết thực tế:",
