@@ -85,9 +85,15 @@ export const posts: Post[] = [
       { type: "h2", text: { vi: "VNGGames: năng lực vận hành quy mô và hệ sinh thái lâu dài", en: "VNGGames: scaled operations and a long-term ecosystem" } },
       {
         type: "image",
-        src: "/blog-covers/publishers/vnggames-brand.png",
-        alt: { vi: "Nhận diện thương hiệu VNGGames - hệ sinh thái phát hành game quy mô hàng đầu tại Việt Nam và Đông Nam Á", en: "VNGGames brand identity - leading game publishing ecosystem in Vietnam and SEA" },
-        caption: { vi: "VNGGames sở hữu kinh nghiệm hơn 20 năm phát hành và vận hành các tựa game MMORPG và eSports quy mô lớn.", en: "VNGGames holds over 20 years of expertise operating scaled MMORPG and eSports titles across the region." },
+        src: "/blog-covers/vng-campus-hq.jpg",
+        alt: { vi: "Trụ sở VNG Campus tại TP.HCM - trung tâm điều hành và phát triển hệ sinh thái trò chơi trực tuyến VNGGames", en: "VNG Campus headquarters in HCMC - central operations hub for VNGGames digital entertainment ecosystem" },
+        caption: { vi: "VNGGames sở hữu kinh nghiệm hơn 20 năm phát hành và vận hành các tựa game MMORPG và eSports quy mô lớn tại Việt Nam và Đông Nam Á.", en: "VNGGames holds over 20 years of expertise operating scaled MMORPG and eSports titles across Vietnam and Southeast Asia." },
+      },
+      {
+        type: "image",
+        src: "/blog-covers/publishers/vng-cookierun.jpg",
+        alt: { vi: "Tựa game CookieRun: Kingdom do VNGGames chính thức phát hành và bản địa hóa tại thị trường Việt Nam", en: "CookieRun: Kingdom officially published and localized by VNGGames for Vietnamese players" },
+        caption: { vi: "Bản địa hóa chỉn chu và sự kiện in-game liên tục là chìa khóa giúp VNGGames duy trì sức sống bền bỉ cho các IP game quốc tế.", en: "Rigorous localization and recurring in-game live events are key to sustaining international game IPs." },
       },
       { type: "p", text: {
         vi: "VNG bắt đầu từ lĩnh vực trò chơi trực tuyến vào năm 2004. Qua nhiều thế hệ sản phẩm, VNGGames xây được kinh nghiệm phát hành, bản địa hóa, vận hành dịch vụ và phát triển cộng đồng ở cả Việt Nam lẫn khu vực. Đây là cái tên phù hợp để nghiên cứu khi một sản phẩm cần năng lực vận hành lớn, lộ trình dài hơi, kết nối nhiều lớp dịch vụ hoặc tham vọng mở rộng Đông Nam Á.",
@@ -98,6 +104,12 @@ export const posts: Post[] = [
         { vi: "Điểm cần làm rõ khi trao đổi: mức độ ưu tiên trong danh mục, quyền chủ động marketing và cách chia sẻ dữ liệu người chơi", en: "Clarify during discussions: portfolio priority, marketing autonomy and player-data collaboration" },
       ] },
       { type: "h2", text: { vi: "Garena: sức mạnh của cạnh tranh, cộng đồng và esports", en: "Garena: competition, community and esports strength" } },
+      {
+        type: "image",
+        src: "/blog-covers/garena-arena-crowd.jpg",
+        alt: { vi: "Khán đài chật kín người hâm mộ tại giải đấu Thể thao điện tử Đấu Trường Danh Vọng do Garena tổ chức", en: "Packed stadium crowd at Arena of Valor professional championship organized by Garena" },
+        caption: { vi: "Garena dẫn đầu năng lực biến tựa game thành một bộ môn thể thao điện tử cuồng nhiệt với hệ sinh thái giải đấu chuyên nghiệp và cộng đồng theo dõi hàng triệu người.", en: "Garena leads in transforming games into vibrant esports phenomena supported by pro league systems and millions of passionate fans." },
+      },
       { type: "p", text: {
         vi: "Garena tạo dấu ấn rõ với những sản phẩm có tính cạnh tranh cao, nhịp vận hành liên tục và cộng đồng được nuôi bằng giải đấu, nội dung lẫn hoạt động trực tiếp. Với một tựa game có tiềm năng trở thành môn chơi lâu dài thay vì chỉ là nội dung giải trí ngắn hạn, năng lực biến người chơi thành cộng đồng theo dõi và thi đấu là một lợi thế đáng chú ý.",
         en: "Garena is strongly associated with competitive products, continuous operations and communities sustained through tournaments, content and live events. For a title with the potential to become a long-term competitive pursuit rather than short-lived entertainment, its ability to turn players into participating audiences is especially relevant.",
@@ -114,8 +126,8 @@ export const posts: Post[] = [
       { type: "h2", text: { vi: "Funtap, Gamota, GOSU và SohaGame: tốc độ, phân khúc và khả năng bản địa hóa", en: "Funtap, Gamota, GOSU and SohaGame: speed, segmentation and localization" } },
       {
         type: "image",
-        src: "/blog-covers/publishers/funtap-brand.png",
-        alt: { vi: "Nhận diện thương hiệu Funtap - một trong những nhà phát hành game mobile năng động tại Việt Nam", en: "Funtap publishing brand identity - dynamic mobile publisher in Vietnam" },
+        src: "/blog-covers/publishers/funtap-game.jpg",
+        alt: { vi: "Các sản phẩm game di động chiến thuật và nhập vai thành công của nhà phát hành Funtap tại Việt Nam", en: "Successful tactical and mobile RPG titles published by Funtap in Vietnam" },
         caption: { vi: "Funtap và nhóm NPH nội địa có ưu thế phản ứng nhanh với thị hiếu game thủ và triển khai marketing bản địa linh hoạt.", en: "Funtap and local mobile publishers excel in rapid market adaptation and agile local marketing execution." },
       },
       {
@@ -129,6 +141,12 @@ export const posts: Post[] = [
         en: "These local mobile publishers add diversity to the market. Each has a different catalogue and player base, but their shared relevance lies in reaching specific segments, reacting quickly to community behavior and executing local marketing at flexible scale. For mid-core, RPG, strategy or market-testing titles, they should not be overlooked.",
       } },
       { type: "h2", text: { vi: "JoyGames: một lựa chọn đang mở rộng ở phân khúc game mobile", en: "JoyGames: a growing option in mobile publishing" } },
+      {
+        type: "image",
+        src: "/blog-covers/publishers/joygames-game.png",
+        alt: { vi: "Danh mục sản phẩm trò chơi điện tử G1 trên cổng phát hành JoyGames", en: "Licensed G1 mobile game catalogue on JoyGames publishing portal" },
+        caption: { vi: "JoyGames công khai giấy phép dịch vụ G1 và tập trung chuyên sâu vào các dòng game mobile chiến thuật thế hệ mới.", en: "JoyGames operates licensed G1 mobile services with a sharp focus on next-gen tactical mobile titles." },
+      },
       { type: "p", text: {
         vi: "JoyGames là một cái tên đáng theo dõi trong lớp nhà phát hành đang mở rộng hiện diện. Website chính thức công khai giấy phép cung cấp dịch vụ trò chơi điện tử G1 và một danh mục game riêng, cho thấy đơn vị này đang xây năng lực phát hành theo hướng bài bản hơn thay vì chỉ đóng vai trò kênh phân phối. Với studio quốc tế, điểm đáng quan tâm không nằm ở việc gọi JoyGames là “lớn” hay “nhỏ”, mà ở khả năng một sản phẩm phù hợp có thể nhận được mức độ tập trung cao hơn trong danh mục.",
         en: "JoyGames is worth watching among publishers expanding their presence. Its official website displays a G1 online-game service license and a dedicated catalogue, indicating a more structured publishing operation rather than a simple distribution channel. For international studios, the relevant question is not whether JoyGames is labelled large or small, but whether a well-matched title could receive greater focus within its portfolio.",
@@ -138,6 +156,12 @@ export const posts: Post[] = [
         { vi: "Cơ hội tiềm năng: tốc độ ra quyết định và mức độ ưu tiên dành cho sản phẩm phù hợp", en: "Potential advantage: decision speed and priority for a well-matched title" },
       ] },
       { type: "h2", text: { vi: "VPlay: khi game được đặt trong một hệ sinh thái nội dung rộng hơn", en: "VPlay: placing games inside a broader content ecosystem" } },
+      {
+        type: "image",
+        src: "/blog-covers/publishers/vplay-game.jpg",
+        alt: { vi: "Hệ sinh thái game và giải trí đa phương tiện VPlay kết hợp giữa trò chơi và truyền hình trực tuyến", en: "VPlay multimedia entertainment ecosystem integrating games and live interactive broadcasts" },
+        caption: { vi: "Mô hình kết hợp giữa phát hành game và hạ tầng truyền thông đa nền tảng của VPlay mang lại lợi thế tiếp cận tệp người dùng đại chúng.", en: "VPlay's hybrid model connecting game publishing with media infrastructure unlocks expansive mass-market user reach." },
+      },
       { type: "p", text: {
         vi: "VPlay có một góc tiếp cận khác: game nằm trong hệ sinh thái giải trí có livestream, nội dung và kết nối với hạ tầng truyền thông. Điều này có thể tạo lợi thế cho sản phẩm cần nhiều điểm chạm hơn quảng cáo cài đặt đơn thuần — chẳng hạn ra mắt gắn với chương trình nội dung, giải đấu, creator hoặc hoạt động cộng đồng được phát sóng. Tuy nhiên, thương hiệu vẫn cần làm rõ phần nào của hệ sinh thái thực sự được huy động cho game của mình, thay vì mặc định mọi nguồn lực đều đi cùng một hợp đồng phát hành.",
         en: "VPlay approaches the market differently by placing games within an entertainment ecosystem that includes livestreaming, content and media infrastructure. This can benefit titles that need more than install advertising—for example, launches tied to programming, tournaments, creators or broadcast community activity. Brands should still clarify which parts of that ecosystem will actually support their title rather than assume every resource comes with a publishing agreement.",

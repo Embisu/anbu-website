@@ -19,25 +19,72 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: p === "" || p === "/blog" ? "weekly" : "monthly",
         priority: p === "" ? 1 : 0.7,
         alternates: {
-          languages: Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${p}`])),
+          languages: {
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${p}`])),
+            "x-default": `${siteUrl}/vi${p}`,
+          },
         },
       });
     }
     for (const s of services) {
       const path = `/services/${s.slug}`;
-      entries.push({ url: `${siteUrl}/${locale}${path}`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])) } });
+      entries.push({
+        url: `${siteUrl}/${locale}${path}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])),
+            "x-default": `${siteUrl}/vi${path}`,
+          },
+        },
+      });
     }
     for (const pr of projects) {
       const path = `/work/${pr.slug}`;
-      entries.push({ url: `${siteUrl}/${locale}${path}`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])) } });
+      entries.push({
+        url: `${siteUrl}/${locale}${path}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])),
+            "x-default": `${siteUrl}/vi${path}`,
+          },
+        },
+      });
     }
     for (const po of posts) {
       const path = `/blog/${po.slug}`;
-      entries.push({ url: `${siteUrl}/${locale}${path}`, lastModified: new Date(po.date), changeFrequency: "monthly", priority: 0.6, alternates: { languages: Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])) } });
+      entries.push({
+        url: `${siteUrl}/${locale}${path}`,
+        lastModified: new Date(po.date),
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])),
+            "x-default": `${siteUrl}/vi${path}`,
+          },
+        },
+      });
     }
     for (const category of blogCategories) {
       const path = `/blog/category/${category.slug}`;
-      entries.push({ url: `${siteUrl}/${locale}${path}`, lastModified: now, changeFrequency: "weekly", priority: 0.7, alternates: { languages: Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])) } });
+      entries.push({
+        url: `${siteUrl}/${locale}${path}`,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.7,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])),
+            "x-default": `${siteUrl}/vi${path}`,
+          },
+        },
+      });
     }
   }
 
