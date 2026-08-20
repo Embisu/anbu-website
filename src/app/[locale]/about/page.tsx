@@ -28,6 +28,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   });
 }
 
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbLd, siteUrl } from "@/lib/seo";
+
 export default async function AboutPage({ params }: { params: { locale: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
@@ -39,8 +42,32 @@ export default async function AboutPage({ params }: { params: { locale: string }
     { value: site.stats.markets, label: dict.hero.stat4 },
   ];
 
+  const aboutLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: locale === "vi" ? "Về ANBU" : "About ANBU",
+    url: `${siteUrl}/${locale}/about`,
+    description: locale === "vi" ? "ANBU là đối tác tăng trưởng của bạn — kết hợp sáng tạo và dữ liệu để xây thương hiệu bền vững." : "ANBU is your growth partner — combining creativity and data to build durable brands.",
+    mainEntity: {
+      "@type": "Organization",
+      name: site.name,
+      url: siteUrl,
+      logo: `${siteUrl}/logo/logo.png`,
+    },
+  };
+
+  const breadcrumbs = breadcrumbLd(
+    [
+      { name: locale === "vi" ? "Trang chủ" : "Home", path: "/" },
+      { name: locale === "vi" ? "Về chúng tôi" : "About Us", path: "/about" },
+    ],
+    locale
+  );
+
   return (
     <>
+      <JsonLd data={aboutLd} />
+      <JsonLd data={breadcrumbs} />
       <PageHero eyebrow={dict.about.eyebrow} title={dict.about.title} subtitle={dict.about.lead} />
 
       {/* Stats */}

@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   });
 }
 
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbLd, siteUrl } from "@/lib/seo";
+
 export default async function ContactPage({ params }: { params: { locale: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
@@ -37,8 +40,38 @@ export default async function ContactPage({ params }: { params: { locale: string
     { icon: "clock" as const, label: c.hours, value: c.hoursValue, href: undefined },
   ];
 
+  const contactLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: locale === "vi" ? "Liên hệ ANBU" : "Contact ANBU",
+    url: `${siteUrl}/${locale}/contact`,
+    description: locale === "vi" ? "Liên hệ ANBU để bắt đầu dự án marketing, community và phát hành game của bạn." : "Contact ANBU to launch your game marketing and community campaign.",
+    mainEntity: {
+      "@type": "Organization",
+      name: site.name,
+      url: siteUrl,
+      email: site.email,
+      telephone: site.phone,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: t(site.address, locale),
+        addressCountry: "VN",
+      },
+    },
+  };
+
+  const breadcrumbs = breadcrumbLd(
+    [
+      { name: locale === "vi" ? "Trang chủ" : "Home", path: "/" },
+      { name: locale === "vi" ? "Liên hệ" : "Contact", path: "/contact" },
+    ],
+    locale
+  );
+
   return (
     <>
+      <JsonLd data={contactLd} />
+      <JsonLd data={breadcrumbs} />
       <PageHero eyebrow={c.eyebrow} title={c.title} subtitle={c.subtitle} />
 
       {/* Get started steps */}

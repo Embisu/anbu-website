@@ -21,12 +21,15 @@ export function breadcrumbLd(items: { name: string; path: string }[], locale: st
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((it, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: it.name,
-      item: `${siteUrl}/${locale}${it.path === "/" ? "" : it.path}`,
-    })),
+    itemListElement: items.map((it, i) => {
+      const cleanPath = !it.path || it.path === "/" ? "" : (it.path.startsWith("/") ? it.path : `/${it.path}`);
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        name: it.name,
+        item: `${siteUrl}/${locale}${cleanPath}`,
+      };
+    }),
   };
 }
 

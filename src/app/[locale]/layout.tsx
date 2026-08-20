@@ -135,6 +135,14 @@ export default async function LocaleLayout({
     name: site.name,
     inLanguage: locale === "vi" ? "vi-VN" : "en-US",
     publisher: { "@id": `${siteUrl}/#organization` },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${siteUrl}/${locale}/blog?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 
   return (

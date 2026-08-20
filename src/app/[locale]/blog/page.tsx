@@ -10,7 +10,7 @@ import { PostCard } from "@/components/cards";
 import Link from "next/link";
 import { localePath } from "@/lib/utils";
 import EditorialMedia, { editorialImageForPostData } from "@/components/EditorialMedia";
-import { t } from "@/content/site";
+import { site, t } from "@/content/site";
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   });
 }
 
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbLd, siteUrl } from "@/lib/seo";
+
 export default async function BlogPage({ params }: { params: { locale: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
@@ -35,8 +38,32 @@ export default async function BlogPage({ params }: { params: { locale: string } 
     return +new Date(b.date) - +new Date(a.date);
   });
 
+  const blogLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: locale === "vi" ? "Kiến thức Marketing & Game của ANBU" : "ANBU Marketing & Game Insights",
+    url: `${siteUrl}/${locale}/blog`,
+    description: locale === "vi" ? "Kho tri thức và cẩm nang phân tích chuyên sâu về thị trường game, TikTok, Influencer Marketing và SEO từ ANBU." : "In-depth insights, benchmarks, and strategies on mobile gaming, TikTok, influencer marketing, and SEO from ANBU.",
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: siteUrl,
+      logo: `${siteUrl}/logo/logo.png`,
+    },
+  };
+
+  const breadcrumbs = breadcrumbLd(
+    [
+      { name: locale === "vi" ? "Trang chủ" : "Home", path: "/" },
+      { name: locale === "vi" ? "Kiến thức chuyên sâu" : "Insights & Blog", path: "/blog" },
+    ],
+    locale
+  );
+
   return (
     <>
+      <JsonLd data={blogLd} />
+      <JsonLd data={breadcrumbs} />
       <PageHero eyebrow={dict.blogSection.eyebrow} title={dict.blogSection.title} subtitle={dict.blogSection.subtitle} />
       <section className="container-x pt-10"><div className="flex flex-wrap gap-3">{blogCategories.map((category) => <Link key={category.slug} href={localePath(locale, `/blog/category/${category.slug}`)} className="rounded-full border border-navy-200 px-4 py-2 text-sm font-semibold text-navy-700 transition hover:border-orange-400 hover:text-orange-600">{locale === "vi" ? category.vi : category.en}</Link>)}</div></section>
       {sorted[0] && (

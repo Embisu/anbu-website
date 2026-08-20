@@ -21,12 +21,24 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   });
 }
 
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbLd } from "@/lib/seo";
+
 export default async function WorkPage({ params }: { params: { locale: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
 
+  const breadcrumbs = breadcrumbLd(
+    [
+      { name: locale === "vi" ? "Trang chủ" : "Home", path: "/" },
+      { name: locale === "vi" ? "Dự án tiêu biểu" : "Case Studies", path: "/work" },
+    ],
+    locale
+  );
+
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHero eyebrow={dict.workSection.eyebrow} title={dict.workSection.title} subtitle={dict.workSection.subtitle} />
       <section className="border-b border-navy-100 bg-cloud">
         <div className="container-x grid gap-8 py-12 lg:grid-cols-12 lg:items-center">
