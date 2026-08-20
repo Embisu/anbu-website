@@ -683,8 +683,8 @@ export const posts: Post[] = [
   {
     slug: "performance-marketing-toi-uu-ngan-sach",
     title: {
-      vi: "Performance Marketing: Tối ưu ngân sách quảng cáo",
-      en: "Performance marketing: optimizing your ad budget",
+      vi: "Performance Marketing: Chiến lược tối ưu ngân sách và kiểm soát LTV/CAC",
+      en: "Performance Marketing: Budget Optimization and LTV/CAC Control",
     },
     excerpt: {
       vi: "Ngân sách quảng cáo hiếm khi thất thoát chỉ vì một mẫu quảng cáo kém. Phần lớn lãng phí đến từ việc phân bổ tiền khi chưa biết tín hiệu nào đáng tin, nhóm khách hàng nào thực sự có giá trị và lúc nào nên dừng để học trước khi chi tiếp.",
@@ -692,39 +692,47 @@ export const posts: Post[] = [
     },
     category: { vi: "Marketing", en: "Marketing" },
     date: "2026-04-02",
-    readingTime: 4,
+    readingTime: 6,
     author: "ANBU Team",
     color: "from-navy-500 to-orange-600",
     variant: "performance",
+    cover: "/blog-covers/performance-ad-campaigns.jpg",
     sources: [
       { label: { vi: "Google Ads — đo lường chuyển đổi", en: "Google Ads — conversion measurement" }, href: "https://support.google.com/google-ads/answer/1722022" },
       { label: { vi: "Google Analytics — hướng dẫn sự kiện", en: "Google Analytics — event measurement guide" }, href: "https://support.google.com/analytics/answer/9322688" },
     ],
     body: [
       { type: "p", text: {
-        vi: "Chi nhiều tiền quảng cáo không đồng nghĩa với tăng trưởng — nếu đúng như vậy, mọi doanh nghiệp có ngân sách lớn đều đã thắng. Điều thật sự quyết định là cấu trúc chiến dịch có rõ ràng hay không, đo lường có đúng chỉ số hay không, và đội ngũ có tối ưu liên tục dựa trên dữ liệu hay chỉ “đặt quảng cáo rồi chờ xem”.",
+        vi: "Chi nhiều tiền quảng cáo không đồng nghĩa với tăng trưởng — nếu đúng như vậy, mọi doanh nghiệp có ngân sách lớn đều đã thắng. Điều thật sự quyết định là cấu trúc chiến dịch có rõ ràng hay không, đo lường có đúng chỉ số hay không, và đội ngũ có tối ưu liên tục dựa trên dữ liệu hay chỉ 'đặt quảng cáo rồi chờ xem'.",
         en: "Spending more on ads doesn't equal growth — if it did, every company with a big budget would already be winning. What actually decides the outcome is whether the campaign structure is clear, whether the right metrics are being measured, and whether the team optimizes continuously from data instead of setting an ad live and hoping.",
       } },
-      { type: "h2", text: { vi: "Bắt đầu với chỉ số kinh tế đơn vị", en: "Start with unit economics" } },
+      {
+        type: "image",
+        src: "/blog-covers/performance-ad-campaigns.jpg",
+        alt: { vi: "Thiết lập và theo dõi chiến dịch Performance Marketing trên Meta Ads và Google Ads", en: "Performance Marketing campaign dashboard monitoring cost per acquisition and ROAS" },
+        caption: { vi: "Thiết lập cấu trúc chiến dịch phân tầng theo mức độ trưởng thành của tệp đối tượng giúp giảm tới 30% chi phí chuyển đổi.", en: "Segmenting ad campaign structures across audience maturity stages reduces cost per acquisition by up to 30%." },
+      },
+      { type: "h2", text: { vi: "1. Bắt đầu với chỉ số kinh tế đơn vị (Unit Economics)", en: "1. Start with unit economics" } },
       { type: "p", text: {
-        vi: "Trước khi tăng ngân sách, hãy hiểu rõ chi phí thu hút khách hàng (CAC) và giá trị vòng đời (LTV) của họ. Một chiến dịch có CAC thấp vẫn có thể lỗ nếu LTV thấp hơn nữa; ngược lại, một kênh CAC cao vẫn đáng đầu tư nếu LTV đủ tốt. Chỉ mở rộng ngân sách khi tỷ lệ LTV/CAC đã chứng minh lành mạnh ở quy mô nhỏ — đừng đợi đến khi đã chi phần lớn ngân sách quý mới đặt câu hỏi này.",
-        en: "Before scaling budget, understand your customer acquisition cost (CAC) and their lifetime value (LTV). A campaign with low CAC can still lose money if LTV is even lower; conversely, a high-CAC channel can be worth the investment if LTV is strong enough. Only scale budget once the LTV/CAC ratio has proven healthy at small scale — don't wait until most of the quarter's budget is already spent to ask this question.",
+        vi: "Trước khi tăng ngân sách, hãy hiểu rõ chi phí thu hút khách hàng (CAC) và giá trị vòng đời (LTV) của họ. Một chiến dịch có CAC thấp vẫn có thể lỗ nếu LTV thấp hơn nữa; ngược lại, một kênh CAC cao vẫn đáng đầu tư nếu LTV đủ tốt. Chỉ mở rộng ngân sách khi tỷ lệ LTV/CAC đã chứng minh lành mạnh (tối thiểu 3:1) ở quy mô nhỏ.",
+        en: "Before scaling budget, understand your customer acquisition cost (CAC) and their lifetime value (LTV). A campaign with low CAC can still lose money if LTV is even lower; conversely, a high-CAC channel can be worth the investment if LTV is strong enough. Only scale budget once the LTV/CAC ratio has proven healthy (at least 3:1) at small scale.",
       } },
+      {
+        type: "image",
+        src: "/blog-covers/growth-analytics-chart.jpg",
+        alt: { vi: "Biểu đồ phân tích điểm hòa vốn và mô hình dự phóng giá trị vòng đời người dùng", en: "Analytics chart modeling customer payback period and cohort lifetime value" },
+        caption: { vi: "Theo dõi điểm hòa vốn (Payback Period) theo từng tuần giúp đưa ra quyết định mở rộng ngân sách quảng cáo chính xác.", en: "Weekly payback period telemetry ensures precise and risk-free ad budget scaling decisions." },
+      },
       { type: "quote", text: {
         vi: "Quảng cáo giỏi không cứu được một sản phẩm tồi hay một phễu chuyển đổi rò rỉ.",
         en: "Great ads can't save a bad product or a leaky conversion funnel.",
       } },
-      { type: "h2", text: { vi: "Kiểm thử có kỷ luật", en: "Test with discipline" } },
+      { type: "h2", text: { vi: "2. Kiểm thử có kỷ luật và vòng lặp phân bổ ngân sách", en: "2. Test with discipline and dynamic budget loops" } },
       { type: "ul", items: [
-        { vi: "Kiểm thử từng biến số một cách rõ ràng — đổi cả hình ảnh lẫn thông điệp cùng lúc sẽ không biết yếu tố nào tạo ra kết quả", en: "Test one variable at a time — changing both the visual and the message together means you'll never know which one moved the result" },
-        { vi: "Cho mỗi thử nghiệm đủ dữ liệu để kết luận, đừng dừng sớm chỉ vì hai ngày đầu trông không ổn", en: "Give each test enough data to conclude — don't stop early just because the first two days look shaky" },
-        { vi: "Nhân rộng thứ hiệu quả, dừng dứt khoát thứ không hiệu quả, và ghi lại lý do để tránh lặp lại thử nghiệm đã có câu trả lời", en: "Scale what works, cut what doesn't without hesitation, and record why — so the team doesn't rerun a test that already has an answer" },
+        { vi: "Kiểm thử từng biến số một cách rõ ràng: tách riêng nhóm thử nghiệm Creative Hook, nội dung Offer và tệp đối tượng Target.", en: "Test one variable at a time: isolate Creative Hooks, Offer messaging, and Audience Targeting cohorts." },
+        { vi: "Cho mỗi thử nghiệm đủ dữ liệu để kết luận (tối thiểu 100 chuyển đổi), không dừng vội chỉ vì 2 ngày đầu biến động.", en: "Give each test sufficient data volume (minimum 100 conversions) before drawing conclusions." },
+        { vi: "Dồn 70% ngân sách cho các cụm quảng cáo chiến thắng đã chứng minh hiệu quả, 20% cho việc thử nghiệm các concept mới, và 10% cho retargeting chuyển đổi sâu.", en: "Allocate 70% budget to proven winning sets, 20% for continuous concept discovery, and 10% for deep retargeting." },
       ] },
-      { type: "h2", text: { vi: "Ngân sách nên đi theo câu hỏi, không theo lịch", en: "Budget should follow questions, not a calendar" } },
-      { type: "p", text: {
-        vi: "Nhiều đội marketing chia ngân sách đều theo tháng vì đó là cách dễ lập kế hoạch, nhưng điều này bỏ lỡ tín hiệu thật: có tháng cần chi nhiều hơn để tìm ra kênh mới, có tháng chỉ nên duy trì và học. Hỏi trước mỗi giai đoạn: chúng ta đang cần tìm điều gì, và ngân sách này có giúp trả lời câu hỏi đó nhanh hơn không?",
-        en: "Many marketing teams split budget evenly by month because it's easy to plan, but that misses the real signal: some months need more spend to find a new channel, others should simply hold steady and learn. Before each phase, ask what you're trying to find out, and whether this budget actually gets you that answer faster.",
-      } },
     ],
   },
   {
