@@ -34,7 +34,7 @@ export default async function ContactPage({ params }: { params: { locale: string
   const c = dict.contact;
 
   const infos = [
-    { icon: "pin" as const, label: c.office, value: t(site.address, locale), href: undefined },
+    { icon: "pin" as const, label: c.office, value: t(site.address, locale), href: site.mapUrl, isExternal: true },
     { icon: "mail" as const, label: c.email, value: site.email, href: `mailto:${site.email}` },
     { icon: "phone" as const, label: c.phone, value: site.phone, href: site.phoneHref },
     { icon: "clock" as const, label: c.hours, value: c.hoursValue, href: undefined },
@@ -52,6 +52,8 @@ export default async function ContactPage({ params }: { params: { locale: string
       url: siteUrl,
       email: site.email,
       telephone: site.phone,
+      hasMap: site.mapUrl,
+      sameAs: [...Object.values(site.social), site.googleBusinessUrl],
       address: {
         "@type": "PostalAddress",
         streetAddress: t(site.address, locale),
@@ -108,7 +110,14 @@ export default async function ContactPage({ params }: { params: { locale: string
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wider text-navy-400">{info.label}</div>
                   {info.href ? (
-                    <a href={info.href} className="mt-1 block font-semibold text-navy-800 hover:text-orange-600">{info.value}</a>
+                    <a
+                      href={info.href}
+                      target={info.isExternal ? "_blank" : undefined}
+                      rel={info.isExternal ? "noopener noreferrer" : undefined}
+                      className="mt-1 block font-semibold text-navy-800 transition-colors hover:text-orange-600"
+                    >
+                      {info.value} {info.isExternal && <span className="inline-block text-xs text-orange-500">↗</span>}
+                    </a>
                   ) : (
                     <div className="mt-1 font-semibold text-navy-800">{info.value}</div>
                   )}

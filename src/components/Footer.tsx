@@ -69,7 +69,15 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
               <ul className="mt-4 space-y-3 text-sm">
                 <li className="flex items-start gap-2.5">
                   <Icon name="pin" className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" />
-                  <span className="text-navy-200">{t(site.address, locale)}</span>
+                  <a
+                    href={site.mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-navy-200 transition-colors hover:text-orange-400"
+                    title={locale === "vi" ? "Xem vị trí ANBU trên Google Maps" : "View ANBU on Google Maps"}
+                  >
+                    {t(site.address, locale)} <span className="inline-block text-xs opacity-75">↗</span>
+                  </a>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Icon name="mail" className="h-4 w-4 shrink-0 text-orange-500" />

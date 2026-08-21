@@ -20,6 +20,8 @@ export const site = {
     vi: "47 Đặng Văn Ngữ, An Cựu, TP. Huế, Việt Nam",
     en: "47 Dang Van Ngu, An Cuu, Hue City, Vietnam",
   } as L10n,
+  mapUrl: "https://www.google.com/search?kgmid=/g/11nv91ww0r&q=C%C3%B4ng+ty+TNHH+Marketing+%26+Truy%E1%BB%81n+th%C3%B4ng+ANBU",
+  googleBusinessUrl: "https://www.google.com/search?kgmid=/g/11nv91ww0r&q=C%C3%B4ng+ty+TNHH+Marketing+%26+Truy%E1%BB%81n+th%C3%B4ng+ANBU",
   foundedYear: 2024,
   // Only real, verified profiles are listed (rendered dynamically).
   social: {

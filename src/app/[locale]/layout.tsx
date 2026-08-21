@@ -118,11 +118,14 @@ export default async function LocaleLayout({
     telephone: site.phone,
     foundingDate: String(site.foundedYear),
     areaServed: ["VN", "TH", "PH", "ID", "MY", "SG"],
-    sameAs: Object.values(site.social),
+    hasMap: site.mapUrl,
+    sameAs: [...Object.values(site.social), site.googleBusinessUrl],
     address: {
       "@type": "PostalAddress",
       streetAddress: "47 Dang Van Ngu, An Cuu",
       addressLocality: "Hue City",
+      addressRegion: "Thua Thien Hue",
+      postalCode: "530000",
       addressCountry: "VN",
     },
   };
