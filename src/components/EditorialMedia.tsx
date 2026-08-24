@@ -62,7 +62,7 @@ function realCoverForSlug(slug: string) {
   const slugCovers: Record<string, string> = {
   "ban-do-nha-phat-hanh-game-viet-nam": "publishers/vng-cookierun.jpg",
     "thi-truong-game-viet-nam-bao-hoa-chien-luoc-tang-truong": "vietnam-game-saturation.png",
-    "marketing-game-app-toi-uu-cpi-roas": "real-phone-app.jpg",
+    "marketing-game-app-toi-uu-cpi-roas": "real-analytics-game.jpg",
     "influencer-marketing-chon-kol-koc-dung-cach": "creator-influencer.jpg",
     "chien-luoc-noi-dung-tiktok-cho-thuong-hieu": "tiktok-social.jpg",
     "seo-2026-huong-dan-toan-dien": "seo-strategy.jpg",

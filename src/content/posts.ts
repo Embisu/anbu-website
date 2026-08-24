@@ -385,108 +385,157 @@ export const posts: Post[] = [
   {
     slug: "marketing-game-app-toi-uu-cpi-roas",
     title: {
-      vi: "Marketing Game & App: Tối ưu CPI, ROAS và LTV thực chiến khi ra mắt",
-      en: "Game & App Marketing: Practical CPI, ROAS and LTV Optimization at Launch",
+      vi: "Marketing Game & App: Tối ưu CPI, ROAS và LTV thực chiến khi ra mắt (2026)",
+      en: "Mobile Game & App Marketing: Practical CPI, ROAS & LTV Optimization at Launch (2026)",
     },
     excerpt: {
-      vi: "Đạt CPI rẻ không đồng nghĩa với chiến dịch thành công nếu người chơi bỏ game sau 24 giờ. Đây là bài toán bóc tách mối quan hệ giữa CPI, ROAS D7/D30 và LTV, kèm chiến lược phân bổ ngân sách đa kênh (Meta, Google UAC, TikTok, Mintegral) cho các studio game tại Việt Nam.",
-      en: "Achieving low CPI means nothing if players churn after 24 hours. Here is how to analyze the relationship between CPI, D7/D30 ROAS, and LTV, alongside multi-channel budget allocation strategies across Meta, Google UAC, TikTok, and Mintegral.",
+      vi: "Mua được lượt cài đặt giá 0.15 USD không có ý nghĩa gì nếu người chơi rời bỏ game sau 24 giờ mà không nạp một đồng nào. Đây là bài toán bóc tách 'cái bẫy CPI rẻ', mô hình tính điểm hòa vốn Break-Even ROAS và chiến lược phân bổ ngân sách thực chiến đa kênh (Meta, Google UAC, TikTok, Mintegral) cho các studio game tại Việt Nam.",
+      en: "Acquiring $0.15 installs means nothing if players churn within 24 hours without spending a dime. Here is how seasoned UA leads debunk the vanity CPI trap, calculate Break-Even ROAS payback curves, and allocate multi-channel ad budgets across Meta, Google UAC, TikTok, and Mintegral.",
     },
     category: { vi: "Marketing Game", en: "Game Marketing" },
-    date: "2026-07-02",
-    readingTime: 6,
+    date: "2026-08-24",
+    readingTime: 14,
     author: "ANBU Team",
     color: "from-navy-700 to-orange-600",
     variant: "game",
-    cover: "/blog-covers/performance-ad-campaigns.jpg",
+    cover: "/blog-covers/real-analytics-game.jpg",
     sources: [
-      { label: { vi: "Google Ads: Hướng dẫn đo lường ứng dụng di động", en: "Google Ads: Mobile App Campaign Measurement" }, href: "https://support.google.com/google-ads/topic/6169030" },
-      { label: { vi: "AppsFlyer: Báo cáo Benchmark Game Mobile Toàn cầu", en: "AppsFlyer: Global Mobile Gaming Benchmarks" }, href: "https://www.appsflyer.com/glossary/mobile-attribution/" },
-      { label: { vi: "Adjust: Mobile App Trends Report", en: "Adjust: Mobile App Trends Report" }, href: "https://www.adjust.com/resources/reports/" },
+      { label: { vi: "Google Ads: Hướng dẫn đo lường và tối ưu chiến dịch ứng dụng di động", en: "Google Ads: Mobile App Campaign Optimization Best Practices" }, href: "https://support.google.com/google-ads/topic/6169030" },
+      { label: { vi: "AppsFlyer: Báo cáo Benchmark Game Mobile Toàn cầu & Đo lường Attribution", en: "AppsFlyer: Global Mobile Gaming Benchmarks & Attribution" }, href: "https://www.appsflyer.com/glossary/mobile-attribution/" },
+      { label: { vi: "Adjust: Báo cáo xu hướng tăng trưởng ứng dụng di động", en: "Adjust: Mobile App Growth & Retention Trends" }, href: "https://www.adjust.com/resources/reports/" },
     ],
     body: [
-      { type: "p", text: {
-        vi: "Trong các buổi review chiến dịch ra mắt game mobile, một trong những sai lầm phổ biến nhất là ăn mừng quá sớm khi thấy chỉ số CPI (Cost Per Install) giảm xuống dưới mức 0.3 - 0.5 USD. Nhưng chỉ một tuần sau đó, khi nhìn vào bảng doanh thu in-app và tỷ lệ giữ chân D7 (Day 7 Retention), cả đội ngũ mới bàng hoàng nhận ra phần lớn lượt cài đặt đến từ tệp người dùng không có ý định nạp tiền hoặc gỡ app ngay sau ván chơi đầu tiên.",
-        en: "In mobile game launch reviews, a recurring mistake is celebrating prematurely when seeing CPI (Cost Per Install) drop below $0.30 - $0.50. Yet a week later, when examining in-app revenue and Day 7 Retention, the team realizes that the majority of installs came from low-intent users who never monetize or uninstall immediately after the first session.",
-      } },
+      {
+        type: "p",
+        text: {
+          vi: "Trong các buổi review chiến dịch ra mắt game mobile, một trong những sai lầm chết người phổ biến nhất là đội ngũ User Acquisition (UA) vội vã ăn mừng khi thấy chỉ số CPI (Cost Per Install) giảm xuống dưới mức 0.20 - 0.30 USD. Nhưng chỉ một tuần sau ngày Open Beta, khi nhìn vào biểu đồ Cohort Retention và doanh thu In-App Purchases (IAP), cả ban điều hành mới bàng hoàng nhận ra phần lớn lượt tải đến từ các kênh giá rẻ, tệp người dùng không có nhu cầu nạp tiền hoặc gỡ app ngay sau màn tân thủ. Trong khi đó, một tệp người chơi chất lượng cao có giá CPI 0.85 USD từ Meta Ads hay Google UAC lại có thể mang về D30 LTV lên tới 4.20 USD, đem lại mức lãi ròng gấp 5 lần. Tối ưu marketing game không phải là tìm kiếm CPI rẻ nhất; đó là nghệ thuật tối đa hóa biên độ chênh lệch giữa LTV và chi phí thu nạp (LTV - CAC Moat).",
+          en: "In mobile game post-launch postmortems, a fatal mistake is UA teams celebrating prematurely when CPI dips under $0.20 - $0.30. A week post-launch, as Cohort Retention flatlines and in-app revenue stalls, leadership discovers that low-cost installs stemmed from low-intent users who churned immediately after tutorial screens. Conversely, a high-quality cohort acquired at $0.85 CPI via Meta Ads or Google UAC can achieve a D30 LTV of $4.20, generating a 5x net profit margin. Game marketing optimization is never about pursuing the cheapest CPI; it is the science of maximizing the spread between player Lifetime Value and Customer Acquisition Cost (LTV - CAC).",
+        },
+      },
       {
         type: "image",
-        src: "/blog-covers/performance-ad-campaigns.jpg",
-        alt: { vi: "Đội ngũ chuyên gia Performance Marketing phân tích dữ liệu chiến dịch quảng cáo và chuyển đổi người dùng", en: "Performance marketing specialists analyzing multi-channel campaign analytics and conversion funnels" },
-        caption: { vi: "Tối ưu chiến dịch game đòi hỏi phân tích liên tục giữa chi phí kéo user (CPI) và giá trị doanh thu thực thu (ROAS/LTV).", en: "Game campaign optimization demands constant correlation between acquisition costs (CPI) and actual realized player revenue (ROAS/LTV)." },
+        src: "/blog-covers/real-analytics-game.jpg",
+        alt: { vi: "Bảng điều khiển Telemetry phân tích dữ liệu hiệu quả User Acquisition CPI, ROAS và LTV cho game mobile", en: "Telemetry dashboard analyzing mobile game UA cohort metrics, CPI, ROAS, and cumulative LTV curves" },
+        caption: { vi: "Dashboard phân tích Cohort Analysis thực tế: Đo lường tốc độ tích lũy LTV theo từng mốc D1, D7, D30 và so sánh trực tiếp với chi phí eCPI thực tế của từng kênh quảng cáo.", en: "Real-world Cohort Telemetry Dashboard: Tracking cumulative LTV velocity across D1, D7, D30 milestones and benchmarking against effective channel CPIs." },
       },
-      { type: "h2", text: { vi: "1. Tam giác chỉ số: CPI, ROAS và LTV", en: "1. The Core Metrics Triangle: CPI, ROAS, and LTV" } },
-      { type: "p", text: {
-        vi: "Một chiến dịch User Acquisition (UA) bền vững không bao giờ nhìn CPI một cách độc lập. Bạn cần đối chiếu 3 chỉ số trong một hệ quy chiếu gắn kết:",
-        en: "A sustainable User Acquisition (UA) campaign never evaluates CPI in isolation. You must correlate three key metrics together:",
-      } },
-      { type: "ul", items: [
-        { vi: "CPI (Cost Per Install): Chi phí để có một lượt cài đặt. Đây chỉ là 'giá vé vào cửa', phản ánh độ hấp dẫn của hình ảnh/video quảng cáo trên Store.", en: "CPI (Cost Per Install): The acquisition cost per install. This is merely the 'admission ticket', reflecting creative CTR and Store conversion efficiency." },
-        { vi: "ROAS (Return On Ad Spend): Tỷ suất sinh lời trên chi phí quảng cáo. Cần theo dõi theo từng mốc D1, D7, D14, D30 và D60 để đánh giá tốc độ hồi vốn (Payback Period).", en: "ROAS (Return On Ad Spend): Revenue generated divided by ad spend. Track strictly across D1, D7, D14, D30, and D60 milestones to measure the payback curve." },
-        { vi: "LTV (Lifetime Value): Tổng giá trị tích lũy mà một người chơi đóng góp trong suốt vòng đời. Nguyên tắc vàng của ngành game: LTV dự phóng D90 hoặc D180 phải lớn hơn ít nhất 2.5 - 3 lần CPI thì game mới có lãi ròng.", en: "LTV (Lifetime Value): The total cumulative revenue a player generates. The industry rule: projected D90/D180 LTV must exceed CPI by at least 2.5x to 3x to ensure net profitability." },
-      ] },
-      { type: "h2", text: { vi: "2. Chiến lược phân bổ ngân sách đa kênh tại Việt Nam", en: "2. Multi-Channel Budget Allocation Strategy in Vietnam" } },
-      { type: "p", text: {
-        vi: "Mỗi kênh quảng cáo tại thị trường Việt Nam sở hữu thuật toán và tệp người chơi đặc thù, đòi hỏi cách tiếp cận riêng biệt:",
-        en: "Each advertising platform in the Vietnamese market operates on distinct optimization algorithms and player demographics:",
-      } },
-      { type: "ul", items: [
-        { vi: "Google App Campaigns (UAC): Kênh xương sống để tối ưu sự kiện trong ứng dụng (tối ưu đăng ký trước, hoàn thành tutorial, hoặc nạp lần đầu In-App Purchase).", en: "Google App Campaigns (UAC): The foundational backbone for in-app event optimization (pre-registration, tutorial completion, first-time IAP)." },
-        { vi: "Meta Ads (Facebook / Instagram): Điểm mạnh nằm ở việc nhắm chọn tệp sở thích sâu, retargeting người chơi cũ và chạy các định dạng video ngắn (Reels) giàu cốt truyện.", en: "Meta Ads: Excels in granular affinity targeting, re-engaging lapsed players, and storytelling formats via Facebook/Instagram Reels." },
-        { vi: "TikTok Ads: Kênh bùng nổ tệp Gen Z với định dạng Spark Ads tận dụng video của creator, đẩy mạnh tỷ lệ tương tác và viral tự nhiên với chi phí CPM cạnh tranh.", en: "TikTok Ads: Captures Gen Z volume via Spark Ads leveraging authentic creator videos, driving high engagement and organic lift at competitive CPMs." },
-        { vi: "Ad Networks & DSPs (Mintegral, Unity Ads, ironSource): Thích hợp để mở rộng quy mô (scale volume) nhanh chóng trong giai đoạn đầu Open Beta qua định dạng Playable Ads và Video tặng thưởng (Rewarded Video).", en: "Ad Networks & DSPs (Mintegral, Unity, ironSource): Ideal for rapid scale during early Open Beta via Playable Ads and Rewarded Video formats." },
-      ] },
+      { type: "h2", text: { vi: "1. Tam giác chỉ số cốt lõi: Bóc tách mối quan hệ giữa CPI, ROAS và LTV", en: "1. The Core UA Trinity: Decoupling CPI, ROAS, and Lifetime Value" } },
+      {
+        type: "p",
+        text: {
+          vi: "Một chiến dịch User Acquisition (UA) chuyên nghiệp không bao giờ đánh giá hiệu quả bằng một chỉ số đơn lẻ. Bạn cần kiểm soát chặt chẽ 3 mắt xích trong một hệ quy chiếu tài chính thống nhất:",
+          en: "Professional UA operations never evaluate performance in silos. You must tightly calibrate 3 interconnected financial pillars:"
+        },
+      },
+      {
+        type: "ul",
+        items: [
+          {
+            vi: "Effective CPI (eCPI): Chi phí thực tế trên mỗi lượt cài đặt sau khi đã tính cả lượng tải tự nhiên (Organic Lift từ K-factor). Công thức: eCPI = Tổng chi phí quảng cáo / (Paid Installs + Organic Installs). Một chiến dịch viral tốt có thể kéo eCPI giảm 35% so với CPI báo cáo trên trình quản lý quảng cáo.",
+            en: "Effective CPI (eCPI): True cost per install factoring in organic lift (K-factor virality). Formula: eCPI = Total Ad Spend / (Paid + Organic Installs). Strong viral loops can depress eCPI by 35% below dashboard figures."
+          },
+          {
+            vi: "Điểm hòa vốn (Break-Even ROAS): Tỷ suất sinh lời tối thiểu trên chi phí quảng cáo để chiến dịch không bị lỗ ròng sau khi trừ 30% phí nền tảng (Apple App Store / Google Play) và thuế. Công thức: Break-Even ROAS = 1 / (1 - 0.30 - 0.05) ≈ 153.8%.",
+            en: "Break-Even ROAS Threshold: Minimum ad return needed to achieve net profitability after deducting 30% store commission (Apple/Google) and local taxes. Formula: Break-Even ROAS = 1 / (1 - 0.30 - 0.05) ≈ 153.8%."
+          },
+          {
+            vi: "Đường cong hoàn vốn (Payback Curve) theo thể loại: Thể loại Game Casual/AFK yêu cầu hoàn vốn nhanh ở mốc D14 - D30; trong khi dòng Game MMORPG Kiếm hiệp/Tiên hiệp và SLG Chiến thuật có thể chấp nhận hòa vốn ở D60 - D90 nhờ giá trị chi tiêu khổng lồ của nhóm người chơi nạp lớn (Whales/VIPs).",
+            en: "Genre-Specific Payback Curves: Casual/AFK titles necessitate rapid payback within D14 - D30; whereas hardcore MMORPG and 4X SLG titles tolerate D60 - D90 payback horizons fueled by high-spending whale lifecycles."
+          },
+        ],
+      },
       {
         type: "image",
         src: "/blog-covers/app-store-conversion-funnel.jpg",
-        alt: { vi: "Phân tích phễu chuyển đổi từ Store Listing đến lượt tải và hành vi nạp tiền trong ứng dụng", en: "Conversion funnel analysis from store listing impressions to app installs and in-app monetization" },
-        caption: { vi: "Đồng bộ giữa creative quảng cáo và hình ảnh Store Listing giúp nâng tỷ lệ chuyển đổi và hạ CPI thực tế.", en: "Aligning ad creatives seamlessly with Store Listing previews significantly boosts install conversion and lowers blended CPI." },
+        alt: { vi: "Sơ đồ phễu chuyển đổi toàn diện từ Click quảng cáo đến In-App Purchase và Retargeting", en: "Comprehensive 5-stage conversion funnel from ad click to first in-app purchase and VIP retention" },
+        caption: { vi: "Phễu chuyển đổi 5 tầng: Kiểm soát chặt chẽ tỷ lệ rơi rụng từ Impression sang Store View, Hoàn thành Tutorial, Nạp đầu (First IAP) và Tái nạp định kỳ.", en: "5-Stage Conversion Funnel: Rigorously diagnosing drop-offs from impression to store visit, tutorial completion, first IAP, and recurring subscriptions." },
       },
-      { type: "h2", text: { vi: "3. Quy trình thử nghiệm Creative Testing theo ma trận", en: "3. Matrix-Based Creative Testing Methodology" } },
-      { type: "p", text: {
-        vi: "Đừng đoán mò sở thích của game thủ. Hãy phân tách một video quảng cáo thành 3 thành tố: Hook 3 giây đầu (yếu tố gây sốc/tò mò), Thân bài (trình diễn gameplay thực tế hoặc tính năng độc quyền), và Kêu gọi hành động (Call To Action - quà tặng giftcode, quà tân thủ). Thử nghiệm hoán đổi từng biến thể trên ngân sách nhỏ để tìm ra 'Winning Creative' trước khi tăng ngân sách gấp 10 lần.",
-        en: "Never guess player preferences. Dissect video ads into three modular elements: the first 3-second Hook, the Core Body (showcasing real gameplay or exclusive mechanics), and the Call To Action (starter giftcodes, limited rewards). Test variations against controlled micro-budgets to identify winning creatives before scaling 10x.",
-      } },
-      { type: "quote", text: {
-        vi: "Một chiến dịch ra mắt thành công không phải là tiêu ngân sách nhanh nhất, mà là tìm ra công thức sinh lời LTV > CPI sớm nhất để tự tin nhân rộng quy mô.",
-        en: "A successful launch campaign is not about spending budget the fastest; it is about proving the LTV > CPI formula earliest to scale with absolute confidence.",
-      } },
-    
+      { type: "h2", text: { vi: "2. Tối ưu hóa 5 tầng Phễu Chuyển Đổi (Click-to-IAP Funnel)", en: "2. Optimizing the 5-Stage Click-to-IAP Conversion Funnel" } },
       {
-    "type": "h2",
-    "text": {
-      "vi": "3. Tối ưu hóa chu kỳ chuyển đổi từ Click sang In-App Purchase (CVR Funnel)",
-      "en": "3. Optimizing the Click-to-IAP Conversion Funnel"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "CPI thấp chỉ là một nửa câu chuyện. Lợi nhuận thực sự nằm ở tỷ lệ hoàn tất nạp tiền (Payment Conversion Rate). Một chiến dịch UA xuất sắc phải kiểm soát chặt chẽ 4 chỉ số vàng trên phễu:",
-      "en": "Low CPI tells only half the story. Real profitability resides in the Payment Conversion Rate. An exceptional UA campaign monitors 4 key funnel metrics:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Click-to-Install (IPM > 25): Tối ưu trang Store Listing để đảm bảo người xem quảng cáo bấm Tải ngay trong lần đầu tiên.",
-        "en": "Click-to-Install (IPM > 25): Store listing optimization ensuring ad viewers install immediately."
+        type: "p",
+        text: {
+          vi: "Doanh thu bền vững đến từ việc bịt kín các 'lỗ rò rỉ' trên hành trình trải nghiệm của người chơi. Hãy đối chiếu các mốc Benchmark chuẩn ngành sau:",
+          en: "Sustainable revenue stems from eliminating leakages across the player onboarding journey. Calibrate against these industry benchmarks:"
+        },
       },
       {
-        "vi": "Install-to-Tutorial Complete (> 75%): Tối giản màn mở đầu để người chơi tiếp cận ải phụ bản đầu tiên trong 3 phút.",
-        "en": "Install-to-Tutorial (> 75%): Streamlining early gameplay so users reach combat within 3 minutes."
+        type: "ul",
+        items: [
+          {
+            vi: "Tầng 1: Click-to-Install (IPM > 25) — Tối ưu trang Store Listing, icon và 3 screenshot đầu tiên để đảm bảo cứ 1.000 lượt hiển thị quảng cáo thì tạo ra ít nhất 25 lượt cài đặt thực tế.",
+            en: "Tier 1: Click-to-Install (IPM > 25) — Store listing and screenshot optimization ensuring at least 25 installs per 1,000 ad impressions."
+          },
+          {
+            vi: "Tầng 2: Install-to-Tutorial Complete (> 75%) — Tinh giản màn mở đầu, rút ngắn thời gian hướng dẫn tân thủ xuống dưới 3 phút để người chơi nhanh chóng tiếp cận tính năng chiến đấu hoặc quay tướng gacha.",
+            en: "Tier 2: Tutorial Completion (> 75%) — Streamlining early game flow so new players access core combat and gacha mechanics within 3 minutes."
+          },
+          {
+            vi: "Tầng 3: Day 1 Retention (> 40%) — Trải nghiệm ngày đầu tiên phải mượt mà, không gặp lỗi crash hay nghẽn mạng, kết hợp hệ thống phần thưởng tân thủ 7 ngày để giữ chân người chơi.",
+            en: "Tier 3: Day 1 Retention (> 40%) — Flawless first-day server stability paired with generous 7-day login bonus tracks to cement retention habits."
+          },
+          {
+            vi: "Tầng 4: First-Time Buyer Conversion (Payer Rate 3.5% - 7.0%) — Thiết kế gói quà nạp đầu 0.99 USD với giá trị quy đổi gấp 10 lần (x10 Value Pack) để phá vỡ rào cản chi tiêu tâm lý ban đầu của game thủ.",
+            en: "Tier 4: First-Time Buyer Conversion (3.5% - 7.0%) — Designing high-value $0.99 starter packs offering 10x perceived value to eliminate initial payer friction."
+          },
+          {
+            vi: "Tầng 5: Repeat Purchase Rate (> 45%) — Giữ chân tệp người chơi nạp tiền bằng Thẻ Tháng (Monthly Card), Battle Pass mùa giải và các chuỗi sự kiện tích lũy nạp mở rộng.",
+            en: "Tier 5: Repeat Purchase Rate (> 45%) — Securing payer loyalty through Monthly Privilege Cards, Season Battle Passes, and cumulative top-up events."
+          },
+        ],
       },
       {
-        "vi": "First-Time Buyer Conversion (Payer Rate 3.5% - 7.0%): Kích hoạt gói nạp đầu $0.99 với phần thưởng vượt trội.",
-        "en": "First-Time Buyer Conversion (3.5% - 7.0%): Triggering high-value $0.99 first-purchase packages."
+        type: "image",
+        src: "/blog-covers/creative-testing-lab.jpg",
+        alt: { vi: "Quy trình thử nghiệm Creative Testing đa kênh tìm kiếm mẫu quảng cáo chuyển đổi cao nhất", en: "Modular creative testing methodology identifying winning high-converting mobile ad creatives" },
+        caption: { vi: "Ma trận Modular Creative Testing: Phân tách video quảng cáo thành 3 thành tố (Hook 3s đầu, Gameplay biểu diễn, CTA quà tặng) để tìm ra biến thể sinh lời cao nhất trước khi scale ngân sách.", en: "Modular Creative Testing Matrix: Dissecting video ads into 3 interchangeable elements (3s Hook, Core Gameplay, Bounty CTA) to identify winning variants prior to budget scale." },
+      },
+      { type: "h2", text: { vi: "3. Ma trận phân bổ ngân sách 4 kênh quảng cáo chủ lực tại Việt Nam", en: "3. Four-Pillar Channel Allocation Matrix for Vietnam" } },
+      {
+        type: "p",
+        text: {
+          vi: "Không có một kênh quảng cáo nào hoàn hảo cho mọi mục tiêu. Sự kết hợp nhịp nhàng giữa 4 kênh sau sẽ giúp chiến dịch đạt hiệu quả chuyển đổi cao nhất:",
+          en: "No single ad network satisfies all campaign objectives. Orchestrating these 4 pillars delivers maximum blended efficiency:"
+        },
       },
       {
-        "vi": "Repeat Purchase Rate (> 45%): Giữ chân người nạp tiền thông qua các mốc tích lũy nạp và sự kiện đua top liên server.",
-        "en": "Repeat Purchase Rate (> 45%): Retaining payers through cumulative top-up milestones and cross-server events."
-      }
-    ]
-  }],
+        type: "ul",
+        items: [
+          {
+            vi: "Google App Campaigns (Google UAC): Kênh xương sống cho việc tối ưu sự kiện nạp tiền trong ứng dụng (In-App Action Optimization). Thuật toán AI của Google cực kỳ mạnh trong việc tìm kiếm những người chơi có hành vi chi tiêu tương đồng trong hệ sinh thái Google Play.",
+            en: "Google App Campaigns (UAC): Foundational engine for In-App Action optimization (first purchase and target ROAS), leveraging Google's ML to identify high-spending player profiles."
+          },
+          {
+            vi: "Meta Ads (Facebook & Instagram Reels): Kênh tối ưu hóa cho nội dung cốt truyện, hình ảnh đồ họa điện ảnh và nhắm chọn chuyên sâu theo sở thích game thủ (Kiếm hiệp, Anime, Manga, Esport).",
+            en: "Meta Ads (Facebook/Instagram Reels): Best for narrative-driven video assets, ray-traced graphics showcases, and deep affinity audience targeting."
+          },
+          {
+            vi: "TikTok Spark Ads: Kênh bùng nổ tệp người chơi trẻ Gen Z với định dạng video ngắn dạng UGC do các Micro Creator sản xuất, mang lại tỷ lệ nhấp chuột (CTR > 4.5%) và chi phí CPM rất cạnh tranh.",
+            en: "TikTok Spark Ads: Dominates Gen Z volume by boosting authentic short-form UGC videos created by gaming creators, driving CTRs over 4.5% at competitive CPMs."
+          },
+          {
+            vi: "Ad Networks & DSPs (Mintegral, Unity Ads, ironSource): Kênh đẩy volume quy mô lớn trong tuần đầu Open Beta thông qua định dạng Playable Ads tương tác và Video tặng thưởng (Rewarded Video).",
+            en: "Ad Networks & DSPs (Mintegral, Unity, ironSource): Rapid volume scaling during launch weeks via interactive Playable Ads and Rewarded Video placements."
+          },
+        ],
+      },
+      { type: "h2", text: { vi: "4. Ma trận ngân sách 3 giai đoạn ra mắt (Launch Budget Matrix)", en: "4. Three-Phase Launch Budget Allocation Matrix" } },
+      {
+        type: "ul",
+        items: [
+          {
+            vi: "Giai đoạn 1: Soft Launch & Test CVR (15% ngân sách) — Chạy thử nghiệm kỹ thuật trên 2.000 - 5.000 người chơi để kiểm tra tải máy chủ, tỷ lệ crash, tối ưu phễu tân thủ và đo lường chỉ số giữ chân D1/D7 thực tế.",
+            en: "Phase 1: Soft Launch & CVR Testing (15% budget) — Stress-testing servers with 2k-5k players, optimizing FTUE onboarding, and validating real D1/D7 retention benchmarks."
+          },
+          {
+            vi: "Giai đoạn 2: Launch Spike D0 - D14 (60% ngân sách) — Dồn lực đẩy max công suất trên tất cả các kênh quảng cáo kết hợp dàn Influencer để chiếm lĩnh Top 1 Bảng xếp hạng, kích hoạt hiệu ứng tải tự nhiên khổng lồ.",
+            en: "Phase 2: Launch Spike D0 - D14 (60% budget) — Concentrating ad spend and influencer blitz across all channels to seize Top 1 Store Charts and trigger massive organic download velocity."
+          },
+          {
+            vi: "Giai đoạn 3: Evergreen & LiveOps Retargeting (25% ngân sách) — Duy trì dòng chảy người chơi mới ổn định, chạy chiến dịch Retargeting kêu gọi người chơi cũ quay lại qua các bản cập nhật tướng mới và sự kiện Bang hội.",
+            en: "Phase 3: Evergreen & LiveOps Retargeting (25% budget) — Sustaining steady baseline acquisition while retargeting churned players around major content patches and guild championship updates."
+          },
+        ],
+      },
+    ],
   },
   {
     slug: "influencer-marketing-chon-kol-koc-dung-cach",
