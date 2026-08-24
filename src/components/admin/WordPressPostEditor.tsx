@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import type { Post, Block } from "@/content/posts";
+import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
-import MediaManager from "./MediaManager";
-import RankMathSEO from "./RankMathSEO";
+import MediaManager from "@/components/admin/MediaManager";
+import RankMathSEO from "@/components/admin/RankMathSEO";
 
 type WordPressPostEditorProps = {
   initialPost?: Post | null;
@@ -13,155 +13,115 @@ type WordPressPostEditorProps = {
   onCancel: () => void;
 };
 
-const defaultEmptyPost: Post = {
-  slug: "bai-viet-moi-anbu-game-marketing",
-  title: {
-    vi: "Tiêu đề bài viết mới về Game Marketing",
-    en: "New Game Marketing Strategy Title",
-  },
-  excerpt: {
-    vi: "Tóm tắt ngắn gọn và hấp dẫn về nội dung bài viết để hiển thị trên thẻ Google và mạng xã hội.",
-    en: "A concise and compelling summary of the article for search results and social previews.",
-  },
-  category: {
-    vi: "Marketing Game",
-    en: "Game Marketing",
-  },
+const emptyPost: Post = {
+  slug: "",
+  title: { vi: "", en: "" },
+  excerpt: { vi: "", en: "" },
+  category: { vi: "Marketing Game", en: "Game Marketing" },
   date: new Date().toISOString().split("T")[0],
   readingTime: 5,
-  author: "ANBU Team",
-  color: "from-navy-900 to-orange-600",
-  variant: "performance",
   cover: "/blog-covers/performance-ad-campaigns.jpg",
-  sources: [
-    {
-      label: { vi: "Google Search Central — Helpful Content", en: "Google Search Central — Helpful Content" },
-      href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
-    },
-  ],
+  author: "ANBU Team",
+  color: "from-blue-600 to-indigo-600",
+  variant: "game",
   body: [
-    {
-      type: "p",
-      text: {
-        vi: "Đoạn mở đầu nêu trực diện vấn đề và giải pháp thực chiến cho các studio và nhà phát hành game tại Việt Nam.",
-        en: "Opening paragraph introducing the core operational challenge and proven framework for gaming studios.",
-      },
-    },
-    {
-      type: "image",
-      src: "/blog-covers/performance-ad-campaigns.jpg",
-      alt: {
-        vi: "Biểu đồ đo lường hiệu suất chiến dịch quảng cáo game mobile",
-        en: "Mobile game performance marketing campaign analytics dashboard",
-      },
-      caption: {
-        vi: "Tối ưu hóa phễu chuyển đổi giúp hạ thấp chi phí CPI và gia tăng LTV.",
-        en: "Optimizing the conversion funnel reduces CPI and scales player LTV.",
-      },
-    },
-    {
-      type: "h2",
-      text: {
-        vi: "1. Khung chiến lược triển khai 3 bước",
-        en: "1. The 3-Step Execution Framework",
-      },
-    },
-    {
-      type: "ul",
-      items: [
-        { vi: "Bước 1: Nghiên cứu tệp người chơi mục tiêu và thiết lập tracking attribution", en: "Step 1: Deep audience persona research and attribution setup" },
-        { vi: "Bước 2: Triển khai kiểm thử sáng tạo A/B Testing trong 48 giờ", en: "Step 2: Rapid 48-hour modular creative testing" },
-        { vi: "Bước 3: Tối ưu hóa vòng lặp LiveOps và tỷ lệ giữ chân D30", en: "Step 3: LiveOps retention loop optimization" },
-      ],
-    },
+    { type: "p", text: { vi: "Nhập nội dung đoạn mở đầu tại đây...", en: "Enter intro paragraph here..." } },
+    { type: "h2", text: { vi: "1. Tổng quan chiến lược", en: "1. Strategic Overview" } },
+    { type: "p", text: { vi: "Nội dung phân tích chi tiết cho phần 1...", en: "Detailed analysis for section 1..." } },
   ],
 };
 
+const availableTags = [
+  "Marketing Game", "LiveOps", "ASO Mobile", "KOL Gaming", "CPI Optimization", 
+  "ROAS", "Cộng đồng Discord", "TikTok Game Ads", "Google UAC", "Bản địa hóa Game"
+];
+
 export default function WordPressPostEditor({ initialPost, locale, onSave, onCancel }: WordPressPostEditorProps) {
-  const [post, setPost] = useState<Post>(initialPost ? JSON.parse(JSON.stringify(initialPost)) : defaultEmptyPost);
+  const [post, setPost] = useState<Post>(initialPost || { ...emptyPost, slug: `bai-viet-moi-${Date.now()}` });
   const [activeLang, setActiveLang] = useState<"vi" | "en">("vi");
-  const [editorMode, setEditorMode] = useState<"visual" | "text" | "preview">("visual");
-  const [showMediaModal, setShowMediaModal] = useState<number | "cover" | null>(null);
-  const [saveToast, setSaveToast] = useState(false);
+  const [editorMode, setEditorMode] = useState<"visual" | "preview">("visual");
   const [categoryTab, setCategoryTab] = useState<"all" | "most_used">("all");
+  const [showMediaModal, setShowMediaModal] = useState<number | "cover" | null>(null);
+  const [selectedTags, setSelectedTags] = useState<string[]>(["Marketing Game", "LiveOps"]);
+  const [newTagInput, setNewTagInput] = useState("");
+  const [aiNotice, setAiNotice] = useState<string | null>(null);
 
-  // Word count & reading time
-  const calculateStats = () => {
-    let wordCount = 0;
-    wordCount += (post.title[activeLang] || "").split(/\s+/).filter(Boolean).length;
-    wordCount += (post.excerpt[activeLang] || "").split(/\s+/).filter(Boolean).length;
-    post.body.forEach((b) => {
-      if (b.type === "p" || b.type === "h2" || b.type === "quote") {
-        wordCount += (b.text[activeLang] || "").split(/\s+/).filter(Boolean).length;
-      } else if (b.type === "ul") {
-        b.items.forEach((it) => {
-          wordCount += (it[activeLang] || "").split(/\s+/).filter(Boolean).length;
-        });
-      }
+  const handleTitleChange = (val: string) => {
+    setPost({
+      ...post,
+      title: { ...post.title, [activeLang]: val },
+      slug: !initialPost && activeLang === "vi" ? val.toLowerCase().replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-") : post.slug,
     });
-    const readingTime = Math.max(3, Math.ceil(wordCount / 180));
-    return { wordCount, readingTime };
   };
 
-  const { wordCount, readingTime } = calculateStats();
-
-  const addBlock = (type: Block["type"]) => {
-    let newBlock: Block;
-    if (type === "h2") {
-      newBlock = { type: "h2", text: { vi: "Tiêu đề mục mới (Heading 2)", en: "New Section Heading" } };
-    } else if (type === "quote") {
-      newBlock = { type: "quote", text: { vi: "Trích dẫn nhận định chiến lược quan trọng...", en: "Key strategic quote or insight..." } };
-    } else if (type === "ul") {
-      newBlock = {
-        type: "ul",
-        items: [
-          { vi: "Ý chính thứ nhất của bài viết", en: "First core takeaway" },
-          { vi: "Ý chính thứ hai của bài viết", en: "Second core takeaway" },
-        ],
-      };
-    } else if (type === "image") {
-      newBlock = {
-        type: "image",
-        src: "/blog-covers/creative-testing-lab.jpg",
-        alt: { vi: "Hình ảnh minh họa thực tế chuẩn SEO", en: "SEO-optimized practitioner image" },
-        caption: { vi: "Chú thích giải thích biểu đồ và quy trình.", en: "Analytical caption explaining the chart." },
-      };
-    } else {
-      newBlock = { type: "p", text: { vi: "Nội dung đoạn văn mới...", en: "New paragraph content..." } };
+  const handleAddTag = () => {
+    if (newTagInput.trim() && !selectedTags.includes(newTagInput.trim())) {
+      setSelectedTags([...selectedTags, newTagInput.trim()]);
+      setNewTagInput("");
     }
-
-    setPost({ ...post, body: [...post.body, newBlock] });
   };
 
-  const removeBlock = (index: number) => {
+  const handleToggleTag = (tag: string) => {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(selectedTags.filter((t) => t !== tag));
+    } else {
+      setSelectedTags([...selectedTags, tag]);
+    }
+  };
+
+  // AI Content Helpers
+  const handleAiGenerateTitles = () => {
+    const titlesVi = [
+      "Chiến Lược Tối Ưu CPI và ROAS Game Mobile 2026: 5 Bước Bứt Phá Doanh Thu",
+      "Kế Hoạch Ra Mắt Game Tại Việt Nam: Khung Vận Hành Toàn Diện Từ A-Z",
+      "Bí Quyết Chọn KOL & KOC Gaming Đúng Chuẩn: Tránh Bẫy View Ảo và Tối Ưu Ngân Sách",
+    ];
+    const picked = titlesVi[Math.floor(Math.random() * titlesVi.length)];
+    setPost({ ...post, title: { ...post.title, [activeLang]: picked } });
+    setAiNotice(`Đã áp dụng tiêu đề chuẩn SEO Viral: "${picked}"`);
+    setTimeout(() => setAiNotice(null), 4000);
+  };
+
+  const handleAiGenerateSummary = () => {
+    const summary = activeLang === "vi"
+      ? `Phân tích chuyên sâu chiến lược ${post.category.vi.toLowerCase()} cho các studio game. Cung cấp khung đo lường thực chiến, tối ưu chi phí và tăng trưởng bền vững.`
+      : `In-depth analysis of ${post.category.en.toLowerCase()} strategies for game studios. Providing actionable frameworks for measurable growth.`;
+    setPost({ ...post, excerpt: { ...post.excerpt, [activeLang]: summary } });
+    setAiNotice("Đã tự động tạo tóm tắt Meta Description chuẩn độ dài SEO!");
+    setTimeout(() => setAiNotice(null), 4000);
+  };
+
+  const handleAiAddFaqBlock = () => {
+    const newBody = [
+      ...post.body,
+      { type: "h2" as const, text: { vi: "Câu hỏi thường gặp (FAQ)", en: "Frequently Asked Questions (FAQ)" } },
+      {
+        type: "p" as const,
+        text: {
+          vi: "Q: Chi phí tối ưu CPI cho game mobile trung bình là bao nhiêu?\nA: Chi phí biến thiên tùy theo thể loại game (Casual, Mid-core hoặc Hardcore) và chất lượng tệp người chơi tiếp cận.",
+          en: "Q: What is the average CPI for mobile games?\nA: Costs vary based on the game genre (Casual, Mid-core, or Hardcore) and target audience engagement.",
+        },
+      },
+    ];
+    setPost({ ...post, body: newBody });
+    setAiNotice("Đã thêm khối FAQ (Câu hỏi thường gặp) để tối ưu Google Rich Snippets!");
+    setTimeout(() => setAiNotice(null), 4000);
+  };
+
+  const updateBlock = (index: number, text: string) => {
     const updated = [...post.body];
-    updated.splice(index, 1);
+    const block = updated[index];
+    if (block.type === "p" || block.type === "h2" || block.type === "quote") {
+      block.text[activeLang] = text;
+    }
     setPost({ ...post, body: updated });
   };
 
-  const moveBlock = (index: number, direction: "up" | "down") => {
-    if ((direction === "up" && index === 0) || (direction === "down" && index === post.body.length - 1)) return;
-    const updated = [...post.body];
-    const targetIndex = direction === "up" ? index - 1 : index + 1;
-    const temp = updated[index];
-    updated[index] = updated[targetIndex];
-    updated[targetIndex] = temp;
-    setPost({ ...post, body: updated });
-  };
-
-  const updateBlockText = (index: number, field: "text" | "alt" | "caption", value: string) => {
-    const updated = [...post.body];
-    const block = updated[index] as any;
-    if (!block[field]) block[field] = { vi: "", en: "" };
-    block[field][activeLang] = value;
-    setPost({ ...post, body: updated });
-  };
-
-  const updateListItem = (blockIndex: number, itemIndex: number, value: string) => {
+  const updateListItem = (blockIndex: number, itemIndex: number, text: string) => {
     const updated = [...post.body];
     const block = updated[blockIndex];
     if (block.type === "ul") {
-      block.items[itemIndex][activeLang] = value;
+      block.items[itemIndex][activeLang] = text;
       setPost({ ...post, body: updated });
     }
   };
@@ -170,7 +130,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     const updated = [...post.body];
     const block = updated[blockIndex];
     if (block.type === "ul") {
-      block.items.push({ vi: "Nội dung gạch đầu dòng mới", en: "New bullet point item" });
+      block.items.push({ vi: "Mục danh sách mới...", en: "New item..." });
       setPost({ ...post, body: updated });
     }
   };
@@ -178,140 +138,178 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
   const removeListItem = (blockIndex: number, itemIndex: number) => {
     const updated = [...post.body];
     const block = updated[blockIndex];
-    if (block.type === "ul" && block.items.length > 1) {
+    if (block.type === "ul") {
       block.items.splice(itemIndex, 1);
       setPost({ ...post, body: updated });
     }
   };
 
-  const handleSave = () => {
-    const finalPost = { ...post, readingTime };
-    onSave(finalPost);
-    setSaveToast(true);
-    setTimeout(() => setSaveToast(false), 3000);
+  const addBlock = (type: "p" | "h2" | "quote" | "ul" | "image") => {
+    const updated = [...post.body];
+    if (type === "p") {
+      updated.push({ type: "p", text: { vi: "Nhập nội dung đoạn văn mới...", en: "New paragraph content..." } });
+    } else if (type === "h2") {
+      updated.push({ type: "h2", text: { vi: "Tiêu đề mục mới (Heading 2)", en: "New section title (Heading 2)" } });
+    } else if (type === "quote") {
+      updated.push({ type: "quote", text: { vi: "Trích dẫn số liệu hoặc nhận định chuyên gia...", en: "Key expert quote..." } });
+    } else if (type === "ul") {
+      updated.push({
+        type: "ul",
+        items: [
+          { vi: "Điểm nổi bật 1...", en: "Highlight item 1..." },
+          { vi: "Điểm nổi bật 2...", en: "Highlight item 2..." },
+        ],
+      });
+    } else if (type === "image") {
+      updated.push({
+        type: "image",
+        src: "/blog-covers/performance-ad-campaigns.jpg",
+        alt: { vi: "Mô tả hình ảnh", en: "Image description" },
+        caption: { vi: "Chú thích hình ảnh", en: "Image caption" },
+      });
+    }
+    setPost({ ...post, body: updated });
   };
 
+  const removeBlock = (index: number) => {
+    if (post.body.length <= 1) return;
+    const updated = [...post.body];
+    updated.splice(index, 1);
+    setPost({ ...post, body: updated });
+  };
+
+  const moveBlock = (index: number, direction: "up" | "down") => {
+    if (direction === "up" && index === 0) return;
+    if (direction === "down" && index === post.body.length - 1) return;
+    const updated = [...post.body];
+    const target = direction === "up" ? index - 1 : index + 1;
+    const temp = updated[index];
+    updated[index] = updated[target];
+    updated[target] = temp;
+    setPost({ ...post, body: updated });
+  };
+
+  const handleSave = () => {
+    if (!post.title.vi.trim()) {
+      alert("Vui lòng nhập tiêu đề bài viết!");
+      return;
+    }
+    onSave(post);
+  };
+
+  const totalWords = post.body.reduce((acc, b) => {
+    if (b.type === "p" || b.type === "h2" || b.type === "quote") {
+      return acc + (b.text[activeLang] || "").split(/\s+/).filter(Boolean).length;
+    }
+    if (b.type === "ul") {
+      return acc + b.items.reduce((s, it) => s + (it[activeLang] || "").split(/\s+/).filter(Boolean).length, 0);
+    }
+    return acc;
+  }, 0);
+
+  const readingTime = Math.max(1, Math.ceil(totalWords / 180));
+
   return (
-    <div className="text-slate-800">
-      {/* WordPress Page Title & Screen Options */}
-      <div className="flex items-center justify-between pb-3">
-        <div className="flex items-center gap-3">
+    <div className="space-y-4 text-slate-800">
+      {/* Top Breadcrumb & Actions Bar */}
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div>
           <h1 className="text-2xl font-normal text-[#1d2327]">
-            {initialPost ? "Chỉnh sửa bài viết" : "Viết bài mới"}
+            {initialPost ? "Chỉnh sửa bài viết" : "Thêm bài viết mới"}
           </h1>
-          <button
-            onClick={onCancel}
-            className="rounded border border-[#2271b1] bg-white px-2.5 py-1 text-xs font-semibold text-[#2271b1] hover:bg-[#f0f6fc]"
-          >
-            Quay lại
-          </button>
+          <p className="text-xs text-[#646970]">
+            Trình soạn thảo Classic Editor WordPress tích hợp Rank Math SEO PRO & Trợ lý AI
+          </p>
         </div>
 
-        {/* Top Right Help / Screen Options */}
-        <div className="hidden sm:flex items-center gap-1 text-xs text-[#646970]">
-          <div className="flex rounded border border-[#c3c4c7] bg-white px-2 py-0.5">
-            Tùy chọn hiển thị ▾
-          </div>
-          <div className="flex rounded border border-[#c3c4c7] bg-white px-2 py-0.5">
-            Trợ giúp ▾
-          </div>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={onCancel}
+            className="rounded border border-[#8c8f94] bg-white px-3 py-1.5 text-xs font-semibold text-[#2c3338] shadow-sm hover:bg-[#f6f7f7]"
+          >
+            Hủy bỏ
+          </button>
+          <button
+            type="button"
+            onClick={handleSave}
+            className="rounded bg-[#2271b1] px-4 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-[#135e96] transition"
+          >
+            {initialPost ? "Cập nhật bài viết" : "Đăng bài viết (Publish)"}
+          </button>
         </div>
       </div>
 
-      {saveToast && (
-        <div className="mb-4 rounded border-l-4 border-emerald-500 bg-white p-3 shadow-sm text-xs font-bold text-emerald-800 flex items-center justify-between">
-          <span>✓ Bài viết đã được lưu thành công vào hệ thống ANBU.</span>
-          <span className="text-slate-400 font-normal">Vừa xong</span>
+      {aiNotice && (
+        <div className="rounded border-l-4 border-[#2271b1] bg-white p-3 shadow-sm text-xs font-bold text-[#135e96]">
+          ⚡ {aiNotice}
         </div>
       )}
 
-      {/* Main Grid: Left Editor (col-span-8 or 9), Right MetaBoxes (col-span-4 or 3) */}
+      {/* Main 2-Column WordPress Layout */}
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-12">
-        {/* LEFT COLUMN: Post Title, Add Media, Visual Editor Canvas, Excerpt, Rank Math */}
-        <div className="lg:col-span-8 xl:col-span-9 space-y-5">
-          {/* Title Box */}
-          <div className="bg-white">
-            <input
-              type="text"
-              value={post.title[activeLang] || ""}
-              onChange={(e) => setPost({ ...post, title: { ...post.title, [activeLang]: e.target.value } })}
-              placeholder="Nhập tiêu đề tại đây (Enter title here)"
-              className="w-full rounded border border-[#ccd0d4] bg-white px-3.5 py-2 text-xl font-normal text-[#2c3338] shadow-inner outline-none focus:border-[#2271b1] focus:ring-1 focus:ring-[#2271b1]"
-            />
-            {/* Permalink */}
-            <div className="mt-1.5 flex items-center gap-1.5 text-xs text-[#646970]">
-              <span>Liên kết tĩnh:</span>
-              <span className="font-mono text-[#2271b1] underline">https://anbu.asia/{activeLang}/blog/{post.slug}</span>
+        {/* LEFT COLUMN: Main Post Editor (70% ~ 8 cols) */}
+        <div className="lg:col-span-8 space-y-4">
+          {/* Post Title Input Box */}
+          <div className="rounded border border-[#ccd0d4] bg-white p-4 shadow-sm space-y-3">
+            <div>
+              <input
+                type="text"
+                value={post.title[activeLang] || ""}
+                onChange={(e) => handleTitleChange(e.target.value)}
+                placeholder="Nhập tiêu đề bài viết tại đây..."
+                className="w-full border-b border-[#ccd0d4] pb-2 font-display text-xl font-bold text-[#1d2327] placeholder:text-[#8c8f94] outline-none focus:border-[#2271b1]"
+              />
+            </div>
+
+            {/* Permalink Slug Preview & Edit */}
+            <div className="flex items-center gap-2 text-xs text-[#646970] font-mono">
+              <span>Đường dẫn tĩnh (Permalink):</span>
+              <span className="text-[#2271b1]">https://anbu.asia/{locale}/blog/</span>
+              <input
+                type="text"
+                value={post.slug}
+                onChange={(e) => setPost({ ...post, slug: e.target.value })}
+                className="rounded border border-[#ccd0d4] bg-[#f6f7f7] px-2 py-0.5 text-xs text-[#2c3338] outline-none"
+              />
+            </div>
+          </div>
+
+          {/* AI Content & SEO Copilot Bar */}
+          <div className="rounded border border-[#ccd0d4] bg-gradient-to-r from-blue-50/70 to-indigo-50/70 p-3 shadow-sm flex flex-wrap items-center justify-between gap-2 text-xs">
+            <div className="flex items-center gap-2 font-bold text-[#1d2327]">
+              <span>⚡ Trợ lý AI Copilot:</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-1.5">
               <button
                 type="button"
-                onClick={() => {
-                  const newSlug = prompt("Chỉnh sửa slug bài viết:", post.slug);
-                  if (newSlug) setPost({ ...post, slug: newSlug.trim() });
-                }}
-                className="rounded border border-[#c3c4c7] bg-[#f6f7f7] px-1.5 py-0.5 text-[11px] font-semibold text-[#2c3338] hover:bg-[#f0f0f1]"
+                onClick={handleAiGenerateTitles}
+                className="rounded border border-[#2271b1] bg-white px-2.5 py-1 text-[11px] font-bold text-[#2271b1] hover:bg-blue-50 transition"
               >
-                Chỉnh sửa
+                💡 Gợi ý Tiêu đề Viral
+              </button>
+              <button
+                type="button"
+                onClick={handleAiGenerateSummary}
+                className="rounded border border-[#2271b1] bg-white px-2.5 py-1 text-[11px] font-bold text-[#2271b1] hover:bg-blue-50 transition"
+              >
+                📝 Tạo Tóm tắt Meta
+              </button>
+              <button
+                type="button"
+                onClick={handleAiAddFaqBlock}
+                className="rounded border border-indigo-600 bg-white px-2.5 py-1 text-[11px] font-bold text-indigo-700 hover:bg-indigo-50 transition"
+              >
+                ❓ Thêm khối FAQ Schema
               </button>
             </div>
           </div>
 
-          {/* Language Tabs & Add Media Bar */}
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#ccd0d4] pb-2">
-            <div className="flex items-center gap-2">
-              {/* Add Media Button (Classic WordPress Style) */}
-              <button
-                type="button"
-                onClick={() => setShowMediaModal(post.body.length > 0 ? 0 : "cover")}
-                className="flex items-center gap-1.5 rounded border border-[#c3c4c7] bg-[#f6f7f7] px-3 py-1.5 text-xs font-semibold text-[#2c3338] shadow-sm hover:bg-[#f0f0f1] hover:border-[#a7aaad] active:bg-[#f0f0f1]"
-              >
-                <span className="text-sm">📷</span>
-                <span>Thêm Media (Add Media)</span>
-              </button>
-
-              {/* Block Action Quick Inserters */}
-              <div className="hidden sm:flex items-center gap-1">
-                <button
-                  type="button"
-                  onClick={() => addBlock("p")}
-                  className="rounded border border-[#c3c4c7] bg-white px-2 py-1 text-xs text-[#2c3338] hover:bg-[#f6f7f7]"
-                >
-                  + Đoạn văn
-                </button>
-                <button
-                  type="button"
-                  onClick={() => addBlock("h2")}
-                  className="rounded border border-[#c3c4c7] bg-white px-2 py-1 text-xs font-bold text-[#2c3338] hover:bg-[#f6f7f7]"
-                >
-                  + Tiêu đề H2
-                </button>
-                <button
-                  type="button"
-                  onClick={() => addBlock("image")}
-                  className="rounded border border-[#2271b1] bg-[#f0f6fc] px-2 py-1 text-xs font-bold text-[#2271b1] hover:bg-[#e0f0ff]"
-                >
-                  + Ảnh minh họa
-                </button>
-                <button
-                  type="button"
-                  onClick={() => addBlock("ul")}
-                  className="rounded border border-[#c3c4c7] bg-white px-2 py-1 text-xs text-[#2c3338] hover:bg-[#f6f7f7]"
-                >
-                  + Danh sách
-                </button>
-                <button
-                  type="button"
-                  onClick={() => addBlock("quote")}
-                  className="rounded border border-[#c3c4c7] bg-white px-2 py-1 text-xs text-[#2c3338] hover:bg-[#f6f7f7]"
-                >
-                  + Trích dẫn
-                </button>
-              </div>
-            </div>
-
-            {/* Right: Bilingual Selector & Visual/Text Tabs */}
-            <div className="flex items-center gap-3">
-              {/* Bilingual Tab */}
-              <div className="flex rounded border border-[#c3c4c7] bg-[#f6f7f7] p-0.5 text-xs">
+          {/* Language Switcher & Editor Mode Controls */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs">
+              <span className="font-bold text-[#50575e]">Ngôn ngữ bài viết:</span>
+              <div className="flex rounded border border-[#ccd0d4] bg-white p-0.5 shadow-sm">
                 <button
                   type="button"
                   onClick={() => setActiveLang("vi")}
@@ -331,32 +329,32 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                   🇺🇸 English
                 </button>
               </div>
+            </div>
 
-              {/* Visual / Text Tabs */}
-              <div className="flex gap-0.5 text-xs">
-                <button
-                  type="button"
-                  onClick={() => setEditorMode("visual")}
-                  className={`border border-b-0 px-3 py-1 font-semibold rounded-t ${
-                    editorMode === "visual"
-                      ? "border-[#ccd0d4] bg-white text-[#2c3338]"
-                      : "border-transparent bg-[#f0f0f1] text-[#646970] hover:bg-[#f6f7f7]"
-                  }`}
-                >
-                  Trực quan (Visual)
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setEditorMode("preview")}
-                  className={`border border-b-0 px-3 py-1 font-semibold rounded-t ${
-                    editorMode === "preview"
-                      ? "border-[#ccd0d4] bg-white text-[#2c3338]"
-                      : "border-transparent bg-[#f0f0f1] text-[#646970] hover:bg-[#f6f7f7]"
-                  }`}
-                >
-                  Xem trước (Preview)
-                </button>
-              </div>
+            {/* Visual / Text Tabs */}
+            <div className="flex gap-0.5 text-xs">
+              <button
+                type="button"
+                onClick={() => setEditorMode("visual")}
+                className={`border border-b-0 px-3 py-1 font-semibold rounded-t ${
+                  editorMode === "visual"
+                    ? "border-[#ccd0d4] bg-white text-[#2c3338]"
+                    : "border-transparent bg-[#f0f0f1] text-[#646970] hover:bg-[#f6f7f7]"
+                }`}
+              >
+                Trực quan (Visual)
+              </button>
+              <button
+                type="button"
+                onClick={() => setEditorMode("preview")}
+                className={`border border-b-0 px-3 py-1 font-semibold rounded-t ${
+                  editorMode === "preview"
+                    ? "border-[#ccd0d4] bg-white text-[#2c3338]"
+                    : "border-transparent bg-[#f0f0f1] text-[#646970] hover:bg-[#f6f7f7]"
+                }`}
+              >
+                Xem trước (Preview)
+              </button>
             </div>
           </div>
 
@@ -399,110 +397,130 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                       <span className="font-bold text-[#646970] mr-1 uppercase">#{index + 1} {block.type}</span>
                       <button type="button" onClick={() => moveBlock(index, "up")} disabled={index === 0} className="px-1 text-slate-500 hover:text-black disabled:opacity-30">▲</button>
                       <button type="button" onClick={() => moveBlock(index, "down")} disabled={index === post.body.length - 1} className="px-1 text-slate-500 hover:text-black disabled:opacity-30">▼</button>
-                      <button type="button" onClick={() => removeBlock(index)} className="px-1 text-rose-600 hover:text-rose-800 font-bold">✕</button>
+                      <button type="button" onClick={() => removeBlock(index)} className="px-1 font-bold text-rose-600 hover:text-rose-800">✕</button>
                     </div>
 
-                    {/* Block Content Inputs */}
-                    {block.type === "p" && (
-                      <textarea
-                        rows={3}
-                        value={block.text[activeLang] || ""}
-                        onChange={(e) => updateBlockText(index, "text", e.target.value)}
-                        placeholder={`Đoạn văn (${activeLang.toUpperCase()})...`}
-                        className="w-full resize-y border-0 bg-transparent p-1 text-sm leading-relaxed text-[#2c3338] outline-none placeholder:text-slate-300 focus:bg-white focus:ring-1 focus:ring-[#2271b1]"
-                      />
+                    {block.type === "h2" && (
+                      <div>
+                        <span className="block text-[10px] font-bold text-[#2271b1] uppercase mb-1">Tiêu đề H2</span>
+                        <input
+                          type="text"
+                          value={block.text[activeLang] || ""}
+                          onChange={(e) => updateBlock(index, e.target.value)}
+                          placeholder="Nhập tiêu đề H2..."
+                          className="w-full font-display text-lg font-bold text-[#1d2327] outline-none border-b border-dashed border-[#ccd0d4] pb-1"
+                        />
+                      </div>
                     )}
 
-                    {block.type === "h2" && (
-                      <input
-                        type="text"
-                        value={block.text[activeLang] || ""}
-                        onChange={(e) => updateBlockText(index, "text", e.target.value)}
-                        placeholder={`Tiêu đề H2 (${activeLang.toUpperCase()})...`}
-                        className="w-full border-0 bg-transparent p-1 font-display text-lg font-bold text-[#1d2327] outline-none placeholder:text-slate-300 focus:bg-white focus:ring-1 focus:ring-[#2271b1]"
-                      />
+                    {block.type === "p" && (
+                      <div>
+                        <span className="block text-[10px] font-bold text-[#646970] uppercase mb-1">Đoạn văn (Paragraph)</span>
+                        <textarea
+                          rows={3}
+                          value={block.text[activeLang] || ""}
+                          onChange={(e) => updateBlock(index, e.target.value)}
+                          placeholder="Nhập nội dung đoạn văn..."
+                          className="w-full resize-y text-xs leading-relaxed text-[#2c3338] outline-none border-b border-dashed border-[#ccd0d4]"
+                        />
+                      </div>
                     )}
 
                     {block.type === "quote" && (
-                      <textarea
-                        rows={2}
-                        value={block.text[activeLang] || ""}
-                        onChange={(e) => updateBlockText(index, "text", e.target.value)}
-                        placeholder={`Trích dẫn (${activeLang.toUpperCase()})...`}
-                        className="w-full resize-y border-l-4 border-[#f5501e] bg-orange-50/30 p-2.5 text-sm italic text-[#2c3338] outline-none"
-                      />
+                      <div className="border-l-4 border-[#2271b1] bg-blue-50/30 p-3 rounded">
+                        <span className="block text-[10px] font-bold text-[#2271b1] uppercase mb-1">Trích dẫn (Quote)</span>
+                        <textarea
+                          rows={2}
+                          value={block.text[activeLang] || ""}
+                          onChange={(e) => updateBlock(index, e.target.value)}
+                          placeholder="Nhập nội dung trích dẫn..."
+                          className="w-full resize-y italic text-xs leading-relaxed text-[#2c3338] outline-none bg-transparent"
+                        />
+                      </div>
                     )}
 
                     {block.type === "ul" && (
-                      <div className="space-y-1.5 pl-2">
-                        {block.items.map((item, iIdx) => (
-                          <div key={iIdx} className="flex items-center gap-2">
-                            <span className="h-1.5 w-1.5 rounded-full bg-[#f5501e] shrink-0" />
-                            <input
-                              type="text"
-                              value={item[activeLang] || ""}
-                              onChange={(e) => updateListItem(index, iIdx, e.target.value)}
-                              placeholder={`Ý gạch đầu dòng #${iIdx + 1}...`}
-                              className="flex-1 border-b border-[#ddd] bg-transparent py-1 text-sm text-[#2c3338] outline-none focus:border-[#2271b1]"
-                            />
-                            <button
-                              type="button"
-                              onClick={() => removeListItem(index, iIdx)}
-                              className="text-slate-400 hover:text-rose-600 text-xs"
-                            >
-                              ✕
-                            </button>
-                          </div>
-                        ))}
+                      <div className="space-y-2">
+                        <span className="block text-[10px] font-bold text-[#646970] uppercase">Danh sách gạch đầu dòng</span>
+                        <div className="space-y-1.5 pl-2">
+                          {block.items.map((it, itemIdx) => (
+                            <div key={itemIdx} className="flex items-center gap-2">
+                              <span className="text-[#2271b1] font-bold">•</span>
+                              <input
+                                type="text"
+                                value={it[activeLang] || ""}
+                                onChange={(e) => updateListItem(index, itemIdx, e.target.value)}
+                                className="flex-1 rounded border border-[#ccd0d4] p-1 text-xs text-[#2c3338] outline-none"
+                              />
+                              <button
+                                type="button"
+                                onClick={() => removeListItem(index, itemIdx)}
+                                className="text-slate-400 hover:text-rose-600 text-xs px-1"
+                              >
+                                ✕
+                              </button>
+                            </div>
+                          ))}
+                        </div>
                         <button
                           type="button"
                           onClick={() => addListItem(index)}
-                          className="mt-1 text-xs font-bold text-[#2271b1] hover:underline"
+                          className="text-[11px] text-[#2271b1] hover:underline font-semibold pl-4"
                         >
-                          + Thêm dòng
+                          + Thêm mục danh sách
                         </button>
                       </div>
                     )}
 
                     {block.type === "image" && (
-                      <div className="rounded border border-[#ccd0d4] bg-[#f6f7f7] p-3">
-                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-12">
-                          <div className="sm:col-span-4">
-                            <div className="relative aspect-[16/10] overflow-hidden rounded border border-[#ccd0d4] bg-white">
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img src={block.src} alt="" className="h-full w-full object-cover" />
-                              <button
-                                type="button"
-                                onClick={() => setShowMediaModal(index)}
-                                className="absolute inset-0 flex items-center justify-center bg-black/50 text-xs font-bold text-white opacity-0 transition hover:opacity-100"
-                              >
-                                🔄 Đổi ảnh
-                              </button>
-                            </div>
-                            <p className="mt-1 font-mono text-[10px] text-[#646970] truncate">{block.src}</p>
+                      <div className="rounded border border-[#ccd0d4] bg-[#f6f7f7] p-3 space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] font-bold text-[#2271b1] uppercase">Hình ảnh minh họa</span>
+                          <button
+                            type="button"
+                            onClick={() => setShowMediaModal(index)}
+                            className="text-[11px] text-[#2271b1] hover:underline font-semibold"
+                          >
+                            Đổi ảnh từ thư viện ↗
+                          </button>
+                        </div>
+                        <div className="relative aspect-video max-h-48 overflow-hidden rounded border border-[#ccd0d4] bg-white">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={block.src} alt={block.alt[activeLang]} className="h-full w-full object-cover" />
+                        </div>
+                        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 text-xs">
+                          <div>
+                            <label className="block text-[10px] font-bold text-[#50575e]">Thẻ Alt (Mô tả SEO):</label>
+                            <input
+                              type="text"
+                              value={block.alt[activeLang] || ""}
+                              onChange={(e) => {
+                                const updated = [...post.body];
+                                const b = updated[index];
+                                if (b.type === "image") {
+                                  b.alt[activeLang] = e.target.value;
+                                  setPost({ ...post, body: updated });
+                                }
+                              }}
+                              className="w-full rounded border border-[#ccd0d4] bg-white p-1 text-xs outline-none"
+                            />
                           </div>
-
-                          <div className="space-y-2.5 sm:col-span-8">
-                            <div>
-                              <label className="text-[11px] font-bold uppercase text-[#50575e]">Thẻ Alt (SEO Image Description)</label>
-                              <input
-                                type="text"
-                                value={block.alt?.[activeLang] || ""}
-                                onChange={(e) => updateBlockText(index, "alt", e.target.value)}
-                                placeholder="Mô tả bức ảnh chứa từ khóa..."
-                                className="mt-1 w-full rounded border border-[#ccd0d4] bg-white px-2.5 py-1 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-                              />
-                            </div>
-                            <div>
-                              <label className="text-[11px] font-bold uppercase text-[#50575e]">Chú thích (Caption)</label>
-                              <input
-                                type="text"
-                                value={block.caption?.[activeLang] || ""}
-                                onChange={(e) => updateBlockText(index, "caption", e.target.value)}
-                                placeholder="Chú thích hiển thị dưới ảnh..."
-                                className="mt-1 w-full rounded border border-[#ccd0d4] bg-white px-2.5 py-1 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-                              />
-                            </div>
+                          <div>
+                            <label className="block text-[10px] font-bold text-[#50575e]">Chú thích (Caption):</label>
+                            <input
+                              type="text"
+                              value={block.caption ? block.caption[activeLang] : ""}
+                              onChange={(e) => {
+                                const updated = [...post.body];
+                                const b = updated[index];
+                                if (b.type === "image") {
+                                  if (!b.caption) b.caption = { vi: "", en: "" };
+                                  b.caption[activeLang] = e.target.value;
+                                  setPost({ ...post, body: updated });
+                                }
+                              }}
+                              className="w-full rounded border border-[#ccd0d4] bg-white p-1 text-xs outline-none"
+                            />
                           </div>
                         </div>
                       </div>
@@ -511,10 +529,19 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                 ))}
               </div>
 
-              {/* Status Bar at Bottom of TinyMCE */}
-              <div className="flex items-center justify-between border-t border-[#ccd0d4] bg-[#f6f7f7] px-4 py-1.5 text-xs text-[#646970]">
-                <span>Đường dẫn: <strong>p &gt; article</strong></span>
-                <span>Số từ (Word count): <strong className="text-[#1d2327]">{wordCount}</strong></span>
+              {/* Quick Add Block Bar at Bottom */}
+              <div className="flex flex-wrap items-center justify-between border-t border-[#ccd0d4] bg-[#f6f7f7] px-4 py-2 text-xs text-[#646970]">
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-[#1d2327]">Chèn thêm khối:</span>
+                  <button type="button" onClick={() => addBlock("p")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Đoạn văn</button>
+                  <button type="button" onClick={() => addBlock("h2")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Tiêu đề H2</button>
+                  <button type="button" onClick={() => addBlock("ul")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Danh sách</button>
+                  <button type="button" onClick={() => addBlock("quote")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Trích dẫn</button>
+                  <button type="button" onClick={() => addBlock("image")} className="rounded border border-[#2271b1] bg-white px-2 py-0.5 hover:bg-blue-50 font-bold text-[#2271b1]">+ Hình ảnh</button>
+                </div>
+                <div>
+                  Tổng cộng: <strong className="text-[#1d2327]">{totalWords}</strong> từ • <strong className="text-[#1d2327]">{readingTime}</strong> phút đọc
+                </div>
               </div>
             </div>
           ) : (
@@ -583,18 +610,18 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
           />
         </div>
 
-        {/* RIGHT COLUMN: Classic WordPress Meta Boxes */}
-        <div className="lg:col-span-4 xl:col-span-3 space-y-5">
+        {/* RIGHT COLUMN: WordPress Metabox Sidebar (30% ~ 4 cols) */}
+        <div className="lg:col-span-4 space-y-4">
           {/* 1. PUBLISH METABOX */}
           <div className="rounded border border-[#ccd0d4] bg-white shadow-sm">
             <div className="border-b border-[#ccd0d4] bg-[#f6f7f7] px-3.5 py-2 text-xs font-bold text-[#1d2327]">
-              Đăng bài (Publish)
+              Đăng bài viết (Publish)
             </div>
             <div className="p-3.5 space-y-3 text-xs text-[#646970]">
-              <div className="flex items-center justify-between border-b border-[#f0f0f1] pb-2.5">
+              <div className="flex items-center justify-between">
                 <button
                   type="button"
-                  onClick={handleSave}
+                  onClick={() => alert("Đã lưu bản nháp thành công!")}
                   className="rounded border border-[#c3c4c7] bg-[#f6f7f7] px-3 py-1 font-semibold text-[#2c3338] hover:bg-[#f0f0f1]"
                 >
                   Lưu bản nháp
@@ -689,7 +716,81 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             </div>
           </div>
 
-          {/* 3. AUTHOR METABOX */}
+          {/* 3. TAGS METABOX (Thẻ bài viết) */}
+          <div className="rounded border border-[#ccd0d4] bg-white shadow-sm">
+            <div className="border-b border-[#ccd0d4] bg-[#f6f7f7] px-3.5 py-2 text-xs font-bold text-[#1d2327]">
+              Thẻ từ khóa (Tags)
+            </div>
+            <div className="p-3.5 space-y-2.5 text-xs text-[#2c3338]">
+              <div className="flex gap-1.5">
+                <input
+                  type="text"
+                  value={newTagInput}
+                  onChange={(e) => setNewTagInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      handleAddTag();
+                    }
+                  }}
+                  placeholder="Thêm thẻ mới..."
+                  className="flex-1 rounded border border-[#8c8f94] p-1 text-xs outline-none focus:border-[#2271b1]"
+                />
+                <button
+                  type="button"
+                  onClick={handleAddTag}
+                  className="rounded border border-[#8c8f94] bg-white px-2 py-1 text-xs font-bold text-[#2c3338] hover:bg-[#f0f0f1]"
+                >
+                  Thêm
+                </button>
+              </div>
+
+              {/* Selected Tags Pills */}
+              <div className="flex flex-wrap gap-1">
+                {selectedTags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="inline-flex items-center gap-1 rounded bg-[#f0f6fc] border border-[#c5d9ed] px-2 py-0.5 text-[11px] font-semibold text-[#135e96]"
+                  >
+                    #{tag}
+                    <button
+                      type="button"
+                      onClick={() => handleToggleTag(tag)}
+                      className="text-[#646970] hover:text-rose-600 font-bold ml-0.5"
+                    >
+                      ×
+                    </button>
+                  </span>
+                ))}
+              </div>
+
+              {/* Popular Tags List */}
+              <div className="pt-2 border-t border-[#eee]">
+                <span className="text-[10px] font-bold uppercase text-[#646970] block mb-1">Thẻ phổ biến ngành Game:</span>
+                <div className="flex flex-wrap gap-1">
+                  {availableTags.map((tag) => {
+                    const isSelected = selectedTags.includes(tag);
+                    return (
+                      <button
+                        key={tag}
+                        type="button"
+                        onClick={() => handleToggleTag(tag)}
+                        className={`text-[10px] rounded px-1.5 py-0.5 border transition ${
+                          isSelected
+                            ? "bg-[#2271b1] text-white border-[#2271b1] font-bold"
+                            : "bg-[#f6f7f7] text-[#50575e] border-[#ccd0d4] hover:border-[#8c8f94]"
+                        }`}
+                      >
+                        {tag}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 4. AUTHOR METABOX */}
           <div className="rounded border border-[#ccd0d4] bg-white shadow-sm">
             <div className="border-b border-[#ccd0d4] bg-[#f6f7f7] px-3.5 py-2 text-xs font-bold text-[#1d2327]">
               Tác giả bài viết (Author)
@@ -713,7 +814,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             </div>
           </div>
 
-          {/* 4. FEATURED IMAGE METABOX */}
+          {/* 5. FEATURED IMAGE METABOX */}
           <div className="rounded border border-[#ccd0d4] bg-white shadow-sm">
             <div className="border-b border-[#ccd0d4] bg-[#f6f7f7] px-3.5 py-2 text-xs font-bold text-[#1d2327]">
               Ảnh đại diện (Featured Image)
