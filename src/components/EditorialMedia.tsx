@@ -113,7 +113,7 @@ function realCoverForSlug(slug: string) {
     "ai-search-seo-game-marketing": "ai-search-3d.png",
     "game-launch-marketing-thailand": "real-thailand.jpg",
     "app-review-management-game-vietnam": "app-reviews-3d.png",
-    "micro-influencer-game-campaign-vietnam": "influencer-3d.png",
+    "micro-influencer-game-campaign-vietnam": "tho-go-rin-micro-influencer-game.png",
     "aso-localization-vietnam-mobile-game": "real-game-console.jpg",
     "esports-sponsorship-vietnam-roi": "esports-vietnam-stage.jpg",
     "lich-su-qua-trinh-phat-trien-esports-viet-nam": "esports-vietnam-sea-games.jpg",
