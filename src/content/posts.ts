@@ -3154,7 +3154,7 @@ export const posts: Post[] = [
     author: "ANBU Team",
     color: "from-orange-700 to-navy-900",
     variant: "social",
-    cover: "/blog-covers/tho-go-rin-micro-influencer-game.png",
+    cover: "/blog-covers/nguyet-mong-micro-influencer-strategy.jpg",
     sources: [
       { label: { vi: "TikTok Creator Marketplace: Báo cáo Influencer Gaming Đông Nam Á", en: "TikTok Creator Marketplace: Southeast Asia Gaming Influencer Insights" }, href: "https://creatormarketplace.tiktok.com/" },
       { label: { vi: "YouTube Gaming: Nguyên tắc xây dựng cộng đồng nhà sáng tạo nội dung", en: "YouTube Gaming Creator Community Guidelines" }, href: "https://www.youtube.com/creators/" },
