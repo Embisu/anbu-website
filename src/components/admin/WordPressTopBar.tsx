@@ -5,11 +5,12 @@ import Link from "next/link";
 
 type WordPressTopBarProps = {
   locale: string;
+  avgScore?: number;
   onNewPost: () => void;
   onLogout: () => void;
 };
 
-export default function WordPressTopBar({ locale, onNewPost, onLogout }: WordPressTopBarProps) {
+export default function WordPressTopBar({ locale, avgScore = 91, onNewPost, onLogout }: WordPressTopBarProps) {
   return (
     <header className="sticky top-0 z-50 flex h-8 items-center justify-between bg-[#1d2327] px-3 text-[#c3c4c7] text-[13px] select-none border-b border-[#2c3338]">
       {/* Left Menu Items */}
@@ -55,10 +56,10 @@ export default function WordPressTopBar({ locale, onNewPost, onLogout }: WordPre
           <span>Mới</span>
         </button>
 
-        {/* SEO Indicator */}
+        {/* Dynamic SEO Indicator */}
         <div className="hidden md:flex h-8 items-center gap-1.5 px-2 text-[#c3c4c7]">
           <span className="h-2 w-2 rounded-full bg-emerald-500" />
-          <span className="text-[11px] font-bold text-emerald-400">Rank Math SEO: 88/100</span>
+          <span className="text-[11px] font-bold text-emerald-400">Rank Math SEO: {avgScore}/100</span>
         </div>
       </div>
 

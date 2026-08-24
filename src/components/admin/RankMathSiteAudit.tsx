@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import type { Post } from "@/content/posts";
+import { calculatePostSeoScore } from "@/lib/seo-score";
 
 type RankMathSiteAuditProps = {
   posts: Post[];
@@ -14,6 +15,10 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
   const [isScanning, setIsScanning] = useState(false);
   const [scanProgress, setScanProgress] = useState(100);
   const [selectedPostForAdvice, setSelectedPostForAdvice] = useState<Post | null>(posts[0] || null);
+
+  // Compute real average score
+  const totalScore = posts.reduce((sum, p) => sum + calculatePostSeoScore(p, locale as any).score, 0);
+  const averageScore = Math.round(totalScore / (posts.length || 1));
 
   const startAuditScan = () => {
     setIsScanning(true);
@@ -29,6 +34,10 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
       });
     }, 250);
   };
+
+  const selectedPostSeo = selectedPostForAdvice
+    ? calculatePostSeoScore(selectedPostForAdvice, locale as any)
+    : null;
 
   return (
     <div className="space-y-4 text-slate-800">
@@ -81,7 +90,7 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
               : "border-transparent text-[#646970] hover:text-[#1d2327]"
           }`}
         >
-          📊 Tổng Quan Sức Khỏe SEO (Site Health)
+          📊 Tổng Quan Sức Khỏe SEO (Site Health: {averageScore}/100)
         </button>
         <button
           onClick={() => setActiveSubTab("posts_audit")}
@@ -91,7 +100,7 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
               : "border-transparent text-[#646970] hover:text-[#1d2327]"
           }`}
         >
-          📝 Điểm Số SEO 56 Bài Viết (Post Audit)
+          📝 Điểm Số SEO {posts.length} Bài Viết (Chi tiết từng bài)
         </button>
         <button
           onClick={() => setActiveSubTab("settings")}
@@ -191,7 +200,7 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
                   🔍 Trợ Lý Chẩn Đoán Chi Tiết Theo Từng Bài Viết
                 </h3>
                 <p className="text-xs text-[#646970]">
-                  Chọn một bài viết bất kỳ trong 56 bài để xem báo cáo điểm số và đề xuất cải thiện tức thì:
+                  Chọn một bài viết bất kỳ để xem điểm số thực tế và phân tích cấu trúc chi tiết:
                 </p>
               </div>
 
@@ -203,15 +212,18 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
                 }}
                 className="rounded border border-[#8c8f94] p-1.5 text-xs text-[#2c3338] outline-none max-w-xs"
               >
-                {posts.map((p) => (
-                  <option key={p.slug} value={p.slug}>
-                    {p.title.vi}
-                  </option>
-                ))}
+                {posts.map((p) => {
+                  const s = calculatePostSeoScore(p, locale as any);
+                  return (
+                    <option key={p.slug} value={p.slug}>
+                      [{s.score}/100] {p.title.vi}
+                    </option>
+                  );
+                })}
               </select>
             </div>
 
-            {selectedPostForAdvice && (
+            {selectedPostForAdvice && selectedPostSeo && (
               <div className="space-y-4">
                 <div className="flex items-center justify-between bg-[#f6f7f7] p-4 rounded border border-[#ccd0d4]">
                   <div>
@@ -221,28 +233,29 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
                     </p>
                   </div>
                   <div className="text-right">
-                    <span className="inline-flex items-center rounded bg-[#e8f5e9] border border-[#c8e6c9] px-3 py-1 text-sm font-extrabold text-[#2e7d32]">
-                      🟢 92 / 100 (Xuất sắc)
+                    <span className={`inline-flex items-center rounded border px-3 py-1 text-sm font-extrabold ${selectedPostSeo.badgeColor}`}>
+                      {selectedPostSeo.dotColor} {selectedPostSeo.score} / 100 ({selectedPostSeo.ratingLabel.vi})
                     </span>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 text-xs">
                   <div className="rounded border border-emerald-200 bg-emerald-50/50 p-3">
-                    <strong className="text-emerald-800 block mb-1">✓ Điểm mạnh đã đạt:</strong>
+                    <strong className="text-emerald-800 block mb-1">✓ Điểm mạnh thực tế:</strong>
                     <ul className="space-y-1 text-emerald-900">
-                      <li>• Tiêu đề chuẩn độ dài ({selectedPostForAdvice.title.vi.length} ký tự).</li>
-                      <li>• Tích hợp {selectedPostForAdvice.body.filter((b) => b.type === "image").length} hình ảnh minh họa chất lượng cao.</li>
-                      <li>• Cấu trúc H2 phân tầng rõ ràng, dễ đọc.</li>
+                      <li>• Độ dài bài viết: <strong>{selectedPostSeo.wordCount} từ</strong>.</li>
+                      <li>• Tích hợp <strong>{selectedPostSeo.imageCount} hình ảnh</strong> thực tế.</li>
+                      <li>• Cấu trúc: <strong>{selectedPostSeo.h2Count} tiêu đề H2</strong> phân tầng rõ ràng.</li>
+                      {selectedPostSeo.hasSources && <li>• Đầy đủ trích dẫn nguồn uy tín E-E-A-T.</li>}
                     </ul>
                   </div>
 
                   <div className="rounded border border-amber-200 bg-amber-50/50 p-3">
-                    <strong className="text-amber-800 block mb-1">💡 Đề xuất nâng cao:</strong>
+                    <strong className="text-amber-800 block mb-1">💡 Cơ hội tối ưu thêm:</strong>
                     <ul className="space-y-1 text-amber-900">
-                      <li>• Bổ sung thêm 1 câu hỏi thường gặp (FAQ) ở cuối bài.</li>
-                      <li>• Đặt link liên kết về trang dịch vụ Game & App Marketing.</li>
-                      <li>• Thêm từ khóa đồng nghĩa vào đoạn kết luận.</li>
+                      {!selectedPostSeo.hasNumberInTitle && <li>• Thêm số thống kê (2026, 3 bước) vào tiêu đề để tăng CTR.</li>}
+                      {selectedPostSeo.imageCount < 3 && <li>• Bổ sung thêm ảnh chụp giao diện/biểu đồ nghiệp vụ.</li>}
+                      <li>• Đặt link liên kết nội bộ về các case study liên quan.</li>
                     </ul>
                   </div>
 
@@ -272,9 +285,9 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
         <div className="space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
             <div className="rounded border border-[#ccd0d4] bg-white p-4 shadow-sm">
-              <span className="text-[11px] font-bold uppercase text-[#646970]">Điểm SEO Toàn Trang</span>
-              <div className="mt-2 text-3xl font-extrabold text-[#2e7d32]">94 / 100</div>
-              <p className="mt-1 text-xs text-[#2e7d32]">✓ 56/56 Bài viết đạt loại Tốt</p>
+              <span className="text-[11px] font-bold uppercase text-[#646970]">Điểm SEO Trung Bình</span>
+              <div className="mt-2 text-3xl font-extrabold text-[#2e7d32]">{averageScore} / 100</div>
+              <p className="mt-1 text-xs text-[#2e7d32]">✓ Tính toán từ {posts.length} bài viết thực tế</p>
             </div>
             <div className="rounded border border-[#ccd0d4] bg-white p-4 shadow-sm">
               <span className="text-[11px] font-bold uppercase text-[#646970]">Độ Phủ Schema JSON-LD</span>
@@ -295,7 +308,7 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
         </div>
       )}
 
-      {/* TAB 3: DANH SÁCH ĐIỂM SỐ 56 BÀI VIẾT */}
+      {/* TAB 3: DANH SÁCH ĐIỂM SỐ CHI TIẾT TỪNG BÀI VIẾT */}
       {activeSubTab === "posts_audit" && (
         <div className="border border-[#ccd0d4] bg-white shadow-sm overflow-hidden rounded">
           <table className="w-full text-left text-xs border-collapse">
@@ -303,6 +316,7 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
               <tr>
                 <th className="px-4 py-2.5">Bài viết</th>
                 <th className="px-4 py-2.5">Chuyên mục</th>
+                <th className="px-4 py-2.5">Độ dài</th>
                 <th className="px-4 py-2.5">Số ảnh</th>
                 <th className="px-4 py-2.5">Điểm Rank Math</th>
                 <th className="px-4 py-2.5">Đánh giá</th>
@@ -310,25 +324,27 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
               </tr>
             </thead>
             <tbody className="divide-y divide-[#f0f0f1]">
-              {posts.map((post, idx) => {
-                const imgCount = post.body.filter((b) => b.type === "image").length;
-                const score = 88 + (idx % 8);
+              {posts.map((post) => {
+                const seo = calculatePostSeoScore(post, locale as any);
                 return (
                   <tr key={post.slug} className="hover:bg-[#f6f7f7] transition">
                     <td className="px-4 py-2.5 font-semibold text-[#1d2327] max-w-xs truncate">
                       {post.title.vi}
                     </td>
                     <td className="px-4 py-2.5 text-[#2271b1]">{post.category.vi}</td>
+                    <td className="px-4 py-2.5 text-[#646970]">{seo.wordCount} từ</td>
                     <td className="px-4 py-2.5">
                       <span className="rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] font-bold text-emerald-800">
-                        {imgCount} ảnh
+                        {seo.imageCount} ảnh
                       </span>
                     </td>
-                    <td className="px-4 py-2.5 font-bold text-[#2e7d32]">
-                      🟢 {score} / 100
+                    <td className="px-4 py-2.5 font-bold">
+                      <span className={`inline-flex items-center gap-1 rounded border px-2 py-0.5 text-[11px] font-bold ${seo.badgeColor}`}>
+                        {seo.dotColor} {seo.score} / 100
+                      </span>
                     </td>
-                    <td className="px-4 py-2.5 text-xs text-[#2e7d32] font-medium">
-                      Tuyệt vời (Great)
+                    <td className="px-4 py-2.5 text-xs font-medium">
+                      <span className={seo.textColor}>{seo.ratingLabel.vi}</span>
                     </td>
                     <td className="px-4 py-2.5 text-right">
                       <button

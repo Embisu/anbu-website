@@ -13,6 +13,7 @@ import LeadsManager from "@/components/admin/LeadsManager";
 import UsersManager from "@/components/admin/UsersManager";
 import RankMathSiteAudit from "@/components/admin/RankMathSiteAudit";
 import SiteSettingsManager from "@/components/admin/SiteSettingsManager";
+import { calculatePostSeoScore } from "@/lib/seo-score";
 
 export default function AdminDashboardPage({ params }: { params: { locale: string } }) {
   const locale = params.locale || "vi";
@@ -79,11 +80,16 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
     );
   }
 
+  const avgScore = Math.round(
+    postList.reduce((acc, p) => acc + calculatePostSeoScore(p, locale as any).score, 0) / (postList.length || 1)
+  );
+
   return (
     <div className="min-h-screen bg-[#f0f0f1] text-[#2c3338] flex flex-col font-sans">
       {/* 1. WordPress Classic Top Admin Bar (#1d2327) */}
       <WordPressTopBar
         locale={locale}
+        avgScore={avgScore}
         onNewPost={handleNewPost}
         onLogout={handleLogout}
       />

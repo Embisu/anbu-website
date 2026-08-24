@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
+import { calculatePostSeoScore } from "@/lib/seo-score";
 
 type WordPressPostListProps = {
   posts: Post[];
@@ -332,9 +333,14 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
                     </span>
                   </td>
                   <td className="px-3 py-2.5 align-top">
-                    <span className="inline-flex items-center gap-1 rounded bg-[#e8f5e9] border border-[#c8e6c9] px-2 py-0.5 text-[11px] font-bold text-[#2e7d32]">
-                      🟢 88/100
-                    </span>
+                    {(() => {
+                      const seo = calculatePostSeoScore(post, locale as any);
+                      return (
+                        <span className={`inline-flex items-center gap-1 rounded border px-2 py-0.5 text-[11px] font-bold ${seo.badgeColor}`}>
+                          {seo.dotColor} {seo.score}/100
+                        </span>
+                      );
+                    })()}
                   </td>
                   <td className="px-3 py-2.5 align-top text-[#646970]">
                     <div>{currentTab === "trash" ? "Trong thùng rác" : "Đã xuất bản"}</div>
