@@ -259,123 +259,125 @@ export const posts: Post[] = [
   {
     slug: "thi-truong-game-viet-nam-bao-hoa-chien-luoc-tang-truong",
     title: {
-      vi: "Thị trường game Việt Nam bão hòa: chiến lược tăng trưởng",
-      en: "Vietnam's saturated game market: what strategy do major publishers need?",
+      vi: "Thị trường game Việt Nam bão hòa hay chuyển dịch: 4 Chiến lược tăng trưởng bứt phá cho Nhà Phát Hành (2026)",
+      en: "Is Vietnam's Mobile Game Market Saturated? 4 Breakthrough Growth Playbooks for Publishers (2026)",
     },
     excerpt: {
-      vi: "Game mới vẫn ra mắt mỗi tuần, nhưng thời gian và sự chú ý của người chơi thì không tăng thêm. Trong một thị trường ngày càng chật chội, chiến thắng không còn thuộc về thương hiệu xuất hiện nhiều nhất, mà thuộc về cái tên cho người chơi một lý do đủ rõ để ở lại.",
-      en: "New games still launch every week, but players have no more time or attention to give. In an increasingly crowded market, the winner is no longer the brand that appears most often, but the one that gives players a clear reason to stay.",
+      vi: "Thị trường game Việt Nam không hề suy thoái mà đang diễn ra cuộc thanh lọc chất lượng mạnh mẽ. Khám phá 4 xu hướng chuyển dịch đột phá từ siêu phẩm AAA Nghịch Thủy Hàn, Anime 3D Lưu Đày 2, Game Nữ giới Nguyệt Mộng đến sức mạnh bản quyền IP Tiên Nghịch Mobile cùng đại sứ Jun Vũ.",
+      en: "Vietnam's gaming market is not stagnating; it is undergoing a massive quality flight. Explore 4 transformative growth strategies exemplified by AAA open-world blockbuster Sword of Justice, anime tactical Girls' Frontline: Exilium, female-oriented Nguyet Mong, and licensed IP Renegade Immortal with celebrity ambassador Jun Vu.",
     },
     category: { vi: "Thị trường Game", en: "Gaming Market" },
-    date: "2026-08-12",
-    readingTime: 10,
+    date: "2026-08-24",
+    readingTime: 12,
     author: "ANBU Team",
     color: "from-navy-800 to-orange-600",
     variant: "game",
-    cover: "/blog-covers/vietnam-game-saturation.png",
+    cover: "/blog-covers/nghich-thuy-han-aaa-mmo-open-world.jpg",
     sources: [
-      { label: { vi: "Google Play — chính sách và chất lượng ứng dụng", en: "Google Play — app quality and policy guidance" }, href: "https://developer.android.com/distribute/best-practices" },
-      { label: { vi: "Bộ Khoa học và Công nghệ — Nghị định 147/2024/NĐ-CP", en: "Vietnam Ministry of Science and Technology — Decree 147/2024/ND-CP" }, href: "https://vanban.chinhphu.vn/?pageid=27160&docid=211230" },
+      { label: { vi: "Google Play & Newzoo — Southeast Asia Gaming Report", en: "Google Play & Newzoo — Southeast Asia Gaming Report" }, href: "https://newzoo.com/resources/trend-reports" },
+      { label: { vi: "Bộ Thông tin và Truyền thông — Báo cáo ngành Game Việt Nam", en: "Vietnam MIC — Game Industry Landscape Report" }, href: "https://mic.gov.vn/" },
     ],
     body: [
       {
         type: "p",
         text: {
-          vi: "Thị trường game Việt Nam không thiếu sản phẩm mới. Điều đang thiếu là lý do đủ rõ để người chơi dừng lại, quan tâm và dành thời gian cho một tựa game giữa hàng loạt lựa chọn quen thuộc. Bão hòa không có nghĩa thị trường hết cơ hội; nó có nghĩa thương hiệu phải cạnh tranh bằng chiến lược sắc hơn thay vì chỉ tăng số bài đăng hoặc ngân sách phủ sóng.",
-          en: "Vietnam does not lack new games. What is scarce is a compelling reason for players to stop, care and invest time in one title among many familiar alternatives. Saturation does not mean opportunity has disappeared; it means brands must compete with sharper strategy rather than simply buying more posts or reach.",
+          vi: "Nhiều nhà phát triển và đơn vị phát hành thường than phiền rằng: 'Thị trường game Việt Nam đã bão hòa, quảng cáo đắt đỏ và người chơi ngày càng khó tính'. Tuy nhiên, số liệu thực tế chứng minh quy mô doanh thu toàn ngành vẫn tăng trưởng ổn định vượt mốc 500 triệu USD. Điều thực sự 'bão hòa' ở đây là các tựa game reskin cũ kỹ, đồ họa 2D lỗi thời và những chiến dịch marketing rập khuôn. Người chơi Việt Nam không hề bớt chơi game; họ chỉ đang thanh lọc và dồn toàn bộ thời gian, tiền bạc vào những sản phẩm có chiều sâu vượt trội.",
+          en: "Many developers and international publishers lament that 'Vietnam's gaming market is saturated, ad costs are skyrocketing, and players are impossible to please.' Yet empirical market data proves total industry revenues steadily surpass $500M USD. What is truly 'saturated' are low-effort reskins, outdated 2D graphics, and copy-paste marketing campaigns. Vietnamese gamers haven't stopped playing; they are actively filtering out mediocre titles to concentrate time and spending on high-fidelity, culturally resonant masterpieces.",
         },
       },
       {
         type: "image",
-        src: "/blog-covers/garena-arena-crowd.jpg",
-        alt: { vi: "Hàng nghìn khán giả và game thủ trẻ cuồng nhiệt theo dõi sự kiện thi đấu game trực tiếp tại nhà thi đấu", en: "Crowd of passionate young gamers and esports fans attending a live tournament arena in Vietnam" },
-        caption: { vi: "Sự chú ý của game thủ Việt Nam không hề cạn kiệt, nhưng họ chỉ dành thời gian cho những tựa game xây dựng được văn hóa cộng đồng đủ mạnh.", en: "Vietnamese player attention remains immense, but is strictly reserved for titles that cultivate strong, authentic community culture." },
+        src: "/blog-covers/nghich-thuy-han-aaa-mmo-open-world.jpg",
+        alt: { vi: "Siêu phẩm MMORPG thế giới mở Nghịch Thủy Hàn Mobile với đồ họa điện ảnh AAA đỉnh cao", en: "AAA cinematic open-world MMORPG Sword of Justice (Nghich Thuy Han) redefining mobile graphics" },
+        caption: { vi: "Sự xuất hiện của các siêu phẩm như Nghịch Thủy Hàn (Sword of Justice) thiết lập chuẩn mực 'Tuyệt Đối Điện Ảnh AAA MMO Open World', buộc toàn bộ thị trường phải nâng cấp chất lượng đồ họa và công nghệ.", en: "Blockbusters like Sword of Justice (Nghich Thuy Han) set new AAA open-world cinematic benchmarks, driving the entire market toward console-grade production values." },
       },
-      { type: "h2", text: { vi: "Bão hòa thực sự diễn ra ở sự chú ý", en: "The real saturation is attention" } },
+      { type: "h2", text: { vi: "1. Nâng chuẩn đồ họa & Trải nghiệm thế giới mở (AAA Open-World MMORPG)", en: "1. Elevating Graphical Fidelity & Open-World Immersion (AAA MMORPGs)" } },
       {
         type: "p",
         text: {
-          vi: "Người chơi liên tục nhìn thấy trailer, giftcode, livestream và thông điệp mở server. Khi mọi chiến dịch dùng cùng một ngôn ngữ, sản phẩm mới dễ bị xem như một phiên bản khác của điều đã có. Bài toán vì vậy không chỉ là tiếp cận bao nhiêu người, mà là thương hiệu có chiếm được một ý niệm riêng trong tâm trí họ hay không.",
-          en: "Players constantly see trailers, gift codes, livestreams and server-opening messages. When every campaign uses the same language, a new release feels like another version of something already available. The challenge is therefore not only how many people are reached, but whether the brand owns a distinct idea in their minds.",
+          vi: "Game thủ Việt Nam thuộc thế hệ mới sở hữu những chiếc smartphone cấu hình cực mạnh và gu thẩm mỹ khắt khe tương đương game thủ PC/Console quốc tế. Các tựa game MMORPG truyền thống với lối chơi 'click auto tự đánh' và đồ họa răng cưa đang bị đào thải hàng loạt. Thay vào đó, những siêu phẩm thế giới mở như Nghịch Thủy Hàn (Sword of Justice) mang đến trải nghiệm điện ảnh chân thực, hệ thống thời tiết động, công nghệ NPC tích hợp AI thông minh và cơ chế khinh công tự do. Khi sản phẩm đạt đẳng cấp AAA thực thụ, người chơi sẵn sàng chi trả số tiền lớn (Willingness to Pay) mà không cần nhà phát hành phải dùng chiêu trò ép nạp.",
+          en: "Modern Vietnamese mobile gamers possess flagship hardware and discerning tastes comparable to global console players. Traditional auto-play MMORPGs with jaggy 2D textures are rapidly declining. Instead, cinematic open-world epics like Sword of Justice deliver ray-traced visuals, dynamic weather cycles, AI-driven NPCs, and unrestricted aerial combat. When product fidelity achieves true AAA caliber, players invest enthusiastically without manipulative monetization pressure."
         },
       },
       {
         type: "image",
-        src: "/blog-covers/esports-stadium-arena.jpg",
-        alt: { vi: "Sân khấu tổ chức sự kiện game và giải đấu quy mô chuyên nghiệp", en: "Professional gaming tournament stage and live event production" },
-        caption: { vi: "Biến sản phẩm thành sự kiện văn hóa đời thực giúp game vượt qua sự bão hòa của các kênh quảng cáo online.", en: "Transforming game launches into offline cultural events breaks through digital ad fatigue." },
+        src: "/blog-covers/girls-frontline-luu-day-2-anime.png",
+        alt: { vi: "Tựa game Anime 3D Chiến thuật Girls Frontline Lưu Đày 2 khai phá tệp người chơi Gen Z", en: "Girls' Frontline: Exilium (Luu Day 2) anime 3D tactical RPG capturing Gen Z fandom loyalty" },
+        caption: { vi: "Lưu Đày 2 (Girls' Frontline 2: Exilium) là minh chứng cho sức mạnh của văn hóa Anime ACGN kết hợp đồ họa 3D cel-shading tinh xảo và lối chơi chiến thuật chuyên sâu.", en: "Girls' Frontline 2: Exilium demonstrates the explosive power of ACGN anime culture coupled with cel-shaded visual mastery and deep tactical depth." },
       },
-      { type: "h2", text: { vi: "Năm dấu hiệu một chiến dịch game đang thiếu chiến lược", en: "Five signs a game campaign lacks strategy" } },
+      { type: "h2", text: { vi: "2. Khai thác sức mạnh Fandom & Anime 3D Chiến Thuật (ACGN Culture)", en: "2. Leveraging Fandom Loyalty & 3D Anime Tactical Gameplay (ACGN Culture)" } },
+      {
+        type: "p",
+        text: {
+          vi: "Thế hệ Gen Z và Gen Alpha tại Việt Nam lớn lên cùng văn hóa Anime, Manga, Cosplay và VTuber. Dòng game ACGN (Anime, Comic, Games, Novel) như Girls' Frontline: Lưu Đày 2 sở hữu lợi thế cạnh tranh khổng lồ nhờ cơ chế 'Emotional Monetization' (Chi tiêu dựa trên cảm xúc và tình yêu dành cho nhân vật/Waifu). Tệp người chơi này có chỉ số gắn kết D30 cực kỳ cao (>12%), sẵn sàng lập fan club, vẽ fanart, sản xuất video TikTok cosplay và trở thành đại sứ thương hiệu tự nhiên miễn phí cho tựa game.",
+          en: "Gen Z and Gen Alpha audiences in Vietnam are profoundly immersed in anime, manga, cosplay, and VTuber culture. ACGN titles like Girls' Frontline: Exilium unlock immense competitive moats via Emotional Monetization — spending driven by affection for character lore and waifu designs. This community exhibits extraordinary D30 retention (>12%), organic fanart generation, and viral TikTok cosplay advocacy."
+        },
+      },
+      {
+        type: "image",
+        src: "/blog-covers/nguyet-mong-otome-mobile-game.jpg",
+        alt: { vi: "Tựa game thời trang cung đình lãng mạn Nguyệt Mộng khai phá mỏ vàng game thủ nữ", en: "Nguyet Mong romance and fashion mobile title unlocking the high-spending female gamer demographic" },
+        caption: { vi: "Nguyệt Mộng chứng minh tiềm năng thương mại khổng lồ của phân khúc Game Nữ Giới (Otome / Ngôn tình / Thời trang) với tỷ lệ giữ chân và doanh thu bình quân vượt trội.", en: "Nguyet Mong illustrates the lucrative commercial opportunity in female-centric gaming (Otome, romance, interactive narrative) with superior retention and high ARPPU." },
+      },
+      { type: "h2", text: { vi: "3. Khai phá 'Mỏ vàng' Thị trường ngách: Game Nữ Giới & Otome Romance", en: "3. Unlocking Niche Goldmines: Female-Centric & Otome Narrative Games" } },
+      {
+        type: "p",
+        text: {
+          vi: "Một trong những sai lầm lớn nhất của các NPH truyền thống là chỉ tập trung vào game thủ nam với các thể loại cày cuốc, PK tranh đoạt lãnh địa. Thực tế, game thủ nữ chiếm hơn 42% tổng lượng người chơi mobile tại Việt Nam nhưng lại ít bị cạnh tranh trực tiếp. Các tựa game như Nguyệt Mộng đánh trúng nhu cầu thẩm mỹ cao, cốt truyện tương tác lãng mạn (Otome), sưu tập trang phục cổ trang và xây dựng gia viên. Game thủ nữ có thói quen chia sẻ hình ảnh lên mạng xã hội rất cao, tạo ra hệ số lan truyền tự nhiên (K-factor > 1.3) và sở hữu chỉ số ARPPU không hề thua kém dòng game SLG chiến thuật.",
+          en: "A major blind spot among legacy publishers is over-indexing on male-centric hardcore PvP grinders. In reality, female gamers comprise over 42% of Vietnam's mobile gaming population while facing significantly less ad clutter. Titles like Nguyet Mong satisfy sophisticated aesthetic desires, interactive romantic storylines, haute couture ancient fashion, and homestead building. Female players exhibit high social sharing virality (K-factor > 1.3) and ARPPU metrics rivaling hardcore SLG titles."
+        },
+      },
+      {
+        type: "image",
+        src: "/blog-covers/tien-nghich-mobile-joygames-jun-vu.jpg",
+        alt: { vi: "Tiên Nghịch Mobile kết hợp bản quyền Tencent Video và diễn viên Jun Vũ làm đại sứ thương hiệu", en: "Tien Nghich Mobile (JoyGames) combining official Tencent Video IP licensing with celebrity ambassador Jun Vu" },
+        caption: { vi: "Chiến dịch ra mắt Tiên Nghịch Mobile (JoyGames) khẳng định công thức thành công: Kết hợp IP hoạt hình 3D top đầu Tencent Video cùng Đại sứ thương hiệu hạng A (Jun Vũ - Lý Mộ Uyển) để tạo bão truyền thông ngày mở server.", en: "The Tien Nghich Mobile launch exemplifies modern mastery: pairing a top-tier Tencent Video 3D donghua IP with an A-list brand ambassador (Jun Vu as Li Muyuan) to ignite overwhelming day-one viral buzz." },
+      },
+      { type: "h2", text: { vi: "4. Sức mạnh kép từ Bản quyền IP Danh tiếng & Đại sứ thương hiệu hạng A", en: "4. The Twin Engine: Renowned IP Licensing & A-List Brand Ambassadors" } },
+      {
+        type: "p",
+        text: {
+          vi: "Trong bối cảnh chi phí quảng cáo số (Paid UA CPI) ngày càng đắt đỏ, bản quyền IP chính chủ là lá chắn bảo vệ tỷ lệ chuyển đổi (CVR) hiệu quả nhất. Case study của Tiên Nghịch Mobile (JoyGames) là minh chứng rõ ràng: Khi tựa game sở hữu bản quyền chính thức từ Tencent Video kết hợp cùng diễn viên nổi tiếng Jun Vũ hóa thân thành nữ chính Lý Mộ Uyển, chiến dịch đã giải quyết cùng lúc 3 bài toán lớn:",
+          en: "Amid escalating digital UA ad costs, licensed intellectual property represents the most potent conversion moat. The case of Tien Nghich Mobile (JoyGames) provides a masterclass: by securing official licensing from Tencent Video's flagship donghua and casting celebrity actress Jun Vu as heroine Li Muyuan, the campaign solved 3 vital bottlenecks simultaneously:"
+        },
+      },
       {
         type: "ul",
         items: [
-          { vi: "Thông điệp tập trung vào tính năng nhưng không nói rõ game dành cho kiểu người chơi nào", en: "Messaging lists features without defining the player the game is for" },
-          { vi: "Danh sách KOL lớn nhưng tất cả creator đều nhận cùng một brief và làm cùng một vai trò", en: "A large KOL list where every creator receives the same brief and serves the same role" },
-          { vi: "Social, PR, community và performance chạy song song nhưng không cùng kể một câu chuyện", en: "Social, PR, community and performance run in parallel without telling one story" },
-          { vi: "Toàn bộ sức nóng dồn vào ngày ra mắt, sau đó nội dung và cộng đồng giảm nhịp nhanh", en: "All momentum is concentrated on launch day, followed by a rapid decline in content and community activity" },
-          { vi: "Đội ngũ báo cáo lượt xem và lượt cài nhưng không biết thông điệp hay nhóm creator nào tạo ra người chơi chất lượng", en: "The team reports views and installs but cannot identify which message or creator group produced quality players" },
+          {
+            vi: "Xây dựng Độ tin cậy tuyệt đối (Instant Brand Trust): Game thủ lập tức nhận diện đây là sản phẩm được đầu tư bài bản, có giấy phép phê duyệt G1 chính quy từ cơ quan chức năng, hoàn toàn nói không với tình trạng 'game lậu đóng server sau 3 tháng'.",
+            en: "Instant Brand Authority & Compliance: Gamers immediately recognize a legitimate, officially approved G1 publishing project, eliminating fears of fly-by-night pirate servers."
+          },
+          {
+            vi: "Giảm 35–45% Chi phí CPI quảng cáo: Hình ảnh đại sứ Jun Vũ trong trang phục tiên hiệp cổ trang xuất hiện trên Meta Ads, TikTok Spark Ads và Banner OOH ngoài trời giúp tăng tỷ lệ nhấp chuột (CTR > 4.8%) và kích thích lượng tải tự nhiên.",
+            en: "35-45% CPI Reduction: Celebrity visuals on Meta, TikTok Spark Ads, and outdoor billboards supercharged ad CTR (>4.8%) and sparked huge organic pre-registration momentum."
+          },
+          {
+            vi: "Hiệu ứng lan tỏa truyền thông (Earned Media Amplification): Báo chí, trang tin giới trẻ, diễn đàn phim ảnh và cộng đồng fan tiểu thuyết Tiên Nghịch đồng loạt thảo luận, mang lại hàng triệu lượt hiển thị tự nhiên mà không tốn thêm chi phí quảng cáo.",
+            en: "Earned Media Amplification: Mainstream entertainment portals, pop culture communities, and donghua fandom forums organically amplified the launch across millions of impressions."
+          },
         ],
       },
-      { type: "h2", text: { vi: "Bước 1: chọn một trận địa định vị có thể bảo vệ", en: "Step 1: choose a defensible positioning battlefield" } },
-      {
-        type: "p",
-        text: {
-          vi: "Một game không thể đồng thời là lựa chọn tốt nhất cho tất cả mọi người. Thương hiệu cần xác định nhóm người chơi ưu tiên, động lực cốt lõi của họ và bằng chứng sản phẩm có thể chứng minh lời hứa. Định vị tốt phải đủ cụ thể để hướng dẫn creative, tuyển chọn KOL và quyết định điều gì không nên nói.",
-          en: "A game cannot be the best choice for everyone at once. The brand must define its priority players, their core motivation and the product evidence supporting its promise. Strong positioning is specific enough to guide creative, creator selection and what the campaign should refuse to say.",
-        },
-      },
-      { type: "h2", text: { vi: "Bước 2: xây creator portfolio theo vai trò", en: "Step 2: build a creator portfolio by role" } },
+      { type: "h2", text: { vi: "Bốn trụ cột chiến lược giúp NPH game bứt phá năm 2026", en: "Four Strategic Pillars for Game Publishers in 2026" } },
       {
         type: "ul",
         items: [
-          { vi: "Hero KOL tạo khoảnh khắc nhận biết và tín hiệu quy mô cho ngày công bố", en: "Hero KOLs create major awareness moments and scale signals around announcement" },
-          { vi: "Game creator giải thích cơ chế, chiều sâu và lý do đáng trải nghiệm", en: "Gaming creators explain mechanics, depth and reasons to try" },
-          { vi: "Entertainment creator chuyển thế giới game thành câu chuyện dễ lan truyền", en: "Entertainment creators turn the game world into shareable stories" },
-          { vi: "Community creator dẫn thảo luận, giải đáp nghi ngại và duy trì nhịp sau ra mắt", en: "Community creators lead discussion, resolve hesitation and sustain post-launch momentum" },
-          { vi: "KOC ghi lại trải nghiệm thật để tạo lớp bằng chứng gần gũi", en: "KOCs document genuine experience to create relatable proof" },
-        ],
-      },
-      { type: "h2", text: { vi: "Bước 3: thiết kế chiến dịch theo ba nhịp", en: "Step 3: design the campaign in three movements" } },
-      {
-        type: "p",
-        text: {
-          vi: "Giai đoạn trước ra mắt cần xây tò mò và ngôn ngữ nhận diện. Tuần ra mắt phải biến định vị thành một khoảnh khắc văn hóa có nhiều điểm chạm liên kết. Sau ra mắt, nội dung chuyển sang bằng chứng trải nghiệm, câu chuyện cộng đồng, bản cập nhật và lý do quay lại. Một lịch đăng dày không thay thế được kiến trúc chiến dịch; mỗi giai đoạn phải có nhiệm vụ và tiêu chí thành công riêng.",
-          en: "Pre-launch should build curiosity and a recognizable language. Launch week must turn positioning into a cultural moment across connected touchpoints. Post-launch content should shift toward experience proof, community stories, updates and reasons to return. A crowded calendar cannot replace campaign architecture; every phase needs its own job and success criteria.",
-        },
-      },
-      { type: "h2", text: { vi: "Bước 4: nối KOL, social, PR và community thành một hệ thống", en: "Step 4: connect KOL, social, PR and community as one system" } },
-      {
-        type: "p",
-        text: {
-          vi: "KOL tạo chất liệu và sự chú ý; social tái cấu trúc chất liệu thành nhịp kể chuyện; PR xây bối cảnh và độ tin cậy; community biến quan tâm thành đối thoại và duy trì. Khi bốn phần dùng chung insight, thông điệp và lịch kích hoạt, mỗi nội dung không còn là một bài đăng đơn lẻ mà trở thành đầu vào cho điểm chạm tiếp theo.",
-          en: "Creators generate material and attention; social turns that material into an ongoing narrative; PR creates context and credibility; community converts interest into dialogue and retention. When all four share one insight, message and activation calendar, content stops being isolated posts and becomes input for the next touchpoint.",
-        },
-      },
-      { type: "h2", text: { vi: "ANBU giúp thương hiệu game như thế nào?", en: "How ANBU helps game brands" } },
-      {
-        type: "p",
-        text: {
-          vi: "ANBU tham gia từ giai đoạn đọc thị trường và làm rõ bài toán, không chỉ bắt đầu ở bước booking. Đội ngũ cùng thương hiệu xây định vị ra mắt, phân vai creator, phát triển concept và brief, kết nối social–PR–community, vận hành lịch nội dung và thiết kế khung đo lường phù hợp với dữ liệu thực tế mà thương hiệu đang có.",
-          en: "ANBU starts by reading the market and clarifying the business problem, not merely at the booking stage. We work with brands on launch positioning, creator roles, concepts and briefs, integrated social–PR–community execution, content operations and a measurement framework grounded in the data actually available.",
-        },
-      },
-      {
-        type: "quote",
-        text: {
-          vi: "Trong một thị trường bão hòa, thương hiệu không thắng vì nói lớn hơn tất cả; thương hiệu thắng khi cho người chơi một lý do rõ ràng để lựa chọn, tin tưởng và ở lại.",
-          en: "In a saturated market, brands do not win by speaking louder than everyone else; they win by giving players a clear reason to choose, trust and stay.",
-        },
-      },
-      { type: "h2", text: { vi: "Checklist trước khi đưa game ra thị trường Việt Nam", en: "Checklist before launching a game in Vietnam" } },
-      {
-        type: "ul",
-        items: [
-          { vi: "Có một câu định vị mà đội sản phẩm, marketing và creator cùng hiểu", en: "One positioning statement understood by product, marketing and creators" },
-          { vi: "Mỗi nhóm KOL/KOC có vai trò và nội dung đầu ra khác nhau", en: "A distinct role and output for every KOL/KOC group" },
-          { vi: "Kế hoạch trước, trong và sau ra mắt có mục tiêu riêng", en: "Separate objectives for pre-launch, launch and post-launch" },
-          { vi: "Social, PR và community dùng chung một campaign spine", en: "Social, PR and community share one campaign spine" },
-          { vi: "Chỉ số được chia thành độ chú ý, mức cân nhắc, hành động và chất lượng người chơi", en: "Metrics are separated into attention, consideration, action and player quality" },
-          { vi: "Có quy trình phản hồi nhanh khi creative hoặc thông điệp không tạo tín hiệu", en: "A rapid response process exists when creative or messaging fails to generate signals" },
+          {
+            vi: "Trụ cột 1 — Chuyển từ 'Chạy Ads thuần túy' sang 'Xây dựng Pháo đài Cộng đồng' (Community Moat): Đầu tư vào Server Discord, Group Facebook chuyên sâu và mạng lưới KOC hạt nhân để duy trì dòng đời game trên 3 năm.",
+            en: "Pillar 1 — Moving from Pure Ad Spend to Community Moats: Investing in Discord hubs, active Facebook groups, and creator networks to extend game lifespans beyond 3 years."
+          },
+          {
+            vi: "Trụ cột 2 — Cá nhân hóa phân khúc người chơi (Audience Specialization): Thay vì cố gắng làm hài lòng tất cả mọi người, hãy tập trung làm bá chủ một phân khúc rõ ràng (Anime ACGN, Kiếm hiệp AAA, Otome Nữ giới, hoặc Hardcore SLG).",
+            en: "Pillar 2 — Audience Specialization: Dominating distinct high-affinity niches (ACGN Anime, AAA Martial Arts, Female Otome, or Deep SLG) rather than launching generic compromises."
+          },
+          {
+            vi: "Trụ cột 3 — Bản địa hóa sâu sắc & Dịch vụ CSKH 1-1: Xây dựng văn hóa xưng hô chuẩn game thủ, tích hợp cổng thanh toán nội địa (MoMo, ZaloPay, Viettel Money) và chăm sóc tận tâm nhóm người chơi VIP/Whales.",
+            en: "Pillar 3 — Cultural Resonance & VIP Concierge Support: Seamless Vietnamese gaming slang, local payment rails (MoMo, ZaloPay), and dedicated 1-on-1 VIP player retention."
+          },
+          {
+            vi: "Trụ cột 4 — Đồng bộ hóa chiến dịch Omnichannel (PR, Creator, Event, Performance): Kết hợp sự kiện offline ra mắt hoành tráng, giải đấu showmatch và chiến dịch quảng cáo đa màn hình để tạo khoảnh khắc văn hóa bùng nổ.",
+            en: "Pillar 4 — Omnichannel Campaign Orchestration: Connecting offline launch spectacles, esports tournaments, and synchronized multi-platform performance ads into unified cultural moments."
+          },
         ],
       },
     ],
