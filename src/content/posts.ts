@@ -1455,7 +1455,42 @@ export const posts: Post[] = [
         vi: "Nếu bạn đang chuẩn bị đưa game vào Việt Nam và chưa chắc mình đã sẵn sàng ở đâu, hãy gửi cho ANBU thông tin sản phẩm và thời gian dự kiến. Chúng tôi sẽ cùng bạn rà lại từng hạng mục trước khi đặt ngày ra mắt.",
         en: "If you're preparing to bring a game into Vietnam and aren't sure where you stand, send ANBU your product details and target timeline. We'll walk through every item on this list with you before you lock a launch date.",
       } },
-    ],
+    
+      {
+    "type": "h2",
+    "text": {
+      "vi": "3. Khung kiểm tra kỹ thuật và pháp lý trước giờ G (D-7 Checklist)",
+      "en": "3. Technical and Compliance Verification Matrix 7 Days Prior to Launch"
+    }
+  },
+  {
+    "type": "p",
+    "text": {
+      "vi": "Trong 7 ngày cuối cùng trước khi mở cổng máy chủ, đội ngũ phát hành phải hoàn tất bảng kiểm toán 5 tiêu chuẩn khẩn cấp để đảm bảo ngày ra mắt diễn ra hoàn hảo:",
+      "en": "During the final 7 days leading to server opening, publishing operations must clear a 5-point emergency audit protocol:"
+    }
+  },
+  {
+    "type": "ul",
+    "items": [
+      {
+        "vi": "Kiểm tra tải máy chủ (Stress Testing 50.000 CCU): Giả lập lượng truy cập đồng thời gấp 3 lần dự kiến để cấu hình cân bằng tải (Load Balancer) và cụm máy chủ tự động co giãn (Auto-scaling Cloud).",
+        "en": "Server Stress Testing (50k Concurrent Users): Simulating 3x projected peak concurrency to tune load balancers and cloud auto-scaling policies."
+      },
+      {
+        "vi": "Kiểm tra cổng thanh toán IAP Sandbox: Rà soát 100% các mệnh giá nạp từ 10.000 VNĐ đến 20.000.000 VNĐ trên cả App Store In-App Purchase, Google Play Billing và Cổng nạp Web (MoMo, ZaloPay, Thẻ ATM/Visa).",
+        "en": "End-to-End Payment Sandbox Audits: Verifying all price tiers across iOS IAP, Google Play Billing, and direct web payment gateways."
+      },
+      {
+        "vi": "Duyệt bản build cuối cùng (App Store & Google Play Approval): Đảm bảo bản build phát hành chính thức đã vượt qua kiểm duyệt Store tối thiểu 3 ngày trước giờ G để tránh rủi ro bị từ chối đột xuất.",
+        "en": "Store Version Approval Window: Securing store review approvals at least 72 hours in advance to eliminate unexpected rejection delays."
+      },
+      {
+        "vi": "Sẵn sàng hệ thống Fanpage & CSKH 24/7: Chuẩn bị sẵn kịch bản trả lời tự động (Chatbot Templates) và nhân sự trực xử lý sự cố đăng nhập ngay trong giờ đầu tiên.",
+        "en": "24/7 Support Escalation Readiness: Pre-configuring automated chatbot scripts and live agents for instantaneous launch-hour ticket triage."
+      }
+    ]
+  }],
   },
   {
     slug: "creative-testing-game-mobile-quang-cao",
@@ -1693,7 +1728,42 @@ export const posts: Post[] = [
         vi: "Hãy chọn các quốc gia có hành vi người chơi và phân khúc thiết bị tương đồng với thị trường mục tiêu nhưng có chi phí mua người dùng (CPI) rẻ hơn (ví dụ: Philippines, Indonesia hoặc Thái Lan trước khi đánh vào thị trường Đông Nam Á hoặc Global).",
         en: "Select testing territories that mirror target player demographics and hardware distributions but offer significantly lower acquisition costs (CPI) — such as the Philippines or Thailand prior to broader Southeast Asian or global rollouts.",
       } },
-    ],
+    
+      {
+    "type": "h2",
+    "text": {
+      "vi": "3. Bộ tiêu chuẩn kỹ thuật & Độ ổn định bắt buộc phải vượt qua trong Soft Launch",
+      "en": "3. Technical Stability & Performance Benchmarks to Clear During Soft Launch"
+    }
+  },
+  {
+    "type": "p",
+    "text": {
+      "vi": "Một tựa game chưa sẵn sàng cho chiến dịch phát hành quy mô lớn (Official Launch) nếu chưa đáp ứng các chỉ số kỹ thuật tiêu chuẩn quốc tế sau:",
+      "en": "A mobile game is not viable for full-scale commercial scaling until it reliably meets these international quality benchmarks:"
+    }
+  },
+  {
+    "type": "ul",
+    "items": [
+      {
+        "vi": "Tỷ lệ Crash Rate (< 0.25% Sessions): Tỷ lệ phiên chơi bị văng ứng dụng phải duy trì dưới 0.25% trên cả thiết bị cấu hình thấp (Android RAM 3GB/4GB).",
+        "en": "Crash Rate Under 0.25%: Total crash-free sessions must exceed 99.75% across low-tier Android hardware (3GB-4GB RAM)."
+      },
+      {
+        "vi": "Thời gian tải ban đầu (Initial Cold Boot < 4.5s): Thời gian từ lúc chạm vào Icon game đến khi hiển thị màn hình đăng nhập không được vượt quá 4.5 giây.",
+        "en": "Cold Boot Time (< 4.5s): Cold launch duration to main title screen must stay under 4.5 seconds."
+      },
+      {
+        "vi": "Dữ liệu giữ chân mục tiêu (Target Retention Metrics): D1 Retention $ge 38%$, D7 Retention $ge 16%$, D30 Retention $ge 7%$ đối với game RPG/SLG.",
+        "en": "Retention Targets: D1 >= 38%, D7 >= 16%, D30 >= 7% for core RPG and strategy titles."
+      },
+      {
+        "vi": "Tỷ lệ nạp tiền tân thủ (Starter Payer Conversion $ge 4.5%$): Đảm bảo ít nhất 4.5% người chơi hoàn thành vòng lặp nạp đầu tiên trong 7 ngày đầu.",
+        "en": "First-Payer Conversion (>= 4.5%): Confirming viable early willingness-to-pay within the first 7 active days."
+      }
+    ]
+  }],
   },
   {
     slug: "game-mobile-ugc-creator-program",
@@ -2393,7 +2463,38 @@ export const posts: Post[] = [
         vi: "Tuyệt đối không bán thẳng các trang bị 'vô địch' chỉ bằng tiền mặt mà không thể cày cuốc được trong game. Hãy bán thời gian tiện lợi, vật phẩm trang trí làm đẹp độc quyền và các gói tài nguyên gia tốc tiến độ để đảm bảo môi trường cạnh tranh công bằng cho mọi tầng lớp game thủ.",
         en: "Never sell unbeatable pay-to-win items exclusively for cash without in-game grind paths. Monetize convenience, cosmetic prestige, and progression velocity to preserve competitive integrity across all player cohorts.",
       } },
-    ],
+    
+      {
+    "type": "h2",
+    "text": {
+      "vi": "3. Phân tầng cơ cấu người nạp tiền: Minnows (Cá con) vs Dolphins (Cá heo) vs Whales (Cá voi)",
+      "en": "3. Player Monetization Segmentation: Minnows, Dolphins, and Whales"
+    }
+  },
+  {
+    "type": "p",
+    "text": {
+      "vi": "Doanh thu bền vững của một tựa game mobile tại thị trường Việt Nam được phân bổ theo quy luật Pareto lũy thừa giữa 3 tệp người chơi chính:",
+      "en": "Sustainable mobile game monetization in Southeast Asia adheres to power-law distribution across three primary payer segments:"
+    }
+  },
+  {
+    "type": "ul",
+    "items": [
+      {
+        "vi": "Minnows (Cá con - 70% tổng số người nạp / Chi tiêu $0.99 - $9.99/tháng): Đây là nhóm nhạy cảm về giá, mua gói nạp đầu, vé tuần và Battle Pass giá rẻ. Họ đóng vai trò tạo thanh khoản và sự sôi động cho server.",
+        "en": "Minnows (70% of payers / $0.99-$9.99 monthly): Price-sensitive supporters buying starter packs and basic passes, creating active multiplayer ecosystems."
+      },
+      {
+        "vi": "Dolphins (Cá heo - 25% tổng số người nạp / Chi tiêu $10 - $100/tháng): Nhóm người chơi trung thành, mua trọn gói vé tháng, sự kiện tích lũy nạp định kỳ và quay gacha tướng yêu thích.",
+        "en": "Dolphins (25% of payers / $10-$100 monthly): Reliable core spenders subscribing to monthly cards and seasonal event bundles."
+      },
+      {
+        "vi": "Whales (Cá voi - 5% tổng số người nạp / Chi tiêu $500 - $10.000+/tháng): Nhóm đóng góp tới 60–75% tổng doanh thu của game, đam mê vị thế đứng đầu bảng xếp hạng, sở hữu vật phẩm thần thoại độc bản và bang hội hùng mạnh.",
+        "en": "Whales (5% of payers / $500-$10,000+ monthly): Top-tier competitive VIPs generating 60-75% of total revenue, competing for leaderboard dominance."
+      }
+    ]
+  }],
   },
   {
     slug: "game-mobile-analytics-dashboard-can-co",
@@ -3250,7 +3351,38 @@ export const posts: Post[] = [
         vi: "Tài trợ Esports không phải là mua một vị trí đặt logo, mà là mua một tấm vé bước vào trái tim của thế hệ người tiêu dùng mới. Nhãn hàng nào tôn trọng văn hóa game thủ và biết đo lường bằng dữ liệu thực sẽ luôn là người chiến thắng lâu dài.",
         en: "Esports sponsorship is not about buying logo real estate; it is an investment in the passion of millions of fans. Brands that respect gaming culture and measure with hard data will always build lasting market leadership.",
       } },
-    ],
+    
+      {
+    "type": "h2",
+    "text": {
+      "vi": "3. Mô hình đo lường giá trị truyền thông tương đương (Earned Media Value - EMV)",
+      "en": "3. Earned Media Value (EMV) and Brand Lift Measurement Framework"
+    }
+  },
+  {
+    "type": "p",
+    "text": {
+      "vi": "Để bảo vệ ngân sách tài trợ trước ban giám đốc, các nhãn hàng cần áp dụng công thức đo lường EMV đa chiều thay vì chỉ đếm lượt xem thô:",
+      "en": "To justify esports sponsorship budgets before executive boards, brands must apply multidimensional EMV formulas rather than relying solely on raw livestream view counts:"
+    }
+  },
+  {
+    "type": "ul",
+    "items": [
+      {
+        "vi": "Logo Screen-Time & Share of Voice (SoV): Sử dụng công nghệ AI quét nhận diện thời lượng hiển thị logo rõ nét trên áo đấu, backdrop sân khấu và khung stream để quy đổi sang chi phí quảng cáo truyền hình tương đương.",
+        "en": "Logo Screen-Time & Share of Voice: AI-powered computer vision scanning logo visibility across jerseys, stage backdrops, and broadcast overlays."
+      },
+      {
+        "vi": "Tỷ lệ tương tác tự nhiên (Organic Sentiment Score): Đo lường tỷ lệ bình luận tích cực nhắc đến thương hiệu trong luồng chat trực tiếp (YouTube/TikTok Live Chat) trong các pha combat đỉnh cao.",
+        "en": "Organic Chat Sentiment: Tracking real-time positive chat mentions and brand sentiment during peak tournament clutch moments."
+      },
+      {
+        "vi": "Hiệu quả kích hoạt mua hàng (Promo Code Redemption): Đo lường trực tiếp số lượng đơn hàng hoặc lượt tải app phát sinh thông qua voucher độc quyền của giải đấu.",
+        "en": "Commercial Activation & Promo Redemptions: Attributing exact sales orders and app installs generated through tournament promo codes."
+      }
+    ]
+  }],
   },
 ];
 
