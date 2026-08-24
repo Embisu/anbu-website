@@ -2630,8 +2630,8 @@ export const posts: Post[] = [
     slug: "game-launch-marketing-thailand",
     title: { vi: "Chiến lược phát hành game mobile tại Thái Lan: Playbook thâm nhập thị trường Đông Nam Á", en: "Mobile Game Launch in Thailand: Southeast Asian Market Entry Playbook" },
     excerpt: { vi: "Phát hành game tại Thái Lan không đơn giản là đổi tiếng Việt sang tiếng Thái. Playbook thực chiến về bản địa hóa văn hóa, hợp tác Gaming Creator trên YouTube/TikTok và mạng lưới sự kiện TGS (Thailand Game Show).", en: "Launching in Thailand is far more than swapping Vietnamese for Thai. An actionable playbook covering cultural nuances, creator ecosystems, and Thailand Game Show (TGS) live activations." },
-    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-23", readingTime: 5, author: "ANBU Team", color: "from-blue-950 to-orange-600", variant: "game",
-    cover: "/blog-covers/thailand-game-expo.jpg",
+    category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-23", readingTime: 6, author: "ANBU Team", color: "from-blue-950 to-orange-600", variant: "game",
+    cover: "/blog-covers/thailand-game-show-level-infinite-booth.jpg",
     sources: [
       { label: { vi: "Google Play Store Southeast Asia Insights", en: "Google Play Store Southeast Asia Insights" }, href: "https://support.google.com/googleplay/android-developer/answer/6223646" },
       { label: { vi: "Thailand Game Show Official Portal", en: "Thailand Game Show Official Portal" }, href: "https://www.thailandgameshow.com/" },
@@ -2643,9 +2643,9 @@ export const posts: Post[] = [
       } },
       {
         type: "image",
-        src: "/blog-covers/thailand-game-expo.jpg",
-        alt: { vi: "Triển lãm sự kiện game và gian hàng trải nghiệm tại Thailand Game Show ở Bangkok", en: "Thailand Game Show exhibition booths and live esports activations in Bangkok" },
-        caption: { vi: "Sự kiện offline như Thailand Game Show (TGS) và các giải đấu LAN là đòn bẩy bùng nổ nhận diện thương hiệu tại thị trường Thái Lan.", en: "Live on-ground activations such as Thailand Game Show (TGS) provide massive brand credibility and launch momentum." },
+        src: "/blog-covers/thailand-game-show-level-infinite-booth.jpg",
+        alt: { vi: "Gian hàng trải nghiệm game Level Infinite và PUBG Mobile quy mô lớn tại Thailand Game Show", en: "Massive Level Infinite and PUBG Mobile interactive showcase pavilion at Thailand Game Show" },
+        caption: { vi: "Các gian hàng trải nghiệm quy mô lớn tại Thailand Game Show (TGS) tạo điểm chạm trực tiếp và xây dựng độ tin cậy thương hiệu vững chắc trong lòng game thủ bản địa.", en: "Mega booth installations at Thailand Game Show (TGS) establish strong local brand authority and unforgettable player touchpoints." },
       },
       { type: "h2", text: { vi: "1. Bản đồ kênh truyền thông Game tại Thái Lan", en: "1. The Thailand Gaming Media Map" } },
       { type: "ul", items: [
@@ -2655,9 +2655,9 @@ export const posts: Post[] = [
       ] },
       {
         type: "image",
-        src: "/blog-covers/team-strategy-meeting.jpg",
-        alt: { vi: "Đội ngũ chiến lược hoạch định kế hoạch Go-To-Market mở rộng game sang Đông Nam Á", en: "Strategic team formulating Southeast Asian Go-To-Market roadmap for mobile titles" },
-        caption: { vi: "Hoạch định lộ trình Go-To-Market 90 ngày phối hợp chặt chẽ giữa Creator Thái Lan, sự kiện offline và chiến dịch Paid UA.", en: "Synchronizing a 90-day GTM roadmap across local Thai creators, physical events, and localized performance UA." },
+        src: "/blog-covers/thailand-gaming-streamer-creator.jpg",
+        alt: { vi: "Nữ Gaming Streamer và Creator tại Thái Lan tương tác trực tiếp với cộng đồng người hâm mộ", en: "Thai female gaming streamer and creator engaging live with community audience" },
+        caption: { vi: "Hợp tác với các Gaming Creator và Streamer bản địa là chìa khóa vàng giúp lan tỏa độ nhận diện và kích hoạt lượng tải tự nhiên (Organic Installs) bùng nổ.", en: "Collaborating with local Thai gaming creators and live streamers is essential for viral organic reach and high-converting launch buzz." },
       },
       { type: "h2", text: { vi: "2. Kế hoạch Go-To-Market 3 nhịp tại Thái Lan", en: "2. The 3-Wave GTM Launch Plan in Thailand" } },
       { type: "ul", items: [
@@ -2665,6 +2665,12 @@ export const posts: Post[] = [
         { vi: "Nhịp 2 — Tuần 1–4 (Bùng nổ Creator & Stage Event): Kích hoạt dàn Creator Tier 1 livestream đồng loạt vào ngày mở server, tổ chức sự kiện thi đấu showmatch tại Bangkok.", en: "Wave 2 — Weeks 1–4 (Creator Blitz & Live Showmatches): Deploy Tier 1 creators for synchronized launch livestreams and host physical Bangkok esports showmatches." },
         { vi: "Nhịp 3 — Tháng 2–3 (Duy trì & Cập nhật Lễ hội Songkran/Loy Krathong): Lồng ghép các lễ hội văn hóa lớn của Thái Lan vào nội dung in-game để giữ chân người chơi lâu dài.", en: "Wave 3 — Months 2–3 (Cultural LiveOps Alignment): Tie major seasonal updates to iconic Thai festivals like Songkran and Loy Krathong to secure long-term retention." },
       ] },
+      {
+        type: "image",
+        src: "/blog-covers/thailand-game-show-legend-arena-esports.jpg",
+        alt: { vi: "Sân khấu thi đấu Thể thao điện tử The Legend Arena tại Thailand Game Show", en: "The Legend Arena esports tournament stage with central suspended screens at Thailand Game Show" },
+        caption: { vi: "Sân khấu thi đấu The Legend Arena tại Thailand Game Show — nơi tổ chức các giải đấu Showmatch thu hút hàng chục nghìn khán giả theo dõi trực tiếp.", en: "The Legend Arena main stage at Thailand Game Show hosting high-stakes esports tournaments and live caster battles before packed crowds." },
+      },
     ],
   },
   {
