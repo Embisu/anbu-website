@@ -103,40 +103,40 @@ export default function LeadsManager({ locale }: { locale: string }) {
   return (
     <div className="space-y-6">
       {/* Header & Controls */}
-      <div className="flex flex-col gap-4 rounded-3xl border border-navy-800 bg-navy-950 p-6 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-3">
+      <div className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-wrap items-center gap-3">
           <div className="relative">
-            <Icon name="search" className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-navy-400" />
+            <Icon name="search" className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={locale === "vi" ? "Tìm theo tên, email, công ty..." : "Search leads..."}
-              className="w-72 rounded-2xl border border-navy-800 bg-navy-900 py-2.5 pl-10 pr-4 text-xs text-white outline-none focus:border-orange-500"
+              className="w-72 rounded-xl border border-slate-300 bg-white py-2 pl-10 pr-4 text-xs text-slate-800 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
             />
           </div>
 
-          <div className="flex rounded-xl border border-navy-800 bg-navy-900/60 p-1">
+          <div className="flex rounded-lg border border-slate-200 bg-slate-100 p-0.5">
             <button
               onClick={() => setFilterStatus("all")}
-              className={`rounded-lg px-3 py-1 text-xs font-bold transition ${
-                filterStatus === "all" ? "bg-orange-500 text-white" : "text-navy-400 hover:text-white"
+              className={`rounded-md px-3 py-1 text-xs font-bold transition ${
+                filterStatus === "all" ? "bg-white text-blue-600 shadow-sm" : "text-slate-600 hover:text-slate-900"
               }`}
             >
               {locale === "vi" ? "Tất cả" : "All"} ({leads.length})
             </button>
             <button
               onClick={() => setFilterStatus("new")}
-              className={`rounded-lg px-3 py-1 text-xs font-bold transition ${
-                filterStatus === "new" ? "bg-orange-500 text-white" : "text-navy-400 hover:text-white"
+              className={`rounded-md px-3 py-1 text-xs font-bold transition ${
+                filterStatus === "new" ? "bg-white text-rose-600 shadow-sm" : "text-slate-600 hover:text-slate-900"
               }`}
             >
-              {locale === "vi" ? "Mới" : "New"} ({leads.filter((l) => l.status === "new").length})
+              {locale === "vi" ? "Mới nhận" : "New"} ({leads.filter((l) => l.status === "new").length})
             </button>
             <button
               onClick={() => setFilterStatus("contacted")}
-              className={`rounded-lg px-3 py-1 text-xs font-bold transition ${
-                filterStatus === "contacted" ? "bg-orange-500 text-white" : "text-navy-400 hover:text-white"
+              className={`rounded-md px-3 py-1 text-xs font-bold transition ${
+                filterStatus === "contacted" ? "bg-white text-amber-600 shadow-sm" : "text-slate-600 hover:text-slate-900"
               }`}
             >
               {locale === "vi" ? "Đã liên hệ" : "Contacted"}
@@ -146,48 +146,48 @@ export default function LeadsManager({ locale }: { locale: string }) {
 
         <button
           onClick={exportCSV}
-          className="flex items-center gap-2 rounded-xl border border-navy-800 bg-navy-900 px-4 py-2 text-xs font-bold text-navy-200 hover:border-orange-500 hover:text-white"
+          className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-700 shadow-sm hover:bg-slate-50"
         >
           <span>📥 Xuất file CSV</span>
         </button>
       </div>
 
       {/* Leads Table */}
-      <div className="overflow-hidden rounded-3xl border border-navy-800 bg-navy-950/80 shadow-xl">
+      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
         <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm text-navy-300">
-            <thead className="border-b border-navy-800 bg-navy-900/90 text-[11px] font-bold uppercase tracking-wider text-navy-400">
+          <table className="w-full text-left text-sm text-slate-700">
+            <thead className="border-b border-slate-200 bg-slate-50 text-[11px] font-bold uppercase tracking-wider text-slate-500">
               <tr>
-                <th className="px-6 py-4">Khách hàng</th>
-                <th className="px-6 py-4">Dịch vụ quan tâm</th>
-                <th className="px-6 py-4">Ngân sách</th>
-                <th className="px-6 py-4">Thời gian</th>
-                <th className="px-6 py-4">Trạng thái</th>
-                <th className="px-6 py-4 text-right">Hành động</th>
+                <th className="px-6 py-3.5">Khách hàng</th>
+                <th className="px-6 py-3.5">Dịch vụ quan tâm</th>
+                <th className="px-6 py-3.5">Ngân sách</th>
+                <th className="px-6 py-3.5">Thời gian</th>
+                <th className="px-6 py-3.5">Trạng thái</th>
+                <th className="px-6 py-3.5 text-right">Hành động</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-navy-800/60">
+            <tbody className="divide-y divide-slate-100">
               {filteredLeads.map((lead) => (
-                <tr key={lead.id} className="transition hover:bg-navy-900/40">
+                <tr key={lead.id} className="transition hover:bg-slate-50/80">
                   <td className="px-6 py-4">
-                    <div className="font-bold text-white">{lead.name}</div>
-                    <div className="text-xs text-navy-400">{lead.company} • {lead.email}</div>
+                    <div className="font-bold text-slate-900">{lead.name}</div>
+                    <div className="text-xs text-slate-500">{lead.company} • {lead.email}</div>
                   </td>
                   <td className="px-6 py-4">
-                    <span className="rounded-lg bg-navy-800 px-2.5 py-1 text-xs font-semibold text-orange-400">
+                    <span className="rounded-md bg-blue-50 px-2.5 py-1 text-xs font-bold text-blue-700">
                       {lead.service}
                     </span>
                   </td>
-                  <td className="px-6 py-4 font-semibold text-white">{lead.budget}</td>
-                  <td className="px-6 py-4 text-xs font-mono">{lead.date}</td>
+                  <td className="px-6 py-4 font-semibold text-slate-900">{lead.budget}</td>
+                  <td className="px-6 py-4 text-xs font-mono text-slate-500">{lead.date}</td>
                   <td className="px-6 py-4">
                     <span
-                      className={`inline-flex rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider ${
+                      className={`inline-flex rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
                         lead.status === "new"
-                          ? "bg-rose-500/20 text-rose-400 border border-rose-500/30"
+                          ? "bg-rose-100 text-rose-700 border border-rose-200"
                           : lead.status === "contacted"
-                          ? "bg-amber-500/20 text-amber-400 border border-amber-500/30"
-                          : "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                          ? "bg-amber-100 text-amber-800 border border-amber-200"
+                          : "bg-emerald-100 text-emerald-800 border border-emerald-200"
                       }`}
                     >
                       {lead.status === "new" ? "Mới nhận" : lead.status === "contacted" ? "Đã liên hệ" : "Hoàn tất"}
@@ -196,7 +196,7 @@ export default function LeadsManager({ locale }: { locale: string }) {
                   <td className="px-6 py-4 text-right">
                     <button
                       onClick={() => setSelectedLead(lead)}
-                      className="rounded-xl bg-navy-800 px-3 py-1.5 text-xs font-bold text-white hover:bg-orange-500"
+                      className="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-800 hover:bg-[#2271b1] hover:text-white transition"
                     >
                       Xem chi tiết
                     </button>
@@ -210,63 +210,63 @@ export default function LeadsManager({ locale }: { locale: string }) {
 
       {/* Lead Detail Modal */}
       {selectedLead && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-navy-950/80 p-4 backdrop-blur-md">
-          <div className="w-full max-w-2xl rounded-3xl border border-navy-800 bg-navy-900 p-8 shadow-2xl space-y-6">
-            <div className="flex items-center justify-between border-b border-navy-800 pb-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm">
+          <div className="w-full max-w-2xl rounded-2xl bg-white p-8 shadow-2xl space-y-6">
+            <div className="flex items-center justify-between border-b border-slate-200 pb-4">
               <div>
-                <h3 className="font-display text-xl font-bold text-white">{selectedLead.name}</h3>
-                <p className="text-xs text-navy-400">{selectedLead.company} • Gửi lúc {selectedLead.date}</p>
+                <h3 className="font-display text-xl font-bold text-slate-900">{selectedLead.name}</h3>
+                <p className="text-xs text-slate-500">{selectedLead.company} • Gửi lúc {selectedLead.date}</p>
               </div>
               <button
                 onClick={() => setSelectedLead(null)}
-                className="flex h-8 w-8 items-center justify-center rounded-xl bg-navy-800 text-navy-400 hover:text-white"
+                className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-100 text-slate-500 hover:bg-slate-200"
               >
                 ✕
               </button>
             </div>
 
             <div className="grid grid-cols-2 gap-4 text-xs">
-              <div className="rounded-2xl bg-navy-950 p-4">
-                <span className="text-navy-400">Email:</span>
-                <p className="mt-1 font-semibold text-white">{selectedLead.email}</p>
+              <div className="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                <span className="text-slate-500">Email:</span>
+                <p className="mt-1 font-bold text-slate-900">{selectedLead.email}</p>
               </div>
-              <div className="rounded-2xl bg-navy-950 p-4">
-                <span className="text-navy-400">Số điện thoại:</span>
-                <p className="mt-1 font-semibold text-white">{selectedLead.phone}</p>
+              <div className="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                <span className="text-slate-500">Số điện thoại:</span>
+                <p className="mt-1 font-bold text-slate-900">{selectedLead.phone}</p>
               </div>
-              <div className="rounded-2xl bg-navy-950 p-4">
-                <span className="text-navy-400">Dịch vụ:</span>
-                <p className="mt-1 font-semibold text-orange-400">{selectedLead.service}</p>
+              <div className="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                <span className="text-slate-500">Dịch vụ:</span>
+                <p className="mt-1 font-bold text-blue-700">{selectedLead.service}</p>
               </div>
-              <div className="rounded-2xl bg-navy-950 p-4">
-                <span className="text-navy-400">Gói ngân sách:</span>
-                <p className="mt-1 font-semibold text-white">{selectedLead.budget}</p>
+              <div className="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                <span className="text-slate-500">Gói ngân sách:</span>
+                <p className="mt-1 font-bold text-slate-900">{selectedLead.budget}</p>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-navy-950 p-4">
-              <span className="text-xs font-bold uppercase tracking-wider text-navy-400">Tin nhắn yêu cầu từ khách hàng:</span>
-              <p className="mt-2 text-sm leading-relaxed text-navy-100">{selectedLead.message}</p>
+            <div className="rounded-xl bg-slate-50 p-4 border border-slate-200">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Yêu cầu từ đối tác / khách hàng:</span>
+              <p className="mt-2 text-sm leading-relaxed text-slate-800">{selectedLead.message}</p>
             </div>
 
-            <div className="flex items-center justify-between pt-4 border-t border-navy-800">
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-navy-400">Chuyển trạng thái:</span>
+            <div className="flex items-center justify-between pt-4 border-t border-slate-200">
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-bold text-slate-500">Đổi trạng thái:</span>
                 <button
                   onClick={() => updateStatus(selectedLead.id, "new")}
-                  className="rounded-lg bg-navy-800 px-3 py-1 text-xs text-rose-400 hover:bg-rose-500/20"
+                  className="rounded px-2.5 py-1 text-xs font-semibold bg-rose-50 text-rose-700 hover:bg-rose-100"
                 >
                   Mới
                 </button>
                 <button
                   onClick={() => updateStatus(selectedLead.id, "contacted")}
-                  className="rounded-lg bg-navy-800 px-3 py-1 text-xs text-amber-400 hover:bg-amber-500/20"
+                  className="rounded px-2.5 py-1 text-xs font-semibold bg-amber-50 text-amber-800 hover:bg-amber-100"
                 >
                   Đã liên hệ
                 </button>
                 <button
                   onClick={() => updateStatus(selectedLead.id, "closed")}
-                  className="rounded-lg bg-navy-800 px-3 py-1 text-xs text-emerald-400 hover:bg-emerald-500/20"
+                  className="rounded px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800 hover:bg-emerald-100"
                 >
                   Hoàn tất
                 </button>
@@ -274,7 +274,7 @@ export default function LeadsManager({ locale }: { locale: string }) {
 
               <a
                 href={`mailto:${selectedLead.email}?subject=ANBU phản hồi tư vấn chiến dịch cho ${selectedLead.company}`}
-                className="rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 px-5 py-2.5 text-xs font-bold text-white shadow-lg shadow-orange-500/20 hover:brightness-110"
+                className="rounded-lg bg-[#2271b1] px-4 py-2 text-xs font-bold text-white shadow-sm hover:bg-[#135e96]"
               >
                 Gửi Email Phản Hồi ↗
               </a>

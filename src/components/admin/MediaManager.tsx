@@ -82,37 +82,37 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
   return (
     <div className="space-y-6">
       {/* Search & Filter Header */}
-      <div className="flex flex-col gap-4 rounded-3xl border border-navy-800/80 bg-navy-900/60 p-6 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between">
         <div className="flex-1">
           <div className="relative">
-            <Icon name="search" className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-navy-400" />
+            <Icon name="search" className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={locale === "vi" ? "Tìm kiếm ảnh theo từ khóa (discord, store, tiktok, ads...)" : "Search media by keyword..."}
-              className="w-full rounded-2xl border border-navy-800 bg-navy-950/80 py-3.5 pl-12 pr-4 text-sm text-white placeholder-navy-500 outline-none transition focus:border-orange-500"
+              className="w-full rounded-xl border border-slate-300 bg-white py-2.5 pl-10 pr-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
             />
           </div>
         </div>
 
         <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
-          <span className="shrink-0 text-xs font-semibold text-navy-400">
-            {locale === "vi" ? "Tổng cộng:" : "Total:"} <strong className="text-white">{filteredAssets.length}</strong> ảnh
+          <span className="shrink-0 text-xs font-semibold text-slate-600">
+            {locale === "vi" ? "Tổng cộng:" : "Total:"} <strong className="text-slate-900">{filteredAssets.length}</strong> ảnh
           </span>
         </div>
       </div>
 
       {/* Tags Filter */}
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-1.5">
         {allTags.slice(0, 14).map((tag) => (
           <button
             key={tag}
             onClick={() => setSelectedTag(tag)}
-            className={`rounded-xl px-3 py-1.5 text-xs font-bold capitalize transition ${
+            className={`rounded-lg px-3 py-1.5 text-xs font-semibold capitalize transition ${
               selectedTag === tag
-                ? "bg-orange-500 text-white shadow-md shadow-orange-500/30"
-                : "border border-navy-800 bg-navy-900/40 text-navy-300 hover:border-navy-700 hover:text-white"
+                ? "bg-[#2271b1] text-white shadow-sm"
+                : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900"
             }`}
           >
             {tag === "all" ? (locale === "vi" ? "Tất cả" : "All") : tag}
@@ -121,13 +121,13 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
       </div>
 
       {/* Media Grid */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filteredAssets.map((asset) => (
           <div
             key={asset.src}
-            className="group relative overflow-hidden rounded-2xl border border-navy-800 bg-navy-900/50 transition-all hover:-translate-y-1 hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10"
+            className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:border-blue-400 hover:shadow-md"
           >
-            <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy-950">
+            <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={asset.src}
@@ -135,36 +135,36 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
                 className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-60 group-hover:opacity-40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition" />
 
               {/* Action Buttons overlay */}
-              <div className="absolute right-3 top-3 flex gap-2 opacity-0 transition group-hover:opacity-100">
+              <div className="absolute right-2.5 top-2.5 flex gap-1.5 opacity-0 transition group-hover:opacity-100">
                 {onSelectImage && (
                   <button
                     onClick={() => onSelectImage(asset.src)}
-                    className="rounded-xl bg-orange-500 px-3 py-1.5 text-xs font-bold text-white shadow-md hover:bg-orange-600"
+                    className="rounded-lg bg-[#2271b1] px-2.5 py-1 text-xs font-bold text-white shadow-sm hover:bg-[#135e96]"
                   >
                     {locale === "vi" ? "Chọn ảnh" : "Select"}
                   </button>
                 )}
                 <button
                   onClick={() => handleCopy(asset.src)}
-                  className="rounded-xl bg-navy-900/90 px-3 py-1.5 text-xs font-bold text-white backdrop-blur-sm hover:bg-navy-800"
-                  title="Copy path"
+                  className="rounded-lg bg-slate-900/80 px-2.5 py-1 text-xs font-bold text-white backdrop-blur-sm hover:bg-slate-900"
+                  title="Copy link"
                 >
                   {copiedSrc === asset.src ? "✓ Copied" : "Copy Link"}
                 </button>
               </div>
             </div>
 
-            <div className="p-4">
-              <h4 className="line-clamp-1 font-display text-sm font-bold text-white group-hover:text-orange-400">
+            <div className="p-3.5">
+              <h4 className="line-clamp-1 text-xs font-bold text-slate-900 group-hover:text-blue-600">
                 {asset.title}
               </h4>
-              <p className="mt-1 font-mono text-[11px] text-navy-400 select-all">{asset.src}</p>
-              <div className="mt-3 flex flex-wrap gap-1.5">
-                {asset.tags.map((t) => (
-                  <span key={t} className="rounded-md bg-navy-800/80 px-2 py-0.5 text-[10px] font-medium text-navy-300">
+              <p className="mt-1 font-mono text-[10px] text-slate-400 select-all truncate">{asset.src}</p>
+              <div className="mt-2.5 flex flex-wrap gap-1">
+                {asset.tags.slice(0, 3).map((t) => (
+                  <span key={t} className="rounded bg-slate-100 px-1.5 py-0.5 text-[9px] font-medium text-slate-600">
                     #{t}
                   </span>
                 ))}

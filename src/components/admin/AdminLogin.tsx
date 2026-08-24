@@ -44,51 +44,51 @@ export default function AdminLogin({ onLoginSuccess, locale }: AdminLoginProps) 
   };
 
   return (
-    <div className="flex min-h-[85vh] items-center justify-center px-4 py-12">
-      <div className="w-full max-w-md overflow-hidden rounded-3xl border border-navy-800/60 bg-navy-950/90 p-8 shadow-2xl backdrop-blur-xl sm:p-10">
+    <div className="flex min-h-screen items-center justify-center bg-[#f0f0f1] px-4 py-12 text-slate-800">
+      <div className="w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
         <div className="text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-[0_0_30px_rgba(245,80,30,0.4)]">
-            <Icon name="bolt" className="h-8 w-8 text-white" />
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#2271b1] shadow-lg shadow-blue-500/20">
+            <span className="font-display text-2xl font-black text-white">W</span>
           </div>
-          <h1 className="mt-6 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
-            ANBU Studio CMS
+          <h1 className="mt-4 font-display text-2xl font-bold tracking-tight text-slate-900">
+            ANBU CMS Studio
           </h1>
-          <p className="mt-2 text-sm text-navy-300">
+          <p className="mt-1 text-xs text-slate-500">
             {locale === "vi"
-              ? "Bảng điều khiển quản trị nội dung & Marketing Game"
-              : "Game Marketing & Content Management Portal"}
+              ? "Bảng điều khiển quản trị bài viết & Tối ưu SEO Rank Math"
+              : "Content Management & Rank Math SEO Dashboard"}
           </p>
         </div>
 
         {error && (
-          <div className="mt-6 rounded-2xl border border-rose-500/30 bg-rose-500/10 p-4 text-center text-sm font-medium text-rose-400">
+          <div className="mt-6 rounded-xl border border-rose-200 bg-rose-50 p-3.5 text-center text-xs font-semibold text-rose-700">
             {error}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-navy-300">
-              {locale === "vi" ? "Mật khẩu quản trị (Admin Password)" : "Admin Password"}
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+              {locale === "vi" ? "Mật khẩu quản trị viên" : "Admin Password"}
             </label>
-            <div className="relative mt-2">
+            <div className="relative mt-1.5">
               <input
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder={locale === "vi" ? "Nhập mật khẩu..." : "Enter password..."}
+                placeholder={locale === "vi" ? "Nhập mật khẩu quản trị..." : "Enter admin password..."}
                 required
-                className="w-full rounded-2xl border border-navy-800 bg-navy-900/90 px-4 py-3.5 pr-12 text-sm font-medium text-white placeholder-navy-500 outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20"
+                className="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 pr-10 text-sm font-medium text-slate-800 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 text-navy-400 hover:text-white"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
               >
                 {showPassword ? "🙈" : "👁️"}
               </button>
             </div>
-            <p className="mt-2 text-[11px] text-navy-400">
+            <p className="mt-1.5 text-[11px] text-slate-400">
               {locale === "vi" ? "Mật khẩu mặc định: anbu@2026" : "Default password: anbu@2026"}
             </p>
           </div>
@@ -96,20 +96,17 @@ export default function AdminLogin({ onLoginSuccess, locale }: AdminLoginProps) 
           <button
             type="submit"
             disabled={loading}
-            className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition hover:brightness-110 disabled:opacity-50"
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#2271b1] py-3 text-xs font-bold text-white shadow-sm transition hover:bg-[#135e96] disabled:opacity-50"
           >
             {loading ? (
               <span>{locale === "vi" ? "Đang xác thực..." : "Authenticating..."}</span>
             ) : (
-              <>
-                <span>{locale === "vi" ? "Đăng nhập Quản trị" : "Sign In to Admin"}</span>
-                <Icon name="arrow" className="h-4 w-4" />
-              </>
+              <span>{locale === "vi" ? "Đăng nhập vào Bảng điều khiển" : "Log In to Dashboard"}</span>
             )}
           </button>
         </form>
 
-        <div className="mt-8 border-t border-navy-800/80 pt-6 text-center text-xs text-navy-400">
+        <div className="mt-6 border-t border-slate-100 pt-4 text-center text-xs text-slate-400">
           <p>© {new Date().getFullYear()} ANBU Marketing & Communications</p>
         </div>
       </div>
