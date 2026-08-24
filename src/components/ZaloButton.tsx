@@ -1,6 +1,16 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Icon from "./Icon";
 
 export default function ZaloButton({ locale }: { locale: "vi" | "en" }) {
+  const pathname = usePathname() || "";
+
+  // Hide WhatsApp and Zalo floating buttons on Admin pages
+  if (pathname.includes("/admin")) {
+    return null;
+  }
+
   return (
     <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5">
       <a

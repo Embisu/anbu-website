@@ -16,6 +16,10 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname() || "";
 
+  if (pathname.includes("/admin")) {
+    return null;
+  }
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();

@@ -689,7 +689,31 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             </div>
           </div>
 
-          {/* 3. FEATURED IMAGE METABOX */}
+          {/* 3. AUTHOR METABOX */}
+          <div className="rounded border border-[#ccd0d4] bg-white shadow-sm">
+            <div className="border-b border-[#ccd0d4] bg-[#f6f7f7] px-3.5 py-2 text-xs font-bold text-[#1d2327]">
+              Tác giả bài viết (Author)
+            </div>
+            <div className="p-3.5 space-y-2 text-xs">
+              <select
+                value={post.author || "ANBU Team"}
+                onChange={(e) => setPost({ ...post, author: e.target.value })}
+                className="w-full rounded border border-[#8c8f94] bg-white p-1.5 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+              >
+                <option value="ANBU Team">ANBU Team (Mặc định)</option>
+                <option value="ANBU Master Admin">ANBU Master Admin</option>
+                <option value="Ban Biên Tập ANBU Studio">Ban Biên Tập ANBU Studio</option>
+                <option value="Tác giả Game Marketing">Tác giả Game Marketing</option>
+                <option value="Nguyễn Hoàng Linh (UA Lead)">Nguyễn Hoàng Linh (UA Lead)</option>
+                <option value="ANBU Growth Squad">ANBU Growth Squad</option>
+              </select>
+              <p className="text-[11px] text-[#646970]">
+                Tên tác giả sẽ hiển thị trên bài viết và trong dữ liệu có cấu trúc Schema Author.
+              </p>
+            </div>
+          </div>
+
+          {/* 4. FEATURED IMAGE METABOX */}
           <div className="rounded border border-[#ccd0d4] bg-white shadow-sm">
             <div className="border-b border-[#ccd0d4] bg-[#f6f7f7] px-3.5 py-2 text-xs font-bold text-[#1d2327]">
               Ảnh đại diện (Featured Image)

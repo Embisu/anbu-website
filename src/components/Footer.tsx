@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { site, t } from "@/content/site";
@@ -8,7 +11,12 @@ import { localePath } from "@/lib/utils";
 import Icon from "./Icon";
 
 export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+  const pathname = usePathname() || "";
   const year = new Date().getFullYear();
+
+  if (pathname.includes("/admin")) {
+    return null;
+  }
 
   const socials = Object.entries(site.social).map(([name, href]) => ({ name, href }));
 
@@ -35,65 +43,96 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8">
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white">{dict.footer.services}</h3>
-              <ul className="mt-4 space-y-2.5 text-sm">
-                {services.slice(0, 6).map((s) => (
-                  <li key={s.slug}>
-                    <Link href={localePath(locale, `/services/${s.slug}`)} className="text-navy-200 transition-colors hover:text-orange-400">
-                      {t(s.title, locale)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="lg:col-span-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400">
+              {locale === "vi" ? "Dịch vụ" : "Services"}
+            </h4>
+            <ul className="mt-4 space-y-2 text-sm text-navy-300">
+              {services.map((s) => (
+                <li key={s.slug}>
+                  <Link href={localePath(locale, `/services/${s.slug}`)} className="hover:text-white transition-colors">
+                    {t(s.title, locale)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white">{dict.footer.company}</h3>
-              <ul className="mt-4 space-y-2.5 text-sm">
-                <li><Link href={localePath(locale, "/about")} className="text-navy-200 hover:text-orange-400">{dict.nav.about}</Link></li>
-                <li><Link href={localePath(locale, "/work")} className="text-navy-200 hover:text-orange-400">{dict.nav.work}</Link></li>
-                <li><Link href={localePath(locale, "/blog")} className="text-navy-200 hover:text-orange-400">{dict.nav.blog}</Link></li>
-                <li><Link href={localePath(locale, "/contact")} className="text-navy-200 hover:text-orange-400">{dict.nav.contact}</Link></li>
-                <li>
-                  <a href="https://otahub.asia/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-navy-200 hover:text-orange-400">
-                    OTAHub <span aria-hidden="true">↗</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div className="lg:col-span-2">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400">
+              {locale === "vi" ? "Về ANBU" : "About"}
+            </h4>
+            <ul className="mt-4 space-y-2 text-sm text-navy-300">
+              <li>
+                <Link href={localePath(locale, "/about")} className="hover:text-white transition-colors">
+                  {dict.nav.about}
+                </Link>
+              </li>
+              <li>
+                <Link href={localePath(locale, "/work")} className="hover:text-white transition-colors">
+                  {dict.nav.work}
+                </Link>
+              </li>
+              <li>
+                <Link href={localePath(locale, "/blog")} className="hover:text-white transition-colors">
+                  {dict.nav.blog}
+                </Link>
+              </li>
+              <li>
+                <Link href={localePath(locale, "/contact")} className="hover:text-white transition-colors">
+                  {dict.nav.contact}
+                </Link>
+              </li>
+              <li>
+                <Link href={localePath(locale, "/privacy")} className="hover:text-white transition-colors">
+                  {locale === "vi" ? "Chính sách bảo mật" : "Privacy Policy"}
+                </Link>
+              </li>
+              <li>
+                <Link href={localePath(locale, "/terms")} className="hover:text-white transition-colors">
+                  {locale === "vi" ? "Điều khoản sử dụng" : "Terms of Service"}
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-            <div className="col-span-2 sm:col-span-1">
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white">{dict.footer.contact}</h3>
-              <ul className="mt-4 space-y-3 text-sm">
-                <li className="flex items-start gap-2.5">
-                  <Icon name="pin" className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" />
-                  <a
-                    href={site.mapUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-navy-200 transition-colors hover:text-orange-400"
-                    title={locale === "vi" ? "Xem vị trí ANBU trên Google Maps" : "View ANBU on Google Maps"}
-                  >
-                    {t(site.address, locale)} <span className="inline-block text-xs opacity-75">↗</span>
-                  </a>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Icon name="mail" className="h-4 w-4 shrink-0 text-orange-500" />
-                  <a href={`mailto:${site.email}`} className="text-navy-200 hover:text-orange-400">{site.email}</a>
-                </li>
-              </ul>
+          <div className="lg:col-span-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400">
+              {locale === "vi" ? "Liên hệ & Trụ sở" : "Contact & Office"}
+            </h4>
+            <div className="mt-4 space-y-2.5 text-sm text-navy-300">
+              <p className="font-medium text-white">{t(site.legalName, locale)}</p>
+              <p className="text-xs text-navy-300">MST: {site.taxId}</p>
+              <p>
+                <a
+                  href={site.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={locale === "vi" ? "Mở vị trí ANBU trên Google Maps" : "Open ANBU location on Google Maps"}
+                  className="group/map inline-flex items-start gap-1.5 transition hover:text-orange-400"
+                >
+                  <span className="text-orange-400 mt-0.5 group-hover/map:scale-110 transition-transform">📍</span>
+                  <span className="underline decoration-navy-700 underline-offset-4 group-hover/map:decoration-orange-400">
+                    {t(site.address, locale)}
+                  </span>
+                </a>
+              </p>
+              <p>
+                <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-white transition-colors">
+                  Hotline: {site.phone}
+                </a>
+              </p>
+              <p>
+                <a href={`mailto:${site.email}`} className="hover:text-white transition-colors">
+                  Email: {site.email}
+                </a>
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-navy-300 sm:flex-row">
-          <p>© {year} {t(site.legalName, locale)}. {dict.footer.rights}</p>
-          <div className="flex items-center gap-6">
-            <Link href={localePath(locale, "/privacy")} className="hover:text-orange-400">{dict.footer.privacy}</Link>
-            <Link href={localePath(locale, "/terms")} className="hover:text-orange-400">{dict.footer.terms}</Link>
-          </div>
+        <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-navy-400">
+          <p>© {year} {site.name} — All rights reserved.</p>
         </div>
       </div>
     </footer>
