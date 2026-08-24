@@ -11,13 +11,22 @@ type WordPressPostListProps = {
   onNewPost: () => void;
 };
 
-export default function WordPressPostList({ posts, locale, onEditPost, onNewPost }: WordPressPostListProps) {
+export default function WordPressPostList({ posts: initialPosts, locale, onEditPost, onNewPost }: WordPressPostListProps) {
+  const [postList, setPostList] = useState<Post[]>(initialPosts);
+  const [trashedPosts, setTrashedPosts] = useState<Post[]>([]);
+  const [currentTab, setCurrentTab] = useState<"all" | "published" | "drafts" | "trash">("all");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedPosts, setSelectedPosts] = useState<string[]>([]);
-  const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
+  const [quickEditSlug, setQuickEditSlug] = useState<string | null>(null);
+  const [quickTitle, setQuickTitle] = useState("");
+  const [quickSlug, setQuickSlug] = useState("");
+  const [quickCategory, setQuickCategory] = useState("");
+  const [quickDate, setQuickDate] = useState("");
 
-  const filteredPosts = posts.filter((p) => {
+  const activeDataSource = currentTab === "trash" ? trashedPosts : postList;
+
+  const filteredPosts = activeDataSource.filter((p) => {
     const matchQuery =
       p.title.vi.toLowerCase().includes(searchTerm.toLowerCase()) ||
       p.title.en.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -26,6 +35,54 @@ export default function WordPressPostList({ posts, locale, onEditPost, onNewPost
     const matchCat = selectedCategory === "all" || p.category.vi === selectedCategory;
     return matchQuery && matchCat;
   });
+
+  const moveToTrash = (slug: string) => {
+    const target = postList.find((p) => p.slug === slug);
+    if (target) {
+      setPostList(postList.filter((p) => p.slug !== slug));
+      setTrashedPosts([target, ...trashedPosts]);
+    }
+  };
+
+  const restoreFromTrash = (slug: string) => {
+    const target = trashedPosts.find((p) => p.slug === slug);
+    if (target) {
+      setTrashedPosts(trashedPosts.filter((p) => p.slug !== slug));
+      setPostList([target, ...postList]);
+    }
+  };
+
+  const deletePermanently = (slug: string) => {
+    if (confirm("Bạn có chắc chắn muốn xóa vĩnh viễn bài viết này không?")) {
+      setTrashedPosts(trashedPosts.filter((p) => p.slug !== slug));
+    }
+  };
+
+  const handleStartQuickEdit = (post: Post) => {
+    setQuickEditSlug(post.slug);
+    setQuickTitle(post.title.vi);
+    setQuickSlug(post.slug);
+    setQuickCategory(post.category.vi);
+    setQuickDate(post.date);
+  };
+
+  const handleSaveQuickEdit = (slug: string) => {
+    const updated = postList.map((p) => {
+      if (p.slug === slug) {
+        const foundCat = blogCategories.find((c) => c.vi === quickCategory);
+        return {
+          ...p,
+          title: { ...p.title, vi: quickTitle },
+          slug: quickSlug.trim(),
+          category: foundCat ? { vi: foundCat.vi, en: foundCat.en } : p.category,
+          date: quickDate,
+        };
+      }
+      return p;
+    });
+    setPostList(updated);
+    setQuickEditSlug(null);
+  };
 
   const toggleSelectAll = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
@@ -74,13 +131,26 @@ export default function WordPressPostList({ posts, locale, onEditPost, onNewPost
 
       {/* Sub-navigation Links */}
       <div className="flex items-center gap-2 text-xs text-[#646970] pt-1">
-        <span className="font-semibold text-[#1d2327]">Tất cả <span className="font-normal text-[#646970]">({posts.length})</span></span>
+        <button
+          onClick={() => setCurrentTab("all")}
+          className={`hover:underline ${currentTab === "all" ? "font-bold text-[#1d2327]" : "text-[#2271b1]"}`}
+        >
+          Tất cả <span className="font-normal text-[#646970]">({postList.length})</span>
+        </button>
         <span>|</span>
-        <span className="text-[#2271b1] hover:underline cursor-pointer">Đã xuất bản <span className="text-[#646970]">({posts.length})</span></span>
+        <button
+          onClick={() => setCurrentTab("published")}
+          className={`hover:underline ${currentTab === "published" ? "font-bold text-[#1d2327]" : "text-[#2271b1]"}`}
+        >
+          Đã xuất bản <span className="text-[#646970]">({postList.length})</span>
+        </button>
         <span>|</span>
-        <span className="text-[#2271b1] hover:underline cursor-pointer">Bản nháp <span className="text-[#646970]">(0)</span></span>
-        <span>|</span>
-        <span className="text-[#2271b1] hover:underline cursor-pointer">Thùng rác <span className="text-[#646970]">(0)</span></span>
+        <button
+          onClick={() => setCurrentTab("trash")}
+          className={`hover:underline ${currentTab === "trash" ? "font-bold text-[#1d2327]" : "text-[#2271b1]"}`}
+        >
+          Thùng rác <span className="text-[#646970]">({trashedPosts.length})</span>
+        </button>
       </div>
 
       {/* Filter & Bulk Actions Bar */}
@@ -143,11 +213,68 @@ export default function WordPressPostList({ posts, locale, onEditPost, onNewPost
           <tbody className="divide-y divide-[#f0f0f1]">
             {filteredPosts.map((post) => {
               const imageCount = post.body.filter((b) => b.type === "image").length;
+              const isQuickEditing = quickEditSlug === post.slug;
+
+              if (isQuickEditing) {
+                /* WORDPRESS INLINE QUICK EDIT ROW */
+                return (
+                  <tr key={post.slug} className="bg-[#f0f6fc] border-y-2 border-[#2271b1]">
+                    <td colSpan={7} className="p-4 space-y-3">
+                      <div className="font-bold text-xs uppercase text-[#1d2327]">Sửa nhanh (Quick Edit)</div>
+                      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                        <div>
+                          <label className="block text-[11px] font-bold text-[#50575e]">Tiêu đề</label>
+                          <input
+                            type="text"
+                            value={quickTitle}
+                            onChange={(e) => setQuickTitle(e.target.value)}
+                            className="mt-1 w-full rounded border border-[#8c8f94] bg-white p-1.5 text-xs text-[#2c3338] outline-none"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-[11px] font-bold text-[#50575e]">Slug</label>
+                          <input
+                            type="text"
+                            value={quickSlug}
+                            onChange={(e) => setQuickSlug(e.target.value)}
+                            className="mt-1 w-full rounded border border-[#8c8f94] bg-white p-1.5 text-xs font-mono text-[#2c3338] outline-none"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-[11px] font-bold text-[#50575e]">Chuyên mục</label>
+                          <select
+                            value={quickCategory}
+                            onChange={(e) => setQuickCategory(e.target.value)}
+                            className="mt-1 w-full rounded border border-[#8c8f94] bg-white p-1.5 text-xs text-[#2c3338] outline-none"
+                          >
+                            {blogCategories.map((c) => (
+                              <option key={c.slug} value={c.vi}>{c.vi}</option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2 pt-2">
+                        <button
+                          onClick={() => handleSaveQuickEdit(post.slug)}
+                          className="rounded bg-[#2271b1] px-3 py-1 text-xs font-bold text-white hover:bg-[#135e96]"
+                        >
+                          Cập nhật
+                        </button>
+                        <button
+                          onClick={() => setQuickEditSlug(null)}
+                          className="rounded border border-[#8c8f94] bg-white px-3 py-1 text-xs text-[#2c3338] hover:bg-[#f6f7f7]"
+                        >
+                          Hủy bỏ
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              }
+
               return (
                 <tr
                   key={post.slug}
-                  onMouseEnter={() => setHoveredSlug(post.slug)}
-                  onMouseLeave={() => setHoveredSlug(null)}
                   className="hover:bg-[#f6f7f7] transition"
                 >
                   <td className="px-3 py-2.5 text-center align-top">
@@ -167,20 +294,30 @@ export default function WordPressPostList({ posts, locale, onEditPost, onNewPost
                     </button>
                     {/* Hover Action Links (Classic WordPress row-actions) */}
                     <div className="flex items-center gap-1 text-[11px] text-[#2271b1] mt-1">
-                      <button onClick={() => onEditPost(post)} className="hover:underline">Chỉnh sửa</button>
-                      <span className="text-[#a7aaad]">|</span>
-                      <button onClick={() => onEditPost(post)} className="hover:underline text-[#646970]">Sửa nhanh</button>
-                      <span className="text-[#a7aaad]">|</span>
-                      <button className="text-[#d63638] hover:underline">Thùng rác</button>
-                      <span className="text-[#a7aaad]">|</span>
-                      <a
-                        href={`/${locale}/blog/${post.slug}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:underline"
-                      >
-                        Xem ↗
-                      </a>
+                      {currentTab === "trash" ? (
+                        <>
+                          <button onClick={() => restoreFromTrash(post.slug)} className="hover:underline text-[#2e7d32] font-bold">Phục hồi</button>
+                          <span className="text-[#a7aaad]">|</span>
+                          <button onClick={() => deletePermanently(post.slug)} className="hover:underline text-[#d63638] font-bold">Xóa vĩnh viễn</button>
+                        </>
+                      ) : (
+                        <>
+                          <button onClick={() => onEditPost(post)} className="hover:underline">Chỉnh sửa</button>
+                          <span className="text-[#a7aaad]">|</span>
+                          <button onClick={() => handleStartQuickEdit(post)} className="hover:underline text-[#646970]">Sửa nhanh</button>
+                          <span className="text-[#a7aaad]">|</span>
+                          <button onClick={() => moveToTrash(post.slug)} className="text-[#d63638] hover:underline">Thùng rác</button>
+                          <span className="text-[#a7aaad]">|</span>
+                          <a
+                            href={`/${locale}/blog/${post.slug}`}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:underline"
+                          >
+                            Xem ↗
+                          </a>
+                        </>
+                      )}
                     </div>
                   </td>
                   <td className="px-3 py-2.5 align-top text-[#2271b1] hover:underline cursor-pointer">
@@ -200,7 +337,7 @@ export default function WordPressPostList({ posts, locale, onEditPost, onNewPost
                     </span>
                   </td>
                   <td className="px-3 py-2.5 align-top text-[#646970]">
-                    <div>Đã xuất bản</div>
+                    <div>{currentTab === "trash" ? "Trong thùng rác" : "Đã xuất bản"}</div>
                     <div className="text-[11px] text-[#2c3338] font-mono">{post.date}</div>
                   </td>
                 </tr>

@@ -12,10 +12,14 @@ type RankMathSEOProps = {
 export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEOProps) {
   const [focusKeyword, setFocusKeyword] = useState<string>("");
   const [previewMode, setPreviewMode] = useState<"desktop" | "mobile" | "social">("desktop");
+  const [isEditingSnippet, setIsEditingSnippet] = useState(false);
+  const [customSeoTitle, setCustomSeoTitle] = useState(post.title[lang] || "");
+  const [customSeoDesc, setCustomSeoDesc] = useState(post.excerpt[lang] || "");
+  const [customSlug, setCustomSlug] = useState(post.slug || "");
 
-  const currentTitle = post.title[lang] || "";
-  const currentExcerpt = post.excerpt[lang] || "";
-  const currentSlug = post.slug || "";
+  const currentTitle = customSeoTitle || post.title[lang] || "";
+  const currentExcerpt = customSeoDesc || post.excerpt[lang] || "";
+  const currentSlug = customSlug || post.slug || "";
 
   // Combine full text for SEO checks
   const fullContentText = post.body
@@ -32,6 +36,15 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
 
   // Normalized keywords check
   const kw = focusKeyword.trim().toLowerCase();
+
+  // Keyword count & density
+  let kwCount = 0;
+  if (kw.length > 0) {
+    const regex = new RegExp(kw, "gi");
+    const matches = fullContentText.match(regex);
+    kwCount = matches ? matches.length : 0;
+  }
+  const kwDensity = wordCount > 0 ? ((kwCount / wordCount) * 100).toFixed(2) : "0.00";
 
   // SEO Checks
   const checks = {
@@ -53,6 +66,7 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
     hasImages: imageBlocks.length >= 1,
     hasMultipleImages: imageBlocks.length >= 2,
     hasH2s: h2Blocks.length >= 2,
+    kwDensityGood: parseFloat(kwDensity) >= 0.8 && parseFloat(kwDensity) <= 2.5,
 
     // 3. Title & Readability
     titleLengthGood: currentTitle.length >= 40 && currentTitle.length <= 70,
@@ -80,9 +94,9 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
   if (score > 100) score = 100;
 
   const getScoreColor = (s: number) => {
-    if (s >= 80) return "bg-emerald-500 text-white";
-    if (s >= 55) return "bg-amber-500 text-white";
-    return "bg-rose-500 text-white";
+    if (s >= 80) return "bg-[#2e7d32] text-white";
+    if (s >= 55) return "bg-[#f57c00] text-white";
+    return "bg-[#d32f2f] text-white";
   };
 
   const getScoreText = (s: number) => {
@@ -92,81 +106,88 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
   };
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+    <div className="rounded border border-[#ccd0d4] bg-white shadow-sm overflow-hidden text-xs text-[#2c3338]">
       {/* Rank Math Plugin Header */}
-      <div className="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-6 py-4">
-        <div className="flex items-center gap-3">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-[#e53935] to-[#f4511e] font-display text-sm font-black text-white shadow-sm">
+      <div className="flex items-center justify-between border-b border-[#ccd0d4] bg-[#f6f7f7] px-4 py-2.5">
+        <div className="flex items-center gap-2.5">
+          <span className="flex h-7 w-7 items-center justify-center rounded bg-gradient-to-tr from-[#e53935] to-[#f4511e] font-display text-xs font-black text-white shadow-sm">
             RM
           </span>
           <div>
-            <h3 className="text-sm font-bold text-slate-800 flex items-center gap-2">
-              Rank Math SEO <span className="rounded bg-blue-100 px-1.5 py-0.5 text-[10px] font-bold text-blue-700">PRO</span>
+            <h3 className="font-bold text-sm text-[#1d2327] flex items-center gap-1.5">
+              Rank Math SEO <span className="rounded bg-[#e53935] px-1 py-0.2 text-[9px] font-bold text-white">PRO</span>
             </h3>
-            <p className="text-xs text-slate-500">Chấm điểm tối ưu hóa công cụ tìm kiếm chuẩn Google</p>
+            <p className="text-[11px] text-[#646970]">Tối ưu hóa On-Page & Schema Snippet chuẩn Google</p>
           </div>
         </div>
 
         {/* Dynamic SEO Score Badge */}
-        <div className="flex items-center gap-3">
-          <div className="text-right">
-            <span className="block text-[11px] font-bold uppercase tracking-wider text-slate-400">SEO Score</span>
-            <span className="text-xs font-semibold text-slate-600">{getScoreText(score)}</span>
+        <div className="flex items-center gap-2.5">
+          <div className="text-right hidden sm:block">
+            <span className="block text-[10px] font-bold uppercase tracking-wider text-[#646970]">SEO Score</span>
+            <span className="text-[11px] font-semibold text-[#1d2327]">{getScoreText(score)}</span>
           </div>
-          <div className={`flex h-12 w-12 items-center justify-center rounded-2xl font-display text-base font-extrabold shadow-md ${getScoreColor(score)}`}>
+          <div className={`flex h-10 w-10 items-center justify-center rounded font-display text-sm font-extrabold shadow-sm ${getScoreColor(score)}`}>
             {score}
           </div>
         </div>
       </div>
 
-      <div className="p-6 space-y-6">
+      <div className="p-4 space-y-4">
         {/* Focus Keyword Box */}
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+          <label className="block text-[11px] font-bold uppercase tracking-wider text-[#1d2327]">
             Từ khóa chính (Focus Keyword)
           </label>
-          <div className="mt-1.5 flex gap-2">
+          <div className="mt-1 flex gap-2">
             <input
               type="text"
               value={focusKeyword}
               onChange={(e) => setFocusKeyword(e.target.value)}
               placeholder={lang === "vi" ? "Ví dụ: marketing game, aso game mobile, discord việt nam..." : "e.g. game marketing, aso mobile..."}
-              className="flex-1 rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-medium text-slate-800 shadow-inner outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+              className="flex-1 rounded border border-[#8c8f94] bg-white px-3 py-1.5 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
             />
             {focusKeyword && (
               <button
+                type="button"
                 onClick={() => setFocusKeyword("")}
-                className="rounded-xl border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-500 hover:bg-slate-100"
+                className="rounded border border-[#ccd0d4] px-2.5 py-1 text-xs text-[#646970] hover:bg-[#f0f0f1]"
               >
                 Xóa
               </button>
             )}
           </div>
-          <p className="mt-1.5 text-[11px] text-slate-500">
-            Nhập từ khóa chính mà bạn muốn bài viết này xếp hạng Top 1 trên Google Search.
-          </p>
+          <div className="mt-1 flex items-center justify-between text-[11px] text-[#646970]">
+            <span>Mật độ từ khóa: <strong className="text-[#1d2327]">{kwDensity}%</strong> ({kwCount} lần xuất hiện)</span>
+            <span className={checks.kwDensityGood ? "text-[#2e7d32] font-semibold" : "text-[#f57c00]"}>
+              {checks.kwDensityGood ? "✓ Mật độ lý tưởng (0.8% – 2.5%)" : "Khuyên dùng: 1.0% – 2.0%"}
+            </span>
+          </div>
         </div>
 
-        {/* Google SERP Snippet Preview */}
-        <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-          <div className="flex items-center justify-between border-b border-slate-200/80 pb-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-700">Xem trước kết quả tìm kiếm (SERP Preview)</span>
-            <div className="flex rounded-lg border border-slate-200 bg-white p-0.5">
+        {/* Google SERP Snippet Preview Box */}
+        <div className="rounded border border-[#ccd0d4] bg-[#f6f7f7] p-3.5 space-y-3">
+          <div className="flex items-center justify-between border-b border-[#ccd0d4] pb-2">
+            <span className="font-bold uppercase text-[11px] text-[#1d2327]">Xem trước kết quả tìm kiếm (SERP Preview)</span>
+            <div className="flex gap-1">
               <button
+                type="button"
                 onClick={() => setPreviewMode("desktop")}
-                className={`rounded px-2.5 py-1 text-xs font-semibold ${previewMode === "desktop" ? "bg-slate-800 text-white" : "text-slate-600"}`}
+                className={`rounded px-2 py-0.5 text-xs font-semibold ${previewMode === "desktop" ? "bg-[#2271b1] text-white" : "bg-white text-[#2c3338] border border-[#ccd0d4]"}`}
               >
                 🖥️ Desktop
               </button>
               <button
+                type="button"
                 onClick={() => setPreviewMode("mobile")}
-                className={`rounded px-2.5 py-1 text-xs font-semibold ${previewMode === "mobile" ? "bg-slate-800 text-white" : "text-slate-600"}`}
+                className={`rounded px-2 py-0.5 text-xs font-semibold ${previewMode === "mobile" ? "bg-[#2271b1] text-white" : "bg-white text-[#2c3338] border border-[#ccd0d4]"}`}
               >
                 📱 Mobile
               </button>
               <button
+                type="button"
                 onClick={() => setPreviewMode("social")}
-                className={`rounded px-2.5 py-1 text-xs font-semibold ${previewMode === "social" ? "bg-slate-800 text-white" : "text-slate-600"}`}
+                className={`rounded px-2 py-0.5 text-xs font-semibold ${previewMode === "social" ? "bg-[#2271b1] text-white" : "bg-white text-[#2c3338] border border-[#ccd0d4]"}`}
               >
                 🌐 Social Share
               </button>
@@ -174,19 +195,19 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
           </div>
 
           {/* Snippet Card */}
-          <div className="mt-4">
+          <div>
             {previewMode !== "social" ? (
-              <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm text-left max-w-xl">
-                <div className="flex items-center gap-2">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-navy-900 text-[10px] font-bold text-white">
+              <div className="rounded border border-[#ccd0d4] bg-white p-3.5 shadow-sm text-left max-w-xl">
+                <div className="flex items-center gap-1.5">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#1d2327] text-[9px] font-bold text-white">
                     A
                   </div>
                   <div>
-                    <div className="text-[12px] font-medium text-slate-800">ANBU Asia</div>
-                    <div className="text-[11px] text-slate-500 font-mono">https://anbu.asia/{lang}/blog/{currentSlug}</div>
+                    <div className="text-[11px] font-medium text-[#202124]">ANBU Asia</div>
+                    <div className="text-[10px] text-[#5f6368] font-mono">https://anbu.asia/{lang}/blog/{currentSlug}</div>
                   </div>
                 </div>
-                <h4 className="mt-2 text-base font-medium text-[#1a0dab] line-clamp-1 hover:underline cursor-pointer">
+                <h4 className="mt-1.5 text-base font-medium text-[#1a0dab] line-clamp-1 hover:underline cursor-pointer">
                   {currentTitle || "Tiêu đề bài viết..."}
                 </h4>
                 <p className="mt-1 text-xs leading-relaxed text-[#4d5156] line-clamp-2">
@@ -194,15 +215,81 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
                 </p>
               </div>
             ) : (
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm max-w-md">
+              <div className="rounded border border-[#ccd0d4] bg-white overflow-hidden shadow-sm max-w-md">
                 <div className="aspect-[16/9] w-full bg-slate-100 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={post.cover || "/blog-covers/performance-ad-campaigns.jpg"} alt="" className="h-full w-full object-cover" />
                 </div>
-                <div className="p-3 bg-slate-50 border-t border-slate-100">
-                  <div className="text-[10px] font-bold uppercase text-slate-400">ANBU.ASIA</div>
-                  <div className="text-sm font-bold text-slate-900 line-clamp-1">{currentTitle}</div>
-                  <div className="text-xs text-slate-500 line-clamp-2 mt-0.5">{currentExcerpt}</div>
+                <div className="p-2.5 bg-[#f6f7f7] border-t border-[#ccd0d4]">
+                  <div className="text-[9px] font-bold uppercase text-[#646970]">ANBU.ASIA</div>
+                  <div className="text-xs font-bold text-[#1d2327] line-clamp-1">{currentTitle}</div>
+                  <div className="text-[11px] text-[#646970] line-clamp-2 mt-0.5">{currentExcerpt}</div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Edit Snippet Button / Form */}
+          <div>
+            <button
+              type="button"
+              onClick={() => setIsEditingSnippet(!isEditingSnippet)}
+              className="rounded border border-[#2271b1] bg-white px-3 py-1 font-semibold text-[#2271b1] hover:bg-[#f0f6fc]"
+            >
+              {isEditingSnippet ? "▲ Đóng tùy chỉnh Snippet" : "✏️ Chỉnh sửa Snippet (Edit Snippet)"}
+            </button>
+
+            {isEditingSnippet && (
+              <div className="mt-3 rounded border border-[#ccd0d4] bg-white p-3.5 space-y-3">
+                <div>
+                  <div className="flex justify-between">
+                    <label className="text-[11px] font-bold text-[#50575e]">Tiêu đề SEO (Title Tag)</label>
+                    <span className={checks.titleLengthGood ? "text-[#2e7d32] font-semibold" : "text-[#f57c00]"}>
+                      {currentTitle.length} / 70 ký tự
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    value={customSeoTitle}
+                    onChange={(e) => {
+                      setCustomSeoTitle(e.target.value);
+                      onUpdateSnippet("title", e.target.value);
+                    }}
+                    className="mt-1 w-full rounded border border-[#8c8f94] p-1.5 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                  />
+                </div>
+
+                <div>
+                  <div className="flex justify-between">
+                    <label className="text-[11px] font-bold text-[#50575e]">Đường dẫn (Slug)</label>
+                  </div>
+                  <input
+                    type="text"
+                    value={customSlug}
+                    onChange={(e) => {
+                      setCustomSlug(e.target.value);
+                      onUpdateSnippet("slug", e.target.value);
+                    }}
+                    className="mt-1 w-full rounded border border-[#8c8f94] p-1.5 font-mono text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                  />
+                </div>
+
+                <div>
+                  <div className="flex justify-between">
+                    <label className="text-[11px] font-bold text-[#50575e]">Mô tả tóm tắt (Meta Description)</label>
+                    <span className={checks.excerptLengthGood ? "text-[#2e7d32] font-semibold" : "text-[#f57c00]"}>
+                      {currentExcerpt.length} / 160 ký tự
+                    </span>
+                  </div>
+                  <textarea
+                    rows={2}
+                    value={customSeoDesc}
+                    onChange={(e) => {
+                      setCustomSeoDesc(e.target.value);
+                      onUpdateSnippet("excerpt", e.target.value);
+                    }}
+                    className="mt-1 w-full rounded border border-[#8c8f94] p-1.5 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                  />
                 </div>
               </div>
             )}
@@ -210,105 +297,68 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
         </div>
 
         {/* Detailed Rank Math Checklist */}
-        <div className="space-y-4">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-800 border-b border-slate-200 pb-2">
-            Danh sách tiêu chuẩn chấm điểm SEO (SEO Audit Checklist)
+        <div className="space-y-3 pt-1">
+          <h4 className="font-bold uppercase text-[11px] text-[#1d2327] border-b border-[#ccd0d4] pb-1.5">
+            Danh sách tiêu chuẩn kiểm tra SEO (Audit Checklist)
           </h4>
 
           {/* Group 1: Basic SEO */}
-          <div className="rounded-xl border border-slate-100 bg-slate-50/50 p-3.5 space-y-2.5">
-            <div className="text-xs font-bold text-slate-700">1. Tiêu chuẩn SEO cơ bản (Basic SEO)</div>
-            <ul className="space-y-2 text-xs">
+          <div className="rounded border border-[#ccd0d4] bg-white p-3 space-y-2">
+            <div className="font-bold text-xs text-[#1d2327]">1. Tiêu chuẩn SEO cơ bản (Basic SEO)</div>
+            <ul className="space-y-1.5 text-xs">
               <li className="flex items-center gap-2">
                 <span>{checks.kwInTitle ? "🟢" : "🔴"}</span>
-                <span className={checks.kwInTitle ? "text-slate-700" : "text-rose-600 font-medium"}>
+                <span className={checks.kwInTitle ? "text-[#2c3338]" : "text-[#d63638] font-medium"}>
                   Từ khóa chính xuất hiện trong <strong>Tiêu đề bài viết (SEO Title)</strong>.
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <span>{checks.kwInExcerpt ? "🟢" : "🔴"}</span>
-                <span className={checks.kwInExcerpt ? "text-slate-700" : "text-rose-600 font-medium"}>
+                <span className={checks.kwInExcerpt ? "text-[#2c3338]" : "text-[#d63638] font-medium"}>
                   Từ khóa chính xuất hiện trong <strong>Mô tả tóm tắt (Meta Description)</strong>.
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <span>{checks.kwInSlug ? "🟢" : "🔴"}</span>
-                <span className={checks.kwInSlug ? "text-slate-700" : "text-rose-600 font-medium"}>
+                <span className={checks.kwInSlug ? "text-[#2c3338]" : "text-[#d63638] font-medium"}>
                   Từ khóa chính xuất hiện trong <strong>Đường dẫn URL / Slug</strong>.
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <span>{checks.kwInContentFirst10 ? "🟢" : "🟡"}</span>
-                <span className={checks.kwInContentFirst10 ? "text-slate-700" : "text-amber-700 font-medium"}>
-                  Từ khóa chính xuất hiện ở <strong>đoạn mở đầu bài viết (First 10%)</strong>.
+                <span className={checks.kwInContentFirst10 ? "text-[#2c3338]" : "text-[#b26a00]"}>
+                  Từ khóa chính xuất hiện ở <strong>10% đầu bài viết</strong>.
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <span>{checks.wordCountGreat ? "🟢" : checks.wordCountPassed ? "🟡" : "🔴"}</span>
-                <span className={checks.wordCountGreat ? "text-slate-700" : "text-amber-700 font-medium"}>
-                  Độ dài nội dung: <strong>{wordCount} từ</strong> (Khuyên dùng: &ge;600 từ cho bài phân tích sâu).
+                <span className={checks.wordCountGreat ? "text-[#2c3338]" : "text-[#b26a00]"}>
+                  Độ dài nội dung: <strong>{wordCount} từ</strong> (Đạt tiêu chuẩn chuyên sâu &ge;600 từ).
                 </span>
               </li>
             </ul>
           </div>
 
           {/* Group 2: Additional SEO */}
-          <div className="rounded-xl border border-slate-100 bg-slate-50/50 p-3.5 space-y-2.5">
-            <div className="text-xs font-bold text-slate-700">2. Bổ trợ nâng cao & Trực quan (Additional SEO & Media)</div>
-            <ul className="space-y-2 text-xs">
+          <div className="rounded border border-[#ccd0d4] bg-white p-3 space-y-2">
+            <div className="font-bold text-xs text-[#1d2327]">2. Bổ trợ & Media (Additional SEO & Visuals)</div>
+            <ul className="space-y-1.5 text-xs">
               <li className="flex items-center gap-2">
                 <span>{checks.kwInH2 ? "🟢" : "🟡"}</span>
-                <span className={checks.kwInH2 ? "text-slate-700" : "text-slate-600"}>
-                  Từ khóa chính được sử dụng trong các <strong>thẻ tiêu đề mục phụ (H2)</strong>.
+                <span className="text-[#2c3338]">
+                  Từ khóa chính có trong các <strong>thẻ tiêu đề mục phụ (H2)</strong>.
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <span>{checks.kwInImageAlt ? "🟢" : "🟡"}</span>
-                <span className={checks.kwInImageAlt ? "text-slate-700" : "text-slate-600"}>
+                <span className="text-[#2c3338]">
                   Từ khóa chính có trong <strong>thẻ Alt mô tả của hình ảnh</strong>.
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <span>{checks.hasMultipleImages ? "🟢" : checks.hasImages ? "🟡" : "🔴"}</span>
-                <span className={checks.hasMultipleImages ? "text-slate-700" : "text-amber-700 font-medium"}>
+                <span className="text-[#2c3338]">
                   Bài viết tích hợp <strong>đa ảnh minh họa thực tế ({imageBlocks.length} ảnh)</strong> kèm Caption.
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span>{checks.hasH2s ? "🟢" : "🔴"}</span>
-                <span className={checks.hasH2s ? "text-slate-700" : "text-rose-600 font-medium"}>
-                  Cấu trúc phân mục rõ ràng với ít nhất <strong>{h2Blocks.length} thẻ H2</strong>.
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Group 3: Title & Readability */}
-          <div className="rounded-xl border border-slate-100 bg-slate-50/50 p-3.5 space-y-2.5">
-            <div className="text-xs font-bold text-slate-700">3. Khả năng đọc & Thu hút (Title & Content Readability)</div>
-            <ul className="space-y-2 text-xs">
-              <li className="flex items-center gap-2">
-                <span>{checks.titleLengthGood ? "🟢" : "🟡"}</span>
-                <span className="text-slate-700">
-                  Độ dài tiêu đề tối ưu: <strong>{currentTitle.length} ký tự</strong> (Chuẩn: 40–70 ký tự).
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span>{checks.excerptLengthGood ? "🟢" : "🟡"}</span>
-                <span className="text-slate-700">
-                  Độ dài mô tả tóm tắt: <strong>{currentExcerpt.length} ký tự</strong> (Chuẩn: 120–165 ký tự).
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span>{checks.titleHasNumber ? "🟢" : "⚪"}</span>
-                <span className="text-slate-700">
-                  Tiêu đề chứa con số thống kê hoặc các bước (ví dụ: &quot;3 Bước&quot;, &quot;10 Chỉ số&quot;, &quot;2026&quot;).
-                </span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span>{checks.hasList ? "🟢" : "⚪"}</span>
-                <span className="text-slate-700">
-                  Sử dụng danh sách gạch đầu dòng (`ul`) giúp người đọc dễ quét thông tin.
                 </span>
               </li>
             </ul>
