@@ -172,8 +172,9 @@ function coverForSlug(slug: string) {
 }
 
 export function editorialImageForPostData(post: { slug?: string; variant: SceneVariant; cover?: string }) {
-  // Prefer real, topic-matched photography for published posts.
-  return post.slug ? realCoverForSlug(post.slug) : post.cover ?? editorialImageForPost(post.variant);
+  // Always prioritize the explicit cover defined in the post
+  if (post.cover) return post.cover;
+  return post.slug ? realCoverForSlug(post.slug) : editorialImageForPost(post.variant);
 }
 
 export default function EditorialMedia({

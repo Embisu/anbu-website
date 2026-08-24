@@ -259,12 +259,12 @@ export const posts: Post[] = [
   {
     slug: "thi-truong-game-viet-nam-bao-hoa-chien-luoc-tang-truong",
     title: {
-      vi: "Thị trường game Việt Nam bão hòa hay chuyển dịch: 4 Chiến lược tăng trưởng bứt phá cho Nhà Phát Hành (2026)",
-      en: "Is Vietnam's Mobile Game Market Saturated? 4 Breakthrough Growth Playbooks for Publishers (2026)",
+      vi: "Thị trường game Việt Nam: Không phải bão hòa, mà là cuộc thanh lọc chất lượng (2026)",
+      en: "Vietnam's Mobile Gaming Market: Not Saturated, But a Flight to Quality (2026)",
     },
     excerpt: {
-      vi: "Thị trường game Việt Nam không hề suy thoái mà đang diễn ra cuộc thanh lọc chất lượng mạnh mẽ. Khám phá 4 xu hướng chuyển dịch đột phá từ siêu phẩm AAA Nghịch Thủy Hàn, Anime 3D Lưu Đày 2, Game Nữ giới Nguyệt Mộng đến sức mạnh bản quyền IP Tiên Nghịch Mobile cùng đại sứ Jun Vũ.",
-      en: "Vietnam's gaming market is not stagnating; it is undergoing a massive quality flight. Explore 4 transformative growth strategies exemplified by AAA open-world blockbuster Sword of Justice, anime tactical Girls' Frontline: Exilium, female-oriented Nguyet Mong, and licensed IP Renegade Immortal with celebrity ambassador Jun Vu.",
+      vi: "Nhiều người nói thị trường game Việt đã bão hòa khi chi phí chạy quảng cáo tăng vọt và người chơi khó tính hơn. Nhưng sự thật là dòng tiền vẫn chảy mạnh vào các tựa game xứng tầm. Thị trường không hề thu hẹp — nó chỉ đang thanh lọc những sản phẩm hời hợt để nhường sân chơi cho 4 xu hướng bứt phá mới.",
+      en: "Many claim Vietnam's game market is saturated as user acquisition costs surge and players become discerning. But the reality is that capital still flows aggressively into worthy titles. The market isn't shrinking — it's filtering out mediocrity to make way for 4 high-growth strategic frontiers.",
     },
     category: { vi: "Thị trường Game", en: "Gaming Market" },
     date: "2026-08-24",
@@ -281,8 +281,8 @@ export const posts: Post[] = [
       {
         type: "p",
         text: {
-          vi: "Nhiều nhà phát triển và đơn vị phát hành thường than phiền rằng: 'Thị trường game Việt Nam đã bão hòa, quảng cáo đắt đỏ và người chơi ngày càng khó tính'. Tuy nhiên, số liệu thực tế chứng minh quy mô doanh thu toàn ngành vẫn tăng trưởng ổn định vượt mốc 500 triệu USD. Điều thực sự 'bão hòa' ở đây là các tựa game reskin cũ kỹ, đồ họa 2D lỗi thời và những chiến dịch marketing rập khuôn. Người chơi Việt Nam không hề bớt chơi game; họ chỉ đang thanh lọc và dồn toàn bộ thời gian, tiền bạc vào những sản phẩm có chiều sâu vượt trội.",
-          en: "Many developers and international publishers lament that 'Vietnam's gaming market is saturated, ad costs are skyrocketing, and players are impossible to please.' Yet empirical market data proves total industry revenues steadily surpass $500M USD. What is truly 'saturated' are low-effort reskins, outdated 2D graphics, and copy-paste marketing campaigns. Vietnamese gamers haven't stopped playing; they are actively filtering out mediocre titles to concentrate time and spending on high-fidelity, culturally resonant masterpieces.",
+          vi: "Nếu chỉ nhìn vào số lượng các tựa game mở server mỗi tuần rồi lặng lẽ biến mất sau vài tháng, người ta rất dễ vội vã kết luận rằng thị trường game Việt Nam đã 'hết đất diễn'. Nhưng hãy nhìn vào bức tranh thực tế: Quy mô doanh thu toàn ngành vẫn vững vàng vượt mốc 500 triệu USD, và những tựa game đầu tư nghiêm túc về đồ họa, cốt truyện hay IP vẫn liên tục xô đổ các kỷ lục doanh thu ngày mở màn. Thực tế, game thủ Việt Nam không hề bớt chơi game; họ chỉ đang thanh lọc gu thưởng thức và dồn thời gian, tiền bạc vào những sản phẩm thực sự đẳng cấp.",
+          en: "If one only counts the churn of generic titles launching and fading within months, it is easy to assume Vietnam's gaming market is exhausted. But look at the empirical data: industry revenues comfortably surpass $500M USD, while projects investing seriously in graphical fidelity, IP, and community engagement repeatedly shatter launch-day revenue records. In reality, Vietnamese gamers haven't stopped playing; they are actively refining their standards and concentrating time and spend on truly world-class experiences.",
         },
       },
       {
