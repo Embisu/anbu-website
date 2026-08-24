@@ -10,6 +10,8 @@ import WordPressPostList from "@/components/admin/WordPressPostList";
 import WordPressPostEditor from "@/components/admin/WordPressPostEditor";
 import MediaManager from "@/components/admin/MediaManager";
 import LeadsManager from "@/components/admin/LeadsManager";
+import UsersManager from "@/components/admin/UsersManager";
+import RankMathSiteAudit from "@/components/admin/RankMathSiteAudit";
 import SiteSettingsManager from "@/components/admin/SiteSettingsManager";
 
 export default function AdminDashboardPage({ params }: { params: { locale: string } }) {
@@ -19,17 +21,28 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
   const [activeTab, setActiveTab] = useState<AdminMenuTab>("dashboard");
   const [postList, setPostList] = useState<Post[]>(defaultPosts);
   const [editingPost, setEditingPost] = useState<Post | null>(null);
+  const [currentUser, setCurrentUser] = useState<{ username: string; name: string; role: string } | null>(null);
 
   useEffect(() => {
     const token = localStorage.getItem("anbu_admin_token");
+    const savedUser = localStorage.getItem("anbu_admin_user");
     if (token) {
       setIsAuthenticated(true);
+      if (savedUser) {
+        try {
+          setCurrentUser(JSON.parse(savedUser));
+        } catch (e) {
+          console.error(e);
+        }
+      }
     }
   }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("anbu_admin_token");
+    localStorage.removeItem("anbu_admin_user");
     setIsAuthenticated(false);
+    setCurrentUser(null);
   };
 
   const handleNewPost = () => {
@@ -55,7 +68,15 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
   };
 
   if (!isAuthenticated) {
-    return <AdminLogin onLoginSuccess={() => setIsAuthenticated(true)} locale={locale} />;
+    return (
+      <AdminLogin
+        onLoginSuccess={(token, user) => {
+          setIsAuthenticated(true);
+          setCurrentUser(user);
+        }}
+        locale={locale}
+      />
+    );
   }
 
   return (
@@ -160,34 +181,21 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
             </div>
           )}
 
-          {/* TAB 7: RANK MATH SEO DASHBOARD */}
+          {/* TAB 7: RANK MATH SEO AUDIT & ADVISOR */}
           {activeTab === "rank_math" && (
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h1 className="text-2xl font-normal text-[#1d2327]">Rank Math SEO PRO Dashboard</h1>
-                <span className="rounded bg-[#e53935] px-2 py-0.5 text-xs font-bold text-white">PRO Active</span>
-              </div>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                <div className="rounded border border-[#ccd0d4] bg-white p-4 shadow-sm">
-                  <div className="text-xs font-bold text-[#646970] uppercase">Điểm SEO Trung Bình</div>
-                  <div className="mt-2 text-3xl font-extrabold text-[#2e7d32]">88 / 100</div>
-                  <p className="mt-1 text-xs text-[#2e7d32]">✓ Tối ưu hóa tuyệt vời</p>
-                </div>
-                <div className="rounded border border-[#ccd0d4] bg-white p-4 shadow-sm">
-                  <div className="text-xs font-bold text-[#646970] uppercase">Độ phủ Schema JSON-LD</div>
-                  <div className="mt-2 text-3xl font-extrabold text-[#1d2327]">100%</div>
-                  <p className="mt-1 text-xs text-[#646970]">Article, Organization, LocalBusiness</p>
-                </div>
-                <div className="rounded border border-[#ccd0d4] bg-white p-4 shadow-sm">
-                  <div className="text-xs font-bold text-[#646970] uppercase">Chỉ số Sitemap XML</div>
-                  <div className="mt-2 text-3xl font-extrabold text-[#2271b1]">168 URLs</div>
-                  <p className="mt-1 text-xs text-[#646970]">Tự động cập nhật lastmod</p>
-                </div>
-              </div>
-            </div>
+            <RankMathSiteAudit
+              posts={postList}
+              locale={locale}
+              onEditPost={handleEditPost}
+            />
           )}
 
-          {/* TAB 8: CÀI ĐẶT TỔNG QUAN */}
+          {/* TAB 8: THÀNH VIÊN (USERS MANAGEMENT) */}
+          {activeTab === "users" && (
+            <UsersManager locale={locale} />
+          )}
+
+          {/* TAB 9: CÀI ĐẶT TỔNG QUAN */}
           {activeTab === "settings" && (
             <div className="space-y-4">
               <h1 className="text-2xl font-normal text-[#1d2327]">Cài đặt Tổng quan</h1>

@@ -1,15 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import Icon from "@/components/Icon";
 
 type AdminLoginProps = {
-  onLoginSuccess: (token: string) => void;
+  onLoginSuccess: (token: string, user: { username: string; name: string; role: string }) => void;
   locale: string;
 };
 
 export default function AdminLogin({ onLoginSuccess, locale }: AdminLoginProps) {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -22,22 +21,36 @@ export default function AdminLogin({ onLoginSuccess, locale }: AdminLoginProps) 
     setLoading(true);
     setError(null);
 
+    // Get any locally added team members from localStorage to pass to auth endpoint
+    let customUsers: any[] = [];
+    try {
+      const saved = localStorage.getItem("anbu_custom_users");
+      if (saved) customUsers = JSON.parse(saved);
+    } catch (err) {
+      console.error(err);
+    }
+
     try {
       const res = await fetch("/api/admin/auth", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password: password.trim() }),
+        body: JSON.stringify({
+          username: username.trim(),
+          password: password.trim(),
+          customUsers,
+        }),
       });
 
       const data = await res.json();
       if (res.ok && data.ok && data.token) {
         localStorage.setItem("anbu_admin_token", data.token);
-        onLoginSuccess(data.token);
+        localStorage.setItem("anbu_admin_user", JSON.stringify(data.user));
+        onLoginSuccess(data.token, data.user);
       } else {
-        setError(locale === "vi" ? "Mật khẩu không chính xác. Vui lòng thử lại!" : "Incorrect password. Please try again!");
+        setError(data.error || (locale === "vi" ? "Mật khẩu không chính xác. Vui lòng thử lại!" : "Incorrect password. Please try again!"));
       }
     } catch {
-      setError(locale === "vi" ? "Lỗi kết nối. Vui lòng thử lại!" : "Connection error. Please try again!");
+      setError(locale === "vi" ? "Lỗi kết nối máy chủ. Vui lòng thử lại!" : "Connection error. Please try again!");
     } finally {
       setLoading(false);
     }
@@ -45,69 +58,82 @@ export default function AdminLogin({ onLoginSuccess, locale }: AdminLoginProps) 
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#f0f0f1] px-4 py-12 text-slate-800">
-      <div className="w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
-        <div className="text-center">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#2271b1] shadow-lg shadow-blue-500/20">
-            <span className="font-display text-2xl font-black text-white">W</span>
+      <div className="w-full max-w-sm rounded border border-[#ccd0d4] bg-white p-8 shadow-sm">
+        {/* WordPress W Logo */}
+        <div className="text-center mb-6">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#2271b1] text-3xl font-black text-white shadow-sm font-display">
+            W
           </div>
-          <h1 className="mt-4 font-display text-2xl font-bold tracking-tight text-slate-900">
-            ANBU CMS Studio
-          </h1>
-          <p className="mt-1 text-xs text-slate-500">
-            {locale === "vi"
-              ? "Bảng điều khiển quản trị bài viết & Tối ưu SEO Rank Math"
-              : "Content Management & Rank Math SEO Dashboard"}
+          <h2 className="mt-3 font-display text-lg font-bold text-[#1d2327]">
+            ANBU Studio CMS
+          </h2>
+          <p className="text-xs text-[#646970]">
+            Cổng đăng nhập Quản trị & Biên tập nội dung
           </p>
         </div>
 
         {error && (
-          <div className="mt-6 rounded-xl border border-rose-200 bg-rose-50 p-3.5 text-center text-xs font-semibold text-rose-700">
+          <div className="mb-4 rounded border-l-4 border-[#d63638] bg-[#fcf0f1] p-3 text-xs font-semibold text-[#d63638]">
             {error}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 text-xs">
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-slate-700">
-              {locale === "vi" ? "Mật khẩu quản trị viên" : "Admin Password"}
+            <label className="block font-bold text-[#50575e] mb-1">
+              Tên người dùng hoặc Địa chỉ Email
             </label>
-            <div className="relative mt-1.5">
-              <input
-                type={showPassword ? "text" : "password"}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder={locale === "vi" ? "Nhập mật khẩu quản trị..." : "Enter admin password..."}
-                required
-                className="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 pr-10 text-sm font-medium text-slate-800 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
-              />
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="admin, editor, hoặc email..."
+              className="w-full rounded border border-[#8c8f94] bg-white p-2 text-sm text-[#2c3338] outline-none focus:border-[#2271b1] focus:ring-1 focus:ring-[#2271b1]"
+            />
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <label className="font-bold text-[#50575e]">
+                Mật khẩu
+              </label>
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                className="text-[11px] text-[#2271b1] hover:underline"
               >
-                {showPassword ? "🙈" : "👁️"}
+                {showPassword ? "Ẩn" : "Hiện"}
               </button>
             </div>
-            <p className="mt-1.5 text-[11px] text-slate-400">
-              {locale === "vi" ? "Mật khẩu mặc định: anbu@2026" : "Default password: anbu@2026"}
-            </p>
+            <input
+              type={showPassword ? "text" : "password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Nhập mật khẩu..."
+              required
+              className="w-full rounded border border-[#8c8f94] bg-white p-2 text-sm text-[#2c3338] outline-none focus:border-[#2271b1] focus:ring-1 focus:ring-[#2271b1]"
+            />
+          </div>
+
+          <div className="flex items-center justify-between pt-1">
+            <label className="flex items-center gap-1.5 cursor-pointer text-[#646970]">
+              <input type="checkbox" defaultChecked className="rounded text-[#2271b1]" />
+              <span>Tự động đăng nhập</span>
+            </label>
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#2271b1] py-3 text-xs font-bold text-white shadow-sm transition hover:bg-[#135e96] disabled:opacity-50"
+            className="w-full rounded bg-[#2271b1] py-2 text-xs font-bold text-white shadow-sm hover:bg-[#135e96] transition disabled:opacity-50"
           >
-            {loading ? (
-              <span>{locale === "vi" ? "Đang xác thực..." : "Authenticating..."}</span>
-            ) : (
-              <span>{locale === "vi" ? "Đăng nhập vào Bảng điều khiển" : "Log In to Dashboard"}</span>
-            )}
+            {loading ? "Đang xác thực..." : "Đăng nhập vào Hệ thống"}
           </button>
         </form>
 
-        <div className="mt-6 border-t border-slate-100 pt-4 text-center text-xs text-slate-400">
-          <p>© {new Date().getFullYear()} ANBU Marketing & Communications</p>
+        <div className="mt-6 border-t border-[#f0f0f1] pt-4 text-center text-[11px] text-[#646970] space-y-1">
+          <p>Tài khoản Quản trị: <strong className="text-[#1d2327]">admin</strong> / <strong className="text-[#1d2327]">anbu@2026</strong></p>
+          <p>Tài khoản Biên tập: <strong className="text-[#1d2327]">editor</strong> / <strong className="text-[#1d2327]">editor@anbu2026</strong></p>
         </div>
       </div>
     </div>

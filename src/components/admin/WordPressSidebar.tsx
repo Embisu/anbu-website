@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-export type AdminMenuTab = "dashboard" | "posts" | "new_post" | "categories" | "media" | "leads" | "settings" | "rank_math";
+export type AdminMenuTab = "dashboard" | "posts" | "new_post" | "categories" | "media" | "leads" | "users" | "settings" | "rank_math";
 
 type WordPressSidebarProps = {
   activeTab: AdminMenuTab;
@@ -57,7 +57,7 @@ export default function WordPressSidebar({ activeTab, onSelectTab, postCount, le
             )}
           </button>
 
-          {/* Posts Submenu (Always open when in Posts Section) */}
+          {/* Posts Submenu */}
           {isPostsSection && !collapsed && (
             <div className="bg-[#13171b] py-1 text-xs">
               <button
@@ -145,6 +145,19 @@ export default function WordPressSidebar({ activeTab, onSelectTab, postCount, le
               PRO
             </span>
           )}
+        </button>
+
+        {/* Users (Thành viên) */}
+        <button
+          onClick={() => onSelectTab("users")}
+          className={`flex w-full items-center gap-3 px-3 py-2 text-left font-medium transition ${
+            activeTab === "users"
+              ? "bg-[#2271b1] text-white font-bold"
+              : "hover:bg-[#135e96]/30 hover:text-[#72aee6]"
+          }`}
+        >
+          <span className="text-sm">👤</span>
+          {!collapsed && <span>Thành viên</span>}
         </button>
 
         {/* Settings */}
