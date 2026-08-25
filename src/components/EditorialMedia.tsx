@@ -107,7 +107,7 @@ function realCoverForSlug(slug: string) {
     "marketing-game-mobile-mua-tet-viet-nam": "real-vietnam.jpg",
     "seo-game-marketing-viet-nam-internal-link": "seo.jpg",
     "ab-test-store-listing-game-mobile": "creative-testing-lab.jpg",
-    "game-marketing-localization-vietnam-keyword": "real-content.jpg",
+    "game-marketing-localization-vietnam-keyword": "girls-frontline-2-localization-slang.png",
     "game-mobile-user-acquisition-creative-fatigue": "creative-fatigue-3d.png",
     "game-community-moderation-vietnam": "moderation-3d.png",
     "ai-search-seo-game-marketing": "ai-search-3d.png",
