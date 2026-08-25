@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     path: "/about",
     title: isVi ? "Về ANBU" : "About ANBU",
     description: isVi
-      ? "ANBU là đối tác tăng trưởng của bạn — kết hợp sáng tạo và dữ liệu để xây thương hiệu bền vững."
-      : "ANBU is your growth partner — combining creativity and data to build durable brands.",
+      ? "ANBU là đối tác tăng trưởng của bạn, kết hợp sáng tạo và dữ liệu để xây thương hiệu bền vững."
+      : "ANBU is your growth partner, combining creativity and data to build durable brands.",
   });
 }
 
@@ -47,7 +47,7 @@ export default async function AboutPage({ params }: { params: { locale: string }
     "@type": "AboutPage",
     name: locale === "vi" ? "Về ANBU" : "About ANBU",
     url: `${siteUrl}/${locale}/about`,
-    description: locale === "vi" ? "ANBU là đối tác tăng trưởng của bạn — kết hợp sáng tạo và dữ liệu để xây thương hiệu bền vững." : "ANBU is your growth partner — combining creativity and data to build durable brands.",
+    description: locale === "vi" ? "ANBU là đối tác tăng trưởng của bạn, kết hợp sáng tạo và dữ liệu để xây thương hiệu bền vững." : "ANBU is your growth partner, combining creativity and data to build durable brands.",
     mainEntity: {
       "@type": "Organization",
       name: site.name,
@@ -146,7 +146,7 @@ export default async function AboutPage({ params }: { params: { locale: string }
         </div>
       </section>
 
-      {/* Team — ANBU Squad */}
+      {/* Team, ANBU Squad */}
       <section className="container-x py-16 sm:py-20">
         <SectionHeading eyebrow={dict.about.squadEyebrow} title={dict.about.teamTitle} subtitle={dict.about.teamSubtitle} center />
         <Reveal className="mt-12">

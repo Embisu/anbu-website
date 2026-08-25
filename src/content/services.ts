@@ -20,8 +20,8 @@ export const services: Service[] = [
       en: "The right people, the right insight, the right moment.",
     },
     description: {
-      vi: "Chúng tôi lên chiến lược, tuyển chọn và vận hành KOL/KOC/influencer cho các chiến dịch trong nước và quốc tế — từ xây dựng ý tưởng, kịch bản đến quản lý và đo lường hiệu quả từng đồng ngân sách.",
-      en: "We plan, cast and run KOL/KOC/influencer campaigns at home and abroad — from ideas and scripts to management and measuring every dollar of spend.",
+      vi: "Chúng tôi lên chiến lược, tuyển chọn và vận hành KOL/KOC/influencer cho các chiến dịch trong nước và quốc tế, từ xây dựng ý tưởng, kịch bản đến quản lý và đo lường hiệu quả từng đồng ngân sách.",
+      en: "We plan, cast and run KOL/KOC/influencer campaigns at home and abroad, from ideas and scripts to management and measuring every dollar of spend.",
     },
     features: [
       { vi: "Nghiên cứu & tuyển chọn KOL/KOC phù hợp", en: "Research & casting the right KOL/KOC" },
@@ -68,8 +68,8 @@ export const services: Service[] = [
       en: "Sharp positioning, lasting differentiation.",
     },
     description: {
-      vi: "Chúng tôi xây nền móng cho thương hiệu: nghiên cứu thị trường, chân dung khách hàng, định vị và thông điệp cốt lõi — để mọi hoạt động sau này đều nhất quán và hiệu quả.",
-      en: "We build your brand's foundation: market research, customer personas, positioning and core messaging — so everything that follows stays consistent and effective.",
+      vi: "Chúng tôi xây nền móng cho thương hiệu: nghiên cứu thị trường, chân dung khách hàng, định vị và thông điệp cốt lõi, để mọi hoạt động sau này đều nhất quán và hiệu quả.",
+      en: "We build your brand's foundation: market research, customer personas, positioning and core messaging, so everything that follows stays consistent and effective.",
     },
     features: [
       { vi: "Nghiên cứu thị trường & đối thủ", en: "Market & competitor research" },
@@ -92,8 +92,8 @@ export const services: Service[] = [
       en: "Identity that's beautiful, emotive and memorable.",
     },
     description: {
-      vi: "Từ logo, bộ nhận diện đến ấn phẩm truyền thông và bao bì — đội ngũ thiết kế của ANBU biến chiến lược thành hình ảnh khiến khách hàng của bạn phải dừng lại và ghi nhớ.",
-      en: "From logo and identity systems to campaign assets and packaging — ANBU's design team turns strategy into visuals that make your audience stop and remember.",
+      vi: "Từ logo, bộ nhận diện đến ấn phẩm truyền thông và bao bì, đội ngũ thiết kế của ANBU biến chiến lược thành hình ảnh khiến khách hàng của bạn phải dừng lại và ghi nhớ.",
+      en: "From logo and identity systems to campaign assets and packaging, ANBU's design team turns strategy into visuals that make your audience stop and remember.",
     },
     features: [
       { vi: "Thiết kế logo & bộ nhận diện", en: "Logo & identity design" },
@@ -164,8 +164,8 @@ export const services: Service[] = [
       en: "Websites that are fast, beautiful, SEO-ready.",
     },
     description: {
-      vi: "Chúng tôi xây website và ứng dụng với công nghệ hiện đại (Next.js, headless CMS), tối ưu tốc độ, trải nghiệm và SEO — sẵn sàng cho tăng trưởng.",
-      en: "We build websites and apps with modern technology (Next.js, headless CMS), optimized for speed, experience and SEO — ready to scale.",
+      vi: "Chúng tôi xây website và ứng dụng với công nghệ hiện đại (Next.js, headless CMS), tối ưu tốc độ, trải nghiệm và SEO, sẵn sàng cho tăng trưởng.",
+      en: "We build websites and apps with modern technology (Next.js, headless CMS), optimized for speed, experience and SEO, ready to scale.",
     },
     features: [
       { vi: "Website doanh nghiệp & landing page", en: "Corporate sites & landing pages" },
@@ -188,8 +188,8 @@ export const services: Service[] = [
       en: "Engaged communities, brands that feel alive.",
     },
     description: {
-      vi: "Lên kế hoạch, sản xuất và vận hành kênh social của bạn — nội dung nhất quán, tương tác thật và cộng đồng trung thành quanh thương hiệu.",
-      en: "We plan, produce and run your social channels — consistent content, real engagement and a loyal community around your brand.",
+      vi: "Lên kế hoạch, sản xuất và vận hành kênh social của bạn, nội dung nhất quán, tương tác thật và cộng đồng trung thành quanh thương hiệu.",
+      en: "We plan, produce and run your social channels, consistent content, real engagement and a loyal community around your brand.",
     },
     features: [
       { vi: "Chiến lược & định hướng kênh", en: "Channel strategy & direction" },
@@ -208,7 +208,7 @@ export const services: Service[] = [
     icon: "star",
     title: { vi: "Marketing Esports & Gaming Influencer Đông Nam Á", en: "Esports & Gaming Influencer Marketing Agency in Southeast Asia" },
     tagline: { vi: "Đưa game vào đúng cộng đồng trong khu vực.", en: "Put your game in front of the right communities across SEA." },
-    description: { vi: "ANBU là đối tác esports marketing và gaming influencer marketing giúp game quốc tế tiếp cận cộng đồng Đông Nam Á — từ KOL/KOC casting, creator campaign và launch PR đến community activation và user acquisition.", en: "ANBU is an esports marketing agency for gaming influencer marketing across Southeast Asia. We connect KOLs, creators, launch PR, community activation and user acquisition into one market-entry plan." },
+    description: { vi: "ANBU là đối tác esports marketing và gaming influencer marketing giúp game quốc tế tiếp cận cộng đồng Đông Nam Á, từ KOL/KOC casting, creator campaign và launch PR đến community activation và user acquisition.", en: "ANBU is an esports marketing agency for gaming influencer marketing across Southeast Asia. We connect KOLs, creators, launch PR, community activation and user acquisition into one market-entry plan." },
     features: [
       { vi: "Nghiên cứu cộng đồng và tuyển chọn KOL/KOC theo thể loại", en: "Community research and genre-fit KOL/KOC casting" },
       { vi: "Chiến lược creator cho Việt Nam, Thái Lan và SEA", en: "Creator strategy for Vietnam, Thailand and SEA" },

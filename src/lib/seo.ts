@@ -16,7 +16,7 @@ export function languageAlternates(path = "") {
   return languages;
 }
 
-/** BreadcrumbList structured data — improves how the page shows in search results. */
+/** BreadcrumbList structured data, improves how the page shows in search results. */
 export function breadcrumbLd(items: { name: string; path: string }[], locale: string) {
   return {
     "@context": "https://schema.org",
@@ -33,7 +33,7 @@ export function breadcrumbLd(items: { name: string; path: string }[], locale: st
   };
 }
 
-/** FAQPage structured data — can earn rich FAQ snippets on Google. */
+/** FAQPage structured data, can earn rich FAQ snippets on Google. */
 export function faqLd(items: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

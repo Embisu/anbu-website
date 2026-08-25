@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Locale } from "@/i18n/config";
 import { team, type Member } from "@/content/team";
 
-// Photo if public/team/<slug>.jpg exists, otherwise a monogram — never breaks.
+// Photo if public/team/<slug>.jpg exists, otherwise a monogram, never breaks.
 function Avatar({ member }: { member: Member }) {
   const [failed, setFailed] = useState(false);
   return (

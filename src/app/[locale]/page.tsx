@@ -113,7 +113,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
 
                 {/* Real campaign work */}
                 <div className="relative space-y-5">
-                  {/* Featured work — plays the recap video inline */}
+                  {/* Featured work, plays the recap video inline */}
                   <VideoLightbox
                     url={videoBySlug["honkai-impact-3-birthday"]}
                     ariaLabel={dict.hero.watchRecap}
@@ -142,7 +142,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
                     </div>
                   </VideoLightbox>
 
-                  {/* Second work — offset + tilted so the pair doesn't look uniform (static; only one card floats) */}
+                  {/* Second work, offset + tilted so the pair doesn't look uniform (static; only one card floats) */}
                   <div className="ml-auto w-11/12 overflow-hidden rounded-3xl bg-white shadow-[0_34px_75px_-28px_rgba(1,47,135,0.5)] ring-1 ring-navy-100 sm:w-4/5 sm:-rotate-2">
                     <div className="aspect-video">
                       <ProjectMedia slug="shopee-beauty-club" variant="social" alt="Shopee Beauty Club" />
@@ -163,7 +163,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
           </div>
         </div>
 
-        {/* Client logos — static grid on mobile, slow pause-on-hover marquee on larger screens */}
+        {/* Client logos, static grid on mobile, slow pause-on-hover marquee on larger screens */}
         <div className="border-y border-navy-100/70 bg-white/60 py-6">
           <p className="container-x text-center text-xs font-semibold uppercase tracking-widest text-navy-400">
             {dict.logos.title}
@@ -202,7 +202,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
         </div>
       </section>
 
-      {/* WORK GALLERY — cinematic strip of real campaign visuals (hidden on mobile to keep the page calm/short) */}
+      {/* WORK GALLERY, cinematic strip of real campaign visuals (hidden on mobile to keep the page calm/short) */}
       <div className="hidden sm:block">
         <WorkGallery locale={locale} />
       </div>
@@ -275,7 +275,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
             </h2>
             <p className="mt-5 max-w-xl leading-relaxed text-navy-500">
               {locale === "vi"
-                ? "ANBU đặc biệt phù hợp với các thương hiệu game, ứng dụng và sản phẩm quốc tế cần bước vào Việt Nam. Chúng tôi kết nối KOL/KOC, social, cộng đồng, báo chí và paid media thành một câu chuyện ra mắt thống nhất — thay vì những hạng mục rời rạc."
+                ? "ANBU đặc biệt phù hợp với các thương hiệu game, ứng dụng và sản phẩm quốc tế cần bước vào Việt Nam. Chúng tôi kết nối KOL/KOC, social, cộng đồng, báo chí và paid media thành một câu chuyện ra mắt thống nhất, thay vì những hạng mục rời rạc."
                 : "ANBU is built for games, apps and international products entering Vietnam. We connect creators, social, community, press and paid media into one launch story instead of isolated activities."}
             </p>
             <Link href={localePath(locale, "/services/game-app-marketing")} className="btn-ghost mt-7">

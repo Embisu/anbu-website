@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // Branded intro: the ANBU shuriken springs in, then the navy panel wipes
 // upward to reveal the page.
 //
-// Runs ONCE per page load only — not on every internal navigation, so moving
+// Runs ONCE per page load only, not on every internal navigation, so moving
 // between pages stays instant (a transition on every click makes a site feel slow).
 export default function PageTransition() {
   const [active, setActive] = useState(true);

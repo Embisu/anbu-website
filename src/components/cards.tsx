@@ -68,7 +68,7 @@ export function ProjectCard({
         <ProjectMedia
           slug={project.slug}
           variant={variantForProject(project.services[0])}
-          alt={`${project.client} — ${t(project.title, locale)}`}
+          alt={`${project.client}, ${t(project.title, locale)}`}
           focal={project.focal}
           fit={project.fit}
           className="absolute inset-0 opacity-95 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.03]"

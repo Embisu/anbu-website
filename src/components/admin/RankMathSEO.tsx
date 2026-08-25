@@ -13,7 +13,7 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
   // Extract initial smart keywords from post title or category
   const suggestedKeywords = React.useMemo(() => {
     const titleText = post.title[lang] || post.title.vi || "";
-    const words = titleText.split(/[:\-,—|]/)[0]?.trim() || post.category[lang] || "marketing game";
+    const words = titleText.split(/[:\-, |]/)[0]?.trim() || post.category[lang] || "marketing game";
     const categoryKw = post.category[lang] || "Marketing Game";
     const secondaryKw = titleText.includes("CPI") ? "Tối ưu CPI" : titleText.includes("ASO") ? "ASO Game Mobile" : "Game Marketing";
     return Array.from(new Set([words, categoryKw, secondaryKw])).filter((k) => k && k.length > 2);
@@ -295,7 +295,7 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
                     A
                   </div>
                   <div>
-                    <div className="text-[12px] font-semibold text-[#202124] leading-tight">ANBU Asia — Game Marketing</div>
+                    <div className="text-[12px] font-semibold text-[#202124] leading-tight">ANBU Asia, Game Marketing</div>
                     <div className="text-[11px] text-[#4d5156] font-mono leading-none">https://anbu.asia › {lang} › blog › {currentSlug}</div>
                   </div>
                 </div>
@@ -303,7 +303,7 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
                   {currentTitle || "Tiêu đề bài viết..."}
                 </h4>
                 <p className="mt-1 text-[13px] leading-relaxed text-[#4d5156] line-clamp-2">
-                  <span className="text-[#70757a] font-medium mr-1">{post.date} —</span>
+                  <span className="text-[#70757a] font-medium mr-1">{post.date}, </span>
                   {currentExcerpt || "Mô tả tóm tắt nội dung bài viết sẽ hiển thị tại đây khi người dùng tìm kiếm trên Google..."}
                 </p>
               </div>

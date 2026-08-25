@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     path: "/services",
     title: isVi ? "Dịch vụ Marketing, KOL/KOC, Game & Thương hiệu" : "Marketing, KOL/KOC, Game & Brand Services",
     description: isVi
-      ? "Chiến lược thương hiệu, sáng tạo, marketing hiệu suất, SEO, phát triển web và social — mọi năng lực trong một đội ngũ."
-      : "Brand strategy, creative, performance marketing, SEO, web development and social — every capability in one team.",
+      ? "Chiến lược thương hiệu, sáng tạo, marketing hiệu suất, SEO, phát triển web và social, mọi năng lực trong một đội ngũ."
+      : "Brand strategy, creative, performance marketing, SEO, web development and social, every capability in one team.",
   });
 }
 

@@ -461,24 +461,24 @@ export const posts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Tầng 1: Click-to-Install (IPM > 25) — Tối ưu trang Store Listing, icon và 3 screenshot đầu tiên để đảm bảo cứ 1.000 lượt hiển thị quảng cáo thì tạo ra ít nhất 25 lượt cài đặt thực tế.",
-            en: "Tier 1: Click-to-Install (IPM > 25) — Store listing and screenshot optimization ensuring at least 25 installs per 1,000 ad impressions."
+            vi: "Tầng 1: Click-to-Install (IPM > 25), Tối ưu trang Store Listing, icon và 3 screenshot đầu tiên để đảm bảo cứ 1.000 lượt hiển thị quảng cáo thì tạo ra ít nhất 25 lượt cài đặt thực tế.",
+            en: "Tier 1: Click-to-Install (IPM > 25), Store listing and screenshot optimization ensuring at least 25 installs per 1,000 ad impressions."
           },
           {
-            vi: "Tầng 2: Install-to-Tutorial Complete (> 75%) — Tinh giản màn mở đầu, rút ngắn thời gian hướng dẫn tân thủ xuống dưới 3 phút để người chơi nhanh chóng tiếp cận tính năng chiến đấu hoặc quay tướng gacha.",
-            en: "Tier 2: Tutorial Completion (> 75%) — Streamlining early game flow so new players access core combat and gacha mechanics within 3 minutes."
+            vi: "Tầng 2: Install-to-Tutorial Complete (> 75%), Tinh giản màn mở đầu, rút ngắn thời gian hướng dẫn tân thủ xuống dưới 3 phút để người chơi nhanh chóng tiếp cận tính năng chiến đấu hoặc quay tướng gacha.",
+            en: "Tier 2: Tutorial Completion (> 75%), Streamlining early game flow so new players access core combat and gacha mechanics within 3 minutes."
           },
           {
-            vi: "Tầng 3: Day 1 Retention (> 40%) — Trải nghiệm ngày đầu tiên phải mượt mà, không gặp lỗi crash hay nghẽn mạng, kết hợp hệ thống phần thưởng tân thủ 7 ngày để giữ chân người chơi.",
-            en: "Tier 3: Day 1 Retention (> 40%) — Flawless first-day server stability paired with generous 7-day login bonus tracks to cement retention habits."
+            vi: "Tầng 3: Day 1 Retention (> 40%), Trải nghiệm ngày đầu tiên phải mượt mà, không gặp lỗi crash hay nghẽn mạng, kết hợp hệ thống phần thưởng tân thủ 7 ngày để giữ chân người chơi.",
+            en: "Tier 3: Day 1 Retention (> 40%), Flawless first-day server stability paired with generous 7-day login bonus tracks to cement retention habits."
           },
           {
-            vi: "Tầng 4: First-Time Buyer Conversion (Payer Rate 3.5% - 7.0%) — Thiết kế gói quà nạp đầu 0.99 USD với giá trị quy đổi gấp 10 lần (x10 Value Pack) để phá vỡ rào cản chi tiêu tâm lý ban đầu của game thủ.",
-            en: "Tier 4: First-Time Buyer Conversion (3.5% - 7.0%) — Designing high-value $0.99 starter packs offering 10x perceived value to eliminate initial payer friction."
+            vi: "Tầng 4: First-Time Buyer Conversion (Payer Rate 3.5% - 7.0%), Thiết kế gói quà nạp đầu 0.99 USD với giá trị quy đổi gấp 10 lần (x10 Value Pack) để phá vỡ rào cản chi tiêu tâm lý ban đầu của game thủ.",
+            en: "Tier 4: First-Time Buyer Conversion (3.5% - 7.0%), Designing high-value $0.99 starter packs offering 10x perceived value to eliminate initial payer friction."
           },
           {
-            vi: "Tầng 5: Repeat Purchase Rate (> 45%) — Giữ chân tệp người chơi nạp tiền bằng Thẻ Tháng (Monthly Card), Battle Pass mùa giải và các chuỗi sự kiện tích lũy nạp mở rộng.",
-            en: "Tier 5: Repeat Purchase Rate (> 45%) — Securing payer loyalty through Monthly Privilege Cards, Season Battle Passes, and cumulative top-up events."
+            vi: "Tầng 5: Repeat Purchase Rate (> 45%), Giữ chân tệp người chơi nạp tiền bằng Thẻ Tháng (Monthly Card), Battle Pass mùa giải và các chuỗi sự kiện tích lũy nạp mở rộng.",
+            en: "Tier 5: Repeat Purchase Rate (> 45%), Securing payer loyalty through Monthly Privilege Cards, Season Battle Passes, and cumulative top-up events."
           },
         ],
       },
@@ -522,16 +522,16 @@ export const posts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Giai đoạn 1: Soft Launch & Test CVR (15% ngân sách) — Chạy thử nghiệm kỹ thuật trên 2.000 - 5.000 người chơi để kiểm tra tải máy chủ, tỷ lệ crash, tối ưu phễu tân thủ và đo lường chỉ số giữ chân D1/D7 thực tế.",
-            en: "Phase 1: Soft Launch & CVR Testing (15% budget) — Stress-testing servers with 2k-5k players, optimizing FTUE onboarding, and validating real D1/D7 retention benchmarks."
+            vi: "Giai đoạn 1: Soft Launch & Test CVR (15% ngân sách), Chạy thử nghiệm kỹ thuật trên 2.000 - 5.000 người chơi để kiểm tra tải máy chủ, tỷ lệ crash, tối ưu phễu tân thủ và đo lường chỉ số giữ chân D1/D7 thực tế.",
+            en: "Phase 1: Soft Launch & CVR Testing (15% budget), Stress-testing servers with 2k-5k players, optimizing FTUE onboarding, and validating real D1/D7 retention benchmarks."
           },
           {
-            vi: "Giai đoạn 2: Launch Spike D0 - D14 (60% ngân sách) — Dồn lực đẩy max công suất trên tất cả các kênh quảng cáo kết hợp dàn Influencer để chiếm lĩnh Top 1 Bảng xếp hạng, kích hoạt hiệu ứng tải tự nhiên khổng lồ.",
-            en: "Phase 2: Launch Spike D0 - D14 (60% budget) — Concentrating ad spend and influencer blitz across all channels to seize Top 1 Store Charts and trigger massive organic download velocity."
+            vi: "Giai đoạn 2: Launch Spike D0 - D14 (60% ngân sách), Dồn lực đẩy max công suất trên tất cả các kênh quảng cáo kết hợp dàn Influencer để chiếm lĩnh Top 1 Bảng xếp hạng, kích hoạt hiệu ứng tải tự nhiên khổng lồ.",
+            en: "Phase 2: Launch Spike D0 - D14 (60% budget), Concentrating ad spend and influencer blitz across all channels to seize Top 1 Store Charts and trigger massive organic download velocity."
           },
           {
-            vi: "Giai đoạn 3: Evergreen & LiveOps Retargeting (25% ngân sách) — Duy trì dòng chảy người chơi mới ổn định, chạy chiến dịch Retargeting kêu gọi người chơi cũ quay lại qua các bản cập nhật tướng mới và sự kiện Bang hội.",
-            en: "Phase 3: Evergreen & LiveOps Retargeting (25% budget) — Sustaining steady baseline acquisition while retargeting churned players around major content patches and guild championship updates."
+            vi: "Giai đoạn 3: Evergreen & LiveOps Retargeting (25% ngân sách), Duy trì dòng chảy người chơi mới ổn định, chạy chiến dịch Retargeting kêu gọi người chơi cũ quay lại qua các bản cập nhật tướng mới và sự kiện Bang hội.",
+            en: "Phase 3: Evergreen & LiveOps Retargeting (25% budget), Sustaining steady baseline acquisition while retargeting churned players around major content patches and guild championship updates."
           },
         ],
       },
@@ -2942,19 +2942,19 @@ export const posts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Nhóm 1 — Tiếng lóng ACGN, Gacha & Waifu: 'Lưu Tày', 'T-Doll', 'Vợ yêu', 'Chồng quốc dân', 'Nổ vàng', 'Lệch rate', 'Trấn', 'Ăn bảo hiểm', 'Rước em về dinh', 'Cày vé quay'.",
+            vi: "Nhóm 1: Tiếng lóng ACGN, Gacha & Waifu: 'Lưu Tày', 'T-Doll', 'Vợ yêu', 'Chồng quốc dân', 'Nổ vàng', 'Lệch rate', 'Trấn', 'Ăn bảo hiểm', 'Rước em về dinh', 'Cày vé quay'.",
             en: "ACGN, Gacha & Waifu Cluster: 'Luu Tay', 'T-Doll', 'Waifu', 'No vang', 'Lech rate', 'Tran', 'Bao hiem', 'Ve quay'."
           },
           {
-            vi: "Nhóm 2 — Tiếng lóng Kinh tế & Cày cuốc (Progression): 'Cày chay' (F2P không nạp), 'Đập đồ không gãy' (nâng cấp trang bị), 'Ép ngọc', 'Nâng sao', 'Farm quái', 'Chuyển sinh', 'Rương phúc lợi'.",
+            vi: "Nhóm 2: Tiếng lóng Kinh tế & Cày cuốc (Progression): 'Cày chay' (F2P không nạp), 'Đập đồ không gãy' (nâng cấp trang bị), 'Ép ngọc', 'Nâng sao', 'Farm quái', 'Chuyển sinh', 'Rương phúc lợi'.",
             en: "Economic & Progression Cluster: 'Cay chay' (F2P grinding), 'Dap do' (gear enhancement), 'Ep ngoc', 'Nang sao', 'Farm quai', 'Chuyen sinh'."
           },
           {
-            vi: "Nhóm 3 — Tiếng lóng Chiến đấu & Chiến thuật: 'Rush B', 'Gank tem', 'Combat tổng', 'Sấy', 'Check góc', 'Outplay', 'Lật kèo', 'Ép sân', 'Úp sọt', 'Cướp Boss'.",
+            vi: "Nhóm 3: Tiếng lóng Chiến đấu & Chiến thuật: 'Rush B', 'Gank tem', 'Combat tổng', 'Sấy', 'Check góc', 'Outplay', 'Lật kèo', 'Ép sân', 'Úp sọt', 'Cướp Boss'.",
             en: "Combat & Tactical Cluster: 'Rush B', 'Gank tem', 'Combat tong', 'Say', 'Check goc', 'Outplay', 'Lat keo', 'Cuop Boss'."
           },
           {
-            vi: "Nhóm 4 — Tiếng lóng Xã hội & Bang Hội: 'Chủ bang', 'Họp bang', 'Kéo rank', 'Gánh tạ', 'Chiến liên server', 'Đua Top', 'Chiêu mộ anh tài', 'Giao lưu PK'.",
+            vi: "Nhóm 4: Tiếng lóng Xã hội & Bang Hội: 'Chủ bang', 'Họp bang', 'Kéo rank', 'Gánh tạ', 'Chiến liên server', 'Đua Top', 'Chiêu mộ anh tài', 'Giao lưu PK'.",
             en: "Social & Guild Cluster: 'Chu bang', 'Hop bang', 'Keo rank', 'Ganh team', 'Chien lien server', 'Dua Top', 'Giao luu PK'."
           },
         ],
@@ -2964,20 +2964,20 @@ export const posts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Bước 1 — Social Listening trong các hội nhóm kín & Discord: Theo dõi các group cộng đồng game thủ 14 ngày trước khi chốt thông điệp truyền thông để thu thập danh sách từ ngữ 'hot' nhất mà người chơi đang tự nhiên sử dụng.",
-            en: "Step 1 — Social Listening in Secret Groups & Discord: Monitor core community groups and Discord servers 14 days prior to campaign finalization to capture organically surging slang terms."
+            vi: "Bước 1: Social Listening trong các hội nhóm kín & Discord: Theo dõi các group cộng đồng game thủ 14 ngày trước khi chốt thông điệp truyền thông để thu thập danh sách từ ngữ 'hot' nhất mà người chơi đang tự nhiên sử dụng.",
+            en: "Step 1: Social Listening in Secret Groups & Discord: Monitor core community groups and Discord servers 14 days prior to campaign finalization to capture organically surging slang terms."
           },
           {
-            vi: "Bước 2 — Bản địa hóa Metadata Store (ASO) & SEO Landing Page: Chèn kết hợp từ khóa chính thức kèm từ lóng không dấu (ví dụ: 'luu tay,t-doll,gacha,cay chay,vo lam,kiem hiep') vào trường từ khóa bí mật trên iOS và mô tả ngắn trên Google Play.",
-            en: "Step 2 — ASO & SEO Integration: Populate store metadata and landing page copy with accented and unaccented colloquial terms to capture informal search traffic."
+            vi: "Bước 2: Bản địa hóa Metadata Store (ASO) & SEO Landing Page: Chèn kết hợp từ khóa chính thức kèm từ lóng không dấu (ví dụ: 'luu tay,t-doll,gacha,cay chay,vo lam,kiem hiep') vào trường từ khóa bí mật trên iOS và mô tả ngắn trên Google Play.",
+            en: "Step 2: ASO & SEO Integration: Populate store metadata and landing page copy with accented and unaccented colloquial terms to capture informal search traffic."
           },
           {
-            vi: "Bước 3 — Đưa tiếng lóng vào Kịch bản Creator & Livestream: Cung cấp danh sách từ ngữ cộng đồng yêu thích cho Streamer/KOC để họ giao lưu một cách tự nhiên nhất, xóa bỏ hoàn toàn cảm giác đọc kịch bản quảng cáo gượng gạo.",
-            en: "Step 3 — Creator & Livestream Scripting: Equip booked creators with community-approved slang vocabulary, ensuring organic banter that eliminates scripted corporate vibes."
+            vi: "Bước 3: Đưa tiếng lóng vào Kịch bản Creator & Livestream: Cung cấp danh sách từ ngữ cộng đồng yêu thích cho Streamer/KOC để họ giao lưu một cách tự nhiên nhất, xóa bỏ hoàn toàn cảm giác đọc kịch bản quảng cáo gượng gạo.",
+            en: "Step 3: Creator & Livestream Scripting: Equip booked creators with community-approved slang vocabulary, ensuring organic banter that eliminates scripted corporate vibes."
           },
           {
-            vi: "Bước 4 — Đo lường tỷ lệ giữ chân (Cohort Quality by Search Intent): Phân tách báo cáo hiệu quả người chơi theo từng nhóm từ khóa tìm kiếm để đo lường tỷ lệ nạp tiền thực tế, ưu tiên ngân sách cho những cụm từ có ROI cao nhất.",
-            en: "Step 4 — Downstream Cohort Telemetry: Segment post-install retention and monetization by keyword cluster to double down on the highest-ROI vernacular themes."
+            vi: "Bước 4: Đo lường tỷ lệ giữ chân (Cohort Quality by Search Intent): Phân tách báo cáo hiệu quả người chơi theo từng nhóm từ khóa tìm kiếm để đo lường tỷ lệ nạp tiền thực tế, ưu tiên ngân sách cho những cụm từ có ROI cao nhất.",
+            en: "Step 4: Downstream Cohort Telemetry: Segment post-install retention and monetization by keyword cluster to double down on the highest-ROI vernacular themes."
           },
         ],
       },
@@ -3324,7 +3324,7 @@ export const posts: Post[] = [
         type: "p",
         text: {
           vi: "Điểm khác biệt lớn nhất giữa một ngôi sao giải trí và một Micro Creator như Thỏ Gờ Rin nằm ở độ tin cậy cộng đồng (Community Trust). Khi Thỏ Gờ Rin làm video với thông điệp gần gũi như 'Game huyền thoại tuổi thơ của anh em game thủ', khán giả đón nhận đó như một lời rủ rê chân thành từ một người bạn cùng chơi game, chứ không phải một bài quảng cáo sáo rỗng. Tỷ lệ tương tác (Engagement Rate) của các Micro Creator này thường đạt từ 8% đến 12%, cao gấp 3 lần so với các tài khoản triệu view đại chúng. Người xem sẵn sàng để lại bình luận hỏi về cấu hình máy, xin link tải và hỏi mẹo vượt ải tân thủ. Đây chính là tệp người chơi chất lượng cao mà bất kỳ NPH nào cũng khao khát.",
-          en: "The critical distinction between mainstream celebrities and dedicated micro-creators like Tho Go Rin lies in organic community trust. When Tho Go Rin produces content framed around nostalgic gamer memories, audiences perceive it as a genuine invitation from a trusted gaming buddy rather than a paid corporate ad. Engagement rates for authentic gaming micro-creators regularly achieve 8% to 12%, triple that of generic mass-market accounts. Viewers actively comment asking about specs, download links, and beginner progression tips — generating the exact high-intent players publishers covet."
+          en: "The critical distinction between mainstream celebrities and dedicated micro-creators like Tho Go Rin lies in organic community trust. When Tho Go Rin produces content framed around nostalgic gamer memories, audiences perceive it as a genuine invitation from a trusted gaming buddy rather than a paid corporate ad. Engagement rates for authentic gaming micro-creators regularly achieve 8% to 12%, triple that of generic mass-market accounts. Viewers actively comment asking about specs, download links, and beginner progression tips, generating the exact high-intent players publishers covet."
         },
       },
       {

@@ -36,7 +36,7 @@ const defaultEmptyPost: Post = {
   cover: "/blog-covers/performance-ad-campaigns.jpg",
   sources: [
     {
-      label: { vi: "Google Search Central — Helpful Content", en: "Google Search Central — Helpful Content" },
+      label: { vi: "Google Search Central, Helpful Content", en: "Google Search Central, Helpful Content" },
       href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
     },
   ],

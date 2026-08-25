@@ -133,7 +133,7 @@ export default async function ProjectDetailPage({
         </Reveal>
       </section>
 
-      {/* Recap video — embedded inline */}
+      {/* Recap video, embedded inline */}
       {videoBySlug[project.slug] && (
         <section className="container-x pt-16 sm:pt-20">
           <Reveal>

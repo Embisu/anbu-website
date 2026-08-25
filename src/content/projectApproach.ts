@@ -1,6 +1,6 @@
 import type { L10n } from "./site";
 
-// "What we did" — concrete tasks per project (from the real campaign work).
+// "What we did", concrete tasks per project (from the real campaign work).
 export const approachBySlug: Record<string, L10n[]> = {
   "shopee-beauty-club": [
     { vi: "Lên kế hoạch truyền thông & dự trù ngân sách ra mắt", en: "Planned media and budget for the launch" },

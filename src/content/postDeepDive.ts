@@ -154,7 +154,7 @@ export const postDeepDiveBySlug: Record<string, Block[]> = {
       type: "p",
       text: {
         vi: "Một định vị hữu ích buộc thương hiệu lựa chọn khách hàng ưu tiên, vấn đề quan trọng nhất cần giải quyết và điểm khác biệt có thể bảo vệ. Nếu mọi người đều là khách hàng và mọi lợi ích đều quan trọng, định vị chưa đủ sắc. Câu định vị tốt giúp đội ngũ biết điều gì nên làm và quan trọng hơn, điều gì nên từ chối.",
-        en: "Useful positioning forces choices about priority audience, the most important problem and a defensible difference. If everyone is the customer and every benefit matters, the position is not sharp enough. Strong positioning tells a team what to do—and what to refuse.",
+        en: "Useful positioning forces choices about priority audience, the most important problem and a defensible difference. If everyone is the customer and every benefit matters, the position is not sharp enough. Strong positioning tells a team what to do, and what to refuse.",
       },
     },
     {

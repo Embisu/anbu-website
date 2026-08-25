@@ -30,8 +30,8 @@ export const faqs: FAQ[] = [
   {
     q: { vi: "ANBU có làm việc với thị trường quốc tế không?", en: "Do you work in international markets?" },
     a: {
-      vi: "Có. Đội ngũ đã triển khai ở Đông Nam Á, Đài Loan, Brazil và nhiều thị trường khác — đặc biệt trong mảng game và ứng dụng ở quy mô toàn cầu.",
-      en: "Yes. Our team has executed across Southeast Asia, Taiwan, Brazil and more — especially in games and apps at global scale.",
+      vi: "Có. Đội ngũ đã triển khai ở Đông Nam Á, Đài Loan, Brazil và nhiều thị trường khác, đặc biệt trong mảng game và ứng dụng ở quy mô toàn cầu.",
+      en: "Yes. Our team has executed across Southeast Asia, Taiwan, Brazil and more, especially in games and apps at global scale.",
     },
   },
   {

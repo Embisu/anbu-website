@@ -49,7 +49,7 @@ export default function RankMathSiteAudit({ posts, locale, onEditPost }: RankMat
           </div>
           <div>
             <h1 className="text-2xl font-normal text-[#1d2327]">
-              Rank Math SEO PRO — Trung Tâm Tư Vấn & Kiểm Định SEO
+              Rank Math SEO PRO, Trung Tâm Tư Vấn & Kiểm Định SEO
             </h1>
             <p className="text-xs text-[#646970]">
               Hệ thống phân tích thuật toán Google, kiểm tra dữ liệu có cấu trúc và tư vấn chiến lược nội dung thực chiến

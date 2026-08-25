@@ -150,8 +150,8 @@ export const projectNarrativeBySlug: Record<string, ProjectNarrative> = {
   },
   "life-makeover": {
     insight: {
-      vi: "Life Makeover cạnh tranh không chỉ với game thời trang mà còn với toàn bộ nội dung self-expression trên social. Người xem bị thu hút khi họ thấy một ý tưởng có thể biến thành phong cách, nhân vật hoặc không gian mang dấu ấn cá nhân — chứ không chỉ khi được giới thiệu thêm một bộ trang phục đẹp.",
-      en: "Life Makeover competes not only with fashion games but with the wider world of social self-expression. Audiences respond when an idea becomes a personal style, character or space—not simply when another beautiful outfit is shown.",
+      vi: "Life Makeover cạnh tranh không chỉ với game thời trang mà còn với toàn bộ nội dung self-expression trên social. Người xem bị thu hút khi họ thấy một ý tưởng có thể biến thành phong cách, nhân vật hoặc không gian mang dấu ấn cá nhân, chứ không chỉ khi được giới thiệu thêm một bộ trang phục đẹp.",
+      en: "Life Makeover competes not only with fashion games but with the wider world of social self-expression. Audiences respond when an idea becomes a personal style, character or space, not simply when another beautiful outfit is shown.",
     },
     takeaway: {
       vi: "Việc phân nhóm fashion, beauty và lifestyle creator mở ra nhiều cửa vào sản phẩm. Mỗi creator kể một phần khác nhau của thế giới game, còn transformation và UGC giúp cộng đồng trở thành đồng tác giả của chiến dịch.",

@@ -27,8 +27,8 @@ export const projects: Project[] = [
     slug: "shopee-beauty-club",
     client: "Shopee",
     title: {
-      vi: "Ra mắt Shopee Beauty Club — chiến dịch viral",
-      en: "Launching Shopee Beauty Club — a viral campaign",
+      vi: "Ra mắt Shopee Beauty Club, chiến dịch viral",
+      en: "Launching Shopee Beauty Club, a viral campaign",
     },
     category: { vi: "E-commerce & Social", en: "E-commerce & Social" },
     year: "2020 – 2021",
@@ -121,8 +121,8 @@ export const projects: Project[] = [
     year: "2021",
     color: "from-navy-700 to-orange-500",
     cover: {
-      vi: "Lọt Top 10 game có doanh thu cao nhất năm — video KOL đạt hơn 10 triệu lượt xem.",
-      en: "A Top 10 highest-grossing game of the year — a KOL video hitting 10M+ views.",
+      vi: "Lọt Top 10 game có doanh thu cao nhất năm, video KOL đạt hơn 10 triệu lượt xem.",
+      en: "A Top 10 highest-grossing game of the year, a KOL video hitting 10M+ views.",
     },
     challenge: {
       vi: "Đưa một tựa game MMORPG mới bùng nổ tại thị trường Việt Nam giữa lúc cạnh tranh gay gắt.",
@@ -217,7 +217,7 @@ export const projects: Project[] = [
     },
     challenge: {
       vi: "Thách thức không chỉ là giới thiệu một game thẻ tướng mới, mà còn phải truyền tải đồng thời ba lớp trải nghiệm: câu chuyện quyền đấu giàu cảm xúc, hệ thống nhân vật có chiều sâu và gameplay chiến thuật. Thông điệp cần đủ lãng mạn để thu hút nhóm yêu anime, cổ phong và thời trang, nhưng vẫn đủ rõ ràng về chiến thuật để thuyết phục người chơi RPG.",
-      en: "The challenge was larger than introducing another card RPG: communications had to express three layers at once — emotional political drama, deep character relationships and tactical gameplay. The message needed enough romance for anime, historical-fantasy and fashion audiences while remaining strategically credible to RPG players.",
+      en: "The challenge was larger than introducing another card RPG: communications had to express three layers at once, emotional political drama, deep character relationships and tactical gameplay. The message needed enough romance for anime, historical-fantasy and fashion audiences while remaining strategically credible to RPG players.",
     },
     solution: {
       vi: "ANBU xây chiến dịch theo trục “Thề ước đã giao, khởi đầu định mệnh”, tuyển chọn KOL/KOC phù hợp với nhóm anime, cổ phong và gaming; đồng thời phát triển briefing, tuyến nội dung và lịch social theo từng giai đoạn ra mắt. Video trải nghiệm, nội dung nhân vật, hướng dẫn đội hình và hoạt động cộng đồng được kết nối thành một câu chuyện thống nhất, sau đó khuếch đại bằng PR và thảo luận trên các kênh game.",
@@ -517,7 +517,7 @@ export const projects: Project[] = [
     },
     solution: {
       vi: "ANBU định hướng gaming KOL, streamer và community creator theo vai trò thức thần, trình độ người chơi và định dạng nền tảng. Chuỗi nội dung kết hợp hướng dẫn nhập môn, phân tích meta, highlight kỹ năng, livestream leo hạng và thử thách cộng đồng. Cách tiếp cận này giúp người mới hiểu game nhanh hơn, đồng thời tạo đủ chiều sâu để người chơi lâu năm tiếp tục thảo luận.",
-      en: "ANBU organized gaming KOLs, streamers and community creators by shikigami role, player skill level and platform format. Content combined beginner education, meta analysis, skill highlights, ranked livestreams and community challenges — helping newcomers understand the game while sustaining veteran conversation.",
+      en: "ANBU organized gaming KOLs, streamers and community creators by shikigami role, player skill level and platform format. Content combined beginner education, meta analysis, skill highlights, ranked livestreams and community challenges, helping newcomers understand the game while sustaining veteran conversation.",
     },
     results: [
       { value: "KOL/KOC", label: { vi: "Gaming, streamer & community", en: "Gaming, streamers and community" } },

@@ -17,7 +17,7 @@ function Card({ p, locale, clone = false }: { p: Project; locale: Locale; clone?
       <ProjectMedia
         slug={p.slug}
         variant={variantForProject(p.services[0])}
-        alt={`${p.client} — ${t(p.title, locale)}`}
+        alt={`${p.client}, ${t(p.title, locale)}`}
         focal={p.focal}
         fit={p.fit}
         className="absolute inset-0 transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-[1.03]"

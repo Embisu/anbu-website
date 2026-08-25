@@ -4,7 +4,7 @@ import { useState } from "react";
 import Scene, { type SceneVariant } from "./Scene";
 
 // Tries public/projects/<slug>.(jpg|png|webp). If none exists, falls back to
-// the themed SVG illustration — so the site never shows a broken image.
+// the themed SVG illustration, so the site never shows a broken image.
 const EXTS = ["jpg", "png", "webp"] as const;
 const PREFERRED_EXT: Record<string, (typeof EXTS)[number]> = {
   "douluo-soul-master-duel": "jpg",

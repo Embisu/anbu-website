@@ -566,10 +566,10 @@ export default function UsersManager({ locale }: { locale: string }) {
               onChange={(e) => setNewRole(e.target.value as AdminUser["role"])}
               className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
             >
-              <option value="administrator">Quản trị viên (Administrator) — Toàn quyền hệ thống</option>
-              <option value="editor">Biên tập viên (Editor) — Quản lý & xuất bản tất cả bài viết</option>
-              <option value="author">Tác giả (Author) — Tự viết & xuất bản bài viết của mình</option>
-              <option value="contributor">Cộng tác viên (Contributor) — Soạn bài nháp gửi duyệt</option>
+              <option value="administrator">Quản trị viên (Administrator), Toàn quyền hệ thống</option>
+              <option value="editor">Biên tập viên (Editor), Quản lý & xuất bản tất cả bài viết</option>
+              <option value="author">Tác giả (Author), Tự viết & xuất bản bài viết của mình</option>
+              <option value="contributor">Cộng tác viên (Contributor), Soạn bài nháp gửi duyệt</option>
             </select>
           </div>
 

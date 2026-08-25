@@ -6,7 +6,7 @@ export type Step = {
   description: L10n;
 };
 
-// Framed in the spirit of a special-ops unit — the ANBU brand story.
+// Framed in the spirit of a special-ops unit, the ANBU brand story.
 export const processSteps: Step[] = [
   {
     no: "01",
@@ -20,8 +20,8 @@ export const processSteps: Step[] = [
     no: "02",
     title: { vi: "Chiến lược", en: "Strategy" },
     description: {
-      vi: "Xác định mục tiêu, định vị và lộ trình rõ ràng — kèm các chỉ số thành công được thống nhất từ đầu.",
-      en: "We set the objective, positioning and a clear roadmap — with success metrics agreed up front.",
+      vi: "Xác định mục tiêu, định vị và lộ trình rõ ràng, kèm các chỉ số thành công được thống nhất từ đầu.",
+      en: "We set the objective, positioning and a clear roadmap, with success metrics agreed up front.",
     },
   },
   {
@@ -29,7 +29,7 @@ export const processSteps: Step[] = [
     title: { vi: "Triển khai", en: "Execute" },
     description: {
       vi: "Đội sáng tạo, nội dung và công nghệ triển khai đồng bộ, đúng thời điểm và đúng kênh.",
-      en: "Our creative, content and tech teams execute together — right timing, right channels.",
+      en: "Our creative, content and tech teams execute together, right timing, right channels.",
     },
   },
   {

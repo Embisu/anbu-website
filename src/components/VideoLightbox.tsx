@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-// Plays a Facebook video inline in a modal (official FB video plugin — no leaving the site).
+// Plays a Facebook video inline in a modal (official FB video plugin, no leaving the site).
 function embedSrc(url: string) {
   return `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
     url

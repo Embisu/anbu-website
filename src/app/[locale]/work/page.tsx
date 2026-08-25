@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     path: "/work",
     title: isVi ? "Dự án Marketing Game, KOL/KOC & Thương hiệu" : "Game, KOL/KOC & Brand Marketing Work",
     description: isVi
-      ? "Các dự án tiêu biểu của ANBU trong game, ứng dụng, influencer và thương hiệu — từ chiến lược đến triển khai đa thị trường."
-      : "Selected ANBU work across games, apps, influencer and brand marketing — from strategy to multi-market execution.",
+      ? "Các dự án tiêu biểu của ANBU trong game, ứng dụng, influencer và thương hiệu, từ chiến lược đến triển khai đa thị trường."
+      : "Selected ANBU work across games, apps, influencer and brand marketing, from strategy to multi-market execution.",
   });
 }
 
@@ -51,7 +51,7 @@ export default async function WorkPage({ params }: { params: { locale: string } 
           <Reveal delay={70} className="lg:col-span-7">
             <p className="leading-relaxed text-navy-500">
               {locale === "vi"
-                ? "Chúng tôi trình bày portfolio theo bối cảnh, insight, vai trò của ANBU và cách triển khai — để bạn nhìn thấy tư duy phía sau hình ảnh. Với các dự án chưa có dữ liệu công khai được xác nhận, trang chỉ mô tả phạm vi công việc và không tự gán số liệu thành tích."
+                ? "Chúng tôi trình bày portfolio theo bối cảnh, insight, vai trò của ANBU và cách triển khai, để bạn nhìn thấy tư duy phía sau hình ảnh. Với các dự án chưa có dữ liệu công khai được xác nhận, trang chỉ mô tả phạm vi công việc và không tự gán số liệu thành tích."
                 : "Our portfolio explains the context, insight, ANBU's role and execution so you can see the thinking behind the visuals. Where verified public performance data is unavailable, we describe scope without assigning unsupported results."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">

@@ -132,7 +132,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-navy-400">
-          <p>© {year} {site.name} — All rights reserved.</p>
+          <p>© {year} {site.name}, All rights reserved.</p>
         </div>
       </div>
     </footer>

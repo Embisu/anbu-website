@@ -43,7 +43,7 @@ const en: typeof vi = {
     eyebrow: "Services",
     title: "One unit for the entire launch journey",
     subtitle:
-      "From market insight, creators and social to PR, performance and creative — every capability works toward one launch objective.",
+      "From market insight, creators and social to PR, performance and creative, every capability works toward one launch objective.",
     all: "View all services",
     learnMore: "Learn more",
   },
@@ -74,17 +74,17 @@ const en: typeof vi = {
     eyebrow: "The numbers speak",
     title: "Real, measurable growth",
     subtitle:
-      "We don't just make brands look good — every project targets numbers that make a real impact on your business.",
+      "We don't just make brands look good, every project targets numbers that make a real impact on your business.",
   },
   whyus: {
     eyebrow: "Why choose ANBU",
     title: "A growth partner you can trust",
-    subtitle: "Not just good-looking — we deliver results, with real experience and a transparent way of working.",
+    subtitle: "Not just good-looking, we deliver results, with real experience and a transparent way of working.",
   },
   faq: {
     eyebrow: "Frequently asked",
     title: "Things you might be wondering",
-    subtitle: "Didn't find the answer you need? Just reach out — we're happy to help.",
+    subtitle: "Didn't find the answer you need? Just reach out, we're happy to help.",
   },
   ctaBanner: {
     title: "Ready to make your move with ANBU?",
@@ -120,9 +120,9 @@ const en: typeof vi = {
     squadEyebrow: "ANBU Squad",
     teamTitle: "A lean team, battle-tested over the years",
     teamSubtitle:
-      "The ANBU team brings together strategists, creatives, performance marketers and technologists who have personally run campaigns for major brands at home and abroad — from fintech, e-commerce and automotive to games and apps at regional scale.",
+      "The ANBU team brings together strategists, creatives, performance marketers and technologists who have personally run campaigns for major brands at home and abroad, from fintech, e-commerce and automotive to games and apps at regional scale.",
     teamBody:
-      "We believe in a small but sharp team: everyone combines deep expertise with a grasp of the bigger picture. That means clients work directly with the people who actually execute the work — fast, flexible and always focused on results.",
+      "We believe in a small but sharp team: everyone combines deep expertise with a grasp of the bigger picture. That means clients work directly with the people who actually execute the work, fast, flexible and always focused on results.",
     expertiseTitle: "What we're great at",
   },
   getStarted: {
@@ -131,7 +131,7 @@ const en: typeof vi = {
     steps: [
       { title: "Send your brief", desc: "Email us your goals, timeline and what you're looking to achieve." },
       { title: "Consult & proposal", desc: "We reply within 24 hours, set up a call and send a proposal with a budget." },
-      { title: "Kickoff & execution", desc: "We agree the roadmap and KPIs and get to work — with transparent reporting all the way." },
+      { title: "Kickoff & execution", desc: "We agree the roadmap and KPIs and get to work, with transparent reporting all the way." },
     ],
   },
   contact: {
@@ -178,7 +178,7 @@ const en: typeof vi = {
     },
   },
   footer: {
-    tagline: "An elite marketing unit — working behind the scenes so your brand shines.",
+    tagline: "An elite marketing unit, working behind the scenes so your brand shines.",
     services: "Services",
     company: "Company",
     resources: "Resources",

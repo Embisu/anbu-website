@@ -41,7 +41,7 @@ const vi = {
     eyebrow: "Dịch vụ",
     title: "Một đội ngũ cho toàn bộ hành trình ra mắt",
     subtitle:
-      "Từ insight thị trường, KOL/KOC và social đến PR, performance và creative — mọi năng lực phối hợp quanh một mục tiêu chung.",
+      "Từ insight thị trường, KOL/KOC và social đến PR, performance và creative, mọi năng lực phối hợp quanh một mục tiêu chung.",
     all: "Xem tất cả dịch vụ",
     learnMore: "Tìm hiểu thêm",
   },
@@ -72,12 +72,12 @@ const vi = {
     eyebrow: "Con số biết nói",
     title: "Tăng trưởng thật, đo lường được",
     subtitle:
-      "Chúng tôi không chỉ làm đẹp thương hiệu — mỗi dự án đều hướng đến những con số tác động thật đến kinh doanh của bạn.",
+      "Chúng tôi không chỉ làm đẹp thương hiệu, mỗi dự án đều hướng đến những con số tác động thật đến kinh doanh của bạn.",
   },
   whyus: {
     eyebrow: "Vì sao chọn ANBU",
     title: "Đối tác tăng trưởng bạn có thể tin",
-    subtitle: "Không chỉ đẹp — chúng tôi mang lại kết quả, bằng kinh nghiệm thật và cách làm minh bạch.",
+    subtitle: "Không chỉ đẹp, chúng tôi mang lại kết quả, bằng kinh nghiệm thật và cách làm minh bạch.",
   },
   faq: {
     eyebrow: "Câu hỏi thường gặp",
@@ -106,7 +106,7 @@ const vi = {
     lead: "ANBU sinh ra để giúp các doanh nghiệp Việt xây dựng thương hiệu bền vững và tăng trưởng có phương pháp trên môi trường số.",
     storyTitle: "Câu chuyện của chúng tôi",
     story1:
-      "ANBU là một tiểu đội marketing tinh gọn — hiểu khách hàng, hành động chính xác và luôn đứng sau để đưa chiến dịch tiến về phía trước. Chúng tôi chọn tinh thần của một đội đặc nhiệm: quan sát kỹ, vào trận đúng lúc và chỉ rời đi khi mục tiêu đã đạt được. Với các thương hiệu game, đó là năng lực giúp sản phẩm thâm nhập thị trường Việt Nam tự nhiên hơn và bứt phá doanh số bằng chiến lược phù hợp.",
+      "ANBU là một tiểu đội marketing tinh gọn, hiểu khách hàng, hành động chính xác và luôn đứng sau để đưa chiến dịch tiến về phía trước. Chúng tôi chọn tinh thần của một đội đặc nhiệm: quan sát kỹ, vào trận đúng lúc và chỉ rời đi khi mục tiêu đã đạt được. Với các thương hiệu game, đó là năng lực giúp sản phẩm thâm nhập thị trường Việt Nam tự nhiên hơn và bứt phá doanh số bằng chiến lược phù hợp.",
     story2:
       "Chúng tôi đặc biệt hiểu bài toán của những đội ngũ muốn đưa game vào Việt Nam: khác biệt văn hóa, cộng đồng khó đoán và áp lực tăng trưởng từng ngày. Vì vậy, ANBU không bán một gói dịch vụ có sẵn. Chúng tôi cùng khách hàng tìm đúng insight, xây đúng cách nói và biến mỗi điểm chạm thành cơ hội tăng trưởng.",
     founderEyebrow: "Lời từ nhà sáng lập",
@@ -118,9 +118,9 @@ const vi = {
     squadEyebrow: "ANBU Squad",
     teamTitle: "Một đội ngũ tinh gọn, nhiều năm kinh nghiệm thực tế",
     teamSubtitle:
-      "Đội ngũ ANBU gồm những người làm chiến lược, sáng tạo, performance và công nghệ đã trực tiếp chạy các chiến dịch cho thương hiệu lớn trong và ngoài nước — từ fintech, thương mại điện tử, ô tô đến game và ứng dụng ở quy mô khu vực.",
+      "Đội ngũ ANBU gồm những người làm chiến lược, sáng tạo, performance và công nghệ đã trực tiếp chạy các chiến dịch cho thương hiệu lớn trong và ngoài nước, từ fintech, thương mại điện tử, ô tô đến game và ứng dụng ở quy mô khu vực.",
     teamBody:
-      "Chúng tôi tin vào một đội ngũ gọn nhưng tinh: mỗi người vừa có chuyên môn sâu, vừa hiểu bức tranh tổng thể. Nhờ vậy, khách hàng làm việc trực tiếp với những người thực sự triển khai dự án — nhanh, linh hoạt và luôn bám sát kết quả.",
+      "Chúng tôi tin vào một đội ngũ gọn nhưng tinh: mỗi người vừa có chuyên môn sâu, vừa hiểu bức tranh tổng thể. Nhờ vậy, khách hàng làm việc trực tiếp với những người thực sự triển khai dự án, nhanh, linh hoạt và luôn bám sát kết quả.",
     expertiseTitle: "Thế mạnh của chúng tôi",
   },
   getStarted: {
@@ -129,7 +129,7 @@ const vi = {
     steps: [
       { title: "Gửi brief", desc: "Email cho chúng tôi mục tiêu, thời gian và mong muốn của bạn." },
       { title: "Trao đổi & đề xuất", desc: "Chúng tôi phản hồi trong 24 giờ, hẹn một buổi trao đổi và gửi đề xuất kèm ngân sách." },
-      { title: "Kickoff & triển khai", desc: "Thống nhất lộ trình, KPI và bắt tay thực hiện — báo cáo minh bạch suốt chặng đường." },
+      { title: "Kickoff & triển khai", desc: "Thống nhất lộ trình, KPI và bắt tay thực hiện, báo cáo minh bạch suốt chặng đường." },
     ],
   },
   contact: {
@@ -176,7 +176,7 @@ const vi = {
     },
   },
   footer: {
-    tagline: "Đội ngũ marketing tinh gọn — thầm lặng phía sau để thương hiệu bạn tỏa sáng.",
+    tagline: "Đội ngũ marketing tinh gọn, thầm lặng phía sau để thương hiệu bạn tỏa sáng.",
     services: "Dịch vụ",
     company: "Công ty",
     resources: "Tài nguyên",
