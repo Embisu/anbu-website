@@ -14,11 +14,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   color: theme("colors.ink");
   background: #ffffff;
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
@@ -29,10 +34,10 @@ body {
 /* Utility layer */
 @layer components {
   .container-x {
-    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-8 lg:px-10;
   }
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 active:scale-95;
   }
   .btn-primary {
     @apply btn bg-orange-500 text-white hover:bg-orange-600 focus-visible:ring-orange-500;
@@ -48,10 +53,10 @@ body {
     @apply btn bg-white text-navy-700 hover:bg-cloud focus-visible:ring-white;
   }
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-orange-600;
+    @apply inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-widest text-orange-600;
   }
   .card {
-    @apply rounded-3xl border border-navy-100/70 bg-white p-7 transition-all duration-300;
+    @apply rounded-2xl sm:rounded-3xl border border-navy-100/70 bg-white p-5 sm:p-7 transition-all duration-300;
   }
   .card-hover {
     @apply hover:-translate-y-1 hover:border-orange-200 hover:shadow-[0_24px_60px_-20px_rgba(1,47,135,0.25)];

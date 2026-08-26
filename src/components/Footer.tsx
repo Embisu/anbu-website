@@ -21,9 +21,9 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
   const socials = Object.entries(site.social).map(([name, href]) => ({ name, href }));
 
   return (
-    <footer className="mt-24 bg-navy-900 text-navy-100">
-      <div className="container-x py-16">
-        <div className="grid gap-12 lg:grid-cols-12">
+    <footer className="mt-14 sm:mt-24 bg-navy-900 text-navy-100">
+      <div className="container-x py-10 sm:py-16">
+        <div className="grid gap-8 sm:gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Image src="/logo/logo-white.png" alt="ANBU" width={132} height={44} className="h-9 w-auto" />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-navy-200">{dict.footer.tagline}</p>

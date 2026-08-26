@@ -39,44 +39,44 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
   switch (block.type) {
     case "h2":
       return (
-        <h2 id={headingId} className="scroll-mt-24 mt-10 font-display text-2xl font-bold text-navy-800">
+        <h2 id={headingId} className="scroll-mt-20 sm:scroll-mt-24 mt-7 sm:mt-10 font-display text-xl sm:text-2xl font-bold text-navy-800">
           {t(block.text, locale)}
         </h2>
       );
     case "p":
-      return <p className="mt-5 text-lg leading-relaxed text-navy-600">{t(block.text, locale)}</p>;
+      return <p className="mt-3.5 sm:mt-5 text-base sm:text-lg leading-relaxed text-navy-600">{t(block.text, locale)}</p>;
     case "quote":
       return (
-        <blockquote className="my-8 rounded-2xl border-l-4 border-orange-500 bg-cloud p-6 text-lg font-medium italic text-navy-700">
+        <blockquote className="my-6 sm:my-8 rounded-2xl border-l-4 border-orange-500 bg-cloud p-4 sm:p-6 text-base sm:text-lg font-medium italic text-navy-700">
           {t(block.text, locale)}
         </blockquote>
       );
     case "ul":
       return (
-        <ul className="mt-5 space-y-2.5">
+        <ul className="mt-3.5 sm:mt-5 space-y-2 sm:space-y-2.5">
           {block.items.map((item, i) => (
-            <li key={i} className="flex items-start gap-3 text-lg leading-relaxed text-navy-600">
+            <li key={i} className="flex items-start gap-2.5 sm:gap-3 text-base sm:text-lg leading-relaxed text-navy-600">
               <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-orange-500" />
-              {t(item, locale)}
+              <span>{t(item, locale)}</span>
             </li>
           ))}
         </ul>
       );
     case "image":
       return (
-        <figure className="my-8 overflow-hidden rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
+        <figure className="my-6 sm:my-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
           <div className="flex w-full items-center justify-center bg-slate-50/80 p-1 sm:p-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={block.src}
               alt={t(block.alt, locale)}
-              className="h-auto max-h-[640px] w-full rounded-2xl object-contain md:max-h-[720px]"
+              className="h-auto max-h-[500px] sm:max-h-[640px] w-full rounded-xl sm:rounded-2xl object-contain md:max-h-[720px]"
               loading="lazy"
               decoding="async"
             />
           </div>
           {block.caption && (
-            <figcaption className="border-t border-navy-100/60 bg-white px-5 py-3.5 text-sm leading-relaxed text-navy-600">
+            <figcaption className="border-t border-navy-100/60 bg-white px-4 py-3 sm:px-5 sm:py-3.5 text-xs sm:text-sm leading-relaxed text-navy-600">
               {t(block.caption, locale)}
             </figcaption>
           )}
@@ -257,32 +257,32 @@ export default async function BlogPostPage({
             priority
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-900/80 to-navy-900/35" />
-          <div className="container-x relative py-16 sm:py-20">
+          <div className="container-x relative py-10 sm:py-16 md:py-20">
             <div className="mx-auto max-w-3xl">
-              <Link href={localePath(locale, "/blog")} className="inline-flex items-center gap-1.5 text-sm text-white/80 hover:text-white">
-                <Icon name="arrow" className="h-4 w-4 rotate-180" />
+              <Link href={localePath(locale, "/blog")} className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-white/80 hover:text-white">
+                <Icon name="arrow" className="h-3.5 w-3.5 sm:h-4 sm:w-4 rotate-180" />
                 {dict.blogSection.back}
               </Link>
-              <div className="mt-6 flex items-center gap-3 text-sm text-white/80">
-                <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
+              <div className="mt-4 sm:mt-6 flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-white/80">
+                <span className="rounded-full bg-white/15 px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
                   {t(post.category, locale)}
                 </span>
                 <time dateTime={post.date}>{formatDate(post.date, locale)}</time>
                 <span>·</span>
                 <span>{post.readingTime} {dict.blogSection.readTime}</span>
               </div>
-              <p className="mt-4 text-sm font-medium text-white/75">
+              <p className="mt-3 sm:mt-4 text-xs sm:text-sm font-medium text-white/75">
                 {locale === "vi" ? "Biên soạn bởi" : "Written by"} {post.author}
               </p>
-              <h1 className="text-balance mt-5 font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
+              <h1 className="text-balance mt-4 sm:mt-5 font-display text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight tracking-tight">
                 {t(post.title, locale)}
               </h1>
-              <p className="mt-4 text-lg leading-relaxed text-white/90">{t(post.excerpt, locale)}</p>
+              <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed text-white/90">{t(post.excerpt, locale)}</p>
             </div>
           </div>
         </header>
 
-        <div className="container-x py-14 sm:py-16">
+        <div className="container-x py-8 sm:py-14 md:py-16">
           <div className="mx-auto grid max-w-[1320px] items-start gap-8 xl:grid-cols-[220px_minmax(0,768px)_220px]">
             <aside className="sticky top-28 hidden xl:block">
               <div className="rounded-3xl border border-navy-100 bg-white p-5 shadow-sm">
@@ -349,21 +349,24 @@ export default async function BlogPostPage({
 
             <div className="min-w-0">
             {toc.length > 1 && (
-              <nav aria-label={locale === "vi" ? "Mục lục bài viết" : "Table of contents"} className="mb-10 rounded-3xl border border-navy-100 bg-cloud p-6">
-                <h2 className="font-display text-lg font-bold text-navy-800">
-                  {locale === "vi" ? "Nội dung chính" : "In this article"}
-                </h2>
-                <ol className="mt-4 space-y-2">
+              <details className="group mb-8 sm:mb-10 rounded-2xl sm:rounded-3xl border border-navy-100 bg-cloud p-4 sm:p-6" open>
+                <summary className="flex cursor-pointer list-none items-center justify-between font-display text-base sm:text-lg font-bold text-navy-800 select-none">
+                  <span>{locale === "vi" ? "Nội dung chính" : "In this article"}</span>
+                  <span className="text-xs sm:text-sm font-semibold text-orange-600 transition-transform duration-200 group-open:rotate-180">
+                    ⌄
+                  </span>
+                </summary>
+                <ol className="mt-3 sm:mt-4 space-y-2 border-t border-navy-100/70 pt-3">
                   {toc.map((item, index) => (
                     <li key={item.id}>
-                      <a href={`#${item.id}`} className="flex gap-3 text-sm font-medium leading-relaxed text-navy-600 hover:text-orange-600">
-                        <span className="text-orange-500">{String(index + 1).padStart(2, "0")}</span>
-                        {item.title}
+                      <a href={`#${item.id}`} className="flex gap-2.5 sm:gap-3 text-xs sm:text-sm font-medium leading-relaxed text-navy-600 hover:text-orange-600">
+                        <span className="text-orange-500 font-bold">{String(index + 1).padStart(2, "0")}</span>
+                        <span>{item.title}</span>
                       </a>
                     </li>
                   ))}
                 </ol>
-              </nav>
+              </details>
             )}
             {(() => {
               const hasExplicitImages = articleBlocks.some((b) => b.type === "image");

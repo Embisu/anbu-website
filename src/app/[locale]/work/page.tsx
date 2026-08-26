@@ -41,28 +41,28 @@ export default async function WorkPage({ params }: { params: { locale: string } 
       <JsonLd data={breadcrumbs} />
       <PageHero eyebrow={dict.workSection.eyebrow} title={dict.workSection.title} subtitle={dict.workSection.subtitle} />
       <section className="border-b border-navy-100 bg-cloud">
-        <div className="container-x grid gap-8 py-12 lg:grid-cols-12 lg:items-center">
+        <div className="container-x grid gap-6 sm:gap-8 py-8 sm:py-12 lg:grid-cols-12 lg:items-center">
           <Reveal className="lg:col-span-5">
             <span className="eyebrow">{locale === "vi" ? "Không chỉ là gallery" : "More than a gallery"}</span>
-            <h2 className="text-balance mt-3 font-display text-2xl font-extrabold text-navy-800 sm:text-3xl">
+            <h2 className="text-balance mt-2.5 sm:mt-3 font-display text-xl sm:text-2xl lg:text-3xl font-extrabold text-navy-800">
               {locale === "vi" ? "Mỗi dự án là một lựa chọn chiến lược" : "Every project is a strategic choice"}
             </h2>
           </Reveal>
           <Reveal delay={70} className="lg:col-span-7">
-            <p className="leading-relaxed text-navy-500">
+            <p className="text-sm sm:text-base leading-relaxed text-navy-500">
               {locale === "vi"
                 ? "Chúng tôi trình bày portfolio theo bối cảnh, insight, vai trò của ANBU và cách triển khai, để bạn nhìn thấy tư duy phía sau hình ảnh. Với các dự án chưa có dữ liệu công khai được xác nhận, trang chỉ mô tả phạm vi công việc và không tự gán số liệu thành tích."
                 : "Our portfolio explains the context, insight, ANBU's role and execution so you can see the thinking behind the visuals. Where verified public performance data is unavailable, we describe scope without assigning unsupported results."}
             </p>
-            <div className="mt-5 flex flex-wrap gap-2">
+            <div className="mt-4 sm:mt-5 flex flex-wrap gap-2">
               {[locale === "vi" ? "Ra mắt thị trường" : "Market launch", "KOL/KOC", "Social & Community", locale === "vi" ? "Bản địa hóa" : "Localization", "Integrated Marketing"].map((label) => (
-                <span key={label} className="rounded-full border border-navy-100 bg-white px-3 py-1.5 text-xs font-semibold text-navy-600">{label}</span>
+                <span key={label} className="rounded-full border border-navy-100 bg-white px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold text-navy-600">{label}</span>
               ))}
             </div>
           </Reveal>
         </div>
       </section>
-      <section className="container-x py-16 sm:py-20">
+      <section className="container-x py-10 sm:py-16 lg:py-20">
         <WorkGrid projects={projects} locale={locale} view={dict.workSection.view} />
       </section>
       <CTASection locale={locale} dict={dict} />

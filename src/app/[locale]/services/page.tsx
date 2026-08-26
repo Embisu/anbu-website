@@ -52,12 +52,12 @@ export default async function ServicesPage({ params }: { params: { locale: strin
         subtitle={dict.servicesSection.subtitle}
       />
 
-      <section className="container-x py-16 sm:py-20">
-        <div className="grid gap-8">
+      <section className="container-x py-10 sm:py-16 lg:py-20">
+        <div className="grid gap-6 sm:gap-8">
           {services.map((service, i) => (
             <Reveal key={service.slug} delay={(i % 3) * 60}>
-              <div className="grid gap-6 overflow-hidden rounded-3xl border border-navy-100/70 bg-white p-5 sm:p-7 lg:grid-cols-12 lg:p-8">
-                <div className="relative h-56 overflow-hidden rounded-2xl bg-navy-900 lg:col-span-4 lg:h-full lg:min-h-72">
+              <div className="grid gap-5 sm:gap-6 overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/70 bg-white p-4 sm:p-7 lg:grid-cols-12 lg:p-8">
+                <div className="relative h-44 sm:h-56 overflow-hidden rounded-xl sm:rounded-2xl bg-navy-900 lg:col-span-4 lg:h-full lg:min-h-72">
                   <EditorialMedia
                     src={editorialImageForService(service.slug)}
                     alt={t(service.title, locale)}
@@ -66,28 +66,28 @@ export default async function ServicesPage({ params }: { params: { locale: strin
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 via-transparent to-transparent" />
                 </div>
                 <div className="lg:col-span-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600">
-                    <Icon name={service.icon as any} className="h-6 w-6" />
+                  <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600">
+                    <Icon name={service.icon as any} className="h-5 w-5 sm:h-6 sm:w-6" />
                   </div>
-                  <h2 className="text-balance mt-5 font-display text-2xl font-extrabold text-navy-800">{t(service.title, locale)}</h2>
-                  <p className="mt-2 font-medium text-orange-600">{t(service.tagline, locale)}</p>
-                  <p className="mt-4 text-sm leading-relaxed text-navy-500">{t(service.description, locale)}</p>
+                  <h2 className="text-balance mt-3.5 sm:mt-5 font-display text-xl sm:text-2xl font-extrabold text-navy-800">{t(service.title, locale)}</h2>
+                  <p className="mt-1.5 sm:mt-2 font-medium text-orange-600 text-sm sm:text-base">{t(service.tagline, locale)}</p>
+                  <p className="mt-2.5 sm:mt-4 text-sm leading-relaxed text-navy-500">{t(service.description, locale)}</p>
                   <Link
                     href={localePath(locale, `/services/${service.slug}`)}
-                    className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-700 hover:text-orange-600"
+                    className="mt-4 sm:mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-700 hover:text-orange-600"
                   >
                     {dict.servicesSection.learnMore}
                     <Icon name="arrow" className="h-4 w-4" />
                   </Link>
                 </div>
                 <div className="lg:col-span-4">
-                  <div className="grid gap-3">
+                  <div className="grid gap-2.5 sm:gap-3">
                     {service.features.map((f, fi) => (
-                      <div key={fi} className="flex items-start gap-2.5 rounded-2xl bg-cloud p-4">
-                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange-500 text-white">
-                          <Icon name="check" className="h-3.5 w-3.5" />
+                      <div key={fi} className="flex items-start gap-2.5 rounded-xl sm:rounded-2xl bg-cloud p-3 sm:p-4">
+                        <span className="mt-0.5 flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-orange-500 text-white">
+                          <Icon name="check" className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
                         </span>
-                        <span className="text-sm font-medium text-navy-700">{t(f, locale)}</span>
+                        <span className="text-xs sm:text-sm font-medium text-navy-700">{t(f, locale)}</span>
                       </div>
                     ))}
                   </div>
