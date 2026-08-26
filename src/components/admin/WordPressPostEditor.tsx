@@ -194,7 +194,29 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
       alert("Vui lòng nhập tiêu đề bài viết!");
       return;
     }
-    onSave(post);
+    const cleanSlug = (post.slug || post.title.vi || "bai-viet-moi")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/đ/g, "d")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-");
+
+    const finalPost: Post = {
+      ...post,
+      slug: cleanSlug,
+      readingTime,
+    };
+    onSave(finalPost);
+  };
+
+  const copyPostCode = () => {
+    const code = JSON.stringify({ ...post, readingTime }, null, 2);
+    navigator.clipboard.writeText(code).then(() => {
+      setAiNotice("Đã sao chép toàn bộ mã JSON của bài viết vào Clipboard!");
+      setTimeout(() => setAiNotice(null), 3000);
+    });
   };
 
   const totalWords = post.body.reduce((acc, b) => {
@@ -223,6 +245,13 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
         </div>
 
         <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={copyPostCode}
+            className="rounded border border-[#8c8f94] bg-white px-3 py-1.5 text-xs font-semibold text-[#2c3338] shadow-sm hover:bg-[#f6f7f7]"
+          >
+            📋 Sao chép JSON
+          </button>
           <button
             type="button"
             onClick={onCancel}

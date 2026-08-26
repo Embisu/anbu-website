@@ -23,7 +23,9 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
   const [postList, setPostList] = useState<Post[]>(defaultPosts);
   const [editingPost, setEditingPost] = useState<Post | null>(null);
   const [currentUser, setCurrentUser] = useState<{ username: string; name: string; role: string } | null>(null);
+  const [publishSuccessNotice, setPublishSuccessNotice] = useState<{ slug: string; title: string } | null>(null);
 
+  // Load custom posts from localStorage & API on mount
   useEffect(() => {
     const token = localStorage.getItem("anbu_admin_token");
     const savedUser = localStorage.getItem("anbu_admin_user");
@@ -37,6 +39,43 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
         }
       }
     }
+
+    try {
+      const savedCustomPosts = localStorage.getItem("anbu_custom_posts");
+      if (savedCustomPosts) {
+        const custom: Post[] = JSON.parse(savedCustomPosts);
+        if (Array.isArray(custom) && custom.length > 0) {
+          // Merge: custom posts take precedence if same slug, else prepend
+          const combined = [...custom];
+          defaultPosts.forEach((dp) => {
+            if (!combined.some((cp) => cp.slug === dp.slug)) {
+              combined.push(dp);
+            }
+          });
+          setPostList(combined);
+        }
+      }
+    } catch (err) {
+      console.error(err);
+    }
+
+    // Sync with API in background
+    fetch("/api/admin/posts")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.ok && Array.isArray(data.posts) && data.posts.length > 0) {
+          setPostList((prev) => {
+            const merged = [...data.posts];
+            prev.forEach((p) => {
+              if (!merged.some((m: Post) => m.slug === p.slug)) {
+                merged.push(p);
+              }
+            });
+            return merged;
+          });
+        }
+      })
+      .catch(() => {});
   }, []);
 
   const handleLogout = () => {
@@ -48,24 +87,65 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
 
   const handleNewPost = () => {
     setEditingPost(null);
+    setPublishSuccessNotice(null);
     setActiveTab("new_post");
   };
 
   const handleEditPost = (post: Post) => {
     setEditingPost(post);
+    setPublishSuccessNotice(null);
     setActiveTab("new_post");
   };
 
   const handleSavePost = (savedPost: Post) => {
     const existingIndex = postList.findIndex((p) => p.slug === savedPost.slug);
+    let updatedList: Post[];
     if (existingIndex >= 0) {
-      const updated = [...postList];
-      updated[existingIndex] = savedPost;
-      setPostList(updated);
+      updatedList = [...postList];
+      updatedList[existingIndex] = savedPost;
     } else {
-      setPostList([savedPost, ...postList]);
+      updatedList = [savedPost, ...postList];
     }
+    setPostList(updatedList);
+
+    // Persist custom posts in localStorage
+    try {
+      const savedCustom = localStorage.getItem("anbu_custom_posts");
+      let customArr: Post[] = savedCustom ? JSON.parse(savedCustom) : [];
+      const cIdx = customArr.findIndex((p) => p.slug === savedPost.slug);
+      if (cIdx >= 0) {
+        customArr[cIdx] = savedPost;
+      } else {
+        customArr.unshift(savedPost);
+      }
+      localStorage.setItem("anbu_custom_posts", JSON.stringify(customArr));
+    } catch (e) {
+      console.error(e);
+    }
+
+    // Persist to API
+    fetch("/api/admin/posts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ post: savedPost }),
+    }).catch(console.error);
+
+    setPublishSuccessNotice({
+      slug: savedPost.slug,
+      title: savedPost.title.vi || savedPost.title.en,
+    });
     setActiveTab("posts");
+  };
+
+  const handleUpdatePostList = (newList: Post[]) => {
+    setPostList(newList);
+    try {
+      // Find posts that are not in defaultPosts and save them
+      const customOnly = newList.filter((p) => !defaultPosts.some((dp) => dp.slug === p.slug));
+      localStorage.setItem("anbu_custom_posts", JSON.stringify(customOnly));
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   if (!isAuthenticated) {
@@ -103,6 +183,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
             if (tab === "new_post") {
               setEditingPost(null);
             }
+            setPublishSuccessNotice(null);
             setActiveTab(tab);
           }}
           postCount={postList.length}
@@ -111,6 +192,37 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
 
         {/* WordPress Main White/Light Content Area */}
         <main className="flex-1 overflow-y-auto p-5 sm:p-7 min-h-[calc(100vh-32px)]">
+          {/* Publish Success Notice Banner */}
+          {publishSuccessNotice && activeTab === "posts" && (
+            <div className="mb-5 rounded border-l-4 border-[#00a32a] bg-white p-4 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 animate-fade-in">
+              <div>
+                <p className="font-bold text-sm text-[#1d2327]">
+                  ✅ Đã xuất bản bài viết: <span className="text-[#2271b1]">"{publishSuccessNotice.title}"</span>
+                </p>
+                <p className="text-xs text-[#646970] mt-0.5">
+                  Bài viết đã được lưu vào hệ thống và có thể xem trực tiếp ngay lập tức.
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href={`/${locale}/blog/${publishSuccessNotice.slug}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded bg-[#2271b1] px-3.5 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-[#135e96] transition inline-flex items-center gap-1"
+                >
+                  Xem bài viết ngay ↗
+                </a>
+                <button
+                  type="button"
+                  onClick={() => setPublishSuccessNotice(null)}
+                  className="text-xs text-[#646970] hover:text-[#1d2327] px-2 py-1"
+                >
+                  Đóng ✕
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* TAB 1: BẢNG TIN (DASHBOARD) */}
           {activeTab === "dashboard" && (
             <WordPressDashboard
@@ -131,6 +243,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
               locale={locale}
               onEditPost={handleEditPost}
               onNewPost={handleNewPost}
+              onUpdatePosts={handleUpdatePostList}
             />
           )}
 

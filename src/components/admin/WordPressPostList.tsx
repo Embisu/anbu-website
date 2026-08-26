@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
 import { calculatePostSeoScore } from "@/lib/seo-score";
@@ -10,9 +10,16 @@ type WordPressPostListProps = {
   locale: string;
   onEditPost: (post: Post) => void;
   onNewPost: () => void;
+  onUpdatePosts?: (posts: Post[]) => void;
 };
 
-export default function WordPressPostList({ posts: initialPosts, locale, onEditPost, onNewPost }: WordPressPostListProps) {
+export default function WordPressPostList({
+  posts: initialPosts,
+  locale,
+  onEditPost,
+  onNewPost,
+  onUpdatePosts,
+}: WordPressPostListProps) {
   const [postList, setPostList] = useState<Post[]>(initialPosts);
   const [trashedPosts, setTrashedPosts] = useState<Post[]>([]);
   const [currentTab, setCurrentTab] = useState<"all" | "published" | "drafts" | "trash">("all");
@@ -24,6 +31,18 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
   const [quickSlug, setQuickSlug] = useState("");
   const [quickCategory, setQuickCategory] = useState("");
   const [quickDate, setQuickDate] = useState("");
+  const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
+
+  useEffect(() => {
+    setPostList(initialPosts);
+  }, [initialPosts]);
+
+  const updateParentAndState = (updated: Post[]) => {
+    setPostList(updated);
+    if (onUpdatePosts) {
+      onUpdatePosts(updated);
+    }
+  };
 
   const activeDataSource = currentTab === "trash" ? trashedPosts : postList;
 
@@ -40,7 +59,8 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
   const moveToTrash = (slug: string) => {
     const target = postList.find((p) => p.slug === slug);
     if (target) {
-      setPostList(postList.filter((p) => p.slug !== slug));
+      const updated = postList.filter((p) => p.slug !== slug);
+      updateParentAndState(updated);
       setTrashedPosts([target, ...trashedPosts]);
     }
   };
@@ -49,13 +69,15 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
     const target = trashedPosts.find((p) => p.slug === slug);
     if (target) {
       setTrashedPosts(trashedPosts.filter((p) => p.slug !== slug));
-      setPostList([target, ...postList]);
+      const updated = [target, ...postList];
+      updateParentAndState(updated);
     }
   };
 
   const deletePermanently = (slug: string) => {
     if (confirm("Bạn có chắc chắn muốn xóa vĩnh viễn bài viết này không?")) {
       setTrashedPosts(trashedPosts.filter((p) => p.slug !== slug));
+      fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
     }
   };
 
@@ -81,8 +103,16 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
       }
       return p;
     });
-    setPostList(updated);
+    updateParentAndState(updated);
     setQuickEditSlug(null);
+  };
+
+  const copyPostCode = (post: Post) => {
+    const code = JSON.stringify(post, null, 2);
+    navigator.clipboard.writeText(code).then(() => {
+      setCopiedSlug(post.slug);
+      setTimeout(() => setCopiedSlug(null), 3000);
+    });
   };
 
   const toggleSelectAll = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -101,99 +131,111 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
     }
   };
 
+  const handleBulkAction = (action: string) => {
+    if (action === "trash") {
+      const targets = postList.filter((p) => selectedPosts.includes(p.slug));
+      const remaining = postList.filter((p) => !selectedPosts.includes(p.slug));
+      updateParentAndState(remaining);
+      setTrashedPosts([...targets, ...trashedPosts]);
+      setSelectedPosts([]);
+    }
+  };
+
   return (
-    <div className="space-y-3 text-slate-800">
-      {/* Top Header: Title & "Viết bài mới" button */}
-      <div className="flex items-center justify-between">
+    <div className="space-y-4">
+      {/* 1. Header & Add New Action */}
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-3">
           <h1 className="text-2xl font-normal text-[#1d2327]">Bài viết</h1>
           <button
+            type="button"
             onClick={onNewPost}
-            className="rounded border border-[#2271b1] bg-white px-2.5 py-1 text-xs font-semibold text-[#2271b1] hover:bg-[#f0f6fc] transition"
+            className="rounded border border-[#2271b1] bg-white px-2.5 py-1 text-xs font-bold text-[#2271b1] shadow-sm hover:bg-blue-50"
           >
             Viết bài mới
           </button>
         </div>
 
-        {/* Search Box on Right */}
+        {/* Search Posts Box */}
         <div className="flex items-center gap-1.5">
           <input
             type="text"
+            placeholder="Tìm kiếm bài viết..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Tìm kiếm bài viết..."
-            className="rounded border border-[#8c8f94] bg-white px-2.5 py-1 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+            className="rounded border border-[#8c8f94] bg-white px-3 py-1 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
           />
-          <button className="rounded border border-[#8c8f94] bg-[#f6f7f7] px-2.5 py-1 text-xs font-semibold text-[#2c3338] hover:bg-[#f0f0f1]">
-            Tìm bài viết
+          <button
+            type="button"
+            className="rounded border border-[#8c8f94] bg-[#f6f7f7] px-3 py-1 text-xs font-semibold text-[#2c3338] hover:bg-[#f0f0f1]"
+          >
+            Tìm
           </button>
         </div>
       </div>
 
-      {/* Sub-navigation Links */}
-      <div className="flex items-center gap-2 text-xs text-[#646970] pt-1">
+      {/* 2. Classic Filter Tabs (All, Published, Drafts, Trash) */}
+      <div className="flex items-center gap-2 border-b border-[#c3c4c7] pb-1 text-xs text-[#646970]">
         <button
           onClick={() => setCurrentTab("all")}
-          className={`hover:underline ${currentTab === "all" ? "font-bold text-[#1d2327]" : "text-[#2271b1]"}`}
+          className={`${currentTab === "all" ? "font-bold text-[#1d2327]" : "text-[#2271b1] hover:underline"}`}
         >
-          Tất cả <span className="font-normal text-[#646970]">({postList.length})</span>
+          Tất cả <span className="text-[#646970]">({postList.length})</span>
         </button>
         <span>|</span>
         <button
           onClick={() => setCurrentTab("published")}
-          className={`hover:underline ${currentTab === "published" ? "font-bold text-[#1d2327]" : "text-[#2271b1]"}`}
+          className={`${currentTab === "published" ? "font-bold text-[#1d2327]" : "text-[#2271b1] hover:underline"}`}
         >
           Đã xuất bản <span className="text-[#646970]">({postList.length})</span>
         </button>
         <span>|</span>
         <button
           onClick={() => setCurrentTab("trash")}
-          className={`hover:underline ${currentTab === "trash" ? "font-bold text-[#1d2327]" : "text-[#2271b1]"}`}
+          className={`${currentTab === "trash" ? "font-bold text-[#1d2327]" : "text-[#2271b1] hover:underline"}`}
         >
           Thùng rác <span className="text-[#646970]">({trashedPosts.length})</span>
         </button>
       </div>
 
-      {/* Filter & Bulk Actions Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
-        <div className="flex flex-wrap items-center gap-1.5">
-          <select className="rounded border border-[#8c8f94] bg-white px-2 py-1 text-xs text-[#2c3338] outline-none">
-            <option value="">Hành động</option>
-            <option value="edit">Chỉnh sửa</option>
+      {/* 3. Bulk Actions & Category Filter Bar */}
+      <div className="flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-2">
+          <select
+            id="bulk-action-selector"
+            className="rounded border border-[#8c8f94] bg-white p-1 text-xs text-[#2c3338] outline-none"
+            onChange={(e) => {
+              if (e.target.value) {
+                handleBulkAction(e.target.value);
+                e.target.value = "";
+              }
+            }}
+          >
+            <option value="">Hành động hàng loạt</option>
             <option value="trash">Bỏ vào thùng rác</option>
           </select>
-          <button className="rounded border border-[#8c8f94] bg-[#f6f7f7] px-2.5 py-1 font-semibold text-[#2c3338] hover:bg-[#f0f0f1]">
-            Áp dụng
-          </button>
 
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="ml-2 rounded border border-[#8c8f94] bg-white px-2 py-1 text-xs text-[#2c3338] outline-none"
+            className="rounded border border-[#8c8f94] bg-white p-1 text-xs text-[#2c3338] outline-none"
           >
             <option value="all">Tất cả chuyên mục</option>
-            {blogCategories.map((c) => (
-              <option key={c.slug} value={c.vi}>
-                {c.vi}
-              </option>
+            {blogCategories.map((cat) => (
+              <option key={cat.slug} value={cat.vi}>{cat.vi}</option>
             ))}
           </select>
-
-          <button className="rounded border border-[#8c8f94] bg-[#f6f7f7] px-2.5 py-1 font-semibold text-[#2c3338] hover:bg-[#f0f0f1]">
-            Lọc
-          </button>
         </div>
 
-        {/* Pagination Indicator */}
         <div className="text-xs text-[#646970]">
-          {filteredPosts.length} mục
+          Hiển thị <strong>{filteredPosts.length}</strong> bài viết
         </div>
       </div>
 
-      {/* Classic WordPress Data Table */}
-      <div className="border border-[#ccd0d4] bg-white shadow-sm overflow-hidden rounded">
-        <table className="w-full text-left text-xs border-collapse">
-          <thead className="border-b border-[#ccd0d4] bg-[#f6f7f7] text-[#2c3338] font-bold">
+      {/* 4. WordPress Table of Posts */}
+      <div className="overflow-x-auto rounded border border-[#ccd0d4] bg-white shadow-sm">
+        <table className="w-full text-left text-xs text-[#2c3338]">
+          <thead className="border-b border-[#ccd0d4] bg-[#f6f7f7] font-semibold text-[#1d2327]">
             <tr>
               <th className="w-8 px-3 py-2 text-center">
                 <input
@@ -294,7 +336,7 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
                       {post.title.vi}
                     </button>
                     {/* Hover Action Links (Classic WordPress row-actions) */}
-                    <div className="flex items-center gap-1 text-[11px] text-[#2271b1] mt-1">
+                    <div className="flex items-center gap-1.5 text-[11px] text-[#2271b1] mt-1">
                       {currentTab === "trash" ? (
                         <>
                           <button onClick={() => restoreFromTrash(post.slug)} className="hover:underline text-[#2e7d32] font-bold">Phục hồi</button>
@@ -303,7 +345,7 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
                         </>
                       ) : (
                         <>
-                          <button onClick={() => onEditPost(post)} className="hover:underline">Chỉnh sửa</button>
+                          <button onClick={() => onEditPost(post)} className="hover:underline font-semibold">Chỉnh sửa</button>
                           <span className="text-[#a7aaad]">|</span>
                           <button onClick={() => handleStartQuickEdit(post)} className="hover:underline text-[#646970]">Sửa nhanh</button>
                           <span className="text-[#a7aaad]">|</span>
@@ -313,38 +355,48 @@ export default function WordPressPostList({ posts: initialPosts, locale, onEditP
                             href={`/${locale}/blog/${post.slug}`}
                             target="_blank"
                             rel="noreferrer"
-                            className="hover:underline"
+                            className="hover:underline font-bold text-[#00a32a]"
                           >
-                            Xem ↗
+                            Xem bài viết ↗
                           </a>
+                          <span className="text-[#a7aaad]">|</span>
+                          <button
+                            type="button"
+                            onClick={() => copyPostCode(post)}
+                            className="hover:underline text-[#646970]"
+                          >
+                            {copiedSlug === post.slug ? "✓ Đã chép code" : "Chép JSON"}
+                          </button>
                         </>
                       )}
                     </div>
                   </td>
-                  <td className="px-3 py-2.5 align-top text-[#2271b1] hover:underline cursor-pointer">
-                    {post.author}
-                  </td>
-                  <td className="px-3 py-2.5 align-top text-[#2271b1]">
-                    {post.category.vi}
-                  </td>
+                  <td className="px-3 py-2.5 align-top text-[#646970]">{post.author}</td>
                   <td className="px-3 py-2.5 align-top">
-                    <span className="rounded bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 text-[10px] font-bold text-emerald-800">
-                      {imageCount} ảnh
+                    <span className="rounded bg-[#f0f0f1] px-2 py-0.5 font-medium text-[#2c3338]">
+                      {post.category.vi}
                     </span>
+                  </td>
+                  <td className="px-3 py-2.5 align-top text-center text-[#646970]">
+                    📷 {imageCount} ảnh
                   </td>
                   <td className="px-3 py-2.5 align-top">
                     {(() => {
-                      const seo = calculatePostSeoScore(post, locale as any);
+                      const { score } = calculatePostSeoScore(post, locale as any);
+                      const badgeBg = score >= 80 ? "bg-[#d1e7dd] text-[#0f5132]" : score >= 60 ? "bg-[#fff3cd] text-[#664d03]" : "bg-[#f8d7da] text-[#842029]";
                       return (
-                        <span className={`inline-flex items-center gap-1 rounded border px-2 py-0.5 text-[11px] font-bold ${seo.badgeColor}`}>
-                          {seo.dotColor} {seo.score}/100
-                        </span>
+                        <div className="flex items-center gap-1.5">
+                          <span className={`rounded px-1.5 py-0.5 font-bold text-[11px] ${badgeBg}`}>
+                            {score}/100
+                          </span>
+                          <span className="text-[10px] text-[#646970] hidden sm:inline">Rank Math</span>
+                        </div>
                       );
                     })()}
                   </td>
-                  <td className="px-3 py-2.5 align-top text-[#646970]">
-                    <div>{currentTab === "trash" ? "Trong thùng rác" : "Đã xuất bản"}</div>
-                    <div className="text-[11px] text-[#2c3338] font-mono">{post.date}</div>
+                  <td className="px-3 py-2.5 align-top text-[#646970] text-[11px] whitespace-nowrap">
+                    Đã xuất bản<br />
+                    <strong>{post.date}</strong>
                   </td>
                 </tr>
               );

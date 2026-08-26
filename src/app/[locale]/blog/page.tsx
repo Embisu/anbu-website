@@ -7,6 +7,7 @@ import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { PostCard } from "@/components/cards";
+import ClientBlogList from "@/components/ClientBlogList";
 import Link from "next/link";
 import { localePath } from "@/lib/utils";
 import EditorialMedia, { editorialImageForPostData } from "@/components/EditorialMedia";
@@ -105,13 +106,7 @@ export default async function BlogPage({ params }: { params: { locale: string } 
             <span className="hidden text-sm text-navy-400 sm:block">{posts.length} {locale === "vi" ? "bài chuyên sâu" : "in-depth articles"}</span>
           </div>
         </Reveal>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {sorted.slice(1).map((post, i) => (
-            <Reveal key={post.slug} delay={(i % 3) * 70}>
-              <PostCard post={post} locale={locale} readLabel={dict.blogSection.read} readTimeLabel={dict.blogSection.readTime} />
-            </Reveal>
-          ))}
-        </div>
+        <ClientBlogList initialPosts={sorted.slice(1)} locale={locale} dict={dict} />
       </section>
       <CTASection locale={locale} dict={dict} />
     </>

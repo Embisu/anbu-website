@@ -13,6 +13,7 @@ import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
 import EditorialMedia, { editorialImageForPostData } from "@/components/EditorialMedia";
 import { PostCard } from "@/components/cards";
+import ClientCustomPostViewer from "@/components/ClientCustomPostViewer";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => posts.map((p) => ({ locale, slug: p.slug })));
@@ -25,7 +26,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const post = getPost(params.slug);
-  if (!post) return {};
+  if (!post) {
+    return buildMetadata({
+      locale,
+      path: `/blog/${params.slug}`,
+      title: "Bài viết Marketing Game | ANBU",
+      description: "Phân tích và chiến lược chuyên sâu về Game Marketing từ ANBU.",
+      type: "article",
+    });
+  }
   return buildMetadata({
     locale,
     path: `/blog/${post.slug}`,
@@ -184,7 +193,9 @@ export default async function BlogPostPage({
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
   const post = getPost(params.slug);
-  if (!post) notFound();
+  if (!post) {
+    return <ClientCustomPostViewer slug={params.slug} locale={locale} dict={dict} />;
+  }
 
   const related = [
     ...posts.filter((p) => p.slug !== post.slug && p.category.vi === post.category.vi),
