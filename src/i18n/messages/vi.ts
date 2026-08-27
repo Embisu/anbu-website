@@ -77,7 +77,7 @@ const vi = {
   whyus: {
     eyebrow: "Vì sao chọn ANBU",
     title: "Đối tác tăng trưởng bạn có thể tin",
-    subtitle: "Không chỉ đẹp, chúng tôi mang lại kết quả, bằng kinh nghiệm thật và cách làm minh bạch.",
+    subtitle: "Sáng tạo không chỉ để ngắm, sáng tạo để tạo ra kết quả. Bằng kinh nghiệm thực và cách làm minh bạch.",
   },
   faq: {
     eyebrow: "Câu hỏi thường gặp",
