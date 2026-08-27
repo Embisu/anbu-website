@@ -33,7 +33,11 @@ export const blogCategories = [
 ] as const;
 
 export function categoryForPost(post: Post) {
-  const slug = post.slug;
+  if (post.category?.vi) {
+    const found = blogCategories.find((c) => c.vi === post.category.vi || c.en === post.category.en);
+    if (found) return found.slug;
+  }
+  const slug = post.slug || "";
   if (/retention|liveops|soft-launch|ra-mat/.test(slug)) return "van-hanh-game";
   if (/ugc|influencer|tiktok|cong-dong/.test(slug)) return "cong-dong-game";
   if (/nha-phat-hanh|thi-truong|localization|vietnam/.test(slug)) return "thi-truong-game";

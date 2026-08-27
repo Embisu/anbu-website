@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import type { Post } from "@/content/posts";
+import { categoryForPost } from "@/content/posts";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { PostCard } from "@/components/cards";
@@ -11,10 +12,12 @@ export default function ClientBlogList({
   initialPosts,
   locale,
   dict,
+  categorySlug,
 }: {
   initialPosts: Post[];
   locale: Locale;
   dict: Dictionary;
+  categorySlug?: string;
 }) {
   const [posts, setPosts] = useState<Post[]>(initialPosts);
 
@@ -30,13 +33,17 @@ export default function ClientBlogList({
               merged.push(ip);
             }
           });
-          setPosts(merged);
+          const filtered = categorySlug
+            ? merged.filter((p) => categoryForPost(p) === categorySlug)
+            : merged;
+          setPosts(filtered);
+          return;
         }
       }
     } catch (e) {
       console.error(e);
     }
-  }, [initialPosts]);
+  }, [initialPosts, categorySlug]);
 
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

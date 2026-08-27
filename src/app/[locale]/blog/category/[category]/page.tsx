@@ -23,6 +23,8 @@ export async function generateMetadata({ params }: { params: { locale: string; c
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbLd } from "@/lib/seo";
 
+import ClientBlogList from "@/components/ClientBlogList";
+
 export default async function BlogCategoryPage({ params }: { params: { locale: string; category: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const category = blogCategories.find((item) => item.slug === params.category);
@@ -47,7 +49,9 @@ export default async function BlogCategoryPage({ params }: { params: { locale: s
       <PageHero eyebrow={locale === "vi" ? "Chuyên mục" : "Category"} title={name} subtitle={locale === "vi" ? `Tuyển tập bài viết giúp đội ngũ game giải quyết bài toán ${name.toLowerCase()}.` : `Practical insights for teams solving ${name.toLowerCase()} challenges.`} />
       <section className="container-x py-16 sm:py-20">
         {featured && <FeaturedPost post={featured} locale={locale} label={locale === "vi" ? "Bài đọc nổi bật" : "Featured read"} readLabel={dict.blogSection.read} />}
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{remainingPosts.map((post) => <PostCard key={post.slug} post={post} locale={locale} readLabel={dict.blogSection.read} readTimeLabel={dict.blogSection.readTime} />)}</div>
+        <div className="mt-10">
+          <ClientBlogList initialPosts={remainingPosts} locale={locale} dict={dict} categorySlug={category.slug} />
+        </div>
       </section>
     </>
   );
