@@ -32,6 +32,8 @@ export const blogCategories = [
   { slug: "kinh-doanh-game", vi: "Kinh doanh Game", en: "Game Business" },
 ] as const;
 
+import customPostsData from "./custom_posts.json";
+
 export function categoryForPost(post: Post) {
   if (post.category?.vi) {
     const found = blogCategories.find((c) => c.vi === post.category.vi || c.en === post.category.en);
@@ -46,7 +48,7 @@ export function categoryForPost(post: Post) {
   return "marketing-game";
 }
 
-export const posts: Post[] = [
+const builtinPosts: Post[] = [
   {
     slug: "ban-do-nha-phat-hanh-game-viet-nam",
     title: {
@@ -3683,6 +3685,11 @@ export const posts: Post[] = [
     ]
   }],
   },
+];
+
+export const posts: Post[] = [
+  ...(Array.isArray(customPostsData) ? (customPostsData as Post[]) : []),
+  ...builtinPosts,
 ];
 
 export function getPost(slug: string): Post | undefined {

@@ -23,7 +23,14 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
   const [postList, setPostList] = useState<Post[]>(defaultPosts);
   const [editingPost, setEditingPost] = useState<Post | null>(null);
   const [currentUser, setCurrentUser] = useState<{ username: string; name: string; role: string } | null>(null);
-  const [publishSuccessNotice, setPublishSuccessNotice] = useState<{ slug: string; title: string } | null>(null);
+  const [publishNotice, setPublishNotice] = useState<{
+    slug: string;
+    title: string;
+    githubSynced?: boolean;
+    commitUrl?: string;
+    error?: string;
+    loading?: boolean;
+  } | null>(null);
 
   // Load custom posts from localStorage & API on mount
   useEffect(() => {
@@ -87,13 +94,13 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
 
   const handleNewPost = () => {
     setEditingPost(null);
-    setPublishSuccessNotice(null);
+    setPublishNotice(null);
     setActiveTab("new_post");
   };
 
   const handleEditPost = (post: Post) => {
     setEditingPost(post);
-    setPublishSuccessNotice(null);
+    setPublishNotice(null);
     setActiveTab("new_post");
   };
 
@@ -108,7 +115,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
     }
     setPostList(updatedList);
 
-    // Persist custom posts in localStorage
+    // 1. Persist custom posts in localStorage
     try {
       const savedCustom = localStorage.getItem("anbu_custom_posts");
       let customArr: Post[] = savedCustom ? JSON.parse(savedCustom) : [];
@@ -123,24 +130,71 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
       console.error(e);
     }
 
-    // Persist to API
+    // 2. Persist to API
     fetch("/api/admin/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ post: savedPost }),
     }).catch(console.error);
 
-    setPublishSuccessNotice({
-      slug: savedPost.slug,
-      title: savedPost.title.vi || savedPost.title.en,
-    });
+    // 3. Try to Auto-Publish to GitHub
+    const githubToken = localStorage.getItem("anbu_github_token") || "";
+    if (githubToken) {
+      setPublishNotice({
+        slug: savedPost.slug,
+        title: savedPost.title.vi || savedPost.title.en,
+        loading: true,
+      });
+
+      fetch("/api/admin/posts/github-publish", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ post: savedPost, token: githubToken }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.ok) {
+            setPublishNotice({
+              slug: savedPost.slug,
+              title: savedPost.title.vi || savedPost.title.en,
+              githubSynced: true,
+              commitUrl: data.commitUrl,
+              loading: false,
+            });
+          } else {
+            setPublishNotice({
+              slug: savedPost.slug,
+              title: savedPost.title.vi || savedPost.title.en,
+              githubSynced: false,
+              error: data.error,
+              loading: false,
+            });
+          }
+        })
+        .catch((err) => {
+          setPublishNotice({
+            slug: savedPost.slug,
+            title: savedPost.title.vi || savedPost.title.en,
+            githubSynced: false,
+            error: err.message,
+            loading: false,
+          });
+        });
+    } else {
+      setPublishNotice({
+        slug: savedPost.slug,
+        title: savedPost.title.vi || savedPost.title.en,
+        githubSynced: false,
+        loading: false,
+      });
+    }
+
     setActiveTab("posts");
   };
 
   const handleUpdatePostList = (newList: Post[]) => {
     setPostList(newList);
     try {
-      // Find posts that are not in defaultPosts and save them
       const customOnly = newList.filter((p) => !defaultPosts.some((dp) => dp.slug === p.slug));
       localStorage.setItem("anbu_custom_posts", JSON.stringify(customOnly));
     } catch (e) {
@@ -183,7 +237,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
             if (tab === "new_post") {
               setEditingPost(null);
             }
-            setPublishSuccessNotice(null);
+            setPublishNotice(null);
             setActiveTab(tab);
           }}
           postCount={postList.length}
@@ -193,28 +247,67 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
         {/* WordPress Main White/Light Content Area */}
         <main className="flex-1 overflow-y-auto p-5 sm:p-7 min-h-[calc(100vh-32px)]">
           {/* Publish Success Notice Banner */}
-          {publishSuccessNotice && activeTab === "posts" && (
-            <div className="mb-5 rounded border-l-4 border-[#00a32a] bg-white p-4 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 animate-fade-in">
+          {publishNotice && activeTab === "posts" && (
+            <div
+              className={`mb-5 rounded border-l-4 p-4 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 animate-fade-in ${
+                publishNotice.loading
+                  ? "border-blue-500 bg-blue-50/80"
+                  : publishNotice.githubSynced
+                  ? "border-emerald-500 bg-emerald-50/90"
+                  : "border-amber-500 bg-amber-50/90"
+              }`}
+            >
               <div>
-                <p className="font-bold text-sm text-[#1d2327]">
-                  ✅ Đã xuất bản bài viết: <span className="text-[#2271b1]">"{publishSuccessNotice.title}"</span>
-                </p>
-                <p className="text-xs text-[#646970] mt-0.5">
-                  Bài viết đã được lưu vào hệ thống và có thể xem trực tiếp ngay lập tức.
-                </p>
+                {publishNotice.loading ? (
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex h-3.5 w-3.5 animate-spin rounded-full border-2 border-blue-600 border-t-transparent" />
+                    <p className="font-bold text-xs sm:text-sm text-blue-900">
+                      Đang tự động đẩy bài viết "{publishNotice.title}" lên GitHub & kích hoạt Cloudflare...
+                    </p>
+                  </div>
+                ) : publishNotice.githubSynced ? (
+                  <div>
+                    <p className="font-bold text-xs sm:text-sm text-emerald-900">
+                      ✅ Đã tự động xuất bản lên GitHub & kích hoạt Cloudflare Pages!
+                    </p>
+                    <p className="text-xs text-emerald-700 mt-0.5">
+                      Bài viết "{publishNotice.title}" sẽ hiển thị cho 100% người dùng trên toàn cầu sau ~1 phút.
+                    </p>
+                  </div>
+                ) : (
+                  <div>
+                    <p className="font-bold text-xs sm:text-sm text-amber-900">
+                      ⚡ Bài viết đã được lưu trên máy của bạn.
+                    </p>
+                    <p className="text-xs text-amber-700 mt-0.5">
+                      {publishNotice.error
+                        ? `Lỗi đẩy GitHub: ${publishNotice.error}`
+                        : "Để tự động xuất hiện trên mọi thiết bị toàn cầu, hãy vào Cài đặt Tổng quan nhập GitHub Token."}
+                    </p>
+                  </div>
+                )}
               </div>
               <div className="flex items-center gap-2">
                 <a
-                  href={`/${locale}/blog/${publishSuccessNotice.slug}`}
+                  href={`/${locale}/blog/${publishNotice.slug}`}
                   target="_blank"
                   rel="noreferrer"
                   className="rounded bg-[#2271b1] px-3.5 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-[#135e96] transition inline-flex items-center gap-1"
                 >
-                  Xem bài viết ngay ↗
+                  Xem bài viết ↗
                 </a>
+                {!publishNotice.githubSynced && !publishNotice.loading && (
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab("settings")}
+                    className="rounded border border-[#8c8f94] bg-white px-3 py-1.5 text-xs font-bold text-[#2c3338] hover:bg-[#f0f0f1]"
+                  >
+                    Cài đặt GitHub Token
+                  </button>
+                )}
                 <button
                   type="button"
-                  onClick={() => setPublishSuccessNotice(null)}
+                  onClick={() => setPublishNotice(null)}
                   className="text-xs text-[#646970] hover:text-[#1d2327] px-2 py-1"
                 >
                   Đóng ✕
