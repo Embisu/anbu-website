@@ -46,11 +46,23 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
   const [newTagInput, setNewTagInput] = useState("");
   const [aiNotice, setAiNotice] = useState<string | null>(null);
 
+  const slugifyVietnamese = (str: string) => {
+    return str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[đĐ]/g, "d")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-");
+  };
+
   const handleTitleChange = (val: string) => {
     setPost({
       ...post,
       title: { ...post.title, [activeLang]: val },
-      slug: !initialPost && activeLang === "vi" ? val.toLowerCase().replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-") : post.slug,
+      slug: !initialPost && activeLang === "vi" ? slugifyVietnamese(val) : post.slug,
     });
   };
 

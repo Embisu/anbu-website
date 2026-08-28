@@ -89,14 +89,27 @@ export default function WordPressPostList({
     setQuickDate(post.date);
   };
 
+  const slugifyVietnamese = (str: string) => {
+    return str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[đĐ]/g, "d")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-");
+  };
+
   const handleSaveQuickEdit = (slug: string) => {
+    const cleanSlug = slugifyVietnamese(quickSlug || quickTitle);
     const updated = postList.map((p) => {
       if (p.slug === slug) {
         const foundCat = blogCategories.find((c) => c.vi === quickCategory);
         return {
           ...p,
           title: { ...p.title, vi: quickTitle },
-          slug: quickSlug.trim(),
+          slug: cleanSlug,
           category: foundCat ? { vi: foundCat.vi, en: foundCat.en } : p.category,
           date: quickDate,
         };
