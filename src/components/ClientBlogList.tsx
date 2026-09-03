@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useEffect, useState } from "react";
 import type { Post } from "@/content/posts";
@@ -7,6 +7,7 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { PostCard } from "@/components/cards";
 import Reveal from "@/components/Reveal";
+import { fetchSupabasePosts } from "@/lib/supabase";
 
 export default function ClientBlogList({
   initialPosts,
@@ -22,6 +23,9 @@ export default function ClientBlogList({
   const [posts, setPosts] = useState<Post[]>(initialPosts);
 
   useEffect(() => {
+    let isMounted = true;
+
+    // 1. Instant check localStorage
     try {
       const saved = localStorage.getItem("anbu_custom_posts");
       if (saved) {
@@ -37,12 +41,32 @@ export default function ClientBlogList({
             ? merged.filter((p) => categoryForPost(p) === categorySlug)
             : merged;
           setPosts(filtered);
-          return;
         }
       }
-    } catch (e) {
-      console.error(e);
-    }
+    } catch (e) {}
+
+    // 2. Fetch from Supabase for all visitors globally
+    fetchSupabasePosts()
+      .then((supaPosts) => {
+        if (!isMounted) return;
+        if (supaPosts && supaPosts.length > 0) {
+          const merged = [...supaPosts];
+          initialPosts.forEach((ip) => {
+            if (!merged.some((mp) => mp.slug === ip.slug)) {
+              merged.push(ip);
+            }
+          });
+          const filtered = categorySlug
+            ? merged.filter((p) => categoryForPost(p) === categorySlug)
+            : merged;
+          setPosts(filtered);
+        }
+      })
+      .catch(() => {});
+
+    return () => {
+      isMounted = false;
+    };
   }, [initialPosts, categorySlug]);
 
   return (
