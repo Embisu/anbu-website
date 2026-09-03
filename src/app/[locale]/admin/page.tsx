@@ -139,55 +139,46 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
 
     // 3. Try to Auto-Publish to GitHub
     const githubToken = localStorage.getItem("anbu_github_token") || "";
-    if (githubToken) {
-      setPublishNotice({
-        slug: savedPost.slug,
-        title: savedPost.title.vi || savedPost.title.en,
-        loading: true,
-      });
+    setPublishNotice({
+      slug: savedPost.slug,
+      title: savedPost.title.vi || savedPost.title.en,
+      loading: true,
+    });
 
-      fetch("/api/admin/posts/github-publish", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ post: savedPost, token: githubToken }),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.ok) {
-            setPublishNotice({
-              slug: savedPost.slug,
-              title: savedPost.title.vi || savedPost.title.en,
-              githubSynced: true,
-              commitUrl: data.commitUrl,
-              loading: false,
-            });
-          } else {
-            setPublishNotice({
-              slug: savedPost.slug,
-              title: savedPost.title.vi || savedPost.title.en,
-              githubSynced: false,
-              error: data.error,
-              loading: false,
-            });
-          }
-        })
-        .catch((err) => {
+    fetch("/api/admin/posts/github-publish", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ post: savedPost, token: githubToken || undefined }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.ok) {
+          setPublishNotice({
+            slug: savedPost.slug,
+            title: savedPost.title.vi || savedPost.title.en,
+            githubSynced: true,
+            commitUrl: data.commitUrl,
+            loading: false,
+          });
+        } else {
           setPublishNotice({
             slug: savedPost.slug,
             title: savedPost.title.vi || savedPost.title.en,
             githubSynced: false,
-            error: err.message,
+            error: data.error,
             loading: false,
           });
+        }
+      })
+      .catch((err) => {
+        setPublishNotice({
+          slug: savedPost.slug,
+          title: savedPost.title.vi || savedPost.title.en,
+          githubSynced: false,
+          error: err.message,
+          loading: false,
         });
-    } else {
-      setPublishNotice({
-        slug: savedPost.slug,
-        title: savedPost.title.vi || savedPost.title.en,
-        githubSynced: false,
-        loading: false,
       });
-    }
 
     setActiveTab("posts");
   };

@@ -17,13 +17,23 @@ export async function POST(request: Request) {
       token?: string;
     };
 
-    const token = (userProvidedToken || process.env.GITHUB_TOKEN || "").trim();
+    let token = (userProvidedToken || process.env.GITHUB_TOKEN || "").trim();
+    if (!token) {
+      try {
+        // @ts-ignore
+        const { getRequestContext } = await import("@cloudflare/next-on-pages");
+        const ctx: any = getRequestContext();
+        if (ctx?.env?.GITHUB_TOKEN) {
+          token = String(ctx.env.GITHUB_TOKEN).trim();
+        }
+      } catch (e) {}
+    }
 
     if (!token) {
       return NextResponse.json(
         {
           ok: false,
-          error: "Chưa cấu hình GitHub Token. Vui lòng nhập GitHub Token trong Cài đặt Admin để kích hoạt tự động xuất bản.",
+          error: "Chưa cấu hình GitHub Token. Vui lòng kiểm tra lại thiết lập biến môi trường trên Cloudflare Pages.",
           requiresToken: true,
         },
         { status: 400 }
