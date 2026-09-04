@@ -11,6 +11,7 @@ import { localePath, formatDate } from "@/lib/utils";
 import Icon from "./Icon";
 import CTASection from "./CTASection";
 import EditorialMedia, { editorialImageForPostData } from "./EditorialMedia";
+import { fetchSupabasePostBySlug } from "@/lib/supabase";
 
 export default function ClientCustomPostViewer({
   slug,
@@ -41,12 +42,16 @@ export default function ClientCustomPostViewer({
       console.error(e);
     }
 
-    // 2. Try to fetch from API
-    fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`)
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (data?.ok && data?.post) {
-          setPost(data.post);
+    // 2. Query both API and Supabase directly for 100% reliability
+    Promise.allSettled([
+      fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`).then((res) => (res.ok ? res.json() : null)),
+      fetchSupabasePostBySlug(slug),
+    ])
+      .then(([apiRes, supaRes]) => {
+        if (apiRes.status === "fulfilled" && apiRes.value?.ok && apiRes.value?.post) {
+          setPost(apiRes.value.post);
+        } else if (supaRes.status === "fulfilled" && supaRes.value) {
+          setPost(supaRes.value);
         }
       })
       .catch((err) => console.error(err))
