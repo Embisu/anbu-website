@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import Icon from "@/components/Icon";
+import { supabase } from "@/lib/supabase";
 
 // List of all verified images available in public/blog-covers/
 export const defaultMediaAssets = [
@@ -63,7 +64,30 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
   const [search, setSearch] = useState("");
   const [selectedTag, setSelectedTag] = useState("all");
   const [copiedSrc, setCopiedSrc] = useState<string | null>(null);
+  const [uploading, setUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  React.useEffect(() => {
+    supabase.storage
+      .from("blog-media")
+      .list("", { limit: 100, sortBy: { column: "created_at", order: "desc" } })
+      .then(({ data }) => {
+        if (data && data.length > 0) {
+          const cloudItems: MediaItem[] = data.map((item) => {
+            const { data: urlData } = supabase.storage.from("blog-media").getPublicUrl(item.name);
+            return {
+              src: urlData.publicUrl,
+              title: item.name.replace(/\.[^/.]+$/, ""),
+              tags: ["supabase", "cloud"],
+              size: `${Math.round((item.metadata?.size || 0) / 1024)} KB`,
+              dimensions: "Cloud CDN",
+            };
+          });
+          setMediaList((prev) => [...cloudItems, ...prev]);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const allTags = ["all", ...Array.from(new Set(mediaList.flatMap((item) => item.tags)))];
 
@@ -83,27 +107,50 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
     setTimeout(() => setCopiedSrc(null), 2500);
   };
 
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files || files.length === 0) return;
 
-    Array.from(files).forEach((file) => {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const dataUrl = event.target?.result as string;
-        const newItem: MediaItem = {
-          src: dataUrl,
-          title: file.name.replace(/\.[^/.]+$/, ""),
-          tags: ["upload", "new"],
-          size: `${Math.round(file.size / 1024)} KB`,
-          dimensions: "Tùy chỉnh (Custom)",
-        };
-        setMediaList((prev) => [newItem, ...prev]);
-        setSelectedAsset(newItem);
-        setActiveTab("library");
-      };
-      reader.readAsDataURL(file);
-    });
+    setUploading(true);
+    const uploadedItems: MediaItem[] = [];
+
+    for (const file of Array.from(files)) {
+      try {
+        const ext = file.name.split(".").pop();
+        const cleanName = file.name
+          .replace(/\.[^/.]+$/, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, "-");
+        const filePath = `${Date.now()}-${cleanName}.${ext}`;
+
+        const { data, error } = await supabase.storage
+          .from("blog-media")
+          .upload(filePath, file, { cacheControl: "3600", upsert: true });
+
+        if (data) {
+          const { data: urlData } = supabase.storage.from("blog-media").getPublicUrl(data.path);
+          const newItem: MediaItem = {
+            src: urlData.publicUrl,
+            title: file.name.replace(/\.[^/.]+$/, ""),
+            tags: ["supabase", "upload"],
+            size: `${Math.round(file.size / 1024)} KB`,
+            dimensions: "Cloud CDN",
+          };
+          uploadedItems.push(newItem);
+        } else {
+          console.error("Upload error:", error);
+        }
+      } catch (err) {
+        console.error("File upload error:", err);
+      }
+    }
+
+    if (uploadedItems.length > 0) {
+      setMediaList((prev) => [...uploadedItems, ...prev]);
+      setSelectedAsset(uploadedItems[0]);
+    }
+    setUploading(false);
+    setActiveTab("library");
   };
 
   return (
