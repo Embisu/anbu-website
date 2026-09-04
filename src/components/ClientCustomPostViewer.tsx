@@ -12,6 +12,8 @@ import Icon from "./Icon";
 import CTASection from "./CTASection";
 import EditorialMedia, { editorialImageForPostData } from "./EditorialMedia";
 import { fetchSupabasePostBySlug } from "@/lib/supabase";
+import JsonLd from "./JsonLd";
+import { siteUrl, breadcrumbLd, articleLd } from "@/lib/seo";
 
 export default function ClientCustomPostViewer({
   slug,
@@ -97,8 +99,28 @@ export default function ClientCustomPostViewer({
 
   const related = defaultPosts.slice(0, 3);
 
+  const breadcrumbs = breadcrumbLd(
+    [
+      { name: locale === "vi" ? "Trang chủ" : "Home", path: "/" },
+      { name: locale === "vi" ? "Kiến thức" : "Blog", path: "/blog" },
+      { name: t(post.title, locale), path: `/blog/${post.slug}` },
+    ],
+    locale
+  );
+
+  const articleSchema = articleLd({
+    title: t(post.title, locale),
+    description: t(post.excerpt, locale),
+    date: post.date,
+    author: post.author,
+    image: `${siteUrl}${editorialImageForPostData(post)}`,
+    url: `${siteUrl}/${locale}/blog/${post.slug}`,
+  });
+
   return (
     <article>
+      <JsonLd data={breadcrumbs} />
+      <JsonLd data={articleSchema} />
       {/* Admin Preview Badge */}
       <div className="border-b border-orange-200 bg-orange-50 px-4 py-2.5 text-center text-xs font-semibold text-orange-800">
         ✨ {locale === "vi" ? "Bài viết được xuất bản từ Trang Quản trị ANBU" : "Article published via ANBU Admin"}

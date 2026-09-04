@@ -46,6 +46,46 @@ export function faqLd(items: { q: string; a: string }[]) {
   };
 }
 
+/** BlogPosting structured data for articles. */
+export function articleLd({
+  title,
+  description,
+  date,
+  author,
+  image,
+  url,
+}: {
+  title: string;
+  description: string;
+  date: string;
+  author: string;
+  image?: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description,
+    datePublished: date,
+    dateModified: date,
+    image: image || `${siteUrl}/og/og-default.png`,
+    author: { "@type": "Organization", name: author || "ANBU" },
+    publisher: {
+      "@type": "Organization",
+      name: "ANBU",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/icon.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+  };
+}
+
 type BuildMetaArgs = {
   locale: Locale;
   path?: string; // without locale, starts with "/"
