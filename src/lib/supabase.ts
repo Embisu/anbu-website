@@ -1,4 +1,4 @@
-﻿import { createClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 import type { Post } from "@/content/posts";
 
 export const SUPABASE_URL =
@@ -95,6 +95,103 @@ export async function upsertSupabasePost(post: Post): Promise<{ ok: boolean; err
 export async function deleteSupabasePost(slug: string): Promise<{ ok: boolean; error?: string }> {
   try {
     const { error } = await supabase.from("posts").delete().eq("slug", slug);
+    if (error) return { ok: false, error: error.message };
+    return { ok: true };
+  } catch (e: any) {
+    return { ok: false, error: e.message };
+  }
+}
+
+export type Comment = {
+  id: number | string;
+  post_slug: string;
+  author_name: string;
+  author_email?: string;
+  content: string;
+  status: "pending" | "approved" | "spam";
+  created_at: string;
+};
+
+export async function fetchComments(
+  postSlug?: string,
+  status?: "all" | "pending" | "approved" | "spam"
+): Promise<Comment[]> {
+  try {
+    let query = supabase
+      .from("comments")
+      .select("*")
+      .order("created_at", { ascending: false });
+
+    if (postSlug) {
+      query = query.eq("post_slug", postSlug);
+    }
+    if (status && status !== "all") {
+      query = query.eq("status", status);
+    }
+
+    const { data, error } = await query;
+    if (error) {
+      console.warn("Supabase fetch comments error:", error.message);
+      return [];
+    }
+    return (data || []) as Comment[];
+  } catch (e) {
+    console.warn("Supabase fetch comments exception:", e);
+    return [];
+  }
+}
+
+export async function submitComment(comment: {
+  post_slug: string;
+  author_name: string;
+  author_email?: string;
+  content: string;
+}): Promise<{ ok: boolean; comment?: Comment; error?: string }> {
+  try {
+    const newComment = {
+      post_slug: comment.post_slug,
+      author_name: comment.author_name.trim(),
+      author_email: (comment.author_email || "").trim(),
+      content: comment.content.trim(),
+      status: "pending",
+      created_at: new Date().toISOString(),
+    };
+
+    const { data, error } = await supabase
+      .from("comments")
+      .insert(newComment)
+      .select()
+      .single();
+
+    if (error) {
+      return { ok: false, error: error.message };
+    }
+    return { ok: true, comment: data as Comment };
+  } catch (e: any) {
+    return { ok: false, error: e.message };
+  }
+}
+
+export async function updateCommentStatus(
+  id: number | string,
+  status: "approved" | "pending" | "spam"
+): Promise<{ ok: boolean; error?: string }> {
+  try {
+    const { error } = await supabase
+      .from("comments")
+      .update({ status })
+      .eq("id", id);
+
+    if (error) return { ok: false, error: error.message };
+    return { ok: true };
+  } catch (e: any) {
+    return { ok: false, error: e.message };
+  }
+}
+
+export async function deleteComment(id: number | string): Promise<{ ok: boolean; error?: string }> {
+  try {
+    const { error } = await supabase.from("comments").delete().eq("id", id);
     if (error) return { ok: false, error: error.message };
     return { ok: true };
   } catch (e: any) {

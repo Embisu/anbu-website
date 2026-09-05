@@ -10,7 +10,8 @@
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
     "pages:preview": "npm run pages:build && wrangler pages dev .vercel/output/static",
-    "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static"
+    "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
+    "ping": "node scripts/ping-indexnow.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.114.0",

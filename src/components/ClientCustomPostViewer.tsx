@@ -14,6 +14,7 @@ import EditorialMedia, { editorialImageForPostData } from "./EditorialMedia";
 import { fetchSupabasePostBySlug } from "@/lib/supabase";
 import JsonLd from "./JsonLd";
 import { siteUrl, breadcrumbLd, articleLd } from "@/lib/seo";
+import PostComments from "./PostComments";
 
 export default function ClientCustomPostViewer({
   slug,
@@ -284,6 +285,9 @@ export default function ClientCustomPostViewer({
                 <Icon name="arrow" className="h-4 w-4" />
               </Link>
             </aside>
+
+            {/* Reader Comments & Discussion */}
+            <PostComments postSlug={post.slug} locale={locale} />
           </div>
 
           {/* Right Sidebar on XL screens */}

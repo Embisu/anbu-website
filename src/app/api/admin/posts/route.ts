@@ -6,6 +6,7 @@ import {
   upsertSupabasePost,
   deleteSupabasePost,
 } from "@/lib/supabase";
+import { submitToIndexNow } from "@/lib/indexnow";
 
 export const runtime = "edge";
 
@@ -72,11 +73,18 @@ export async function POST(request: Request) {
         inMemoryCustomPosts.unshift(post);
       }
 
+      // Auto-ping IndexNow to Bing, Yandex, Naver, Seznam
+      submitToIndexNow([
+        `https://anbu.asia/vi/blog/${post.slug}`,
+        `https://anbu.asia/en/blog/${post.slug}`,
+      ]).catch(() => {});
+
       return NextResponse.json({
         ok: true,
         post,
         supabaseSynced: supaRes.ok,
         supabaseError: supaRes.error,
+        indexNowPinged: true,
       });
     }
 

@@ -9,6 +9,7 @@ import WordPressDashboard from "@/components/admin/WordPressDashboard";
 import WordPressPostList from "@/components/admin/WordPressPostList";
 import WordPressPostEditor from "@/components/admin/WordPressPostEditor";
 import MediaManager from "@/components/admin/MediaManager";
+import CommentsManager from "@/components/admin/CommentsManager";
 import LeadsManager from "@/components/admin/LeadsManager";
 import UsersManager from "@/components/admin/UsersManager";
 import RankMathSiteAudit from "@/components/admin/RankMathSiteAudit";
@@ -23,6 +24,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
   const [postList, setPostList] = useState<Post[]>(defaultPosts);
   const [editingPost, setEditingPost] = useState<Post | null>(null);
   const [currentUser, setCurrentUser] = useState<{ username: string; name: string; role: string } | null>(null);
+  const [pendingCommentsCount, setPendingCommentsCount] = useState<number>(0);
   const [publishNotice, setPublishNotice] = useState<{
     slug: string;
     title: string;
@@ -80,6 +82,16 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
             });
             return merged;
           });
+        }
+      })
+      .catch(() => {});
+
+    // Fetch pending comments count for badge
+    fetch("/api/comments?status=pending")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.ok && Array.isArray(data.comments)) {
+          setPendingCommentsCount(data.comments.length);
         }
       })
       .catch(() => {});
@@ -233,6 +245,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
           }}
           postCount={postList.length}
           leadsCount={3}
+          commentsCount={pendingCommentsCount}
         />
 
         {/* WordPress Main White/Light Content Area */}
@@ -374,6 +387,11 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
               <h1 className="text-2xl font-normal text-[#1d2327]">Thư viện Media</h1>
               <MediaManager locale={locale} />
             </div>
+          )}
+
+          {/* TAB 5.5: QUẢN LÝ BÌNH LUẬN (COMMENTS MODERATION) */}
+          {activeTab === "comments" && (
+            <CommentsManager locale={locale} />
           )}
 
           {/* TAB 6: PHẢN HỒI (LEADS CRM) */}

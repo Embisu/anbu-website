@@ -2,16 +2,23 @@
 
 import React, { useState } from "react";
 
-export type AdminMenuTab = "dashboard" | "posts" | "new_post" | "categories" | "media" | "leads" | "users" | "settings" | "rank_math";
+export type AdminMenuTab = "dashboard" | "posts" | "new_post" | "categories" | "media" | "comments" | "leads" | "users" | "settings" | "rank_math";
 
 type WordPressSidebarProps = {
   activeTab: AdminMenuTab;
   onSelectTab: (tab: AdminMenuTab) => void;
   postCount: number;
   leadsCount: number;
+  commentsCount?: number;
 };
 
-export default function WordPressSidebar({ activeTab, onSelectTab, postCount, leadsCount }: WordPressSidebarProps) {
+export default function WordPressSidebar({
+  activeTab,
+  onSelectTab,
+  postCount,
+  leadsCount,
+  commentsCount,
+}: WordPressSidebarProps) {
   const [collapsed, setCollapsed] = useState(false);
 
   const isPostsSection = activeTab === "posts" || activeTab === "new_post" || activeTab === "categories";
@@ -107,6 +114,26 @@ export default function WordPressSidebar({ activeTab, onSelectTab, postCount, le
           {!collapsed && <span>Media</span>}
         </button>
 
+        {/* Comments Moderation */}
+        <button
+          onClick={() => onSelectTab("comments")}
+          className={`flex w-full items-center justify-between px-3 py-2 text-left font-medium transition ${
+            activeTab === "comments"
+              ? "bg-[#2271b1] text-white font-bold"
+              : "hover:bg-[#135e96]/30 hover:text-[#72aee6]"
+          }`}
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-sm">💬</span>
+            {!collapsed && <span>Bình luận</span>}
+          </div>
+          {!collapsed && typeof commentsCount === "number" && commentsCount > 0 && (
+            <span className="rounded-full bg-[#d63638] px-1.5 py-0.2 text-[10px] font-bold text-white">
+              {commentsCount}
+            </span>
+          )}
+        </button>
+
         {/* Leads / Contact Submissions */}
         <button
           onClick={() => onSelectTab("leads")}
@@ -117,11 +144,11 @@ export default function WordPressSidebar({ activeTab, onSelectTab, postCount, le
           }`}
         >
           <div className="flex items-center gap-3">
-            <span className="text-sm">💬</span>
+            <span className="text-sm">📥</span>
             {!collapsed && <span>Phản hồi (Leads)</span>}
           </div>
           {!collapsed && (
-            <span className="rounded-full bg-[#d63638] px-1.5 py-0.2 text-[10px] font-bold text-white">
+            <span className="rounded-full bg-[#135e96] px-1.5 py-0.2 text-[10px] font-bold text-white">
               {leadsCount}
             </span>
           )}

@@ -14,6 +14,7 @@ import JsonLd from "@/components/JsonLd";
 import EditorialMedia, { editorialImageForPostData } from "@/components/EditorialMedia";
 import { PostCard } from "@/components/cards";
 import ClientCustomPostViewer from "@/components/ClientCustomPostViewer";
+import PostComments from "@/components/PostComments";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => posts.map((p) => ({ locale, slug: p.slug })));
@@ -455,6 +456,9 @@ export default async function BlogPostPage({
                 {serviceAnchor} <span aria-hidden="true">→</span>
               </Link>
             </aside>
+
+            {/* Reader Comments & Discussion */}
+            <PostComments postSlug={post.slug} locale={locale} />
             </div>
 
             <aside className="sticky top-28 hidden xl:block">
