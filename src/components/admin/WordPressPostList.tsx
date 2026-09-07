@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
 import { calculatePostSeoScore } from "@/lib/seo-score";
+import { deleteSupabasePost } from "@/lib/supabase";
 
 type WordPressPostListProps = {
   posts: Post[];
@@ -11,6 +12,7 @@ type WordPressPostListProps = {
   onEditPost: (post: Post) => void;
   onNewPost: () => void;
   onUpdatePosts?: (posts: Post[]) => void;
+  onDeletePost?: (slug: string) => void;
 };
 
 export default function WordPressPostList({
@@ -19,6 +21,7 @@ export default function WordPressPostList({
   onEditPost,
   onNewPost,
   onUpdatePosts,
+  onDeletePost,
 }: WordPressPostListProps) {
   const [postList, setPostList] = useState<Post[]>(initialPosts);
   const [trashedPosts, setTrashedPosts] = useState<Post[]>([]);
@@ -33,8 +36,62 @@ export default function WordPressPostList({
   const [quickDate, setQuickDate] = useState("");
   const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
 
+  const purgeSlugStorage = (slug: string) => {
+    try {
+      const saved = localStorage.getItem("anbu_custom_posts");
+      if (saved) {
+        const custom: Post[] = JSON.parse(saved);
+        const filtered = custom.filter((p) => p.slug !== slug);
+        localStorage.setItem("anbu_custom_posts", JSON.stringify(filtered));
+      }
+      const savedDeleted = localStorage.getItem("anbu_deleted_slugs");
+      const deletedArr: string[] = savedDeleted ? JSON.parse(savedDeleted) : [];
+      if (!deletedArr.includes(slug)) {
+        deletedArr.push(slug);
+        localStorage.setItem("anbu_deleted_slugs", JSON.stringify(deletedArr));
+      }
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new Event("anbu_posts_updated"));
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
   useEffect(() => {
-    setPostList(initialPosts);
+    // 1. Load persisted trashed posts
+    try {
+      const savedTrashed = localStorage.getItem("anbu_trashed_posts");
+      if (savedTrashed) {
+        setTrashedPosts(JSON.parse(savedTrashed));
+      }
+    } catch (e) {}
+
+    // 2. Filter out corrupted posts (mojibake) and deleted slugs from initialPosts
+    const isCorrupted = (p: Post) => {
+      const title = p.title?.vi || "";
+      const slug = p.slug || "";
+      return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+    };
+
+    const savedDeleted = (() => {
+      try {
+        const s = localStorage.getItem("anbu_deleted_slugs");
+        return s ? JSON.parse(s) : [];
+      } catch {
+        return [];
+      }
+    })();
+
+    const clean = initialPosts.filter((p) => !isCorrupted(p) && !savedDeleted.includes(p.slug));
+    setPostList(clean);
+
+    // Auto-purge any corrupted posts found
+    const corruptedPosts = initialPosts.filter(isCorrupted);
+    corruptedPosts.forEach((cp) => {
+      purgeSlugStorage(cp.slug);
+      deleteSupabasePost(cp.slug).catch(() => {});
+    });
   }, [initialPosts]);
 
   const updateParentAndState = (updated: Post[]) => {
@@ -56,28 +113,84 @@ export default function WordPressPostList({
     return matchQuery && matchCat;
   });
 
-  const moveToTrash = (slug: string) => {
+  const moveToTrash = async (slug: string) => {
     const target = postList.find((p) => p.slug === slug);
-    if (target) {
-      const updated = postList.filter((p) => p.slug !== slug);
-      updateParentAndState(updated);
-      setTrashedPosts([target, ...trashedPosts]);
+    if (!target) return;
+
+    const updated = postList.filter((p) => p.slug !== slug);
+    updateParentAndState(updated);
+
+    const nextTrashed = [target, ...trashedPosts.filter((p) => p.slug !== slug)];
+    setTrashedPosts(nextTrashed);
+
+    try {
+      localStorage.setItem("anbu_trashed_posts", JSON.stringify(nextTrashed));
+    } catch (e) {}
+
+    // Purge from live store & Supabase so it leaves public site immediately
+    purgeSlugStorage(slug);
+    deleteSupabasePost(slug).catch(console.error);
+    fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
+
+    if (onDeletePost) {
+      onDeletePost(slug);
     }
   };
 
-  const restoreFromTrash = (slug: string) => {
+  const restoreFromTrash = async (slug: string) => {
     const target = trashedPosts.find((p) => p.slug === slug);
-    if (target) {
-      setTrashedPosts(trashedPosts.filter((p) => p.slug !== slug));
-      const updated = [target, ...postList];
-      updateParentAndState(updated);
-    }
+    if (!target) return;
+
+    const nextTrashed = trashedPosts.filter((p) => p.slug !== slug);
+    setTrashedPosts(nextTrashed);
+    const updated = [target, ...postList];
+    updateParentAndState(updated);
+
+    try {
+      localStorage.setItem("anbu_trashed_posts", JSON.stringify(nextTrashed));
+      const savedDeleted = localStorage.getItem("anbu_deleted_slugs");
+      if (savedDeleted) {
+        const deletedArr: string[] = JSON.parse(savedDeleted);
+        localStorage.setItem("anbu_deleted_slugs", JSON.stringify(deletedArr.filter((s) => s !== slug)));
+      }
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new Event("anbu_posts_updated"));
+      }
+    } catch (e) {}
+
+    // Re-upsert to Supabase
+    fetch("/api/admin/posts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ post: target }),
+    }).catch(console.error);
   };
 
-  const deletePermanently = (slug: string) => {
-    if (confirm("Bạn có chắc chắn muốn xóa vĩnh viễn bài viết này không?")) {
-      setTrashedPosts(trashedPosts.filter((p) => p.slug !== slug));
-      fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
+  const deletePermanently = async (slug: string) => {
+    const postToDelete = postList.find((p) => p.slug === slug) || trashedPosts.find((p) => p.slug === slug);
+    const title = postToDelete ? postToDelete.title?.vi || postToDelete.slug : slug;
+
+    if (!confirm(`Bạn có chắc chắn muốn xóa vĩnh viễn bài viết "${title}" không? Hành động này sẽ gỡ bài viết khỏi hệ thống ngay lập tức.`)) {
+      return;
+    }
+
+    const nextTrashed = trashedPosts.filter((p) => p.slug !== slug);
+    setTrashedPosts(nextTrashed);
+    const updated = postList.filter((p) => p.slug !== slug);
+    updateParentAndState(updated);
+
+    try {
+      localStorage.setItem("anbu_trashed_posts", JSON.stringify(nextTrashed));
+    } catch (e) {}
+
+    purgeSlugStorage(slug);
+
+    // Sync deletion to Supabase and API
+    await deleteSupabasePost(slug).catch(console.error);
+    await fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
+
+    if (onDeletePost) {
+      onDeletePost(slug);
     }
   };
 
@@ -144,13 +257,45 @@ export default function WordPressPostList({
     }
   };
 
-  const handleBulkAction = (action: string) => {
-    if (action === "trash") {
-      const targets = postList.filter((p) => selectedPosts.includes(p.slug));
-      const remaining = postList.filter((p) => !selectedPosts.includes(p.slug));
+  const handleBulkAction = async (action: string) => {
+    if (selectedPosts.length === 0) return;
+
+    if (action === "trash" || action === "delete_permanently") {
+      const isPerm = action === "delete_permanently";
+      const actionText = isPerm ? "xóa vĩnh viễn" : "bỏ vào thùng rác";
+      if (!confirm(`Bạn có chắc chắn muốn ${actionText} ${selectedPosts.length} bài viết đã chọn?`)) {
+        return;
+      }
+
+      const slugsToDelete = [...selectedPosts];
+      const targets = postList.filter((p) => slugsToDelete.includes(p.slug));
+      const remaining = postList.filter((p) => !slugsToDelete.includes(p.slug));
+
       updateParentAndState(remaining);
-      setTrashedPosts([...targets, ...trashedPosts]);
+
+      if (!isPerm) {
+        const nextTrashed = [...targets, ...trashedPosts];
+        setTrashedPosts(nextTrashed);
+        try {
+          localStorage.setItem("anbu_trashed_posts", JSON.stringify(nextTrashed));
+        } catch (e) {}
+      }
+
       setSelectedPosts([]);
+
+      for (const slug of slugsToDelete) {
+        purgeSlugStorage(slug);
+        deleteSupabasePost(slug).catch(console.error);
+        if (onDeletePost) {
+          onDeletePost(slug);
+        }
+      }
+
+      fetch("/api/admin/posts", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slugs: slugsToDelete }),
+      }).catch(console.error);
     }
   };
 
@@ -226,6 +371,7 @@ export default function WordPressPostList({
           >
             <option value="">Hành động hàng loạt</option>
             <option value="trash">Bỏ vào thùng rác</option>
+            <option value="delete_permanently">Xóa vĩnh viễn</option>
           </select>
 
           <select
@@ -363,6 +509,8 @@ export default function WordPressPostList({
                           <button onClick={() => handleStartQuickEdit(post)} className="hover:underline text-[#646970]">Sửa nhanh</button>
                           <span className="text-[#a7aaad]">|</span>
                           <button onClick={() => moveToTrash(post.slug)} className="text-[#d63638] hover:underline">Thùng rác</button>
+                          <span className="text-[#a7aaad]">|</span>
+                          <button onClick={() => deletePermanently(post.slug)} className="text-[#b32d2e] font-semibold hover:underline">Xóa vĩnh viễn</button>
                           <span className="text-[#a7aaad]">|</span>
                           <a
                             href={`/${locale}/blog/${post.slug}`}

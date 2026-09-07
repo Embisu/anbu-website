@@ -12,6 +12,7 @@ import Link from "next/link";
 import { localePath } from "@/lib/utils";
 import EditorialMedia, { editorialImageForPostData } from "@/components/EditorialMedia";
 import { site, t } from "@/content/site";
+import { fetchSupabasePosts } from "@/lib/supabase";
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
@@ -34,7 +35,16 @@ import { breadcrumbLd, siteUrl } from "@/lib/seo";
 export default async function BlogPage({ params }: { params: { locale: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
-  const sorted = [...posts].sort((a, b) => {
+
+  const supaPosts = await fetchSupabasePosts().catch(() => []);
+  const allMergedPosts = [...supaPosts];
+  posts.forEach((p) => {
+    if (!allMergedPosts.some((ap) => ap.slug === p.slug)) {
+      allMergedPosts.push(p);
+    }
+  });
+
+  const sorted = [...allMergedPosts].sort((a, b) => {
     const featuredSlug = "lich-su-qua-trinh-phat-trien-esports-viet-nam";
     if (a.slug === featuredSlug) return -1;
     if (b.slug === featuredSlug) return 1;

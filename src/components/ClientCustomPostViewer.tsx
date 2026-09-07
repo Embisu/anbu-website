@@ -29,6 +29,19 @@ export default function ClientCustomPostViewer({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Check if explicitly marked deleted
+    try {
+      const savedDeleted = localStorage.getItem("anbu_deleted_slugs");
+      if (savedDeleted) {
+        const deletedArr: string[] = JSON.parse(savedDeleted);
+        if (deletedArr.includes(slug)) {
+          setPost(null);
+          setLoading(false);
+          return;
+        }
+      }
+    } catch (e) {}
+
     // 1. Try to find in localStorage (anbu_custom_posts or all posts saved by admin)
     try {
       const saved = localStorage.getItem("anbu_custom_posts");
@@ -36,9 +49,14 @@ export default function ClientCustomPostViewer({
         const customPosts: Post[] = JSON.parse(saved);
         const match = customPosts.find((p) => p.slug === slug);
         if (match) {
-          setPost(match);
-          setLoading(false);
-          return;
+          const hasMojibake =
+            /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(match.title?.vi || "") ||
+            /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(match.slug || "");
+          if (!hasMojibake) {
+            setPost(match);
+            setLoading(false);
+            return;
+          }
         }
       }
     } catch (e) {
@@ -55,6 +73,8 @@ export default function ClientCustomPostViewer({
           setPost(apiRes.value.post);
         } else if (supaRes.status === "fulfilled" && supaRes.value) {
           setPost(supaRes.value);
+        } else {
+          setPost(null);
         }
       })
       .catch((err) => console.error(err))

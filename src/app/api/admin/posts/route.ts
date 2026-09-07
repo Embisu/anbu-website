@@ -106,13 +106,31 @@ export async function DELETE(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const slug = searchParams.get("slug");
-    if (!slug) {
+    const slugsToDelete: string[] = [];
+
+    if (slug) {
+      slugsToDelete.push(slug);
+    } else {
+      try {
+        const body = await request.json();
+        if (Array.isArray(body?.slugs)) {
+          slugsToDelete.push(...body.slugs);
+        } else if (body?.slug) {
+          slugsToDelete.push(body.slug);
+        }
+      } catch {}
+    }
+
+    if (slugsToDelete.length === 0) {
       return NextResponse.json({ ok: false, error: "Missing slug parameter" }, { status: 400 });
     }
 
-    await deleteSupabasePost(slug);
-    inMemoryCustomPosts = inMemoryCustomPosts.filter((p) => p.slug !== slug);
-    return NextResponse.json({ ok: true, message: `Post ${slug} deleted` });
+    for (const s of slugsToDelete) {
+      await deleteSupabasePost(s);
+      inMemoryCustomPosts = inMemoryCustomPosts.filter((p) => p.slug !== s);
+    }
+
+    return NextResponse.json({ ok: true, deleted: slugsToDelete, message: `Deleted ${slugsToDelete.length} post(s)` });
   } catch (err: any) {
     return NextResponse.json({ ok: false, error: err.message }, { status: 500 });
   }

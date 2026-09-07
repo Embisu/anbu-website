@@ -10,6 +10,7 @@ import { posts } from "@/content/posts";
 import { processSteps } from "@/content/process";
 import { localePath } from "@/lib/utils";
 import { buildMetadata, faqLd } from "@/lib/seo";
+import { fetchSupabasePosts } from "@/lib/supabase";
 import JsonLd from "@/components/JsonLd";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
@@ -55,6 +56,14 @@ export default async function HomePage({ params }: { params: { locale: string } 
     { value: site.stats.years, label: dict.hero.stat3 },
     { value: site.stats.markets, label: dict.hero.stat4 },
   ];
+
+  const supaPosts = await fetchSupabasePosts().catch(() => []);
+  const allHomePosts = [...supaPosts];
+  posts.forEach((p) => {
+    if (!allHomePosts.some((ap) => ap.slug === p.slug)) {
+      allHomePosts.push(p);
+    }
+  });
 
   return (
     <>
@@ -378,7 +387,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
           </Reveal>
         </div>
         <div className="mt-8 sm:mt-12 grid gap-5 sm:gap-6 md:grid-cols-3">
-          {posts.slice(0, 3).map((post, i) => (
+          {allHomePosts.slice(0, 3).map((post, i) => (
             <Reveal key={post.slug} delay={i * 60} className={i === 2 ? "max-sm:hidden" : ""}>
               <PostCard post={post} locale={locale} readLabel={dict.blogSection.read} readTimeLabel={dict.blogSection.readTime} />
             </Reveal>

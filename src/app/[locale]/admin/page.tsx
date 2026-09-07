@@ -15,6 +15,7 @@ import UsersManager from "@/components/admin/UsersManager";
 import RankMathSiteAudit from "@/components/admin/RankMathSiteAudit";
 import SiteSettingsManager from "@/components/admin/SiteSettingsManager";
 import { calculatePostSeoScore } from "@/lib/seo-score";
+import { deleteSupabasePost } from "@/lib/supabase";
 
 export default function AdminDashboardPage({ params }: { params: { locale: string } }) {
   const locale = params.locale || "vi";
@@ -49,15 +50,34 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
       }
     }
 
+    const getDeletedSlugs = (): string[] => {
+      try {
+        const s = localStorage.getItem("anbu_deleted_slugs");
+        return s ? JSON.parse(s) : [];
+      } catch {
+        return [];
+      }
+    };
+
     try {
       const savedCustomPosts = localStorage.getItem("anbu_custom_posts");
       if (savedCustomPosts) {
         const custom: Post[] = JSON.parse(savedCustomPosts);
-        if (Array.isArray(custom) && custom.length > 0) {
-          // Merge: custom posts take precedence if same slug, else prepend
-          const combined = [...custom];
+        if (Array.isArray(custom)) {
+          const deleted = getDeletedSlugs();
+          const cleaned = custom.filter((p) => {
+            const hasMojibake =
+              /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(p.title?.vi || "") ||
+              /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(p.slug || "");
+            return !hasMojibake && !deleted.includes(p.slug);
+          });
+          if (cleaned.length !== custom.length) {
+            localStorage.setItem("anbu_custom_posts", JSON.stringify(cleaned));
+          }
+
+          const combined = [...cleaned];
           defaultPosts.forEach((dp) => {
-            if (!combined.some((cp) => cp.slug === dp.slug)) {
+            if (!combined.some((cp) => cp.slug === dp.slug) && !deleted.includes(dp.slug)) {
               combined.push(dp);
             }
           });
@@ -72,16 +92,16 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
     fetch("/api/admin/posts")
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (data?.ok && Array.isArray(data.posts) && data.posts.length > 0) {
-          setPostList((prev) => {
-            const merged = [...data.posts];
-            prev.forEach((p) => {
-              if (!merged.some((m: Post) => m.slug === p.slug)) {
-                merged.push(p);
-              }
-            });
-            return merged;
+        if (data?.ok && Array.isArray(data.posts)) {
+          const deleted = getDeletedSlugs();
+          const activeSupa = data.posts.filter((p: Post) => !deleted.includes(p.slug));
+          const merged = [...activeSupa];
+          defaultPosts.forEach((dp) => {
+            if (!merged.some((m: Post) => m.slug === dp.slug) && !deleted.includes(dp.slug)) {
+              merged.push(dp);
+            }
           });
+          setPostList(merged);
         }
       })
       .catch(() => {});
@@ -202,6 +222,34 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
       localStorage.setItem("anbu_custom_posts", JSON.stringify(customOnly));
     } catch (e) {
       console.error(e);
+    }
+  };
+
+  const handleDeletePost = async (slug: string) => {
+    setPostList((prev) => prev.filter((p) => p.slug !== slug));
+    try {
+      const savedCustom = localStorage.getItem("anbu_custom_posts");
+      if (savedCustom) {
+        const arr: Post[] = JSON.parse(savedCustom);
+        localStorage.setItem("anbu_custom_posts", JSON.stringify(arr.filter((p) => p.slug !== slug)));
+      }
+      const savedDeleted = localStorage.getItem("anbu_deleted_slugs");
+      const deletedArr: string[] = savedDeleted ? JSON.parse(savedDeleted) : [];
+      if (!deletedArr.includes(slug)) {
+        deletedArr.push(slug);
+        localStorage.setItem("anbu_deleted_slugs", JSON.stringify(deletedArr));
+      }
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new Event("anbu_posts_updated"));
+      }
+    } catch (e) {
+      console.error(e);
+    }
+    try {
+      await fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" });
+      await deleteSupabasePost(slug);
+    } catch (err) {
+      console.error("Delete post error:", err);
     }
   };
 
@@ -341,6 +389,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
               onEditPost={handleEditPost}
               onNewPost={handleNewPost}
               onUpdatePosts={handleUpdatePostList}
+              onDeletePost={handleDeletePost}
             />
           )}
 
