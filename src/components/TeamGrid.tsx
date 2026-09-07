@@ -31,7 +31,7 @@ function MemberCard({ member }: { member: Member }) {
 
 export default function TeamGrid() {
   return (
-    <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-7 lg:gap-x-4">
+    <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-6 lg:gap-x-5 max-w-6xl mx-auto">
       {team.map((m) => (
         <MemberCard key={m.slug} member={m} />
       ))}
