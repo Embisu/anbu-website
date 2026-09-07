@@ -19,10 +19,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return buildMetadata({
     locale,
     path: "/blog",
-    title: isVi ? "Kiến thức Marketing, KOL/KOC, Game & SEO" : "Marketing, KOL/KOC, Game & SEO Insights",
+    title: isVi
+      ? "Kiến thức Game Marketing, ASO, UA & Thị trường Game | ANBU Agency"
+      : "Game Marketing, ASO, UA & Industry Insights | ANBU Agency",
     description: isVi
-      ? "Kiến thức và xu hướng mới nhất về thương hiệu, marketing, SEO và công nghệ từ đội ngũ ANBU."
-      : "The latest knowledge and trends on branding, marketing, SEO and technology from the ANBU team.",
+      ? "Tổng hợp phân tích chuyên sâu về Game Marketing, User Acquisition, ASO, Booking KOL và xu hướng ngành game tại Việt Nam từ ANBU Agency."
+      : "In-depth insights on game marketing, user acquisition, ASO, creator campaigns and game industry trends in Vietnam by ANBU Agency.",
   });
 }
 

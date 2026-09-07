@@ -21,10 +21,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return buildMetadata({
     locale,
     path: "/about",
-    title: isVi ? "Về ANBU" : "About ANBU",
+    title: isVi
+      ? "Giới thiệu ANBU Agency | Biệt đội Game Marketing & Growth"
+      : "About ANBU Agency | Game Marketing & Growth Squad",
     description: isVi
-      ? "ANBU là đối tác tăng trưởng của bạn, kết hợp sáng tạo và dữ liệu để xây thương hiệu bền vững."
-      : "ANBU is your growth partner, combining creativity and data to build durable brands.",
+      ? "Tìm hiểu về ANBU Agency - đội đặc nhiệm Game Marketing, Community và KOL KOC thực chiến hàng đầu tại Việt Nam và Đông Nam Á."
+      : "Discover ANBU Agency - a dedicated game marketing, community and creator squad driving growth for top games in Vietnam and SEA.",
   });
 }
 
@@ -45,9 +47,11 @@ export default async function AboutPage({ params }: { params: { locale: string }
   const aboutLd = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: locale === "vi" ? "Về ANBU" : "About ANBU",
+    name: locale === "vi" ? "Giới thiệu ANBU Agency" : "About ANBU Agency",
     url: `${siteUrl}/${locale}/about`,
-    description: locale === "vi" ? "ANBU là đối tác tăng trưởng của bạn, kết hợp sáng tạo và dữ liệu để xây thương hiệu bền vững." : "ANBU is your growth partner, combining creativity and data to build durable brands.",
+    description: locale === "vi"
+      ? "Tìm hiểu về ANBU Agency - đội đặc nhiệm Game Marketing, Community và KOL KOC thực chiến hàng đầu tại Việt Nam và Đông Nam Á."
+      : "Discover ANBU Agency - a dedicated game marketing, community and creator squad driving growth for top games in Vietnam and SEA.",
     mainEntity: {
       "@type": "Organization",
       name: site.name,

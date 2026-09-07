@@ -14,10 +14,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return buildMetadata({
     locale,
     path: "/work",
-    title: isVi ? "Dự án Marketing Game, KOL/KOC & Thương hiệu" : "Game, KOL/KOC & Brand Marketing Work",
+    title: isVi
+      ? "Dự án Tiêu biểu & Case Studies Game Marketing | ANBU Agency"
+      : "Featured Case Studies & Game Marketing Work | ANBU Agency",
     description: isVi
-      ? "Các dự án tiêu biểu của ANBU trong game, ứng dụng, influencer và thương hiệu, từ chiến lược đến triển khai đa thị trường."
-      : "Selected ANBU work across games, apps, influencer and brand marketing, from strategy to multi-market execution.",
+      ? "Khám phá các chiến dịch Game Marketing, Booking KOL KOC, Ra mắt game và Vận hành cộng đồng thành công của ANBU Agency tại Việt Nam và Đông Nam Á."
+      : "Explore successful game marketing, KOL casting, game launch and community growth campaigns by ANBU Agency across Vietnam and SEA.",
   });
 }
 

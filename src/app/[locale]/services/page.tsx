@@ -21,10 +21,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return buildMetadata({
     locale,
     path: "/services",
-    title: isVi ? "Dịch vụ Marketing, KOL/KOC, Game & Thương hiệu" : "Marketing, KOL/KOC, Game & Brand Services",
+    title: isVi
+      ? "Dịch vụ Game Marketing, KOL KOC & Tăng trưởng | ANBU Agency"
+      : "Game Marketing, KOL KOC & Growth Services | ANBU Agency",
     description: isVi
-      ? "Chiến lược thương hiệu, sáng tạo, marketing hiệu suất, SEO, phát triển web và social, mọi năng lực trong một đội ngũ."
-      : "Brand strategy, creative, performance marketing, SEO, web development and social, every capability in one team.",
+      ? "Khám phá các dịch vụ tiếp thị game thực chiến của ANBU Agency: Influencer/KOL, User Acquisition, Esports, ASO, LiveOps và chiến lược phát hành tại Đông Nam Á."
+      : "Explore ANBU Agency's game marketing services: Influencer/KOL, User Acquisition, Esports, ASO, LiveOps and publishing support across Southeast Asia.",
   });
 }
 

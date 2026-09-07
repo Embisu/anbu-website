@@ -17,11 +17,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const isVi = locale === "vi";
   return buildMetadata({
     locale,
-    path: "/contact",
-    title: isVi ? "Liên hệ tư vấn chiến dịch Marketing" : "Book a Marketing Campaign Consultation",
+    title: isVi
+      ? "Liên hệ ANBU Agency | Tư vấn Chiến dịch Game Marketing"
+      : "Contact ANBU Agency | Game Marketing Consultation",
     description: isVi
-      ? "Liên hệ ANBU để bắt đầu dự án của bạn. Chúng tôi phản hồi trong vòng 24 giờ làm việc."
-      : "Contact ANBU to start your project. We reply within one business day.",
+      ? "Liên hệ ANBU Agency để trao đổi về chiến dịch Game Marketing, Booking KOL hoặc mở rộng thị trường game tại Việt Nam. Phản hồi trong 24h."
+      : "Contact ANBU Agency to discuss your game marketing, creator campaigns or Vietnam game market launch. Quick 24h response.",
   });
 }
 
