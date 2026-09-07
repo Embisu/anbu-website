@@ -79,6 +79,18 @@
         "type": "p"
       },
       {
+        "type": "image",
+        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1788785268687-images.jfif",
+        "alt": {
+          "vi": "Mô tả hình ảnh",
+          "en": "Image description"
+        },
+        "caption": {
+          "vi": "Chú thích hình ảnh",
+          "en": "Image caption"
+        }
+      },
+      {
         "type": "ul",
         "items": [
           {
@@ -303,6 +315,18 @@
           "en": "New paragraph content..."
         },
         "type": "p"
+      },
+      {
+        "type": "image",
+        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1788785321136-images--3-.jfif",
+        "alt": {
+          "vi": "Mô tả hình ảnh",
+          "en": "Image description"
+        },
+        "caption": {
+          "vi": "Chú thích hình ảnh",
+          "en": "Image caption"
+        }
       },
       {
         "type": "ul",
