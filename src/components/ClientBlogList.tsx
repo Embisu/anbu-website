@@ -14,11 +14,13 @@ export default function ClientBlogList({
   locale,
   dict,
   categorySlug,
+  excludeSlug,
 }: {
   initialPosts: Post[];
   locale: Locale;
   dict: Dictionary;
   categorySlug?: string;
+  excludeSlug?: string;
 }) {
   const [posts, setPosts] = useState<Post[]>(initialPosts);
 
@@ -38,6 +40,14 @@ export default function ClientBlogList({
       const title = p.title?.vi || "";
       const slug = p.slug || "";
       return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+    };
+
+    const filterPosts = (arr: Post[]) => {
+      let filtered = categorySlug ? arr.filter((p) => categoryForPost(p) === categorySlug) : arr;
+      if (excludeSlug) {
+        filtered = filtered.filter((p) => p.slug !== excludeSlug);
+      }
+      return filtered;
     };
 
     const syncBlogList = () => {
@@ -60,10 +70,7 @@ export default function ClientBlogList({
                   merged.push(ip);
                 }
               });
-              const filtered = categorySlug
-                ? merged.filter((p) => categoryForPost(p) === categorySlug)
-                : merged;
-              setPosts(filtered);
+              setPosts(filterPosts(merged));
             }
           }
         }
@@ -81,10 +88,7 @@ export default function ClientBlogList({
               merged.push(ip);
             }
           });
-          const filtered = categorySlug
-            ? merged.filter((p) => categoryForPost(p) === categorySlug)
-            : merged;
-          setPosts(filtered);
+          setPosts(filterPosts(merged));
         })
         .catch(() => {});
     };

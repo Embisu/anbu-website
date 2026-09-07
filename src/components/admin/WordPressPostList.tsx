@@ -86,11 +86,10 @@ export default function WordPressPostList({
     const clean = initialPosts.filter((p) => !isCorrupted(p) && !savedDeleted.includes(p.slug));
     setPostList(clean);
 
-    // Auto-purge any corrupted posts found
+    // Auto-purge any corrupted posts from local storage
     const corruptedPosts = initialPosts.filter(isCorrupted);
     corruptedPosts.forEach((cp) => {
       purgeSlugStorage(cp.slug);
-      deleteSupabasePost(cp.slug).catch(() => {});
     });
   }, [initialPosts]);
 

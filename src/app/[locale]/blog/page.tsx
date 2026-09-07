@@ -118,7 +118,7 @@ export default async function BlogPage({ params }: { params: { locale: string } 
             <span className="hidden text-sm text-navy-400 sm:block">{posts.length} {locale === "vi" ? "bài chuyên sâu" : "in-depth articles"}</span>
           </div>
         </Reveal>
-        <ClientBlogList initialPosts={sorted.slice(1)} locale={locale} dict={dict} />
+        <ClientBlogList initialPosts={sorted.slice(1)} locale={locale} dict={dict} excludeSlug={sorted[0]?.slug} />
       </section>
       <CTASection locale={locale} dict={dict} />
     </>

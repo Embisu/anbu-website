@@ -22,6 +22,8 @@ export async function generateMetadata({ params }: { params: { locale: string; c
 
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbLd } from "@/lib/seo";
+import { fetchSupabasePosts } from "@/lib/supabase";
+import type { Post } from "@/content/posts";
 
 import ClientBlogList from "@/components/ClientBlogList";
 
@@ -30,7 +32,24 @@ export default async function BlogCategoryPage({ params }: { params: { locale: s
   const category = blogCategories.find((item) => item.slug === params.category);
   if (!category) notFound();
   const dict = await getDictionary(locale);
-  const categoryPosts = posts.filter((post) => categoryForPost(post) === params.category).sort((a, b) => +new Date(b.date) - +new Date(a.date));
+
+  const isCorrupted = (p: Post) => {
+    const title = p.title?.vi || "";
+    const slug = p.slug || "";
+    return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+  };
+
+  const supaPosts = await fetchSupabasePosts().catch(() => []);
+  const allMergedPosts: Post[] = [...supaPosts.filter((p) => !isCorrupted(p))];
+  posts.forEach((p) => {
+    if (!allMergedPosts.some((ap) => ap.slug === p.slug) && !isCorrupted(p)) {
+      allMergedPosts.push(p);
+    }
+  });
+
+  const categoryPosts = allMergedPosts
+    .filter((post) => categoryForPost(post) === params.category)
+    .sort((a, b) => +new Date(b.date) - +new Date(a.date));
   const name = locale === "vi" ? category.vi : category.en;
   const [featured, ...remainingPosts] = categoryPosts;
 
@@ -50,7 +69,7 @@ export default async function BlogCategoryPage({ params }: { params: { locale: s
       <section className="container-x py-16 sm:py-20">
         {featured && <FeaturedPost post={featured} locale={locale} label={locale === "vi" ? "Bài đọc nổi bật" : "Featured read"} readLabel={dict.blogSection.read} />}
         <div className="mt-10">
-          <ClientBlogList initialPosts={remainingPosts} locale={locale} dict={dict} categorySlug={category.slug} />
+          <ClientBlogList initialPosts={remainingPosts} locale={locale} dict={dict} categorySlug={category.slug} excludeSlug={featured?.slug} />
         </div>
       </section>
     </>

@@ -450,740 +450,377 @@
   {
     "slug": "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi",
     "title": {
-      "vi": "ThÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng game ViÃÂ¡ÃÂ»ÃÂt Nam vÃÂÃÂ  nhÃÂ¡ÃÂ»ÃÂ¯ng thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi trong cÃÂÃÂ¡ch tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i",
-      "en": "The Vietnamese Gaming Market and Changes in How Players Are Engaged"
+      "en": "The Vietnamese Gaming Market and Changes in How Players Are Engaged",
+      "vi": "Thị trường game Việt Nam và những thay đổi trong cách tiếp cận người chơi"
     },
     "excerpt": {
-      "vi": "HoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng marketing game tÃÂ¡ÃÂºÃÂ¡i ViÃÂ¡ÃÂ»ÃÂt Nam ÃÂÃÂang thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi theo hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng tÃÂ¡ÃÂºÃÂ­p trung hÃÂÃÂ¡n vÃÂÃÂ o ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i, trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm thÃÂ¡ÃÂ»ÃÂ±c tÃÂ¡ÃÂºÃÂ¿ vÃÂÃÂ  xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng. Thay vÃÂÃÂ¬ chÃÂ¡ÃÂ»ÃÂ sÃÂ¡ÃÂ»ÃÂ­ dÃÂ¡ÃÂ»ÃÂ¥ng quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tÃÂÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂ nhÃÂ¡ÃÂºÃÂ­n biÃÂ¡ÃÂºÃÂ¿t, cÃÂÃÂ¡c chiÃÂ¡ÃÂºÃÂ¿n dÃÂ¡ÃÂ»ÃÂch hiÃÂ¡ÃÂ»ÃÂn nay cÃÂ¡ÃÂºÃÂ§n kÃÂ¡ÃÂºÃÂ¿t hÃÂ¡ÃÂ»ÃÂ£p nÃÂ¡ÃÂ»ÃÂi dung trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm game, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi sÃÂÃÂ¡ng tÃÂ¡ÃÂºÃÂ¡o nÃÂ¡ÃÂ»ÃÂi dung, mÃÂ¡ÃÂºÃÂ¡ng xÃÂÃÂ£ hÃÂ¡ÃÂ»ÃÂi vÃÂÃÂ  hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n ÃÂÃÂÃÂÃÂºng ÃÂÃÂÃÂ¡ÃÂ»ÃÂi tÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng vÃÂÃÂ  duy trÃÂÃÂ¬ sÃÂ¡ÃÂ»ÃÂ± quan tÃÂÃÂ¢m trong suÃÂ¡ÃÂ»ÃÂt vÃÂÃÂ²ng ÃÂÃÂÃÂ¡ÃÂ»ÃÂi cÃÂ¡ÃÂ»ÃÂ§a game.",
-      "en": "Game marketing in Vietnam is shifting toward a greater focus on players, real-world experiences, and community building. Rather than relying solely on advertising to boost brand awareness, todayÃÂ¢ÃÂÃÂs campaigns must integrate in-game content, content creators, social media, and community activities to reach the right audience and sustain engagement throughout the gameÃÂ¢ÃÂÃÂs lifecycle."
+      "en": "Game marketing in Vietnam is shifting toward a greater focus on players, real-world experiences, and community building. Rather than relying solely on advertising to boost brand awareness, today’s campaigns must integrate in-game content, content creators, social media, and community activities to reach the right audience and sustain engagement throughout the game’s lifecycle.",
+      "vi": "Hoạt động marketing game tại Việt Nam đang thay đổi theo hướng tập trung hơn vào người chơi, trải nghiệm thực tế và xây dựng cộng đồng. Thay vì chỉ sử dụng quảng cáo để tăng độ nhận biết, các chiến dịch hiện nay cần kết hợp nội dung trải nghiệm game, người sáng tạo nội dung, mạng xã hội và hoạt động cộng đồng để tiếp cận đúng đối tượng và duy trì sự quan tâm trong suốt vòng đời của game."
     },
     "category": {
-      "vi": "Marketing Game",
-      "en": "Game Marketing"
+      "en": "Game Marketing",
+      "vi": "Marketing Game"
     },
     "date": "2026-09-07",
     "readingTime": 12,
-    "cover": "/blog-covers/creative-testing-lab.jpg",
     "author": "ANBU Team",
     "color": "from-blue-600 to-indigo-600",
     "variant": "game",
-    "body": [
-      {
-        "type": "p",
-        "text": {
-          "vi": "ThÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng game ViÃÂ¡ÃÂ»ÃÂt Nam ÃÂÃÂang cÃÂÃÂ³ nhiÃÂ¡ÃÂ»ÃÂu thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi, ngÃÂÃÂ y cÃÂÃÂ ng cÃÂÃÂ³ nhiÃÂ¡ÃÂ»ÃÂu sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m mÃÂ¡ÃÂ»ÃÂi. NgÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i cÃÂÃÂ©ng cÃÂÃÂ³ nhiÃÂ¡ÃÂ»ÃÂu lÃÂ¡ÃÂ»ÃÂ±a chÃÂ¡ÃÂ»ÃÂn hÃÂÃÂ¡n, dÃÂ¡ÃÂ»ÃÂ dÃÂÃÂ ng tÃÂÃÂ¬m kiÃÂ¡ÃÂºÃÂ¿m thÃÂÃÂ´ng tin trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc khi tÃÂ¡ÃÂºÃÂ£i game vÃÂÃÂ  cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ chia sÃÂ¡ÃÂºÃÂ» trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm chÃÂÃÂ¡i game trong cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng.",
-          "en": "The Vietnamese gaming market is undergoing significant changes, with an increasing number of new titles being released. Players now have more options, can easily find information before downloading a game, and can share their gaming experiences within the community."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Theo bÃÂÃÂ¡o cÃÂÃÂ¡o Vietnam Mobile Gaming Year-in-Review 2025, ViÃÂ¡ÃÂ»ÃÂt Nam cÃÂÃÂ³ khoÃÂ¡ÃÂºÃÂ£ng 54 triÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i game mobile vÃÂÃÂ  doanh thu thÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng mobile game nÃÂÃÂm 2025 ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c ÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc tÃÂÃÂ­nh khoÃÂ¡ÃÂºÃÂ£ng 825 triÃÂ¡ÃÂ»ÃÂu USD, tÃÂÃÂng 9,16% so vÃÂ¡ÃÂ»ÃÂi nÃÂÃÂm trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc. MÃÂ¡ÃÂ»ÃÂt ÃÂÃÂiÃÂ¡ÃÂ»ÃÂm ÃÂÃÂÃÂÃÂ¡ng chÃÂÃÂº ÃÂÃÂ½ lÃÂÃÂ  thÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng ÃÂÃÂang dÃÂ¡ÃÂºÃÂ§n chuyÃÂ¡ÃÂ»ÃÂn tÃÂ¡ÃÂ»ÃÂ« viÃÂ¡ÃÂ»ÃÂc chÃÂ¡ÃÂ»ÃÂ quan tÃÂÃÂ¢m sÃÂ¡ÃÂ»ÃÂ lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i sang chÃÂ¡ÃÂºÃÂ¥t lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng vÃÂÃÂ  giÃÂÃÂ¡ trÃÂ¡ÃÂ»ÃÂ lÃÂÃÂ¢u dÃÂÃÂ i cÃÂ¡ÃÂ»ÃÂ§a ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i.",
-          "en": "According to the ÃÂ¢ÃÂÃÂVietnam Mobile Gaming Year-in-Review 2025ÃÂ¢ÃÂÃÂ report, Vietnam has approximately 54 million mobile gamers, and the mobile gaming market revenue in 2025 is estimated at approximately $825 million, an increase of 9.16% from the previous year. It is worth noting that the market is gradually shifting its focus from player numbers alone to player quality and long-term value."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "ÃÂ¡ÃÂ»ÃÂ gÃÂÃÂ³c ÃÂÃÂÃÂ¡ÃÂ»ÃÂ rÃÂ¡ÃÂ»ÃÂng hÃÂÃÂ¡n, DataReport ghi nhÃÂ¡ÃÂºÃÂ­n ViÃÂ¡ÃÂ»ÃÂt Nam cÃÂÃÂ³ 79,8 triÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi sÃÂ¡ÃÂ»ÃÂ­ dÃÂ¡ÃÂ»ÃÂ¥ng Internet vÃÂÃÂ o thÃÂÃÂ¡ng 1/2025, tÃÂÃÂ°ÃÂÃÂ¡ng ÃÂÃÂÃÂÃÂ°ÃÂÃÂ¡ng 78,8% dÃÂÃÂ¢n sÃÂ¡ÃÂ»ÃÂ. ÃÂÃÂiÃÂ¡ÃÂ»ÃÂu nÃÂÃÂ y tÃÂ¡ÃÂºÃÂ¡o ra mÃÂ¡ÃÂ»ÃÂt mÃÂÃÂ´i trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng thuÃÂ¡ÃÂºÃÂ­n lÃÂ¡ÃÂ»ÃÂ£i ÃÂÃÂÃÂ¡ÃÂ»ÃÂ game tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i thÃÂÃÂ´ng qua mÃÂ¡ÃÂºÃÂ¡ng xÃÂÃÂ£ hÃÂ¡ÃÂ»ÃÂi, video, cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng trÃÂ¡ÃÂ»ÃÂ±c tuyÃÂ¡ÃÂºÃÂ¿n vÃÂÃÂ  cÃÂÃÂ¡c nÃÂ¡ÃÂ»ÃÂn tÃÂ¡ÃÂºÃÂ£ng nÃÂ¡ÃÂ»ÃÂi dung sÃÂ¡ÃÂ»ÃÂ.",
-          "en": "From a broader perspective, DataReport reports that Vietnam had 79.8 million Internet users in January 2025, equivalent to 78.8% of the population. This creates a favorable environment for games to reach players through social media, video, online communities, and digital content platforms."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "NhÃÂ¡ÃÂ»ÃÂ¯ng con sÃÂ¡ÃÂ»ÃÂ trÃÂÃÂªn cho thÃÂ¡ÃÂºÃÂ¥y cÃÂÃÂ¡ hÃÂ¡ÃÂ»ÃÂi vÃÂ¡ÃÂºÃÂ«n rÃÂ¡ÃÂºÃÂ¥t lÃÂ¡ÃÂ»ÃÂn. Tuy nhiÃÂÃÂªn, cÃÂÃÂ³ nhiÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i khÃÂÃÂ´ng cÃÂÃÂ³ nghÃÂÃÂ©a lÃÂÃÂ  mÃÂ¡ÃÂ»ÃÂt game mÃÂ¡ÃÂ»ÃÂi sÃÂ¡ÃÂºÃÂ½ dÃÂ¡ÃÂ»ÃÂ dÃÂÃÂ ng thu hÃÂÃÂºt ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi dÃÂÃÂ¹ng. CÃÂÃÂ¡ch tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i cÃÂ¡ÃÂºÃÂ§n thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi theo hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng thÃÂ¡ÃÂ»ÃÂ±c tÃÂ¡ÃÂºÃÂ¿ hÃÂÃÂ¡n, tÃÂ¡ÃÂºÃÂ­p trung vÃÂÃÂ o trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm, nÃÂ¡ÃÂ»ÃÂi dung vÃÂÃÂ  cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng.",
-          "en": "These figures show that the opportunities are still vast. However, just because there are many players doesnÃÂ¢ÃÂÃÂt mean a new game will easily attract users. The approach to reaching players needs to shift toward a more practical one, focusing on experience, content, and community."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "HoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng marketing game tÃÂ¡ÃÂºÃÂ¡i ViÃÂ¡ÃÂ»ÃÂt Nam ÃÂÃÂang thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi theo hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng tÃÂ¡ÃÂºÃÂ­p trung hÃÂÃÂ¡n vÃÂÃÂ o ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i, trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm thÃÂ¡ÃÂ»ÃÂ±c tÃÂ¡ÃÂºÃÂ¿ vÃÂÃÂ  xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng. Thay vÃÂÃÂ¬ chÃÂ¡ÃÂ»ÃÂ sÃÂ¡ÃÂ»ÃÂ­ dÃÂ¡ÃÂ»ÃÂ¥ng quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tÃÂÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂ nhÃÂ¡ÃÂºÃÂ­n biÃÂ¡ÃÂºÃÂ¿t, cÃÂÃÂ¡c chiÃÂ¡ÃÂºÃÂ¿n dÃÂ¡ÃÂ»ÃÂch hiÃÂ¡ÃÂ»ÃÂn nay cÃÂ¡ÃÂºÃÂ§n kÃÂ¡ÃÂºÃÂ¿t hÃÂ¡ÃÂ»ÃÂ£p nÃÂ¡ÃÂ»ÃÂi dung trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm game, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi sÃÂÃÂ¡ng tÃÂ¡ÃÂºÃÂ¡o nÃÂ¡ÃÂ»ÃÂi dung, mÃÂ¡ÃÂºÃÂ¡ng xÃÂÃÂ£ hÃÂ¡ÃÂ»ÃÂi vÃÂÃÂ  hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n ÃÂÃÂÃÂÃÂºng ÃÂÃÂÃÂ¡ÃÂ»ÃÂi tÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng vÃÂÃÂ  duy trÃÂÃÂ¬ sÃÂ¡ÃÂ»ÃÂ± quan tÃÂÃÂ¢m trong suÃÂ¡ÃÂ»ÃÂt vÃÂÃÂ²ng ÃÂÃÂÃÂ¡ÃÂ»ÃÂi cÃÂ¡ÃÂ»ÃÂ§a game.",
-          "en": "Game marketing in Vietnam is shifting toward a greater focus on players, real-world experiences, and community building. Rather than relying solely on advertising to boost brand awareness, todayÃÂ¢ÃÂÃÂs campaigns must integrate in-game content, content creators, social media, and community activities to reach the right audience and sustain engagement throughout the gameÃÂ¢ÃÂÃÂs lifecycle."
-        }
-      },
-      {
-        "type": "h2",
-        "text": {
-          "vi": "1. ThÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng game tÃÂ¡ÃÂºÃÂ¡i ViÃÂ¡ÃÂ»ÃÂt Nam thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi nhÃÂÃÂ° thÃÂ¡ÃÂºÃÂ¿ nÃÂÃÂ o?",
-          "en": "1. How has the gaming market in Vietnam changed?"
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "NgÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i khÃÂÃÂ´ng cÃÂÃÂ²n dÃÂ¡ÃÂ»ÃÂ bÃÂ¡ÃÂ»ÃÂ thu hÃÂÃÂºt chÃÂ¡ÃÂ»ÃÂ bÃÂ¡ÃÂºÃÂ±ng quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o",
-            "en": "Players are no longer easily lured in by ads alone"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "MÃÂ¡ÃÂ»ÃÂt quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o ÃÂÃÂÃÂ¡ÃÂºÃÂ¹p cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ giÃÂÃÂºp game tÃÂ¡ÃÂºÃÂ¡o ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c sÃÂ¡ÃÂ»ÃÂ± chÃÂÃÂº ÃÂÃÂ½ ban ÃÂÃÂÃÂ¡ÃÂºÃÂ§u, nhÃÂÃÂ°ng chÃÂÃÂ°a ÃÂÃÂÃÂ¡ÃÂ»ÃÂ§ ÃÂÃÂÃÂ¡ÃÂ»ÃÂ khiÃÂ¡ÃÂºÃÂ¿n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i quyÃÂ¡ÃÂºÃÂ¿t ÃÂÃÂÃÂ¡ÃÂ»ÃÂnh tÃÂ¡ÃÂºÃÂ£i game. ",
-          "en": "A visually appealing ad can help a game grab initial attention, but itÃÂ¢ÃÂÃÂs not enough to convince players to download it. "
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "TrÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc khi chÃÂÃÂ¡i, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi dÃÂÃÂ¹ng thÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng muÃÂ¡ÃÂ»ÃÂn biÃÂ¡ÃÂºÃÂ¿t sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m cÃÂÃÂ³ gÃÂÃÂ¬ khÃÂÃÂ¡c biÃÂ¡ÃÂ»ÃÂt, cÃÂÃÂ¡ch chÃÂÃÂ¡i cÃÂÃÂ³ phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p vÃÂ¡ÃÂ»ÃÂi mÃÂÃÂ¬nh khÃÂÃÂ´ng, nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t nÃÂÃÂ o ÃÂÃÂÃÂÃÂ¡ng chÃÂÃÂº ÃÂÃÂ½ vÃÂÃÂ  nhÃÂ¡ÃÂ»ÃÂ¯ng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi ÃÂÃÂÃÂÃÂ£ chÃÂÃÂ¡i ÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂ¡ sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m nhÃÂÃÂ° thÃÂ¡ÃÂºÃÂ¿ nÃÂÃÂ o. VÃÂ¡ÃÂ»ÃÂi nhÃÂ¡ÃÂ»ÃÂ¯ng game ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c phÃÂÃÂ¡t triÃÂ¡ÃÂ»ÃÂn vÃÂÃÂ  cÃÂ¡ÃÂºÃÂ­p nhÃÂ¡ÃÂºÃÂ­t trong thÃÂ¡ÃÂ»ÃÂi gian dÃÂÃÂ i, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i cÃÂÃÂ²n quan tÃÂÃÂ¢m game cÃÂÃÂ³ thÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng xuyÃÂÃÂªn cÃÂ¡ÃÂºÃÂ­p nhÃÂ¡ÃÂºÃÂ­t, cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng vÃÂÃÂ  nÃÂ¡ÃÂ»ÃÂi dung game cÃÂÃÂ³ thu hÃÂÃÂºt ÃÂÃÂÃÂ¡ÃÂ»ÃÂ chÃÂÃÂ¡i lÃÂÃÂ¢u dÃÂÃÂ i hay khÃÂÃÂ´ng.",
-          "en": "Before playing, users typically want to know what makes the game unique, whether the gameplay suits them, which characters stand out, and what other players think of it. For games that have been in development and receiving updates for a long time, players are also interested in whether the game is updated frequently, whether the community is active, and whether the gameÃÂ¢ÃÂÃÂs content is engaging enough to keep them playing for the long term."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "VÃÂÃÂ¬ vÃÂ¡ÃÂºÃÂ­y, thay vÃÂÃÂ¬ chÃÂ¡ÃÂ»ÃÂ truyÃÂ¡ÃÂ»ÃÂn tÃÂ¡ÃÂºÃÂ£i thÃÂÃÂ´ng ÃÂÃÂiÃÂ¡ÃÂ»ÃÂp ÃÂÃÂÃÂÃÂ¡n giÃÂ¡ÃÂºÃÂ£n nhÃÂÃÂ° Game mÃÂ¡ÃÂ»ÃÂi ra mÃÂ¡ÃÂºÃÂ¯t, nÃÂ¡ÃÂ»ÃÂi dung marketing nÃÂÃÂªn giÃÂÃÂºp ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i hiÃÂ¡ÃÂ»ÃÂu rÃÂÃÂµ hÃÂÃÂ¡n vÃÂ¡ÃÂ»ÃÂ sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m hÃÂÃÂ¡n. CÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ lÃÂÃÂªn ÃÂÃÂ½ tÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng nÃÂ¡ÃÂ»ÃÂi dung vÃÂ¡ÃÂ»ÃÂ video chÃÂÃÂ¡i thÃÂ¡ÃÂ»ÃÂ­, phÃÂÃÂ¢n tÃÂÃÂ­ch nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t, hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng dÃÂ¡ÃÂºÃÂ«n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi mÃÂ¡ÃÂ»ÃÂi hoÃÂ¡ÃÂºÃÂ·c buÃÂ¡ÃÂ»ÃÂi livestream. NhÃÂ¡ÃÂ»ÃÂ¯ng nÃÂ¡ÃÂ»ÃÂi dung nÃÂÃÂ y cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ cung cÃÂ¡ÃÂºÃÂ¥p nhiÃÂ¡ÃÂ»ÃÂu thÃÂÃÂ´ng tin hÃÂ¡ÃÂ»ÃÂ¯u ÃÂÃÂ­ch hÃÂÃÂ¡n mÃÂ¡ÃÂ»ÃÂt quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o chÃÂ¡ÃÂ»ÃÂ tÃÂ¡ÃÂºÃÂ­p trung vÃÂÃÂ o hÃÂÃÂ¬nh ÃÂ¡ÃÂºÃÂ£nh ÃÂÃÂÃÂ¡ÃÂºÃÂ¹p.",
-          "en": "Therefore, instead of simply conveying a message like ÃÂ¢ÃÂÃÂNew game released,ÃÂ¢ÃÂÃÂ marketing content should help players better understand the product. You could develop content ideas such as gameplay videos, character analyses, beginnerÃÂ¢ÃÂÃÂs guides, or live streams. This type of content can provide more useful information than an ad that focuses solely on attractive visuals."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "ÃÂÃÂiÃÂ¡ÃÂ»ÃÂm quan trÃÂ¡ÃÂ»ÃÂng lÃÂÃÂ  quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o tÃÂ¡ÃÂºÃÂ¡o nÃÂÃÂªn sÃÂ¡ÃÂ»ÃÂ± tÃÂÃÂ² mÃÂÃÂ², cÃÂÃÂ²n nÃÂ¡ÃÂ»ÃÂi dung tiÃÂ¡ÃÂºÃÂ¿p theo phÃÂ¡ÃÂºÃÂ£i giÃÂÃÂºp ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i cÃÂÃÂ³ ÃÂÃÂÃÂ¡ÃÂ»ÃÂ§ thÃÂÃÂ´ng tin ÃÂÃÂÃÂ¡ÃÂ»ÃÂ ÃÂÃÂÃÂÃÂ°a ra quyÃÂ¡ÃÂºÃÂ¿t ÃÂÃÂÃÂ¡ÃÂ»ÃÂnh.",
-          "en": "The key point is that ads spark curiosity, while the follow-up content must give players enough information to make an informed decision."
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "TÃÂ¡ÃÂ»ÃÂ« viÃÂ¡ÃÂ»ÃÂc tÃÂÃÂ¬m nhiÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i thÃÂÃÂ nh tÃÂÃÂ¬m ÃÂÃÂÃÂÃÂºng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i",
-            "en": "From Finding Many Players to Finding the Right Players"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "KhÃÂÃÂ´ng phÃÂ¡ÃÂºÃÂ£i tÃÂ¡ÃÂºÃÂ¥t cÃÂ¡ÃÂºÃÂ£ nhÃÂ¡ÃÂ»ÃÂ¯ng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi nhÃÂÃÂ¬n thÃÂ¡ÃÂºÃÂ¥y quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o ÃÂÃÂÃÂ¡ÃÂ»ÃÂu lÃÂÃÂ  ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p. MÃÂ¡ÃÂ»ÃÂi thÃÂ¡ÃÂ»ÃÂ loÃÂ¡ÃÂºÃÂ¡i game lÃÂ¡ÃÂºÃÂ¡i cÃÂÃÂ³ mÃÂ¡ÃÂ»ÃÂt nhÃÂÃÂ³m ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi quan tÃÂÃÂ¢m khÃÂÃÂ¡c nhau. Game Gacha cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ thu hÃÂÃÂºt nhÃÂ¡ÃÂ»ÃÂ¯ng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi thÃÂÃÂ­ch sÃÂÃÂ°u tÃÂ¡ÃÂºÃÂ§m nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t, xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng ÃÂÃÂÃÂ¡ÃÂ»ÃÂi hÃÂÃÂ¬nh vÃÂÃÂ  theo dÃÂÃÂµi cÃÂ¡ÃÂ»ÃÂt truyÃÂ¡ÃÂ»ÃÂn mÃÂ¡ÃÂ»ÃÂi, trong khi game chiÃÂ¡ÃÂºÃÂ¿n thuÃÂ¡ÃÂºÃÂ­t - bÃÂ¡ÃÂºÃÂ¯n sÃÂÃÂºng lÃÂ¡ÃÂºÃÂ¡i phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p hÃÂÃÂ¡n vÃÂ¡ÃÂ»ÃÂi nhÃÂ¡ÃÂ»ÃÂ¯ng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi yÃÂÃÂªu thÃÂÃÂ­ch tÃÂÃÂ­nh cÃÂ¡ÃÂºÃÂ¡nh tranh vÃÂÃÂ  chiÃÂ¡ÃÂºÃÂ¿n thuÃÂ¡ÃÂºÃÂ­t.",
-          "en": "Not everyone who sees an ad is the right fit. Each game genre attracts a different audience. Gacha games may appeal to people who enjoy collecting characters, building teams, and following new storylines, while strategy and shooter games are better suited for those who love competition and tactics."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "VÃÂÃÂ¬ vÃÂ¡ÃÂºÃÂ­y, trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc khi xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng chiÃÂ¡ÃÂºÃÂ¿n dÃÂ¡ÃÂ»ÃÂch phÃÂ¡ÃÂºÃÂ£i xÃÂÃÂ¡c ÃÂÃÂÃÂ¡ÃÂ»ÃÂnh ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c nhÃÂÃÂ³m ÃÂÃÂÃÂ¡ÃÂ»ÃÂi tÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng cÃÂÃÂ³ khÃÂ¡ÃÂºÃÂ£ nÃÂÃÂng quan tÃÂÃÂ¢m ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m. TÃÂ¡ÃÂ»ÃÂ« ÃÂÃÂÃÂÃÂ³ mÃÂ¡ÃÂ»ÃÂi quyÃÂ¡ÃÂºÃÂ¿t ÃÂÃÂÃÂ¡ÃÂ»ÃÂnh ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n viÃÂ¡ÃÂ»ÃÂc sÃÂ¡ÃÂ»ÃÂ­ dÃÂ¡ÃÂ»ÃÂ¥ng nÃÂ¡ÃÂ»ÃÂn tÃÂ¡ÃÂºÃÂ£ng, loÃÂ¡ÃÂºÃÂ¡i nÃÂ¡ÃÂ»ÃÂi dung, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi sÃÂÃÂ¡ng tÃÂ¡ÃÂºÃÂ¡o vÃÂÃÂ  cÃÂÃÂ¡ch tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n.",
-          "en": "Therefore, before developing a campaign, you must identify the target audience that is likely to be interested in the product. Only then can you decide on the platform, content type, creators, and approach."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "ÃÂÃÂiÃÂ¡ÃÂ»ÃÂu nÃÂÃÂ y ÃÂÃÂÃÂ¡ÃÂºÃÂ·c biÃÂ¡ÃÂ»ÃÂt quan trÃÂ¡ÃÂ»ÃÂng khi chi phÃÂÃÂ­ ÃÂÃÂÃÂ¡ÃÂ»ÃÂ thu hÃÂÃÂºt ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i cÃÂ¡ÃÂºÃÂ§n ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c sÃÂ¡ÃÂ»ÃÂ­ dÃÂ¡ÃÂ»ÃÂ¥ng hiÃÂ¡ÃÂ»ÃÂu quÃÂ¡ÃÂºÃÂ£. MÃÂ¡ÃÂ»ÃÂt chiÃÂ¡ÃÂºÃÂ¿n dÃÂ¡ÃÂ»ÃÂch cÃÂÃÂ³ lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n lÃÂ¡ÃÂ»ÃÂn nhÃÂÃÂ°ng phÃÂ¡ÃÂºÃÂ§n lÃÂ¡ÃÂ»ÃÂn ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi xem khÃÂÃÂ´ng phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p vÃÂ¡ÃÂ»ÃÂi game chÃÂÃÂ°a chÃÂ¡ÃÂºÃÂ¯c mang lÃÂ¡ÃÂºÃÂ¡i giÃÂÃÂ¡ trÃÂ¡ÃÂ»ÃÂ bÃÂ¡ÃÂºÃÂ±ng mÃÂ¡ÃÂ»ÃÂt chiÃÂ¡ÃÂºÃÂ¿n dÃÂ¡ÃÂ»ÃÂch nhÃÂ¡ÃÂ»ÃÂ hÃÂÃÂ¡n nhÃÂÃÂ° tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n ÃÂÃÂÃÂÃÂºng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng.",
-          "en": "This is particularly important when the budget for player acquisition must be used effectively. A campaign with a large reach, but where the majority of the audience isnÃÂ¢ÃÂÃÂt a good fit for the game, may not necessarily deliver as much value as a smaller campaign that targets the right community."
-        }
-      },
-      {
-        "type": "h2",
-        "text": {
-          "vi": "2. CÃÂÃÂ¡ch tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i ÃÂÃÂang thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi",
-          "en": "2. The way we engage with players is changing"
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "NgÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i muÃÂ¡ÃÂ»ÃÂn xem trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm thÃÂ¡ÃÂºÃÂ­t",
-            "en": "Players want to see the real experience"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "NgÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i ngÃÂÃÂ y cÃÂÃÂ ng quan tÃÂÃÂ¢m ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n viÃÂ¡ÃÂ»ÃÂc game thÃÂ¡ÃÂ»ÃÂ±c sÃÂ¡ÃÂ»ÃÂ± chÃÂÃÂ¡i nhÃÂÃÂ° thÃÂ¡ÃÂºÃÂ¿ nÃÂÃÂ o, thay vÃÂÃÂ¬ chÃÂ¡ÃÂ»ÃÂ xem ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c nhÃÂ¡ÃÂ»ÃÂ¯ng hÃÂÃÂ¬nh ÃÂ¡ÃÂºÃÂ£nh ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c chuÃÂ¡ÃÂºÃÂ©n bÃÂ¡ÃÂ»ÃÂ sÃÂ¡ÃÂºÃÂµn trong trailer.",
-          "en": "Players are increasingly interested in how a game actually plays, rather than just seeing pre-rendered footage in trailers."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "MÃÂ¡ÃÂ»ÃÂt ÃÂÃÂoÃÂ¡ÃÂºÃÂ¡n trailer cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ cho thÃÂ¡ÃÂºÃÂ¥y ÃÂÃÂÃÂ¡ÃÂ»ÃÂ hoÃÂ¡ÃÂºÃÂ¡, nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t vÃÂÃÂ  nhÃÂ¡ÃÂ»ÃÂ¯ng cÃÂÃÂ¡ch nÃÂ¡ÃÂ»ÃÂi bÃÂ¡ÃÂºÃÂ­t, nhÃÂÃÂ°ng thÃÂ¡ÃÂ»ÃÂ hiÃÂ¡ÃÂ»ÃÂn ÃÂÃÂÃÂ¡ÃÂºÃÂ§y ÃÂÃÂÃÂ¡ÃÂ»ÃÂ§ trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm khi chÃÂÃÂ¡i. ÃÂÃÂÃÂÃÂ³ lÃÂÃÂ  lÃÂÃÂ½ do cÃÂÃÂ¡c nÃÂ¡ÃÂ»ÃÂi dung nhÃÂÃÂ° video chÃÂÃÂ¡i thÃÂ¡ÃÂ»ÃÂ­, livestream, hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng dÃÂ¡ÃÂºÃÂ«n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi mÃÂ¡ÃÂ»ÃÂi, ÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂ¡ nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t, phÃÂÃÂ¢n tÃÂÃÂ­ch ÃÂÃÂÃÂ¡ÃÂ»ÃÂi hÃÂÃÂ¬nh vÃÂÃÂ  chia sÃÂ¡ÃÂºÃÂ» kinh nghiÃÂ¡ÃÂ»ÃÂm cÃÂÃÂ³ vai trÃÂÃÂ² quan trÃÂ¡ÃÂ»ÃÂng.",
-          "en": "A trailer may showcase the graphics, characters, and standout features, but it doesnÃÂ¢ÃÂÃÂt fully capture the gameplay experience. ThatÃÂ¢ÃÂÃÂs why content such as gameplay videos, livestreams, beginnerÃÂ¢ÃÂÃÂs guides, character reviews, team composition analyses, and tips and tricks plays such an important role."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "NhÃÂ¡ÃÂ»ÃÂ¯ng nÃÂ¡ÃÂ»ÃÂi dung nÃÂÃÂ y giÃÂÃÂºp ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i hÃÂÃÂ¬nh dung rÃÂÃÂµ hÃÂÃÂ¡n vÃÂ¡ÃÂ»ÃÂ sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m. ÃÂÃÂÃÂ¡ÃÂ»ÃÂng thÃÂ¡ÃÂ»ÃÂi, viÃÂ¡ÃÂ»ÃÂc thÃÂ¡ÃÂ»ÃÂ hiÃÂ¡ÃÂ»ÃÂn trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm thÃÂ¡ÃÂ»ÃÂ±c tÃÂ¡ÃÂºÃÂ¿ cÃÂÃÂ©ng hÃÂ¡ÃÂºÃÂ¡n chÃÂ¡ÃÂºÃÂ¿ mÃÂ¡ÃÂ»ÃÂt sÃÂ¡ÃÂ»ÃÂ vÃÂ¡ÃÂºÃÂ¥n ÃÂÃÂÃÂ¡ÃÂ»ÃÂ nhÃÂÃÂ° quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o phÃÂÃÂ³ng ÃÂÃÂÃÂ¡ÃÂºÃÂ¡i nhÃÂÃÂ°ng trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm thÃÂ¡ÃÂ»ÃÂ±c tÃÂ¡ÃÂºÃÂ¿ khÃÂÃÂ´ng nhÃÂÃÂ° ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i kÃÂ¡ÃÂ»ÃÂ³ vÃÂ¡ÃÂ»ÃÂng. Marketing hiÃÂ¡ÃÂ»ÃÂu quÃÂ¡ÃÂºÃÂ£ khÃÂÃÂ´ng chÃÂ¡ÃÂ»ÃÂ khiÃÂ¡ÃÂºÃÂ¿n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i muÃÂ¡ÃÂ»ÃÂn tÃÂ¡ÃÂºÃÂ£i game mÃÂÃÂ  cÃÂÃÂ²n giÃÂÃÂºp hÃÂ¡ÃÂ»ÃÂ hiÃÂ¡ÃÂ»ÃÂu rÃÂÃÂµ mÃÂÃÂ¬nh sÃÂ¡ÃÂºÃÂ½ nhÃÂ¡ÃÂºÃÂ­n ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c gÃÂÃÂ¬ sau khi tÃÂ¡ÃÂºÃÂ£i.",
-          "en": "This content helps players get a clearer picture of the product. At the same time, showcasing the actual experience helps avoid issues such as exaggerated advertising that doesnÃÂ¢ÃÂÃÂt match playersÃÂ¢ÃÂÃÂ expectations. Effective marketing not only makes players want to download the game but also helps them understand exactly what theyÃÂ¢ÃÂÃÂll get after downloading it."
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "NgÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi sÃÂÃÂ¡ng tÃÂ¡ÃÂºÃÂ¡o nÃÂ¡ÃÂ»ÃÂi dung trÃÂ¡ÃÂ»ÃÂ thÃÂÃÂ nh cÃÂ¡ÃÂºÃÂ§u nÃÂ¡ÃÂ»ÃÂi vÃÂ¡ÃÂ»ÃÂi ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i",
-            "en": "Content creators serve as a bridge to players"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "LÃÂ¡ÃÂ»ÃÂ±a chÃÂ¡ÃÂ»ÃÂn ÃÂÃÂÃÂÃÂºng Streamer, TikToker vÃÂÃÂ  YouTuber vÃÂ¡ÃÂ»ÃÂ game khÃÂÃÂ´ng chÃÂ¡ÃÂ»ÃÂ giÃÂÃÂºp ÃÂÃÂÃÂÃÂ°a thÃÂÃÂ´ng tin ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng mÃÂÃÂ  cÃÂÃÂ²n mang ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n mÃÂ¡ÃÂ»ÃÂt gÃÂÃÂ³c nhÃÂÃÂ¬n gÃÂ¡ÃÂºÃÂ§n gÃÂÃÂ©i hÃÂÃÂ¡n vÃÂ¡ÃÂ»ÃÂ sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m. ThÃÂÃÂ´ng qua viÃÂ¡ÃÂ»ÃÂc chÃÂÃÂ¡i thÃÂ¡ÃÂ»ÃÂ­, chia sÃÂ¡ÃÂºÃÂ» cÃÂ¡ÃÂºÃÂ£m nhÃÂ¡ÃÂºÃÂ­n, phÃÂÃÂ¢n tÃÂÃÂ­ch nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t, livestream hoÃÂ¡ÃÂºÃÂ·c tham gia cÃÂÃÂ¡c hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng cÃÂ¡ÃÂ»ÃÂ§a game, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi sÃÂÃÂ¡ng tÃÂ¡ÃÂºÃÂ¡o cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ giÃÂÃÂºp ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi xem hiÃÂ¡ÃÂ»ÃÂu sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m theo cÃÂÃÂ¡ch tÃÂ¡ÃÂ»ÃÂ± nhiÃÂÃÂªn hÃÂÃÂ¡n.",
-          "en": "Choosing the right gaming streamers, TikTokers, and YouTubers not only helps get information out to the community but also provides a more relatable perspective on the product. By playing the game, sharing their impressions, analyzing characters, livestreaming, or participating in in-game activities, creators can help viewers understand the product in a more natural way."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Tuy nhiÃÂÃÂªn, sÃÂ¡ÃÂ»ÃÂ lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi theo dÃÂÃÂµi khÃÂÃÂ´ng nÃÂÃÂªn lÃÂÃÂ  tiÃÂÃÂªu chÃÂÃÂ­ duy nhÃÂ¡ÃÂºÃÂ¥t. MÃÂ¡ÃÂ»ÃÂt ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi cÃÂÃÂ³ sÃÂ¡ÃÂ»ÃÂ lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng theo dÃÂÃÂµi nhÃÂ¡ÃÂ»ÃÂ nhÃÂÃÂ°ng phÃÂ¡ÃÂºÃÂ§n lÃÂ¡ÃÂ»ÃÂn ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi xem yÃÂÃÂªu thÃÂÃÂ­ch ÃÂÃÂÃÂÃÂºng thÃÂ¡ÃÂ»ÃÂ loÃÂ¡ÃÂºÃÂ¡i game ÃÂÃÂang quÃÂ¡ÃÂºÃÂ£ng bÃÂÃÂ¡ vÃÂÃÂ  cÃÂÃÂ³ mÃÂ¡ÃÂ»ÃÂ©c ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tÃÂÃÂ°ÃÂÃÂ¡ng tÃÂÃÂ¡c tÃÂ¡ÃÂ»ÃÂt ÃÂÃÂÃÂÃÂ´i khi phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p hÃÂÃÂ¡n mÃÂ¡ÃÂ»ÃÂt ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi cÃÂÃÂ³ lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng theo dÃÂÃÂµi lÃÂ¡ÃÂ»ÃÂn nhÃÂÃÂ°ng ÃÂÃÂ­t liÃÂÃÂªn quan ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m.",
-          "en": "However, the number of followers should not be the only criterion. A creator with a small followingÃÂ¢ÃÂÃÂbut whose audience largely enjoys the specific genre of games being promoted and engages well with the contentÃÂ¢ÃÂÃÂis sometimes a better fit than one with a large following but little relevance to the product."
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "Khai thÃÂÃÂ¡c cÃÂÃÂ¡c chÃÂ¡ÃÂ»ÃÂ§ ÃÂÃÂÃÂ¡ÃÂ»ÃÂ trong cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂ phÃÂÃÂ¡t triÃÂ¡ÃÂ»ÃÂn thÃÂÃÂ nh nÃÂ¡ÃÂ»ÃÂi dung",
-            "en": "Leverage community topics to develop content"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Khi tÃÂÃÂ¬m hiÃÂ¡ÃÂ»ÃÂu mÃÂ¡ÃÂ»ÃÂt game mÃÂ¡ÃÂ»ÃÂi, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i thÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng muÃÂ¡ÃÂ»ÃÂn biÃÂ¡ÃÂºÃÂ¿t nhÃÂ¡ÃÂ»ÃÂ¯ng ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi khÃÂÃÂ¡c ÃÂÃÂang nÃÂÃÂ³i gÃÂÃÂ¬. HÃÂ¡ÃÂ»ÃÂ cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ muÃÂ¡ÃÂ»ÃÂn biÃÂ¡ÃÂºÃÂ¿t nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t, cÃÂÃÂ¡ch chÃÂÃÂ¡i, ÃÂÃÂÃÂ¡ÃÂ»ÃÂi hÃÂÃÂ¬nh, sÃÂ¡ÃÂ»ÃÂ± kiÃÂ¡ÃÂ»ÃÂn, bÃÂ¡ÃÂºÃÂ£n cÃÂ¡ÃÂºÃÂ­p nhÃÂ¡ÃÂºÃÂ­t hoÃÂ¡ÃÂºÃÂ·c nhÃÂ¡ÃÂ»ÃÂ¯ng vÃÂ¡ÃÂºÃÂ¥n ÃÂÃÂÃÂ¡ÃÂ»ÃÂ mÃÂÃÂ  ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i mÃÂ¡ÃÂ»ÃÂi thÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng gÃÂ¡ÃÂºÃÂ·p. ÃÂÃÂiÃÂ¡ÃÂ»ÃÂu nÃÂÃÂ y khiÃÂ¡ÃÂºÃÂ¿n cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng trÃÂ¡ÃÂ»ÃÂ thÃÂÃÂ nh mÃÂ¡ÃÂ»ÃÂt phÃÂ¡ÃÂºÃÂ§n quan trÃÂ¡ÃÂ»ÃÂng trong hÃÂÃÂ nh trÃÂÃÂ¬nh cÃÂ¡ÃÂ»ÃÂ§a ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i.",
-          "en": "When exploring a new game, players often want to know what others are saying. They may want to learn about characters, gameplay, team compositions, events, updates, or common issues faced by new players. This makes the community an important part of a playerÃÂ¢ÃÂÃÂs journey."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "MÃÂ¡ÃÂ»ÃÂt ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ biÃÂ¡ÃÂºÃÂ¿t ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n game qua quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o nhÃÂÃÂ°ng nhÃÂ¡ÃÂ»ÃÂ vÃÂÃÂ o viÃÂ¡ÃÂ»ÃÂc tham gia nhÃÂÃÂ³m cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng, tÃÂÃÂ¬m hiÃÂ¡ÃÂ»ÃÂu qua nhÃÂ¡ÃÂ»ÃÂ¯ng chia sÃÂ¡ÃÂºÃÂ» cÃÂ¡ÃÂ»ÃÂ§a ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi ÃÂÃÂang chÃÂÃÂ¡i vÃÂÃÂ  thÃÂ¡ÃÂºÃÂ£o luÃÂ¡ÃÂºÃÂ­n tÃÂÃÂ­ch cÃÂ¡ÃÂ»ÃÂ±c, hÃÂ¡ÃÂ»ÃÂ cÃÂÃÂ³ thÃÂÃÂªm lÃÂÃÂ½ do ÃÂÃÂÃÂ¡ÃÂ»ÃÂ trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm. NgÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c lÃÂ¡ÃÂºÃÂ¡i, nÃÂ¡ÃÂºÃÂ¿u phÃÂ¡ÃÂºÃÂ§n lÃÂ¡ÃÂ»ÃÂn nÃÂ¡ÃÂ»ÃÂi dung hÃÂ¡ÃÂ»ÃÂ tÃÂÃÂ¬m thÃÂ¡ÃÂºÃÂ¥y lÃÂÃÂ  nhÃÂ¡ÃÂ»ÃÂ¯ng phÃÂ¡ÃÂºÃÂ£n hÃÂ¡ÃÂ»ÃÂi tiÃÂÃÂªu cÃÂ¡ÃÂ»ÃÂ±c mÃÂÃÂ  khÃÂÃÂ´ng ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c giÃÂ¡ÃÂºÃÂ£i ÃÂÃÂÃÂÃÂ¡p, quyÃÂ¡ÃÂºÃÂ¿t ÃÂÃÂÃÂ¡ÃÂ»ÃÂnh tÃÂ¡ÃÂºÃÂ£i game cÃÂÃÂ©ng cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ bÃÂ¡ÃÂ»ÃÂ ÃÂ¡ÃÂºÃÂ£nh hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng.",
-          "en": "Someone might learn about a game through an ad, but by joining a community group, reading posts from current players, and engaging in active discussions, they gain more reasons to try it out. Conversely, if most of the content they encounter consists of negative feedback that goes unaddressed, their decision to download the game may be affected."
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "NhÃÂ¡ÃÂ»ÃÂ¯ng tranh luÃÂ¡ÃÂºÃÂ­n cÃÂ¡ÃÂ»ÃÂ§a ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i cÃÂÃÂ©ng cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ trÃÂ¡ÃÂ»ÃÂ thÃÂÃÂ nh nÃÂ¡ÃÂ»ÃÂi dung",
-            "en": "Player discussions can also become content"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "MÃÂ¡ÃÂ»ÃÂt cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng game hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng tÃÂ¡ÃÂ»ÃÂt luÃÂÃÂ´n cÃÂÃÂ³ nhÃÂ¡ÃÂ»ÃÂ¯ng chÃÂ¡ÃÂ»ÃÂ§ ÃÂÃÂÃÂ¡ÃÂ»ÃÂ ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i quan tÃÂÃÂ¢m vÃÂÃÂ  tranh luÃÂ¡ÃÂºÃÂ­n. ThÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng lÃÂÃÂ  cÃÂÃÂ¢u hÃÂ¡ÃÂ»ÃÂi vÃÂ¡ÃÂ»ÃÂ nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t mÃÂ¡ÃÂºÃÂ¡nh nhÃÂ¡ÃÂºÃÂ¥t, ÃÂÃÂÃÂ¡ÃÂ»ÃÂi hÃÂÃÂ¬nh hiÃÂ¡ÃÂ»ÃÂu quÃÂ¡ÃÂºÃÂ£, cÃÂÃÂ¡ch sÃÂ¡ÃÂ»ÃÂ­ dÃÂ¡ÃÂ»ÃÂ¥ng tÃÂÃÂ i nguyÃÂÃÂªn hay nhÃÂ¡ÃÂ»ÃÂ¯ng thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi trong bÃÂ¡ÃÂºÃÂ£n cÃÂ¡ÃÂºÃÂ­p nhÃÂ¡ÃÂºÃÂ­t mÃÂ¡ÃÂ»ÃÂi.",
-          "en": "A thriving gaming community always has topics that players are interested in and debate. These often include questions about the strongest characters, effective team compositions, how to use resources, or changes in the latest update."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "NhÃÂ¡ÃÂ»ÃÂ¯ng chÃÂ¡ÃÂ»ÃÂ§ ÃÂÃÂÃÂ¡ÃÂ»ÃÂ nÃÂÃÂ y cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ trÃÂ¡ÃÂ»ÃÂ thÃÂÃÂ nh ÃÂÃÂ½ tÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂ phÃÂÃÂ¡t triÃÂ¡ÃÂ»ÃÂn thÃÂÃÂ nh mÃÂ¡ÃÂ»ÃÂt bÃÂÃÂ i phÃÂÃÂ¢n tÃÂÃÂ­ch, video giÃÂ¡ÃÂºÃÂ£i thÃÂÃÂ­ch, cuÃÂ¡ÃÂ»ÃÂc bÃÂÃÂ¬nh chÃÂ¡ÃÂ»ÃÂn hoÃÂ¡ÃÂºÃÂ·c mÃÂ¡ÃÂ»ÃÂt buÃÂ¡ÃÂ»ÃÂi livestream trao ÃÂÃÂÃÂ¡ÃÂ»ÃÂi.",
-          "en": "These topics can serve as inspiration for developing an analysis piece, an explanatory video, a poll, or a livestream discussion."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Tuy nhiÃÂÃÂªn, mÃÂ¡ÃÂ»ÃÂ¥c tiÃÂÃÂªu lÃÂÃÂ  khÃÂÃÂ´ng tÃÂ¡ÃÂºÃÂ¡o ra bÃÂ¡ÃÂºÃÂ¥t kÃÂ¡ÃÂ»ÃÂ³ cuÃÂ¡ÃÂ»ÃÂc tranh cÃÂÃÂ£i ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tÃÂÃÂng tÃÂÃÂ°ÃÂÃÂ¡ng tÃÂÃÂ¡c. CÃÂÃÂ¡ch tÃÂ¡ÃÂ»ÃÂt nhÃÂ¡ÃÂºÃÂ¥t lÃÂÃÂ  quan sÃÂÃÂ¡t ÃÂÃÂiÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i thÃÂ¡ÃÂ»ÃÂ±c sÃÂ¡ÃÂ»ÃÂ± quan tÃÂÃÂ¢m, sau ÃÂÃÂÃÂÃÂ³ cung cÃÂ¡ÃÂºÃÂ¥p thÃÂÃÂªm thÃÂÃÂ´ng tin ÃÂÃÂÃÂ¡ÃÂ»ÃÂ cuÃÂ¡ÃÂ»ÃÂc thÃÂ¡ÃÂºÃÂ£o luÃÂ¡ÃÂºÃÂ­n trÃÂ¡ÃÂ»ÃÂ nÃÂÃÂªn hÃÂ¡ÃÂ»ÃÂ¯u ÃÂÃÂ­ch.",
-          "en": "However, the goal is not to stir up controversy just to boost engagement. The best approach is to observe what players are truly interested in, and then provide additional information to make the discussion more meaningful."
-        }
-      },
-      {
-        "type": "h2",
-        "text": {
-          "vi": "3. Marketing game cÃÂ¡ÃÂºÃÂ§n thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi theo tÃÂ¡ÃÂ»ÃÂ«ng giai ÃÂÃÂoÃÂ¡ÃÂºÃÂ¡n ",
-          "en": "3. Game marketing needs to evolve with each stage "
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "Marketing khÃÂÃÂ´ng kÃÂ¡ÃÂºÃÂ¿t thÃÂÃÂºc khi game ra mÃÂ¡ÃÂºÃÂ¯t",
-            "en": "Marketing doesnÃÂ¢ÃÂÃÂt end when the game is released"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "ViÃÂ¡ÃÂ»ÃÂc tÃÂ¡ÃÂºÃÂ­p trung gÃÂ¡ÃÂºÃÂ§n nhÃÂÃÂ° toÃÂÃÂ n bÃÂ¡ÃÂ»ÃÂ hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng marketing vÃÂÃÂ o thÃÂ¡ÃÂ»ÃÂi ÃÂÃÂiÃÂ¡ÃÂ»ÃÂm phÃÂÃÂ¡t hÃÂÃÂ nh game lÃÂÃÂ  mÃÂ¡ÃÂ»ÃÂt sai lÃÂ¡ÃÂºÃÂ§m dÃÂ¡ÃÂ»ÃÂ gÃÂ¡ÃÂºÃÂ·p. NgÃÂÃÂ y phÃÂÃÂ¡t hÃÂÃÂ nh chÃÂ¡ÃÂ»ÃÂ lÃÂÃÂ  mÃÂ¡ÃÂ»ÃÂt cÃÂ¡ÃÂ»ÃÂt mÃÂ¡ÃÂ»ÃÂc trong vÃÂÃÂ²ng ÃÂÃÂÃÂ¡ÃÂ»ÃÂi cÃÂ¡ÃÂ»ÃÂ§a game, khÃÂÃÂ´ng phÃÂ¡ÃÂºÃÂ£i ÃÂÃÂiÃÂ¡ÃÂ»ÃÂm kÃÂ¡ÃÂºÃÂ¿t thÃÂÃÂºc cÃÂ¡ÃÂ»ÃÂ§a hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng marketing. VÃÂÃÂ¬ sau khi game ra mÃÂ¡ÃÂºÃÂ¯t, ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i mÃÂ¡ÃÂ»ÃÂi bÃÂ¡ÃÂºÃÂ¯t ÃÂÃÂÃÂ¡ÃÂºÃÂ§u hÃÂÃÂ¬nh thÃÂÃÂ nh ÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂ¡, tham gia cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng vÃÂÃÂ  chia sÃÂ¡ÃÂºÃÂ» trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm cÃÂ¡ÃÂ»ÃÂ§a hÃÂ¡ÃÂ»ÃÂ.",
-          "en": "Focusing nearly all marketing efforts on the gameÃÂ¢ÃÂÃÂs release date is a common mistake. The release date is just one milestone in a gameÃÂ¢ÃÂÃÂs lifecycleÃÂ¢ÃÂÃÂnot the end of marketing efforts. After the game launches, players begin to form opinions, join the community, and share their experiences."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Marketing cÃÂ¡ÃÂºÃÂ§n ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c duy trÃÂÃÂ¬ xuyÃÂÃÂªn suÃÂ¡ÃÂ»ÃÂt quÃÂÃÂ¡ trÃÂÃÂ¬nh trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc - trong - sau khi phÃÂÃÂ¡t hÃÂÃÂ nh game vÃÂÃÂ  nÃÂ¡ÃÂ»ÃÂi dung cÃÂ¡ÃÂºÃÂ§n ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng theo tÃÂ¡ÃÂ»ÃÂ«ng giai ÃÂÃÂoÃÂ¡ÃÂºÃÂ¡n. ",
-          "en": "Marketing efforts must be sustained throughout the entire processÃÂ¢ÃÂÃÂbefore, during, and after the gameÃÂ¢ÃÂÃÂs releaseÃÂ¢ÃÂÃÂand content must be developed in phases. "
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "TrÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc khi ra mÃÂ¡ÃÂºÃÂ¯t cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ tÃÂ¡ÃÂºÃÂ­p trung vÃÂÃÂ o viÃÂ¡ÃÂ»ÃÂc giÃÂ¡ÃÂ»ÃÂi thiÃÂ¡ÃÂ»ÃÂu vÃÂ¡ÃÂ»ÃÂ thÃÂ¡ÃÂºÃÂ¿ giÃÂ¡ÃÂ»ÃÂi game, nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t vÃÂÃÂ  nhÃÂ¡ÃÂ»ÃÂ¯ng ÃÂÃÂiÃÂ¡ÃÂ»ÃÂm nÃÂ¡ÃÂ»ÃÂi bÃÂ¡ÃÂºÃÂ­t. Khi game phÃÂÃÂ¡t hÃÂÃÂ nh, nÃÂ¡ÃÂ»ÃÂi dung nÃÂÃÂªn giÃÂÃÂºp ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i nhanh chÃÂÃÂ³ng bÃÂ¡ÃÂºÃÂ¯t ÃÂÃÂÃÂ¡ÃÂºÃÂ§u trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm thÃÂÃÂ´ng qua video chÃÂÃÂ¡i thÃÂ¡ÃÂ»ÃÂ­, hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng dÃÂ¡ÃÂºÃÂ«n vÃÂÃÂ  livestream. Sau ÃÂÃÂÃÂÃÂ³, nÃÂ¡ÃÂ»ÃÂi dung cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ chuyÃÂ¡ÃÂ»ÃÂn sang mÃÂ¡ÃÂºÃÂ¹o chÃÂÃÂ¡i, phÃÂÃÂ¢n tÃÂÃÂ­ch nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t, thÃÂ¡ÃÂºÃÂ£o luÃÂ¡ÃÂºÃÂ­n cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng vÃÂÃÂ  cÃÂÃÂ¡c hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng tÃÂÃÂ°ÃÂÃÂ¡ng tÃÂÃÂ¡c. Khi xuÃÂ¡ÃÂºÃÂ¥t hiÃÂ¡ÃÂ»ÃÂn bÃÂ¡ÃÂºÃÂ£n cÃÂ¡ÃÂºÃÂ­p nhÃÂ¡ÃÂºÃÂ­t hoÃÂ¡ÃÂºÃÂ·c nhÃÂÃÂ¢n vÃÂ¡ÃÂºÃÂ­t mÃÂ¡ÃÂ»ÃÂi, ÃÂÃÂÃÂÃÂ¢y lÃÂ¡ÃÂºÃÂ¡i lÃÂÃÂ  cÃÂÃÂ¡ hÃÂ¡ÃÂ»ÃÂi ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tÃÂ¡ÃÂºÃÂ¡o thÃÂÃÂªm sÃÂ¡ÃÂ»ÃÂ± quan tÃÂÃÂ¢m vÃÂÃÂ  ÃÂÃÂÃÂÃÂ°a ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i quay trÃÂ¡ÃÂ»ÃÂ lÃÂ¡ÃÂºÃÂ¡i.",
-          "en": "Before launch, focus on introducing the game world, characters, and key highlights. Once the game is released, content should help players get started quickly through gameplay videos, tutorials, and livestreams. After that, content can shift to gameplay tips, character analysis, community discussions, and interactive activities. When an update or new character is released, this presents another opportunity to generate interest and bring players back."
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "LÃÂ¡ÃÂºÃÂ¯ng nghe ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i quan trÃÂ¡ÃÂ»ÃÂng khÃÂÃÂ´ng kÃÂÃÂ©m viÃÂ¡ÃÂ»ÃÂc tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n hÃÂ¡ÃÂ»ÃÂ",
-            "en": "Listening to players is just as important as reaching out to them"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Marketing thÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c hiÃÂ¡ÃÂ»ÃÂu lÃÂÃÂ  ÃÂÃÂÃÂÃÂ°a thÃÂÃÂ´ng ÃÂÃÂiÃÂ¡ÃÂ»ÃÂp ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i. NhÃÂÃÂ°ng vÃÂ¡ÃÂ»ÃÂi game, viÃÂ¡ÃÂ»ÃÂc lÃÂ¡ÃÂºÃÂ¯ng nghe cÃÂÃÂ©ng quan trÃÂ¡ÃÂ»ÃÂng khÃÂÃÂ´ng kÃÂÃÂ©m viÃÂ¡ÃÂ»ÃÂc tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n.",
-          "en": "Marketing is often understood as delivering a message to players. But when it comes to games, listening is just as important as reaching out."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Sau khi phÃÂÃÂ¡t hÃÂÃÂ nh game, ÃÂÃÂÃÂ¡ÃÂ»ÃÂi ngÃÂÃÂ© cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ theo dÃÂÃÂµi cÃÂÃÂ¡c cuÃÂ¡ÃÂ»ÃÂc thÃÂ¡ÃÂºÃÂ£o luÃÂ¡ÃÂºÃÂ­n, phÃÂ¡ÃÂºÃÂ£n hÃÂ¡ÃÂ»ÃÂi vÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂ¡ trÃÂÃÂªn cÃÂÃÂ¡c nÃÂ¡ÃÂ»ÃÂn tÃÂ¡ÃÂºÃÂ£ng. TÃÂ¡ÃÂ»ÃÂ« cÃÂÃÂ¡c dÃÂ¡ÃÂ»ÃÂ¯ liÃÂ¡ÃÂ»ÃÂu trÃÂÃÂªn, ÃÂÃÂÃÂ¡ÃÂ»ÃÂi ngÃÂÃÂ© cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng nÃÂ¡ÃÂ»ÃÂi dung tiÃÂ¡ÃÂºÃÂ¿p theo, hiÃÂ¡ÃÂ»ÃÂu rÃÂÃÂµ cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng hÃÂÃÂ¡n vÃÂÃÂ  phÃÂÃÂ¡t triÃÂ¡ÃÂ»ÃÂn game ÃÂÃÂÃÂ¡ÃÂ»ÃÂ thu hÃÂÃÂºt hÃÂÃÂ¡n.",
-          "en": "After a game is released, the team can monitor discussions, feedback, and reviews across various platforms. Using this data, the team can create future content, gain a deeper understanding of the community, and develop the game to make it more engaging."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "VÃÂÃÂ¬ vÃÂ¡ÃÂºÃÂ­y, ÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂ¡ marketing game nÃÂÃÂªn kÃÂ¡ÃÂºÃÂ¿t hÃÂ¡ÃÂ»ÃÂ£p giÃÂ¡ÃÂ»ÃÂ¯a dÃÂ¡ÃÂ»ÃÂ¯ liÃÂ¡ÃÂ»ÃÂu, phÃÂ¡ÃÂºÃÂ£n hÃÂ¡ÃÂ»ÃÂi vÃÂÃÂ  hÃÂÃÂ nh vi thÃÂ¡ÃÂ»ÃÂ±c tÃÂ¡ÃÂºÃÂ¿ cÃÂ¡ÃÂ»ÃÂ§a ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i.",
-          "en": "Therefore, game marketing evaluations should combine data, feedback, and actual player behavior."
-        }
-      },
-      {
-        "type": "ul",
-        "items": [
-          {
-            "vi": "ÃÂÃÂÃÂ¡ÃÂºÃÂ·t ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i ÃÂ¡ÃÂ»ÃÂ trung tÃÂÃÂ¢m trong chiÃÂ¡ÃÂºÃÂ¿n lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c marketing game",
-            "en": "Put players at the center of your game marketing strategy"
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Khi thÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng game ViÃÂ¡ÃÂ»ÃÂt Nam ngÃÂÃÂ y cÃÂÃÂ ng cÃÂ¡ÃÂºÃÂ¡nh tranh, thÃÂÃÂ°ÃÂÃÂ¡ng hiÃÂ¡ÃÂ»ÃÂu khÃÂÃÂ´ng nÃÂÃÂªn chÃÂ¡ÃÂ»ÃÂ tÃÂ¡ÃÂºÃÂ­p trung vÃÂÃÂ o viÃÂ¡ÃÂ»ÃÂc ÃÂÃÂÃÂÃÂ°a game ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n thÃÂ¡ÃÂºÃÂ­t nhiÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi mÃÂÃÂ  cÃÂ¡ÃÂºÃÂ§n tÃÂÃÂ¬m ÃÂÃÂÃÂÃÂºng nhÃÂÃÂ³m ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i vÃÂÃÂ  hiÃÂ¡ÃÂ»ÃÂu ÃÂÃÂiÃÂ¡ÃÂ»ÃÂu hÃÂ¡ÃÂ»ÃÂ thÃÂ¡ÃÂ»ÃÂ±c sÃÂ¡ÃÂ»ÃÂ± quan tÃÂÃÂ¢m. NÃÂ¡ÃÂ»ÃÂi dung marketing cÃÂÃÂ©ng cÃÂ¡ÃÂºÃÂ§n gÃÂ¡ÃÂºÃÂ§n vÃÂ¡ÃÂ»ÃÂi trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm thÃÂ¡ÃÂ»ÃÂ±c tÃÂ¡ÃÂºÃÂ¿, cung cÃÂ¡ÃÂºÃÂ¥p thÃÂÃÂ´ng tin hÃÂ¡ÃÂ»ÃÂ¯u ÃÂÃÂ­ch vÃÂÃÂ  tÃÂ¡ÃÂºÃÂ¡o lÃÂÃÂ½ do ÃÂÃÂÃÂ¡ÃÂ»ÃÂ ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i muÃÂ¡ÃÂ»ÃÂn khÃÂÃÂ¡m phÃÂÃÂ¡ sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m.",
-          "en": "As the Vietnamese gaming market becomes increasingly competitive, brands should not just focus on reaching as many people as possible; instead, they need to identify the right audience and understand what truly matters to them. Marketing content should also reflect the actual gaming experience, provide useful information, and give players a reason to explore the product."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Marketing khÃÂÃÂ´ng chÃÂ¡ÃÂ»ÃÂ dÃÂ¡ÃÂ»ÃÂ«ng lÃÂ¡ÃÂºÃÂ¡i ÃÂ¡ÃÂ»ÃÂ viÃÂ¡ÃÂ»ÃÂc thu hÃÂÃÂºt ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i mÃÂÃÂ  cÃÂÃÂ²n cÃÂ¡ÃÂºÃÂ§n lÃÂ¡ÃÂºÃÂ¯ng nghe phÃÂ¡ÃÂºÃÂ£n hÃÂ¡ÃÂ»ÃÂi, theo dÃÂÃÂµi hÃÂÃÂ nh vi vÃÂÃÂ  duy trÃÂÃÂ¬ sÃÂ¡ÃÂ»ÃÂ± quan tÃÂÃÂ¢m trong suÃÂ¡ÃÂ»ÃÂt quÃÂÃÂ¡ trÃÂÃÂ¬nh hÃÂ¡ÃÂ»ÃÂ trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm game. ÃÂÃÂÃÂ¡ÃÂºÃÂ·t ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i ÃÂ¡ÃÂ»ÃÂ trung tÃÂÃÂ¢m sÃÂ¡ÃÂºÃÂ½ giÃÂÃÂºp thÃÂÃÂ°ÃÂÃÂ¡ng hiÃÂ¡ÃÂ»ÃÂu xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng cÃÂÃÂ¡ch tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p hÃÂÃÂ¡n vÃÂÃÂ  tÃÂ¡ÃÂºÃÂ¡o sÃÂ¡ÃÂ»ÃÂ± gÃÂ¡ÃÂºÃÂ¯n bÃÂÃÂ³ lÃÂÃÂ¢u dÃÂÃÂ i vÃÂ¡ÃÂ»ÃÂi sÃÂ¡ÃÂºÃÂ£n phÃÂ¡ÃÂºÃÂ©m.",
-          "en": "Marketing isnÃÂ¢ÃÂÃÂt just about attracting players; it also involves listening to feedback, tracking behavior, and maintaining their interest throughout their gaming experience. Putting players at the center will help the brand develop a more tailored approach and foster long-term loyalty to the product."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "",
-          "en": ""
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "ThÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng game ViÃÂ¡ÃÂ»ÃÂt Nam ÃÂÃÂang bÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂc vÃÂÃÂ o giai ÃÂÃÂoÃÂ¡ÃÂºÃÂ¡n cÃÂ¡ÃÂºÃÂ¡nh tranh hÃÂÃÂ¡n, khi ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i ngÃÂÃÂ y cÃÂÃÂ ng cÃÂÃÂ³ nhiÃÂ¡ÃÂ»ÃÂu lÃÂ¡ÃÂ»ÃÂ±a chÃÂ¡ÃÂ»ÃÂn vÃÂÃÂ  cÃÂÃÂ¡ch hÃÂ¡ÃÂ»ÃÂ tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n game cÃÂÃÂ©ng thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi ÃÂÃÂÃÂÃÂ¡ng kÃÂ¡ÃÂ»ÃÂ. Trong bÃÂ¡ÃÂ»ÃÂi cÃÂ¡ÃÂºÃÂ£nh ÃÂÃÂÃÂÃÂ³, viÃÂ¡ÃÂ»ÃÂc chÃÂ¡ÃÂ»ÃÂ tÃÂÃÂng ngÃÂÃÂ¢n sÃÂÃÂ¡ch quÃÂ¡ÃÂºÃÂ£ng cÃÂÃÂ¡o khÃÂÃÂ´ng cÃÂÃÂ²n lÃÂÃÂ  yÃÂ¡ÃÂºÃÂ¿u tÃÂ¡ÃÂ»ÃÂ ÃÂÃÂÃÂ¡ÃÂ»ÃÂ tÃÂ¡ÃÂºÃÂ¡o khÃÂÃÂ¡c biÃÂ¡ÃÂ»ÃÂt. ÃÂÃÂiÃÂ¡ÃÂ»ÃÂu quan trÃÂ¡ÃÂ»ÃÂng hÃÂÃÂ¡n lÃÂÃÂ  thÃÂÃÂ°ÃÂÃÂ¡ng hiÃÂ¡ÃÂ»ÃÂu cÃÂ¡ÃÂºÃÂ§n hiÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i, nÃÂ¡ÃÂºÃÂ¯m bÃÂ¡ÃÂºÃÂ¯t xu hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng vÃÂÃÂ  lÃÂ¡ÃÂ»ÃÂ±a chÃÂ¡ÃÂ»ÃÂn cÃÂÃÂ¡ch tiÃÂ¡ÃÂºÃÂ¿p cÃÂ¡ÃÂºÃÂ­n phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p vÃÂ¡ÃÂ»ÃÂi tÃÂ¡ÃÂ»ÃÂ«ng nhÃÂÃÂ³m ÃÂÃÂÃÂ¡ÃÂ»ÃÂi tÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng.",
-          "en": "The Vietnamese gaming market is entering a more competitive phase, as players have an increasing number of options and the way they engage with games has changed significantly. In this context, simply increasing the advertising budget is no longer enough to set a brand apart. What matters more is that brands understand players, keep up with trends, and choose the right approach for each target audience."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "TÃÂ¡ÃÂ»ÃÂ« nÃÂ¡ÃÂ»ÃÂi dung trÃÂÃÂªn mÃÂ¡ÃÂºÃÂ¡ng xÃÂÃÂ£ hÃÂ¡ÃÂ»ÃÂi, KOL/KOC, streamer ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n viÃÂ¡ÃÂ»ÃÂc xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng, mÃÂ¡ÃÂ»ÃÂi ÃÂÃÂiÃÂ¡ÃÂ»ÃÂm chÃÂ¡ÃÂºÃÂ¡m ÃÂÃÂÃÂ¡ÃÂ»ÃÂu cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ trÃÂ¡ÃÂ»ÃÂ thÃÂÃÂ nh cÃÂÃÂ¡ hÃÂ¡ÃÂ»ÃÂi ÃÂÃÂÃÂ¡ÃÂ»ÃÂ game tÃÂ¡ÃÂºÃÂ¡o ÃÂ¡ÃÂºÃÂ¥n tÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£ng vÃÂÃÂ  duy trÃÂÃÂ¬ sÃÂ¡ÃÂ»ÃÂ± quan tÃÂÃÂ¢m cÃÂ¡ÃÂ»ÃÂ§a ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i. MÃÂ¡ÃÂ»ÃÂt chiÃÂ¡ÃÂºÃÂ¿n lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c hiÃÂ¡ÃÂ»ÃÂu quÃÂ¡ÃÂºÃÂ£ khÃÂÃÂ´ng chÃÂ¡ÃÂ»ÃÂ hÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n viÃÂ¡ÃÂ»ÃÂc ÃÂÃÂÃÂÃÂ°a game ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n vÃÂ¡ÃÂ»ÃÂi nhiÃÂ¡ÃÂ»ÃÂu ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi hÃÂÃÂ¡n, mÃÂÃÂ  cÃÂÃÂ²n cÃÂ¡ÃÂºÃÂ§n tÃÂ¡ÃÂºÃÂ¡o ra trÃÂ¡ÃÂºÃÂ£i nghiÃÂ¡ÃÂ»ÃÂm ÃÂÃÂÃÂ¡ÃÂ»ÃÂ§ hÃÂ¡ÃÂºÃÂ¥p dÃÂ¡ÃÂºÃÂ«n ÃÂÃÂÃÂ¡ÃÂ»ÃÂ hÃÂ¡ÃÂ»ÃÂ muÃÂ¡ÃÂ»ÃÂn chÃÂÃÂ¡i, chia sÃÂ¡ÃÂºÃÂ» vÃÂÃÂ  tiÃÂ¡ÃÂºÃÂ¿p tÃÂ¡ÃÂ»ÃÂ¥c gÃÂ¡ÃÂºÃÂ¯n bÃÂÃÂ³.",
-          "en": "From social media content, KOLs/KOCs, and streamers to community building, every touchpoint can become an opportunity for a game to make an impression and maintain playersÃÂ¢ÃÂÃÂ interest. An effective strategy not only aims to reach a wider audience but also needs to create an experience compelling enough to make players want to play, share, and stay engaged."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Trong mÃÂ¡ÃÂ»ÃÂt thÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂng liÃÂÃÂªn tÃÂ¡ÃÂ»ÃÂ¥c thay ÃÂÃÂÃÂ¡ÃÂ»ÃÂi, khÃÂ¡ÃÂºÃÂ£ nÃÂÃÂng lÃÂ¡ÃÂºÃÂ¯ng nghe ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi chÃÂÃÂ¡i vÃÂÃÂ  thÃÂÃÂ­ch ÃÂ¡ÃÂ»ÃÂ©ng vÃÂ¡ÃÂ»ÃÂi hÃÂÃÂ nh vi mÃÂ¡ÃÂ»ÃÂi sÃÂ¡ÃÂºÃÂ½ lÃÂÃÂ  yÃÂ¡ÃÂºÃÂ¿u tÃÂ¡ÃÂ»ÃÂ quan trÃÂ¡ÃÂ»ÃÂng giÃÂÃÂºp cÃÂÃÂ¡c thÃÂÃÂ°ÃÂÃÂ¡ng hiÃÂ¡ÃÂ»ÃÂu game tÃÂ¡ÃÂºÃÂ¡o ÃÂÃÂÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c vÃÂ¡ÃÂ»ÃÂ trÃÂÃÂ­ riÃÂÃÂªng vÃÂÃÂ  xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng bÃÂ¡ÃÂ»ÃÂn vÃÂ¡ÃÂ»ÃÂ¯ng.",
-          "en": "In an ever-changing market, the ability to listen to players and adapt to new behaviors will be a key factor in helping game brands carve out their own niche and build a sustainable community."
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "",
-          "en": ""
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "NÃÂ¡ÃÂºÃÂ¿u bÃÂ¡ÃÂºÃÂ¡n ÃÂÃÂang tÃÂÃÂ¬m kiÃÂ¡ÃÂºÃÂ¿m mÃÂ¡ÃÂ»ÃÂt ÃÂÃÂÃÂ¡ÃÂ»ÃÂi tÃÂÃÂ¡c triÃÂ¡ÃÂ»ÃÂn khai marketing game tÃÂ¡ÃÂºÃÂ¡i ViÃÂ¡ÃÂ»ÃÂt Nam, ANBU cÃÂÃÂ³ thÃÂ¡ÃÂ»ÃÂ hÃÂ¡ÃÂ»ÃÂ trÃÂ¡ÃÂ»ÃÂ£ tÃÂ¡ÃÂ»ÃÂ« xÃÂÃÂ¢y dÃÂ¡ÃÂ»ÃÂ±ng chiÃÂ¡ÃÂºÃÂ¿n lÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂ£c, phÃÂÃÂ¡t triÃÂ¡ÃÂ»ÃÂn nÃÂ¡ÃÂ»ÃÂi dung, kÃÂ¡ÃÂºÃÂ¿t nÃÂ¡ÃÂ»ÃÂi ngÃÂÃÂ°ÃÂ¡ÃÂ»ÃÂi sÃÂÃÂ¡ng tÃÂ¡ÃÂºÃÂ¡o ÃÂÃÂÃÂ¡ÃÂºÃÂ¿n hoÃÂ¡ÃÂºÃÂ¡t ÃÂÃÂÃÂ¡ÃÂ»ÃÂng cÃÂ¡ÃÂ»ÃÂng ÃÂÃÂÃÂ¡ÃÂ»ÃÂng vÃÂÃÂ  Esports. LiÃÂÃÂªn hÃÂ¡ÃÂ»ÃÂ ANBU ÃÂÃÂÃÂ¡ÃÂ»ÃÂ trao ÃÂÃÂÃÂ¡ÃÂ»ÃÂi vÃÂ¡ÃÂ»ÃÂ kÃÂ¡ÃÂºÃÂ¿ hoÃÂ¡ÃÂºÃÂ¡ch phÃÂÃÂ¹ hÃÂ¡ÃÂ»ÃÂ£p vÃÂ¡ÃÂ»ÃÂi tÃÂ¡ÃÂ»ÃÂ±a game cÃÂ¡ÃÂ»ÃÂ§a bÃÂ¡ÃÂºÃÂ¡n.",
-          "en": "If youÃÂ¢ÃÂÃÂre looking for a partner to implement game marketing in Vietnam, ANBU can assist with everything from strategy development and content creation to connecting with creators and organizing community and esports activities. Contact ANBU to discuss a plan tailored to your game."
-        }
-      }
-    ]
-  },
-  {
-    "slug": "th-trng-game-vit-nam-v-nhng-thay-i-trong-cch-tip-cn-ngi-chi",
-    "title": {
-      "vi": "ThÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng game ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi trong cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i",
-      "en": "The Vietnamese Gaming Market and Changes in How Players Are Engaged"
-    },
-    "excerpt": {
-      "vi": "ThÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng game ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi. NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±a chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n, dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m kiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿m thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tin trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc khi tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i game vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ chia sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ» trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i game trong cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng.",
-      "en": "The Vietnamese gaming market is undergoing significant changes, with an increasing number of new titles being released. Players now have more options, can easily find information before downloading a game, and can share their gaming experiences within the community."
-    },
-    "category": {
-      "vi": "Marketing Game",
-      "en": "Game Marketing"
-    },
-    "date": "2026-08-28",
-    "readingTime": 12,
     "cover": "/blog-covers/creative-testing-lab.jpg",
-    "author": "ANBU Team",
-    "color": "from-blue-600 to-indigo-600",
-    "variant": "game",
     "body": [
       {
-        "type": "p",
         "text": {
-          "vi": "ThÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng game ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi. NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±a chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n, dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m kiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿m thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tin trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc khi tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i game vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ chia sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ» trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i game trong cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng.",
-          "en": "The Vietnamese gaming market is undergoing significant changes, with an increasing number of new titles being released. Players now have more options, can easily find information before downloading a game, and can share their gaming experiences within the community."
-        }
+          "en": "The Vietnamese gaming market is undergoing significant changes, with an increasing number of new titles being released. Players now have more options, can easily find information before downloading a game, and can share their gaming experiences within the community.",
+          "vi": "Thị trường game Việt Nam đang có nhiều thay đổi, ngày càng có nhiều sản phẩm mới. Người chơi cũng có nhiều lựa chọn hơn, dễ dàng tìm kiếm thông tin trước khi tải game và có thể chia sẻ trải nghiệm chơi game trong cộng đồng."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Theo bÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o Vietnam Mobile Gaming Year-in-Review 2025, ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ khoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng 54 triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i game mobile vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  doanh thu thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng mobile game nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂm 2025 ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­nh khoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng 825 triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu USD, tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂng 9,16% so vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂm trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc. MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂº ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n chuyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ« viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i sang chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢u dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ i cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i.",
-          "en": "According to the ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂVietnam Mobile Gaming Year-in-Review 2025ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ report, Vietnam has approximately 54 million mobile gamers, and the mobile gaming market revenue in 2025 is estimated at approximately $825 million, an increase of 9.16% from the previous year. It is worth noting that the market is gradually shifting its focus from player numbers alone to player quality and long-term value."
-        }
+          "en": "According to the “Vietnam Mobile Gaming Year-in-Review 2025” report, Vietnam has approximately 54 million mobile gamers, and the mobile gaming market revenue in 2025 is estimated at approximately $825 million, an increase of 9.16% from the previous year. It is worth noting that the market is gradually shifting its focus from player numbers alone to player quality and long-term value.",
+          "vi": "Theo báo cáo Vietnam Mobile Gaming Year-in-Review 2025, Việt Nam có khoảng 54 triệu người chơi game mobile và doanh thu thị trường mobile game năm 2025 được ước tính khoảng 825 triệu USD, tăng 9,16% so với năm trước. Một điểm đáng chú ý là thị trường đang dần chuyển từ việc chỉ quan tâm số lượng người chơi sang chất lượng và giá trị lâu dài của người chơi."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ gÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³c ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ rÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n, DataReport ghi nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ 79,8 triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­ dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥ng Internet vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng 1/2025, tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng 78,8% dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ. ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o ra mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´i trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng thuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£i ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ game tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng qua mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡ng xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, video, cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c tuyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ.",
-          "en": "From a broader perspective, DataReport reports that Vietnam had 79.8 million Internet users in January 2025, equivalent to 78.8% of the population. This creates a favorable environment for games to reach players through social media, video, online communities, and digital content platforms."
-        }
+          "en": "From a broader perspective, DataReport reports that Vietnam had 79.8 million Internet users in January 2025, equivalent to 78.8% of the population. This creates a favorable environment for games to reach players through social media, video, online communities, and digital content platforms.",
+          "vi": "Ở góc độ rộng hơn, DataReport ghi nhận Việt Nam có 79,8 triệu người sử dụng Internet vào tháng 1/2025, tương đương 78,8% dân số. Điều này tạo ra một môi trường thuận lợi để game tiếp cận người chơi thông qua mạng xã hội, video, cộng đồng trực tuyến và các nền tảng nội dung số."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "NhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng con sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn cho thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ«n rÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn. Tuy nhiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn, cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nghÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©a lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt game mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ½ dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng thu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºt ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ng. CÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi theo hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n, tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p trung vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm, nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng.",
-          "en": "These figures show that the opportunities are still vast. However, just because there are many players doesnÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂt mean a new game will easily attract users. The approach to reaching players needs to shift toward a more practical one, focusing on experience, content, and community."
-        }
+          "en": "These figures show that the opportunities are still vast. However, just because there are many players doesn’t mean a new game will easily attract users. The approach to reaching players needs to shift toward a more practical one, focusing on experience, content, and community.",
+          "vi": "Những con số trên cho thấy cơ hội vẫn rất lớn. Tuy nhiên, có nhiều người chơi không có nghĩa là một game mới sẽ dễ dàng thu hút người dùng. Cách tiếp cận người chơi cần thay đổi theo hướng thực tế hơn, tập trung vào trải nghiệm, nội dung và cộng đồng."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "HoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng marketing game tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi theo hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p trung hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i, trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng. Thay vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­ dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥ng quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t, cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂch hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn nay cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm game, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung, mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡ng xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  duy trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m trong suÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a game.",
-          "en": "Game marketing in Vietnam is shifting toward a greater focus on players, real-world experiences, and community building. Rather than relying solely on advertising to boost brand awareness, todayÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs campaigns must integrate in-game content, content creators, social media, and community activities to reach the right audience and sustain engagement throughout the gameÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs lifecycle."
-        }
+          "en": "Game marketing in Vietnam is shifting toward a greater focus on players, real-world experiences, and community building. Rather than relying solely on advertising to boost brand awareness, today’s campaigns must integrate in-game content, content creators, social media, and community activities to reach the right audience and sustain engagement throughout the game’s lifecycle.",
+          "vi": "Hoạt động marketing game tại Việt Nam đang thay đổi theo hướng tập trung hơn vào người chơi, trải nghiệm thực tế và xây dựng cộng đồng. Thay vì chỉ sử dụng quảng cáo để tăng độ nhận biết, các chiến dịch hiện nay cần kết hợp nội dung trải nghiệm game, người sáng tạo nội dung, mạng xã hội và hoạt động cộng đồng để tiếp cận đúng đối tượng và duy trì sự quan tâm trong suốt vòng đời của game."
+        },
+        "type": "p"
       },
       {
-        "type": "h2",
         "text": {
-          "vi": "1. ThÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng game tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o?",
-          "en": "1, How has the gaming market in Vietnam changed?"
-        }
+          "en": "1. How has the gaming market in Vietnam changed?",
+          "vi": "1. Thị trường game tại Việt Nam thay đổi như thế nào?"
+        },
+        "type": "h2"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºt chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ±ng quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o",
-            "en": "Players are no longer easily lured in by ads alone"
+            "en": "Players are no longer easily lured in by ads alone",
+            "vi": "Người chơi không còn dễ bị thu hút chỉ bằng quảng cáo"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¹p cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp game tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂº ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ ban ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§u, nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ khiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i quyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂnh tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i game. ",
-          "en": "A visually appealing ad can help a game grab initial attention, but itÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs not enough to convince players to download it. "
-        }
+          "en": "A visually appealing ad can help a game grab initial attention, but it’s not enough to convince players to download it. ",
+          "vi": "Một quảng cáo đẹp có thể giúp game tạo được sự chú ý ban đầu, nhưng chưa đủ để khiến người chơi quyết định tải game. "
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "TrÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc khi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ng thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng muÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ gÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt, cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng, nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂº ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£ chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o. VÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng game ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t trong thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi gian dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ i, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m game cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng xuyÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung game cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºt ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢u dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ i hay khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng.",
-          "en": "Before playing, users typically want to know what makes the game unique, whether the gameplay suits them, which characters stand out, and what other players think of it. For games that have been in development and receiving updates for a long time, players are also interested in whether the game is updated frequently, whether the community is active, and whether the gameÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs content is engaging enough to keep them playing for the long term."
-        }
+          "en": "Before playing, users typically want to know what makes the game unique, whether the gameplay suits them, which characters stand out, and what other players think of it. For games that have been in development and receiving updates for a long time, players are also interested in whether the game is updated frequently, whether the community is active, and whether the game’s content is engaging enough to keep them playing for the long term.",
+          "vi": "Trước khi chơi, người dùng thường muốn biết sản phẩm có gì khác biệt, cách chơi có phù hợp với mình không, nhân vật nào đáng chú ý và những người đã chơi đánh giá sản phẩm như thế nào. Với những game được phát triển và cập nhật trong thời gian dài, người chơi còn quan tâm game có thường xuyên cập nhật, cộng đồng hoạt động và nội dung game có thu hút để chơi lâu dài hay không."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "VÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­y, thay vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ truyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂp ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n giÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° Game mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ra mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯t, nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung marketing nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu rÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµ hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n. CÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ video chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­, phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ«n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·c buÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi livestream. NhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ cung cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥p nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tin hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯u ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p trung vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£nh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¹p.",
-          "en": "Therefore, instead of simply conveying a message like ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂNew game released,ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ marketing content should help players better understand the product. You could develop content ideas such as gameplay videos, character analyses, beginnerÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs guides, or live streams. This type of content can provide more useful information than an ad that focuses solely on attractive visuals."
-        }
+          "en": "Therefore, instead of simply conveying a message like “New game released,” marketing content should help players better understand the product. You could develop content ideas such as gameplay videos, character analyses, beginner’s guides, or live streams. This type of content can provide more useful information than an ad that focuses solely on attractive visuals.",
+          "vi": "Vì vậy, thay vì chỉ truyền tải thông điệp đơn giản như Game mới ra mắt, nội dung marketing nên giúp người chơi hiểu rõ hơn về sản phẩm hơn. Có thể lên ý tưởng nội dung về video chơi thử, phân tích nhân vật, hướng dẫn người mới hoặc buổi livestream. Những nội dung này có thể cung cấp nhiều thông tin hữu ích hơn một quảng cáo chỉ tập trung vào hình ảnh đẹp."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ² mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ², cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p theo phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tin ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a ra quyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂnh.",
-          "en": "The key point is that ads spark curiosity, while the follow-up content must give players enough information to make an informed decision."
-        }
+          "en": "The key point is that ads spark curiosity, while the follow-up content must give players enough information to make an informed decision.",
+          "vi": "Điểm quan trọng là quảng cáo tạo nên sự tò mò, còn nội dung tiếp theo phải giúp người chơi có đủ thông tin để đưa ra quyết định."
+        },
+        "type": "p"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "TÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ« viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i",
-            "en": "From Finding Many Players to Finding the Right Players"
+            "en": "From Finding Many Players to Finding the Right Players",
+            "vi": "Từ việc tìm nhiều người chơi thành tìm đúng người chơi"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "KhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬n thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥y quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p. MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ loÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i game lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³m ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c nhau. Game Gacha cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºt nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°u tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§m nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  theo dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµi cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt truyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, trong khi game chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n thuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t - bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯n sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºng lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi yÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªu thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­nh cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡nh tranh vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n thuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t.",
-          "en": "Not everyone who sees an ad is the right fit. Each game genre attracts a different audience. Gacha games may appeal to people who enjoy collecting characters, building teams, and following new storylines, while strategy and shooter games are better suited for those who love competition and tactics."
-        }
+          "en": "Not everyone who sees an ad is the right fit. Each game genre attracts a different audience. Gacha games may appeal to people who enjoy collecting characters, building teams, and following new storylines, while strategy and shooter games are better suited for those who love competition and tactics.",
+          "vi": "Không phải tất cả những người nhìn thấy quảng cáo đều là người phù hợp. Mỗi thể loại game lại có một nhóm người quan tâm khác nhau. Game Gacha có thể thu hút những người thích sưu tầm nhân vật, xây dựng đội hình và theo dõi cốt truyện mới, trong khi game chiến thuật - bắn súng lại phù hợp hơn với những người yêu thích tính cạnh tranh và chiến thuật."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "VÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­y, trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc khi xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂch phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂnh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³m ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ khÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂng quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m. TÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ« ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi quyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂnh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­ dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥ng nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng, loÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n.",
-          "en": "Therefore, before developing a campaign, you must identify the target audience that is likely to be interested in the product. Only then can you decide on the platform, content type, creators, and approach."
-        }
+          "en": "Therefore, before developing a campaign, you must identify the target audience that is likely to be interested in the product. Only then can you decide on the platform, content type, creators, and approach.",
+          "vi": "Vì vậy, trước khi xây dựng chiến dịch phải xác định được nhóm đối tượng có khả năng quan tâm đến sản phẩm. Từ đó mới quyết định đến việc sử dụng nền tảng, loại nội dung, người sáng tạo và cách tiếp cận."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·c biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng khi chi phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºt ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­ dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥ng hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£. MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂch cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi xem khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi game chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯c mang lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ±ng mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂch nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng.",
-          "en": "This is particularly important when the budget for player acquisition must be used effectively. A campaign with a large reach, but where the majority of the audience isnÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂt a good fit for the game, may not necessarily deliver as much value as a smaller campaign that targets the right community."
-        }
+          "en": "This is particularly important when the budget for player acquisition must be used effectively. A campaign with a large reach, but where the majority of the audience isn’t a good fit for the game, may not necessarily deliver as much value as a smaller campaign that targets the right community.",
+          "vi": "Điều này đặc biệt quan trọng khi chi phí để thu hút người chơi cần được sử dụng hiệu quả. Một chiến dịch có lượng tiếp cận lớn nhưng phần lớn người xem không phù hợp với game chưa chắc mang lại giá trị bằng một chiến dịch nhỏ hơn như tiếp cận đúng cộng đồng."
+        },
+        "type": "p"
       },
       {
-        "type": "h2",
         "text": {
-          "vi": "2. CÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi",
-          "en": "2. The way we engage with players is changing"
-        }
+          "en": "2. The way we engage with players is changing",
+          "vi": "2. Cách tiếp cận người chơi đang thay đổi"
+        },
+        "type": "h2"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i muÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn xem trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t",
-            "en": "Players want to see the real experience"
+            "en": "Players want to see the real experience",
+            "vi": "Người chơi muốn xem trải nghiệm thật"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc game thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o, thay vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ xem ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£nh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c chuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©n bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂµn trong trailer.",
-          "en": "Players are increasingly interested in how a game actually plays, rather than just seeing pre-rendered footage in trailers."
-        }
+          "en": "Players are increasingly interested in how a game actually plays, rather than just seeing pre-rendered footage in trailers.",
+          "vi": "Người chơi ngày càng quan tâm đến việc game thực sự chơi như thế nào, thay vì chỉ xem được những hình ảnh được chuẩn bị sẵn trong trailer."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡n trailer cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ cho thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥y ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡, nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§y ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm khi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i. ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ do cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° video chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­, livestream, hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ«n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  chia sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ» kinh nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ vai trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ² quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng.",
-          "en": "A trailer may showcase the graphics, characters, and standout features, but it doesnÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂt fully capture the gameplay experience. ThatÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs why content such as gameplay videos, livestreams, beginnerÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs guides, character reviews, team composition analyses, and tips and tricks plays such an important role."
-        }
+          "en": "A trailer may showcase the graphics, characters, and standout features, but it doesn’t fully capture the gameplay experience. That’s why content such as gameplay videos, livestreams, beginner’s guides, character reviews, team composition analyses, and tips and tricks plays such an important role.",
+          "vi": "Một đoạn trailer có thể cho thấy đồ hoạ, nhân vật và những cách nổi bật, nhưng thể hiện đầy đủ trải nghiệm khi chơi. Đó là lý do các nội dung như video chơi thử, livestream, hướng dẫn người mới, đánh giá nhân vật, phân tích đội hình và chia sẻ kinh nghiệm có vai trò quan trọng."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "NhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh dung rÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµ hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m. ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡n chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ³ vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng. Marketing hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ khiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i muÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i game mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu rÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµ mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ½ nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c gÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ sau khi tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i.",
-          "en": "This content helps players get a clearer picture of the product. At the same time, showcasing the actual experience helps avoid issues such as exaggerated advertising that doesnÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂt match playersÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ expectations. Effective marketing not only makes players want to download the game but also helps them understand exactly what theyÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂll get after downloading it."
-        }
+          "en": "This content helps players get a clearer picture of the product. At the same time, showcasing the actual experience helps avoid issues such as exaggerated advertising that doesn’t match players’ expectations. Effective marketing not only makes players want to download the game but also helps them understand exactly what they’ll get after downloading it.",
+          "vi": "Những nội dung này giúp người chơi hình dung rõ hơn về sản phẩm. Đồng thời, việc thể hiện trải nghiệm thực tế cũng hạn chế một số vấn đề như quảng cáo phóng đại nhưng trải nghiệm thực tế không như người chơi kỳ vọng. Marketing hiệu quả không chỉ khiến người chơi muốn tải game mà còn giúp họ hiểu rõ mình sẽ nhận được gì sau khi tải."
+        },
+        "type": "p"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§u nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i",
-            "en": "Content creators serve as a bridge to players"
+            "en": "Content creators serve as a bridge to players",
+            "vi": "Người sáng tạo nội dung trở thành cầu nối với người chơi"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "LÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±a chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºng Streamer, TikToker vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  YouTuber vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ game khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tin ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n mang ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt gÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³c nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬n gÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n gÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©i hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m. ThÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng qua viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­, chia sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ» cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£m nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n, phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, livestream hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·c tham gia cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a game, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi xem hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m theo cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± nhiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n.",
-          "en": "Choosing the right gaming streamers, TikTokers, and YouTubers not only helps get information out to the community but also provides a more relatable perspective on the product. By playing the game, sharing their impressions, analyzing characters, livestreaming, or participating in in-game activities, creators can help viewers understand the product in a more natural way."
-        }
+          "en": "Choosing the right gaming streamers, TikTokers, and YouTubers not only helps get information out to the community but also provides a more relatable perspective on the product. By playing the game, sharing their impressions, analyzing characters, livestreaming, or participating in in-game activities, creators can help viewers understand the product in a more natural way.",
+          "vi": "Lựa chọn đúng Streamer, TikToker và YouTuber về game không chỉ giúp đưa thông tin đến cộng đồng mà còn mang đến một góc nhìn gần gũi hơn về sản phẩm. Thông qua việc chơi thử, chia sẻ cảm nhận, phân tích nhân vật, livestream hoặc tham gia các hoạt động của game, người sáng tạo có thể giúp người xem hiểu sản phẩm theo cách tự nhiên hơn."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Tuy nhiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn, sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi theo dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµi khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  tiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªu chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ duy nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t. MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng theo dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµi nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi xem yÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªu thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºng thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ loÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i game ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng bÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ©c ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´i khi phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng theo dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµi lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­t liÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn quan ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m.",
-          "en": "However, the number of followers should not be the only criterion. A creator with a small followingÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂbut whose audience largely enjoys the specific genre of games being promoted and engages well with the contentÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂis sometimes a better fit than one with a large following but little relevance to the product."
-        }
+          "en": "However, the number of followers should not be the only criterion. A creator with a small following—but whose audience largely enjoys the specific genre of games being promoted and engages well with the content—is sometimes a better fit than one with a large following but little relevance to the product.",
+          "vi": "Tuy nhiên, số lượng người theo dõi không nên là tiêu chí duy nhất. Một người có số lượng theo dõi nhỏ nhưng phần lớn người xem yêu thích đúng thể loại game đang quảng bá và có mức độ tương tác tốt đôi khi phù hợp hơn một người có lượng theo dõi lớn nhưng ít liên quan đến sản phẩm."
+        },
+        "type": "p"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "Khai thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trong cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung",
-            "en": "Leverage community topics to develop content"
+            "en": "Leverage community topics to develop content",
+            "vi": "Khai thác các chủ đề trong cộng đồng để phát triển thành nội dung"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Khi tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt game mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng muÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³i gÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬. HÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ muÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i, ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh, sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± kiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn, bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·c nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng gÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·p. ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y khiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng trong hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i.",
-          "en": "When exploring a new game, players often want to know what others are saying. They may want to learn about characters, gameplay, team compositions, events, updates, or common issues faced by new players. This makes the community an important part of a playerÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs journey."
-        }
+          "en": "When exploring a new game, players often want to know what others are saying. They may want to learn about characters, gameplay, team compositions, events, updates, or common issues faced by new players. This makes the community an important part of a player’s journey.",
+          "vi": "Khi tìm hiểu một game mới, người chơi thường muốn biết những người khác đang nói gì. Họ có thể muốn biết nhân vật, cách chơi, đội hình, sự kiện, bản cập nhật hoặc những vấn đề mà người chơi mới thường gặp. Điều này khiến cộng đồng trở thành một phần quan trọng trong hành trình của người chơi."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n game qua quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc tham gia nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³m cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng, tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu qua nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng chia sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ» cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£o luÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c, hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªm lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ do ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm. NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i, nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿u phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥y lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi tiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªu cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c giÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡p, quyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂnh tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i game cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£nh hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng.",
-          "en": "Someone might learn about a game through an ad, but by joining a community group, reading posts from current players, and engaging in active discussions, they gain more reasons to try it out. Conversely, if most of the content they encounter consists of negative feedback that goes unaddressed, their decision to download the game may be affected."
-        }
+          "en": "Someone might learn about a game through an ad, but by joining a community group, reading posts from current players, and engaging in active discussions, they gain more reasons to try it out. Conversely, if most of the content they encounter consists of negative feedback that goes unaddressed, their decision to download the game may be affected.",
+          "vi": "Một người có thể biết đến game qua quảng cáo nhưng nhờ vào việc tham gia nhóm cộng đồng, tìm hiểu qua những chia sẻ của người đang chơi và thảo luận tích cực, họ có thêm lý do để trải nghiệm. Ngược lại, nếu phần lớn nội dung họ tìm thấy là những phản hồi tiêu cực mà không được giải đáp, quyết định tải game cũng có thể bị ảnh hưởng."
+        },
+        "type": "p"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "NhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng tranh luÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung",
-            "en": "Player discussions can also become content"
+            "en": "Player discussions can also become content",
+            "vi": "Những tranh luận của người chơi cũng có thể trở thành nội dung"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng game hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt luÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´n cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  tranh luÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n. ThÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢u hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡nh nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t, ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£, cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­ dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥ng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ i nguyÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn hay nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi trong bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi.",
-          "en": "A thriving gaming community always has topics that players are interested in and debate. These often include questions about the strongest characters, effective team compositions, how to use resources, or changes in the latest update."
-        }
+          "en": "A thriving gaming community always has topics that players are interested in and debate. These often include questions about the strongest characters, effective team compositions, how to use resources, or changes in the latest update.",
+          "vi": "Một cộng đồng game hoạt động tốt luôn có những chủ đề được người chơi quan tâm và tranh luận. Thường là câu hỏi về nhân vật mạnh nhất, đội hình hiệu quả, cách sử dụng tài nguyên hay những thay đổi trong bản cập nhật mới."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "NhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt bÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ i phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch, video giÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch, cuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc bÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·c mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt buÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi livestream trao ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi.",
-          "en": "These topics can serve as inspiration for developing an analysis piece, an explanatory video, a poll, or a livestream discussion."
-        }
+          "en": "These topics can serve as inspiration for developing an analysis piece, an explanatory video, a poll, or a livestream discussion.",
+          "vi": "Những chủ đề này có thể trở thành ý tưởng để phát triển thành một bài phân tích, video giải thích, cuộc bình chọn hoặc một buổi livestream trao đổi."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Tuy nhiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn, mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥c tiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªu lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o ra bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ³ cuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc tranh cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£i ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c. CÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  quan sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m, sau ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ cung cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥p thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªm thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tin ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ cuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£o luÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯u ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch.",
-          "en": "However, the goal is not to stir up controversy just to boost engagement. The best approach is to observe what players are truly interested in, and then provide additional information to make the discussion more meaningful."
-        }
+          "en": "However, the goal is not to stir up controversy just to boost engagement. The best approach is to observe what players are truly interested in, and then provide additional information to make the discussion more meaningful.",
+          "vi": "Tuy nhiên, mục tiêu là không tạo ra bất kỳ cuộc tranh cãi để tăng tương tác. Cách tốt nhất là quan sát điều người chơi thực sự quan tâm, sau đó cung cấp thêm thông tin để cuộc thảo luận trở nên hữu ích."
+        },
+        "type": "p"
       },
       {
-        "type": "h2",
         "text": {
-          "vi": "3. Marketing game cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi theo tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ«ng giai ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡n ",
-          "en": "3. Game marketing needs to evolve with each stage "
-        }
+          "en": "3. Game marketing needs to evolve with each stage ",
+          "vi": "3. Marketing game cần thay đổi theo từng giai đoạn "
+        },
+        "type": "h2"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "Marketing khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºc khi game ra mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯t",
-            "en": "Marketing doesnÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂt end when the game is released"
+            "en": "Marketing doesn’t end when the game is released",
+            "vi": "Marketing không kết thúc khi game ra mắt"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p trung gÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ° toÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ n bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng marketing vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh game lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt sai lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§m dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ gÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·p. NgÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc trong vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a game, khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºc cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng marketing. VÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ sau khi game ra mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯t, ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§u hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡, tham gia cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  chia sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ» trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ.",
-          "en": "Focusing nearly all marketing efforts on the gameÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs release date is a common mistake. The release date is just one milestone in a gameÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs lifecycleÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂnot the end of marketing efforts. After the game launches, players begin to form opinions, join the community, and share their experiences."
-        }
+          "en": "Focusing nearly all marketing efforts on the game’s release date is a common mistake. The release date is just one milestone in a game’s lifecycle—not the end of marketing efforts. After the game launches, players begin to form opinions, join the community, and share their experiences.",
+          "vi": "Việc tập trung gần như toàn bộ hoạt động marketing vào thời điểm phát hành game là một sai lầm dễ gặp. Ngày phát hành chỉ là một cột mốc trong vòng đời của game, không phải điểm kết thúc của hoạt động marketing. Vì sau khi game ra mắt, người chơi mới bắt đầu hình thành đánh giá, tham gia cộng đồng và chia sẻ trải nghiệm của họ."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Marketing cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c duy trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ xuyÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn suÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt quÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc - trong - sau khi phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh game vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng theo tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ«ng giai ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡n. ",
-          "en": "Marketing efforts must be sustained throughout the entire processÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂbefore, during, and after the gameÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂs releaseÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂand content must be developed in phases. "
-        }
+          "en": "Marketing efforts must be sustained throughout the entire process—before, during, and after the game’s release—and content must be developed in phases. ",
+          "vi": "Marketing cần được duy trì xuyên suốt quá trình trước - trong - sau khi phát hành game và nội dung cần được xây dựng theo từng giai đoạn. "
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "TrÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc khi ra mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯t cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p trung vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc giÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi thiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ giÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi game, nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t. Khi game phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh, nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i nhanh chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ng bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§u trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng qua video chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ­, hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ«n vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  livestream. Sau ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³, nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ chuyÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn sang mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¹o chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i, phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t, thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£o luÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c. Khi xuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥t hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p nhÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·c nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªm sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i quay trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i.",
-          "en": "Before launch, focus on introducing the game world, characters, and key highlights. Once the game is released, content should help players get started quickly through gameplay videos, tutorials, and livestreams. After that, content can shift to gameplay tips, character analysis, community discussions, and interactive activities. When an update or new character is released, this presents another opportunity to generate interest and bring players back."
-        }
+          "en": "Before launch, focus on introducing the game world, characters, and key highlights. Once the game is released, content should help players get started quickly through gameplay videos, tutorials, and livestreams. After that, content can shift to gameplay tips, character analysis, community discussions, and interactive activities. When an update or new character is released, this presents another opportunity to generate interest and bring players back.",
+          "vi": "Trước khi ra mắt có thể tập trung vào việc giới thiệu về thế giới game, nhân vật và những điểm nổi bật. Khi game phát hành, nội dung nên giúp người chơi nhanh chóng bắt đầu trải nghiệm thông qua video chơi thử, hướng dẫn và livestream. Sau đó, nội dung có thể chuyển sang mẹo chơi, phân tích nhân vật, thảo luận cộng đồng và các hoạt động tương tác. Khi xuất hiện bản cập nhật hoặc nhân vật mới, đây lại là cơ hội để tạo thêm sự quan tâm và đưa người chơi quay trở lại."
+        },
+        "type": "p"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "LÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯ng nghe ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng kÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©m viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ",
-            "en": "Listening to players is just as important as reaching out to them"
+            "en": "Listening to players is just as important as reaching out to them",
+            "vi": "Lắng nghe người chơi quan trọng không kém việc tiếp cận họ"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Marketing thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂp ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i. NhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ng vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi game, viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯ng nghe cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng kÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©m viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n.",
-          "en": "Marketing is often understood as delivering a message to players. But when it comes to games, listening is just as important as reaching out."
-        }
+          "en": "Marketing is often understood as delivering a message to players. But when it comes to games, listening is just as important as reaching out.",
+          "vi": "Marketing thường được hiểu là đưa thông điệp đến người chơi. Nhưng với game, việc lắng nghe cũng quan trọng không kém việc tiếp cận."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Sau khi phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh game, ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ theo dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµi cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c cuÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£o luÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n, phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng. TÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ« cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ liÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn, ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p theo, hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu rÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµ cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn game ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºt hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n.",
-          "en": "After a game is released, the team can monitor discussions, feedback, and reviews across various platforms. Using this data, the team can create future content, gain a deeper understanding of the community, and develop the game to make it more engaging."
-        }
+          "en": "After a game is released, the team can monitor discussions, feedback, and reviews across various platforms. Using this data, the team can create future content, gain a deeper understanding of the community, and develop the game to make it more engaging.",
+          "vi": "Sau khi phát hành game, đội ngũ có thể theo dõi các cuộc thảo luận, phản hồi và đánh giá trên các nền tảng. Từ các dữ liệu trên, đội ngũ có thể xây dựng nội dung tiếp theo, hiểu rõ cộng đồng hơn và phát triển game để thu hút hơn."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "VÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­y, ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡nh giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ marketing game nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p giÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯a dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ liÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu, phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh vi thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i.",
-          "en": "Therefore, game marketing evaluations should combine data, feedback, and actual player behavior."
-        }
+          "en": "Therefore, game marketing evaluations should combine data, feedback, and actual player behavior.",
+          "vi": "Vì vậy, đánh giá marketing game nên kết hợp giữa dữ liệu, phản hồi và hành vi thực tế của người chơi."
+        },
+        "type": "p"
       },
       {
         "type": "ul",
         "items": [
           {
-            "vi": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·t ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trung tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m trong chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c marketing game",
-            "en": "Put players at the center of your game marketing strategy"
+            "en": "Put players at the center of your game marketing strategy",
+            "vi": "Đặt người chơi ở trung tâm trong chiến lược marketing game"
           }
         ]
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Khi thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng game ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡nh tranh, thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­p trung vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a game ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­t nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºng nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³m ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m. NÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung marketing cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n gÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±c tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿, cung cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥p thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng tin hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯u ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ do ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i muÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡m phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m.",
-          "en": "Marketing isnÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂt just about attracting players; it also involves listening to feedback, tracking behavior, and maintaining their interest throughout their gaming experience. Putting players at the center will help the brand develop a more tailored approach and foster long-term loyalty to the product."
-        }
+          "en": "As the Vietnamese gaming market becomes increasingly competitive, brands should not just focus on reaching as many people as possible; instead, they need to identify the right audience and understand what truly matters to them. Marketing content should also reflect the actual gaming experience, provide useful information, and give players a reason to explore the product.",
+          "vi": "Khi thị trường game Việt Nam ngày càng cạnh tranh, thương hiệu không nên chỉ tập trung vào việc đưa game đến thật nhiều người mà cần tìm đúng nhóm người chơi và hiểu điều họ thực sự quan tâm. Nội dung marketing cũng cần gần với trải nghiệm thực tế, cung cấp thông tin hữu ích và tạo lý do để người chơi muốn khám phá sản phẩm."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Marketing khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ«ng lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc thu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºt ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯ng nghe phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, theo dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂµi hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh vi vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  duy trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m trong suÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt quÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬nh hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm game. ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ·t ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trung tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ½ giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± gÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯n bÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢u dÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ i vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£n phÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ©m.",
-          "en": "The Vietnamese gaming market is entering a more competitive phase, as players have an increasing number of options and the way they engage with games has changed significantly. In this context, simply increasing the advertising budget is no longer enough to set a brand apart. What matters more is that brands understand players, keep up with trends, and choose the right approach for each target audience."
-        }
+          "en": "Marketing isn’t just about attracting players; it also involves listening to feedback, tracking behavior, and maintaining their interest throughout their gaming experience. Putting players at the center will help the brand develop a more tailored approach and foster long-term loyalty to the product.",
+          "vi": "Marketing không chỉ dừng lại ở việc thu hút người chơi mà còn cần lắng nghe phản hồi, theo dõi hành vi và duy trì sự quan tâm trong suốt quá trình họ trải nghiệm game. Đặt người chơi ở trung tâm sẽ giúp thương hiệu xây dựng cách tiếp cận phù hợp hơn và tạo sự gắn bó lâu dài với sản phẩm."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "ThÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng game ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang bÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ o giai ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡nh tranh hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n, khi ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ y cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±a chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n game cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ng thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ. Trong bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£nh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³, viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂng ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢n sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡o khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  yÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿u tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c biÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt. ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i, nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯m bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯t xu hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±a chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ch tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ­n phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ«ng nhÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³m ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng.",
-          "en": "From social media content, KOLs/KOCs, and streamers to community building, every touchpoint can become an opportunity for a game to make an impression and maintain playersÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ interest. An effective strategy not only aims to reach a wider audience but also needs to create an experience compelling enough to make players want to play, share, and stay engaged."
-        }
+          "en": "",
+          "vi": ""
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "TÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ« nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡ng xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, KOL/KOC, streamer ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng, mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡m ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ game tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥n tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  duy trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ± quan tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢m cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i. MÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu quÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ khÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ´ng chÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n viÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂc ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°a game ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi nhiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡n, mÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²n cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ§n tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o ra trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£i nghiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂm ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¥p dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ«n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ muÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i, chia sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ» vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  tiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿p tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥c gÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯n bÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³.",
-          "en": "In an ever-changing market, the ability to listen to players and adapt to new behaviors will be a key factor in helping game brands carve out their own niche and build a sustainable community."
-        }
+          "en": "The Vietnamese gaming market is entering a more competitive phase, as players have an increasing number of options and the way they engage with games has changed significantly. In this context, simply increasing the advertising budget is no longer enough to set a brand apart. What matters more is that brands understand players, keep up with trends, and choose the right approach for each target audience.",
+          "vi": "Thị trường game Việt Nam đang bước vào giai đoạn cạnh tranh hơn, khi người chơi ngày càng có nhiều lựa chọn và cách họ tiếp cận game cũng thay đổi đáng kể. Trong bối cảnh đó, việc chỉ tăng ngân sách quảng cáo không còn là yếu tố để tạo khác biệt. Điều quan trọng hơn là thương hiệu cần hiểu người chơi, nắm bắt xu hướng và lựa chọn cách tiếp cận phù hợp với từng nhóm đối tượng."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "Trong mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng liÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¥c thay ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi, khÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ£ nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂng lÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¯ng nghe ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi chÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡i vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ch ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ©ng vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi hÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ nh vi mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ½ lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  yÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿u tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ quan trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng giÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºp cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c thÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng hiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂu game tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ riÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ¯ng.",
-          "en": "If youÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂre looking for a partner to implement game marketing in Vietnam, ANBU can assist with everything from strategy development and content creation to connecting with creators and organizing community and esports activities. Contact ANBU to discuss a plan tailored to your game."
-        }
+          "en": "From social media content, KOLs/KOCs, and streamers to community building, every touchpoint can become an opportunity for a game to make an impression and maintain players’ interest. An effective strategy not only aims to reach a wider audience but also needs to create an experience compelling enough to make players want to play, share, and stay engaged.",
+          "vi": "Từ nội dung trên mạng xã hội, KOL/KOC, streamer đến việc xây dựng cộng đồng, mỗi điểm chạm đều có thể trở thành cơ hội để game tạo ấn tượng và duy trì sự quan tâm của người chơi. Một chiến lược hiệu quả không chỉ hướng đến việc đưa game đến với nhiều người hơn, mà còn cần tạo ra trải nghiệm đủ hấp dẫn để họ muốn chơi, chia sẻ và tiếp tục gắn bó."
+        },
+        "type": "p"
       },
       {
-        "type": "p",
         "text": {
-          "vi": "NÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿u bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡n ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂang tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬m kiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿m mÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡c triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn khai marketing game tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡i ViÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂt Nam, ANBU cÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³ thÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£ tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ« xÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢y dÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±ng chiÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£c, phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡t triÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂn nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi dung, kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿t nÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi ngÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi sÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ng tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡o ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿n hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡t ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂng vÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  Esports. LiÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂªn hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ ANBU ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ trao ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ kÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¿ hoÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡ch phÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ hÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ£p vÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂi tÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ±a game cÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂ§a bÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ¡n.",
-          "en": "If youÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂre looking for a partner to implement game marketing in Vietnam, ANBU can assist with everything from strategy development and content creation to connecting with creators and organizing community and esports activities. Contact ANBU to discuss a plan tailored to your game."
-        }
+          "en": "In an ever-changing market, the ability to listen to players and adapt to new behaviors will be a key factor in helping game brands carve out their own niche and build a sustainable community.",
+          "vi": "Trong một thị trường liên tục thay đổi, khả năng lắng nghe người chơi và thích ứng với hành vi mới sẽ là yếu tố quan trọng giúp các thương hiệu game tạo được vị trí riêng và xây dựng cộng đồng bền vững."
+        },
+        "type": "p"
+      },
+      {
+        "text": {
+          "en": "",
+          "vi": ""
+        },
+        "type": "p"
+      },
+      {
+        "text": {
+          "en": "If you’re looking for a partner to implement game marketing in Vietnam, ANBU can assist with everything from strategy development and content creation to connecting with creators and organizing community and esports activities. Contact ANBU to discuss a plan tailored to your game.",
+          "vi": "Nếu bạn đang tìm kiếm một đối tác triển khai marketing game tại Việt Nam, ANBU có thể hỗ trợ từ xây dựng chiến lược, phát triển nội dung, kết nối người sáng tạo đến hoạt động cộng đồng và Esports. Liên hệ ANBU để trao đổi về kế hoạch phù hợp với tựa game của bạn."
+        },
+        "type": "p"
       }
     ]
   }

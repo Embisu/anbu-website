@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isLocale, defaultLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { posts, getPost, type Block } from "@/content/posts";
+import { posts, getPost, type Post, type Block } from "@/content/posts";
 import { postDeepDiveBySlug } from "@/content/postDeepDive";
 import { t } from "@/content/site";
 import { buildMetadata, siteUrl, breadcrumbLd } from "@/lib/seo";
@@ -15,6 +15,14 @@ import EditorialMedia, { editorialImageForPostData } from "@/components/Editoria
 import { PostCard } from "@/components/cards";
 import ClientCustomPostViewer from "@/components/ClientCustomPostViewer";
 import PostComments from "@/components/PostComments";
+import { fetchSupabasePostBySlug } from "@/lib/supabase";
+
+function isCorruptedPost(p?: Post | null): boolean {
+  if (!p) return false;
+  const title = p.title?.vi || "";
+  const slug = p.slug || "";
+  return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+}
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => posts.map((p) => ({ locale, slug: p.slug })));
@@ -26,7 +34,13 @@ export async function generateMetadata({
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
-  const post = getPost(params.slug);
+  let post = getPost(params.slug);
+  if (!post || isCorruptedPost(post)) {
+    const supaPost = await fetchSupabasePostBySlug(params.slug);
+    if (supaPost && !isCorruptedPost(supaPost)) {
+      post = supaPost;
+    }
+  }
   if (!post) {
     return buildMetadata({
       locale,
@@ -193,9 +207,14 @@ export default async function BlogPostPage({
 }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
-  const post = getPost(params.slug);
-  if (!post) {
-    return <ClientCustomPostViewer slug={params.slug} locale={locale} dict={dict} />;
+  let post = getPost(params.slug);
+  if (!post || isCorruptedPost(post)) {
+    const supaPost = await fetchSupabasePostBySlug(params.slug);
+    if (supaPost && !isCorruptedPost(supaPost)) {
+      post = supaPost;
+    } else if (!post) {
+      return <ClientCustomPostViewer slug={params.slug} locale={locale} dict={dict} />;
+    }
   }
 
   const related = [
