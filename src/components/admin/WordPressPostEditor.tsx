@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
 import MediaManager from "@/components/admin/MediaManager";
 import RankMathSEO from "@/components/admin/RankMathSEO";
 import { supabase } from "@/lib/supabase";
+import { renderRichText } from "@/lib/renderRichText";
 
 type WordPressPostEditorProps = {
   initialPost?: Post | null;
@@ -56,6 +57,301 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
   const [aiNotice, setAiNotice] = useState<string | null>(null);
   const coverFileInputRef = useRef<HTMLInputElement>(null);
   const toolbarFileInputRef = useRef<HTMLInputElement>(null);
+
+  // Auto-Save & Draft State
+  const draftKey = `anbu_draft_${initialPost?.slug || "new"}`;
+  const draftTimeKey = `${draftKey}_time`;
+  const [autoSaveTime, setAutoSaveTime] = useState<string | null>(null);
+  const [draftAvailable, setDraftAvailable] = useState<{ post: Post; time: string } | null>(null);
+
+  // Device Preview Switcher State
+  const [previewDevice, setPreviewDevice] = useState<"desktop" | "tablet" | "mobile">("desktop");
+
+  // Zen Mode (Toàn màn hình) State
+  const [isZenMode, setIsZenMode] = useState(false);
+
+  // Smart Import from Docs / Word State
+  const [showImportModal, setShowImportModal] = useState(false);
+  const [importRawText, setImportRawText] = useState("");
+  const [importMode, setImportMode] = useState<"append" | "replace">("append");
+  const [importAutoTitle, setImportAutoTitle] = useState(true);
+
+  // Check for existing draft on mount
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(draftKey);
+      const savedTime = localStorage.getItem(draftTimeKey);
+      if (saved) {
+        const parsed: Post = JSON.parse(saved);
+        const isDifferent =
+          parsed.title?.vi !== (initialPost?.title?.vi || "") ||
+          parsed.body?.length !== (initialPost?.body?.length || 0);
+        if (isDifferent && parsed.title?.vi) {
+          setDraftAvailable({ post: parsed, time: savedTime || "trước đó" });
+        }
+      }
+    } catch (e) {
+      console.error("Error checking draft:", e);
+    }
+  }, [draftKey]);
+
+  // Debounced auto-save effect
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (post.title.vi || post.body.length > 0) {
+        try {
+          const nowStr = new Date().toLocaleTimeString("vi-VN", {
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+          });
+          localStorage.setItem(draftKey, JSON.stringify(post));
+          localStorage.setItem(draftTimeKey, nowStr);
+          setAutoSaveTime(nowStr);
+        } catch (e) {
+          console.error("Error auto-saving draft:", e);
+        }
+      }
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, [post, draftKey, draftTimeKey]);
+
+  // Escape key to exit Zen Mode
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isZenMode) {
+        setIsZenMode(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isZenMode]);
+
+  const handleRestoreDraft = () => {
+    if (draftAvailable) {
+      setPost(draftAvailable.post);
+      setDraftAvailable(null);
+      setAiNotice(`✅ Đã khôi phục bản nháp từ lúc ${draftAvailable.time}!`);
+      setTimeout(() => setAiNotice(null), 4000);
+    }
+  };
+
+  const handleDiscardDraft = () => {
+    try {
+      localStorage.removeItem(draftKey);
+      localStorage.removeItem(draftTimeKey);
+    } catch {}
+    setDraftAvailable(null);
+    setAiNotice("🗑️ Đã xóa bản nháp cũ.");
+    setTimeout(() => setAiNotice(null), 3000);
+  };
+
+  const handleManualSaveDraft = () => {
+    try {
+      const nowStr = new Date().toLocaleTimeString("vi-VN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      });
+      localStorage.setItem(draftKey, JSON.stringify(post));
+      localStorage.setItem(draftTimeKey, nowStr);
+      setAutoSaveTime(nowStr);
+      setAiNotice(`💾 Đã lưu nháp vào bộ nhớ trình duyệt lúc ${nowStr}!`);
+      setTimeout(() => setAiNotice(null), 3000);
+    } catch {
+      alert("Không thể lưu bản nháp vào trình duyệt.");
+    }
+  };
+
+  // Smart Parse Text to Blocks
+  const parseRawTextToBlocks = (raw: string) => {
+    const lines = raw.replace(/\r\n/g, "\n").split("\n");
+    const blocks: any[] = [];
+    let detectedTitle: string | undefined = undefined;
+    const stats = { h2: 0, p: 0, ul: 0, quote: 0, image: 0 };
+
+    let currentParagraph: string[] = [];
+    let currentList: string[] = [];
+
+    const flushParagraph = () => {
+      if (currentParagraph.length > 0) {
+        const text = currentParagraph.join(" ").trim();
+        if (text) {
+          blocks.push({
+            type: "p",
+            text: { vi: text, en: "" },
+          });
+          stats.p++;
+        }
+        currentParagraph = [];
+      }
+    };
+
+    const flushList = () => {
+      if (currentList.length > 0) {
+        blocks.push({
+          type: "ul",
+          items: currentList.map((item) => ({ vi: item, en: "" })),
+        });
+        stats.ul++;
+        currentList = [];
+      }
+    };
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].trim();
+
+      if (!line) {
+        flushParagraph();
+        flushList();
+        continue;
+      }
+
+      // 1. Image
+      const imgMatch = line.match(/^!\[(.*?)\]\((https?:\/\/[^\s)]+)\)$/);
+      const isImgUrl = /^https?:\/\/[^\s]+\.(png|jpe?g|webp|gif|svg)(\?[^\s]*)?$/i.test(line);
+      if (imgMatch || isImgUrl) {
+        flushParagraph();
+        flushList();
+        const src = imgMatch ? imgMatch[2] : line;
+        const alt = imgMatch ? imgMatch[1] : "Hình ảnh bài viết";
+        blocks.push({
+          type: "image",
+          src,
+          alt: { vi: alt, en: "" },
+          caption: { vi: "", en: "" },
+        });
+        stats.image++;
+        continue;
+      }
+
+      // 2. Quote
+      if (line.startsWith(">")) {
+        flushParagraph();
+        flushList();
+        const quoteText = line.replace(/^>\s*/, "").trim();
+        if (quoteText) {
+          blocks.push({
+            type: "quote",
+            text: { vi: quoteText, en: "" },
+          });
+          stats.quote++;
+        }
+        continue;
+      }
+
+      // 3. Markdown Headings
+      const mdHeadingMatch = line.match(/^(#{1,4})\s+(.+)$/);
+      if (mdHeadingMatch) {
+        flushParagraph();
+        flushList();
+        const hText = mdHeadingMatch[2].trim();
+        if (!detectedTitle && mdHeadingMatch[1].length === 1 && importAutoTitle) {
+          detectedTitle = hText;
+        } else {
+          blocks.push({
+            type: "h2",
+            text: { vi: hText, en: "" },
+          });
+          stats.h2++;
+        }
+        continue;
+      }
+
+      // 4. Numbered Headings (e.g. "1. Tiêu đề", "Phần 1: Giới thiệu", "I. Tổng quan")
+      const numHeadingMatch = line.match(/^(?:\d+[\.\)]|(?:Phần|Chương|Mục|Bài)\s+\d+[:\.]?|[IVXLCDM]+[\.\)])\s+(.+)$/i);
+      if (numHeadingMatch && line.length < 150) {
+        flushParagraph();
+        flushList();
+        blocks.push({
+          type: "h2",
+          text: { vi: line, en: "" },
+        });
+        stats.h2++;
+        continue;
+      }
+
+      // 5. Bullet List items
+      const listMatch = line.match(/^[-*+•]\s+(.+)$/);
+      if (listMatch) {
+        flushParagraph();
+        currentList.push(listMatch[1].trim());
+        continue;
+      }
+
+      // Paragraph
+      if (currentList.length > 0) {
+        flushList();
+      }
+      currentParagraph.push(line);
+    }
+
+    flushParagraph();
+    flushList();
+
+    return { title: detectedTitle, blocks, stats };
+  };
+
+  const handleExecuteImport = () => {
+    if (!importRawText.trim()) return;
+    const { title: detectedTitle, blocks: newBlocks, stats } = parseRawTextToBlocks(importRawText);
+
+    if (newBlocks.length === 0) {
+      alert("Không tìm thấy nội dung hợp lệ để nhập.");
+      return;
+    }
+
+    let updatedTitle = post.title;
+    if (detectedTitle && importAutoTitle && (!post.title.vi || post.title.vi.startsWith("Bài viết mới"))) {
+      updatedTitle = { ...post.title, vi: detectedTitle };
+    }
+
+    const updatedBody = importMode === "replace" ? newBlocks : [...post.body, ...newBlocks];
+
+    setPost((prev) => ({
+      ...prev,
+      title: updatedTitle,
+      body: updatedBody,
+    }));
+
+    setShowImportModal(false);
+    setImportRawText("");
+    setAiNotice(
+      `📥 Đã nhập thành công ${newBlocks.length} khối (${stats.h2} tiêu đề, ${stats.p} đoạn văn, ${stats.ul} danh sách, ${stats.image} ảnh, ${stats.quote} trích dẫn)!`
+    );
+    setTimeout(() => setAiNotice(null), 5000);
+  };
+
+  // Inline formatting helper
+  const applyInlineFormatting = (
+    blockIndex: number,
+    format: "bold" | "italic" | "link",
+    itemIndex?: number
+  ) => {
+    const currentText =
+      typeof itemIndex === "number"
+        ? (post.body[blockIndex] as any).items[itemIndex][activeLang] || ""
+        : (post.body[blockIndex] as any).text[activeLang] || "";
+
+    let newText = currentText;
+
+    if (format === "bold") {
+      newText = currentText ? `${currentText} **từ khóa**` : "**từ khóa in đậm**";
+    } else if (format === "italic") {
+      newText = currentText ? `${currentText} *từ khóa*` : "*từ khóa in nghiêng*";
+    } else if (format === "link") {
+      const url = prompt("Nhập đường dẫn URL liên kết:", "https://anbu.asia");
+      if (!url) return;
+      newText = currentText ? `${currentText} [văn bản liên kết](${url})` : `[văn bản liên kết](${url})`;
+    }
+
+    if (typeof itemIndex === "number") {
+      updateListItem(blockIndex, itemIndex, newText);
+    } else {
+      updateBlock(blockIndex, newText);
+    }
+  };
 
   const slugifyVietnamese = (str: string) => {
     return str
@@ -447,6 +743,13 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
       slug: cleanSlug,
       readingTime,
     };
+
+    try {
+      localStorage.removeItem(draftKey);
+      localStorage.removeItem(draftTimeKey);
+      setDraftAvailable(null);
+    } catch {}
+
     onSave(finalPost);
   };
 
@@ -483,7 +786,19 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="hidden sm:inline-flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md font-medium" title="Hệ thống tự động lưu bản nháp vào trình duyệt sau mỗi 2.5 giây chỉnh sửa">
+            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+            {autoSaveTime ? `Đã lưu ${autoSaveTime}` : "Tự động lưu nháp"}
+          </span>
+          <button
+            type="button"
+            onClick={() => setIsZenMode(true)}
+            className="rounded border border-indigo-300 bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-700 shadow-xs hover:bg-indigo-100 transition flex items-center gap-1.5"
+            title="Mở không gian soạn thảo toàn màn hình không phân tâm"
+          >
+            <span>⛶</span> <span>Toàn màn hình</span>
+          </button>
           <button
             type="button"
             onClick={copyPostCode}
@@ -507,6 +822,38 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
           </button>
         </div>
       </div>
+
+      {draftAvailable && (
+        <div className="rounded-lg border border-amber-300 bg-amber-50 p-3.5 shadow-sm flex flex-wrap items-center justify-between gap-3 text-xs text-amber-900">
+          <div className="flex items-center gap-2.5">
+            <span className="text-xl">💾</span>
+            <div>
+              <p className="font-bold">
+                Tìm thấy bản lưu nháp lúc {draftAvailable.time} ({draftAvailable.post.title.vi || "Chưa có tiêu đề"})
+              </p>
+              <p className="text-[11px] text-amber-700">
+                Hệ thống tự động lưu bản sửa đổi gần nhất của bạn trên máy này. Bạn có muốn khôi phục lại không?
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={handleRestoreDraft}
+              className="rounded bg-amber-600 px-3.5 py-1.5 font-bold text-white shadow-xs hover:bg-amber-700 transition cursor-pointer"
+            >
+              Khôi phục bản nháp
+            </button>
+            <button
+              type="button"
+              onClick={handleDiscardDraft}
+              className="rounded border border-amber-400 bg-white px-3 py-1.5 font-semibold text-amber-800 hover:bg-amber-100 transition cursor-pointer"
+            >
+              Bỏ qua & Xóa nháp
+            </button>
+          </div>
+        </div>
+      )}
 
       {aiNotice && (
         <div className="rounded border-l-4 border-[#2271b1] bg-white p-3 shadow-sm text-xs font-bold text-[#135e96]">
@@ -549,6 +896,14 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
               <span>⚡ Trợ lý AI Copilot:</span>
             </div>
             <div className="flex flex-wrap items-center gap-1.5">
+              <button
+                type="button"
+                onClick={() => setShowImportModal(true)}
+                className="rounded border border-purple-600 bg-white px-2.5 py-1 text-[11px] font-bold text-purple-700 hover:bg-purple-50 transition flex items-center gap-1 shadow-xs"
+                title="Nhập và tự động nhận diện nội dung từ Google Docs, Word, Notion hoặc Markdown"
+              >
+                <span>📥</span> <span>Nhập từ Docs/Word</span>
+              </button>
               <button
                 type="button"
                 onClick={handleAutoTranslateToEnglish}
@@ -772,7 +1127,28 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                       </div>
 
                       {block.type === "h2" && (
-                        <div>
+                        <div className="space-y-1.5">
+                          <div className="flex items-center justify-between text-[11px] text-slate-500">
+                            <div className="flex items-center gap-1">
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "bold")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 hover:bg-slate-200 transition"
+                                title="In đậm"
+                              >
+                                B
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "italic")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] italic font-serif text-slate-700 hover:bg-slate-200 transition"
+                                title="In nghiêng"
+                              >
+                                I
+                              </button>
+                            </div>
+                            <span className="text-[10px] text-slate-400">Tiêu đề phân đoạn bài viết</span>
+                          </div>
                           <input
                             type="text"
                             value={block.text[activeLang] || ""}
@@ -784,7 +1160,36 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                       )}
 
                       {block.type === "p" && (
-                        <div>
+                        <div className="space-y-1.5">
+                          <div className="flex items-center justify-between text-[11px] text-slate-500">
+                            <div className="flex items-center gap-1">
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "bold")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 hover:bg-slate-200 transition"
+                                title="Chèn từ khóa in đậm (**từ khóa**)"
+                              >
+                                B
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "italic")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] italic font-serif text-slate-700 hover:bg-slate-200 transition"
+                                title="Chèn từ khóa in nghiêng (*từ khóa*)"
+                              >
+                                I
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "link")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] font-semibold text-blue-700 hover:bg-blue-100 transition"
+                                title="Chèn đường dẫn liên kết ([văn bản](url))"
+                              >
+                                🔗 Link
+                              </button>
+                            </div>
+                            <span className="text-[10px] text-slate-400">Hỗ trợ: **đậm**, *nghiêng*, [link](url)</span>
+                          </div>
                           <textarea
                             rows={3}
                             value={block.text[activeLang] || ""}
@@ -796,7 +1201,33 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                       )}
 
                       {block.type === "quote" && (
-                        <div className="border-l-4 border-[#2271b1] bg-blue-50/30 p-3 rounded">
+                        <div className="border-l-4 border-[#2271b1] bg-blue-50/30 p-3 rounded space-y-1.5">
+                          <div className="flex items-center justify-between text-[11px] text-slate-500">
+                            <div className="flex items-center gap-1">
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "bold")}
+                                className="rounded border border-blue-200 bg-white px-1.5 py-0.5 text-[10px] font-bold text-slate-700 hover:bg-blue-100 transition"
+                              >
+                                B
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "italic")}
+                                className="rounded border border-blue-200 bg-white px-1.5 py-0.5 text-[10px] italic font-serif text-slate-700 hover:bg-blue-100 transition"
+                              >
+                                I
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "link")}
+                                className="rounded border border-blue-200 bg-white px-1.5 py-0.5 text-[10px] font-semibold text-blue-700 hover:bg-blue-100 transition"
+                              >
+                                🔗 Link
+                              </button>
+                            </div>
+                            <span className="text-[10px] text-slate-400">Trích dẫn chuyên gia / số liệu</span>
+                          </div>
                           <textarea
                             rows={2}
                             value={block.text[activeLang] || ""}
@@ -809,6 +1240,10 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
 
                       {block.type === "ul" && (
                         <div className="space-y-2">
+                          <div className="flex items-center justify-between text-[10px] text-slate-400 px-2">
+                            <span>Danh sách các điểm nổi bật</span>
+                            <span>Hỗ trợ **đậm**, *nghiêng*, [link](url)</span>
+                          </div>
                           <div className="space-y-1.5 pl-2">
                             {block.items.map((it, itemIdx) => (
                               <div key={itemIdx} className="flex items-center gap-2">
@@ -819,6 +1254,22 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                                   onChange={(e) => updateListItem(index, itemIdx, e.target.value)}
                                   className="flex-1 rounded border border-[#ccd0d4] p-1 text-xs text-[#2c3338] outline-none"
                                 />
+                                <button
+                                  type="button"
+                                  onClick={() => applyInlineFormatting(index, "bold", itemIdx)}
+                                  className="rounded border border-slate-200 bg-slate-50 px-1 py-0.5 text-[10px] font-bold text-slate-700 hover:bg-slate-200"
+                                  title="In đậm mục này"
+                                >
+                                  B
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => applyInlineFormatting(index, "link", itemIdx)}
+                                  className="rounded border border-slate-200 bg-slate-50 px-1 py-0.5 text-[10px] text-blue-700 hover:bg-blue-100"
+                                  title="Chèn link"
+                                >
+                                  🔗
+                                </button>
                                 <button
                                   type="button"
                                   onClick={() => removeListItem(index, itemIdx)}
@@ -1142,36 +1593,220 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
               </div>
             </div>
           ) : (
-            /* Live Preview Canvas */
-            <div className="rounded border border-[#ccd0d4] bg-white p-8 shadow-sm">
-              <div className="mb-3 text-xs font-bold uppercase tracking-wider text-[#f5501e]">
-                {post.category[activeLang]} • {post.date} • {readingTime} phút đọc
-              </div>
-              <h2 className="font-display text-3xl font-bold text-[#1d2327]">{post.title[activeLang]}</h2>
-              <p className="mt-3 text-base leading-relaxed text-[#50575e] border-b border-[#eee] pb-5">
-                {post.excerpt[activeLang]}
-              </p>
+            /* Live Preview Canvas with Device Switcher */
+            <div className="space-y-4">
+              {/* Device Mode Switcher Toolbar */}
+              <div className="flex flex-wrap items-center justify-between rounded-lg border border-[#ccd0d4] bg-white p-3 shadow-xs gap-3">
+                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                  <span>📱 Chế độ xem trước thiết bị:</span>
+                  <div className="inline-flex rounded-lg border border-slate-200 bg-slate-100 p-0.5 text-xs">
+                    <button
+                      type="button"
+                      onClick={() => setPreviewDevice("desktop")}
+                      className={`flex items-center gap-1.5 rounded-md px-3 py-1 font-semibold transition ${
+                        previewDevice === "desktop"
+                          ? "bg-white text-blue-600 shadow-xs"
+                          : "text-slate-600 hover:text-slate-900"
+                      }`}
+                    >
+                      <span>🖥️</span> <span>Máy tính (Desktop)</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setPreviewDevice("tablet")}
+                      className={`flex items-center gap-1.5 rounded-md px-3 py-1 font-semibold transition ${
+                        previewDevice === "tablet"
+                          ? "bg-white text-blue-600 shadow-xs"
+                          : "text-slate-600 hover:text-slate-900"
+                      }`}
+                    >
+                      <span>💻</span> <span>Máy tính bảng (Tablet 768px)</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setPreviewDevice("mobile")}
+                      className={`flex items-center gap-1.5 rounded-md px-3 py-1 font-semibold transition ${
+                        previewDevice === "mobile"
+                          ? "bg-white text-blue-600 shadow-xs"
+                          : "text-slate-600 hover:text-slate-900"
+                      }`}
+                    >
+                      <span>📱</span> <span>Điện thoại (Mobile 375px)</span>
+                    </button>
+                  </div>
+                </div>
 
-              <div className="mt-6 space-y-4">
-                {post.body.map((b, i) => {
-                  if (b.type === "h2") return <h3 key={i} className="font-display text-xl font-bold text-[#1d2327] mt-6">{b.text[activeLang]}</h3>;
-                  if (b.type === "p") return <p key={i} className="text-sm leading-relaxed text-[#2c3338]">{b.text[activeLang]}</p>;
-                  if (b.type === "quote") return <blockquote key={i} className="border-l-4 border-[#f5501e] bg-orange-50/40 p-3 italic text-sm text-[#2c3338]">{b.text[activeLang]}</blockquote>;
-                  if (b.type === "ul") return (
-                    <ul key={i} className="space-y-1.5 pl-4 list-disc text-sm text-[#2c3338]">
-                      {b.items.map((it, iIdx) => <li key={iIdx}>{it[activeLang]}</li>)}
-                    </ul>
-                  );
-                  if (b.type === "image") return (
-                    <figure key={i} className="my-4 overflow-hidden rounded border border-[#eee] bg-[#fafafa]">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={b.src} alt={b.alt[activeLang]} className="w-full max-h-[420px] object-cover" />
-                      {b.caption && <figcaption className="p-2 text-center text-xs text-[#646970]">{b.caption[activeLang]}</figcaption>}
-                    </figure>
-                  );
-                  return null;
-                })}
+                <div className="text-xs text-slate-500">
+                  Xem ngôn ngữ: <strong className="text-slate-800 uppercase">{activeLang}</strong>
+                </div>
               </div>
+
+              {/* Preview Rendering per Device */}
+              {previewDevice === "mobile" ? (
+                /* SMARTPHONE MOCKUP 375px */
+                <div className="flex justify-center py-4 bg-slate-100/80 rounded-2xl p-4 border border-slate-200">
+                  <div className="w-[375px] max-w-full rounded-[44px] border-[10px] border-slate-900 bg-white shadow-2xl overflow-hidden flex flex-col relative">
+                    {/* Dynamic Island / Status Bar */}
+                    <div className="bg-slate-900 pt-3 pb-2 px-6 flex items-center justify-between text-white text-[11px] font-mono select-none">
+                      <span>9:41</span>
+                      <div className="w-20 h-4 bg-black rounded-full mx-auto" />
+                      <div className="flex items-center gap-1 text-[10px]">
+                        <span>5G</span>
+                        <span>100%</span>
+                      </div>
+                    </div>
+
+                    {/* Browser Address Bar */}
+                    <div className="bg-slate-100 px-3 py-1.5 border-b border-slate-200 flex items-center gap-1.5 text-[10px] text-slate-500 font-mono">
+                      <span className="text-emerald-600 font-bold">🔒</span>
+                      <span className="truncate">anbu.asia/{locale}/blog/{post.slug || "bai-viet"}</span>
+                    </div>
+
+                    {/* Mobile Scrollable Viewport */}
+                    <div className="max-h-[600px] overflow-y-auto p-4 space-y-3.5 text-slate-800">
+                      {/* Featured image */}
+                      {post.cover && (
+                        <div className="overflow-hidden rounded-xl border border-slate-100 shadow-xs -mx-1">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={post.cover} alt="Cover" className="w-full h-44 object-cover" />
+                        </div>
+                      )}
+
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#f5501e]">
+                        {post.category[activeLang]} • {readingTime} phút đọc
+                      </div>
+
+                      <h2 className="font-display text-xl font-bold leading-snug text-[#1d2327]">
+                        {post.title[activeLang]}
+                      </h2>
+
+                      <p className="text-xs leading-relaxed text-[#50575e] border-b border-slate-100 pb-3 font-medium">
+                        {post.excerpt[activeLang]}
+                      </p>
+
+                      <div className="space-y-3 pt-1">
+                        {post.body.map((b, i) => {
+                          if (b.type === "h2")
+                            return (
+                              <h3 key={i} className="font-display text-base font-bold text-[#1d2327] mt-4 pt-2 border-t border-slate-100">
+                                {renderRichText(b.text[activeLang])}
+                              </h3>
+                            );
+                          if (b.type === "p")
+                            return (
+                              <p key={i} className="text-xs leading-relaxed text-[#2c3338] whitespace-pre-line">
+                                {renderRichText(b.text[activeLang])}
+                              </p>
+                            );
+                          if (b.type === "quote")
+                            return (
+                              <blockquote key={i} className="border-l-3 border-[#f5501e] bg-orange-50/50 p-2.5 italic text-xs text-[#2c3338] whitespace-pre-line rounded-r">
+                                {renderRichText(b.text[activeLang])}
+                              </blockquote>
+                            );
+                          if (b.type === "ul")
+                            return (
+                              <ul key={i} className="space-y-1.5 pl-3 list-disc text-xs text-[#2c3338]">
+                                {b.items.map((it, iIdx) => (
+                                  <li key={iIdx}>{renderRichText(it[activeLang])}</li>
+                                ))}
+                              </ul>
+                            );
+                          if (b.type === "image")
+                            return (
+                              <figure key={i} className="my-2.5 overflow-hidden rounded-lg border border-[#eee] bg-[#fafafa]">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src={b.src} alt={b.alt[activeLang]} className="w-full max-h-[260px] object-cover" />
+                                {b.caption && (
+                                  <figcaption className="p-1.5 text-center text-[10px] text-[#646970]">
+                                    {b.caption[activeLang]}
+                                  </figcaption>
+                                )}
+                              </figure>
+                            );
+                          return null;
+                        })}
+                      </div>
+                    </div>
+
+                    {/* Mobile Home Indicator */}
+                    <div className="py-2 bg-white border-t border-slate-100 flex justify-center">
+                      <div className="w-28 h-1 bg-slate-400 rounded-full" />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                /* DESKTOP / TABLET CANVAS */
+                <div
+                  className={`mx-auto bg-white shadow-sm transition-all duration-300 ${
+                    previewDevice === "tablet"
+                      ? "max-w-[768px] rounded-2xl border-4 border-slate-700 p-6 sm:p-8"
+                      : "max-w-4xl rounded border border-[#ccd0d4] p-8"
+                  }`}
+                >
+                  {/* Cover Image in preview */}
+                  {post.cover && (
+                    <div className="mb-6 overflow-hidden rounded-xl border border-slate-100 shadow-xs">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={post.cover} alt="Cover" className="w-full max-h-[380px] object-cover" />
+                    </div>
+                  )}
+
+                  <div className="mb-3 text-xs font-bold uppercase tracking-wider text-[#f5501e]">
+                    {post.category[activeLang]} • {post.date} • {readingTime} phút đọc
+                  </div>
+                  <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#1d2327]">
+                    {post.title[activeLang]}
+                  </h2>
+                  <p className="mt-3 text-sm sm:text-base leading-relaxed text-[#50575e] border-b border-[#eee] pb-5">
+                    {post.excerpt[activeLang]}
+                  </p>
+
+                  <div className="mt-6 space-y-4">
+                    {post.body.map((b, i) => {
+                      if (b.type === "h2")
+                        return (
+                          <h3 key={i} className="font-display text-xl font-bold text-[#1d2327] mt-6">
+                            {renderRichText(b.text[activeLang])}
+                          </h3>
+                        );
+                      if (b.type === "p")
+                        return (
+                          <p key={i} className="text-sm leading-relaxed text-[#2c3338] whitespace-pre-line">
+                            {renderRichText(b.text[activeLang])}
+                          </p>
+                        );
+                      if (b.type === "quote")
+                        return (
+                          <blockquote key={i} className="border-l-4 border-[#f5501e] bg-orange-50/40 p-3 italic text-sm text-[#2c3338] whitespace-pre-line rounded-r">
+                            {renderRichText(b.text[activeLang])}
+                          </blockquote>
+                        );
+                      if (b.type === "ul")
+                        return (
+                          <ul key={i} className="space-y-1.5 pl-4 list-disc text-sm text-[#2c3338]">
+                            {b.items.map((it, iIdx) => (
+                              <li key={iIdx}>{renderRichText(it[activeLang])}</li>
+                            ))}
+                          </ul>
+                        );
+                      if (b.type === "image")
+                        return (
+                          <figure key={i} className="my-4 overflow-hidden rounded border border-[#eee] bg-[#fafafa]">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={b.src} alt={b.alt[activeLang]} className="w-full max-h-[420px] object-cover" />
+                            {b.caption && (
+                              <figcaption className="p-2 text-center text-xs text-[#646970]">
+                                {b.caption[activeLang]}
+                              </figcaption>
+                            )}
+                          </figure>
+                        );
+                      return null;
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -1218,8 +1853,9 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
               <div className="flex items-center justify-between">
                 <button
                   type="button"
-                  onClick={() => alert("Đã lưu bản nháp thành công!")}
+                  onClick={handleManualSaveDraft}
                   className="rounded border border-[#c3c4c7] bg-[#f6f7f7] px-3 py-1 font-semibold text-[#2c3338] hover:bg-[#f0f0f1]"
+                  title="Lưu bản nháp vào trình duyệt ngay lập tức"
                 >
                   Lưu bản nháp
                 </button>
@@ -1244,6 +1880,10 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                 <div className="flex items-center justify-between">
                   <span>📅 Đăng: <strong className="text-[#1d2327]">{post.date}</strong></span>
                   <button type="button" className="text-[#2271b1] underline">Chỉnh sửa</button>
+                </div>
+                <div className="text-[11px] text-slate-500 pt-1 border-t border-slate-100 flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  <span>Tự động lưu nháp: <strong className="text-slate-700">{autoSaveTime ? `lúc ${autoSaveTime}` : "bật"}</strong></span>
                 </div>
               </div>
 
@@ -1545,6 +2185,448 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                   setTimeout(() => setAiNotice(null), 4000);
                 }}
               />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* DISTRACTION-FREE ZEN MODE (FULLSCREEN) */}
+      {isZenMode && (
+        <div className="fixed inset-0 z-50 flex flex-col bg-slate-100 text-slate-800">
+          {/* Zen Top Header */}
+          <div className="flex items-center justify-between border-b border-slate-200 bg-white px-4 sm:px-8 py-3 shadow-xs">
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => setIsZenMode(false)}
+                className="flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-xs hover:bg-slate-50 transition"
+              >
+                <span>✕</span> <span>Thoát toàn màn hình (Esc)</span>
+              </button>
+              <div className="hidden sm:flex items-center gap-2 text-xs font-semibold text-slate-700">
+                <span className="text-base">🌿</span> <span>ANBU Zen Writing Canvas</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 sm:gap-4 text-xs">
+              <div className="flex items-center gap-1.5">
+                <span className="text-slate-500 text-[11px]">Ngôn ngữ:</span>
+                <div className="flex rounded border border-slate-200 bg-slate-50 p-0.5">
+                  <button
+                    type="button"
+                    onClick={() => setActiveLang("vi")}
+                    className={`rounded px-2.5 py-0.5 text-xs font-bold transition ${
+                      activeLang === "vi" ? "bg-blue-600 text-white" : "text-slate-600"
+                    }`}
+                  >
+                    🇻🇳 VI
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setActiveLang("en")}
+                    className={`rounded px-2.5 py-0.5 text-xs font-bold transition ${
+                      activeLang === "en" ? "bg-blue-600 text-white" : "text-slate-600"
+                    }`}
+                  >
+                    🇺🇸 EN
+                  </button>
+                </div>
+              </div>
+
+              <span className="hidden md:inline-flex items-center gap-1.5 text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded text-[11px] font-medium">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                {autoSaveTime ? `Đã lưu ${autoSaveTime}` : "Tự động lưu"}
+              </span>
+
+              <span className="hidden sm:inline text-slate-500 text-xs">
+                <strong>{totalWords}</strong> từ • <strong>{readingTime}</strong> phút đọc
+              </span>
+
+              <button
+                type="button"
+                onClick={handleSave}
+                className="rounded-lg bg-blue-600 px-4 py-1.5 text-xs font-bold text-white shadow-xs hover:bg-blue-700 transition"
+              >
+                {initialPost ? "Cập nhật" : "Xuất bản"}
+              </button>
+            </div>
+          </div>
+
+          {/* Zen Content Canvas */}
+          <div className="flex-1 overflow-y-auto p-4 sm:p-10">
+            <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 sm:p-12 shadow-xl space-y-6">
+              {/* Title */}
+              <div>
+                <input
+                  type="text"
+                  value={post.title[activeLang] || ""}
+                  onChange={(e) => handleTitleChange(e.target.value)}
+                  placeholder="Tiêu đề bài viết..."
+                  className="w-full font-display text-2xl sm:text-3xl font-extrabold text-[#1d2327] placeholder:text-slate-300 outline-none border-b border-slate-200 pb-3"
+                />
+              </div>
+
+              {/* Excerpt */}
+              <div>
+                <textarea
+                  rows={2}
+                  value={post.excerpt[activeLang] || ""}
+                  onChange={(e) => setPost({ ...post, excerpt: { ...post.excerpt, [activeLang]: e.target.value } })}
+                  placeholder="Tóm tắt ngắn (Excerpt)..."
+                  className="w-full resize-none text-xs sm:text-sm italic text-slate-600 outline-none border-b border-slate-100 pb-2"
+                />
+              </div>
+
+              {/* Blocks */}
+              <div className="space-y-4 pt-2">
+                {post.body.map((block, index) => (
+                  <div
+                    key={index}
+                    className="rounded-xl border border-slate-200 bg-slate-50/50 p-4 space-y-3 transition hover:border-blue-300"
+                  >
+                    <div className="flex items-center justify-between text-xs text-slate-500">
+                      <span className="font-bold uppercase tracking-wider text-[11px] text-blue-700">
+                        Khối #{index + 1}:{" "}
+                        {block.type === "h2"
+                          ? "Tiêu đề H2"
+                          : block.type === "p"
+                          ? "Đoạn văn"
+                          : block.type === "quote"
+                          ? "Trích dẫn"
+                          : block.type === "ul"
+                          ? "Danh sách"
+                          : "Hình ảnh"}
+                      </span>
+                      <div className="flex items-center gap-1">
+                        <button
+                          type="button"
+                          onClick={() => moveBlock(index, "up")}
+                          disabled={index === 0}
+                          className="px-1.5 py-0.5 text-[11px] text-slate-500 hover:text-black disabled:opacity-20"
+                        >
+                          ▲ Lên
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => moveBlock(index, "down")}
+                          disabled={index === post.body.length - 1}
+                          className="px-1.5 py-0.5 text-[11px] text-slate-500 hover:text-black disabled:opacity-20"
+                        >
+                          ▼ Xuống
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => removeBlock(index)}
+                          className="px-1.5 py-0.5 text-[11px] font-bold text-rose-600 hover:text-rose-800 ml-1"
+                        >
+                          ✕ Xóa
+                        </button>
+                      </div>
+                    </div>
+
+                    {block.type === "h2" && (
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-1">
+                          <button
+                            type="button"
+                            onClick={() => applyInlineFormatting(index, "bold")}
+                            className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] font-bold text-slate-700"
+                          >
+                            B
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => applyInlineFormatting(index, "italic")}
+                            className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] italic font-serif text-slate-700"
+                          >
+                            I
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          value={block.text[activeLang] || ""}
+                          onChange={(e) => updateBlock(index, e.target.value)}
+                          placeholder="Tiêu đề H2..."
+                          className="w-full font-display text-lg font-bold text-[#1d2327] outline-none bg-white p-2 rounded border border-slate-200"
+                        />
+                      </div>
+                    )}
+
+                    {block.type === "p" && (
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-1">
+                          <button
+                            type="button"
+                            onClick={() => applyInlineFormatting(index, "bold")}
+                            className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] font-bold text-slate-700"
+                          >
+                            B
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => applyInlineFormatting(index, "italic")}
+                            className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] italic font-serif text-slate-700"
+                          >
+                            I
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => applyInlineFormatting(index, "link")}
+                            className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] text-blue-700"
+                          >
+                            🔗 Link
+                          </button>
+                        </div>
+                        <textarea
+                          rows={4}
+                          value={block.text[activeLang] || ""}
+                          onChange={(e) => updateBlock(index, e.target.value)}
+                          placeholder="Nội dung đoạn văn..."
+                          className="w-full text-xs sm:text-sm leading-relaxed text-slate-800 outline-none bg-white p-2.5 rounded border border-slate-200"
+                        />
+                      </div>
+                    )}
+
+                    {block.type === "quote" && (
+                      <div className="border-l-4 border-orange-500 bg-orange-50/40 p-3 rounded">
+                        <textarea
+                          rows={2}
+                          value={block.text[activeLang] || ""}
+                          onChange={(e) => updateBlock(index, e.target.value)}
+                          placeholder="Nội dung trích dẫn..."
+                          className="w-full italic text-xs sm:text-sm leading-relaxed text-slate-800 outline-none bg-transparent"
+                        />
+                      </div>
+                    )}
+
+                    {block.type === "ul" && (
+                      <div className="space-y-2">
+                        {block.items.map((it, itemIdx) => (
+                          <div key={itemIdx} className="flex items-center gap-2">
+                            <span className="text-orange-500 font-bold">•</span>
+                            <input
+                              type="text"
+                              value={it[activeLang] || ""}
+                              onChange={(e) => updateListItem(index, itemIdx, e.target.value)}
+                              className="flex-1 rounded border border-slate-200 bg-white p-1.5 text-xs text-slate-800 outline-none"
+                            />
+                            <button
+                              type="button"
+                              onClick={() => removeListItem(index, itemIdx)}
+                              className="text-slate-400 hover:text-rose-600 text-xs px-1"
+                            >
+                              ✕
+                            </button>
+                          </div>
+                        ))}
+                        <button
+                          type="button"
+                          onClick={() => addListItem(index)}
+                          className="text-xs text-blue-600 hover:underline font-semibold"
+                        >
+                          + Thêm mục
+                        </button>
+                      </div>
+                    )}
+
+                    {block.type === "image" && (
+                      <div>
+                        {block.src ? (
+                          <div className="space-y-2">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                              src={block.src}
+                              alt={block.alt[activeLang] || ""}
+                              className="max-h-60 rounded object-contain mx-auto border"
+                            />
+                            <p className="text-center text-xs text-slate-500 italic">
+                              {block.caption?.[activeLang] || block.alt[activeLang]}
+                            </p>
+                          </div>
+                        ) : (
+                          <div className="text-center p-4 border border-dashed rounded text-xs text-slate-500">
+                            Chưa có URL hình ảnh
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Inserter at bottom */}
+              <div className="flex flex-wrap items-center justify-center gap-2 pt-4 border-t border-slate-200 text-xs">
+                <span className="text-slate-500 font-medium">Chèn khối:</span>
+                <button
+                  type="button"
+                  onClick={() => addBlock("p")}
+                  className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 font-semibold text-slate-700 hover:bg-slate-50 shadow-xs"
+                >
+                  + Đoạn văn
+                </button>
+                <button
+                  type="button"
+                  onClick={() => addBlock("h2")}
+                  className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 font-semibold text-slate-700 hover:bg-slate-50 shadow-xs"
+                >
+                  + Tiêu đề H2
+                </button>
+                <button
+                  type="button"
+                  onClick={() => addBlock("ul")}
+                  className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 font-semibold text-slate-700 hover:bg-slate-50 shadow-xs"
+                >
+                  + Danh sách
+                </button>
+                <button
+                  type="button"
+                  onClick={() => addBlock("quote")}
+                  className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 font-semibold text-slate-700 hover:bg-slate-50 shadow-xs"
+                >
+                  + Trích dẫn
+                </button>
+                <button
+                  type="button"
+                  onClick={() => addBlock("image")}
+                  className="rounded-lg border border-blue-600 bg-blue-50 px-3 py-1.5 font-bold text-blue-700 hover:bg-blue-100 shadow-xs"
+                >
+                  + Hình ảnh
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* SMART IMPORT MODAL (FROM DOCS / WORD / MARKDOWN) */}
+      {showImportModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-xs">
+          <div className="flex max-h-[90vh] w-full max-w-3xl flex-col rounded-xl bg-white p-6 shadow-2xl border border-slate-300">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">📥</span>
+                <div>
+                  <h3 className="font-display text-base font-bold text-slate-900">
+                    Chuyển đổi thông minh từ Word, Google Docs & Markdown
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Tự động nhận diện Tiêu đề H2, Đoạn văn, Danh sách gạch đầu dòng, Hình ảnh và Trích dẫn.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowImportModal(false)}
+                className="flex h-7 w-7 items-center justify-center rounded text-slate-500 hover:bg-slate-100 font-bold"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="py-4 space-y-4 flex-1 overflow-y-auto">
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1">
+                  Dán nội dung sao chép (Ctrl + V):
+                </label>
+                <textarea
+                  rows={10}
+                  value={importRawText}
+                  onChange={(e) => setImportRawText(e.target.value)}
+                  placeholder="Dán toàn bộ văn bản từ Google Docs, Word, Notion hoặc Markdown vào đây...&#10;&#10;Ví dụ:&#10;1. Tổng quan thị trường game 2026&#10;Đây là đoạn văn phân tích xu hướng...&#10;&#10;- Điểm nổi bật 1&#10;- Điểm nổi bật 2&#10;&#10;> Trích dẫn chuyên gia..."
+                  className="w-full rounded-lg border border-slate-300 p-3 text-xs leading-relaxed text-slate-800 outline-none focus:border-blue-600 font-mono"
+                />
+              </div>
+
+              {/* Live Preview Stats */}
+              {importRawText.trim() && (() => {
+                const previewStats = parseRawTextToBlocks(importRawText);
+                return (
+                  <div className="rounded-lg bg-blue-50/80 border border-blue-200 p-3 text-xs text-blue-900">
+                    <p className="font-bold flex items-center gap-1.5 mb-1">
+                      <span>⚡</span> <span>Kết quả nhận diện tự động:</span>
+                    </p>
+                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-2 text-center">
+                      <div className="bg-white p-2 rounded border border-blue-100">
+                        <span className="block text-base font-bold text-blue-700">{previewStats.stats.h2}</span>
+                        <span className="text-[11px] text-slate-500">Tiêu đề H2</span>
+                      </div>
+                      <div className="bg-white p-2 rounded border border-blue-100">
+                        <span className="block text-base font-bold text-blue-700">{previewStats.stats.p}</span>
+                        <span className="text-[11px] text-slate-500">Đoạn văn</span>
+                      </div>
+                      <div className="bg-white p-2 rounded border border-blue-100">
+                        <span className="block text-base font-bold text-blue-700">{previewStats.stats.ul}</span>
+                        <span className="text-[11px] text-slate-500">Danh sách</span>
+                      </div>
+                      <div className="bg-white p-2 rounded border border-blue-100">
+                        <span className="block text-base font-bold text-blue-700">{previewStats.stats.quote}</span>
+                        <span className="text-[11px] text-slate-500">Trích dẫn</span>
+                      </div>
+                      <div className="bg-white p-2 rounded border border-blue-100">
+                        <span className="block text-base font-bold text-blue-700">{previewStats.stats.image}</span>
+                        <span className="text-[11px] text-slate-500">Hình ảnh</span>
+                      </div>
+                    </div>
+                    {previewStats.title && (
+                      <p className="mt-2 text-[11px] text-blue-800">
+                        🎯 Tiêu đề phát hiện: <strong>"{previewStats.title}"</strong>
+                      </p>
+                    )}
+                  </div>
+                );
+              })()}
+
+              <div className="space-y-2 text-xs">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={importAutoTitle}
+                    onChange={(e) => setImportAutoTitle(e.target.checked)}
+                    className="rounded text-blue-600"
+                  />
+                  <span>Tự động đặt dòng đầu tiên / Heading 1 làm Tiêu đề bài viết (nếu tiêu đề đang trống)</span>
+                </label>
+
+                <div className="flex items-center gap-4 pt-1">
+                  <span className="font-semibold text-slate-700">Chế độ chèn:</span>
+                  <label className="flex items-center gap-1.5 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="importMode"
+                      checked={importMode === "append"}
+                      onChange={() => setImportMode("append")}
+                    />
+                    <span>Thêm tiếp vào cuối bài viết</span>
+                  </label>
+                  <label className="flex items-center gap-1.5 cursor-pointer text-rose-700">
+                    <input
+                      type="radio"
+                      name="importMode"
+                      checked={importMode === "replace"}
+                      onChange={() => setImportMode("replace")}
+                    />
+                    <span>Ghi đè (Thay thế toàn bộ bài)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-end gap-2 pt-3 border-t border-slate-200">
+              <button
+                type="button"
+                onClick={() => setShowImportModal(false)}
+                className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition"
+              >
+                Hủy bỏ
+              </button>
+              <button
+                type="button"
+                disabled={!importRawText.trim()}
+                onClick={handleExecuteImport}
+                className="rounded-lg bg-blue-600 px-5 py-2 text-xs font-bold text-white shadow hover:bg-blue-700 disabled:opacity-40 transition flex items-center gap-1.5"
+              >
+                <span>📥</span> <span>Nhập vào bài viết</span>
+              </button>
             </div>
           </div>
         </div>

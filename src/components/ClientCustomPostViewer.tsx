@@ -15,6 +15,7 @@ import { fetchSupabasePostBySlug } from "@/lib/supabase";
 import JsonLd from "./JsonLd";
 import { siteUrl, breadcrumbLd, articleLd } from "@/lib/seo";
 import PostComments from "./PostComments";
+import { renderRichText } from "@/lib/renderRichText";
 
 export default function ClientCustomPostViewer({
   slug,
@@ -247,21 +248,21 @@ export default function ClientCustomPostViewer({
                 if (block.type === "h2") {
                   return (
                     <h2 key={i} id={`section-${i}`} className="scroll-mt-20 sm:scroll-mt-24 mt-7 sm:mt-10 font-display text-xl sm:text-2xl font-bold text-navy-800">
-                      {t(block.text, locale)}
+                      {renderRichText(t(block.text, locale))}
                     </h2>
                   );
                 }
                 if (block.type === "p") {
                   return (
                     <p key={i} className="mt-3.5 sm:mt-5 text-base sm:text-lg leading-relaxed text-navy-600 whitespace-pre-line">
-                      {t(block.text, locale)}
+                      {renderRichText(t(block.text, locale))}
                     </p>
                   );
                 }
                 if (block.type === "quote") {
                   return (
-                    <blockquote key={i} className="my-6 sm:my-8 rounded-2xl border-l-4 border-orange-500 bg-cloud p-4 sm:p-6 text-base sm:text-lg font-medium italic text-navy-700">
-                      {t(block.text, locale)}
+                    <blockquote key={i} className="my-6 sm:my-8 rounded-2xl border-l-4 border-orange-500 bg-cloud p-4 sm:p-6 text-base sm:text-lg font-medium italic text-navy-700 whitespace-pre-line">
+                      {renderRichText(t(block.text, locale))}
                     </blockquote>
                   );
                 }
@@ -271,7 +272,7 @@ export default function ClientCustomPostViewer({
                       {block.items.map((item, itemIdx) => (
                         <li key={itemIdx} className="flex items-start gap-2.5 sm:gap-3 text-base sm:text-lg leading-relaxed text-navy-600">
                           <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-orange-500" />
-                          <span>{t(item, locale)}</span>
+                          <span>{renderRichText(t(item, locale))}</span>
                         </li>
                       ))}
                     </ul>

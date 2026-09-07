@@ -16,6 +16,7 @@ import { PostCard } from "@/components/cards";
 import ClientCustomPostViewer from "@/components/ClientCustomPostViewer";
 import PostComments from "@/components/PostComments";
 import { fetchSupabasePostBySlug } from "@/lib/supabase";
+import { renderRichText } from "@/lib/renderRichText";
 
 function isCorruptedPost(p?: Post | null): boolean {
   if (!p) return false;
@@ -64,15 +65,19 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
     case "h2":
       return (
         <h2 id={headingId} className="scroll-mt-20 sm:scroll-mt-24 mt-7 sm:mt-10 font-display text-xl sm:text-2xl font-bold text-navy-800">
-          {t(block.text, locale)}
+          {renderRichText(t(block.text, locale))}
         </h2>
       );
     case "p":
-      return <p className="mt-3.5 sm:mt-5 text-base sm:text-lg leading-relaxed text-navy-600">{t(block.text, locale)}</p>;
+      return (
+        <p className="mt-3.5 sm:mt-5 text-base sm:text-lg leading-relaxed text-navy-600 whitespace-pre-line">
+          {renderRichText(t(block.text, locale))}
+        </p>
+      );
     case "quote":
       return (
-        <blockquote className="my-6 sm:my-8 rounded-2xl border-l-4 border-orange-500 bg-cloud p-4 sm:p-6 text-base sm:text-lg font-medium italic text-navy-700">
-          {t(block.text, locale)}
+        <blockquote className="my-6 sm:my-8 rounded-2xl border-l-4 border-orange-500 bg-cloud p-4 sm:p-6 text-base sm:text-lg font-medium italic text-navy-700 whitespace-pre-line">
+          {renderRichText(t(block.text, locale))}
         </blockquote>
       );
     case "ul":
@@ -81,7 +86,7 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
           {block.items.map((item, i) => (
             <li key={i} className="flex items-start gap-2.5 sm:gap-3 text-base sm:text-lg leading-relaxed text-navy-600">
               <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-orange-500" />
-              <span>{t(item, locale)}</span>
+              <span>{renderRichText(t(item, locale))}</span>
             </li>
           ))}
         </ul>
