@@ -1,1 +1,365 @@
-[]
+[
+  {
+    "slug": "th-trng-game-vit-nam-v-nhng-thay-i-trong-cch-tip-cn-ngi-chi",
+    "title": {
+      "vi": "Thị trường game Việt Nam và những thay đổi trong cách tiếp cận người chơi",
+      "en": "The Vietnamese Gaming Market and Changes in How Players Are Engaged"
+    },
+    "excerpt": {
+      "vi": "Thị trường game Việt Nam đang có nhiều thay đổi, ngày càng có nhiều sản phẩm mới. Người chơi cũng có nhiều lựa chọn hơn, dễ dàng tìm kiếm thông tin trước khi tải game và có thể chia sẻ trải nghiệm chơi game trong cộng đồng.",
+      "en": "The Vietnamese gaming market is undergoing significant changes, with an increasing number of new titles being released. Players now have more options, can easily find information before downloading a game, and can share their gaming experiences within the community."
+    },
+    "category": {
+      "vi": "Marketing Game",
+      "en": "Game Marketing"
+    },
+    "date": "2026-08-28",
+    "readingTime": 12,
+    "cover": "/blog-covers/creative-testing-lab.jpg",
+    "author": "ANBU Team",
+    "color": "from-blue-600 to-indigo-600",
+    "variant": "game",
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game Việt Nam đang có nhiều thay đổi, ngày càng có nhiều sản phẩm mới. Người chơi cũng có nhiều lựa chọn hơn, dễ dàng tìm kiếm thông tin trước khi tải game và có thể chia sẻ trải nghiệm chơi game trong cộng đồng.",
+          "en": "The Vietnamese gaming market is undergoing significant changes, with an increasing number of new titles being released. Players now have more options, can easily find information before downloading a game, and can share their gaming experiences within the community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo báo cáo Vietnam Mobile Gaming Year-in-Review 2025, Việt Nam có khoảng 54 triệu người chơi game mobile và doanh thu thị trường mobile game năm 2025 được ước tính khoảng 825 triệu USD, tăng 9,16% so với năm trước. Một điểm đáng chú ý là thị trường đang dần chuyển từ việc chỉ quan tâm số lượng người chơi sang chất lượng và giá trị lâu dài của người chơi.",
+          "en": "According to the “Vietnam Mobile Gaming Year-in-Review 2025” report, Vietnam has approximately 54 million mobile gamers, and the mobile gaming market revenue in 2025 is estimated at approximately $825 million, an increase of 9.16% from the previous year. It is worth noting that the market is gradually shifting its focus from player numbers alone to player quality and long-term value."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở góc độ rộng hơn, DataReport ghi nhận Việt Nam có 79,8 triệu người sử dụng Internet vào tháng 1/2025, tương đương 78,8% dân số. Điều này tạo ra một môi trường thuận lợi để game tiếp cận người chơi thông qua mạng xã hội, video, cộng đồng trực tuyến và các nền tảng nội dung số.",
+          "en": "From a broader perspective, DataReport reports that Vietnam had 79.8 million Internet users in January 2025, equivalent to 78.8% of the population. This creates a favorable environment for games to reach players through social media, video, online communities, and digital content platforms."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những con số trên cho thấy cơ hội vẫn rất lớn. Tuy nhiên, có nhiều người chơi không có nghĩa là một game mới sẽ dễ dàng thu hút người dùng. Cách tiếp cận người chơi cần thay đổi theo hướng thực tế hơn, tập trung vào trải nghiệm, nội dung và cộng đồng.",
+          "en": "These figures show that the opportunities are still vast. However, just because there are many players doesn’t mean a new game will easily attract users. The approach to reaching players needs to shift toward a more practical one, focusing on experience, content, and community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Hoạt động marketing game tại Việt Nam đang thay đổi theo hướng tập trung hơn vào người chơi, trải nghiệm thực tế và xây dựng cộng đồng. Thay vì chỉ sử dụng quảng cáo để tăng độ nhận biết, các chiến dịch hiện nay cần kết hợp nội dung trải nghiệm game, người sáng tạo nội dung, mạng xã hội và hoạt động cộng đồng để tiếp cận đúng đối tượng và duy trì sự quan tâm trong suốt vòng đời của game.",
+          "en": "Game marketing in Vietnam is shifting toward a greater focus on players, real-world experiences, and community building. Rather than relying solely on advertising to boost brand awareness, today’s campaigns must integrate in-game content, content creators, social media, and community activities to reach the right audience and sustain engagement throughout the game’s lifecycle."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "1. Thị trường game tại Việt Nam thay đổi như thế nào?",
+          "en": "1, How has the gaming market in Vietnam changed?"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Người chơi không còn dễ bị thu hút chỉ bằng quảng cáo",
+            "en": "Players are no longer easily lured in by ads alone"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một quảng cáo đẹp có thể giúp game tạo được sự chú ý ban đầu, nhưng chưa đủ để khiến người chơi quyết định tải game. ",
+          "en": "A visually appealing ad can help a game grab initial attention, but it’s not enough to convince players to download it. "
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trước khi chơi, người dùng thường muốn biết sản phẩm có gì khác biệt, cách chơi có phù hợp với mình không, nhân vật nào đáng chú ý và những người đã chơi đánh giá sản phẩm như thế nào. Với những game được phát triển và cập nhật trong thời gian dài, người chơi còn quan tâm game có thường xuyên cập nhật, cộng đồng hoạt động và nội dung game có thu hút để chơi lâu dài hay không.",
+          "en": "Before playing, users typically want to know what makes the game unique, whether the gameplay suits them, which characters stand out, and what other players think of it. For games that have been in development and receiving updates for a long time, players are also interested in whether the game is updated frequently, whether the community is active, and whether the game’s content is engaging enough to keep them playing for the long term."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, thay vì chỉ truyền tải thông điệp đơn giản như Game mới ra mắt, nội dung marketing nên giúp người chơi hiểu rõ hơn về sản phẩm hơn. Có thể lên ý tưởng nội dung về video chơi thử, phân tích nhân vật, hướng dẫn người mới hoặc buổi livestream. Những nội dung này có thể cung cấp nhiều thông tin hữu ích hơn một quảng cáo chỉ tập trung vào hình ảnh đẹp.",
+          "en": "Therefore, instead of simply conveying a message like “New game released,” marketing content should help players better understand the product. You could develop content ideas such as gameplay videos, character analyses, beginner’s guides, or live streams. This type of content can provide more useful information than an ad that focuses solely on attractive visuals."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điểm quan trọng là quảng cáo tạo nên sự tò mò, còn nội dung tiếp theo phải giúp người chơi có đủ thông tin để đưa ra quyết định.",
+          "en": "The key point is that ads spark curiosity, while the follow-up content must give players enough information to make an informed decision."
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Từ việc tìm nhiều người chơi thành tìm đúng người chơi",
+            "en": "From Finding Many Players to Finding the Right Players"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Không phải tất cả những người nhìn thấy quảng cáo đều là người phù hợp. Mỗi thể loại game lại có một nhóm người quan tâm khác nhau. Game Gacha có thể thu hút những người thích sưu tầm nhân vật, xây dựng đội hình và theo dõi cốt truyện mới, trong khi game chiến thuật - bắn súng lại phù hợp hơn với những người yêu thích tính cạnh tranh và chiến thuật.",
+          "en": "Not everyone who sees an ad is the right fit. Each game genre attracts a different audience. Gacha games may appeal to people who enjoy collecting characters, building teams, and following new storylines, while strategy and shooter games are better suited for those who love competition and tactics."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, trước khi xây dựng chiến dịch phải xác định được nhóm đối tượng có khả năng quan tâm đến sản phẩm. Từ đó mới quyết định đến việc sử dụng nền tảng, loại nội dung, người sáng tạo và cách tiếp cận.",
+          "en": "Therefore, before developing a campaign, you must identify the target audience that is likely to be interested in the product. Only then can you decide on the platform, content type, creators, and approach."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này đặc biệt quan trọng khi chi phí để thu hút người chơi cần được sử dụng hiệu quả. Một chiến dịch có lượng tiếp cận lớn nhưng phần lớn người xem không phù hợp với game chưa chắc mang lại giá trị bằng một chiến dịch nhỏ hơn như tiếp cận đúng cộng đồng.",
+          "en": "This is particularly important when the budget for player acquisition must be used effectively. A campaign with a large reach, but where the majority of the audience isn’t a good fit for the game, may not necessarily deliver as much value as a smaller campaign that targets the right community."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Cách tiếp cận người chơi đang thay đổi",
+          "en": "2. The way we engage with players is changing"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Người chơi muốn xem trải nghiệm thật",
+            "en": "Players want to see the real experience"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Người chơi ngày càng quan tâm đến việc game thực sự chơi như thế nào, thay vì chỉ xem được những hình ảnh được chuẩn bị sẵn trong trailer.",
+          "en": "Players are increasingly interested in how a game actually plays, rather than just seeing pre-rendered footage in trailers."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một đoạn trailer có thể cho thấy đồ hoạ, nhân vật và những cách nổi bật, nhưng thể hiện đầy đủ trải nghiệm khi chơi. Đó là lý do các nội dung như video chơi thử, livestream, hướng dẫn người mới, đánh giá nhân vật, phân tích đội hình và chia sẻ kinh nghiệm có vai trò quan trọng.",
+          "en": "A trailer may showcase the graphics, characters, and standout features, but it doesn’t fully capture the gameplay experience. That’s why content such as gameplay videos, livestreams, beginner’s guides, character reviews, team composition analyses, and tips and tricks plays such an important role."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những nội dung này giúp người chơi hình dung rõ hơn về sản phẩm. Đồng thời, việc thể hiện trải nghiệm thực tế cũng hạn chế một số vấn đề như quảng cáo phóng đại nhưng trải nghiệm thực tế không như người chơi kỳ vọng. Marketing hiệu quả không chỉ khiến người chơi muốn tải game mà còn giúp họ hiểu rõ mình sẽ nhận được gì sau khi tải.",
+          "en": "This content helps players get a clearer picture of the product. At the same time, showcasing the actual experience helps avoid issues such as exaggerated advertising that doesn’t match players’ expectations. Effective marketing not only makes players want to download the game but also helps them understand exactly what they’ll get after downloading it."
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Người sáng tạo nội dung trở thành cầu nối với người chơi",
+            "en": "Content creators serve as a bridge to players"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Lựa chọn đúng Streamer, TikToker và YouTuber về game không chỉ giúp đưa thông tin đến cộng đồng mà còn mang đến một góc nhìn gần gũi hơn về sản phẩm. Thông qua việc chơi thử, chia sẻ cảm nhận, phân tích nhân vật, livestream hoặc tham gia các hoạt động của game, người sáng tạo có thể giúp người xem hiểu sản phẩm theo cách tự nhiên hơn.",
+          "en": "Choosing the right gaming streamers, TikTokers, and YouTubers not only helps get information out to the community but also provides a more relatable perspective on the product. By playing the game, sharing their impressions, analyzing characters, livestreaming, or participating in in-game activities, creators can help viewers understand the product in a more natural way."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tuy nhiên, số lượng người theo dõi không nên là tiêu chí duy nhất. Một người có số lượng theo dõi nhỏ nhưng phần lớn người xem yêu thích đúng thể loại game đang quảng bá và có mức độ tương tác tốt đôi khi phù hợp hơn một người có lượng theo dõi lớn nhưng ít liên quan đến sản phẩm.",
+          "en": "However, the number of followers should not be the only criterion. A creator with a small following—but whose audience largely enjoys the specific genre of games being promoted and engages well with the content—is sometimes a better fit than one with a large following but little relevance to the product."
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Khai thác các chủ đề trong cộng đồng để phát triển thành nội dung",
+            "en": "Leverage community topics to develop content"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi tìm hiểu một game mới, người chơi thường muốn biết những người khác đang nói gì. Họ có thể muốn biết nhân vật, cách chơi, đội hình, sự kiện, bản cập nhật hoặc những vấn đề mà người chơi mới thường gặp. Điều này khiến cộng đồng trở thành một phần quan trọng trong hành trình của người chơi.",
+          "en": "When exploring a new game, players often want to know what others are saying. They may want to learn about characters, gameplay, team compositions, events, updates, or common issues faced by new players. This makes the community an important part of a player’s journey."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một người có thể biết đến game qua quảng cáo nhưng nhờ vào việc tham gia nhóm cộng đồng, tìm hiểu qua những chia sẻ của người đang chơi và thảo luận tích cực, họ có thêm lý do để trải nghiệm. Ngược lại, nếu phần lớn nội dung họ tìm thấy là những phản hồi tiêu cực mà không được giải đáp, quyết định tải game cũng có thể bị ảnh hưởng.",
+          "en": "Someone might learn about a game through an ad, but by joining a community group, reading posts from current players, and engaging in active discussions, they gain more reasons to try it out. Conversely, if most of the content they encounter consists of negative feedback that goes unaddressed, their decision to download the game may be affected."
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Những tranh luận của người chơi cũng có thể trở thành nội dung",
+            "en": "Player discussions can also become content"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một cộng đồng game hoạt động tốt luôn có những chủ đề được người chơi quan tâm và tranh luận. Thường là câu hỏi về nhân vật mạnh nhất, đội hình hiệu quả, cách sử dụng tài nguyên hay những thay đổi trong bản cập nhật mới.",
+          "en": "A thriving gaming community always has topics that players are interested in and debate. These often include questions about the strongest characters, effective team compositions, how to use resources, or changes in the latest update."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những chủ đề này có thể trở thành ý tưởng để phát triển thành một bài phân tích, video giải thích, cuộc bình chọn hoặc một buổi livestream trao đổi.",
+          "en": "These topics can serve as inspiration for developing an analysis piece, an explanatory video, a poll, or a livestream discussion."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tuy nhiên, mục tiêu là không tạo ra bất kỳ cuộc tranh cãi để tăng tương tác. Cách tốt nhất là quan sát điều người chơi thực sự quan tâm, sau đó cung cấp thêm thông tin để cuộc thảo luận trở nên hữu ích.",
+          "en": "However, the goal is not to stir up controversy just to boost engagement. The best approach is to observe what players are truly interested in, and then provide additional information to make the discussion more meaningful."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Marketing game cần thay đổi theo từng giai đoạn ",
+          "en": "3. Game marketing needs to evolve with each stage "
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Marketing không kết thúc khi game ra mắt",
+            "en": "Marketing doesn’t end when the game is released"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việc tập trung gần như toàn bộ hoạt động marketing vào thời điểm phát hành game là một sai lầm dễ gặp. Ngày phát hành chỉ là một cột mốc trong vòng đời của game, không phải điểm kết thúc của hoạt động marketing. Vì sau khi game ra mắt, người chơi mới bắt đầu hình thành đánh giá, tham gia cộng đồng và chia sẻ trải nghiệm của họ.",
+          "en": "Focusing nearly all marketing efforts on the game’s release date is a common mistake. The release date is just one milestone in a game’s lifecycle—not the end of marketing efforts. After the game launches, players begin to form opinions, join the community, and share their experiences."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Marketing cần được duy trì xuyên suốt quá trình trước - trong - sau khi phát hành game và nội dung cần được xây dựng theo từng giai đoạn. ",
+          "en": "Marketing efforts must be sustained throughout the entire process—before, during, and after the game’s release—and content must be developed in phases. "
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trước khi ra mắt có thể tập trung vào việc giới thiệu về thế giới game, nhân vật và những điểm nổi bật. Khi game phát hành, nội dung nên giúp người chơi nhanh chóng bắt đầu trải nghiệm thông qua video chơi thử, hướng dẫn và livestream. Sau đó, nội dung có thể chuyển sang mẹo chơi, phân tích nhân vật, thảo luận cộng đồng và các hoạt động tương tác. Khi xuất hiện bản cập nhật hoặc nhân vật mới, đây lại là cơ hội để tạo thêm sự quan tâm và đưa người chơi quay trở lại.",
+          "en": "Before launch, focus on introducing the game world, characters, and key highlights. Once the game is released, content should help players get started quickly through gameplay videos, tutorials, and livestreams. After that, content can shift to gameplay tips, character analysis, community discussions, and interactive activities. When an update or new character is released, this presents another opportunity to generate interest and bring players back."
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Lắng nghe người chơi quan trọng không kém việc tiếp cận họ",
+            "en": "Listening to players is just as important as reaching out to them"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Marketing thường được hiểu là đưa thông điệp đến người chơi. Nhưng với game, việc lắng nghe cũng quan trọng không kém việc tiếp cận.",
+          "en": "Marketing is often understood as delivering a message to players. But when it comes to games, listening is just as important as reaching out."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau khi phát hành game, đội ngũ có thể theo dõi các cuộc thảo luận, phản hồi và đánh giá trên các nền tảng. Từ các dữ liệu trên, đội ngũ có thể xây dựng nội dung tiếp theo, hiểu rõ cộng đồng hơn và phát triển game để thu hút hơn.",
+          "en": "After a game is released, the team can monitor discussions, feedback, and reviews across various platforms. Using this data, the team can create future content, gain a deeper understanding of the community, and develop the game to make it more engaging."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, đánh giá marketing game nên kết hợp giữa dữ liệu, phản hồi và hành vi thực tế của người chơi.",
+          "en": "Therefore, game marketing evaluations should combine data, feedback, and actual player behavior."
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Đặt người chơi ở trung tâm trong chiến lược marketing game",
+            "en": "Put players at the center of your game marketing strategy"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi thị trường game Việt Nam ngày càng cạnh tranh, thương hiệu không nên chỉ tập trung vào việc đưa game đến thật nhiều người mà cần tìm đúng nhóm người chơi và hiểu điều họ thực sự quan tâm. Nội dung marketing cũng cần gần với trải nghiệm thực tế, cung cấp thông tin hữu ích và tạo lý do để người chơi muốn khám phá sản phẩm.",
+          "en": "Marketing isn’t just about attracting players; it also involves listening to feedback, tracking behavior, and maintaining their interest throughout their gaming experience. Putting players at the center will help the brand develop a more tailored approach and foster long-term loyalty to the product."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Marketing không chỉ dừng lại ở việc thu hút người chơi mà còn cần lắng nghe phản hồi, theo dõi hành vi và duy trì sự quan tâm trong suốt quá trình họ trải nghiệm game. Đặt người chơi ở trung tâm sẽ giúp thương hiệu xây dựng cách tiếp cận phù hợp hơn và tạo sự gắn bó lâu dài với sản phẩm.",
+          "en": "The Vietnamese gaming market is entering a more competitive phase, as players have an increasing number of options and the way they engage with games has changed significantly. In this context, simply increasing the advertising budget is no longer enough to set a brand apart. What matters more is that brands understand players, keep up with trends, and choose the right approach for each target audience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game Việt Nam đang bước vào giai đoạn cạnh tranh hơn, khi người chơi ngày càng có nhiều lựa chọn và cách họ tiếp cận game cũng thay đổi đáng kể. Trong bối cảnh đó, việc chỉ tăng ngân sách quảng cáo không còn là yếu tố để tạo khác biệt. Điều quan trọng hơn là thương hiệu cần hiểu người chơi, nắm bắt xu hướng và lựa chọn cách tiếp cận phù hợp với từng nhóm đối tượng.",
+          "en": "From social media content, KOLs/KOCs, and streamers to community building, every touchpoint can become an opportunity for a game to make an impression and maintain players’ interest. An effective strategy not only aims to reach a wider audience but also needs to create an experience compelling enough to make players want to play, share, and stay engaged."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Từ nội dung trên mạng xã hội, KOL/KOC, streamer đến việc xây dựng cộng đồng, mỗi điểm chạm đều có thể trở thành cơ hội để game tạo ấn tượng và duy trì sự quan tâm của người chơi. Một chiến lược hiệu quả không chỉ hướng đến việc đưa game đến với nhiều người hơn, mà còn cần tạo ra trải nghiệm đủ hấp dẫn để họ muốn chơi, chia sẻ và tiếp tục gắn bó.",
+          "en": "In an ever-changing market, the ability to listen to players and adapt to new behaviors will be a key factor in helping game brands carve out their own niche and build a sustainable community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong một thị trường liên tục thay đổi, khả năng lắng nghe người chơi và thích ứng với hành vi mới sẽ là yếu tố quan trọng giúp các thương hiệu game tạo được vị trí riêng và xây dựng cộng đồng bền vững.",
+          "en": "If you’re looking for a partner to implement game marketing in Vietnam, ANBU can assist with everything from strategy development and content creation to connecting with creators and organizing community and esports activities. Contact ANBU to discuss a plan tailored to your game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu bạn đang tìm kiếm một đối tác triển khai marketing game tại Việt Nam, ANBU có thể hỗ trợ từ xây dựng chiến lược, phát triển nội dung, kết nối người sáng tạo đến hoạt động cộng đồng và Esports. Liên hệ ANBU để trao đổi về kế hoạch phù hợp với tựa game của bạn.",
+          "en": "If you’re looking for a partner to implement game marketing in Vietnam, ANBU can assist with everything from strategy development and content creation to connecting with creators and organizing community and esports activities. Contact ANBU to discuss a plan tailored to your game."
+        }
+      }
+    ]
+  }
+]
