@@ -42,11 +42,11 @@ export async function generateMetadata({
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const isVi = locale === "vi";
   const title = isVi
-    ? "ANBU | Biệt đội Community và Marketing cho game"
-    : "ANBU | Community and Game Marketing";
+    ? "ANBU Agency | Biệt đội Community & Game Marketing tại Việt Nam"
+    : "ANBU Agency | Community & Game Marketing Agency in Vietnam";
   const description = isVi
-    ? "ANBU giúp game, ứng dụng và thương hiệu quốc tế ra mắt tại Việt Nam bằng KOL KOC, social, cộng đồng, PR và paid media tích hợp."
-    : "ANBU helps games, apps and international brands launch in Vietnam and Southeast Asia with integrated creator, social, community, PR and paid media campaigns.";
+    ? "ANBU Agency chuyên cung cấp giải pháp Marketing game, Community, KOL KOC và phát hành game tại Việt Nam và Đông Nam Á cho các đối tác quốc tế."
+    : "ANBU Agency is a specialized game marketing and community agency helping global game publishers and brands launch in Vietnam and Southeast Asia.";
 
   return {
     metadataBase: new URL(siteUrl),
@@ -55,10 +55,10 @@ export async function generateMetadata({
       template: `%s | ${site.name}`,
     },
     description,
-    applicationName: site.name,
+    applicationName: "ANBU Agency",
     keywords: isVi
-      ? ["agency", "marketing", "thương hiệu", "SEO", "thiết kế website", "quảng cáo", "ANBU"]
-      : ["agency", "marketing", "branding", "SEO", "web development", "advertising", "ANBU"],
+      ? ["ANBU", "ANBU Agency", "game marketing", "marketing game", "agency game", "KOL game", "phát hành game", "ANBU Squad"]
+      : ["ANBU", "ANBU Agency", "game marketing agency", "game marketing", "agency", "game launch vietnam", "ANBU Squad"],
     authors: [{ name: site.name }],
     creator: site.name,
     publisher: site.name,
@@ -109,8 +109,8 @@ export default async function LocaleLayout({
     "@context": "https://schema.org",
     "@type": ["Organization", "ProfessionalService"],
     "@id": `${siteUrl}/#organization`,
-    name: t(site.legalName, locale),
-    alternateName: site.name,
+    name: locale === "vi" ? "ANBU Agency - Công ty TNHH Marketing & Truyền thông ANBU" : "ANBU Agency - Game Marketing & Communications",
+    alternateName: ["ANBU", "ANBU Agency", "ANBU Squad", "ANBU Game Marketing Agency"],
     url: siteUrl,
     logo: `${siteUrl}/logo/logo.png`,
     image: `${siteUrl}/logo/logo.png`,
@@ -119,7 +119,11 @@ export default async function LocaleLayout({
     foundingDate: String(site.foundedYear),
     areaServed: ["VN", "TH", "PH", "ID", "MY", "SG"],
     hasMap: site.mapUrl,
-    sameAs: [...Object.values(site.social), site.googleBusinessUrl],
+    sameAs: [
+      ...Object.values(site.social),
+      site.googleBusinessUrl,
+      "https://masothue.com/3301761892-cong-ty-tnhh-marketing-truyen-thong-anbu",
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "47 Dang Van Ngu, An Cuu",
