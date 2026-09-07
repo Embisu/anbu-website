@@ -120,6 +120,111 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     setTimeout(() => setAiNotice(null), 4000);
   };
 
+  // Auto Translate Vietnamese to English
+  const translateText = async (text: string): Promise<string> => {
+    if (!text || !text.trim()) return "";
+    try {
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=vi&tl=en&dt=t&q=${encodeURIComponent(text)}`;
+      const res = await fetch(url);
+      if (!res.ok) return text;
+      const data = await res.json();
+      if (Array.isArray(data?.[0])) {
+        return data[0].map((item: any) => item[0]).join("");
+      }
+      return text;
+    } catch {
+      return text;
+    }
+  };
+
+  const handleAutoTranslateToEnglish = async () => {
+    setAiNotice("🌐 Đang tự động dịch toàn bộ bài viết sang Tiếng Anh...");
+    try {
+      // 1. Translate Title & Excerpt
+      const enTitle = post.title.vi ? await translateText(post.title.vi) : "";
+      const enExcerpt = post.excerpt.vi ? await translateText(post.excerpt.vi) : "";
+
+      // 2. Translate Blocks
+      const newBody = await Promise.all(
+        post.body.map(async (block) => {
+          if (block.type === "p" || block.type === "h2" || block.type === "quote") {
+            const enText = block.text.vi ? await translateText(block.text.vi) : "";
+            return {
+              ...block,
+              text: { ...block.text, en: enText },
+            };
+          }
+          if (block.type === "ul") {
+            const translatedItems = await Promise.all(
+              block.items.map(async (item) => {
+                const enItem = item.vi ? await translateText(item.vi) : "";
+                return { ...item, en: enItem };
+              })
+            );
+            return {
+              ...block,
+              items: translatedItems,
+            };
+          }
+          if (block.type === "image") {
+            const enAlt = block.alt.vi ? await translateText(block.alt.vi) : "";
+            const enCaption = block.caption?.vi ? await translateText(block.caption.vi) : undefined;
+            return {
+              ...block,
+              alt: { ...block.alt, en: enAlt },
+              caption: enCaption ? { ...block.caption!, en: enCaption } : block.caption,
+            };
+          }
+          return block;
+        })
+      );
+
+      setPost((prev) => ({
+        ...prev,
+        title: { ...prev.title, en: enTitle },
+        excerpt: { ...prev.excerpt, en: enExcerpt },
+        body: newBody,
+      }));
+
+      setActiveLang("en");
+      setAiNotice("✅ Đã dịch xong toàn bộ bài viết sang Tiếng Anh! Đã tự động chuyển sang tab English để bạn xem lại.");
+      setTimeout(() => setAiNotice(null), 5000);
+    } catch (err: any) {
+      console.error(err);
+      setAiNotice("⚠️ Có lỗi khi dịch tự động. Bạn có thể sử dụng nút 'Sao chép Tiếng Việt sang EN'.");
+      setTimeout(() => setAiNotice(null), 4000);
+    }
+  };
+
+  const handleCloneViToEn = () => {
+    const clonedBody = post.body.map((block) => {
+      if (block.type === "p" || block.type === "h2" || block.type === "quote") {
+        return { ...block, text: { ...block.text, en: block.text.vi || "" } };
+      }
+      if (block.type === "ul") {
+        return { ...block, items: block.items.map((i) => ({ ...i, en: i.vi || "" })) };
+      }
+      if (block.type === "image") {
+        return {
+          ...block,
+          alt: { ...block.alt, en: block.alt.vi || "" },
+          caption: block.caption ? { ...block.caption, en: block.caption.vi || "" } : undefined,
+        };
+      }
+      return block;
+    });
+
+    setPost({
+      ...post,
+      title: { ...post.title, en: post.title.vi },
+      excerpt: { ...post.excerpt, en: post.excerpt.vi },
+      body: clonedBody,
+    });
+    setActiveLang("en");
+    setAiNotice("📋 Đã sao chép nội dung Tiếng Việt sang tab Tiếng Anh thành công!");
+    setTimeout(() => setAiNotice(null), 4000);
+  };
+
   const updateBlock = (index: number, text: string) => {
     const updated = [...post.body];
     const block = updated[index];
@@ -215,8 +320,52 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
       .trim()
       .replace(/\s+/g, "-");
 
+    // Auto-fill English if left empty to guarantee bilingual completeness
+    const titleEn = post.title.en?.trim() || post.title.vi;
+    const excerptEn = post.excerpt.en?.trim() || post.excerpt.vi;
+
+    const safeBody = post.body.map((block) => {
+      if (block.type === "p" || block.type === "h2" || block.type === "quote") {
+        return {
+          ...block,
+          text: {
+            vi: block.text.vi || "",
+            en: block.text.en?.trim() || block.text.vi || "",
+          },
+        };
+      }
+      if (block.type === "ul") {
+        return {
+          ...block,
+          items: block.items.map((i) => ({
+            vi: i.vi || "",
+            en: i.en?.trim() || i.vi || "",
+          })),
+        };
+      }
+      if (block.type === "image") {
+        return {
+          ...block,
+          alt: {
+            vi: block.alt.vi || "",
+            en: block.alt.en?.trim() || block.alt.vi || "",
+          },
+          caption: block.caption
+            ? {
+                vi: block.caption.vi || "",
+                en: block.caption.en?.trim() || block.caption.vi || "",
+              }
+            : undefined,
+        };
+      }
+      return block;
+    });
+
     const finalPost: Post = {
       ...post,
+      title: { vi: post.title.vi, en: titleEn },
+      excerpt: { vi: post.excerpt.vi, en: excerptEn },
+      body: safeBody,
       slug: cleanSlug,
       readingTime,
     };
@@ -324,6 +473,20 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             <div className="flex flex-wrap items-center gap-1.5">
               <button
                 type="button"
+                onClick={handleAutoTranslateToEnglish}
+                className="rounded border border-emerald-600 bg-white px-2.5 py-1 text-[11px] font-bold text-emerald-700 hover:bg-emerald-50 transition flex items-center gap-1 shadow-sm"
+              >
+                <span>🌐</span> <span>Dịch tự động sang Tiếng Anh (1-Click)</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleCloneViToEn}
+                className="rounded border border-[#8c8f94] bg-white px-2.5 py-1 text-[11px] font-bold text-[#2c3338] hover:bg-[#f6f7f7] transition"
+              >
+                📋 Sao chép Tiếng Việt sang EN
+              </button>
+              <button
+                type="button"
                 onClick={handleAiGenerateTitles}
                 className="rounded border border-[#2271b1] bg-white px-2.5 py-1 text-[11px] font-bold text-[#2271b1] hover:bg-blue-50 transition"
               >
@@ -363,11 +526,16 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                 <button
                   type="button"
                   onClick={() => setActiveLang("en")}
-                  className={`rounded px-2.5 py-0.5 font-bold transition ${
+                  className={`rounded px-2.5 py-0.5 font-bold transition flex items-center gap-1.5 ${
                     activeLang === "en" ? "bg-[#2271b1] text-white shadow-sm" : "text-[#50575e] hover:text-black"
                   }`}
                 >
-                  🇺🇸 English
+                  <span>🇺🇸 English</span>
+                  {!post.title.en?.trim() && (
+                    <span className="text-[10px] px-1 py-0.2 rounded bg-amber-100 text-amber-800 font-normal">
+                      Chưa dịch
+                    </span>
+                  )}
                 </button>
               </div>
             </div>

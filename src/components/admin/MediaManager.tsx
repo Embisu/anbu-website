@@ -67,27 +67,82 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
   const [uploading, setUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  const getDeletedMedia = (): string[] => {
+    try {
+      const saved = localStorage.getItem("anbu_deleted_media");
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  };
+
   React.useEffect(() => {
+    const deletedArr = getDeletedMedia();
+
+    // Filter defaults
+    setMediaList((prev) => prev.filter((item) => !deletedArr.includes(item.src)));
+
     supabase.storage
       .from("blog-media")
       .list("", { limit: 100, sortBy: { column: "created_at", order: "desc" } })
       .then(({ data }) => {
         if (data && data.length > 0) {
-          const cloudItems: MediaItem[] = data.map((item) => {
-            const { data: urlData } = supabase.storage.from("blog-media").getPublicUrl(item.name);
-            return {
-              src: urlData.publicUrl,
-              title: item.name.replace(/\.[^/.]+$/, ""),
-              tags: ["supabase", "cloud"],
-              size: `${Math.round((item.metadata?.size || 0) / 1024)} KB`,
-              dimensions: "Cloud CDN",
-            };
+          const currentDeleted = getDeletedMedia();
+          const cloudItems: MediaItem[] = data
+            .map((item) => {
+              const { data: urlData } = supabase.storage.from("blog-media").getPublicUrl(item.name);
+              return {
+                src: urlData.publicUrl,
+                title: item.name.replace(/\.[^/.]+$/, ""),
+                tags: ["supabase", "cloud"],
+                size: `${Math.round((item.metadata?.size || 0) / 1024)} KB`,
+                dimensions: "Cloud CDN",
+              };
+            })
+            .filter((item) => !currentDeleted.includes(item.src));
+
+          setMediaList((prev) => {
+            const freshFiltered = prev.filter((p) => !currentDeleted.includes(p.src) && !cloudItems.some(ci => ci.src === p.src));
+            return [...cloudItems, ...freshFiltered];
           });
-          setMediaList((prev) => [...cloudItems, ...prev]);
         }
       })
       .catch(() => {});
   }, []);
+
+  const handleDeleteAsset = async (asset: MediaItem) => {
+    if (!confirm(`Bạn có chắc chắn muốn xóa tập tin "${asset.title}" khỏi thư viện Media không?`)) {
+      return;
+    }
+
+    // 1. Remove from local state
+    setMediaList((prev) => prev.filter((item) => item.src !== asset.src));
+    if (selectedAsset?.src === asset.src) {
+      setSelectedAsset(null);
+    }
+
+    // 2. Persist deleted list in localStorage
+    try {
+      const deletedArr = getDeletedMedia();
+      if (!deletedArr.includes(asset.src)) {
+        deletedArr.push(asset.src);
+        localStorage.setItem("anbu_deleted_media", JSON.stringify(deletedArr));
+      }
+    } catch (e) {}
+
+    // 3. Remove from Supabase Storage if cloud item
+    if (asset.src.includes("blog-media")) {
+      try {
+        const parts = asset.src.split("/blog-media/");
+        const fileName = parts[1]?.split("?")[0];
+        if (fileName) {
+          await supabase.storage.from("blog-media").remove([decodeURIComponent(fileName)]);
+        }
+      } catch (err) {
+        console.error("Storage delete exception:", err);
+      }
+    }
+  };
 
   const allTags = ["all", ...Array.from(new Set(mediaList.flatMap((item) => item.tags)))];
 
@@ -269,6 +324,17 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
                         ✓
                       </div>
                     )}
+                    <button
+                      type="button"
+                      title="Xóa tập tin này"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDeleteAsset(asset);
+                      }}
+                      className="absolute left-1 top-1 flex h-5 w-5 items-center justify-center rounded bg-black/60 text-white text-[10px] opacity-0 group-hover:opacity-100 hover:bg-[#d63638] transition"
+                    >
+                      🗑️
+                    </button>
                   </div>
                 );
               })}
@@ -335,6 +401,16 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
                     </button>
                   </div>
                 )}
+
+                <div className="pt-2 border-t border-[#ccd0d4]">
+                  <button
+                    type="button"
+                    onClick={() => handleDeleteAsset(selectedAsset)}
+                    className="w-full rounded border border-[#d63638] bg-white py-1.5 text-xs font-semibold text-[#d63638] hover:bg-[#fcf0f1] transition flex items-center justify-center gap-1.5"
+                  >
+                    <span>🗑️</span> <span>Xóa vĩnh viễn tập tin (Delete)</span>
+                  </button>
+                </div>
               </div>
             ) : (
               <p className="text-xs text-[#646970] italic">Chọn một ảnh từ thư viện để xem thông tin chi tiết.</p>

@@ -37,5 +37,10 @@ export const site = {
 };
 
 export function t(value: L10n, locale: Locale): string {
-  return value[locale] ?? value.vi;
+  if (!value) return "";
+  const localized = value[locale];
+  if (typeof localized === "string" && localized.trim().length > 0) {
+    return localized;
+  }
+  return value.vi || "";
 }

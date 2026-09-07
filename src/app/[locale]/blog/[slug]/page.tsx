@@ -261,6 +261,23 @@ export default async function BlogPostPage({
       />
 
       <article>
+        {locale === "en" && (!post.title.en?.trim() || post.title.en === post.title.vi) && (
+          <div className="border-b border-blue-200 bg-blue-50 px-4 py-2 text-center text-xs text-blue-900 flex flex-wrap items-center justify-center gap-2">
+            <span>🇻🇳 This article was originally written in Vietnamese.</span>
+            <Link href={`/vi/blog/${post.slug}`} className="font-bold underline text-blue-700 hover:text-blue-900">
+              Đọc bản gốc Tiếng Việt
+            </Link>
+            <span>·</span>
+            <a
+              href={`https://translate.google.com/translate?sl=vi&tl=en&u=${encodeURIComponent(`${siteUrl}/vi/blog/${post.slug}`)}`}
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold underline text-blue-700 hover:text-blue-900"
+            >
+              Translate with Google ↗
+            </a>
+          </div>
+        )}
         <header className={`relative overflow-hidden bg-gradient-to-br ${post.color} text-white`}>
           <EditorialMedia
             src={editorialImageForPostData(post)}
