@@ -42,15 +42,18 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
   // Combine full text for SEO checks
   const fullContentText = post.body
     .map((b) => {
-      if (b.type === "p" || b.type === "h2" || b.type === "quote") return b.text[lang] || "";
-      if (b.type === "ul") return b.items.map((it) => it[lang] || "").join(" ");
+      if (b.type === "p" || b.type === "h2" || b.type === "h3" || b.type === "quote") return b.text[lang] || "";
+      if (b.type === "ul" || b.type === "ol") return b.items.map((it) => it[lang] || "").join(" ");
+      if (b.type === "callout") return (b.title ? b.title[lang] + " " : "") + (b.text[lang] || "");
+      if (b.type === "faq") return b.items.map((it) => (it.question[lang] || "") + " " + (it.answer[lang] || "")).join(" ");
       return "";
     })
     .join(" ");
 
   const wordCount = fullContentText.trim().split(/\s+/).filter(Boolean).length;
   const imageBlocks = post.body.filter((b) => b.type === "image");
-  const h2Blocks = post.body.filter((b) => b.type === "h2");
+  const headingBlocks = post.body.filter((b) => b.type === "h2" || b.type === "h3");
+  const faqBlocks = post.body.filter((b) => b.type === "faq");
 
   // Normalized keywords check
   const kw = focusKeyword.trim().toLowerCase();
@@ -78,20 +81,21 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
     wordCountGreat: wordCount >= 650,
 
     // 2. Additional SEO & Media
-    kwInH2: kw.length > 0 && h2Blocks.some((h) => (h.text[lang] || "").toLowerCase().includes(kw)),
+    kwInH2: kw.length > 0 && headingBlocks.some((h) => (h.text[lang] || "").toLowerCase().includes(kw)),
     kwInImageAlt:
       kw.length > 0 &&
       imageBlocks.some((img) => ((img as any).alt?.[lang] || "").toLowerCase().includes(kw)),
     hasImages: imageBlocks.length >= 1,
     hasMultipleImages: imageBlocks.length >= 2,
-    hasH2s: h2Blocks.length >= 2,
+    hasH2s: headingBlocks.length >= 2,
+    hasFaq: faqBlocks.length > 0,
     kwDensityGood: parseFloat(kwDensity) >= 0.8 && parseFloat(kwDensity) <= 2.5,
 
     // 3. Title & Readability
     titleLengthGood: currentTitle.length >= 40 && currentTitle.length <= 75,
     excerptLengthGood: currentExcerpt.length >= 100 && currentExcerpt.length <= 165,
     titleHasNumber: /\d+/.test(currentTitle),
-    hasList: post.body.some((b) => b.type === "ul"),
+    hasList: post.body.some((b) => b.type === "ul" || b.type === "ol"),
     hasQuote: post.body.some((b) => b.type === "quote"),
     hasSources: Boolean(post.sources && post.sources.length > 0),
   };
@@ -108,6 +112,7 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
   if (checks.kwInH2) score += 5;
   if (checks.kwInImageAlt) score += 5;
   if (checks.hasMultipleImages) score += 5;
+  if (checks.hasFaq) score += 5;
   if (checks.titleLengthGood) score += 5;
   if (checks.excerptLengthGood) score += 5;
   if (checks.titleHasNumber) score += 5;
@@ -581,6 +586,18 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
               </div>
               <p className="text-[11px] text-[#646970]">
                 <strong>Khuyến nghị chuyên sâu:</strong> Bài viết có từ 2–3 hình ảnh minh họa (ảnh chụp màn hình chiến dịch, biểu đồ chỉ số CPI/ROAS) giữ chân người đọc lâu hơn 42%.
+              </p>
+            </div>
+
+            <div className="rounded border border-[#eee] bg-[#fafafa] p-2.5 space-y-1.5">
+              <div className="flex items-center gap-2">
+                <span>{checks.hasFaq ? "🟢" : "🟡"}</span>
+                <span className={`font-semibold ${checks.hasFaq ? "text-[#2e7d32]" : "text-[#f57c00]"}`}>
+                  Tích hợp khối Hỏi & Đáp (FAQ Schema Google Rich Results)
+                </span>
+              </div>
+              <p className="text-[11px] text-[#646970]">
+                <strong>Khuyến nghị chuyên sâu:</strong> Khối FAQ tự động sinh dữ liệu có cấu trúc JSON-LD <code>FAQPage</code> giúp bài viết có cơ hội xuất hiện dạng Accordion mở rộng ngay trên trang nhất Google.
               </p>
             </div>
           </div>

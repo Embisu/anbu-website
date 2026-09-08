@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isLocale, defaultLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { posts, getPost, type Post, type Block } from "@/content/posts";
+import { posts, getPost, type Post, type Block, type L10n } from "@/content/posts";
 import { postDeepDiveBySlug } from "@/content/postDeepDive";
 import { t } from "@/content/site";
 import { buildMetadata, siteUrl, breadcrumbLd } from "@/lib/seo";
@@ -179,6 +179,46 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
           )}
         </div>
       );
+    case "h3":
+      return (
+        <h3 id={headingId} className="scroll-mt-20 sm:scroll-mt-24 mt-6 sm:mt-8 font-display text-lg sm:text-xl font-bold text-navy-800 border-l-3 border-orange-400 pl-3">
+          {renderRichText(t(block.text, locale))}
+        </h3>
+      );
+    case "ol":
+      return (
+        <ol className="mt-3.5 sm:mt-5 space-y-2 sm:space-y-2.5 list-decimal list-inside text-base sm:text-lg leading-relaxed text-navy-600 pl-1">
+          {block.items.map((item, i) => (
+            <li key={i} className="pl-1">
+              <span>{renderRichText(t(item, locale))}</span>
+            </li>
+          ))}
+        </ol>
+      );
+    case "divider":
+      return <hr className="my-8 sm:my-12 border-t-2 border-dashed border-navy-100" />;
+    case "faq":
+      return (
+        <div className="my-8 sm:my-10 space-y-3 rounded-2xl border border-navy-100/80 bg-slate-50/60 p-5 sm:p-7 shadow-xs">
+          <div className="flex items-center gap-2 mb-4 font-display text-base sm:text-lg font-bold text-navy-900">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-500/10 text-orange-600 text-sm">❓</span>
+            <span>{locale === "vi" ? "Câu hỏi thường gặp (FAQ)" : "Frequently Asked Questions (FAQ)"}</span>
+          </div>
+          <div className="space-y-3">
+            {block.items.map((it, idx) => (
+              <details key={idx} className="group rounded-xl border border-navy-100/80 bg-white p-4 shadow-xs transition hover:border-orange-300 open:bg-orange-50/20 open:border-orange-300">
+                <summary className="cursor-pointer font-display font-bold text-navy-900 list-none flex items-center justify-between gap-3 text-sm sm:text-base select-none">
+                  <span>{renderRichText(t(it.question, locale))}</span>
+                  <span className="shrink-0 transition-transform duration-200 group-open:rotate-180 text-orange-500 font-mono text-sm">▼</span>
+                </summary>
+                <div className="mt-3 pt-3 border-t border-navy-100/50 text-sm sm:text-base leading-relaxed text-navy-600 whitespace-pre-line">
+                  {renderRichText(t(it.answer, locale))}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      );
     default:
       return null;
   }
@@ -336,6 +376,27 @@ export default async function BlogPostPage({
     mainEntityOfPage: `${siteUrl}/${locale}/blog/${post.slug}`,
   };
 
+  const faqBlocks = articleBlocks.filter((b) => b.type === "faq") as Array<{
+    type: "faq";
+    items: { question: L10n; answer: L10n }[];
+  }>;
+  const allFaqItems = faqBlocks.flatMap((b) => b.items);
+  const faqLd =
+    allFaqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: allFaqItems.map((item) => ({
+            "@type": "Question",
+            name: t(item.question, locale),
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: t(item.answer, locale),
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
       <JsonLd
@@ -349,6 +410,7 @@ export default async function BlogPostPage({
             ],
             locale
           ),
+          ...(faqLd ? [faqLd] : []),
         ]}
       />
 

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
-import type { Post, Block } from "@/content/posts";
+import type { Post, Block, L10n } from "@/content/posts";
 import { posts as defaultPosts } from "@/content/posts";
 import { t } from "@/content/site";
 import { localePath, formatDate } from "@/lib/utils";
@@ -139,10 +139,32 @@ export default function ClientCustomPostViewer({
     url: `${siteUrl}/${locale}/blog/${post.slug}`,
   });
 
+  const faqBlocks = post.body.filter((b) => b.type === "faq") as Array<{
+    type: "faq";
+    items: { question: L10n; answer: L10n }[];
+  }>;
+  const allFaqItems = faqBlocks.flatMap((b) => b.items);
+  const faqSchema =
+    allFaqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: allFaqItems.map((item) => ({
+            "@type": "Question",
+            name: t(item.question, locale),
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: t(item.answer, locale),
+            },
+          })),
+        }
+      : null;
+
   return (
     <article>
       <JsonLd data={breadcrumbs} />
       <JsonLd data={articleSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       {/* Bilingual Translation Notice for English Readers */}
       {locale === "en" && (!post.title.en?.trim() || post.title.en === post.title.vi) && (
         <div className="border-b border-blue-200 bg-blue-50 px-4 py-2 text-center text-xs text-blue-900 flex flex-wrap items-center justify-center gap-2">
@@ -351,6 +373,50 @@ export default function ClientCustomPostViewer({
                           {t(block.caption, locale)}
                         </div>
                       )}
+                    </div>
+                  );
+                }
+                if (block.type === "h3") {
+                  return (
+                    <h3 key={i} id={`section-${i}`} className="scroll-mt-20 sm:scroll-mt-24 mt-6 sm:mt-8 font-display text-lg sm:text-xl font-bold text-navy-800 border-l-3 border-orange-400 pl-3">
+                      {renderRichText(t(block.text, locale))}
+                    </h3>
+                  );
+                }
+                if (block.type === "ol") {
+                  return (
+                    <ol key={i} className="mt-3.5 sm:mt-5 space-y-2 sm:space-y-2.5 list-decimal list-inside text-base sm:text-lg leading-relaxed text-navy-600 pl-1">
+                      {block.items.map((item, itemIdx) => (
+                        <li key={itemIdx} className="pl-1">
+                          <span>{renderRichText(t(item, locale))}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  );
+                }
+                if (block.type === "divider") {
+                  return <hr key={i} className="my-8 sm:my-12 border-t-2 border-dashed border-navy-100" />;
+                }
+                if (block.type === "faq") {
+                  return (
+                    <div key={i} className="my-8 sm:my-10 space-y-3 rounded-2xl border border-navy-100/80 bg-slate-50/60 p-5 sm:p-7 shadow-xs">
+                      <div className="flex items-center gap-2 mb-4 font-display text-base sm:text-lg font-bold text-navy-900">
+                        <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-500/10 text-orange-600 text-sm">❓</span>
+                        <span>{locale === "vi" ? "Câu hỏi thường gặp (FAQ)" : "Frequently Asked Questions (FAQ)"}</span>
+                      </div>
+                      <div className="space-y-3">
+                        {block.items.map((it, idx) => (
+                          <details key={idx} className="group rounded-xl border border-navy-100/80 bg-white p-4 shadow-xs transition hover:border-orange-300 open:bg-orange-50/20 open:border-orange-300">
+                            <summary className="cursor-pointer font-display font-bold text-navy-900 list-none flex items-center justify-between gap-3 text-sm sm:text-base select-none">
+                              <span>{renderRichText(t(it.question, locale))}</span>
+                              <span className="shrink-0 transition-transform duration-200 group-open:rotate-180 text-orange-500 font-mono text-sm">▼</span>
+                            </summary>
+                            <div className="mt-3 pt-3 border-t border-navy-100/50 text-sm sm:text-base leading-relaxed text-navy-600 whitespace-pre-line">
+                              {renderRichText(t(it.answer, locale))}
+                            </div>
+                          </details>
+                        ))}
+                      </div>
                     </div>
                   );
                 }
