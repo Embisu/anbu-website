@@ -298,6 +298,62 @@ export default function ClientCustomPostViewer({
                     </figure>
                   );
                 }
+                if (block.type === "callout") {
+                  const variant = block.variant || "info";
+                  const styles = {
+                    tip: { bg: "bg-emerald-50/80 border-emerald-500 text-emerald-950", icon: "💡", badge: locale === "vi" ? "Mẹo chiến lược" : "Pro Tip" },
+                    warning: { bg: "bg-amber-50/80 border-amber-500 text-amber-950", icon: "⚠️", badge: locale === "vi" ? "Lưu ý quan trọng" : "Important Note" },
+                    info: { bg: "bg-blue-50/80 border-blue-500 text-blue-950", icon: "ℹ️", badge: locale === "vi" ? "Thông tin hữu ích" : "Key Insight" },
+                  }[variant];
+                  return (
+                    <aside key={i} className={`my-6 sm:my-8 rounded-2xl border-l-4 p-4 sm:p-6 shadow-xs ${styles.bg}`}>
+                      <div className="flex items-center gap-2 mb-2 font-display text-xs sm:text-sm font-bold uppercase tracking-wider">
+                        <span>{styles.icon}</span>
+                        <span>{block.title ? t(block.title, locale) : styles.badge}</span>
+                      </div>
+                      <div className="text-base sm:text-lg leading-relaxed whitespace-pre-line">
+                        {renderRichText(t(block.text, locale))}
+                      </div>
+                    </aside>
+                  );
+                }
+                if (block.type === "table") {
+                  return (
+                    <div key={i} className="my-6 sm:my-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/80 bg-white shadow-xs">
+                      <div className="overflow-x-auto">
+                        <table className="min-w-full text-left text-xs sm:text-sm text-navy-700 divide-y divide-navy-100">
+                          {block.headers && block.headers.length > 0 && (
+                            <thead className="bg-navy-50/80 text-navy-900 font-bold font-display">
+                              <tr>
+                                {block.headers.map((h, hIdx) => (
+                                  <th key={hIdx} className="px-4 py-3 sm:px-5 sm:py-3.5 whitespace-nowrap">
+                                    {renderRichText(t(h, locale))}
+                                  </th>
+                                ))}
+                              </tr>
+                            </thead>
+                          )}
+                          <tbody className="divide-y divide-navy-100/60 bg-white">
+                            {block.rows.map((row, rIdx) => (
+                              <tr key={rIdx} className="even:bg-cloud/30 hover:bg-navy-50/40 transition">
+                                {row.map((cell, cIdx) => (
+                                  <td key={cIdx} className="px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed">
+                                    {renderRichText(t(cell, locale))}
+                                  </td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                      {block.caption && (
+                        <div className="border-t border-navy-100/60 bg-slate-50 px-4 py-2 text-center text-[11px] sm:text-xs italic text-navy-500">
+                          {t(block.caption, locale)}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
                 return null;
               })}
             </div>

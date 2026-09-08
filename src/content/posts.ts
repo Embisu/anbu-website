@@ -5,6 +5,8 @@ export type Block =
   | { type: "p"; text: L10n }
   | { type: "h2"; text: L10n }
   | { type: "quote"; text: L10n }
+  | { type: "callout"; variant?: "info" | "tip" | "warning"; title?: L10n; text: L10n }
+  | { type: "table"; caption?: L10n; headers: L10n[]; rows: L10n[][] }
   | { type: "ul"; items: L10n[] }
   | { type: "image"; src: string; alt: L10n; caption?: L10n };
 

@@ -70,11 +70,27 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
   // Zen Mode (Toàn màn hình) State
   const [isZenMode, setIsZenMode] = useState(false);
 
+  // Document Outline Drawer / Navigator State
+  const [showOutline, setShowOutline] = useState(false);
+
+  // Undo / Redo History State
+  const [history, setHistory] = useState<Post[]>([]);
+  const [historyIndex, setHistoryIndex] = useState(-1);
+  const isUndoRedoRef = useRef(false);
+
   // Smart Import from Docs / Word State
   const [showImportModal, setShowImportModal] = useState(false);
   const [importRawText, setImportRawText] = useState("");
   const [importMode, setImportMode] = useState<"append" | "replace">("append");
   const [importAutoTitle, setImportAutoTitle] = useState(true);
+
+  // Initialize history with initial post
+  useEffect(() => {
+    if (history.length === 0 && post) {
+      setHistory([post]);
+      setHistoryIndex(0);
+    }
+  }, []);
 
   // Check for existing draft on mount
   useEffect(() => {
@@ -117,16 +133,70 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     return () => clearTimeout(timer);
   }, [post, draftKey, draftTimeKey]);
 
-  // Escape key to exit Zen Mode
+  // Update history on debounced change
+  useEffect(() => {
+    if (isUndoRedoRef.current) {
+      isUndoRedoRef.current = false;
+      return;
+    }
+    const timer = setTimeout(() => {
+      setHistory((prev) => {
+        const currentSlice = prev.slice(0, historyIndex + 1);
+        if (currentSlice.length > 0 && JSON.stringify(currentSlice[currentSlice.length - 1]) === JSON.stringify(post)) {
+          return prev;
+        }
+        const nextHist = [...currentSlice, post].slice(-30);
+        setHistoryIndex(nextHist.length - 1);
+        return nextHist;
+      });
+    }, 800);
+    return () => clearTimeout(timer);
+  }, [post]);
+
+  const handleUndo = () => {
+    if (historyIndex > 0) {
+      isUndoRedoRef.current = true;
+      const targetState = history[historyIndex - 1];
+      setHistoryIndex(historyIndex - 1);
+      setPost(targetState);
+      setAiNotice("↩️ Đã hoàn tác thao tác (Undo)!");
+      setTimeout(() => setAiNotice(null), 2500);
+    }
+  };
+
+  const handleRedo = () => {
+    if (historyIndex < history.length - 1) {
+      isUndoRedoRef.current = true;
+      const targetState = history[historyIndex + 1];
+      setHistoryIndex(historyIndex + 1);
+      setPost(targetState);
+      setAiNotice("↪️ Đã làm lại thao tác (Redo)!");
+      setTimeout(() => setAiNotice(null), 2500);
+    }
+  };
+
+  // Keyboard shortcut listener for Ctrl+Z, Ctrl+Y, Ctrl+Shift+Z, and Escape for Zen Mode & Outline
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isZenMode) {
-        setIsZenMode(false);
+      if (e.key === "Escape") {
+        if (isZenMode) setIsZenMode(false);
+        if (showOutline) setShowOutline(false);
+      } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") {
+        if (e.shiftKey) {
+          e.preventDefault();
+          handleRedo();
+        } else {
+          e.preventDefault();
+          handleUndo();
+        }
+      } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "y") {
+        e.preventDefault();
+        handleRedo();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isZenMode]);
+  }, [isZenMode, showOutline, historyIndex, history]);
 
   const handleRestoreDraft = () => {
     if (draftAvailable) {
@@ -473,6 +543,32 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
               items: translatedItems,
             };
           }
+          if (block.type === "callout") {
+            const enText = block.text.vi ? await translateText(block.text.vi) : "";
+            const enTitle = block.title?.vi ? await translateText(block.title.vi) : undefined;
+            return {
+              ...block,
+              title: enTitle ? { vi: block.title?.vi || "", en: enTitle } : block.title,
+              text: { ...block.text, en: enText },
+            };
+          }
+          if (block.type === "table") {
+            const enCaption = block.caption?.vi ? await translateText(block.caption.vi) : undefined;
+            const enHeaders = await Promise.all(
+              block.headers.map(async (h) => ({ ...h, en: h.vi ? await translateText(h.vi) : "" }))
+            );
+            const enRows = await Promise.all(
+              block.rows.map(async (row) =>
+                Promise.all(row.map(async (cell) => ({ ...cell, en: cell.vi ? await translateText(cell.vi) : "" })))
+              )
+            );
+            return {
+              ...block,
+              caption: enCaption ? { vi: block.caption?.vi || "", en: enCaption } : block.caption,
+              headers: enHeaders,
+              rows: enRows,
+            };
+          }
           if (block.type === "image") {
             const enAlt = block.alt.vi ? await translateText(block.alt.vi) : "";
             const enCaption = block.caption?.vi ? await translateText(block.caption.vi) : undefined;
@@ -507,6 +603,21 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     const clonedBody = post.body.map((block) => {
       if (block.type === "p" || block.type === "h2" || block.type === "quote") {
         return { ...block, text: { ...block.text, en: block.text.vi || "" } };
+      }
+      if (block.type === "callout") {
+        return {
+          ...block,
+          title: block.title ? { ...block.title, en: block.title.vi || "" } : undefined,
+          text: { ...block.text, en: block.text.vi || "" },
+        };
+      }
+      if (block.type === "table") {
+        return {
+          ...block,
+          caption: block.caption ? { ...block.caption, en: block.caption.vi || "" } : undefined,
+          headers: block.headers.map((h) => ({ ...h, en: h.vi || "" })),
+          rows: block.rows.map((row) => row.map((cell) => ({ ...cell, en: cell.vi || "" }))),
+        };
       }
       if (block.type === "ul") {
         return { ...block, items: block.items.map((i) => ({ ...i, en: i.vi || "" })) };
@@ -568,8 +679,105 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     }
   };
 
+  const updateCallout = (index: number, field: "text" | "title" | "variant", val: string) => {
+    const updated = [...post.body];
+    const block = updated[index];
+    if (block && block.type === "callout") {
+      if (field === "variant") {
+        block.variant = val as "info" | "tip" | "warning";
+      } else if (field === "title") {
+        if (!block.title) block.title = { vi: "", en: "" };
+        block.title[activeLang] = val;
+      } else if (field === "text") {
+        block.text[activeLang] = val;
+      }
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const updateTableHeader = (blockIndex: number, colIndex: number, text: string) => {
+    const updated = [...post.body];
+    const block = updated[blockIndex];
+    if (block && block.type === "table") {
+      if (!block.headers[colIndex]) block.headers[colIndex] = { vi: "", en: "" };
+      block.headers[colIndex][activeLang] = text;
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const updateTableCell = (blockIndex: number, rowIndex: number, colIndex: number, text: string) => {
+    const updated = [...post.body];
+    const block = updated[blockIndex];
+    if (block && block.type === "table") {
+      if (!block.rows[rowIndex]) block.rows[rowIndex] = [];
+      if (!block.rows[rowIndex][colIndex]) block.rows[rowIndex][colIndex] = { vi: "", en: "" };
+      block.rows[rowIndex][colIndex][activeLang] = text;
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const updateTableCaption = (blockIndex: number, text: string) => {
+    const updated = [...post.body];
+    const block = updated[blockIndex];
+    if (block && block.type === "table") {
+      if (!block.caption) block.caption = { vi: "", en: "" };
+      block.caption[activeLang] = text;
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const addTableRow = (blockIndex: number) => {
+    const updated = [...post.body];
+    const block = updated[blockIndex];
+    if (block && block.type === "table") {
+      const newRow = block.headers.map((_, i) => ({ vi: `Dữ liệu ${i + 1}`, en: `Data ${i + 1}` }));
+      block.rows.push(newRow);
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const removeTableRow = (blockIndex: number, rowIndex: number) => {
+    const updated = [...post.body];
+    const block = updated[blockIndex];
+    if (block && block.type === "table" && block.rows.length > 1) {
+      block.rows.splice(rowIndex, 1);
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const addTableColumn = (blockIndex: number) => {
+    const updated = [...post.body];
+    const block = updated[blockIndex];
+    if (block && block.type === "table") {
+      block.headers.push({ vi: `Cột ${block.headers.length + 1}`, en: `Col ${block.headers.length + 1}` });
+      block.rows.forEach((row) => row.push({ vi: "-", en: "-" }));
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const removeTableColumn = (blockIndex: number, colIndex: number) => {
+    const updated = [...post.body];
+    const block = updated[blockIndex];
+    if (block && block.type === "table" && block.headers.length > 1) {
+      block.headers.splice(colIndex, 1);
+      block.rows.forEach((row) => row.splice(colIndex, 1));
+      setPost({ ...post, body: updated });
+    }
+  };
+
+  const duplicateBlock = (index: number) => {
+    const updated = [...post.body];
+    const target = updated[index];
+    if (!target) return;
+    const clone = JSON.parse(JSON.stringify(target));
+    updated.splice(index + 1, 0, clone);
+    setPost({ ...post, body: updated });
+    setAiNotice(`📋 Đã nhân bản khối #${index + 1} thành công!`);
+    setTimeout(() => setAiNotice(null), 3000);
+  };
+
   const insertBlock = (
-    type: "p" | "h2" | "quote" | "ul" | "image",
+    type: "p" | "h2" | "quote" | "ul" | "image" | "callout" | "table",
     atIndex?: number,
     imageSrc?: string,
     imageAlt?: string
@@ -582,6 +790,38 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
       newBlock = { type: "h2", text: { vi: "Tiêu đề mục mới (Heading 2)", en: "New section title (Heading 2)" } };
     } else if (type === "quote") {
       newBlock = { type: "quote", text: { vi: "Trích dẫn số liệu hoặc nhận định chuyên gia...", en: "Key expert quote..." } };
+    } else if (type === "callout") {
+      newBlock = {
+        type: "callout",
+        variant: "info",
+        title: { vi: "Lưu ý chiến lược quan trọng", en: "Key Strategic Insight" },
+        text: { vi: "Nhập nội dung lưu ý, lời khuyên hoặc mẹo thực chiến tại đây...", en: "Enter actionable advice or key tip here..." },
+      };
+    } else if (type === "table") {
+      newBlock = {
+        type: "table",
+        caption: { vi: "Bảng dữ liệu phân tích chi tiết", en: "Detailed comparative data table" },
+        headers: [
+          { vi: "Kênh / Tiêu chí", en: "Channel / Criteria" },
+          { vi: "Chi phí CPI", en: "CPI Cost" },
+          { vi: "Hiệu quả ROAS", en: "ROAS Efficiency" },
+          { vi: "Đánh giá", en: "Assessment" },
+        ],
+        rows: [
+          [
+            { vi: "TikTok Ads", en: "TikTok Ads" },
+            { vi: "$0.35 - $0.70", en: "$0.35 - $0.70" },
+            { vi: "180% - 240%", en: "180% - 240%" },
+            { vi: "⭐⭐⭐⭐ Tối ưu giới trẻ", en: "⭐⭐⭐⭐ High viral potential" },
+          ],
+          [
+            { vi: "Facebook / Meta", en: "Facebook / Meta" },
+            { vi: "$0.80 - $1.40", en: "$0.80 - $1.40" },
+            { vi: "140% - 190%", en: "140% - 190%" },
+            { vi: "⭐⭐⭐⭐ Phổ thông", en: "⭐⭐⭐⭐ Broad reach" },
+          ],
+        ],
+      };
     } else if (type === "ul") {
       newBlock = {
         type: "ul",
@@ -604,7 +844,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     setPost({ ...post, body: updated });
   };
 
-  const addBlock = (type: "p" | "h2" | "quote" | "ul" | "image") => {
+  const addBlock = (type: "p" | "h2" | "quote" | "ul" | "image" | "callout" | "table") => {
     insertBlock(type);
   };
 
@@ -717,6 +957,43 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
           })),
         };
       }
+      if (block.type === "callout") {
+        return {
+          ...block,
+          variant: block.variant || "info",
+          title: block.title
+            ? {
+                vi: block.title.vi || "",
+                en: block.title.en?.trim() || block.title.vi || "",
+              }
+            : undefined,
+          text: {
+            vi: block.text.vi || "",
+            en: block.text.en?.trim() || block.text.vi || "",
+          },
+        };
+      }
+      if (block.type === "table") {
+        return {
+          ...block,
+          caption: block.caption
+            ? {
+                vi: block.caption.vi || "",
+                en: block.caption.en?.trim() || block.caption.vi || "",
+              }
+            : undefined,
+          headers: block.headers.map((h) => ({
+            vi: h.vi || "",
+            en: h.en?.trim() || h.vi || "",
+          })),
+          rows: block.rows.map((row) =>
+            row.map((cell) => ({
+              vi: cell.vi || "",
+              en: cell.en?.trim() || cell.vi || "",
+            }))
+          ),
+        };
+      }
       if (block.type === "image") {
         return {
           ...block,
@@ -799,6 +1076,39 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
           >
             <span>⛶</span> <span>Toàn màn hình</span>
           </button>
+          <div className="flex items-center rounded border border-[#ccd0d4] bg-white p-0.5 shadow-xs">
+            <button
+              type="button"
+              onClick={handleUndo}
+              disabled={historyIndex <= 0}
+              className="px-2 py-1 text-xs font-semibold text-[#2c3338] hover:bg-[#f6f7f7] disabled:opacity-30 transition rounded"
+              title="Hoàn tác (Ctrl + Z)"
+            >
+              ↩️
+            </button>
+            <button
+              type="button"
+              onClick={handleRedo}
+              disabled={historyIndex >= history.length - 1}
+              className="px-2 py-1 text-xs font-semibold text-[#2c3338] hover:bg-[#f6f7f7] disabled:opacity-30 transition rounded"
+              title="Làm lại (Ctrl + Y)"
+            >
+              ↪️
+            </button>
+          </div>
+          <button
+            type="button"
+            onClick={() => setShowOutline(!showOutline)}
+            className={`rounded border px-2.5 py-1.5 text-xs font-semibold shadow-xs transition flex items-center gap-1 ${
+              showOutline
+                ? "border-blue-500 bg-blue-50 text-blue-700"
+                : "border-[#8c8f94] bg-white text-[#2c3338] hover:bg-[#f6f7f7]"
+            }`}
+            title="Mục lục các phân đoạn H2 trong bài viết"
+          >
+            <span>📑</span>
+            <span>Mục lục ({post.body.filter((b) => b.type === "h2").length})</span>
+          </button>
           <button
             type="button"
             onClick={copyPostCode}
@@ -852,6 +1162,56 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
               Bỏ qua & Xóa nháp
             </button>
           </div>
+        </div>
+      )}
+
+      {/* Document Outline Quick Jump Drawer */}
+      {showOutline && (
+        <div className="rounded-lg border border-blue-200 bg-blue-50/60 p-4 shadow-sm animate-in fade-in duration-200">
+          <div className="flex items-center justify-between pb-2 border-b border-blue-200 mb-3">
+            <div className="flex items-center gap-2 text-xs font-bold text-blue-900">
+              <span>📑</span>
+              <span>Mục lục phân đoạn bài viết (Bấm để nhảy nhanh đến khối soạn thảo):</span>
+            </div>
+            <button
+              type="button"
+              onClick={() => setShowOutline(false)}
+              className="text-xs text-slate-500 hover:text-slate-800 font-bold px-2 py-0.5 rounded hover:bg-blue-100 transition"
+            >
+              ✕ Đóng
+            </button>
+          </div>
+          {post.body.filter((b) => b.type === "h2").length === 0 ? (
+            <p className="text-xs text-slate-500 italic">Bài viết chưa có tiêu đề H2 nào. Hãy thêm khối H2 để chia đoạn bài viết chuẩn SEO.</p>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+              {post.body.map((b, idx) => {
+                if (b.type !== "h2") return null;
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => {
+                      const el = document.getElementById(`editor-block-${idx}`);
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth", block: "center" });
+                        el.classList.add("ring-2", "ring-blue-500");
+                        setTimeout(() => el.classList.remove("ring-2", "ring-blue-500"), 2000);
+                      }
+                    }}
+                    className="text-left rounded-md border border-blue-200 bg-white p-2.5 text-xs font-medium text-blue-900 hover:bg-blue-100/60 hover:border-blue-400 transition flex items-start gap-2 shadow-xs group"
+                  >
+                    <span className="shrink-0 rounded bg-blue-100 text-blue-800 font-mono text-[10px] px-1.5 py-0.5 font-bold">
+                      #{idx + 1}
+                    </span>
+                    <span className="line-clamp-2 group-hover:text-blue-700">
+                      {b.text[activeLang] || "Tiêu đề H2 trống..."}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
 
@@ -1014,6 +1374,10 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                     <button type="button" onClick={() => addBlock("ul")} className="h-6 px-1.5 rounded border border-transparent font-medium hover:bg-white hover:border-[#c3c4c7]" title="Danh sách">•≡ Danh sách</button>
                     <button type="button" onClick={() => addBlock("quote")} className="h-6 px-1.5 rounded border border-transparent font-medium hover:bg-white hover:border-[#c3c4c7]" title="Trích dẫn">“ Trích dẫn</button>
                   </div>
+                  <div className="flex items-center gap-0.5 border-r border-[#c3c4c7] pr-1.5 mr-1">
+                    <button type="button" onClick={() => addBlock("callout")} className="h-6 px-1.5 rounded border border-transparent font-bold text-amber-700 hover:bg-white hover:border-[#c3c4c7]" title="Hộp lưu ý / Lời khuyên">💡 Lưu ý</button>
+                    <button type="button" onClick={() => addBlock("table")} className="h-6 px-1.5 rounded border border-transparent font-bold text-purple-700 hover:bg-white hover:border-[#c3c4c7]" title="Bảng dữ liệu">📊 Bảng</button>
+                  </div>
                 </div>
 
                 {/* Prominent Media Action Buttons in Toolbar */}
@@ -1058,6 +1422,8 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                       <button type="button" onClick={() => insertBlock("p", 0)} className="rounded px-2 py-0.5 text-xs text-slate-700 hover:bg-blue-50 font-medium">¶ Đoạn văn</button>
                       <button type="button" onClick={() => insertBlock("h2", 0)} className="rounded px-2 py-0.5 text-xs text-slate-700 hover:bg-blue-50 font-medium">H2 Tiêu đề</button>
                       <button type="button" onClick={() => insertBlock("image", 0)} className="rounded px-2 py-0.5 text-xs text-blue-700 bg-blue-50 hover:bg-blue-100 font-bold flex items-center gap-1">🖼️ Chèn Ảnh</button>
+                      <button type="button" onClick={() => insertBlock("callout", 0)} className="rounded px-2 py-0.5 text-xs text-amber-700 hover:bg-amber-50 font-medium">💡 Lưu ý</button>
+                      <button type="button" onClick={() => insertBlock("table", 0)} className="rounded px-2 py-0.5 text-xs text-purple-700 hover:bg-purple-50 font-medium">📊 Bảng</button>
                     </div>
                   </div>
                 </div>
@@ -1065,7 +1431,8 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                 {post.body.map((block, index) => (
                   <React.Fragment key={index}>
                     <div
-                      className={`relative rounded-lg border transition-all p-3.5 ${
+                      id={`editor-block-${index}`}
+                      className={`relative rounded-lg border transition-all p-3.5 scroll-mt-20 ${
                         block.type === "image"
                           ? "border-blue-300 bg-blue-50/20 shadow-xs"
                           : block.type === "h2"
@@ -1074,6 +1441,10 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                           ? "border-slate-200 bg-white shadow-xs border-l-4 border-l-orange-500"
                           : block.type === "ul"
                           ? "border-slate-200 bg-white shadow-xs border-l-4 border-l-emerald-600"
+                          : block.type === "callout"
+                          ? "border-amber-300 bg-amber-50/20 shadow-xs border-l-4 border-l-amber-500"
+                          : block.type === "table"
+                          ? "border-purple-300 bg-purple-50/20 shadow-xs border-l-4 border-l-purple-600"
                           : "border-slate-200 bg-white shadow-xs border-l-4 border-l-slate-400"
                       }`}
                     >
@@ -1089,14 +1460,38 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                               ? "bg-orange-100 text-orange-800"
                               : block.type === "ul"
                               ? "bg-emerald-100 text-emerald-800"
+                              : block.type === "callout"
+                              ? "bg-amber-100 text-amber-800"
+                              : block.type === "table"
+                              ? "bg-purple-100 text-purple-800"
                               : "bg-slate-100 text-slate-700"
                           }`}>
-                            {block.type === "image" ? "🖼️ Khối Hình ảnh" : block.type === "h2" ? "H2 Tiêu đề" : block.type === "quote" ? "“ Trích dẫn" : block.type === "ul" ? "•≡ Danh sách" : "¶ Đoạn văn"}
+                            {block.type === "image"
+                              ? "🖼️ Khối Hình ảnh"
+                              : block.type === "h2"
+                              ? "H2 Tiêu đề"
+                              : block.type === "quote"
+                              ? "“ Trích dẫn"
+                              : block.type === "ul"
+                              ? "•≡ Danh sách"
+                              : block.type === "callout"
+                              ? "💡 Hộp Lưu ý"
+                              : block.type === "table"
+                              ? "📊 Bảng Dữ liệu"
+                              : "¶ Đoạn văn"}
                           </span>
                           <span className="text-[10px] text-slate-400">#{index + 1}</span>
                         </div>
 
                         <div className="flex items-center gap-1">
+                          <button
+                            type="button"
+                            onClick={() => duplicateBlock(index)}
+                            className="rounded px-2 py-0.5 text-[11px] font-medium text-slate-600 hover:bg-slate-100 hover:text-blue-700 transition"
+                            title="Nhân bản khối này"
+                          >
+                            📋 Nhân bản
+                          </button>
                           <button
                             type="button"
                             onClick={() => moveBlock(index, "up")}
@@ -1555,6 +1950,215 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                           )}
                         </div>
                       )}
+                      {block.type === "callout" && (
+                        <div className="space-y-2.5">
+                          {/* Variant picker and formatting toolbar */}
+                          <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+                            <div className="flex items-center gap-1.5">
+                              <span className="text-[11px] font-bold text-slate-600">Kiểu hộp:</span>
+                              <div className="inline-flex rounded border border-slate-200 bg-slate-50 p-0.5 text-[11px]">
+                                <button
+                                  type="button"
+                                  onClick={() => updateCallout(index, "variant", "info")}
+                                  className={`px-2 py-0.5 rounded font-semibold transition ${
+                                    (block.variant || "info") === "info"
+                                      ? "bg-blue-600 text-white shadow-xs"
+                                      : "text-slate-600 hover:text-blue-600"
+                                  }`}
+                                >
+                                  ℹ️ Thông tin
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => updateCallout(index, "variant", "tip")}
+                                  className={`px-2 py-0.5 rounded font-semibold transition ${
+                                    block.variant === "tip"
+                                      ? "bg-emerald-600 text-white shadow-xs"
+                                      : "text-slate-600 hover:text-emerald-600"
+                                  }`}
+                                >
+                                  💡 Lời khuyên / Mẹo
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => updateCallout(index, "variant", "warning")}
+                                  className={`px-2 py-0.5 rounded font-semibold transition ${
+                                    block.variant === "warning"
+                                      ? "bg-amber-600 text-white shadow-xs"
+                                      : "text-slate-600 hover:text-amber-600"
+                                  }`}
+                                >
+                                  ⚠️ Cảnh báo
+                                </button>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "bold")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 hover:bg-slate-200 transition"
+                                title="In đậm"
+                              >
+                                B
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "italic")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] italic font-serif text-slate-700 hover:bg-slate-200 transition"
+                                title="In nghiêng"
+                              >
+                                I
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => applyInlineFormatting(index, "link")}
+                                className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] font-semibold text-blue-700 hover:bg-blue-100 transition"
+                                title="Chèn link"
+                              >
+                                🔗 Link
+                              </button>
+                            </div>
+                          </div>
+
+                          {/* Callout preview box in editor */}
+                          <div
+                            className={`rounded-lg border p-3 space-y-2 ${
+                              (block.variant || "info") === "tip"
+                                ? "border-emerald-200 bg-emerald-50/50"
+                                : (block.variant || "info") === "warning"
+                                ? "border-amber-200 bg-amber-50/50"
+                                : "border-blue-200 bg-blue-50/50"
+                            }`}
+                          >
+                            <input
+                              type="text"
+                              value={block.title ? block.title[activeLang] || "" : ""}
+                              onChange={(e) => updateCallout(index, "title", e.target.value)}
+                              placeholder="Tiêu đề hộp lưu ý (tùy chọn)..."
+                              className="w-full font-bold text-sm text-slate-800 bg-transparent outline-none border-b border-dashed border-slate-300 pb-1"
+                            />
+                            <textarea
+                              rows={2}
+                              value={block.text[activeLang] || ""}
+                              onChange={(e) => updateCallout(index, "text", e.target.value)}
+                              placeholder="Nội dung lưu ý, lời khuyên hoặc mẹo thực chiến..."
+                              className="w-full resize-y text-xs leading-relaxed text-slate-700 bg-transparent outline-none"
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      {block.type === "table" && (
+                        <div className="space-y-3">
+                          <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+                            <div className="flex items-center gap-2">
+                              <span className="font-bold text-purple-900">📊 Cấu trúc Bảng dữ liệu:</span>
+                              <span className="text-[11px] text-slate-500">
+                                {block.headers.length} cột × {block.rows.length} dòng
+                              </span>
+                            </div>
+                            <div className="flex flex-wrap items-center gap-1.5">
+                              <button
+                                type="button"
+                                onClick={() => addTableColumn(index)}
+                                className="rounded border border-purple-300 bg-white px-2 py-0.5 text-[11px] font-semibold text-purple-700 hover:bg-purple-50 transition"
+                                title="Thêm một cột mới vào bảng"
+                              >
+                                + Thêm cột
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => addTableRow(index)}
+                                className="rounded border border-purple-300 bg-white px-2 py-0.5 text-[11px] font-semibold text-purple-700 hover:bg-purple-50 transition"
+                                title="Thêm một dòng mới vào bảng"
+                              >
+                                + Thêm dòng
+                              </button>
+                            </div>
+                          </div>
+
+                          {/* Table caption input */}
+                          <div>
+                            <input
+                              type="text"
+                              value={block.caption ? block.caption[activeLang] || "" : ""}
+                              onChange={(e) => updateTableCaption(index, e.target.value)}
+                              placeholder="Tiêu đề / Chú thích bảng (ví dụ: Bảng 1: So sánh CPI và ROAS)..."
+                              className="w-full text-xs font-semibold text-slate-700 border-b border-dashed border-slate-300 pb-1 outline-none focus:border-purple-500"
+                            />
+                          </div>
+
+                          {/* Interactive Table Matrix */}
+                          <div className="overflow-x-auto rounded-lg border border-purple-200 bg-white shadow-xs">
+                            <table className="w-full text-left text-xs border-collapse">
+                              <thead>
+                                <tr className="bg-purple-50/80 text-purple-900 border-b border-purple-200">
+                                  <th className="p-2 w-10 text-center font-mono text-[10px] text-purple-400">#</th>
+                                  {block.headers.map((h, colIdx) => (
+                                    <th key={colIdx} className="p-2 border-r border-purple-200 last:border-r-0 min-w-[120px]">
+                                      <div className="flex items-center gap-1">
+                                        <input
+                                          type="text"
+                                          value={h[activeLang] || ""}
+                                          onChange={(e) => updateTableHeader(index, colIdx, e.target.value)}
+                                          placeholder={`Tiêu đề cột ${colIdx + 1}`}
+                                          className="w-full bg-white/80 border border-purple-300 rounded px-1.5 py-0.5 text-xs font-bold text-purple-950 outline-none focus:bg-white"
+                                        />
+                                        {block.headers.length > 1 && (
+                                          <button
+                                            type="button"
+                                            onClick={() => removeTableColumn(index, colIdx)}
+                                            className="text-slate-400 hover:text-rose-600 px-1 text-[11px]"
+                                            title="Xóa cột này"
+                                          >
+                                            ✕
+                                          </button>
+                                        )}
+                                      </div>
+                                    </th>
+                                  ))}
+                                  <th className="p-2 w-10 text-center font-mono text-[10px] text-purple-400">Xóa</th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-purple-100">
+                                {block.rows.map((row, rowIdx) => (
+                                  <tr key={rowIdx} className="hover:bg-purple-50/30 transition">
+                                    <td className="p-2 text-center font-mono text-[10px] text-slate-400">
+                                      {rowIdx + 1}
+                                    </td>
+                                    {block.headers.map((_, colIdx) => {
+                                      const cellVal = row[colIdx] ? row[colIdx][activeLang] || "" : "";
+                                      return (
+                                        <td key={colIdx} className="p-1.5 border-r border-purple-100 last:border-r-0">
+                                          <input
+                                            type="text"
+                                            value={cellVal}
+                                            onChange={(e) => updateTableCell(index, rowIdx, colIdx, e.target.value)}
+                                            placeholder="Nội dung ô..."
+                                            className="w-full rounded border border-slate-200 p-1 text-xs text-slate-800 outline-none focus:border-purple-500 focus:bg-white"
+                                          />
+                                        </td>
+                                      );
+                                    })}
+                                    <td className="p-2 text-center">
+                                      {block.rows.length > 1 && (
+                                        <button
+                                          type="button"
+                                          onClick={() => removeTableRow(index, rowIdx)}
+                                          className="text-slate-400 hover:text-rose-600 font-bold text-xs"
+                                          title="Xóa dòng này"
+                                        >
+                                          ✕
+                                        </button>
+                                      )}
+                                    </td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      )}
                     </div>
 
                     {/* In-between Inserter */}
@@ -1568,6 +2172,8 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                           <button type="button" onClick={() => insertBlock("p", index + 1)} className="rounded px-1.5 py-0.5 text-[11px] text-slate-700 hover:bg-blue-50 font-medium">¶ Đoạn văn</button>
                           <button type="button" onClick={() => insertBlock("h2", index + 1)} className="rounded px-1.5 py-0.5 text-[11px] text-slate-700 hover:bg-blue-50 font-medium">H2 Tiêu đề</button>
                           <button type="button" onClick={() => insertBlock("image", index + 1)} className="rounded px-2 py-0.5 text-[11px] text-blue-700 bg-blue-50 hover:bg-blue-100 font-bold flex items-center gap-1">🖼️ Chèn Ảnh</button>
+                          <button type="button" onClick={() => insertBlock("callout", index + 1)} className="rounded px-1.5 py-0.5 text-[11px] text-amber-700 hover:bg-amber-50 font-medium">💡 Lưu ý</button>
+                          <button type="button" onClick={() => insertBlock("table", index + 1)} className="rounded px-1.5 py-0.5 text-[11px] text-purple-700 hover:bg-purple-50 font-medium">📊 Bảng</button>
                           <button type="button" onClick={() => insertBlock("ul", index + 1)} className="rounded px-1.5 py-0.5 text-[11px] text-slate-700 hover:bg-blue-50 font-medium">•≡ Danh sách</button>
                           <button type="button" onClick={() => insertBlock("quote", index + 1)} className="rounded px-1.5 py-0.5 text-[11px] text-slate-700 hover:bg-blue-50 font-medium">“ Trích dẫn</button>
                         </div>
@@ -1583,6 +2189,8 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                   <span className="font-semibold text-[#1d2327]">Chèn thêm khối:</span>
                   <button type="button" onClick={() => addBlock("p")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Đoạn văn</button>
                   <button type="button" onClick={() => addBlock("h2")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Tiêu đề H2</button>
+                  <button type="button" onClick={() => addBlock("callout")} className="rounded border border-amber-300 bg-white px-2 py-0.5 hover:bg-amber-50 font-semibold text-amber-800">+ Hộp lưu ý</button>
+                  <button type="button" onClick={() => addBlock("table")} className="rounded border border-purple-300 bg-white px-2 py-0.5 hover:bg-purple-50 font-semibold text-purple-800">+ Bảng dữ liệu</button>
                   <button type="button" onClick={() => addBlock("ul")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Danh sách</button>
                   <button type="button" onClick={() => addBlock("quote")} className="rounded border border-[#c3c4c7] bg-white px-2 py-0.5 hover:bg-[#f0f0f1] font-semibold text-[#2c3338]">+ Trích dẫn</button>
                   <button type="button" onClick={() => addBlock("image")} className="rounded border border-[#2271b1] bg-white px-2 py-0.5 hover:bg-blue-50 font-bold text-[#2271b1]">+ Hình ảnh</button>
@@ -1724,6 +2332,72 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                                 )}
                               </figure>
                             );
+                          if (b.type === "callout") {
+                            const variant = b.variant || "info";
+                            const icon = variant === "tip" ? "💡" : variant === "warning" ? "⚠️" : "ℹ️";
+                            const bg =
+                              variant === "tip"
+                                ? "bg-emerald-50/80 border-emerald-500 text-emerald-950"
+                                : variant === "warning"
+                                ? "bg-amber-50/80 border-amber-500 text-amber-950"
+                                : "bg-blue-50/80 border-blue-500 text-blue-950";
+                            return (
+                              <div key={i} className={`rounded-xl border-l-4 p-3 ${bg} text-xs space-y-1`}>
+                                <div className="font-bold flex items-center gap-1.5 text-[11px]">
+                                  <span>{icon}</span>
+                                  <span>
+                                    {b.title
+                                      ? b.title[activeLang]
+                                      : variant === "tip"
+                                      ? "Mẹo chiến lược"
+                                      : variant === "warning"
+                                      ? "Lưu ý quan trọng"
+                                      : "Thông tin hữu ích"}
+                                  </span>
+                                </div>
+                                <div className="leading-relaxed whitespace-pre-line text-slate-800">
+                                  {renderRichText(b.text[activeLang])}
+                                </div>
+                              </div>
+                            );
+                          }
+                          if (b.type === "table") {
+                            return (
+                              <div key={i} className="my-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
+                                <div className="overflow-x-auto">
+                                  <table className="w-full text-left text-[11px] divide-y divide-slate-100">
+                                    {b.headers && (
+                                      <thead className="bg-slate-50 font-bold text-slate-900">
+                                        <tr>
+                                          {b.headers.map((h, hIdx) => (
+                                            <th key={hIdx} className="px-2.5 py-2 whitespace-nowrap">
+                                              {renderRichText(h[activeLang])}
+                                            </th>
+                                          ))}
+                                        </tr>
+                                      </thead>
+                                    )}
+                                    <tbody className="divide-y divide-slate-100 bg-white">
+                                      {b.rows.map((row, rIdx) => (
+                                        <tr key={rIdx} className="even:bg-slate-50/50">
+                                          {row.map((cell, cIdx) => (
+                                            <td key={cIdx} className="px-2.5 py-2 leading-relaxed">
+                                              {renderRichText(cell[activeLang])}
+                                            </td>
+                                          ))}
+                                        </tr>
+                                      ))}
+                                    </tbody>
+                                  </table>
+                                </div>
+                                {b.caption && (
+                                  <div className="border-t border-slate-100 bg-slate-50 px-2.5 py-1 text-center text-[10px] italic text-slate-500">
+                                    {b.caption[activeLang]}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          }
                           return null;
                         })}
                       </div>
@@ -1802,6 +2476,72 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                             )}
                           </figure>
                         );
+                      if (b.type === "callout") {
+                        const variant = b.variant || "info";
+                        const icon = variant === "tip" ? "💡" : variant === "warning" ? "⚠️" : "ℹ️";
+                        const bg =
+                          variant === "tip"
+                            ? "bg-emerald-50/80 border-emerald-500 text-emerald-950"
+                            : variant === "warning"
+                            ? "bg-amber-50/80 border-amber-500 text-amber-950"
+                            : "bg-blue-50/80 border-blue-500 text-blue-950";
+                        return (
+                          <aside key={i} className={`my-4 rounded-xl border-l-4 p-4 shadow-xs ${bg}`}>
+                            <div className="flex items-center gap-2 mb-1.5 text-xs font-bold uppercase tracking-wider">
+                              <span>{icon}</span>
+                              <span>
+                                {b.title
+                                  ? b.title[activeLang]
+                                  : variant === "tip"
+                                  ? "Mẹo chiến lược"
+                                  : variant === "warning"
+                                  ? "Lưu ý quan trọng"
+                                  : "Thông tin hữu ích"}
+                              </span>
+                            </div>
+                            <div className="text-sm leading-relaxed whitespace-pre-line">
+                              {renderRichText(b.text[activeLang])}
+                            </div>
+                          </aside>
+                        );
+                      }
+                      if (b.type === "table") {
+                        return (
+                          <div key={i} className="my-4 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+                            <div className="overflow-x-auto">
+                              <table className="min-w-full text-left text-xs sm:text-sm divide-y divide-slate-200">
+                                {b.headers && (
+                                  <thead className="bg-slate-100/80 text-slate-900 font-bold">
+                                    <tr>
+                                      {b.headers.map((h, hIdx) => (
+                                        <th key={hIdx} className="px-4 py-3 whitespace-nowrap">
+                                          {renderRichText(h[activeLang])}
+                                        </th>
+                                      ))}
+                                    </tr>
+                                  </thead>
+                                )}
+                                <tbody className="divide-y divide-slate-100 bg-white">
+                                  {b.rows.map((row, rIdx) => (
+                                    <tr key={rIdx} className="even:bg-slate-50 hover:bg-slate-100/50 transition">
+                                      {row.map((cell, cIdx) => (
+                                        <td key={cIdx} className="px-4 py-3 leading-relaxed">
+                                          {renderRichText(cell[activeLang])}
+                                        </td>
+                                      ))}
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                            {b.caption && (
+                              <div className="border-t border-slate-200 bg-slate-50 px-4 py-2 text-center text-xs italic text-slate-500">
+                                {b.caption[activeLang]}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      }
                       return null;
                     })}
                   </div>
@@ -2295,9 +3035,21 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                           ? "Trích dẫn"
                           : block.type === "ul"
                           ? "Danh sách"
+                          : block.type === "callout"
+                          ? "Hộp Lưu ý"
+                          : block.type === "table"
+                          ? "Bảng Dữ liệu"
                           : "Hình ảnh"}
                       </span>
                       <div className="flex items-center gap-1">
+                        <button
+                          type="button"
+                          onClick={() => duplicateBlock(index)}
+                          className="px-1.5 py-0.5 text-[11px] text-slate-500 hover:text-blue-700 font-medium"
+                          title="Nhân bản khối này"
+                        >
+                          📋 Nhân bản
+                        </button>
                         <button
                           type="button"
                           onClick={() => moveBlock(index, "up")}
@@ -2399,6 +3151,141 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                       </div>
                     )}
 
+                    {block.type === "callout" && (
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between text-xs">
+                          <div className="flex items-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() => updateCallout(index, "variant", "info")}
+                              className={`px-2 py-0.5 rounded text-xs font-semibold ${
+                                (block.variant || "info") === "info" ? "bg-blue-600 text-white" : "text-slate-600"
+                              }`}
+                            >
+                              ℹ️ Info
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => updateCallout(index, "variant", "tip")}
+                              className={`px-2 py-0.5 rounded text-xs font-semibold ${
+                                block.variant === "tip" ? "bg-emerald-600 text-white" : "text-slate-600"
+                              }`}
+                            >
+                              💡 Mẹo
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => updateCallout(index, "variant", "warning")}
+                              className={`px-2 py-0.5 rounded text-xs font-semibold ${
+                                block.variant === "warning" ? "bg-amber-600 text-white" : "text-slate-600"
+                              }`}
+                            >
+                              ⚠️ Cảnh báo
+                            </button>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() => applyInlineFormatting(index, "bold")}
+                              className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] font-bold text-slate-700"
+                            >
+                              B
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => applyInlineFormatting(index, "italic")}
+                              className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] italic font-serif text-slate-700"
+                            >
+                              I
+                            </button>
+                          </div>
+                        </div>
+                        <input
+                          type="text"
+                          value={block.title ? block.title[activeLang] || "" : ""}
+                          onChange={(e) => updateCallout(index, "title", e.target.value)}
+                          placeholder="Tiêu đề hộp lưu ý..."
+                          className="w-full font-bold text-sm bg-white p-2 rounded border border-slate-200 outline-none"
+                        />
+                        <textarea
+                          rows={2}
+                          value={block.text[activeLang] || ""}
+                          onChange={(e) => updateCallout(index, "text", e.target.value)}
+                          placeholder="Nội dung lưu ý..."
+                          className="w-full text-xs sm:text-sm leading-relaxed text-slate-800 bg-white p-2.5 rounded border border-slate-200 outline-none"
+                        />
+                      </div>
+                    )}
+
+                    {block.type === "table" && (
+                      <div className="space-y-2 overflow-x-auto">
+                        <div className="flex items-center justify-between text-xs">
+                          <span className="font-semibold text-purple-800">
+                            📊 Bảng: {block.headers.length} cột × {block.rows.length} dòng
+                          </span>
+                          <div className="flex gap-1">
+                            <button
+                              type="button"
+                              onClick={() => addTableColumn(index)}
+                              className="rounded border border-purple-300 bg-white px-2 py-0.5 text-xs text-purple-700"
+                            >
+                              + Cột
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => addTableRow(index)}
+                              className="rounded border border-purple-300 bg-white px-2 py-0.5 text-xs text-purple-700"
+                            >
+                              + Dòng
+                            </button>
+                          </div>
+                        </div>
+                        <input
+                          type="text"
+                          value={block.caption ? block.caption[activeLang] || "" : ""}
+                          onChange={(e) => updateTableCaption(index, e.target.value)}
+                          placeholder="Chú thích bảng..."
+                          className="w-full text-xs italic bg-white p-1.5 rounded border border-slate-200 outline-none"
+                        />
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-left text-xs border-collapse bg-white rounded border border-slate-200">
+                            <thead>
+                              <tr className="bg-purple-50">
+                                {block.headers.map((h, cIdx) => (
+                                  <th key={cIdx} className="p-1 border border-slate-200 min-w-[100px]">
+                                    <input
+                                      type="text"
+                                      value={h[activeLang] || ""}
+                                      onChange={(e) => updateTableHeader(index, cIdx, e.target.value)}
+                                      className="w-full font-bold text-xs p-1 outline-none bg-transparent"
+                                      placeholder={`Cột ${cIdx + 1}`}
+                                    />
+                                  </th>
+                                ))}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {block.rows.map((row, rIdx) => (
+                                <tr key={rIdx}>
+                                  {block.headers.map((_, cIdx) => (
+                                    <td key={cIdx} className="p-1 border border-slate-200">
+                                      <input
+                                        type="text"
+                                        value={row[cIdx] ? row[cIdx][activeLang] || "" : ""}
+                                        onChange={(e) => updateTableCell(index, rIdx, cIdx, e.target.value)}
+                                        className="w-full text-xs p-1 outline-none bg-transparent"
+                                        placeholder="Ô..."
+                                      />
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    )}
+
                     {block.type === "ul" && (
                       <div className="space-y-2">
                         {block.items.map((it, itemIdx) => (
@@ -2470,6 +3357,20 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                   className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 font-semibold text-slate-700 hover:bg-slate-50 shadow-xs"
                 >
                   + Tiêu đề H2
+                </button>
+                <button
+                  type="button"
+                  onClick={() => addBlock("callout")}
+                  className="rounded-lg border border-amber-300 bg-amber-50 px-3 py-1.5 font-bold text-amber-800 hover:bg-amber-100 shadow-xs"
+                >
+                  + Hộp lưu ý
+                </button>
+                <button
+                  type="button"
+                  onClick={() => addBlock("table")}
+                  className="rounded-lg border border-purple-300 bg-purple-50 px-3 py-1.5 font-bold text-purple-800 hover:bg-purple-100 shadow-xs"
+                >
+                  + Bảng dữ liệu
                 </button>
                 <button
                   type="button"
