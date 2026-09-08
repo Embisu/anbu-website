@@ -17,6 +17,7 @@ export type Block =
 
 export type Post = {
   slug: string;
+  slug_en?: string;
   title: L10n;
   excerpt: L10n;
   category: L10n;
@@ -3700,7 +3701,7 @@ export const posts: Post[] = [
 ];
 
 export function getPost(slug: string): Post | undefined {
-  return posts.find((p) => p.slug === slug);
+  return posts.find((p) => p.slug === slug || p.slug_en === slug);
 }
 
 export const budgetRanges = [

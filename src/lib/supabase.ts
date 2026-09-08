@@ -11,9 +11,14 @@ export const SUPABASE_ANON_KEY =
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 export function mapRowToPost(row: any): Post {
+  const slug_en = row.slug_en || row.title?.slug_en || undefined;
   return {
     slug: row.slug,
-    title: row.title || { vi: "", en: "" },
+    ...(slug_en ? { slug_en } : {}),
+    title: {
+      vi: row.title?.vi || "",
+      en: row.title?.en || "",
+    },
     excerpt: row.excerpt || { vi: "", en: "" },
     category: row.category || { vi: "Marketing Game", en: "Game Marketing" },
     date: row.date || new Date().toISOString().split("T")[0],
@@ -28,9 +33,16 @@ export function mapRowToPost(row: any): Post {
 }
 
 export function mapPostToRow(post: Post) {
+  const titleObj: any = {
+    vi: post.title?.vi || "",
+    en: post.title?.en || "",
+  };
+  if (post.slug_en) {
+    titleObj.slug_en = post.slug_en;
+  }
   return {
     slug: post.slug,
-    title: post.title,
+    title: titleObj,
     excerpt: post.excerpt,
     category: post.category,
     date: post.date,
@@ -65,11 +77,23 @@ export async function fetchSupabasePosts(): Promise<Post[]> {
 
 export async function fetchSupabasePostBySlug(slug: string): Promise<Post | null> {
   try {
-    const { data, error } = await supabase
+    let { data, error } = await supabase
       .from("posts")
       .select("*")
       .eq("slug", slug)
       .maybeSingle();
+
+    if (!data) {
+      // If not found by primary slug, search by title->>slug_en
+      const res = await supabase
+        .from("posts")
+        .select("*")
+        .filter("title->>slug_en", "eq", slug)
+        .maybeSingle();
+      if (res.data) {
+        data = res.data;
+      }
+    }
 
     if (error || !data) return null;
     return mapRowToPost(data);

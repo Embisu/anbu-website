@@ -93,6 +93,7 @@ type BuildMetaArgs = {
   description: string;
   image?: string;
   type?: "website" | "article";
+  alternatesLanguages?: Record<string, string>;
 };
 
 export function buildMetadata({
@@ -102,6 +103,7 @@ export function buildMetadata({
   description,
   image = "/og/og-default.png",
   type = "website",
+  alternatesLanguages,
 }: BuildMetaArgs): Metadata {
   // Keep search snippets compact without changing the visible H1 on the page.
   // Truncating at a word boundary avoids mid-word ellipses on mobile results.
@@ -114,7 +116,7 @@ export function buildMetadata({
     description,
     alternates: {
       canonical: url,
-      languages: languageAlternates(path),
+      languages: alternatesLanguages || languageAlternates(path),
     },
     openGraph: {
       type,

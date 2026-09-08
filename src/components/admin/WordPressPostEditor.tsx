@@ -7,6 +7,7 @@ import MediaManager from "@/components/admin/MediaManager";
 import RankMathSEO from "@/components/admin/RankMathSEO";
 import { supabase } from "@/lib/supabase";
 import { renderRichText } from "@/lib/renderRichText";
+import { translateWithGlossary, generateEnglishSlug } from "@/lib/seoGlossary";
 
 type WordPressPostEditorProps = {
   initialPost?: Post | null;
@@ -599,35 +600,33 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     setTimeout(() => setAiNotice(null), 4000);
   };
 
-  // Auto Translate Vietnamese to English
-  const translateText = async (text: string): Promise<string> => {
-    if (!text || !text.trim()) return "";
-    try {
-      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=vi&tl=en&dt=t&q=${encodeURIComponent(text)}`;
-      const res = await fetch(url);
-      if (!res.ok) return text;
-      const data = await res.json();
-      if (Array.isArray(data?.[0])) {
-        return data[0].map((item: any) => item[0]).join("");
-      }
-      return text;
-    } catch {
-      return text;
-    }
-  };
-
+  // Auto Translate Vietnamese to English with Keyword Preservation & SEO Slug Generator
   const handleAutoTranslateToEnglish = async () => {
-    setAiNotice("🌐 Đang tự động dịch toàn bộ bài viết sang Tiếng Anh...");
+    setAiNotice("🌐 Đang quét thuật ngữ Game Marketing & bảo toàn từ khóa SEO để dịch sang Tiếng Anh...");
     try {
-      // 1. Translate Title & Excerpt
-      const enTitle = post.title.vi ? await translateText(post.title.vi) : "";
-      const enExcerpt = post.excerpt.vi ? await translateText(post.excerpt.vi) : "";
+      // 1. Determine focus keywords
+      const titleVi = post.title.vi || "";
+      const suggestedKwVi = titleVi.split(/[:\-, |]/)[0]?.trim() || "";
+      const enFocusKeyword = suggestedKwVi ? await translateWithGlossary(suggestedKwVi) : undefined;
 
-      // 2. Translate Blocks
+      // 2. Translate Title & Excerpt with keyword protection
+      const enTitle = titleVi
+        ? await translateWithGlossary(titleVi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+        : "";
+      const enExcerpt = post.excerpt.vi
+        ? await translateWithGlossary(post.excerpt.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+        : "";
+
+      // 3. Generate English SEO Slug automatically
+      const generatedSlugEn = generateEnglishSlug(enTitle || titleVi, enFocusKeyword);
+
+      // 4. Translate Blocks with keyword protection
       const newBody = await Promise.all(
         post.body.map(async (block) => {
           if (block.type === "p" || block.type === "h2" || block.type === "h3" || block.type === "quote") {
-            const enText = block.text.vi ? await translateText(block.text.vi) : "";
+            const enText = block.text.vi
+              ? await translateWithGlossary(block.text.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+              : "";
             return {
               ...block,
               text: { ...block.text, en: enText },
@@ -636,7 +635,9 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
           if (block.type === "ul" || block.type === "ol") {
             const translatedItems = await Promise.all(
               block.items.map(async (item) => {
-                const enItem = item.vi ? await translateText(item.vi) : "";
+                const enItem = item.vi
+                  ? await translateWithGlossary(item.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+                  : "";
                 return { ...item, en: enItem };
               })
             );
@@ -651,8 +652,12 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
           if (block.type === "faq") {
             const translatedItems = await Promise.all(
               block.items.map(async (it) => {
-                const enQ = it.question.vi ? await translateText(it.question.vi) : "";
-                const enA = it.answer.vi ? await translateText(it.answer.vi) : "";
+                const enQ = it.question.vi
+                  ? await translateWithGlossary(it.question.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+                  : "";
+                const enA = it.answer.vi
+                  ? await translateWithGlossary(it.answer.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+                  : "";
                 return {
                   question: { vi: it.question.vi, en: enQ },
                   answer: { vi: it.answer.vi, en: enA },
@@ -665,8 +670,12 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             };
           }
           if (block.type === "callout") {
-            const enText = block.text.vi ? await translateText(block.text.vi) : "";
-            const enTitle = block.title?.vi ? await translateText(block.title.vi) : undefined;
+            const enText = block.text.vi
+              ? await translateWithGlossary(block.text.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+              : "";
+            const enTitle = block.title?.vi
+              ? await translateWithGlossary(block.title.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+              : undefined;
             return {
               ...block,
               title: enTitle ? { vi: block.title?.vi || "", en: enTitle } : block.title,
@@ -674,13 +683,23 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             };
           }
           if (block.type === "table") {
-            const enCaption = block.caption?.vi ? await translateText(block.caption.vi) : undefined;
+            const enCaption = block.caption?.vi
+              ? await translateWithGlossary(block.caption.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+              : undefined;
             const enHeaders = await Promise.all(
-              block.headers.map(async (h) => ({ ...h, en: h.vi ? await translateText(h.vi) : "" }))
+              block.headers.map(async (h) => ({
+                ...h,
+                en: h.vi ? await translateWithGlossary(h.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword }) : "",
+              }))
             );
             const enRows = await Promise.all(
               block.rows.map(async (row) =>
-                Promise.all(row.map(async (cell) => ({ ...cell, en: cell.vi ? await translateText(cell.vi) : "" })))
+                Promise.all(
+                  row.map(async (cell) => ({
+                    ...cell,
+                    en: cell.vi ? await translateWithGlossary(cell.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword }) : "",
+                  }))
+                )
               )
             );
             return {
@@ -691,8 +710,12 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             };
           }
           if (block.type === "image") {
-            const enAlt = block.alt.vi ? await translateText(block.alt.vi) : "";
-            const enCaption = block.caption?.vi ? await translateText(block.caption.vi) : undefined;
+            const enAlt = block.alt.vi
+              ? await translateWithGlossary(block.alt.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+              : "";
+            const enCaption = block.caption?.vi
+              ? await translateWithGlossary(block.caption.vi, { focusKeywordVi: suggestedKwVi, focusKeywordEn: enFocusKeyword })
+              : undefined;
             return {
               ...block,
               alt: { ...block.alt, en: enAlt },
@@ -705,17 +728,20 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
 
       setPost((prev) => ({
         ...prev,
+        slug_en: prev.slug_en || generatedSlugEn,
         title: { ...prev.title, en: enTitle },
         excerpt: { ...prev.excerpt, en: enExcerpt },
         body: newBody,
       }));
 
       setActiveLang("en");
-      setAiNotice("✅ Đã dịch xong toàn bộ bài viết sang Tiếng Anh! Đã tự động chuyển sang tab English để bạn xem lại.");
-      setTimeout(() => setAiNotice(null), 5000);
+      setAiNotice(
+        `✅ Đã dịch xong sang Tiếng Anh & bảo toàn từ khóa chuyên ngành! Slug quốc tế: "${generatedSlugEn}". Đã chuyển sang tab English.`
+      );
+      setTimeout(() => setAiNotice(null), 6000);
     } catch (err: any) {
       console.error(err);
-      setAiNotice("⚠️ Có lỗi khi dịch tự động. Bạn có thể sử dụng nút 'Sao chép Tiếng Việt sang EN'.");
+      setAiNotice("⚠️ Có lỗi khi dịch tự động. Bạn có thể thử lại hoặc sử dụng nút 'Sao chép Tiếng Việt sang EN'.");
       setTimeout(() => setAiNotice(null), 4000);
     }
   };
@@ -1253,12 +1279,15 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
       return block;
     });
 
+    const cleanSlugEn = post.slug_en ? generateEnglishSlug(post.slug_en) : undefined;
+
     const finalPost: Post = {
       ...post,
       title: { vi: post.title.vi, en: titleEn },
       excerpt: { vi: post.excerpt.vi, en: excerptEn },
       body: safeBody,
       slug: cleanSlug,
+      ...(cleanSlugEn ? { slug_en: cleanSlugEn } : {}),
       readingTime,
     };
 
@@ -1499,16 +1528,44 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
               />
             </div>
 
-            {/* Permalink Slug Preview & Edit */}
-            <div className="flex items-center gap-2 text-xs text-[#646970] font-mono">
-              <span>Đường dẫn tĩnh (Permalink):</span>
-              <span className="text-[#2271b1]">https://anbu.asia/{locale}/blog/</span>
-              <input
-                type="text"
-                value={post.slug}
-                onChange={(e) => setPost({ ...post, slug: e.target.value })}
-                className="rounded border border-[#ccd0d4] bg-[#f6f7f7] px-2 py-0.5 text-xs text-[#2c3338] outline-none"
-              />
+            {/* Permalink Slug Preview & Edit (Bilingual Support) */}
+            <div className="flex flex-wrap items-center gap-2 text-xs text-[#646970] font-mono">
+              <span className="font-semibold text-[#1d2327]">
+                {activeLang === "vi" ? "Đường dẫn tĩnh (VI Slug):" : "Đường dẫn tĩnh Tiếng Anh (EN Slug):"}
+              </span>
+              <span className="text-[#2271b1]">https://anbu.asia/{activeLang}/blog/</span>
+              {activeLang === "vi" ? (
+                <input
+                  type="text"
+                  value={post.slug}
+                  onChange={(e) => setPost({ ...post, slug: e.target.value })}
+                  placeholder="slug-tieng-viet"
+                  className="rounded border border-[#ccd0d4] bg-[#f6f7f7] px-2 py-0.5 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+              ) : (
+                <div className="flex items-center gap-1.5">
+                  <input
+                    type="text"
+                    value={post.slug_en || ""}
+                    onChange={(e) => setPost({ ...post, slug_en: e.target.value })}
+                    placeholder={post.slug || "english-seo-slug"}
+                    className="rounded border border-[#ccd0d4] bg-[#f6f7f7] px-2 py-0.5 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const newSlug = generateEnglishSlug(post.title.en || post.title.vi || "blog-post");
+                      setPost({ ...post, slug_en: newSlug });
+                      setAiNotice(`🔗 Đã tự động tối ưu hóa Slug tiếng Anh: "${newSlug}"`);
+                      setTimeout(() => setAiNotice(null), 3000);
+                    }}
+                    className="rounded border border-[#2271b1] bg-white px-2 py-0.5 text-[11px] font-semibold text-[#2271b1] hover:bg-blue-50 transition"
+                    title="Tự động sinh Slug tiếng Anh chuẩn SEO từ Tiêu đề tiếng Anh"
+                  >
+                    🔄 Tự sinh Slug EN
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 
@@ -1530,8 +1587,9 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                 type="button"
                 onClick={handleAutoTranslateToEnglish}
                 className="rounded border border-emerald-600 bg-white px-2.5 py-1 text-[11px] font-bold text-emerald-700 hover:bg-emerald-50 transition flex items-center gap-1 shadow-sm"
+                title="Dịch bài viết sang Tiếng Anh, bảo toàn từ khóa chuyên ngành Game/ASO và sinh Slug tiếng Anh chuẩn SEO"
               >
-                <span>🌐</span> <span>Dịch tự động sang Tiếng Anh (1-Click)</span>
+                <span>🌐</span> <span>Dịch tự động sang Tiếng Anh (Bảo toàn SEO & Slug)</span>
               </button>
               <button
                 type="button"
@@ -3116,7 +3174,13 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
             onUpdateSnippet={(field, value) => {
               if (field === "title") setPost({ ...post, title: { ...post.title, [activeLang]: value } });
               if (field === "excerpt") setPost({ ...post, excerpt: { ...post.excerpt, [activeLang]: value } });
-              if (field === "slug") setPost({ ...post, slug: value });
+              if (field === "slug") {
+                if (activeLang === "en") {
+                  setPost({ ...post, slug_en: value });
+                } else {
+                  setPost({ ...post, slug: value });
+                }
+              }
             }}
           />
         </div>

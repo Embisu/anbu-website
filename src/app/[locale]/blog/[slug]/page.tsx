@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { isLocale, defaultLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { posts, getPost, type Post, type Block, type L10n } from "@/content/posts";
@@ -26,7 +26,12 @@ function isCorruptedPost(p?: Post | null): boolean {
 }
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => posts.map((p) => ({ locale, slug: p.slug })));
+  return locales.flatMap((locale) =>
+    posts.map((p) => {
+      const activeSlug = locale === "en" && p.slug_en ? p.slug_en : p.slug;
+      return { locale, slug: activeSlug };
+    })
+  );
 }
 
 export async function generateMetadata({
@@ -51,12 +56,22 @@ export async function generateMetadata({
       type: "article",
     });
   }
+
+  const viSlug = post.slug;
+  const enSlug = post.slug_en || post.slug;
+  const activeSlug = locale === "en" ? enSlug : viSlug;
+
   return buildMetadata({
     locale,
-    path: `/blog/${post.slug}`,
+    path: `/blog/${activeSlug}`,
     title: t(post.title, locale),
     description: t(post.excerpt, locale),
     type: "article",
+    alternatesLanguages: {
+      vi: `${siteUrl}/vi/blog/${viSlug}`,
+      en: `${siteUrl}/en/blog/${enSlug}`,
+      "x-default": `${siteUrl}/vi/blog/${viSlug}`,
+    },
   });
 }
 
@@ -330,6 +345,16 @@ export default async function BlogPostPage({
     }
   }
 
+  // Smart Bilingual Slug Canonical Redirection
+  if (locale === "en" && post.slug_en && params.slug !== post.slug_en) {
+    redirect(`/en/blog/${post.slug_en}`);
+  }
+  if (locale === "vi" && params.slug !== post.slug) {
+    redirect(`/vi/blog/${post.slug}`);
+  }
+
+  const activeSlug = locale === "en" && post.slug_en ? post.slug_en : post.slug;
+
   const related = [
     ...posts.filter((p) => p.slug !== post.slug && p.category.vi === post.category.vi),
     ...posts.filter((p) => p.slug !== post.slug && p.category.vi !== post.category.vi),
@@ -373,7 +398,7 @@ export default async function BlogPostPage({
       name: "ANBU",
       logo: { "@type": "ImageObject", url: `${siteUrl}/logo/logo.png` },
     },
-    mainEntityOfPage: `${siteUrl}/${locale}/blog/${post.slug}`,
+    mainEntityOfPage: `${siteUrl}/${locale}/blog/${activeSlug}`,
   };
 
   const faqBlocks = articleBlocks.filter((b) => b.type === "faq") as Array<{

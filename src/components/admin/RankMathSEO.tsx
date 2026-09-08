@@ -27,17 +27,17 @@ export default function RankMathSEO({ post, lang, onUpdateSnippet }: RankMathSEO
 
   const [customSeoTitle, setCustomSeoTitle] = useState(post.title[lang] || "");
   const [customSeoDesc, setCustomSeoDesc] = useState(post.excerpt[lang] || "");
-  const [customSlug, setCustomSlug] = useState(post.slug || "");
+  const [customSlug, setCustomSlug] = useState(lang === "en" ? (post.slug_en || post.slug || "") : (post.slug || ""));
 
   useEffect(() => {
     setCustomSeoTitle(post.title[lang] || "");
     setCustomSeoDesc(post.excerpt[lang] || "");
-    setCustomSlug(post.slug || "");
+    setCustomSlug(lang === "en" ? (post.slug_en || post.slug || "") : (post.slug || ""));
   }, [post, lang]);
 
   const currentTitle = customSeoTitle || post.title[lang] || "";
   const currentExcerpt = customSeoDesc || post.excerpt[lang] || "";
-  const currentSlug = customSlug || post.slug || "";
+  const currentSlug = customSlug || (lang === "en" ? (post.slug_en || post.slug || "") : (post.slug || ""));
 
   // Combine full text for SEO checks
   const fullContentText = post.body
