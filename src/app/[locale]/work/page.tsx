@@ -56,6 +56,11 @@ export default async function WorkPage({ params }: { params: { locale: string } 
                 ? "Chúng tôi trình bày portfolio theo bối cảnh, insight, vai trò của ANBU và cách triển khai, để bạn nhìn thấy tư duy phía sau hình ảnh. Với các dự án chưa có dữ liệu công khai được xác nhận, trang chỉ mô tả phạm vi công việc và không tự gán số liệu thành tích."
                 : "Our portfolio explains the context, insight, ANBU's role and execution so you can see the thinking behind the visuals. Where verified public performance data is unavailable, we describe scope without assigning unsupported results."}
             </p>
+            <p className="mt-2 text-xs text-navy-400 italic">
+              {locale === "vi"
+                ? "Lưu ý: Một số dự án tiêu biểu giai đoạn trước 2024 thể hiện kinh nghiệm thực chiến tích lũy của các nhân sự nòng cốt trước khi pháp nhân ANBU chính thức thành lập vào năm 2024."
+                : "Note: Select featured campaigns prior to 2024 represent the accumulated hands-on track record of our core team members prior to the official incorporation of ANBU in 2024."}
+            </p>
             <div className="mt-4 sm:mt-5 flex flex-wrap gap-2">
               {[locale === "vi" ? "Ra mắt thị trường" : "Market launch", "KOL/KOC", "Social & Community", locale === "vi" ? "Bản địa hóa" : "Localization", "Integrated Marketing"].map((label) => (
                 <span key={label} className="rounded-full border border-navy-100 bg-white px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold text-navy-600">{label}</span>

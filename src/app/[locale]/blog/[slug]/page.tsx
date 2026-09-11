@@ -384,13 +384,17 @@ export default async function BlogPostPage({
     .filter((item): item is { id: string; title: string } => item !== null);
   const articleBlocks = post.body.concat(postDeepDiveBySlug[post.slug] ?? []);
 
+  const now = new Date();
+  const parsedDate = new Date(post.date);
+  const safeDate = !isNaN(parsedDate.getTime()) && parsedDate > now ? now.toISOString() : post.date;
+
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: t(post.title, locale),
     description: t(post.excerpt, locale),
-    datePublished: post.date,
-    dateModified: post.date,
+    datePublished: safeDate,
+    dateModified: safeDate,
     image: `${siteUrl}${editorialImageForPostData(post)}`,
     author: { "@type": "Organization", name: post.author },
     publisher: {
@@ -398,7 +402,10 @@ export default async function BlogPostPage({
       name: "ANBU",
       logo: { "@type": "ImageObject", url: `${siteUrl}/logo/logo.png` },
     },
-    mainEntityOfPage: `${siteUrl}/${locale}/blog/${activeSlug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteUrl}/${locale}/blog/${activeSlug}`,
+    },
   };
 
   const faqBlocks = articleBlocks.filter((b) => b.type === "faq") as Array<{

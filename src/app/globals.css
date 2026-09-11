@@ -5,6 +5,7 @@
 :root {
   --navy: #012f87;
   --orange: #f5501e;
+  --font-display: var(--font-sans);
 }
 
 * {

@@ -17,16 +17,8 @@ export const runtime = "edge";
 
 const sans = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-sans",
-  display: "swap",
-});
-
-// Distinct heavier display weights, same Vietnamese-capable family (guaranteed diacritic support).
-const display = Be_Vietnam_Pro({
-  subsets: ["latin", "vietnamese"],
-  weight: ["700", "800"],
-  variable: "--font-display",
   display: "swap",
 });
 
@@ -142,18 +134,10 @@ export default async function LocaleLayout({
     name: site.name,
     inLanguage: locale === "vi" ? "vi-VN" : "en-US",
     publisher: { "@id": `${siteUrl}/#organization` },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${siteUrl}/${locale}/blog?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 
   return (
-    <html lang={locale} className={`${sans.variable} ${display.variable}`}>
+    <html lang={locale} className={sans.variable}>
       <body className="font-sans antialiased">
         <Analytics />
         <ScrollProgress />

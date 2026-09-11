@@ -41,7 +41,7 @@ export default async function AboutPage({ params }: { params: { locale: string }
     { value: site.stats.projects, label: dict.hero.stat1 },
     { value: site.stats.clients, label: dict.hero.stat2 },
     { value: site.stats.years, label: dict.hero.stat3 },
-    { value: site.stats.markets, label: dict.hero.stat4 },
+    { value: t(site.stats.markets, locale), label: dict.hero.stat4 },
   ];
 
   const aboutLd = {
@@ -155,6 +155,11 @@ export default async function AboutPage({ params }: { params: { locale: string }
         <SectionHeading eyebrow={dict.about.squadEyebrow} title={dict.about.teamTitle} subtitle={dict.about.teamSubtitle} center />
         <Reveal className="mt-12">
           <TeamGrid />
+          <p className="mt-6 text-center text-xs text-navy-400 max-w-2xl mx-auto leading-relaxed">
+            {locale === "vi"
+              ? "Lưu ý: Một số dự án tiêu biểu giai đoạn trước 2024 thể hiện kinh nghiệm thực chiến tích lũy của các nhân sự nòng cốt trước khi pháp nhân ANBU chính thức thành lập vào năm 2024."
+              : "Note: Select featured campaigns prior to 2024 represent the accumulated hands-on track record of our core team members prior to the official incorporation of ANBU in 2024."}
+          </p>
         </Reveal>
 
         {/* Capabilities */}

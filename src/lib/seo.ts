@@ -62,13 +62,17 @@ export function articleLd({
   image?: string;
   url: string;
 }) {
+  const now = new Date();
+  const parsedDate = new Date(date);
+  const safeDate = !isNaN(parsedDate.getTime()) && parsedDate > now ? now.toISOString() : date;
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: title,
     description,
-    datePublished: date,
-    dateModified: date,
+    datePublished: safeDate,
+    dateModified: safeDate,
     image: image || `${siteUrl}/og/og-default.png`,
     author: { "@type": "Organization", name: author || "ANBU" },
     publisher: {

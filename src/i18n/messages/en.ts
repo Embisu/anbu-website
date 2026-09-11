@@ -11,7 +11,7 @@ const en: typeof vi = {
     about: "About",
     blog: "Blog",
     contact: "Contact",
-    cta: "Book a free consultation",
+    cta: "Get a free consultation",
   },
   hero: {
     badge: "A small squad that handles every Community & Game Marketing front",
@@ -20,15 +20,15 @@ const en: typeof vi = {
     titleTail: "in Vietnam.",
     subtitle:
       "ANBU connects creators, social, community, press and paid media into one launch campaign for games, apps and international brands entering Vietnam.",
-    ctaPrimary: "Book a free consultation",
+    ctaPrimary: "Get a free consultation",
     ctaSecondary: "View our work",
     squadLabel: "ANBU Squad",
     squadSub: "The unit behind your campaigns",
     watchRecap: "Watch the recap",
     stat1: "Projects delivered",
     stat2: "Clients partnered",
-    stat3: "Years of experience",
-    stat4: "Markets activated",
+    stat3: "Years of combined team experience",
+    stat4: "Market coverage",
   },
   logos: {
     title: "Trusted by fast-growing brands",
@@ -90,7 +90,7 @@ const en: typeof vi = {
     title: "Ready to make your move with ANBU?",
     subtitle:
       "Tell us about your goals. We'll get back to you within one business day.",
-    button: "Book a free consultation",
+    button: "Get a free consultation",
   },
   blogSection: {
     eyebrow: "Insights",

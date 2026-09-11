@@ -170,7 +170,17 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
                           type="button"
                           onClick={() => setBlogExpanded((v) => !v)}
                           className="flex h-11 w-11 items-center justify-center text-navy-500 hover:text-orange-600"
-                          aria-label="Toggle categories"
+                          aria-label={
+                            blogExpanded
+                              ? locale === "vi"
+                                ? "Thu gọn chuyên mục blog"
+                                : "Collapse blog categories"
+                              : locale === "vi"
+                              ? "Mở rộng chuyên mục blog"
+                              : "Expand blog categories"
+                          }
+                          aria-expanded={blogExpanded}
+                          aria-controls="mobile-blog-categories"
                         >
                           <span className={`text-base transition-transform duration-200 ${blogExpanded ? "rotate-180" : ""}`}>
                             ⌄
@@ -179,7 +189,7 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
                       )}
                     </div>
                     {isBlog && blogExpanded && (
-                      <div className="mb-2 space-y-1 rounded-xl bg-cloud/70 p-2 text-sm">
+                      <div id="mobile-blog-categories" className="mb-2 space-y-1 rounded-xl bg-cloud/70 p-2 text-sm">
                         {blogCategories.map((category) => (
                           <Link
                             key={category.slug}

@@ -7,6 +7,13 @@ import ProjectMedia from "./ProjectMedia";
 import { variantForProject } from "./Scene";
 
 function Card({ p, locale, clone = false }: { p: Project; locale: Locale; clone?: boolean }) {
+  const isMetric = !p.overview && /^\s*(#?\d|Top\s*\d)/i.test(p.results[0]?.value || "");
+  const badgeText = isMetric
+    ? p.results[0].value
+    : locale === "vi"
+    ? "Chiến dịch tích hợp"
+    : "Integrated campaign";
+
   return (
     <Link
       href={localePath(locale, `/work/${p.slug}`)}
@@ -17,7 +24,7 @@ function Card({ p, locale, clone = false }: { p: Project; locale: Locale; clone?
       <ProjectMedia
         slug={p.slug}
         variant={variantForProject(p.services[0])}
-        alt={`${p.client}, ${t(p.title, locale)}`}
+        alt={clone ? "" : `${p.client}, ${t(p.title, locale)}`}
         focal={p.focal}
         fit={p.fit}
         className="absolute inset-0 transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-[1.03]"
@@ -29,7 +36,7 @@ function Card({ p, locale, clone = false }: { p: Project; locale: Locale; clone?
           <span className="block text-[11px] text-white/70">{t(p.category, locale)}</span>
         </span>
         <span className="shrink-0 rounded-full bg-white/15 px-2.5 py-1 text-[11px] font-bold text-white backdrop-blur-sm">
-          {p.results[0].value}
+          {badgeText}
         </span>
       </div>
     </Link>

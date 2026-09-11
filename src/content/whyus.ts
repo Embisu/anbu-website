@@ -19,8 +19,8 @@ export const reasons: Reason[] = [
     icon: "target",
     title: { vi: "Chính xác từng mục tiêu", en: "Precision on every target" },
     desc: {
-      vi: "Không làm theo cảm tính. Mọi quyết định đều gắn với chỉ số, CPI, ROAS, tỷ lệ chuyển đổi, thứ hạng, và được tối ưu liên tục.",
-      en: "No guesswork. Every decision ties to a metric, CPI, ROAS, conversion, rankings, and is optimized continuously.",
+      vi: "Các quyết định được định hướng bởi mục tiêu và dữ liệu phù hợp với từng chiến dịch — từ mức độ nhận biết, tương tác và chuyển đổi đến CPI hoặc ROAS khi áp dụng.",
+      en: "Decisions are guided by campaign-specific goals and data — from awareness, engagement, and conversions to CPI or ROAS where applicable.",
     },
   },
   {

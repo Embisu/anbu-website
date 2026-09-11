@@ -9,7 +9,7 @@ const vi = {
     about: "Về ANBU",
     blog: "Blog",
     contact: "Liên hệ",
-    cta: "Đặt lịch tư vấn miễn phí",
+    cta: "Nhận tư vấn miễn phí",
   },
   hero: {
     badge: "Biệt đội nhỏ, xử gọn mọi mặt trận Community & Marketing cho game",
@@ -18,15 +18,15 @@ const vi = {
     titleTail: "tại Việt Nam.",
     subtitle:
       "ANBU kết nối KOL/KOC, social, cộng đồng, báo chí và paid media thành một chiến dịch ra mắt thống nhất cho game, ứng dụng và thương hiệu quốc tế.",
-    ctaPrimary: "Đặt lịch tư vấn miễn phí",
+    ctaPrimary: "Nhận tư vấn miễn phí",
     ctaSecondary: "Xem dự án tiêu biểu",
     squadLabel: "ANBU Squad",
     squadSub: "Đội ngũ đứng sau mỗi chiến dịch của bạn",
     watchRecap: "Xem video tổng kết",
     stat1: "Dự án đã bàn giao",
     stat2: "Khách hàng đồng hành",
-    stat3: "Năm kinh nghiệm",
-    stat4: "Thị trường triển khai",
+    stat3: "Năm kinh nghiệm tích lũy của đội ngũ",
+    stat4: "Phạm vi triển khai",
   },
   logos: {
     title: "Được tin tưởng bởi các thương hiệu tăng trưởng nhanh",
@@ -88,7 +88,7 @@ const vi = {
     title: "Sẵn sàng tăng tốc cùng ANBU?",
     subtitle:
       "Hãy kể cho chúng tôi về mục tiêu của bạn. Chúng tôi sẽ phản hồi trong vòng 24 giờ làm việc.",
-    button: "Đặt lịch tư vấn miễn phí",
+    button: "Nhận tư vấn miễn phí",
   },
   blogSection: {
     eyebrow: "Góc nhìn",

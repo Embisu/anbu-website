@@ -9,16 +9,25 @@ export default function ZaloButton({ locale }: { locale: "vi" | "en" }) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Close when clicking outside
+  // Close when clicking outside or pressing Escape
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     }
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape" && isOpen) {
+        setIsOpen(false);
+      }
+    }
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
-      return () => document.removeEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleKeyDown);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+        document.removeEventListener("keydown", handleKeyDown);
+      };
     }
   }, [isOpen]);
 
@@ -28,11 +37,18 @@ export default function ZaloButton({ locale }: { locale: "vi" | "en" }) {
   }
 
   return (
-    <div ref={containerRef} className="fixed bottom-4 right-4 z-40 sm:bottom-6 sm:right-6">
+    <div
+      ref={containerRef}
+      style={{ bottom: "calc(1rem + env(safe-area-inset-bottom, 0px))" }}
+      className="fixed right-4 z-40 sm:bottom-6 sm:right-6"
+    >
       {/* Mobile Speed Dial & Desktop List */}
       <div className="relative flex flex-col items-end gap-2.5">
         {/* Expanded Options (Always visible on desktop hover/sm, toggleable on mobile) */}
         <div
+          id="contact-options"
+          role="region"
+          aria-label={locale === "vi" ? "Kênh liên hệ nhanh" : "Quick contact channels"}
           className={`flex flex-col items-end gap-2.5 transition-all duration-300 ${
             isOpen
               ? "pointer-events-auto translate-y-0 opacity-100"
@@ -45,7 +61,7 @@ export default function ZaloButton({ locale }: { locale: "vi" | "en" }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={locale === "vi" ? "Trao đổi với ANBU qua WhatsApp" : "Chat with ANBU on WhatsApp"}
-            className="group flex items-center gap-2.5 rounded-full bg-[#25D366] px-3.5 py-2.5 font-semibold text-white shadow-[0_10px_25px_-5px_rgba(37,211,102,0.6)] transition-all hover:scale-105 hover:bg-[#1fb458] focus:outline-none focus:ring-4 focus:ring-green-200 active:scale-95"
+            className="group flex min-h-[44px] min-w-[44px] items-center gap-2.5 rounded-full bg-[#25D366] px-3.5 py-2.5 font-semibold text-white shadow-[0_8px_20px_-4px_rgba(37,211,102,0.45)] transition-all hover:scale-105 hover:bg-[#1fb458] focus:outline-none focus:ring-4 focus:ring-green-200 active:scale-95"
           >
             <span className="text-xs font-bold uppercase tracking-wider text-white sm:text-sm sm:normal-case">
               WhatsApp
@@ -61,7 +77,7 @@ export default function ZaloButton({ locale }: { locale: "vi" | "en" }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={locale === "vi" ? "Trao đổi với ANBU qua Zalo" : "Chat with ANBU on Zalo"}
-            className="group flex items-center gap-2.5 rounded-full bg-[#0068ff] px-3.5 py-2.5 font-semibold text-white shadow-[0_10px_25px_-5px_rgba(0,104,255,0.6)] transition-all hover:scale-105 hover:bg-[#0057d9] focus:outline-none focus:ring-4 focus:ring-blue-200 active:scale-95"
+            className="group flex min-h-[44px] min-w-[44px] items-center gap-2.5 rounded-full bg-[#0068ff] px-3.5 py-2.5 font-semibold text-white shadow-[0_8px_20px_-4px_rgba(0,104,255,0.45)] transition-all hover:scale-105 hover:bg-[#0057d9] focus:outline-none focus:ring-4 focus:ring-blue-200 active:scale-95"
           >
             <span className="text-xs font-bold uppercase tracking-wider text-white sm:text-sm sm:normal-case">
               Zalo ANBU
@@ -72,12 +88,21 @@ export default function ZaloButton({ locale }: { locale: "vi" | "en" }) {
           </a>
         </div>
 
-        {/* Mobile-only Trigger Toggle Button (Compact, doesn't block screen) */}
+        {/* Mobile-only Trigger Toggle Button (Compact 48x48px, doesn't block screen) */}
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
-          aria-label={isOpen ? "Đóng liên hệ" : "Liên hệ ANBU"}
+          aria-label={
+            isOpen
+              ? locale === "vi"
+                ? "Đóng liên hệ"
+                : "Close contact menu"
+              : locale === "vi"
+              ? "Liên hệ nhanh qua Zalo hoặc WhatsApp"
+              : "Quick contact via Zalo or WhatsApp"
+          }
           aria-expanded={isOpen}
+          aria-controls="contact-options"
           className={`flex h-12 w-12 items-center justify-center rounded-full text-white shadow-xl transition-all duration-300 sm:hidden active:scale-90 ${
             isOpen
               ? "bg-navy-800 rotate-90 shadow-navy-900/50"

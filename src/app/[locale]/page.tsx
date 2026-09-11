@@ -7,7 +7,6 @@ import { services } from "@/content/services";
 import { projects } from "@/content/projects";
 import { clients } from "@/content/clients";
 import { posts } from "@/content/posts";
-import { processSteps } from "@/content/process";
 import { localePath } from "@/lib/utils";
 import { buildMetadata, faqLd } from "@/lib/seo";
 import { fetchSupabasePosts } from "@/lib/supabase";
@@ -22,7 +21,6 @@ import FaqAccordion from "@/components/FaqAccordion";
 import { faqs } from "@/content/faq";
 import ProjectMedia from "@/components/ProjectMedia";
 import EditorialMedia, { editorialImageForService } from "@/components/EditorialMedia";
-import { MarkWatermark } from "@/components/Illustration";
 import VideoLightbox from "@/components/VideoLightbox";
 import WorkGallery from "@/components/WorkGallery";
 import { videoBySlug } from "@/content/media";
@@ -54,7 +52,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
     { value: site.stats.projects, label: dict.hero.stat1 },
     { value: site.stats.clients, label: dict.hero.stat2 },
     { value: site.stats.years, label: dict.hero.stat3 },
-    { value: site.stats.markets, label: dict.hero.stat4 },
+    { value: t(site.stats.markets, locale), label: dict.hero.stat4 },
   ];
 
   const supaPosts = await fetchSupabasePosts().catch(() => []);
@@ -103,12 +101,12 @@ export default async function HomePage({ params }: { params: { locale: string } 
             <Reveal delay={200}>
               <div className="mt-8 sm:mt-10 grid grid-cols-2 gap-4 border-t border-navy-100/80 pt-6 sm:flex sm:flex-wrap sm:items-center sm:gap-x-10 sm:gap-y-5 sm:pt-8">
                 {stats.map((s) => (
-                  <div key={s.label}>
+                  <div key={s.label} className="min-w-[110px]">
                     <CountUp
                       value={s.value}
-                      className="font-display text-2xl font-extrabold text-navy-800 sm:text-3xl"
+                      className="font-display text-xl sm:text-2xl lg:text-3xl font-extrabold text-navy-800"
                     />
-                    <div className="mt-0.5 text-xs font-medium text-navy-500">{s.label}</div>
+                    <div className="mt-1 text-xs font-medium text-navy-500 leading-snug">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -172,38 +170,23 @@ export default async function HomePage({ params }: { params: { locale: string } 
           </div>
         </div>
 
-        {/* Client logos, static grid on mobile, slow pause-on-hover marquee on larger screens */}
+        {/* Client logos: unified responsive marquee, no DOM duplication */}
         <div className="border-y border-navy-100/70 bg-white/60 py-5 sm:py-6">
           <p className="container-x text-center text-xs font-semibold uppercase tracking-widest text-navy-400">
             {dict.logos.title}
           </p>
 
-          {/* Mobile: calm static grid (no motion) */}
-          <div className="container-x mt-4 grid grid-cols-3 items-center gap-x-4 gap-y-5 sm:hidden">
-            {marqueeLogos.slice(0, 9).map((c, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={i}
-                src={c.file}
-                alt={c.name}
-                loading="lazy"
-                className="mx-auto h-6 w-auto max-w-[90px] object-contain opacity-90 grayscale"
-              />
-            ))}
-          </div>
-
-          {/* Tablet/desktop: slow marquee, pauses on hover or keyboard focus */}
-          <div className="group mask-fade-x mt-6 hidden overflow-hidden sm:flex">
-            <div className="flex shrink-0 animate-marquee-slow items-center gap-12 pr-12 group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused] motion-reduce:[animation-play-state:paused]">
+          <div className="group mask-fade-x mt-4 sm:mt-6 overflow-hidden flex">
+            <div className="flex shrink-0 animate-marquee-slow items-center gap-8 sm:gap-12 pr-8 sm:pr-12 group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused] motion-reduce:[animation-play-state:paused]">
               {[...marqueeLogos, ...marqueeLogos].map((c, i) => (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  key={i}
+                  key={`${c.name}-${i}`}
                   src={c.file}
                   alt={i < marqueeLogos.length ? c.name : ""}
                   aria-hidden={i >= marqueeLogos.length || undefined}
                   loading="lazy"
-                  className="h-8 w-auto max-w-[130px] shrink-0 object-contain opacity-90 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  className="h-6 sm:h-8 w-auto max-w-[95px] sm:max-w-[130px] shrink-0 object-contain opacity-85 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
                 />
               ))}
             </div>
@@ -211,148 +194,12 @@ export default async function HomePage({ params }: { params: { locale: string } 
         </div>
       </section>
 
-      {/* WORK GALLERY, cinematic strip of real campaign visuals (hidden on mobile to keep the page calm/short) */}
+      {/* WORK GALLERY, cinematic strip of real campaign visuals */}
       <div className="hidden sm:block">
         <WorkGallery locale={locale} />
       </div>
 
-      {/* SERVICES */}
-      <section className="container-x py-10 sm:py-20 lg:py-24">
-        <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6">
-          <SectionHeading eyebrow={dict.servicesSection.eyebrow} title={dict.servicesSection.title} subtitle={dict.servicesSection.subtitle} />
-          <Reveal>
-            <Link href={localePath(locale, "/services")} className="link-underline hidden text-sm sm:inline-block">
-              {dict.servicesSection.all} →
-            </Link>
-          </Reveal>
-        </div>
-        <div className="mt-8 sm:mt-12 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Featured (bento) tile */}
-          <Reveal className="sm:col-span-2 lg:col-span-2">
-            <Link
-              href={localePath(locale, `/services/${services[0].slug}`)}
-              className="group flex h-full flex-col overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/70 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-[0_28px_70px_-24px_rgba(1,47,135,0.3)] md:flex-row"
-            >
-              <div className="relative h-40 overflow-hidden bg-orange-50 sm:h-44 md:h-auto md:w-1/2">
-                <EditorialMedia
-                  src={editorialImageForService(services[0].slug)}
-                  alt={t(services[0].title, locale)}
-                  className="absolute inset-0 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.03]"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-navy-950/20 via-transparent to-transparent" />
-                <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
-                <div className="absolute left-3.5 top-3.5 sm:left-4 sm:top-4 flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-2xl bg-white/95 text-orange-600 shadow-[0_8px_20px_-8px_rgba(0,0,0,0.5)] backdrop-blur-sm">
-                  <Icon name={services[0].icon as any} className="h-5 w-5 sm:h-6 sm:w-6" />
-                </div>
-              </div>
-              <div className="flex flex-1 flex-col justify-center p-5 sm:p-7">
-                <span className="inline-flex w-fit rounded-full bg-orange-50 px-2.5 py-0.5 sm:px-3 sm:py-1 text-xs font-bold uppercase tracking-wide text-orange-600">
-                  {dict.servicesSection.eyebrow}
-                </span>
-                <h3 className="mt-2.5 sm:mt-3 font-display text-xl sm:text-2xl font-extrabold text-navy-800">{t(services[0].title, locale)}</h3>
-                <p className="mt-1.5 sm:mt-2 font-medium text-orange-600 text-sm sm:text-base">{t(services[0].tagline, locale)}</p>
-                <p className="mt-2.5 sm:mt-3 text-sm leading-relaxed text-navy-500">{t(services[0].description, locale)}</p>
-                <span className="mt-4 sm:mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-700 transition-colors group-hover:text-orange-600">
-                  {dict.servicesSection.learnMore}
-                  <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-              </div>
-            </Link>
-          </Reveal>
-
-          {services.slice(1, 5).map((service, i) => (
-            <Reveal key={service.slug} delay={i * 60}>
-              <ServiceCard service={service} locale={locale} learnMore={dict.servicesSection.learnMore} />
-            </Reveal>
-          ))}
-        </div>
-        <div className="mt-8 text-center sm:hidden">
-          <Link href={localePath(locale, "/services")} className="link-underline text-sm font-semibold">
-            {dict.servicesSection.all} →
-          </Link>
-        </div>
-      </section>
-
-      {/* LAUNCH EXPERTISE */}
-      <section className="border-y border-navy-100 bg-cloud py-10 sm:py-20 lg:py-24">
-        <div className="container-x grid items-start gap-8 lg:grid-cols-12 lg:gap-10">
-          <Reveal className="lg:col-span-5 lg:sticky lg:top-28">
-            <span className="eyebrow">{locale === "vi" ? "Thế mạnh cốt lõi" : "Core expertise"}</span>
-            <h2 className="text-balance mt-3 sm:mt-4 font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-navy-800">
-              {locale === "vi" ? "Biến một ngày ra mắt thành đà tăng trưởng dài hơn" : "Turn launch day into longer-term momentum"}
-            </h2>
-            <p className="mt-3.5 sm:mt-5 max-w-xl text-sm sm:text-base leading-relaxed text-navy-500">
-              {locale === "vi"
-                ? "ANBU đặc biệt phù hợp với các thương hiệu game, ứng dụng và sản phẩm quốc tế cần bước vào Việt Nam. Chúng tôi kết nối KOL/KOC, social, cộng đồng, báo chí và paid media thành một câu chuyện ra mắt thống nhất, thay vì những hạng mục rời rạc."
-                : "ANBU is built for games, apps and international products entering Vietnam. We connect creators, social, community, press and paid media into one launch story instead of isolated activities."}
-            </p>
-            <Link href={localePath(locale, "/services/game-app-marketing")} className="btn-ghost mt-5 sm:mt-7">
-              {locale === "vi" ? "Khám phá năng lực ra mắt" : "Explore launch marketing"}
-              <Icon name="arrow" className="h-4 w-4" />
-            </Link>
-          </Reveal>
-          <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:col-span-7">
-            {[
-              {
-                no: "01",
-                title: locale === "vi" ? "Tìm lý do để thị trường quan tâm" : "Find the reason to care",
-                body: locale === "vi" ? "Chắt lọc lợi thế sản phẩm thành một góc kể phù hợp văn hóa, hành vi và ngôn ngữ của người dùng Việt." : "Translate product strengths into a story grounded in Vietnamese culture, behavior and language.",
-              },
-              {
-                no: "02",
-                title: locale === "vi" ? "Giao đúng vai cho từng creator" : "Give every creator a job",
-                body: locale === "vi" ? "Phân tầng KOL/KOC theo nhiệm vụ: tạo chú ý, giải thích trải nghiệm, xác nhận niềm tin hoặc kích hoạt cộng đồng." : "Layer creators by role: attract attention, explain the experience, build trust or activate communities.",
-              },
-              {
-                no: "03",
-                title: locale === "vi" ? "Dàn dựng nhịp chiến dịch" : "Engineer campaign rhythm",
-                body: locale === "vi" ? "Kết nối teaser, reveal, launch và sustain để thương hiệu luôn có điều mới đáng nói trong từng giai đoạn." : "Connect teaser, reveal, launch and sustain so the brand always has something timely to say.",
-              },
-              {
-                no: "04",
-                title: locale === "vi" ? "Đọc tín hiệu và khuếch đại" : "Read signals and amplify",
-                body: locale === "vi" ? "Theo dõi phản hồi nội dung và cộng đồng để điều chỉnh thông điệp, creator mix và nhịp phân phối." : "Use content and community signals to refine messages, creator mix and distribution cadence.",
-              },
-            ].map((item, index) => (
-              <Reveal key={item.no} delay={index * 60}>
-                <article className="h-full rounded-2xl sm:rounded-3xl border border-navy-100 bg-white p-5 sm:p-6 transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-lg">
-                  <span className="font-display text-sm font-extrabold text-orange-500">{item.no}</span>
-                  <h3 className="mt-3 font-display text-base sm:text-lg font-bold text-navy-800">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy-500">{item.body}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY US */}
-      <WhyUs locale={locale} dict={dict} />
-
-      {/* PROCESS */}
-      <section className="relative overflow-hidden bg-navy-900 py-10 sm:py-20 lg:py-24">
-        <MarkWatermark className="-right-16 top-10 h-80 w-80 rotate-12" />
-        <div className="container-x relative">
-          <SectionHeading eyebrow={dict.process.eyebrow} title={dict.process.title} subtitle={dict.process.subtitle} light />
-          <div className="relative mt-8 sm:mt-14 grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="pointer-events-none absolute left-8 right-8 top-[52px] z-0 hidden h-0.5 bg-gradient-to-r from-orange-500/0 via-navy-500 to-orange-500/0 lg:block" />
-            {processSteps.map((step, i) => (
-              <Reveal key={step.no} delay={i * 80}>
-                <div className="group relative z-10 h-full rounded-2xl sm:rounded-3xl border border-white/10 bg-navy-800 p-5 sm:p-6 transition-colors duration-300 hover:border-orange-500/50">
-                  <div className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 font-display text-lg sm:text-xl font-extrabold text-white shadow-[0_12px_28px_-8px_rgba(245,80,30,0.6)]">
-                    {step.no}
-                  </div>
-                  <h3 className="mt-4 sm:mt-5 font-display text-base sm:text-lg font-bold text-white">{t(step.title, locale)}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy-200">{t(step.description, locale)}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WORK */}
+      {/* 1. FEATURED CASE STUDIES - immediate credibility and proof */}
       <section className="container-x py-10 sm:py-20 lg:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6">
           <SectionHeading eyebrow={dict.workSection.eyebrow} title={dict.workSection.title} subtitle={dict.workSection.subtitle} />
@@ -376,7 +223,70 @@ export default async function HomePage({ params }: { params: { locale: string } 
         </div>
       </section>
 
-      {/* BLOG */}
+      {/* 2. SERVICES */}
+      <section className="border-t border-navy-100 bg-cloud py-10 sm:py-20 lg:py-24">
+        <div className="container-x">
+          <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6">
+            <SectionHeading eyebrow={dict.servicesSection.eyebrow} title={dict.servicesSection.title} subtitle={dict.servicesSection.subtitle} />
+            <Reveal>
+              <Link href={localePath(locale, "/services")} className="link-underline hidden text-sm sm:inline-block">
+                {dict.servicesSection.all} →
+              </Link>
+            </Reveal>
+          </div>
+          <div className="mt-8 sm:mt-12 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Featured (bento) tile */}
+            <Reveal className="sm:col-span-2 lg:col-span-2">
+              <Link
+                href={localePath(locale, `/services/${services[0].slug}`)}
+                className="group flex h-full flex-col overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/70 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-[0_28px_70px_-24px_rgba(1,47,135,0.3)] md:flex-row"
+              >
+                <div className="relative h-40 overflow-hidden bg-orange-50 sm:h-44 md:h-auto md:w-1/2">
+                  <EditorialMedia
+                    src={editorialImageForService(services[0].slug)}
+                    alt={t(services[0].title, locale)}
+                    className="absolute inset-0 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.03]"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-navy-950/20 via-transparent to-transparent" />
+                  <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+                  <div className="absolute left-3.5 top-3.5 sm:left-4 sm:top-4 flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-2xl bg-white/95 text-orange-600 shadow-[0_8px_20px_-8px_rgba(0,0,0,0.5)] backdrop-blur-sm">
+                    <Icon name={services[0].icon as any} className="h-5 w-5 sm:h-6 sm:w-6" />
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col justify-center p-5 sm:p-7">
+                  <span className="inline-flex w-fit rounded-full bg-orange-50 px-2.5 py-0.5 sm:px-3 sm:py-1 text-xs font-bold uppercase tracking-wide text-orange-600">
+                    {dict.servicesSection.eyebrow}
+                  </span>
+                  <h3 className="mt-2.5 sm:mt-3 font-display text-xl sm:text-2xl font-extrabold text-navy-800">{t(services[0].title, locale)}</h3>
+                  <p className="mt-1.5 sm:mt-2 font-medium text-orange-600 text-sm sm:text-base">{t(services[0].tagline, locale)}</p>
+                  <p className="mt-2.5 sm:mt-3 text-sm leading-relaxed text-navy-500">{t(services[0].description, locale)}</p>
+                  <span className="mt-4 sm:mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-700 transition-colors group-hover:text-orange-600">
+                    {dict.servicesSection.learnMore}
+                    <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </Link>
+            </Reveal>
+
+            {services.slice(1, 5).map((service, i) => (
+              <Reveal key={service.slug} delay={i * 60}>
+                <ServiceCard service={service} locale={locale} learnMore={dict.servicesSection.learnMore} />
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-8 text-center sm:hidden">
+            <Link href={localePath(locale, "/services")} className="link-underline text-sm font-semibold">
+              {dict.servicesSection.all} →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. WHY US */}
+      <WhyUs locale={locale} dict={dict} />
+
+      {/* 4. BLOG & PERSPECTIVES */}
       <section className="container-x py-10 sm:py-20 lg:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6">
           <SectionHeading eyebrow={dict.blogSection.eyebrow} title={dict.blogSection.title} subtitle={dict.blogSection.subtitle} />
@@ -400,17 +310,18 @@ export default async function HomePage({ params }: { params: { locale: string } 
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* 5. FAQ - all 6 items rendered, in sync with JSON-LD schema */}
       <JsonLd data={faqLd(faqs.map((f) => ({ q: t(f.q, locale), a: t(f.a, locale) })))} />
       <section className="bg-cloud py-10 sm:py-20 lg:py-24">
         <div className="container-x">
           <SectionHeading eyebrow={dict.faq.eyebrow} title={dict.faq.title} subtitle={dict.faq.subtitle} center />
           <div className="mx-auto mt-8 sm:mt-12 max-w-3xl">
-            <FaqAccordion items={faqs.slice(0, 4).map((f) => ({ q: t(f.q, locale), a: t(f.a, locale) }))} />
+            <FaqAccordion items={faqs.map((f) => ({ q: t(f.q, locale), a: t(f.a, locale) }))} />
           </div>
         </div>
       </section>
 
+      {/* 6. CONVERSION CTA */}
       <CTASection locale={locale} dict={dict} />
     </>
   );

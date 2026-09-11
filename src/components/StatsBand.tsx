@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
-import { site } from "@/content/site";
+import { site, t } from "@/content/site";
 import Reveal from "./Reveal";
 import CountUp from "./CountUp";
 import SectionHeading from "./SectionHeading";
@@ -8,12 +8,11 @@ import Icon from "./Icon";
 import { MarkWatermark } from "./Illustration";
 
 export default function StatsBand({ locale, dict }: { locale: Locale; dict: Dictionary }) {
-  void locale;
   const stats = [
     { value: site.stats.projects, label: dict.hero.stat1, icon: "spark" as const },
     { value: site.stats.clients, label: dict.hero.stat2, icon: "heart" as const },
     { value: site.stats.years, label: dict.hero.stat3, icon: "shield" as const },
-    { value: site.stats.markets, label: dict.hero.stat4, icon: "star" as const },
+    { value: t(site.stats.markets, locale), label: dict.hero.stat4, icon: "star" as const },
   ];
 
   return (

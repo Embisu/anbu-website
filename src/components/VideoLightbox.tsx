@@ -74,8 +74,8 @@ export default function VideoLightbox({
               ref={closeRef}
               type="button"
               onClick={() => setOpen(false)}
-              aria-label="Close"
-              className="absolute -right-3 -top-3 flex h-11 w-11 items-center justify-center rounded-full bg-white text-navy-800 shadow-lg transition-transform hover:scale-110"
+              aria-label="Close dialog"
+              className="absolute -right-3 -top-3 flex h-11 w-11 items-center justify-center rounded-full bg-white text-navy-800 shadow-lg transition-transform hover:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-orange-500"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
                 <path d="M6 6l12 12M18 6 6 18" />

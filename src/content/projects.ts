@@ -75,7 +75,7 @@ export const projects: Project[] = [
       en: "We planned and budgeted the campaign, selected offline venues and LED billboard placements across the region, and crafted the campaign wrap-up video.",
     },
     results: [
-      { value: "20M+", label: { vi: "Người tiếp cận toàn ĐNÁ", en: "People reached across SEA" } },
+      { value: "20M+", label: { vi: "Lượt tiếp cận toàn Đông Nam Á", en: "Reach across Southeast Asia" } },
       { value: "OOH", label: { vi: "Biển LED toàn khu vực", en: "LED billboards region-wide" } },
       { value: "#1", label: { vi: "Khẳng định vị thế dòng game", en: "Reaffirmed category leadership" } },
     ],
@@ -230,6 +230,7 @@ export const projects: Project[] = [
     ],
     services: ["game-app-marketing", "social-media", "influencer-marketing", "creative-design"],
     focal: "center",
+    overview: true,
   },
   {
     slug: "focallure",
@@ -264,6 +265,7 @@ export const projects: Project[] = [
     ],
     services: ["influencer-marketing", "social-media", "performance-marketing"],
     fit: "contain",
+    overview: true,
   },
   {
     slug: "douluo-soul-master-duel",

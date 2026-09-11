@@ -32,7 +32,10 @@ export const site = {
     projects: "40+",
     clients: "25+",
     years: "6+",
-    markets: "SEA",
+    markets: {
+      vi: "Đông Nam Á",
+      en: "Southeast Asia",
+    } as L10n,
   },
 };
 
