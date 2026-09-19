@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import type { SceneVariant } from "./Scene";
 
 const serviceImages: Record<string, string> = {
@@ -196,23 +193,16 @@ export default function EditorialMedia({
   focal?: string;
   priority?: boolean;
 }) {
-  const [imgSrc, setImgSrc] = useState(src);
-
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={imgSrc}
+      src={src}
       alt={alt}
       width={1200}
       height={675}
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : "auto"}
       decoding="async"
-      onError={() => {
-        if (imgSrc !== "/og/og-default.png") {
-          setImgSrc("/og/og-default.png");
-        }
-      }}
       className={`h-full w-full object-cover ${className}`}
       style={{ objectPosition: focal }}
     />
