@@ -1107,24 +1107,36 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     const optimizedFile = await compressImage(file);
     const targetKey = target.type === "cover" ? "cover" : String(target.index ?? "new");
     setUploadingTarget(targetKey);
-    setAiNotice(`⏳ Đang tối ưu & tải ảnh "${optimizedFile.name}" (${Math.round(optimizedFile.size / 1024)} KB) lên Cloud...`);
+    setAiNotice(`⏳ Đang tối ưu & lưu ảnh "${optimizedFile.name}" (${Math.round(optimizedFile.size / 1024)} KB) lên CDN...`);
 
     try {
-      const ext = optimizedFile.name.split(".").pop() || "webp";
-      const cleanName = optimizedFile.name
-        .replace(/\.[^/.]+$/, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]/g, "-");
-      const filePath = `${Date.now()}-${cleanName}.${ext}`;
+      // Convert file to base64
+      const reader = new FileReader();
+      const base64Promise = new Promise<string>((resolve, reject) => {
+        reader.onload = () => resolve(reader.result as string);
+        reader.onerror = reject;
+        reader.readAsDataURL(optimizedFile);
+      });
+      const base64Data = await base64Promise;
 
-      const { data, error } = await supabase.storage
-        .from("blog-media")
-        .upload(filePath, file, { cacheControl: "3600", upsert: true });
+      const token = typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || undefined : undefined;
 
-      if (error) throw error;
+      const res = await fetch("/api/admin/media/github-upload", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fileName: optimizedFile.name,
+          fileBase64: base64Data,
+          token,
+        }),
+      });
 
-      const { data: urlData } = supabase.storage.from("blog-media").getPublicUrl(data.path);
-      const publicUrl = urlData.publicUrl;
+      const resData = await res.json();
+      if (!resData.ok) {
+        throw new Error(resData.error || "Không thể tải ảnh lên kho lưu trữ");
+      }
+
+      const publicUrl = resData.publicUrl;
 
       if (target.type === "cover") {
         setPost((prev) => ({ ...prev, cover: publicUrl }));

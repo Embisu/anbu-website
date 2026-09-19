@@ -82,28 +82,26 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
     // Filter defaults
     setMediaList((prev) => prev.filter((item) => !deletedArr.includes(item.src)));
 
-    supabase.storage
-      .from("blog-media")
-      .list("", { limit: 100, sortBy: { column: "created_at", order: "desc" } })
-      .then(({ data }) => {
-        if (data && data.length > 0) {
+    fetch("/api/admin/media/github-upload")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.ok && Array.isArray(data.items)) {
           const currentDeleted = getDeletedMedia();
-          const cloudItems: MediaItem[] = data
-            .map((item) => {
-              const { data: urlData } = supabase.storage.from("blog-media").getPublicUrl(item.name);
-              return {
-                src: urlData.publicUrl,
-                title: item.name.replace(/\.[^/.]+$/, ""),
-                tags: ["supabase", "cloud"],
-                size: `${Math.round((item.metadata?.size || 0) / 1024)} KB`,
-                dimensions: "Cloud CDN",
-              };
-            })
-            .filter((item) => !currentDeleted.includes(item.src));
+          const items: MediaItem[] = data.items
+            .filter((item: any) => !currentDeleted.includes(item.src))
+            .map((item: any) => ({
+              src: item.src,
+              title: item.title,
+              tags: item.tags || ["media"],
+              size: item.size || "Unknown",
+              dimensions: "Local / CDN",
+            }));
 
           setMediaList((prev) => {
-            const freshFiltered = prev.filter((p) => !currentDeleted.includes(p.src) && !cloudItems.some(ci => ci.src === p.src));
-            return [...cloudItems, ...freshFiltered];
+            const freshFiltered = prev.filter(
+              (p) => !currentDeleted.includes(p.src) && !items.some((ci) => ci.src === p.src)
+            );
+            return [...items, ...freshFiltered];
           });
         }
       })
@@ -168,32 +166,40 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
 
     setUploading(true);
     const uploadedItems: MediaItem[] = [];
+    const token = typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || undefined : undefined;
 
     for (const file of Array.from(files)) {
       try {
-        const ext = file.name.split(".").pop();
-        const cleanName = file.name
-          .replace(/\.[^/.]+$/, "")
-          .toLowerCase()
-          .replace(/[^a-z0-9]/g, "-");
-        const filePath = `${Date.now()}-${cleanName}.${ext}`;
+        const reader = new FileReader();
+        const base64Promise = new Promise<string>((resolve, reject) => {
+          reader.onload = () => resolve(reader.result as string);
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+        const base64Data = await base64Promise;
 
-        const { data, error } = await supabase.storage
-          .from("blog-media")
-          .upload(filePath, file, { cacheControl: "3600", upsert: true });
+        const res = await fetch("/api/admin/media/github-upload", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            fileName: file.name,
+            fileBase64: base64Data,
+            token,
+          }),
+        });
 
-        if (data) {
-          const { data: urlData } = supabase.storage.from("blog-media").getPublicUrl(data.path);
+        const resData = await res.json();
+        if (resData.ok) {
           const newItem: MediaItem = {
-            src: urlData.publicUrl,
+            src: resData.publicUrl,
             title: file.name.replace(/\.[^/.]+$/, ""),
-            tags: ["supabase", "upload"],
+            tags: ["media", "upload"],
             size: `${Math.round(file.size / 1024)} KB`,
-            dimensions: "Cloud CDN",
+            dimensions: "Local / CDN",
           };
           uploadedItems.push(newItem);
         } else {
-          console.error("Upload error:", error);
+          console.error("Upload error:", resData.error);
         }
       } catch (err) {
         console.error("File upload error:", err);
