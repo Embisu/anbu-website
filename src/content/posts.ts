@@ -412,7 +412,7 @@ const builtinPosts: Post[] = [
     author: "ANBU Team",
     color: "from-navy-700 to-orange-600",
     variant: "game",
-    cover: "/blog-covers/real-analytics-game.jpg",
+    cover: "/blog-covers/analytics-dashboard.jpg",
     sources: [
       { label: { vi: "Google Ads: Hướng dẫn đo lường và tối ưu chiến dịch ứng dụng di động", en: "Google Ads: Mobile App Campaign Optimization Best Practices" }, href: "https://support.google.com/google-ads/topic/6169030" },
       { label: { vi: "AppsFlyer: Báo cáo Benchmark Game Mobile Toàn cầu & Đo lường Attribution", en: "AppsFlyer: Global Mobile Gaming Benchmarks & Attribution" }, href: "https://www.appsflyer.com/glossary/mobile-attribution/" },
@@ -428,7 +428,7 @@ const builtinPosts: Post[] = [
       },
       {
         type: "image",
-        src: "/blog-covers/real-analytics-game.jpg",
+        src: "/blog-covers/analytics-dashboard.jpg",
         alt: { vi: "Bảng điều khiển Telemetry phân tích dữ liệu hiệu quả User Acquisition CPI, ROAS và LTV cho game mobile", en: "Telemetry dashboard analyzing mobile game UA cohort metrics, CPI, ROAS, and cumulative LTV curves" },
         caption: { vi: "Dashboard phân tích Cohort Analysis thực tế: Đo lường tốc độ tích lũy LTV theo từng mốc D1, D7, D30 và so sánh trực tiếp với chi phí eCPI thực tế của từng kênh quảng cáo.", en: "Real-world Cohort Telemetry Dashboard: Tracking cumulative LTV velocity across D1, D7, D30 milestones and benchmarking against effective channel CPIs." },
       },

@@ -15,7 +15,7 @@
     },
     "date": "2026-09-14",
     "readingTime": 15,
-    "cover": "/blog-covers/real-marketing-game.jpg",
+    "cover": "/blog-covers/game-app.jpg",
     "author": "ANBU Team",
     "color": "from-blue-600 to-indigo-600",
     "variant": "game",
@@ -78,14 +78,14 @@
       },
       {
         "type": "image",
-        "src": "/blog-covers/game-app.jpg",
+        "src": "/blog-covers/user-acquisition-3d.png",
         "alt": {
-          "vi": "Game Mobile Promotion",
-          "en": "Game Mobile Promotion"
+          "vi": "Hệ thống phễu User Acquisition và điểm chạm tiếp cận người chơi game mobile",
+          "en": "Mobile game User Acquisition funnel and player touchpoints"
         },
         "caption": {
-          "vi": "",
-          "en": ""
+          "vi": "Mô hình User Acquisition đa kênh giúp tiếp cận đúng tệp game thủ tiềm năng và tối ưu hóa chi phí cài đặt.",
+          "en": "A multi-channel UA architecture connecting ads, app stores, and community touchpoints to optimize cost per install."
         }
       },
       {
@@ -160,14 +160,14 @@
       },
       {
         "type": "image",
-        "src": "/blog-covers/real-mobile-gaming.jpg",
+        "src": "/blog-covers/aso-store-optimization.jpg",
         "alt": {
-          "vi": "How to promote mobile game",
-          "en": "How to promote mobile game"
+          "vi": "Tối ưu hóa trang cửa hàng ứng dụng ASO và hành trình chuyển đổi game mobile",
+          "en": "App Store Optimization (ASO) and player conversion journey"
         },
         "caption": {
-          "vi": "",
-          "en": ""
+          "vi": "Trang cửa hàng ứng dụng được tối ưu kỹ lưỡng về hình ảnh, video gameplay và đánh giá là chìa khóa biến lượt nhấp quảng cáo thành người chơi thực tế.",
+          "en": "A well-optimized store listing with engaging screenshots, gameplay trailers, and positive reviews turns ad clicks into active players."
         }
       },
       {
@@ -482,12 +482,12 @@
         "type": "image",
         "src": "/blog-covers/launch-checklist.jpg",
         "alt": {
-          "vi": "Download Mobile Game",
-          "en": "Download Mobile Game"
+          "vi": "Quy trình phân tích dữ liệu và checklist vận hành chiến dịch quảng bá game mobile",
+          "en": "Data analytics workflow and mobile game promotion launch checklist"
         },
         "caption": {
-          "vi": "",
-          "en": ""
+          "vi": "Quy trình kiểm soát dữ liệu và checklist vận hành chiến dịch giúp phát hiện điểm nghẽn chuyển đổi và tối ưu ngân sách quảng bá.",
+          "en": "Real-time telemetry and campaign checklists help identify conversion bottlenecks and maximize promotional ROI."
         }
       },
       {
@@ -699,14 +699,14 @@
       },
       {
         "alt": {
-          "vi": "",
-          "en": ""
+          "vi": "Không gian làm việc và setup livestream của gaming creator",
+          "en": "Gaming creator workspace and livestream setup"
         },
-        "src": "/blog-covers/creator-tiktok-studio.jpg",
+        "src": "/blog-covers/livestream-creator-setup.jpg",
         "type": "image",
         "caption": {
-          "vi": "",
-          "en": ""
+          "vi": "Góc livestream và sản xuất nội dung game chuyên nghiệp của gaming creator, nơi kết nối trực tiếp với cộng đồng người chơi.",
+          "en": "A professional gaming creator livestream setup where real-time player connections and community trust are built."
         }
       },
       {
@@ -937,14 +937,14 @@
       },
       {
         "alt": {
-          "vi": "",
-          "en": ""
+          "vi": "Sự kiện ra mắt game kết hợp KOL và truyền thông đại chúng",
+          "en": "Game launch event integrating gaming KOLs and media reach"
         },
         "src": "/blog-covers/influencer-measurement.jpg",
         "type": "image",
         "caption": {
-          "vi": "",
-          "en": ""
+          "vi": "Kết hợp KOL đa tầng (Macro đến Micro) tại các điểm chạm ra mắt và truyền thông giúp gia tăng uy tín và nhận diện tựa game.",
+          "en": "Integrating multi-tier KOLs (Macro to Micro) across launch milestones amplifies game credibility and public reach."
         }
       },
       {
@@ -1062,14 +1062,14 @@
       },
       {
         "alt": {
-          "vi": "",
-          "en": ""
+          "vi": "Hệ sinh thái Gaming Creator và mạng lưới người sáng tạo nội dung",
+          "en": "Gaming Creator ecosystem and content creator network"
         },
         "src": "/blog-covers/creator-program.jpg",
         "type": "image",
         "caption": {
-          "vi": "",
-          "en": ""
+          "vi": "Xây dựng hệ sinh thái creator bền vững giúp duy trì thảo luận và tạo ra dòng nội dung UGC liên tục cho tựa game.",
+          "en": "Cultivating a sustainable creator ecosystem drives continuous UGC and keeps player conversations active throughout the game lifecycle."
         }
       },
       {
@@ -1114,7 +1114,7 @@
     "author": "ANBU Team",
     "color": "from-blue-600 to-indigo-600",
     "variant": "game",
-    "cover": "/blog-covers/creative-testing-lab.jpg",
+    "cover": "/blog-covers/vietnam-game-saturation.png",
     "body": [
       {
         "text": {
@@ -1136,6 +1136,18 @@
           "en": "From a broader perspective, DataReport reports that Vietnam had 79.8 million Internet users in January 2025, equivalent to 78.8% of the population. This creates a favorable environment for games to reach players through social media, video, online communities, and digital content platforms."
         },
         "type": "p"
+      },
+      {
+        "type": "image",
+        "src": "/blog-covers/vietnam-game-publishers-map.png",
+        "alt": {
+          "vi": "Bản đồ hệ sinh thái thị trường game và hạ tầng phát hành tại Việt Nam",
+          "en": "Vietnam gaming ecosystem and publishing infrastructure map"
+        },
+        "caption": {
+          "vi": "Bản đồ kết nối nhà phát hành, cộng đồng game thủ, nền tảng di động và hệ sinh thái giải đấu tại Việt Nam.",
+          "en": "Mapping the Vietnamese gaming landscape: Connecting publishers, gamer communities, mobile platforms, and competitive esports."
+        }
       },
       {
         "text": {
@@ -1261,6 +1273,18 @@
           "en": "This content helps players get a clearer picture of the product. At the same time, showcasing the actual experience helps avoid issues such as exaggerated advertising that doesn’t match players’ expectations. Effective marketing not only makes players want to download the game but also helps them understand exactly what they’ll get after downloading it."
         },
         "type": "p"
+      },
+      {
+        "type": "image",
+        "src": "/blog-covers/community-3d.png",
+        "alt": {
+          "vi": "Cộng đồng game thủ và sự gắn kết người chơi quanh trải nghiệm thực tế",
+          "en": "Gaming community engagement around real player experiences"
+        },
+        "caption": {
+          "vi": "Cộng đồng và người chơi cốt lõi là nền tảng giữ chân và lan tỏa tự nhiên cho mọi tựa game mobile.",
+          "en": "Core gaming communities provide the foundation for organic word-of-mouth and long-term retention."
+        }
       },
       {
         "type": "ul",
@@ -1430,13 +1454,6 @@
       },
       {
         "text": {
-          "vi": "",
-          "en": ""
-        },
-        "type": "p"
-      },
-      {
-        "text": {
           "vi": "Thị trường game Việt Nam đang bước vào giai đoạn cạnh tranh hơn, khi người chơi ngày càng có nhiều lựa chọn và cách họ tiếp cận game cũng thay đổi đáng kể. Trong bối cảnh đó, việc chỉ tăng ngân sách quảng cáo không còn là yếu tố để tạo khác biệt. Điều quan trọng hơn là thương hiệu cần hiểu người chơi, nắm bắt xu hướng và lựa chọn cách tiếp cận phù hợp với từng nhóm đối tượng.",
           "en": "The Vietnamese gaming market is entering a more competitive phase, as players have an increasing number of options and the way they engage with games has changed significantly. In this context, simply increasing the advertising budget is no longer enough to set a brand apart. What matters more is that brands understand players, keep up with trends, and choose the right approach for each target audience."
         },
@@ -1453,13 +1470,6 @@
         "text": {
           "vi": "Trong một thị trường liên tục thay đổi, khả năng lắng nghe người chơi và thích ứng với hành vi mới sẽ là yếu tố quan trọng giúp các thương hiệu game tạo được vị trí riêng và xây dựng cộng đồng bền vững.",
           "en": "In an ever-changing market, the ability to listen to players and adapt to new behaviors will be a key factor in helping game brands carve out their own niche and build a sustainable community."
-        },
-        "type": "p"
-      },
-      {
-        "text": {
-          "vi": "",
-          "en": ""
         },
         "type": "p"
       },

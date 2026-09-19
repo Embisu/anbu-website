@@ -254,32 +254,32 @@ function inlineEditorialImage(slug: string, index: number) {
         { vi: "Sân khấu và lễ trao huy chương esports tại SEA Games, nơi thành tích tuyển thủ kết nối với người hâm mộ.", en: "An esports stage and SEA Games medal ceremony connecting player achievement with fans." },
       ],
     },
-    { match: ["thailand"], images: ["/blog-covers/real-thailand.jpg", "/blog-covers/real-game-event.jpg", "/blog-covers/real-content.jpg"], alt: { vi: "Chiến lược ra mắt game và bản địa hóa thị trường Thái Lan", en: "Game launch strategy and localization for Thailand" }, captions: [
+    { match: ["thailand"], images: ["/blog-covers/thailand-game-show-level-infinite-booth.jpg", "/blog-covers/thailand-gaming-streamer-creator.jpg", "/blog-covers/thailand-game-show-legend-arena-esports.jpg"], alt: { vi: "Chiến lược ra mắt game và bản địa hóa thị trường Thái Lan", en: "Game launch strategy and localization for Thailand" }, captions: [
       { vi: "Bản đồ kênh truyền thông trong kế hoạch ra mắt game tại thị trường Thái Lan.", en: "A channel map for launching a game in the Thailand market." },
       { vi: "Creator và cộng đồng game trong chiến dịch bản địa hóa nội dung tại Thái Lan.", en: "Creators and gaming communities supporting localized content in Thailand." },
       { vi: "Nội dung bản địa hóa giúp game quốc tế tiếp cận đúng người chơi Thái Lan.", en: "Localized content helping an international game reach Thai players." },
     ] },
-    { match: ["analytics", "cpi", "roas", "arppu"], images: ["/blog-covers/real-analytics.jpg", "/blog-covers/real-content.jpg", "/blog-covers/real-mobile-gaming.jpg"], alt: { vi: "Bảng dữ liệu phân tích người chơi và hiệu quả marketing game", en: "Player analytics and game marketing performance dashboard" }, captions: [
+    { match: ["analytics", "cpi", "roas", "arppu"], images: ["/blog-covers/analytics-dashboard.jpg", "/blog-covers/analytics-3d.png", "/blog-covers/growth-analytics-chart.jpg"], alt: { vi: "Bảng dữ liệu phân tích người chơi và hiệu quả marketing game", en: "Player analytics and game marketing performance dashboard" }, captions: [
       { vi: "Bảng phân tích funnel người chơi dùng để theo dõi CPI, ROAS và doanh thu game.", en: "A player-funnel dashboard tracking CPI, ROAS and game revenue." },
       { vi: "Dữ liệu chiến dịch giúp đội ngũ marketing game đọc đúng hành vi người chơi.", en: "Campaign data helping game marketers understand player behavior." },
       { vi: "Thiết bị di động và dữ liệu hành vi trong quá trình đo lường tăng trưởng game.", en: "Mobile devices and behavioral data used to measure game growth." },
     ] },
-    { match: ["community", "discord", "moderation"], images: ["/blog-covers/real-team.jpg", "/blog-covers/real-social.jpg", "/blog-covers/real-game-event.jpg"], alt: { vi: "Hoạt động cộng đồng, creator và tương tác của người chơi game", en: "Gaming community, creator activity and player engagement" }, captions: [
+    { match: ["community", "discord", "moderation"], images: ["/blog-covers/discord-community.jpg", "/blog-covers/community-3d.png", "/blog-covers/community-launch.jpg"], alt: { vi: "Hoạt động cộng đồng, creator và tương tác của người chơi game", en: "Gaming community, creator activity and player engagement" }, captions: [
       { vi: "Đội ngũ vận hành và cộng đồng game phối hợp để chăm sóc trải nghiệm người chơi.", en: "Operations teams and gaming communities working together for player experience." },
       { vi: "Tương tác social và creator giúp xây dựng cộng đồng game bền vững.", en: "Social and creator engagement supporting a sustainable game community." },
       { vi: "Sự kiện game kết nối người chơi, creator và thương hiệu trong cùng một trải nghiệm.", en: "A game event connecting players, creators and brands in one experience." },
     ] },
-    { match: ["aso", "store", "app", "mobile"], images: ["/blog-covers/real-phone-app.jpg", "/blog-covers/real-mobile-gaming.jpg", "/blog-covers/real-game-console.jpg"], alt: { vi: "Trải nghiệm game trên thiết bị di động và tối ưu trang cửa hàng", en: "Mobile game experience and app store optimization" }, captions: [
+    { match: ["aso", "store", "app", "mobile"], images: ["/blog-covers/aso-store-optimization.jpg", "/blog-covers/app-store-conversion-funnel.jpg", "/blog-covers/game-app.jpg"], alt: { vi: "Trải nghiệm game trên thiết bị di động và tối ưu trang cửa hàng", en: "Mobile game experience and app store optimization" }, captions: [
       { vi: "Trang cửa hàng ứng dụng trên điện thoại được tối ưu để tăng lượt cài đặt game.", en: "A mobile app store page optimized to increase game installs." },
       { vi: "Trải nghiệm người chơi trên thiết bị di động trong hành trình từ quảng cáo đến cài đặt.", en: "The mobile player journey from ad exposure to game install." },
       { vi: "Thiết bị và nền tảng chơi game mobile trong chiến lược tăng trưởng ứng dụng.", en: "Mobile devices and platforms in an app growth strategy." },
     ] },
-    { match: ["seo", "keyword", "link", "content"], images: ["/blog-covers/real-content.jpg", "/blog-covers/real-analytics.jpg", "/blog-covers/real-brand.jpg"], alt: { vi: "Nghiên cứu nội dung, từ khóa và cấu trúc SEO cho website game", en: "Content research, keywords and SEO structure for a game website" }, captions: [
+    { match: ["seo", "keyword", "link", "content"], images: ["/blog-covers/seo-strategy.jpg", "/blog-covers/seo-organic-ranking.jpg", "/blog-covers/game-seo-cluster.jpg"], alt: { vi: "Nghiên cứu nội dung, từ khóa và cấu trúc SEO cho website game", en: "Content research, keywords and SEO structure for a game website" }, captions: [
       { vi: "Nội dung và cấu trúc trang giúp website game được công cụ tìm kiếm hiểu rõ hơn.", en: "Content and page structure helping search engines understand a game website." },
       { vi: "Bảng dữ liệu nghiên cứu từ khóa và hiệu quả SEO cho chiến dịch marketing game.", en: "Keyword research and SEO performance data for game marketing." },
       { vi: "Hệ thống nhận diện thương hiệu hỗ trợ nội dung nhất quán trên website.", en: "A brand system supporting consistent content across a website." },
     ] },
-    { match: ["brand", "localization", "tet"], images: ["/blog-covers/real-brand.jpg", "/blog-covers/real-vietnam.jpg", "/blog-covers/real-social.jpg"], alt: { vi: "Xây dựng thương hiệu và nội dung phù hợp với người chơi Việt Nam", en: "Brand building and content for Vietnamese players" }, captions: [
+    { match: ["brand", "localization", "tet"], images: ["/blog-covers/brand-foundation.jpg", "/blog-covers/brand-strategy-board.jpg", "/blog-covers/game-pr-vietnam.jpg"], alt: { vi: "Xây dựng thương hiệu và nội dung phù hợp với người chơi Việt Nam", en: "Brand building and content for Vietnamese players" }, captions: [
       { vi: "Hệ thống nhận diện thương hiệu trong chiến lược marketing game tại Việt Nam.", en: "A brand identity system for game marketing in Vietnam." },
       { vi: "Bản địa hóa nội dung và hình ảnh để game phù hợp với người chơi Việt Nam.", en: "Localized content and visuals designed for Vietnamese players." },
       { vi: "Nội dung social được điều chỉnh theo văn hóa và hành vi cộng đồng game.", en: "Social content adapted to gaming culture and community behavior." },
@@ -316,7 +316,7 @@ function inlineEditorialImage(slug: string, index: number) {
     return { src: exactPool.images[imageIndex], alt: exactPool.alt, caption: exactPool.captions[imageIndex] ?? generic };
   }
   const pool = pools.find((item) => item.match.some((term) => lower.includes(term))) ?? {
-    images: ["/blog-covers/real-mobile-gaming.jpg", "/blog-covers/real-game-event.jpg", "/blog-covers/real-content.jpg"],
+    images: ["/blog-covers/game-app.jpg", "/blog-covers/user-acquisition-3d.png", "/blog-covers/launch-checklist.jpg"],
     alt: { vi: "Minh họa hoạt động marketing và vận hành sản phẩm game", en: "Illustration of game marketing and product operations" },
     captions: [
       { vi: "Hình ảnh minh họa hoạt động marketing và vận hành sản phẩm game.", en: "Editorial image showing game marketing and product operations." },
