@@ -15,7 +15,7 @@
     },
     "date": "2026-09-14",
     "readingTime": 15,
-    "cover": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1789440211204-images--9-.jfif",
+    "cover": "/blog-covers/real-marketing-game.jpg",
     "author": "ANBU Team",
     "color": "from-blue-600 to-indigo-600",
     "variant": "game",
@@ -78,7 +78,7 @@
       },
       {
         "type": "image",
-        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1789438652603-gmp.webp",
+        "src": "/blog-covers/game-app.jpg",
         "alt": {
           "vi": "Game Mobile Promotion",
           "en": "Game Mobile Promotion"
@@ -160,7 +160,7 @@
       },
       {
         "type": "image",
-        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1789439849233-images--8-.webp",
+        "src": "/blog-covers/real-mobile-gaming.jpg",
         "alt": {
           "vi": "How to promote mobile game",
           "en": "How to promote mobile game"
@@ -480,7 +480,7 @@
       },
       {
         "type": "image",
-        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1789439951920-1691121400231-chi-n-d-ch-marketing-cho-game.webp",
+        "src": "/blog-covers/launch-checklist.jpg",
         "alt": {
           "vi": "Download Mobile Game",
           "en": "Download Mobile Game"
@@ -637,7 +637,7 @@
     "author": "ANBU Team",
     "color": "from-blue-600 to-indigo-600",
     "variant": "game",
-    "cover": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1788773235708-kol-2.jpg",
+    "cover": "/blog-covers/creator-influencer.jpg",
     "body": [
       {
         "text": {
@@ -702,7 +702,7 @@
           "vi": "",
           "en": ""
         },
-        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1788785268687-images.jfif",
+        "src": "/blog-covers/creator-tiktok-studio.jpg",
         "type": "image",
         "caption": {
           "vi": "",
@@ -940,7 +940,7 @@
           "vi": "",
           "en": ""
         },
-        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1788785321136-images--3-.jfif",
+        "src": "/blog-covers/influencer-measurement.jpg",
         "type": "image",
         "caption": {
           "vi": "",
@@ -1065,7 +1065,7 @@
           "vi": "",
           "en": ""
         },
-        "src": "https://ulagmhvjozqdikllpqfr.supabase.co/storage/v1/object/public/blog-media/1788777421218-kol-1-1753843495528670746960.jpg",
+        "src": "/blog-covers/creator-program.jpg",
         "type": "image",
         "caption": {
           "vi": "",

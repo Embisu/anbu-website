@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { SceneVariant } from "./Scene";
 
 const serviceImages: Record<string, string> = {
@@ -60,7 +63,10 @@ function realCoverForSlug(slug: string) {
   const choose = (images: string[]) => `/blog-covers/${images[stableIndex(slug, images.length)]}`;
   // Exact editorial assignments come first so related keywords never make two cards share a cover.
   const slugCovers: Record<string, string> = {
-  "ban-do-nha-phat-hanh-game-viet-nam": "publishers/vng-cookierun.jpg",
+    "kol-trong-nganh-game-vai-tro-va-cach-xay-dung-chien-luoc-hieu-qua": "creator-influencer.jpg",
+    "game-mobile-promotion-cach-quang-ba-game-mobile-hieu-qua-tai-viet-nam": "real-marketing-game.jpg",
+    "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi": "creative-testing-lab.jpg",
+    "ban-do-nha-phat-hanh-game-viet-nam": "publishers/vng-cookierun.jpg",
     "thi-truong-game-viet-nam-bao-hoa-chien-luoc-tang-truong": "vietnam-game-saturation.png",
     "marketing-game-app-toi-uu-cpi-roas": "real-analytics-game.jpg",
     "influencer-marketing-chon-kol-koc-dung-cach": "creator-influencer.jpg",
@@ -172,8 +178,8 @@ function coverForSlug(slug: string) {
 }
 
 export function editorialImageForPostData(post: { slug?: string; variant: SceneVariant; cover?: string }) {
-  // Always prioritize the explicit cover defined in the post
-  if (post.cover) return post.cover;
+  // Always prioritize the explicit cover defined in the post, but filter out broken remote storage URLs
+  if (post.cover && !post.cover.includes("supabase.co/storage")) return post.cover;
   return post.slug ? realCoverForSlug(post.slug) : editorialImageForPost(post.variant);
 }
 
@@ -190,16 +196,23 @@ export default function EditorialMedia({
   focal?: string;
   priority?: boolean;
 }) {
+  const [imgSrc, setImgSrc] = useState(src);
+
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={src}
+      src={imgSrc}
       alt={alt}
       width={1200}
       height={675}
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : "auto"}
       decoding="async"
+      onError={() => {
+        if (imgSrc !== "/og/og-default.png") {
+          setImgSrc("/og/og-default.png");
+        }
+      }}
       className={`h-full w-full object-cover ${className}`}
       style={{ objectPosition: focal }}
     />
