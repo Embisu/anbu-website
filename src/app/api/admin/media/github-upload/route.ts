@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+
+export const runtime = "edge";
 
 const GITHUB_REPO_OWNER = "Embisu";
 const GITHUB_REPO_NAME = "anbu-website";
@@ -37,19 +37,7 @@ export async function POST(request: Request) {
 
     const cleanBase64 = fileBase64.replace(/^data:image\/[a-z]+;base64,/, "");
 
-    // 1. Try to save to local filesystem if accessible
-    try {
-      const publicMediaDir = path.join(process.cwd(), "public", "blog-media");
-      if (!fs.existsSync(publicMediaDir)) {
-        fs.mkdirSync(publicMediaDir, { recursive: true });
-      }
-      const buffer = Buffer.from(cleanBase64, "base64");
-      fs.writeFileSync(path.join(publicMediaDir, finalFileName), buffer);
-    } catch (fsErr) {
-      console.warn("Could not write to local filesystem (likely serverless/read-only):", fsErr);
-    }
-
-    // 2. Commit directly to GitHub
+    // Commit directly to GitHub
     let token = (userProvidedToken || process.env.GITHUB_TOKEN || "").trim();
     if (!token) {
       try {
@@ -119,43 +107,6 @@ export async function POST(request: Request) {
 export async function GET() {
   try {
     const items: Array<{ src: string; title: string; size: string; tags: string[] }> = [];
-
-    // Scan local public/blog-media and public/blog-covers if available
-    try {
-      const mediaDir = path.join(process.cwd(), "public", "blog-media");
-      if (fs.existsSync(mediaDir)) {
-        const files = fs.readdirSync(mediaDir);
-        for (const file of files) {
-          if (file.endsWith(".gitkeep")) continue;
-          const stat = fs.statSync(path.join(mediaDir, file));
-          items.push({
-            src: `/blog-media/${file}`,
-            title: file.replace(/\.[^/.]+$/, ""),
-            size: `${Math.round(stat.size / 1024)} KB`,
-            tags: ["media", "upload"],
-          });
-        }
-      }
-
-      const coversDir = path.join(process.cwd(), "public", "blog-covers");
-      if (fs.existsSync(coversDir)) {
-        const files = fs.readdirSync(coversDir);
-        for (const file of files) {
-          if (/\.(jpg|jpeg|png|webp)$/i.test(file)) {
-            const stat = fs.statSync(path.join(coversDir, file));
-            items.push({
-              src: `/blog-covers/${file}`,
-              title: file.replace(/\.[^/.]+$/, ""),
-              size: `${Math.round(stat.size / 1024)} KB`,
-              tags: ["cover", "library"],
-            });
-          }
-        }
-      }
-    } catch (fsErr) {
-      console.warn("Filesystem read warning:", fsErr);
-    }
-
     return NextResponse.json({ ok: true, items });
   } catch (err: any) {
     return NextResponse.json({ ok: false, items: [], error: err.message });
