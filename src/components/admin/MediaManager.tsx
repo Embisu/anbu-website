@@ -227,6 +227,21 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
     setTimeout(() => setCopiedSrc(null), 2500);
   };
 
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.currentTarget;
+    const currentSrc = target.getAttribute("src") || target.src || "";
+    if (currentSrc.includes("/blog-media/")) {
+      const parts = currentSrc.split("/blog-media/");
+      const fileName = parts[1]?.split("?")[0];
+      if (fileName) {
+        const fallback = `https://raw.githubusercontent.com/Embisu/anbu-website/main/public/blog-media/${fileName}`;
+        if (target.src !== fallback) {
+          target.src = fallback;
+        }
+      }
+    }
+  };
+
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files || files.length === 0) return;
@@ -577,6 +592,7 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
                       alt={asset.title}
                       className="h-full w-full object-cover"
                       loading="lazy"
+                      onError={handleImageError}
                     />
                     {isSelected && (
                       <div className="absolute right-1 top-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#2271b1] text-white text-[10px] font-bold">
@@ -610,7 +626,12 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
               <div className="space-y-3">
                 <div className="relative aspect-[16/10] overflow-hidden rounded border border-[#ccd0d4] bg-white">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={selectedAsset.src} alt="" className="h-full w-full object-cover" />
+                  <img
+                    src={selectedAsset.src}
+                    alt=""
+                    className="h-full w-full object-cover"
+                    onError={handleImageError}
+                  />
                 </div>
 
                 <div className="text-[11px] text-[#646970] space-y-0.5 border-b border-[#ccd0d4] pb-2">

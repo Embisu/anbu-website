@@ -1169,6 +1169,21 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
     }
   };
 
+  const handleMediaImgError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.currentTarget;
+    const currentSrc = target.getAttribute("src") || target.src || "";
+    if (currentSrc.includes("/blog-media/")) {
+      const parts = currentSrc.split("/blog-media/");
+      const fileName = parts[1]?.split("?")[0];
+      if (fileName) {
+        const fallback = `https://raw.githubusercontent.com/Embisu/anbu-website/main/public/blog-media/${fileName}`;
+        if (target.src !== fallback) {
+          target.src = fallback;
+        }
+      }
+    }
+  };
+
   const removeBlock = (index: number) => {
     if (post.body.length <= 1) return;
     const updated = [...post.body];
@@ -2809,7 +2824,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                       {post.cover && (
                         <div className="overflow-hidden rounded-xl border border-slate-100 shadow-xs -mx-1">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={post.cover} alt="Cover" className="w-full h-44 object-cover" />
+                          <img src={post.cover} alt="Cover" className="w-full h-44 object-cover" onError={handleMediaImgError} />
                         </div>
                       )}
 
@@ -2896,7 +2911,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                             return (
                               <figure key={i} className="my-2.5 overflow-hidden rounded-lg border border-[#eee] bg-[#fafafa]">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src={b.src} alt={b.alt[activeLang]} className="w-full max-h-[260px] object-cover" />
+                                <img src={b.src} alt={b.alt[activeLang]} className="w-full max-h-[260px] object-cover" onError={handleMediaImgError} />
                                 {b.caption && (
                                   <figcaption className="p-1.5 text-center text-[10px] text-[#646970]">
                                     {b.caption[activeLang]}
@@ -2994,7 +3009,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                   {post.cover && (
                     <div className="mb-6 overflow-hidden rounded-xl border border-slate-100 shadow-xs">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={post.cover} alt="Cover" className="w-full max-h-[380px] object-cover" />
+                      <img src={post.cover} alt="Cover" className="w-full max-h-[380px] object-cover" onError={handleMediaImgError} />
                     </div>
                   )}
 
@@ -3080,7 +3095,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                         return (
                           <figure key={i} className="my-4 overflow-hidden rounded border border-[#eee] bg-[#fafafa]">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={b.src} alt={b.alt[activeLang]} className="w-full max-h-[420px] object-cover" />
+                            <img src={b.src} alt={b.alt[activeLang]} className="w-full max-h-[420px] object-cover" onError={handleMediaImgError} />
                             {b.caption && (
                               <figcaption className="p-2 text-center text-xs text-[#646970]">
                                 {b.caption[activeLang]}
@@ -3423,7 +3438,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
                     className="relative aspect-[16/10] overflow-hidden rounded border border-slate-200 bg-[#f0f0f1] cursor-pointer group shadow-xs"
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={post.cover} alt="Cover" className="h-full w-full object-cover transition group-hover:scale-105" />
+                    <img src={post.cover} alt="Cover" className="h-full w-full object-cover transition group-hover:scale-105" onError={handleMediaImgError} />
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold">
                       🔄 Nhấp để đổi ảnh
                     </div>
