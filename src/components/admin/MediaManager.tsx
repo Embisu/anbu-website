@@ -67,6 +67,7 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
   const [uploading, setUploading] = useState(false);
   const [tokenInput, setTokenInput] = useState("");
   const [hasToken, setHasToken] = useState(false);
+  const [serverHasToken, setServerHasToken] = useState(false);
   const [showTokenEdit, setShowTokenEdit] = useState(false);
   const [uploadNotice, setUploadNotice] = useState<{ msg: string; isError?: boolean } | null>(null);
   const [customUrl, setCustomUrl] = useState("");
@@ -102,24 +103,30 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
     fetch(fetchUrl)
       .then((res) => res.json())
       .then((data) => {
-        if (data && data.ok && Array.isArray(data.items)) {
-          const currentDeleted = getDeletedMedia();
-          const items: MediaItem[] = data.items
-            .filter((item: any) => !currentDeleted.includes(item.src))
-            .map((item: any) => ({
-              src: item.src,
-              title: item.title,
-              tags: item.tags || ["media", "uploaded"],
-              size: item.size || "Unknown",
-              dimensions: "Local / CDN",
-            }));
+        if (data && data.ok) {
+          if (data.hasServerToken) {
+            setServerHasToken(true);
+            setHasToken(true);
+          }
+          if (Array.isArray(data.items)) {
+            const currentDeleted = getDeletedMedia();
+            const items: MediaItem[] = data.items
+              .filter((item: any) => !currentDeleted.includes(item.src))
+              .map((item: any) => ({
+                src: item.src,
+                title: item.title,
+                tags: item.tags || ["media", "uploaded"],
+                size: item.size || "Unknown",
+                dimensions: "Local / CDN",
+              }));
 
-          setMediaList((prev) => {
-            const freshFiltered = prev.filter(
-              (p) => !currentDeleted.includes(p.src) && !items.some((ci) => ci.src === p.src)
-            );
-            return [...items, ...freshFiltered];
-          });
+            setMediaList((prev) => {
+              const freshFiltered = prev.filter(
+                (p) => !currentDeleted.includes(p.src) && !items.some((ci) => ci.src === p.src)
+              );
+              return [...items, ...freshFiltered];
+            });
+          }
         }
       })
       .catch(() => {});
@@ -249,7 +256,7 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
     const token =
       typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || undefined : undefined;
 
-    if (!token) {
+    if (!token && !serverHasToken) {
       setUploadNotice({
         msg: "⚠️ Cần có GitHub Token để tải ảnh lên kho lưu trữ. Vui lòng nhập Token ở khung bên dưới!",
         isError: true,
@@ -372,7 +379,19 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
         /* TAB: TẢI LÊN TẬP TIN (WordPress Drag & Drop Upload Zone) */
         <div className="space-y-4">
           {/* GitHub Token Config status */}
-          {hasToken && !showTokenEdit ? (
+          {serverHasToken ? (
+            <div className="rounded border border-emerald-200 bg-emerald-50 p-3.5 text-xs text-emerald-800 flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <span className="text-lg">🟢</span>
+                <div>
+                  <div className="font-bold">Đã kích hoạt kho lưu trữ dùng chung cho toàn bộ thành viên:</div>
+                  <p className="text-[11px] text-emerald-700 mt-0.5">
+                    Tất cả tài khoản thành viên đều có thể tải ảnh lên tự do mà không cần cài đặt Token riêng. Ảnh được lưu trữ vĩnh viễn trên GitHub (Embisu/anbu-website) và phân phối qua Cloudflare CDN.
+                  </p>
+                </div>
+              </div>
+            </div>
+          ) : hasToken && !showTokenEdit ? (
             <div className="rounded border border-emerald-200 bg-emerald-50 p-3 text-xs text-emerald-800 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="text-base">🟢</span>
@@ -390,7 +409,7 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
               </button>
             </div>
           ) : (
-            <div className="rounded border border-blue-200 bg-blue-50/70 p-4 text-xs text-slate-800 space-y-2">
+            <div className="rounded border border-blue-200 bg-blue-50/70 p-4 text-xs text-slate-800 space-y-2.5">
               <div className="font-bold text-[#135e96] flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <span>🔑</span>
@@ -407,7 +426,7 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
                 )}
               </div>
               <p className="text-[11px] text-[#50575e]">
-                Nhập GitHub Personal Access Token (PAT) để lưu ảnh trực tiếp vào kho mã nguồn (miễn phí vĩnh viễn, không giới hạn dung lượng). Cấu hình 1 lần duy nhất:
+                Nhập GitHub Personal Access Token (PAT) để tải ảnh trực tiếp từ máy tính này:
               </p>
               <div className="flex flex-col sm:flex-row gap-2">
                 <input
@@ -425,17 +444,11 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
                   Lưu Token
                 </button>
               </div>
-              <div className="text-[11px] text-[#646970]">
-                📖 Chưa có Token?{" "}
-                <a
-                  href="https://github.com/settings/tokens"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-[#2271b1] underline font-semibold"
-                >
-                  Bấm vào đây để tạo nhanh trên GitHub
-                </a>{" "}
-                (chọn <i>Generate token (classic)</i> $\rightarrow$ tick quyền <b>repo</b> $\rightarrow$ Generate $\rightarrow$ Copy dán vào đây).
+              <div className="rounded-md bg-amber-50 p-2.5 border border-amber-200 text-[11px] text-amber-900 space-y-1">
+                <div className="font-bold">💡 Muốn chia sẻ 1 Token cho toàn bộ thành viên khác không cần cài đặt?</div>
+                <div>
+                  Quản trị viên chỉ cần vào <strong>Cloudflare Pages $\rightarrow$ anbu-website $\rightarrow$ Settings $\rightarrow$ Environment variables</strong>, thêm biến <code className="bg-white px-1 py-0.5 rounded font-mono font-bold">GITHUB_TOKEN</code> với giá trị là Token này. Khi đó <strong>tất cả tài khoản và mọi máy tính khác đều tự động tải được ảnh mà không cần nhập Token nữa!</strong>
+                </div>
               </div>
             </div>
           )}

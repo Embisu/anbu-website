@@ -167,8 +167,8 @@ export async function GET(request: Request) {
       }
     }
 
-    return NextResponse.json({ ok: true, items });
+    return NextResponse.json({ ok: true, items, hasServerToken: Boolean(token) });
   } catch (err: any) {
-    return NextResponse.json({ ok: false, items: [], error: err.message });
+    return NextResponse.json({ ok: false, items: [], hasServerToken: false, error: err.message });
   }
 }
