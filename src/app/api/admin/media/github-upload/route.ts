@@ -50,50 +50,70 @@ export async function POST(request: Request) {
       } catch (e) {}
     }
 
+    if (!token) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error:
+            "Chưa thiết lập GitHub Token. Vui lòng nhập GitHub Personal Access Token (PAT) trong tab Tải lên hoặc Cài đặt hệ thống để lưu trữ ảnh miễn phí vĩnh viễn.",
+          requiresToken: true,
+        },
+        { status: 400 }
+      );
+    }
+
     let githubCommitted = false;
     let commitError = "";
 
-    if (token) {
-      const githubUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/public/blog-media/${finalFileName}`;
-      try {
-        const ghRes = await fetch(githubUrl, {
-          method: "PUT",
-          headers: {
-            Authorization: `Bearer ${token}`,
-            Accept: "application/vnd.github.v3+json",
-            "User-Agent": "ANBU-Admin-Media-Uploader",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            message: `feat(media): upload ${finalFileName} via ANBU Admin`,
-            content: cleanBase64,
-            branch: GITHUB_BRANCH,
-          }),
-        });
+    const githubUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/public/blog-media/${finalFileName}`;
+    try {
+      const ghRes = await fetch(githubUrl, {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github.v3+json",
+          "User-Agent": "ANBU-Admin-Media-Uploader",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: `feat(media): upload ${finalFileName} via ANBU Admin`,
+          content: cleanBase64,
+          branch: GITHUB_BRANCH,
+        }),
+      });
 
-        if (ghRes.ok) {
-          githubCommitted = true;
-        } else {
-          const errData = await ghRes.json().catch(() => ({}));
-          commitError = errData.message || `GitHub error status ${ghRes.status}`;
-          console.warn("GitHub upload error:", commitError);
-        }
-      } catch (err: any) {
-        commitError = err.message || "Failed to call GitHub API";
-        console.warn("GitHub fetch error:", commitError);
+      if (ghRes.ok) {
+        githubCommitted = true;
+      } else {
+        const errData = await ghRes.json().catch(() => ({}));
+        commitError =
+          errData.message || `Mã lỗi GitHub status ${ghRes.status}`;
+        console.warn("GitHub upload error:", commitError);
       }
-    } else {
-      commitError = "Chưa có GitHub Token để đồng bộ lên kho mã nguồn.";
+    } catch (err: any) {
+      commitError = err.message || "Không thể kết nối đến GitHub API";
+      console.warn("GitHub fetch error:", commitError);
+    }
+
+    if (!githubCommitted) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error: `Không thể đẩy ảnh lên GitHub: ${commitError}. Vui lòng kiểm tra lại quyền của Token (cần quyền 'repo').`,
+        },
+        { status: 400 }
+      );
     }
 
     const publicUrl = `/blog-media/${finalFileName}`;
+    const rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/${GITHUB_BRANCH}/public/blog-media/${finalFileName}`;
 
     return NextResponse.json({
       ok: true,
       publicUrl,
+      rawUrl,
       fileName: finalFileName,
-      githubCommitted,
-      commitError: githubCommitted ? undefined : commitError,
+      githubCommitted: true,
     });
   } catch (err: any) {
     console.error("Upload handler exception:", err);
@@ -104,9 +124,49 @@ export async function POST(request: Request) {
   }
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
+    const { searchParams } = new URL(request.url);
+    let token = searchParams.get("token") || process.env.GITHUB_TOKEN || "";
+    if (!token) {
+      try {
+        // @ts-ignore
+        const { getRequestContext } = await import("@cloudflare/next-on-pages");
+        const ctx: any = getRequestContext();
+        if (ctx?.env?.GITHUB_TOKEN) {
+          token = String(ctx.env.GITHUB_TOKEN).trim();
+        }
+      } catch (e) {}
+    }
+
     const items: Array<{ src: string; title: string; size: string; tags: string[] }> = [];
+
+    if (token) {
+      const githubUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/public/blog-media`;
+      const res = await fetch(githubUrl, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github.v3+json",
+          "User-Agent": "ANBU-Admin-Media-List",
+        },
+      });
+      if (res.ok) {
+        const files = await res.json();
+        if (Array.isArray(files)) {
+          for (const f of files) {
+            if (f.type === "file" && !f.name.startsWith(".")) {
+              items.push({
+                src: `/blog-media/${f.name}`,
+                title: f.name.replace(/\.[^/.]+$/, "").replace(/^[0-9]+-/, ""),
+                size: f.size ? `${Math.round(f.size / 1024)} KB` : "CDN",
+                tags: ["uploaded", "blog-media"],
+              });
+            }
+          }
+        }
+      }
+    }
+
     return NextResponse.json({ ok: true, items });
   } catch (err: any) {
     return NextResponse.json({ ok: false, items: [], error: err.message });

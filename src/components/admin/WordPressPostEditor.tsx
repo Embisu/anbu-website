@@ -1120,6 +1120,9 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
       const base64Data = await base64Promise;
 
       const token = typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || undefined : undefined;
+      if (!token) {
+        throw new Error("Chưa cấu hình GitHub Token để lưu trữ ảnh. Vui lòng bấm 'Thư viện Media' để nhập Token (hoặc chọn ảnh từ Thư viện 50+ ảnh có sẵn).");
+      }
 
       const res = await fetch("/api/admin/media/github-upload", {
         method: "POST",

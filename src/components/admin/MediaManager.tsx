@@ -58,13 +58,19 @@ type MediaManagerProps = {
 };
 
 export default function MediaManager({ locale, onSelectImage }: MediaManagerProps) {
-  const [activeTab, setActiveTab] = useState<"library" | "upload">("library");
+  const [activeTab, setActiveTab] = useState<"library" | "upload" | "url">("library");
   const [mediaList, setMediaList] = useState<MediaItem[]>(defaultMediaAssets);
   const [selectedAsset, setSelectedAsset] = useState<MediaItem | null>(defaultMediaAssets[0]);
   const [search, setSearch] = useState("");
   const [selectedTag, setSelectedTag] = useState("all");
   const [copiedSrc, setCopiedSrc] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
+  const [tokenInput, setTokenInput] = useState("");
+  const [hasToken, setHasToken] = useState(false);
+  const [showTokenEdit, setShowTokenEdit] = useState(false);
+  const [uploadNotice, setUploadNotice] = useState<{ msg: string; isError?: boolean } | null>(null);
+  const [customUrl, setCustomUrl] = useState("");
+  const [customTitle, setCustomTitle] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const getDeletedMedia = (): string[] => {
@@ -82,7 +88,18 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
     // Filter defaults
     setMediaList((prev) => prev.filter((item) => !deletedArr.includes(item.src)));
 
-    fetch("/api/admin/media/github-upload")
+    const savedToken =
+      typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || "" : "";
+    if (savedToken) {
+      setHasToken(true);
+      setTokenInput(savedToken);
+    }
+
+    const fetchUrl = savedToken
+      ? `/api/admin/media/github-upload?token=${encodeURIComponent(savedToken)}`
+      : "/api/admin/media/github-upload";
+
+    fetch(fetchUrl)
       .then((res) => res.json())
       .then((data) => {
         if (data && data.ok && Array.isArray(data.items)) {
@@ -92,7 +109,7 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
             .map((item: any) => ({
               src: item.src,
               title: item.title,
-              tags: item.tags || ["media"],
+              tags: item.tags || ["media", "uploaded"],
               size: item.size || "Unknown",
               dimensions: "Local / CDN",
             }));
@@ -107,6 +124,56 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
       })
       .catch(() => {});
   }, []);
+
+  const handleSaveToken = () => {
+    if (!tokenInput.trim()) {
+      localStorage.removeItem("anbu_github_token");
+      setHasToken(false);
+      setUploadNotice({ msg: "Đã xóa GitHub Token!", isError: true });
+      return;
+    }
+    localStorage.setItem("anbu_github_token", tokenInput.trim());
+    setHasToken(true);
+    setShowTokenEdit(false);
+    setUploadNotice({
+      msg: "✅ Đã lưu GitHub Token thành công! Bạn có thể tải ảnh lên ngay bây giờ.",
+    });
+    setTimeout(() => setUploadNotice(null), 5000);
+  };
+
+  const handleInsertByUrl = () => {
+    const trimmed = customUrl.trim();
+    if (!trimmed) {
+      setUploadNotice({ msg: "Vui lòng nhập đường dẫn URL hình ảnh!", isError: true });
+      return;
+    }
+    if (
+      !trimmed.startsWith("http://") &&
+      !trimmed.startsWith("https://") &&
+      !trimmed.startsWith("/")
+    ) {
+      setUploadNotice({
+        msg: "URL hình ảnh không hợp lệ (phải bắt đầu bằng http:// hoặc https://)!",
+        isError: true,
+      });
+      return;
+    }
+    const newItem: MediaItem = {
+      src: trimmed,
+      title: customTitle.trim() || trimmed.split("/").pop()?.split("?")[0] || "Hình ảnh bên ngoài",
+      tags: ["external", "url"],
+      size: "External",
+      dimensions: "Web URL",
+    };
+    setMediaList((prev) => [newItem, ...prev]);
+    setSelectedAsset(newItem);
+    if (onSelectImage) {
+      onSelectImage(newItem.src);
+    }
+    setCustomUrl("");
+    setCustomTitle("");
+    setActiveTab("library");
+  };
 
   const handleDeleteAsset = async (asset: MediaItem) => {
     if (!confirm(`Bạn có chắc chắn muốn xóa tập tin "${asset.title}" khỏi thư viện Media không?`)) {
@@ -164,9 +231,20 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
     const files = e.target.files;
     if (!files || files.length === 0) return;
 
+    const token =
+      typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || undefined : undefined;
+
+    if (!token) {
+      setUploadNotice({
+        msg: "⚠️ Cần có GitHub Token để tải ảnh lên kho lưu trữ. Vui lòng nhập Token ở khung bên dưới!",
+        isError: true,
+      });
+      return;
+    }
+
     setUploading(true);
+    setUploadNotice(null);
     const uploadedItems: MediaItem[] = [];
-    const token = typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || undefined : undefined;
 
     for (const file of Array.from(files)) {
       try {
@@ -199,19 +277,29 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
           };
           uploadedItems.push(newItem);
         } else {
-          console.error("Upload error:", resData.error);
+          setUploadNotice({
+            msg: `❌ Lỗi khi tải ảnh "${file.name}": ${resData.error || "Không thể tải lên"}`,
+            isError: true,
+          });
         }
-      } catch (err) {
-        console.error("File upload error:", err);
+      } catch (err: any) {
+        setUploadNotice({
+          msg: `❌ Lỗi kết nối khi tải ảnh: ${err.message || "Thất bại"}`,
+          isError: true,
+        });
       }
     }
 
     if (uploadedItems.length > 0) {
       setMediaList((prev) => [...uploadedItems, ...prev]);
       setSelectedAsset(uploadedItems[0]);
+      setUploadNotice({
+        msg: `✅ Đã tải lên thành công ${uploadedItems.length} hình ảnh vào kho lưu trữ GitHub!`,
+      });
+      setTimeout(() => setUploadNotice(null), 5000);
+      setActiveTab("library");
     }
     setUploading(false);
-    setActiveTab("library");
   };
 
   return (
@@ -240,34 +328,199 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
         >
           Tải lên tập tin (Upload Files)
         </button>
+        <button
+          type="button"
+          onClick={() => setActiveTab("url")}
+          className={`px-4 py-2 border-b-2 transition ${
+            activeTab === "url"
+              ? "border-[#2271b1] text-[#1d2327] font-bold bg-white"
+              : "border-transparent text-[#646970] hover:text-[#1d2327]"
+          }`}
+        >
+          Chèn từ URL (Insert from URL)
+        </button>
       </div>
+
+      {uploadNotice && (
+        <div
+          className={`rounded border-l-4 p-3 shadow-sm text-xs font-bold ${
+            uploadNotice.isError
+              ? "border-red-500 bg-red-50 text-red-800"
+              : "border-emerald-500 bg-emerald-50 text-emerald-800"
+          }`}
+        >
+          {uploadNotice.msg}
+        </div>
+      )}
 
       {activeTab === "upload" ? (
         /* TAB: TẢI LÊN TẬP TIN (WordPress Drag & Drop Upload Zone) */
-        <div className="rounded border-2 border-dashed border-[#c3c4c7] bg-white p-12 text-center shadow-sm">
-          <input
-            type="file"
-            ref={fileInputRef}
-            onChange={handleFileUpload}
-            multiple
-            accept="image/*"
-            className="hidden"
-          />
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#f0f0f1] text-3xl text-[#646970]">
-            📤
+        <div className="space-y-4">
+          {/* GitHub Token Config status */}
+          {hasToken && !showTokenEdit ? (
+            <div className="rounded border border-emerald-200 bg-emerald-50 p-3 text-xs text-emerald-800 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-base">🟢</span>
+                <div>
+                  <span className="font-bold">Kho lưu trữ GitHub đã sẵn sàng:</span>{" "}
+                  Embisu/anbu-website. Ảnh tải lên sẽ được lưu trữ miễn phí vĩnh viễn, không giới hạn dung lượng và phân phối qua Cloudflare CDN.
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowTokenEdit(true)}
+                className="ml-3 shrink-0 text-[11px] underline font-bold text-emerald-900 hover:text-black"
+              >
+                Thay đổi Token
+              </button>
+            </div>
+          ) : (
+            <div className="rounded border border-blue-200 bg-blue-50/70 p-4 text-xs text-slate-800 space-y-2">
+              <div className="font-bold text-[#135e96] flex items-center justify-between">
+                <div className="flex items-center gap-1.5">
+                  <span>🔑</span>
+                  <span>Cấu hình GitHub Token (Thay thế Supabase Storage đã hết dung lượng)</span>
+                </div>
+                {hasToken && (
+                  <button
+                    type="button"
+                    onClick={() => setShowTokenEdit(false)}
+                    className="text-[11px] font-normal text-slate-500 hover:text-slate-800"
+                  >
+                    ✕ Đóng
+                  </button>
+                )}
+              </div>
+              <p className="text-[11px] text-[#50575e]">
+                Nhập GitHub Personal Access Token (PAT) để lưu ảnh trực tiếp vào kho mã nguồn (miễn phí vĩnh viễn, không giới hạn dung lượng). Cấu hình 1 lần duy nhất:
+              </p>
+              <div className="flex flex-col sm:flex-row gap-2">
+                <input
+                  type="password"
+                  value={tokenInput}
+                  onChange={(e) => setTokenInput(e.target.value)}
+                  placeholder="ghp_xxxxxxxxxxxxxxxxxxxx hoặc github_pat_xxxx"
+                  className="flex-1 rounded border border-[#8c8f94] bg-white px-2.5 py-1.5 font-mono text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+                <button
+                  type="button"
+                  onClick={handleSaveToken}
+                  className="rounded bg-[#2271b1] px-4 py-1.5 font-bold text-white text-xs hover:bg-[#135e96] transition"
+                >
+                  Lưu Token
+                </button>
+              </div>
+              <div className="text-[11px] text-[#646970]">
+                📖 Chưa có Token?{" "}
+                <a
+                  href="https://github.com/settings/tokens"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#2271b1] underline font-semibold"
+                >
+                  Bấm vào đây để tạo nhanh trên GitHub
+                </a>{" "}
+                (chọn <i>Generate token (classic)</i> $\rightarrow$ tick quyền <b>repo</b> $\rightarrow$ Generate $\rightarrow$ Copy dán vào đây).
+              </div>
+            </div>
+          )}
+
+          <div className="rounded border-2 border-dashed border-[#c3c4c7] bg-white p-10 text-center shadow-sm">
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleFileUpload}
+              multiple
+              accept="image/*"
+              className="hidden"
+            />
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#f0f0f1] text-3xl text-[#646970]">
+              {uploading ? "⏳" : "📤"}
+            </div>
+            <h3 className="mt-4 text-base font-bold text-[#1d2327]">
+              {uploading ? "Đang tải ảnh lên kho GitHub CDN..." : "Thả tập tin để tải lên"}
+            </h3>
+            <p className="mt-1 text-xs text-[#646970]">hoặc</p>
+            <button
+              type="button"
+              disabled={uploading}
+              onClick={() => fileInputRef.current?.click()}
+              className="mt-3 rounded border border-[#2271b1] bg-white px-4 py-1.5 text-xs font-bold text-[#2271b1] hover:bg-[#f0f6fc] transition disabled:opacity-50"
+            >
+              {uploading ? "Đang xử lý..." : "Chọn tập tin từ máy tính"}
+            </button>
+            <p className="mt-4 text-[11px] text-[#646970]">
+              Định dạng hỗ trợ: JPG, PNG, WebP, SVG. Tự động tối ưu và phân phối qua Cloudflare CDN.
+            </p>
           </div>
-          <h3 className="mt-4 text-base font-bold text-[#1d2327]">Thả tập tin để tải lên</h3>
-          <p className="mt-1 text-xs text-[#646970]">hoặc</p>
-          <button
-            type="button"
-            onClick={() => fileInputRef.current?.click()}
-            className="mt-3 rounded border border-[#2271b1] bg-white px-4 py-1.5 text-xs font-bold text-[#2271b1] hover:bg-[#f0f6fc] transition"
-          >
-            Chọn tập tin
-          </button>
-          <p className="mt-4 text-[11px] text-[#646970]">
-            Kích thước tập tin tải lên tối đa: 64 MB. Định dạng hỗ trợ: JPG, PNG, WebP, SVG.
-          </p>
+        </div>
+      ) : activeTab === "url" ? (
+        /* TAB: CHÈN QUA LIÊN KẾT URL (Direct Web Image Link) */
+        <div className="rounded border border-[#ccd0d4] bg-white p-6 shadow-sm space-y-4">
+          <div>
+            <h3 className="text-sm font-bold text-[#1d2327]">
+              🔗 Chèn hình ảnh trực tiếp từ liên kết URL
+            </h3>
+            <p className="text-xs text-[#646970] mt-0.5">
+              Dán liên kết ảnh từ bất kỳ đâu trên internet (Imgur, Unsplash, Google Drive, hosting riêng...). Không cần GitHub Token hay tốn dung lượng lưu trữ.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <div>
+              <label className="block text-xs font-bold text-[#50575e] mb-1">
+                Đường dẫn URL hình ảnh (bắt đầu bằng https://):
+              </label>
+              <input
+                type="text"
+                value={customUrl}
+                onChange={(e) => setCustomUrl(e.target.value)}
+                placeholder="https://images.unsplash.com/... hoặc https://i.imgur.com/..."
+                className="w-full rounded border border-[#8c8f94] bg-white p-2 text-xs font-mono text-[#2c3338] outline-none focus:border-[#2271b1]"
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-[#50575e] mb-1">
+                Tiêu đề / Văn bản thay thế (Alt text):
+              </label>
+              <input
+                type="text"
+                value={customTitle}
+                onChange={(e) => setCustomTitle(e.target.value)}
+                placeholder="Mô tả hình ảnh cho người đọc và SEO..."
+                className="w-full rounded border border-[#8c8f94] bg-white p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+              />
+            </div>
+
+            {customUrl.trim() && (
+              <div className="mt-3">
+                <div className="text-[11px] font-bold text-[#50575e] mb-1">Xem trước:</div>
+                <div className="relative aspect-[16/10] max-w-sm overflow-hidden rounded border border-[#ccd0d4] bg-slate-50">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={customUrl.trim()}
+                    alt="Preview"
+                    className="h-full w-full object-cover"
+                    onError={(e) => {
+                      (e.target as HTMLElement).style.display = "none";
+                    }}
+                  />
+                </div>
+              </div>
+            )}
+
+            <div className="pt-2">
+              <button
+                type="button"
+                onClick={handleInsertByUrl}
+                disabled={!customUrl.trim()}
+                className="rounded bg-[#2271b1] px-5 py-2 text-xs font-bold text-white shadow-sm hover:bg-[#135e96] transition disabled:opacity-50"
+              >
+                Sử dụng hình ảnh này
+              </button>
+            </div>
+          </div>
         </div>
       ) : (
         /* TAB: THƯ VIỆN MEDIA & ATTACHMENT DETAILS (WordPress Media Library Grid) */
