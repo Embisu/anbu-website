@@ -115,6 +115,7 @@ export function PostCard({
           src={editorialImageForPostData(post)}
           alt={t(post.title, locale)}
           className="absolute inset-0 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.04]"
+          focal={post.focal}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 via-transparent to-navy-950/10" />
         <span className="absolute left-3.5 top-3.5 sm:left-5 sm:top-5 z-10 rounded-full bg-white/90 px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-navy-700 backdrop-blur-sm">
@@ -151,45 +152,44 @@ export function FeaturedPost({
   label: string;
   readLabel: string;
 }) {
+  const focalPoint = post.focal || (post.cover?.includes("1789897654735") ? "20% 88%" : "center");
+
   return (
     <Link
       href={localePath(locale, `/blog/${post.slug}`)}
-      className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-2xl border border-white/10 bg-navy-950 text-white shadow-[0_24px_70px_-28px_rgba(1,23,70,0.6)] transition-all duration-300 hover:shadow-[0_32px_90px_-20px_rgba(1,23,70,0.85)] sm:min-h-[480px] sm:rounded-[2rem] lg:min-h-[520px]"
+      className="group grid overflow-hidden rounded-2xl border border-white/5 bg-navy-950 text-white shadow-[0_24px_70px_-28px_rgba(1,23,70,0.6)] transition-all duration-300 hover:shadow-[0_30px_80px_-20px_rgba(1,23,70,0.85)] sm:rounded-[2rem] md:grid-cols-2"
     >
-      {/* Background Poster Image */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="relative min-h-72 overflow-hidden bg-navy-900 sm:min-h-80 md:min-h-full">
         <EditorialMedia
           src={editorialImageForPostData(post)}
           alt={t(post.title, locale)}
-          className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-[1.03]"
+          className="absolute inset-0 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.04]"
+          focal={focalPoint}
           priority
         />
-        {/* Gradient Overlay for crystal clear readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/75 to-navy-950/25 sm:from-navy-950 sm:via-navy-950/65 sm:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 via-transparent to-navy-950/10 md:bg-gradient-to-r md:from-transparent md:to-navy-950/20" />
       </div>
-
-      {/* Content overlay */}
-      <div className="relative z-10 max-w-3xl space-y-3 p-6 sm:space-y-4 sm:p-10 lg:p-14">
-        <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
-          <span className="rounded-full bg-orange-500/95 px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.16em] text-white shadow-sm backdrop-blur-md">
+      <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-12">
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          <span className="rounded-full bg-orange-500/90 px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.16em] text-white shadow-sm">
             {label}
           </span>
-          <span className="text-xs font-semibold text-white/80 drop-shadow-sm">
+          <span className="text-xs font-semibold text-white/70">
             {t(post.category, locale)}
             {post.readingTime ? ` • ${post.readingTime} ${locale === "vi" ? "phút đọc" : "min read"}` : ""}
           </span>
         </div>
 
-        <h2 className="font-display text-2xl font-extrabold leading-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)] transition-colors group-hover:text-orange-200 sm:text-3xl lg:text-4xl">
+        <h2 className="mt-3 sm:mt-4 font-display text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight text-white transition-colors group-hover:text-orange-200">
           {t(post.title, locale)}
         </h2>
 
-        <p className="line-clamp-2 max-w-2xl text-sm font-normal leading-relaxed text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)] sm:line-clamp-3 sm:text-base">
+        <p className="mt-3 sm:mt-4 text-sm leading-relaxed text-white/80 sm:text-base line-clamp-4 font-normal">
           {t(post.excerpt, locale)}
         </p>
 
-        <div className="pt-1 sm:pt-2">
-          <span className="inline-flex items-center gap-2 text-sm font-bold text-orange-400 drop-shadow-sm transition-colors group-hover:text-orange-300 sm:text-base">
+        <div className="mt-5 sm:mt-6">
+          <span className="inline-flex items-center gap-2 font-bold text-sm sm:text-base text-orange-400 group-hover:text-orange-300 transition-colors">
             {readLabel}
             <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1.5" />
           </span>

@@ -27,6 +27,7 @@ export type Post = {
   color: string;
   variant: SceneVariant;
   cover?: string;
+  focal?: string;
   sources?: { label: L10n; href: string }[];
   body: Block[];
 };
