@@ -152,16 +152,48 @@ export function FeaturedPost({
   readLabel: string;
 }) {
   return (
-    <Link href={localePath(locale, `/blog/${post.slug}`)} className="group grid overflow-hidden rounded-2xl sm:rounded-[2rem] bg-navy-950 text-white shadow-[0_24px_70px_-28px_rgba(1,23,70,0.6)] md:grid-cols-2">
-      <div className="relative min-h-52 sm:min-h-64 overflow-hidden bg-navy-900">
-        <EditorialMedia src={editorialImageForPostData(post)} alt={t(post.title, locale)} className="absolute inset-0 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.04]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 to-transparent" />
+    <Link
+      href={localePath(locale, `/blog/${post.slug}`)}
+      className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-2xl border border-white/10 bg-navy-950 text-white shadow-[0_24px_70px_-28px_rgba(1,23,70,0.6)] transition-all duration-300 hover:shadow-[0_32px_90px_-20px_rgba(1,23,70,0.85)] sm:min-h-[480px] sm:rounded-[2rem] lg:min-h-[520px]"
+    >
+      {/* Background Poster Image */}
+      <div className="absolute inset-0 overflow-hidden">
+        <EditorialMedia
+          src={editorialImageForPostData(post)}
+          alt={t(post.title, locale)}
+          className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-[1.03]"
+          priority
+        />
+        {/* Gradient Overlay for crystal clear readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/75 to-navy-950/25 sm:from-navy-950 sm:via-navy-950/65 sm:to-transparent" />
       </div>
-      <div className="flex flex-col justify-center p-5 sm:p-8 lg:p-10">
-        <span className="text-xs font-bold uppercase tracking-[0.2em] text-orange-400">{label}</span>
-        <h2 className="mt-3 sm:mt-4 font-display text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight">{t(post.title, locale)}</h2>
-        <p className="mt-3 sm:mt-4 text-sm leading-relaxed text-white/80 sm:text-base line-clamp-4">{t(post.excerpt, locale)}</p>
-        <span className="mt-5 sm:mt-6 inline-flex items-center gap-2 font-semibold text-white group-hover:text-orange-300">{readLabel}<Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+
+      {/* Content overlay */}
+      <div className="relative z-10 max-w-3xl space-y-3 p-6 sm:space-y-4 sm:p-10 lg:p-14">
+        <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+          <span className="rounded-full bg-orange-500/95 px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.16em] text-white shadow-sm backdrop-blur-md">
+            {label}
+          </span>
+          <span className="text-xs font-semibold text-white/80 drop-shadow-sm">
+            {t(post.category, locale)}
+            {post.readingTime ? ` • ${post.readingTime} ${locale === "vi" ? "phút đọc" : "min read"}` : ""}
+          </span>
+        </div>
+
+        <h2 className="font-display text-2xl font-extrabold leading-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)] transition-colors group-hover:text-orange-200 sm:text-3xl lg:text-4xl">
+          {t(post.title, locale)}
+        </h2>
+
+        <p className="line-clamp-2 max-w-2xl text-sm font-normal leading-relaxed text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)] sm:line-clamp-3 sm:text-base">
+          {t(post.excerpt, locale)}
+        </p>
+
+        <div className="pt-1 sm:pt-2">
+          <span className="inline-flex items-center gap-2 text-sm font-bold text-orange-400 drop-shadow-sm transition-colors group-hover:text-orange-300 sm:text-base">
+            {readLabel}
+            <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1.5" />
+          </span>
+        </div>
       </div>
     </Link>
   );
