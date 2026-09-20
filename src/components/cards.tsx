@@ -152,25 +152,25 @@ export function FeaturedPost({
   label: string;
   readLabel: string;
 }) {
-  const focalPoint = post.focal || (post.cover?.includes("1789897654735") ? "20% 88%" : "center");
-
   return (
     <Link
       href={localePath(locale, `/blog/${post.slug}`)}
-      className="group grid overflow-hidden rounded-2xl border border-white/5 bg-navy-950 text-white shadow-[0_24px_70px_-28px_rgba(1,23,70,0.6)] transition-all duration-300 hover:shadow-[0_30px_80px_-20px_rgba(1,23,70,0.85)] sm:rounded-[2rem] md:grid-cols-2"
+      className="group block overflow-hidden rounded-2xl border border-white/10 bg-navy-950 text-white shadow-[0_24px_70px_-28px_rgba(1,23,70,0.6)] transition-all duration-300 hover:shadow-[0_32px_90px_-20px_rgba(1,23,70,0.85)] sm:rounded-[2rem]"
     >
-      <div className="relative min-h-72 overflow-hidden bg-navy-900 sm:min-h-80 md:min-h-full">
+      {/* 16:9 Cover Image centered on top */}
+      <div className="relative aspect-[16/9] w-full overflow-hidden bg-navy-900">
         <EditorialMedia
           src={editorialImageForPostData(post)}
           alt={t(post.title, locale)}
-          className="absolute inset-0 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.04]"
-          focal={focalPoint}
+          className="absolute inset-0 transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-[1.02]"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 via-transparent to-navy-950/10 md:bg-gradient-to-r md:from-transparent md:to-navy-950/20" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
       </div>
-      <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-12">
-        <div className="flex items-center gap-2.5 sm:gap-3">
+
+      {/* Content below */}
+      <div className="p-6 sm:p-8 lg:p-10">
+        <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
           <span className="rounded-full bg-orange-500/90 px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.16em] text-white shadow-sm">
             {label}
           </span>
@@ -184,12 +184,12 @@ export function FeaturedPost({
           {t(post.title, locale)}
         </h2>
 
-        <p className="mt-3 sm:mt-4 text-sm leading-relaxed text-white/80 sm:text-base line-clamp-4 font-normal">
+        <p className="mt-3 sm:mt-4 max-w-4xl text-sm font-normal leading-relaxed text-white/80 sm:text-base line-clamp-3">
           {t(post.excerpt, locale)}
         </p>
 
         <div className="mt-5 sm:mt-6">
-          <span className="inline-flex items-center gap-2 font-bold text-sm sm:text-base text-orange-400 group-hover:text-orange-300 transition-colors">
+          <span className="inline-flex items-center gap-2 text-sm font-bold text-orange-400 transition-colors group-hover:text-orange-300 sm:text-base">
             {readLabel}
             <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1.5" />
           </span>
