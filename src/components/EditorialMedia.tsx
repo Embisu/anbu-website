@@ -178,6 +178,8 @@ export function editorialImageForPostData(post: { slug?: string; variant: SceneV
   return post.slug ? realCoverForSlug(post.slug) : editorialImageForPost(post.variant);
 }
 
+import ResilientImage from "./ResilientImage";
+
 export default function EditorialMedia({
   src,
   alt,
@@ -192,8 +194,7 @@ export default function EditorialMedia({
   priority?: boolean;
 }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
+    <ResilientImage
       src={src}
       alt={alt}
       width={1200}

@@ -17,6 +17,7 @@ import ClientCustomPostViewer from "@/components/ClientCustomPostViewer";
 import PostComments from "@/components/PostComments";
 import { fetchSupabasePostBySlug } from "@/lib/supabase";
 import { renderRichText } from "@/lib/renderRichText";
+import ResilientImage from "@/components/ResilientImage";
 
 function isCorruptedPost(p?: Post | null): boolean {
   if (!p) return false;
@@ -110,8 +111,7 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
       return (
         <figure className="my-6 sm:my-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
           <div className="flex w-full items-center justify-center bg-slate-50/80 p-1 sm:p-3">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <ResilientImage
               src={block.src}
               alt={t(block.alt, locale)}
               className="h-auto max-h-[500px] sm:max-h-[640px] w-full rounded-xl sm:rounded-2xl object-contain md:max-h-[720px]"
