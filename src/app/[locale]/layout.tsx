@@ -108,7 +108,7 @@ export default async function LocaleLayout({
     image: `${siteUrl}/logo/logo.png`,
     email: site.email,
     telephone: site.phone,
-    foundingDate: String(site.foundedYear),
+    foundingDate: site.legalFoundingDate,
     areaServed: ["VN", "TH", "PH", "ID", "MY", "SG"],
     hasMap: site.mapUrl,
     sameAs: [

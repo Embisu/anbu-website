@@ -23,6 +23,8 @@ export const site = {
   mapUrl: "https://www.google.com/search?kgmid=/g/11nv91ww0r&q=C%C3%B4ng+ty+TNHH+Marketing+%26+Truy%E1%BB%81n+th%C3%B4ng+ANBU",
   googleBusinessUrl: "https://www.google.com/search?kgmid=/g/11nv91ww0r&q=C%C3%B4ng+ty+TNHH+Marketing+%26+Truy%E1%BB%81n+th%C3%B4ng+ANBU",
   foundedYear: 2024,
+  // Ngày thành lập pháp nhân theo giấy phép ĐKKD (dùng cho schema.org foundingDate)
+  legalFoundingDate: "2026-04-15",
   // Only real, verified profiles are listed (rendered dynamically).
   social: {
     facebook: "https://www.facebook.com/anbuvn/",
