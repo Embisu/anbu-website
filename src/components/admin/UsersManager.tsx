@@ -355,7 +355,7 @@ export default function UsersManager({ locale }: { locale: string }) {
                 Tùy Chỉnh Hồ Sơ Thành Viên: <span className="text-[#2271b1] font-mono">{selectedUser.username}</span>
               </h3>
               <p className="text-[11px] text-[#646970]">
-                Chỉnh sửa tên hiển thị tác giả, tiểu sử, ảnh đại diện và mật khẩu đăng nhập
+                Chỉnh sửa tên hiển thị tác giả, tiểu sử và ảnh đại diện
               </p>
             </div>
             <span className="rounded bg-blue-50 border border-blue-200 px-2.5 py-1 text-xs font-bold text-blue-800">
@@ -451,16 +451,14 @@ export default function UsersManager({ locale }: { locale: string }) {
               />
             </div>
 
-            {/* Password */}
+            {/* Password — no longer editable here, see notice below */}
             <div>
-              <label className="block font-bold text-[#50575e] mb-1">Mật khẩu đăng nhập mới:</label>
-              <input
-                type="text"
-                value={profilePassword}
-                onChange={(e) => setProfilePassword(e.target.value)}
-                placeholder="Nhập mật khẩu mới nếu muốn thay đổi..."
-                className="w-full rounded border border-[#8c8f94] p-2 font-mono text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
+              <label className="block font-bold text-[#50575e] mb-1">Mật khẩu đăng nhập:</label>
+              <div className="rounded border border-amber-300 bg-amber-50 p-2 text-[11px] leading-relaxed text-amber-900">
+                ⚠️ Không thể đổi ở đây. Mật khẩu đăng nhập thật chỉ được cấu hình qua Secret trên Cloudflare Pages
+                (Settings → Variables and secrets → <code className="font-mono">ADMIN_PASSWORD</code> /{" "}
+                <code className="font-mono">EDITOR_PASSWORD</code> / <code className="font-mono">AUTHOR_PASSWORD</code>).
+              </div>
             </div>
 
             {/* Social Links */}
@@ -554,13 +552,13 @@ export default function UsersManager({ locale }: { locale: string }) {
           </div>
 
           <div>
-            <label className="block font-bold text-[#50575e] mb-1">Mật khẩu khởi tạo (bắt buộc):</label>
+            <label className="block font-bold text-[#50575e] mb-1">Mã tham chiếu nội bộ (bắt buộc, không phải mật khẩu đăng nhập):</label>
             <input
               type="text"
               required
               value={newPassword}
               onChange={(e) => setNewPassword(e.target.value)}
-              placeholder="Tạo mật khẩu đăng nhập..."
+              placeholder="Chỉ để lưu trữ nội bộ, không dùng để đăng nhập..."
               className="w-full rounded border border-[#8c8f94] p-2 font-mono text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
             />
           </div>
