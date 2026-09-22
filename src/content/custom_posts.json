@@ -1,49 +1,5 @@
 [
   {
-    "slug": "smoketestui-anbu-security-check",
-    "title": {
-      "vi": "__smoketest_ui__ ANBU security check",
-      "en": "__smoketest_ui__ ANBU security check"
-    },
-    "excerpt": {
-      "vi": "",
-      "en": ""
-    },
-    "category": {
-      "vi": "Marketing Game",
-      "en": "Game Marketing"
-    },
-    "date": "2026-09-22",
-    "readingTime": 1,
-    "cover": "/blog-covers/performance-ad-campaigns.jpg",
-    "author": "ANBU Team",
-    "color": "from-blue-600 to-indigo-600",
-    "variant": "game",
-    "body": [
-      {
-        "type": "p",
-        "text": {
-          "vi": "Nhập nội dung đoạn mở đầu tại đây...",
-          "en": "Enter intro paragraph here..."
-        }
-      },
-      {
-        "type": "h2",
-        "text": {
-          "vi": "1. Tổng quan chiến lược",
-          "en": "1. Strategic Overview"
-        }
-      },
-      {
-        "type": "p",
-        "text": {
-          "vi": "Nội dung phân tích chi tiết cho phần 1...",
-          "en": "Detailed analysis for section 1..."
-        }
-      }
-    ]
-  },
-  {
     "slug": "nghien-cuu-xa-hoi-hoc-co-y-nghia-gi-trong-marketing-game",
     "title": {
       "vi": "Nghiên cứu xã hội học có ý nghĩa gì trong marketing game?",
