@@ -4,10 +4,11 @@ compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
-# Environment variables are set in the Cloudflare dashboard
-# (Settings → Environment variables) or via `wrangler pages secret put`.
-# Needed:
-#   NEXT_PUBLIC_SITE_URL   e.g. https://anbu.vn
-#   RESEND_API_KEY         (optional) to email contact-form leads
-#   CONTACT_TO_EMAIL       e.g. hello@anbu.vn
-#   CONTACT_FROM_EMAIL     e.g. website@anbu.vn  (must be a verified Resend domain)
+# Secrets (RESEND_API_KEY, GITHUB_TOKEN, NEXT_PUBLIC_SUPABASE_*, etc.) are set in the
+# Cloudflare dashboard (Settings → Variables and secrets) or via `wrangler pages secret put`.
+# Plain/public build variables live here in [vars] since the dashboard only accepts secrets
+# once a project has a wrangler.toml.
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://anbu.asia"
+# GA4 Measurement ID (Google Analytics → Admin → Data Streams)
+NEXT_PUBLIC_GA_ID = "G-QESMXR3DVS"
