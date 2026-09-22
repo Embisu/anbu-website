@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import type { Comment } from "@/lib/supabase";
+import { adminFetch } from "@/lib/adminFetch";
 
 export default function CommentsManager({ locale = "vi" }: { locale: string }) {
   const [comments, setComments] = useState<Comment[]>([]);
@@ -32,7 +33,7 @@ export default function CommentsManager({ locale = "vi" }: { locale: string }) {
   const handleUpdateStatus = async (id: string | number, status: "approved" | "pending" | "spam") => {
     setActionLoading(id);
     try {
-      const res = await fetch("/api/comments", {
+      const res = await adminFetch("/api/comments", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, status }),
@@ -56,7 +57,7 @@ export default function CommentsManager({ locale = "vi" }: { locale: string }) {
     }
     setActionLoading(id);
     try {
-      const res = await fetch(`/api/comments?id=${id}`, { method: "DELETE" });
+      const res = await adminFetch(`/api/comments?id=${id}`, { method: "DELETE" });
       const data = await res.json();
       if (data.ok) {
         setComments((prev) => prev.filter((c) => String(c.id) !== String(id)));

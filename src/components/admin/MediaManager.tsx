@@ -3,6 +3,7 @@
 import React, { useState, useRef } from "react";
 import Icon from "@/components/Icon";
 import { supabase } from "@/lib/supabase";
+import { adminFetch } from "@/lib/adminFetch";
 
 // List of all verified images available in public/blog-covers/
 export const defaultMediaAssets = [
@@ -278,7 +279,7 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
         });
         const base64Data = await base64Promise;
 
-        const res = await fetch("/api/admin/media/github-upload", {
+        const res = await adminFetch("/api/admin/media/github-upload", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

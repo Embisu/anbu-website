@@ -499,7 +499,13 @@ export default function UsersManager({ locale }: { locale: string }) {
         <form onSubmit={handleCreateUser} className="rounded border border-[#ccd0d4] bg-white p-6 shadow-sm space-y-4 text-xs text-[#2c3338] max-w-2xl">
           <div className="border-b border-[#ccd0d4] pb-3">
             <h3 className="text-base font-bold text-[#1d2327]">Thêm Thành Viên Mới Vào Đội Ngũ ANBU</h3>
-            <p className="text-[11px] text-[#646970]">Tạo tài khoản và cấp quyền truy cập quản trị cho nhân sự hoặc cộng tác viên</p>
+            <p className="text-[11px] text-[#646970]">Tạo hồ sơ hiển thị (tên tác giả, avatar, tiểu sử) cho nhân sự hoặc cộng tác viên</p>
+          </div>
+
+          <div className="rounded border border-amber-300 bg-amber-50 p-3 text-[11px] leading-relaxed text-amber-900">
+            ⚠️ Vì lý do bảo mật, thành viên tạo ở đây <strong>chỉ hiển thị hồ sơ tác giả</strong> (byline bài viết) và
+            <strong> không tự có quyền đăng nhập thật</strong>. Mật khẩu đăng nhập chỉ được cấp qua 3 tài khoản hệ thống
+            (admin / editor / author) cấu hình bằng Secret trên Cloudflare Pages — liên hệ quản trị hệ thống nếu cần thêm người đăng nhập.
           </div>
 
           <div>

@@ -5,6 +5,7 @@ import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
 import { calculatePostSeoScore } from "@/lib/seo-score";
 import { deleteSupabasePost } from "@/lib/supabase";
+import { adminFetch } from "@/lib/adminFetch";
 
 type WordPressPostListProps = {
   posts: Post[];
@@ -129,7 +130,7 @@ export default function WordPressPostList({
     // Purge from live store & Supabase so it leaves public site immediately
     purgeSlugStorage(slug);
     deleteSupabasePost(slug).catch(console.error);
-    fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
+    adminFetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
 
     if (onDeletePost) {
       onDeletePost(slug);
@@ -158,7 +159,7 @@ export default function WordPressPostList({
     } catch (e) {}
 
     // Re-upsert to Supabase
-    fetch("/api/admin/posts", {
+    adminFetch("/api/admin/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ post: target }),
@@ -186,7 +187,7 @@ export default function WordPressPostList({
 
     // Sync deletion to Supabase and API
     await deleteSupabasePost(slug).catch(console.error);
-    await fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
+    await adminFetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
 
     if (onDeletePost) {
       onDeletePost(slug);
@@ -290,7 +291,7 @@ export default function WordPressPostList({
         }
       }
 
-      fetch("/api/admin/posts", {
+      adminFetch("/api/admin/posts", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ slugs: slugsToDelete }),

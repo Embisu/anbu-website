@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { Post } from "@/content/posts";
+import { requireAdminSession } from "@/lib/admin-auth";
 
 export const runtime = "edge";
 
@@ -34,6 +35,9 @@ function isCorruptedPost(p: Post): boolean {
 }
 
 export async function POST(request: Request) {
+  const auth = await requireAdminSession(request);
+  if (!auth.ok) return auth.response;
+
   try {
     const body = await request.json();
     const { post, posts: bulkPosts, slugToDelete, token: userProvidedToken } = body as {

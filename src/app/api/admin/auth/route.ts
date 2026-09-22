@@ -1,72 +1,60 @@
 import { NextResponse } from "next/server";
+import { createSessionToken } from "@/lib/admin-auth";
 
 export const runtime = "edge";
 
-// Default system accounts (can be extended via env or user management)
-const DEFAULT_USERS = [
-  {
-    username: "admin",
-    name: "ANBU Master Admin",
-    role: "administrator",
-    password: process.env.ADMIN_PASSWORD || "anbu@2026",
-  },
-  {
-    username: "editor",
-    name: "Ban Biên Tập ANBU",
-    role: "editor",
-    password: "editor@anbu2026",
-  },
-  {
-    username: "author",
-    name: "Tác giả Game Marketing",
-    role: "author",
-    password: "author@anbu2026",
-  },
-];
+// Passwords come ONLY from Cloudflare Pages secrets (Settings → Variables and
+// secrets). No hardcoded fallback: if a secret isn't set, that account simply
+// cannot log in. Never trust client-supplied credentials (e.g. a `customUsers`
+// list from the request body) for authentication — the old implementation did
+// that and let anyone log in as administrator by just inventing a username/
+// password pair in the POST body.
+const SYSTEM_ACCOUNTS = [
+  { username: "admin", name: "ANBU Master Admin", role: "administrator", passwordEnv: "ADMIN_PASSWORD" },
+  { username: "editor", name: "Ban Biên Tập ANBU", role: "editor", passwordEnv: "EDITOR_PASSWORD" },
+  { username: "author", name: "Tác giả Game Marketing", role: "author", passwordEnv: "AUTHOR_PASSWORD" },
+] as const;
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { username, password, customUsers } = body as {
-      username?: string;
-      password?: string;
-      customUsers?: Array<{ username: string; password?: string; name: string; role: string }>;
-    };
+    const { username, password } = body as { username?: string; password?: string };
 
-    if (!password) {
+    if (!password || !password.trim()) {
       return NextResponse.json({ ok: false, error: "Vui lòng nhập mật khẩu" }, { status: 400 });
     }
 
-    const allUsers = [...DEFAULT_USERS, ...(Array.isArray(customUsers) ? customUsers : [])];
+    const submittedPassword = password.trim();
+    const submittedUsername = username?.toLowerCase().trim();
 
-    // Check if matching username & password, or master admin password
-    const userMatch = allUsers.find(
-      (u) =>
-        (username ? u.username.toLowerCase() === username.toLowerCase().trim() : true) &&
-        u.password === password.trim()
-    );
+    const match = SYSTEM_ACCOUNTS.find((account) => {
+      const configuredPassword = process.env[account.passwordEnv];
+      if (!configuredPassword) return false; // account disabled until its secret is set
+      if (submittedUsername && submittedUsername !== account.username) return false;
+      return configuredPassword === submittedPassword;
+    });
 
-    // Fallback: master admin password works for username 'admin' or blank username
-    if (userMatch || password.trim() === (process.env.ADMIN_PASSWORD || "anbu@2026")) {
-      const activeUser = userMatch || DEFAULT_USERS[0];
-      const token = Buffer.from(`anbu-session-${activeUser.username}-${Date.now()}`).toString("base64");
-
-      return NextResponse.json({
-        ok: true,
-        token,
-        user: {
-          username: activeUser.username,
-          name: activeUser.name,
-          role: activeUser.role,
-        },
-      });
+    if (!match) {
+      return NextResponse.json(
+        { ok: false, error: "Tên đăng nhập hoặc mật khẩu không chính xác!" },
+        { status: 401 }
+      );
     }
 
-    return NextResponse.json(
-      { ok: false, error: "Tên đăng nhập hoặc mật khẩu không chính xác!" },
-      { status: 401 }
-    );
-  } catch {
+    const token = await createSessionToken({ username: match.username, role: match.role });
+
+    return NextResponse.json({
+      ok: true,
+      token,
+      user: { username: match.username, name: match.name, role: match.role },
+    });
+  } catch (err: any) {
+    if (err?.message === "ADMIN_SESSION_SECRET is not configured") {
+      return NextResponse.json(
+        { ok: false, error: "Server chưa cấu hình ADMIN_SESSION_SECRET. Vui lòng liên hệ quản trị hệ thống." },
+        { status: 500 }
+      );
+    }
     return NextResponse.json({ ok: false, error: "Lỗi kết nối máy chủ" }, { status: 400 });
   }
 }

@@ -16,6 +16,7 @@ import RankMathSiteAudit from "@/components/admin/RankMathSiteAudit";
 import SiteSettingsManager from "@/components/admin/SiteSettingsManager";
 import { calculatePostSeoScore } from "@/lib/seo-score";
 import { deleteSupabasePost } from "@/lib/supabase";
+import { adminFetch } from "@/lib/adminFetch";
 
 export default function AdminDashboardPage({ params }: { params: { locale: string } }) {
   const locale = params.locale || "vi";
@@ -163,7 +164,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
     }
 
     // 2. Persist to API
-    fetch("/api/admin/posts", {
+    adminFetch("/api/admin/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ post: savedPost }),
@@ -177,7 +178,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
       loading: true,
     });
 
-    fetch("/api/admin/posts/github-publish", {
+    adminFetch("/api/admin/posts/github-publish", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ post: savedPost, token: githubToken || undefined }),
@@ -246,7 +247,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
       console.error(e);
     }
     try {
-      await fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" });
+      await adminFetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" });
       await deleteSupabasePost(slug);
     } catch (err) {
       console.error("Delete post error:", err);

@@ -7,6 +7,7 @@ import {
   deleteSupabasePost,
 } from "@/lib/supabase";
 import { submitToIndexNow } from "@/lib/indexnow";
+import { requireAdminSession } from "@/lib/admin-auth";
 
 export const runtime = "edge";
 
@@ -57,6 +58,9 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await requireAdminSession(request);
+  if (!auth.ok) return auth.response;
+
   try {
     const body = await request.json();
     const { post, posts: bulkPosts } = body as { post?: Post; posts?: Post[] };
@@ -103,6 +107,9 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const auth = await requireAdminSession(request);
+  if (!auth.ok) return auth.response;
+
   try {
     const { searchParams } = new URL(request.url);
     const slug = searchParams.get("slug");

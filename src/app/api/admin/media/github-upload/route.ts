@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { requireAdminSession } from "@/lib/admin-auth";
 
 export const runtime = "edge";
 
@@ -7,6 +8,9 @@ const GITHUB_REPO_NAME = "anbu-website";
 const GITHUB_BRANCH = "main";
 
 export async function POST(request: Request) {
+  const auth = await requireAdminSession(request);
+  if (!auth.ok) return auth.response;
+
   try {
     const body = await request.json();
     const { fileName, fileBase64, token: userProvidedToken } = body as {

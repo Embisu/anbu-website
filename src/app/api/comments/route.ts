@@ -6,6 +6,7 @@ import {
   deleteComment,
   type Comment,
 } from "@/lib/supabase";
+import { requireAdminSession } from "@/lib/admin-auth";
 
 export const runtime = "edge";
 
@@ -82,6 +83,9 @@ export async function POST(request: Request) {
 }
 
 export async function PATCH(request: Request) {
+  const auth = await requireAdminSession(request);
+  if (!auth.ok) return auth.response;
+
   try {
     const body = await request.json();
     const { id, status } = body;
@@ -103,6 +107,9 @@ export async function PATCH(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const auth = await requireAdminSession(request);
+  if (!auth.ok) return auth.response;
+
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get("id");

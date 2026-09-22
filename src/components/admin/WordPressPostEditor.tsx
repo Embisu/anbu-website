@@ -8,6 +8,7 @@ import RankMathSEO from "@/components/admin/RankMathSEO";
 import { supabase } from "@/lib/supabase";
 import { renderRichText } from "@/lib/renderRichText";
 import { translateWithGlossary, generateEnglishSlug } from "@/lib/seoGlossary";
+import { adminFetch } from "@/lib/adminFetch";
 
 type WordPressPostEditorProps = {
   initialPost?: Post | null;
@@ -1121,7 +1122,7 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
 
       const token = typeof window !== "undefined" ? localStorage.getItem("anbu_github_token") || undefined : undefined;
 
-      const res = await fetch("/api/admin/media/github-upload", {
+      const res = await adminFetch("/api/admin/media/github-upload", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
