@@ -72,8 +72,10 @@ export async function POST(request: Request) {
 
     // 1. Fetch current custom_posts.json from GitHub
     const getFileUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${GITHUB_FILE_PATH}?ref=${GITHUB_BRANCH}`;
+    const putFileUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${GITHUB_FILE_PATH}`;
     
     const getRes = await fetch(getFileUrl, {
+      cache: "no-store",
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/vnd.github.v3+json",
@@ -146,7 +148,7 @@ export async function POST(request: Request) {
       putBody.sha = fileSha;
     }
 
-    const putRes = await fetch(getFileUrl, {
+    let putRes = await fetch(putFileUrl, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -156,6 +158,34 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify(putBody),
     });
+
+    // Handle 409 Conflict (e.g. SHA changed due to concurrent media upload) by retrying once with fresh SHA
+    if (putRes.status === 409) {
+      const retryGet = await fetch(getFileUrl, {
+        cache: "no-store",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github.v3+json",
+          "User-Agent": "ANBU-Admin-Publisher",
+        },
+      });
+      if (retryGet.ok) {
+        const retryData = await retryGet.json();
+        if (retryData.sha) {
+          putBody.sha = retryData.sha;
+          putRes = await fetch(putFileUrl, {
+            method: "PUT",
+            headers: {
+              Authorization: `Bearer ${token}`,
+              Accept: "application/vnd.github.v3+json",
+              "User-Agent": "ANBU-Admin-Publisher",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(putBody),
+          });
+        }
+      }
+    }
 
     if (!putRes.ok) {
       const errData = await putRes.json().catch(() => ({}));

@@ -468,6 +468,7 @@ export default async function BlogPostPage({
           <EditorialMedia
             src={editorialImageForPostData(post)}
             alt={t(post.title, locale)}
+            focal={post.focal}
             className="pointer-events-none absolute inset-0 opacity-45"
             priority
           />

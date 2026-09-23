@@ -36,6 +36,72 @@ export default function WordPressPostList({
   const [quickCategory, setQuickCategory] = useState("");
   const [quickDate, setQuickDate] = useState("");
   const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
+  const [syncState, setSyncState] = useState<{
+    loading: boolean;
+    slug?: string;
+    success?: boolean;
+    message?: string;
+    commitUrl?: string;
+  }>({ loading: false });
+
+  const handleSyncToGithub = async (targetPost?: Post) => {
+    const token = localStorage.getItem("anbu_github_token") || "";
+    setSyncState({
+      loading: true,
+      slug: targetPost?.slug,
+      message: targetPost
+        ? `Đang đẩy bài "${targetPost.title.vi || targetPost.title.en}" lên GitHub...`
+        : "Đang đồng bộ tất cả bài viết lên GitHub...",
+    });
+
+    try {
+      const payload: any = { token: token || undefined };
+      if (targetPost) {
+        payload.post = targetPost;
+      } else {
+        let customPosts: Post[] = [];
+        try {
+          const raw = localStorage.getItem("anbu_custom_posts");
+          if (raw) customPosts = JSON.parse(raw);
+        } catch (e) {}
+        if (customPosts.length === 0) {
+          customPosts = postList;
+        }
+        payload.posts = customPosts;
+      }
+
+      const res = await adminFetch("/api/admin/posts/github-publish", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      if (data.ok) {
+        setSyncState({
+          loading: false,
+          slug: targetPost?.slug,
+          success: true,
+          message: data.message || "Đã đẩy lên GitHub thành công! Cloudflare Pages đang build và website sẽ cập nhật sau ~1 phút.",
+          commitUrl: data.commitUrl,
+        });
+      } else {
+        setSyncState({
+          loading: false,
+          slug: targetPost?.slug,
+          success: false,
+          message: data.error || "Lỗi khi đẩy lên GitHub.",
+        });
+      }
+    } catch (err: any) {
+      setSyncState({
+        loading: false,
+        slug: targetPost?.slug,
+        success: false,
+        message: err.message || "Lỗi kết nối máy chủ.",
+      });
+    }
+  };
 
   const purgeSlugStorage = (slug: string) => {
     try {
@@ -303,7 +369,7 @@ export default function WordPressPostList({
     <div className="space-y-4">
       {/* 1. Header & Add New Action */}
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           <h1 className="text-2xl font-normal text-[#1d2327]">Bài viết</h1>
           <button
             type="button"
@@ -311,6 +377,24 @@ export default function WordPressPostList({
             className="rounded border border-[#2271b1] bg-white px-2.5 py-1 text-xs font-bold text-[#2271b1] shadow-sm hover:bg-blue-50"
           >
             Viết bài mới
+          </button>
+          <button
+            type="button"
+            disabled={syncState.loading}
+            onClick={() => handleSyncToGithub()}
+            className="rounded border border-[#00a32a] bg-[#00a32a] px-3 py-1 text-xs font-bold text-white shadow-sm hover:bg-[#008a20] flex items-center gap-1.5 transition disabled:opacity-50"
+            title="Đẩy tất cả bài viết tự tạo lên GitHub repository để cập nhật website chính thức"
+          >
+            {syncState.loading && !syncState.slug ? (
+              <>
+                <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                Đang đồng bộ...
+              </>
+            ) : (
+              <>
+                🚀 Đồng bộ lên Website (GitHub)
+              </>
+            )}
           </button>
         </div>
 
@@ -331,6 +415,43 @@ export default function WordPressPostList({
           </button>
         </div>
       </div>
+
+      {/* Sync Status Banner */}
+      {syncState.message && (
+        <div
+          className={`p-3 rounded-lg border text-xs flex items-center justify-between gap-3 ${
+            syncState.success
+              ? "bg-emerald-50 border-emerald-300 text-emerald-900"
+              : syncState.loading
+              ? "bg-blue-50 border-blue-300 text-blue-900"
+              : "bg-red-50 border-red-300 text-red-900"
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            <span>{syncState.loading ? "⏳" : syncState.success ? "✅" : "⚠️"}</span>
+            <span>{syncState.message}</span>
+            {syncState.commitUrl && (
+              <a
+                href={syncState.commitUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold underline text-emerald-700 hover:text-emerald-900 ml-1"
+              >
+                Xem commit trên GitHub ↗
+              </a>
+            )}
+          </div>
+          {!syncState.loading && (
+            <button
+              type="button"
+              onClick={() => setSyncState({ loading: false })}
+              className="text-xs font-bold opacity-60 hover:opacity-100"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+      )}
 
       {/* 2. Classic Filter Tabs (All, Published, Drafts, Trash) */}
       <div className="flex items-center gap-2 border-b border-[#c3c4c7] pb-1 text-xs text-[#646970]">
@@ -520,6 +641,21 @@ export default function WordPressPostList({
                           >
                             Xem bài viết ↗
                           </a>
+                          <span className="text-[#a7aaad]">|</span>
+                          <button
+                            type="button"
+                            disabled={syncState.loading}
+                            onClick={() => handleSyncToGithub(post)}
+                            className="hover:underline font-bold text-[#0073aa] flex items-center gap-1 disabled:opacity-50"
+                            title="Đẩy trực tiếp bài viết này lên GitHub để cập nhật website chính thức"
+                          >
+                            {syncState.loading && syncState.slug === post.slug ? (
+                              <span className="inline-block h-2.5 w-2.5 animate-spin rounded-full border border-[#0073aa] border-t-transparent" />
+                            ) : (
+                              "🚀"
+                            )}
+                            Đẩy lên Website
+                          </button>
                           <span className="text-[#a7aaad]">|</span>
                           <button
                             type="button"

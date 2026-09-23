@@ -26,24 +26,35 @@ export default function ResilientImage({
   decoding = "async",
 }: ResilientImageProps) {
   const [currentSrc, setCurrentSrc] = useState(src);
-  const [hasError, setHasError] = useState(false);
+  const [fallbackStep, setFallbackStep] = useState(0);
 
   useEffect(() => {
     setCurrentSrc(src);
-    setHasError(false);
+    setFallbackStep(0);
   }, [src]);
 
   const handleError = () => {
-    if (!hasError && currentSrc.includes("/blog-media/")) {
+    // If it's a blog-media file, step through CDNs
+    if (currentSrc.includes("/blog-media/")) {
       const parts = currentSrc.split("/blog-media/");
       const fileName = parts[1]?.split("?")[0];
       if (fileName) {
-        setHasError(true);
-        // Fallback directly to GitHub Raw CDN (available 0.1s after commit)
-        setCurrentSrc(
-          `https://raw.githubusercontent.com/Embisu/anbu-website/main/public/blog-media/${fileName}`
-        );
-        return;
+        if (fallbackStep === 0) {
+          setFallbackStep(1);
+          // Tier 1: Direct GitHub Raw CDN
+          setCurrentSrc(
+            `https://raw.githubusercontent.com/Embisu/anbu-website/main/public/blog-media/${fileName}`
+          );
+          return;
+        }
+        if (fallbackStep === 1) {
+          setFallbackStep(2);
+          // Tier 2: jsDelivr GitHub CDN
+          setCurrentSrc(
+            `https://cdn.jsdelivr.net/gh/Embisu/anbu-website@main/public/blog-media/${fileName}`
+          );
+          return;
+        }
       }
     }
 

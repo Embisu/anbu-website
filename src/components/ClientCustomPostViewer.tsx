@@ -12,6 +12,7 @@ import Icon from "./Icon";
 import CTASection from "./CTASection";
 import EditorialMedia, { editorialImageForPostData } from "./EditorialMedia";
 import { fetchSupabasePostBySlug } from "@/lib/supabase";
+import ResilientImage from "./ResilientImage";
 import JsonLd from "./JsonLd";
 import { siteUrl, breadcrumbLd, articleLd } from "@/lib/seo";
 import PostComments from "./PostComments";
@@ -188,6 +189,7 @@ export default function ClientCustomPostViewer({
         <EditorialMedia
           src={editorialImageForPostData(post)}
           alt={t(post.title, locale)}
+          focal={post.focal}
           className="pointer-events-none absolute inset-0 opacity-45"
           priority
         />
@@ -304,8 +306,7 @@ export default function ClientCustomPostViewer({
                   return (
                     <figure key={i} className="my-6 sm:my-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
                       <div className="flex w-full items-center justify-center bg-slate-50/80 p-1 sm:p-3">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                        <ResilientImage
                           src={block.src}
                           alt={t(block.alt, locale)}
                           className="h-auto max-h-[500px] sm:max-h-[640px] w-full rounded-xl sm:rounded-2xl object-contain md:max-h-[720px]"

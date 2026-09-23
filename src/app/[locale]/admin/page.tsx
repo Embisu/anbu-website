@@ -350,13 +350,25 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
                   Xem bài viết ↗
                 </a>
                 {!publishNotice.githubSynced && !publishNotice.loading && (
-                  <button
-                    type="button"
-                    onClick={() => setActiveTab("settings")}
-                    className="rounded border border-[#8c8f94] bg-white px-3 py-1.5 text-xs font-bold text-[#2c3338] hover:bg-[#f0f0f1]"
-                  >
-                    Cài đặt GitHub Token
-                  </button>
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const postToRetry = postList.find((p) => p.slug === publishNotice.slug);
+                        if (postToRetry) handleSavePost(postToRetry);
+                      }}
+                      className="rounded bg-[#00a32a] px-3.5 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-[#008a20] transition inline-flex items-center gap-1"
+                    >
+                      🚀 Thử đẩy lại lên GitHub
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setActiveTab("settings")}
+                      className="rounded border border-[#8c8f94] bg-white px-3 py-1.5 text-xs font-bold text-[#2c3338] hover:bg-[#f0f0f1]"
+                    >
+                      Cài đặt GitHub Token
+                    </button>
+                  </>
                 )}
                 <button
                   type="button"
