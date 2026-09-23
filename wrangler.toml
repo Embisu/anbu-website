@@ -12,3 +12,10 @@ pages_build_output_dir = ".vercel/output/static"
 NEXT_PUBLIC_SITE_URL = "https://anbu.asia"
 # GA4 Measurement ID (Google Analytics → Admin → Data Streams)
 NEXT_PUBLIC_GA_ID = "G-QESMXR3DVS"
+
+# Admin team members (real login accounts beyond the 3 system roles).
+# Free-tier Cloudflare D1 — no Supabase usage, no extra cost.
+[[d1_databases]]
+binding = "ADMIN_DB"
+database_name = "anbu-admin-users"
+database_id = "16c5d627-fe59-441f-a2a8-ea862444eb4f"

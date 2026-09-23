@@ -1,28 +1,34 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { adminFetch } from "@/lib/adminFetch";
+
+export type AdminRole = "administrator" | "editor" | "author" | "contributor";
 
 export type AdminUser = {
   id: string;
   username: string;
-  name: string;
   displayName: string;
   jobTitle?: string;
   bio?: string;
   avatar?: string;
-  email: string;
-  socials?: { facebook?: string; linkedin?: string; telegram?: string };
-  role: "administrator" | "editor" | "author" | "contributor";
-  postsCount: number;
-  password?: string;
+  email?: string;
+  socials?: { facebook?: string; telegram?: string };
+  role: AdminRole;
+  postsCount?: number;
   createdAt: string;
+  /** "system" = one of the 3 break-glass accounts (Cloudflare Secret password, not editable here).
+   *  "d1" = a real team member stored in Cloudflare D1 — fully editable, real login. */
+  source: "system" | "d1";
 };
 
-const defaultUsers: AdminUser[] = [
+// The 3 break-glass system accounts always exist; their passwords live in
+// Cloudflare Pages Secrets (ADMIN_PASSWORD/EDITOR_PASSWORD/AUTHOR_PASSWORD),
+// never in this UI or any database.
+const SYSTEM_USERS: AdminUser[] = [
   {
-    id: "user-1",
+    id: "system-admin",
     username: "admin",
-    name: "ANBU Master Admin",
     displayName: "ANBU Team (Chuyên gia Game Marketing)",
     jobTitle: "Head of Marketing & Operations",
     bio: "Chuyên gia hoạch định chiến lược Go-To-Market, User Acquisition và tối ưu hóa LiveOps cho các tựa game mobile tại Việt Nam và Đông Nam Á.",
@@ -30,14 +36,13 @@ const defaultUsers: AdminUser[] = [
     email: "contact@anbu.asia",
     role: "administrator",
     postsCount: 42,
-    password: "anbu@2026",
     socials: { facebook: "https://facebook.com/anbu.asia", telegram: "https://t.me/anbu_asia" },
     createdAt: "2026-01-01",
+    source: "system",
   },
   {
-    id: "user-2",
+    id: "system-editor",
     username: "editor",
-    name: "Ban Biên Tập ANBU",
     displayName: "Ban Biên Tập ANBU Studio",
     jobTitle: "Senior Game Editorial Lead",
     bio: "Phụ trách kiểm duyệt chất lượng nội dung phân tích chuyên sâu, trích dẫn số liệu thị trường và chuẩn hóa SEO E-E-A-T.",
@@ -45,14 +50,13 @@ const defaultUsers: AdminUser[] = [
     email: "editorial@anbu.asia",
     role: "editor",
     postsCount: 14,
-    password: "editor@anbu2026",
     socials: { facebook: "https://facebook.com/anbu.asia" },
     createdAt: "2026-03-15",
+    source: "system",
   },
   {
-    id: "user-3",
+    id: "system-author",
     username: "author",
-    name: "Tác giả Game Marketing",
     displayName: "ANBU UA & LiveOps Specialist",
     jobTitle: "User Acquisition Specialist",
     bio: "Tập trung phân tích CPI/ROAS, chiến lược A/B testing sáng tạo trên TikTok/Meta Ads và xây dựng cộng đồng Discord cho game.",
@@ -60,16 +64,38 @@ const defaultUsers: AdminUser[] = [
     email: "writer@anbu.asia",
     role: "author",
     postsCount: 6,
-    password: "author@anbu2026",
     createdAt: "2026-05-20",
+    source: "system",
   },
 ];
 
+function mapD1User(row: any): AdminUser {
+  return {
+    id: row.id,
+    username: row.username,
+    displayName: row.display_name,
+    jobTitle: row.job_title || undefined,
+    bio: row.bio || undefined,
+    avatar: row.avatar || undefined,
+    email: row.email || undefined,
+    socials: { facebook: row.facebook || undefined, telegram: row.telegram || undefined },
+    role: row.role,
+    createdAt: String(row.created_at || "").slice(0, 10),
+    source: "d1",
+  };
+}
+
 export default function UsersManager({ locale }: { locale: string }) {
-  const [users, setUsers] = useState<AdminUser[]>(defaultUsers);
+  const [d1Users, setD1Users] = useState<AdminUser[]>([]);
+  const [dbAvailable, setDbAvailable] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"all" | "profile" | "add">("all");
-  const [selectedUser, setSelectedUser] = useState<AdminUser>(defaultUsers[0]);
+  const [selectedUser, setSelectedUser] = useState<AdminUser>(SYSTEM_USERS[0]);
   const [toast, setToast] = useState<string | null>(null);
+
+  const users = [...SYSTEM_USERS, ...d1Users];
 
   // Form fields for new user
   const [newUsername, setNewUsername] = useState("");
@@ -77,10 +103,9 @@ export default function UsersManager({ locale }: { locale: string }) {
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [newJobTitle, setNewJobTitle] = useState("Game Marketing Specialist");
-  const [newRole, setNewRole] = useState<AdminUser["role"]>("editor");
+  const [newRole, setNewRole] = useState<AdminRole>("editor");
 
   // Profile Edit fields
-  const [profileName, setProfileName] = useState("");
   const [profileDisplayName, setProfileDisplayName] = useState("");
   const [profileJobTitle, setProfileJobTitle] = useState("");
   const [profileBio, setProfileBio] = useState("");
@@ -90,118 +115,134 @@ export default function UsersManager({ locale }: { locale: string }) {
   const [profileFacebook, setProfileFacebook] = useState("");
   const [profileTelegram, setProfileTelegram] = useState("");
 
-  useEffect(() => {
-    const saved = localStorage.getItem("anbu_custom_users");
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          setUsers(parsed);
-          setSelectedUser(parsed[0]);
-        }
-      } catch (e) {
-        console.error(e);
+  const loadUsers = useCallback(async () => {
+    setLoading(true);
+    try {
+      const res = await adminFetch("/api/admin/users");
+      const data = await res.json();
+      if (data.ok) {
+        setD1Users((data.users || []).map(mapD1User));
+        setDbAvailable(data.dbAvailable !== false);
       }
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setLoading(false);
     }
   }, []);
 
-  const saveUsersToStorage = (updatedList: AdminUser[]) => {
-    setUsers(updatedList);
-    localStorage.setItem("anbu_custom_users", JSON.stringify(updatedList));
-  };
+  useEffect(() => {
+    loadUsers();
+  }, [loadUsers]);
 
   const showNotification = (msg: string) => {
     setToast(msg);
-    setTimeout(() => setToast(null), 3500);
+    setTimeout(() => setToast(null), 4000);
   };
 
   const handleOpenEditProfile = (u: AdminUser) => {
     setSelectedUser(u);
-    setProfileName(u.name);
-    setProfileDisplayName(u.displayName || u.name);
+    setProfileDisplayName(u.displayName);
     setProfileJobTitle(u.jobTitle || "");
     setProfileBio(u.bio || "");
     setProfileAvatar(u.avatar || "");
-    setProfileEmail(u.email);
-    setProfilePassword(u.password || "");
+    setProfileEmail(u.email || "");
+    setProfilePassword("");
     setProfileFacebook(u.socials?.facebook || "");
     setProfileTelegram(u.socials?.telegram || "");
+    setError(null);
     setActiveTab("profile");
   };
 
-  const handleSaveProfile = (e: React.FormEvent) => {
+  const handleSaveProfile = async (e: React.FormEvent) => {
     e.preventDefault();
-    const updated = users.map((u) => {
-      if (u.id === selectedUser.id) {
-        return {
-          ...u,
-          name: profileName.trim() || u.name,
-          displayName: profileDisplayName.trim() || u.displayName,
+    if (selectedUser.source === "system") return; // no form fields submit for system accounts (read-only below)
+
+    setSaving(true);
+    setError(null);
+    try {
+      const res = await adminFetch(`/api/admin/users/${encodeURIComponent(selectedUser.username)}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          password: profilePassword.trim() || undefined,
+          displayName: profileDisplayName.trim(),
           jobTitle: profileJobTitle.trim(),
           bio: profileBio.trim(),
-          avatar: profileAvatar.trim() || u.avatar,
-          email: profileEmail.trim() || u.email,
-          password: profilePassword.trim() || u.password,
-          socials: {
-            facebook: profileFacebook.trim(),
-            telegram: profileTelegram.trim(),
-          },
-        };
-      }
-      return u;
-    });
+          avatar: profileAvatar.trim(),
+          email: profileEmail.trim(),
+          facebook: profileFacebook.trim(),
+          telegram: profileTelegram.trim(),
+        }),
+      });
+      const data = await res.json();
+      if (!data.ok) throw new Error(data.error || "Lỗi lưu hồ sơ");
 
-    saveUsersToStorage(updated);
-    showNotification(`Đã lưu tùy chỉnh hồ sơ thành viên "${selectedUser.username}" thành công!`);
-    setActiveTab("all");
+      await loadUsers();
+      showNotification(
+        `Đã lưu hồ sơ "${selectedUser.username}" thành công!` +
+          (profilePassword.trim() ? " Mật khẩu mới có hiệu lực ngay từ lần đăng nhập tiếp theo." : "")
+      );
+      setActiveTab("all");
+    } catch (err: any) {
+      setError(err.message || "Lỗi lưu hồ sơ");
+    } finally {
+      setSaving(false);
+    }
   };
 
-  const handleCreateUser = (e: React.FormEvent) => {
+  const handleCreateUser = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newUsername.trim() || !newPassword.trim()) return;
 
-    if (users.some((u) => u.username.toLowerCase() === newUsername.trim().toLowerCase())) {
-      alert("Tên người dùng này đã tồn tại! Vui lòng chọn tên khác.");
-      return;
-    }
+    setSaving(true);
+    setError(null);
+    try {
+      const res = await adminFetch("/api/admin/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          username: newUsername.trim(),
+          password: newPassword.trim(),
+          role: newRole,
+          displayName: newName.trim() || newUsername.trim(),
+          jobTitle: newJobTitle.trim(),
+          email: newEmail.trim(),
+        }),
+      });
+      const data = await res.json();
+      if (!data.ok) throw new Error(data.error || "Lỗi tạo thành viên");
 
-    const newUser: AdminUser = {
-      id: `user-${Date.now()}`,
-      username: newUsername.trim().toLowerCase(),
-      name: newName.trim() || newUsername.trim(),
-      displayName: newName.trim() || newUsername.trim(),
-      jobTitle: newJobTitle.trim(),
-      email: newEmail.trim() || `${newUsername.trim()}@anbu.asia`,
-      role: newRole,
-      password: newPassword.trim(),
-      postsCount: 0,
-      avatar: "/blog-covers/creator-program.jpg",
-      createdAt: new Date().toISOString().split("T")[0],
-    };
-
-    const updated = [...users, newUser];
-    saveUsersToStorage(updated);
-    showNotification(`Đã tạo thành viên "${newUser.name}" thành công! Họ có thể đăng nhập ngay.`);
-    setActiveTab("all");
-    setNewUsername("");
-    setNewName("");
-    setNewEmail("");
-    setNewPassword("");
-  };
-
-  const handleDeleteUser = (id: string, username: string) => {
-    if (username === "admin") {
-      alert("Không thể xóa tài khoản Quản trị viên gốc (admin)!");
-      return;
-    }
-    if (confirm(`Bạn có chắc chắn muốn xóa thành viên "${username}" không?`)) {
-      const updated = users.filter((u) => u.id !== id);
-      saveUsersToStorage(updated);
-      showNotification(`Đã xóa thành viên "${username}"!`);
+      await loadUsers();
+      showNotification(`Đã tạo thành viên "${newName.trim() || newUsername.trim()}" thành công! Họ có thể đăng nhập ngay bằng mật khẩu vừa đặt.`);
+      setActiveTab("all");
+      setNewUsername("");
+      setNewName("");
+      setNewEmail("");
+      setNewPassword("");
+    } catch (err: any) {
+      setError(err.message || "Lỗi tạo thành viên");
+    } finally {
+      setSaving(false);
     }
   };
 
-  const getRoleLabel = (r: AdminUser["role"]) => {
+  const handleDeleteUser = async (u: AdminUser) => {
+    if (u.source === "system") return;
+    if (!confirm(`Bạn có chắc chắn muốn xóa thành viên "${u.username}" không? Họ sẽ mất quyền đăng nhập ngay lập tức.`)) return;
+
+    try {
+      const res = await adminFetch(`/api/admin/users/${encodeURIComponent(u.username)}`, { method: "DELETE" });
+      const data = await res.json();
+      if (!data.ok) throw new Error(data.error || "Lỗi xóa thành viên");
+      await loadUsers();
+      showNotification(`Đã xóa thành viên "${u.username}"!`);
+    } catch (err: any) {
+      alert(err.message || "Lỗi xóa thành viên");
+    }
+  };
+
+  const getRoleLabel = (r: AdminRole) => {
     switch (r) {
       case "administrator":
         return { label: "Quản trị viên (Admin)", color: "bg-purple-100 text-purple-800 border-purple-200" };
@@ -228,13 +269,24 @@ export default function UsersManager({ locale }: { locale: string }) {
           </button>
         </div>
         <div className="text-xs text-[#646970]">
-          Tổng cộng: <strong>{users.length}</strong> thành viên
+          Tổng cộng: <strong>{users.length}</strong> thành viên{loading ? " (đang tải...)" : ""}
         </div>
       </div>
+
+      {!dbAvailable && (
+        <div className="rounded border border-rose-300 bg-rose-50 p-3 text-xs font-semibold text-rose-800">
+          ⚠️ Chưa kết nối được D1 database (ADMIN_DB). Chỉ 3 tài khoản hệ thống hoạt động; thêm/sửa thành viên mới sẽ bị lỗi.
+        </div>
+      )}
 
       {toast && (
         <div className="rounded border-l-4 border-emerald-500 bg-white p-3 shadow-sm text-xs font-bold text-emerald-800">
           ✓ {toast}
+        </div>
+      )}
+      {error && (
+        <div className="rounded border-l-4 border-rose-500 bg-white p-3 shadow-sm text-xs font-bold text-rose-800">
+          ✕ {error}
         </div>
       )}
 
@@ -251,9 +303,7 @@ export default function UsersManager({ locale }: { locale: string }) {
           Tất cả thành viên ({users.length})
         </button>
         <button
-          onClick={() => {
-            handleOpenEditProfile(selectedUser || users[0]);
-          }}
+          onClick={() => handleOpenEditProfile(selectedUser || users[0])}
           className={`px-4 py-2 border-b-2 transition ${
             activeTab === "profile"
               ? "border-[#2271b1] text-[#1d2327] font-bold bg-white"
@@ -304,21 +354,28 @@ export default function UsersManager({ locale }: { locale: string }) {
                           />
                         </div>
                         <div>
-                          <div>{u.username}</div>
+                          <div className="flex items-center gap-1.5">
+                            {u.username}
+                            {u.source === "system" && (
+                              <span className="rounded bg-slate-100 px-1.5 py-0.5 text-[9px] font-bold text-slate-500" title="Mật khẩu qua Cloudflare Secret">
+                                HỆ THỐNG
+                              </span>
+                            )}
+                          </div>
                           <div className="text-[10px] text-[#646970] font-sans font-normal">Tạo: {u.createdAt}</div>
                         </div>
                       </td>
                       <td className="px-4 py-3">
-                        <div className="font-bold text-[#1d2327]">{u.displayName || u.name}</div>
+                        <div className="font-bold text-[#1d2327]">{u.displayName}</div>
                         <div className="text-[11px] text-[#646970]">{u.jobTitle || "Game Marketing"}</div>
                       </td>
-                      <td className="px-4 py-3 text-[#646970] font-mono">{u.email}</td>
+                      <td className="px-4 py-3 text-[#646970] font-mono">{u.email || "—"}</td>
                       <td className="px-4 py-3">
                         <span className={`inline-flex rounded border px-2 py-0.5 text-[10px] font-bold ${roleInfo.color}`}>
                           {roleInfo.label}
                         </span>
                       </td>
-                      <td className="px-4 py-3 font-bold text-[#2271b1]">{u.postsCount} bài</td>
+                      <td className="px-4 py-3 font-bold text-[#2271b1]">{u.postsCount != null ? `${u.postsCount} bài` : "—"}</td>
                       <td className="px-4 py-3 text-right">
                         <div className="flex items-center justify-end gap-1.5">
                           <button
@@ -327,9 +384,9 @@ export default function UsersManager({ locale }: { locale: string }) {
                           >
                             ✏️ Tùy chỉnh
                           </button>
-                          {u.username !== "admin" && (
+                          {u.source === "d1" && (
                             <button
-                              onClick={() => handleDeleteUser(u.id, u.username)}
+                              onClick={() => handleDeleteUser(u)}
                               className="rounded border border-[#d63638] bg-white px-2 py-1 text-[11px] font-semibold text-[#d63638] hover:bg-rose-50"
                             >
                               Xóa
@@ -355,7 +412,9 @@ export default function UsersManager({ locale }: { locale: string }) {
                 Tùy Chỉnh Hồ Sơ Thành Viên: <span className="text-[#2271b1] font-mono">{selectedUser.username}</span>
               </h3>
               <p className="text-[11px] text-[#646970]">
-                Chỉnh sửa tên hiển thị tác giả, tiểu sử và ảnh đại diện
+                {selectedUser.source === "system"
+                  ? "Tài khoản hệ thống — hồ sơ cố định, không chỉnh sửa được từ đây"
+                  : "Chỉnh sửa tên hiển thị tác giả, tiểu sử, ảnh đại diện và mật khẩu đăng nhập"}
               </p>
             </div>
             <span className="rounded bg-blue-50 border border-blue-200 px-2.5 py-1 text-xs font-bold text-blue-800">
@@ -363,116 +422,115 @@ export default function UsersManager({ locale }: { locale: string }) {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {/* Username (Read only) */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">Tên đăng nhập (Username):</label>
-              <input
-                type="text"
-                readOnly
-                value={selectedUser.username}
-                className="w-full rounded border border-[#ccd0d4] bg-slate-100 p-2 font-mono text-xs text-[#646970] outline-none cursor-not-allowed"
-              />
-              <p className="mt-0.5 text-[10px] text-[#646970]">Tên người dùng không thể thay đổi.</p>
+          {selectedUser.source === "system" ? (
+            <div className="rounded border border-amber-300 bg-amber-50 p-3 text-[11px] leading-relaxed text-amber-900">
+              ⚠️ Đây là 1 trong 3 tài khoản hệ thống (admin/editor/author). Tên hiển thị, tiểu sử và mật khẩu của tài
+              khoản này được cấu hình cố định trong code và Cloudflare Secrets — không sửa được qua giao diện này.
+              Muốn đổi mật khẩu: vào Cloudflare Dashboard → Settings → Variables and secrets.
             </div>
+          ) : (
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              {/* Username (Read only) */}
+              <div>
+                <label className="block font-bold text-[#50575e] mb-1">Tên đăng nhập (Username):</label>
+                <input
+                  type="text"
+                  readOnly
+                  value={selectedUser.username}
+                  className="w-full rounded border border-[#ccd0d4] bg-slate-100 p-2 font-mono text-xs text-[#646970] outline-none cursor-not-allowed"
+                />
+                <p className="mt-0.5 text-[10px] text-[#646970]">Tên người dùng không thể thay đổi.</p>
+              </div>
 
-            {/* Email */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">Email liên hệ:</label>
-              <input
-                type="email"
-                value={profileEmail}
-                onChange={(e) => setProfileEmail(e.target.value)}
-                className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
-            </div>
+              {/* Email */}
+              <div>
+                <label className="block font-bold text-[#50575e] mb-1">Email liên hệ:</label>
+                <input
+                  type="email"
+                  value={profileEmail}
+                  onChange={(e) => setProfileEmail(e.target.value)}
+                  className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+              </div>
 
-            {/* Full Name */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">Họ và Tên đầy đủ:</label>
-              <input
-                type="text"
-                value={profileName}
-                onChange={(e) => setProfileName(e.target.value)}
-                className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
-            </div>
+              {/* Public Display Name */}
+              <div>
+                <label className="block font-bold text-[#50575e] mb-1">
+                  Tên hiển thị công khai trên bài viết (Display Name Publicly as):
+                </label>
+                <input
+                  type="text"
+                  value={profileDisplayName}
+                  onChange={(e) => setProfileDisplayName(e.target.value)}
+                  placeholder="ví dụ: ANBU Team, Nguyễn Hoàng Linh (UA Lead)..."
+                  className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+                <p className="mt-0.5 text-[10px] text-[#646970]">Tên này sẽ xuất hiện ở mục tác giả của bài viết blog.</p>
+              </div>
 
-            {/* Public Display Name */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">
-                Tên hiển thị công khai trên bài viết (Display Name Publicly as):
-              </label>
-              <input
-                type="text"
-                value={profileDisplayName}
-                onChange={(e) => setProfileDisplayName(e.target.value)}
-                placeholder="ví dụ: ANBU Team, Nguyễn Hoàng Linh (UA Lead)..."
-                className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
-              <p className="mt-0.5 text-[10px] text-[#646970]">Tên này sẽ xuất hiện ở mục tác giả của bài viết blog.</p>
-            </div>
+              {/* Job Title */}
+              <div>
+                <label className="block font-bold text-[#50575e] mb-1">Chức danh chuyên môn (Job Title):</label>
+                <input
+                  type="text"
+                  value={profileJobTitle}
+                  onChange={(e) => setProfileJobTitle(e.target.value)}
+                  placeholder="ví dụ: Head of Game Marketing, Senior Content Lead..."
+                  className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+              </div>
 
-            {/* Job Title */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">Chức danh chuyên môn (Job Title):</label>
-              <input
-                type="text"
-                value={profileJobTitle}
-                onChange={(e) => setProfileJobTitle(e.target.value)}
-                placeholder="ví dụ: Head of Game Marketing, Senior Content Lead..."
-                className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
-            </div>
+              {/* Avatar URL */}
+              <div>
+                <label className="block font-bold text-[#50575e] mb-1">Ảnh đại diện Avatar (URL ảnh):</label>
+                <input
+                  type="text"
+                  value={profileAvatar}
+                  onChange={(e) => setProfileAvatar(e.target.value)}
+                  placeholder="/blog-covers/team-strategy-meeting.jpg hoặc link ảnh"
+                  className="w-full rounded border border-[#8c8f94] p-2 text-xs font-mono text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+              </div>
 
-            {/* Avatar URL */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">Ảnh đại diện Avatar (URL ảnh):</label>
-              <input
-                type="text"
-                value={profileAvatar}
-                onChange={(e) => setProfileAvatar(e.target.value)}
-                placeholder="/blog-covers/team-strategy-meeting.jpg hoặc link ảnh"
-                className="w-full rounded border border-[#8c8f94] p-2 text-xs font-mono text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
-            </div>
+              {/* Password — real, D1-backed */}
+              <div>
+                <label className="block font-bold text-[#50575e] mb-1">Đổi mật khẩu đăng nhập:</label>
+                <input
+                  type="text"
+                  value={profilePassword}
+                  onChange={(e) => setProfilePassword(e.target.value)}
+                  placeholder="Để trống nếu không đổi. Nhập mật khẩu mới (tối thiểu 8 ký tự)..."
+                  className="w-full rounded border border-[#8c8f94] p-2 font-mono text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+              </div>
 
-            {/* Bio / Giới thiệu */}
-            <div className="sm:col-span-2">
-              <label className="block font-bold text-[#50575e] mb-1">
-                Tiểu sử / Giới thiệu tác giả (Biographical Info):
-              </label>
-              <textarea
-                rows={3}
-                value={profileBio}
-                onChange={(e) => setProfileBio(e.target.value)}
-                placeholder="Viết một đoạn giới thiệu ngắn về kinh nghiệm và chuyên môn của tác giả trong ngành Game..."
-                className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
-            </div>
+              {/* Bio / Giới thiệu */}
+              <div className="sm:col-span-2">
+                <label className="block font-bold text-[#50575e] mb-1">
+                  Tiểu sử / Giới thiệu tác giả (Biographical Info):
+                </label>
+                <textarea
+                  rows={3}
+                  value={profileBio}
+                  onChange={(e) => setProfileBio(e.target.value)}
+                  placeholder="Viết một đoạn giới thiệu ngắn về kinh nghiệm và chuyên môn của tác giả trong ngành Game..."
+                  className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
+              </div>
 
-            {/* Password — no longer editable here, see notice below */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">Mật khẩu đăng nhập:</label>
-              <div className="rounded border border-amber-300 bg-amber-50 p-2 text-[11px] leading-relaxed text-amber-900">
-                ⚠️ Không thể đổi ở đây. Mật khẩu đăng nhập thật chỉ được cấu hình qua Secret trên Cloudflare Pages
-                (Settings → Variables and secrets → <code className="font-mono">ADMIN_PASSWORD</code> /{" "}
-                <code className="font-mono">EDITOR_PASSWORD</code> / <code className="font-mono">AUTHOR_PASSWORD</code>).
+              {/* Social Links */}
+              <div>
+                <label className="block font-bold text-[#50575e] mb-1">Link mạng xã hội (Facebook / Telegram):</label>
+                <input
+                  type="text"
+                  value={profileFacebook}
+                  onChange={(e) => setProfileFacebook(e.target.value)}
+                  placeholder="https://facebook.com/..."
+                  className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
+                />
               </div>
             </div>
-
-            {/* Social Links */}
-            <div>
-              <label className="block font-bold text-[#50575e] mb-1">Link mạng xã hội (Facebook / Telegram):</label>
-              <input
-                type="text"
-                value={profileFacebook}
-                onChange={(e) => setProfileFacebook(e.target.value)}
-                placeholder="https://facebook.com/..."
-                className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
-              />
-            </div>
-          </div>
+          )}
 
           <div className="flex items-center justify-between pt-4 border-t border-[#ccd0d4]">
             <button
@@ -482,12 +540,15 @@ export default function UsersManager({ locale }: { locale: string }) {
             >
               Quay lại danh sách
             </button>
-            <button
-              type="submit"
-              className="rounded bg-[#2271b1] px-5 py-2 font-bold text-white shadow-sm hover:bg-[#135e96] transition"
-            >
-              Lưu thay đổi hồ sơ (Update Profile)
-            </button>
+            {selectedUser.source === "d1" && (
+              <button
+                type="submit"
+                disabled={saving}
+                className="rounded bg-[#2271b1] px-5 py-2 font-bold text-white shadow-sm hover:bg-[#135e96] transition disabled:opacity-50"
+              >
+                {saving ? "Đang lưu..." : "Lưu thay đổi hồ sơ (Update Profile)"}
+              </button>
+            )}
           </div>
         </form>
       )}
@@ -497,13 +558,7 @@ export default function UsersManager({ locale }: { locale: string }) {
         <form onSubmit={handleCreateUser} className="rounded border border-[#ccd0d4] bg-white p-6 shadow-sm space-y-4 text-xs text-[#2c3338] max-w-2xl">
           <div className="border-b border-[#ccd0d4] pb-3">
             <h3 className="text-base font-bold text-[#1d2327]">Thêm Thành Viên Mới Vào Đội Ngũ ANBU</h3>
-            <p className="text-[11px] text-[#646970]">Tạo hồ sơ hiển thị (tên tác giả, avatar, tiểu sử) cho nhân sự hoặc cộng tác viên</p>
-          </div>
-
-          <div className="rounded border border-amber-300 bg-amber-50 p-3 text-[11px] leading-relaxed text-amber-900">
-            ⚠️ Vì lý do bảo mật, thành viên tạo ở đây <strong>chỉ hiển thị hồ sơ tác giả</strong> (byline bài viết) và
-            <strong> không tự có quyền đăng nhập thật</strong>. Mật khẩu đăng nhập chỉ được cấp qua 3 tài khoản hệ thống
-            (admin / editor / author) cấu hình bằng Secret trên Cloudflare Pages — liên hệ quản trị hệ thống nếu cần thêm người đăng nhập.
+            <p className="text-[11px] text-[#646970]">Tạo tài khoản đăng nhập thật, lưu trong Cloudflare D1 (mật khẩu được băm, không lưu dạng văn bản thô)</p>
           </div>
 
           <div>
@@ -552,13 +607,14 @@ export default function UsersManager({ locale }: { locale: string }) {
           </div>
 
           <div>
-            <label className="block font-bold text-[#50575e] mb-1">Mã tham chiếu nội bộ (bắt buộc, không phải mật khẩu đăng nhập):</label>
+            <label className="block font-bold text-[#50575e] mb-1">Mật khẩu đăng nhập (bắt buộc, tối thiểu 8 ký tự):</label>
             <input
               type="text"
               required
+              minLength={8}
               value={newPassword}
               onChange={(e) => setNewPassword(e.target.value)}
-              placeholder="Chỉ để lưu trữ nội bộ, không dùng để đăng nhập..."
+              placeholder="Đặt mật khẩu đăng nhập cho thành viên này..."
               className="w-full rounded border border-[#8c8f94] p-2 font-mono text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
             />
           </div>
@@ -567,7 +623,7 @@ export default function UsersManager({ locale }: { locale: string }) {
             <label className="block font-bold text-[#50575e] mb-1">Vai trò (Role & Permissions):</label>
             <select
               value={newRole}
-              onChange={(e) => setNewRole(e.target.value as AdminUser["role"])}
+              onChange={(e) => setNewRole(e.target.value as AdminRole)}
               className="w-full rounded border border-[#8c8f94] p-2 text-xs text-[#2c3338] outline-none focus:border-[#2271b1]"
             >
               <option value="administrator">Quản trị viên (Administrator), Toàn quyền hệ thống</option>
@@ -587,9 +643,10 @@ export default function UsersManager({ locale }: { locale: string }) {
             </button>
             <button
               type="submit"
-              className="rounded bg-[#2271b1] px-5 py-2 font-bold text-white shadow-sm hover:bg-[#135e96] transition"
+              disabled={saving}
+              className="rounded bg-[#2271b1] px-5 py-2 font-bold text-white shadow-sm hover:bg-[#135e96] transition disabled:opacity-50"
             >
-              Thêm thành viên mới (Add User)
+              {saving ? "Đang tạo..." : "Thêm thành viên mới (Add User)"}
             </button>
           </div>
         </form>
