@@ -535,7 +535,32 @@ const builtinPosts: Post[] = [
           },
         ],
       },
-      { type: "h2", text: { vi: "4. Ma trận ngân sách 3 giai đoạn ra mắt (Launch Budget Matrix)", en: "4. Three-Phase Launch Budget Allocation Matrix" } },
+      { type: "h2", text: { vi: "4. Ma trận chọn kênh theo thể loại Game: RPG vs SLG vs Casual vs Party Game", en: "4. Genre-Specific Channel Allocation Matrix: RPG vs SLG vs Casual" } },
+      {
+        type: "p",
+        text: {
+          vi: "Mỗi thể loại game sở hữu tệp người chơi và hành vi ra quyết định hoàn toàn khác nhau. Phân bổ ngân sách sai kênh là nguyên nhân hàng đầu khiến CPI tăng vọt:",
+          en: "Each game genre exhibits unique audience behavior and discovery triggers. Misaligned channel allocation is the primary cause of skyrocketing acquisition costs:",
+        },
+      },
+      {
+        type: "ul",
+        items: [
+          {
+            vi: "Game Thẻ Tướng / RPG / Anime Gacha: Kênh chủ lực là TikTok Ads + Meta Ads (Video Gameplay biến hình nhân vật, khoe tỷ lệ gacha trúng tướng SSR). Người chơi thể loại này phản hồi cực mạnh với hình ảnh đồ họa bắt mắt và quà tặng tân thủ.",
+            en: "Card Battler / Anime RPG: TikTok Ads + Meta Ads (character transformation gameplay, SSR summon gacha odds showcase). High response to visual fidelity and launch giveaway packages.",
+          },
+          {
+            vi: "Game Chiến Thuật SLG / 4X: Kênh chủ lực là Google UAC (tối ưu Target ROAS D30/D60) + Apple Search Ads. Tệp người chơi SLG lớn tuổi, thu nhập cao và cần sự kiên nhẫn để tìm ra các 'Cá voi' (Whales) sẵn sàng chi tiêu lớn.",
+            en: "SLG / 4X Strategy: Google UAC (tROAS D30/D60) + Apple Search Ads. Older, higher-income demographics requiring patient optimization to acquire high-spending Whales.",
+          },
+          {
+            vi: "Game Casual / Puzzle / Party Game: Kênh chủ lực là Meta Ads Reels + Mạng lưới AdMob/Unity Ads với định dạng Playable Ads tương tác trực tiếp 15 giây.",
+            en: "Casual / Puzzle / Party Games: Meta Reels + Unity/AppLovin Playable Ads allowing 15-second direct interactive mini-gameplay.",
+          },
+        ],
+      },
+      { type: "h2", text: { vi: "5. Ma trận ngân sách 3 giai đoạn ra mắt (Launch Budget Matrix)", en: "5. Three-Phase Launch Budget Allocation Matrix" } },
       {
         type: "ul",
         items: [
@@ -894,6 +919,11 @@ const builtinPosts: Post[] = [
         vi: "Đừng dịch từ khóa một cách máy móc từ tài liệu tiếng Anh. Hãy kết hợp giữa tên thể loại chính thống ('game nhập vai', 'chiến thuật tam quốc') với các cụm từ tìm kiếm theo thói quen cộng đồng ('game cày cuốc', 'game nhẹ máy', 'tặng vip 10', 'auto rảnh tay'). Điều này giúp bao quát trọn vẹn mọi biến thể tìm kiếm có chủ đích cao.",
         en: "Never mechanically translate English keywords. Blend formal genre classifications ('MMORPG', 'Three Kingdoms Strategy') with colloquial vernacular terms ('afk idle', 'low-spec friendly', 'free VIP pack', 'auto-grind'). This captures the full spectrum of high-intent local search queries.",
       } },
+      { type: "h2", text: { vi: "3. Cấu trúc Title & Subtitle chuẩn thuật toán ASO", en: "3. Algorithmic Title & Subtitle Best Practices" } },
+      { type: "p", text: {
+        vi: "Áp dụng cấu trúc vàng: [Tên Game Chính] + [Dấu gạch ngang] + [Thể loại cốt lõi] + [Từ khóa tìm kiếm phổ biến]. Ví dụ: 'Võ Lâm Chiến, Game Kiếm Hiệp 3D Nhập Vai'. Tránh lặp lại từ khóa giữa Title và Subtitle để không bị thuật toán Apple phạt spam.",
+        en: "Apply the proven formula: [Brand Name] + [Separator] + [Core Genre] + [High-Volume Semantic Keyword]. E.g., 'Kingdoms Clash, Real-Time 4X Strategy RPG'. Never duplicate keywords between Title and Subtitle to avoid Apple metadata penalties.",
+      } },
     ],
   },
   {
@@ -1237,90 +1267,6 @@ const builtinPosts: Post[] = [
   }],
   },
   {
-    slug: "user-acquisition-game-mobile-kenh-quang-cao",
-    slug_en: "mobile-game-user-acquisition-channel-selection-strategy-budget",
-    title: {
-      vi: "User Acquisition Game Mobile: Chiến lược chọn kênh quảng cáo và phân bổ ngân sách tối ưu",
-      en: "Mobile Game User Acquisition: Channel Selection Strategy and Budget Optimization",
-    },
-    excerpt: {
-      vi: "Đổ toàn bộ ngân sách vào kênh có CPI rẻ nhất là sai lầm 'đốt tiền' phổ biến nhất. Bóc tách ma trận phân bổ ngân sách giữa Meta Ads, TikTok Ads và Google UAC theo từng thể loại game để tối ưu hóa tỷ lệ chuyển đổi và LTV.",
-      en: "Pouring entire budgets into the cheapest CPI channel is the most common money pit. Deconstructing budget allocation matrices across Meta Ads, TikTok Ads, and Google UAC to optimize conversion and long-term LTV.",
-    },
-    category: { vi: "Performance Marketing", en: "Performance Marketing" },
-    date: "2026-08-15",
-    readingTime: 6,
-    author: "ANBU Team",
-    color: "from-orange-600 to-navy-900",
-    variant: "performance",
-    cover: "/blog-covers/user-acquisition-3d.png",
-    sources: [
-      { label: { vi: "Meta for Business: Game App Ads Playbook", en: "Meta for Business: Game App Ads Playbook" }, href: "https://www.facebook.com/business/ads/app-ads" },
-      { label: { vi: "TikTok for Business: Mobile Gaming Insights", en: "TikTok for Business: Mobile Gaming Insights" }, href: "https://ads.tiktok.com/business/en/apps" },
-      { label: { vi: "Google Ads: App Campaigns Best Practices", en: "Google Ads: App Campaigns Best Practices" }, href: "https://support.google.com/google-ads/answer/6247380" },
-    ],
-    body: [
-      { type: "p", text: {
-        vi: "User Acquisition (UA) trong ngành game mobile không đơn thuần là việc 'mua lượt cài đặt' với giá rẻ nhất có thể. Một chiến dịch UA thành công phải mang về tệp người chơi có khả năng hoàn thành màn hướng dẫn tân thủ (FTUE), sẵn sàng tham gia bang hội và chi trả cho các gói vật phẩm in-game trong 30 đến 180 ngày tiếp theo.",
-        en: "User Acquisition (UA) in mobile gaming is never about hunting for the absolute cheapest CPI. A victorious UA strategy delivers high-intent cohorts who complete onboarding, integrate into guilds, and actively monetize across a 30 to 180-day player lifecycle.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/performance-ad-campaigns.jpg",
-        alt: { vi: "Giao diện quản lý chiến dịch quảng cáo và phân bổ ngân sách Meta Ads TikTok Ads", en: "Ad campaign dashboard managing budget allocation across Meta and TikTok ad networks" },
-        caption: { vi: "Phân bổ ngân sách đa kênh dựa trên tín hiệu sự kiện In-App Events (AEO/VO) giúp hạ giá thành chuyển đổi thực tế.", en: "Multi-channel budget scaling governed by In-App Events (AEO/VO) drives down real payer acquisition costs." },
-      },
-      { type: "h2", text: { vi: "1. So sánh hiệu năng 3 trụ cột UA tại Việt Nam", en: "1. Comparing the 3 Core UA Pillars in Vietnam" } },
-      { type: "ul", items: [
-        { vi: "Meta Ads (Facebook & Instagram): Kênh xương sống cho thể loại RPG, SLG và Casual nhờ khả năng nuôi tệp Lookalike và thuật toán tối ưu hóa theo giá trị đơn hàng (Value Optimization - VO).", en: "Meta Ads: The indispensable backbone for RPGs, SLGs, and Casual games, driven by robust Lookalike modeling and Value Optimization (VO) bidding." },
-        { vi: "TikTok Ads: 'Vũ khí bùng nổ' cho game Casual, Party, Anime nhờ video dọc âm thanh bắt trend. Nhược điểm: độ bão hòa creative cực nhanh (cần thay mới sau mỗi 3 - 5 ngày).", en: "TikTok Ads: Explosive growth engine for Casual, Party, and Anime titles via trending audio. Drawback: rapid creative fatigue requiring weekly asset refresh." },
-        { vi: "Google App Campaigns (UAC): Hút trọn tệp người chơi có chủ đích tìm kiếm trên Google Play và YouTube, đóng vai trò then chốt khi bước vào giai đoạn mở rộng quy mô (Scale-up).", en: "Google App Campaigns: Captures high-intent search demand across Google Play and YouTube, essential for sustained post-launch scale." },
-      ] },
-      {
-        type: "image",
-        src: "/blog-covers/app-store-conversion-funnel.jpg",
-        alt: { vi: "Sơ đồ phễu chuyển đổi từ lượt hiển thị quảng cáo đến lượt cài đặt và mua hàng in-game", en: "Conversion funnel mapping impressions to store page views, installs, and first purchases" },
-        caption: { vi: "Tối ưu hóa từng nấc thang trong phễu chuyển đổi giúp tăng gấp đôi tỷ lệ người chơi nạp tiền lần đầu.", en: "Eliminating friction at every step of the funnel doubles first-time payer conversion rates." },
-      },
-      { type: "h2", text: { vi: "2. Ma trận phân bổ ngân sách theo vòng đời game", en: "2. Budget Allocation Matrix by Lifecycle Stage" } },
-      { type: "p", text: {
-        vi: "Trong giai đoạn Pre-order/Soft Launch, hãy dành 50% ngân sách cho Meta (thu thập đăng ký trước và thử nghiệm creative), 30% Google UAC và 20% TikTok. Khi bước vào tuần lễ phát hành chính thức (Hard Launch), đẩy 40% ngân sách vào TikTok để tạo hiệu ứng FOMO và chiếm lĩnh Top Download bảng xếp hạng Store, 40% Meta và 20% Google. Ở giai đoạn LiveOps duy trì, điều chỉnh 45% Meta VO, 35% Google UAC và 20% TikTok Spark Ads.",
-        en: "During Soft Launch, allocate 50% to Meta (pre-registrations and creative testing), 30% Google UAC, and 20% TikTok. At Hard Launch, pivot 40% into TikTok for viral FOMO and Top Free Store rankings, 40% Meta, and 20% Google. In sustained LiveOps, shift to 45% Meta VO, 35% Google UAC, and 20% TikTok Spark Ads.",
-      } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Ma trận chọn kênh theo thể loại Game: RPG vs SLG vs Casual vs Party Game",
-      "en": "3. Genre-Specific Channel Allocation Matrix: RPG vs SLG vs Casual"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Mỗi thể loại game sở hữu tệp người chơi và hành vi ra quyết định hoàn toàn khác nhau. Phân bổ ngân sách sai kênh là nguyên nhân hàng đầu khiến CPI tăng vọt:",
-      "en": "Each game genre exhibits unique audience behavior and discovery triggers. Misaligned channel allocation is the primary cause of skyrocketing acquisition costs:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Game Thẻ Tướng / RPG / Anime Gacha: Kênh chủ lực là TikTok Ads + Meta Ads (Video Gameplay biến hình nhân vật, khoe tỷ lệ gacha trúng tướng SSR). Người chơi thể loại này phản hồi cực mạnh với hình ảnh đồ họa bắt mắt và quà tặng tân thủ.",
-        "en": "Card Battler / Anime RPG: TikTok Ads + Meta Ads (character transformation gameplay, SSR summon gacha odds showcase). High response to visual fidelity and launch giveaway packages."
-      },
-      {
-        "vi": "Game Chiến Thuật SLG / 4X: Kênh chủ lực là Google UAC (tối ưu Target ROAS D30/D60) + Apple Search Ads. Tệp người chơi SLG lớn tuổi, thu nhập cao và cần sự kiên nhẫn để tìm ra các 'Cá voi' (Whales) sẵn sàng chi tiêu lớn.",
-        "en": "SLG / 4X Strategy: Google UAC (tROAS D30/D60) + Apple Search Ads. Older, higher-income demographics requiring patient optimization to acquire high-spending Whales."
-      },
-      {
-        "vi": "Game Casual / Puzzle / Party Game: Kênh chủ lực là Meta Ads Reels + Mạng lưới AdMob/Unity Ads với định dạng Playable Ads tương tác trực tiếp 15 giây.",
-        "en": "Casual / Puzzle / Party Games: Meta Reels + Unity/AppLovin Playable Ads allowing 15-second direct interactive mini-gameplay."
-      }
-    ]
-  }],
-  },
-  {
     slug: "monetization-game-mobile-iap-battle-pass",
     slug_en: "mobile-game-monetization-combining-iap-battle-pass-rewarded",
     title: {
@@ -1366,9 +1312,14 @@ const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "2. Nghệ thuật thiết kế Battle Pass mùa giải", en: "2. The Art of Seasonal Battle Pass Design" } },
       { type: "p", text: {
-        vi: "Battle Pass là công cụ tuyệt vời nhất để biến người chơi F2P thành người chơi trả phí định kỳ. Hãy áp dụng cơ chế hoàn vốn (Cashback Loop): nếu người chơi hoàn thành cấp tối đa (Level 80 - 100), trả lại cho họ đủ số kim cương để mua tiếp vé Battle Pass mùa sau. Cơ chế này vừa tạo động lực 'cày game' không ngừng nghỉ, vừa giữ chân người chơi trung thành suốt nhiều năm.",
-        en: "The Battle Pass is the ultimate engine for converting F2P users into recurring subscribers. Implement the Cashback Loop: if players complete all tiers (Levels 80 - 100), grant back enough premium currency to fund the next season's pass. This reinforces tireless engagement while securing long-term player retention.",
+        vi: "Battle Pass là công cụ tuyệt vời nhất để biến người chơi F2P thành người chơi trả phí định kỳ. Hãy áp dụng cơ chế hoàn vốn (Cashback Loop): nếu người chơi hoàn thành cấp tối đa (Level 80 - 100), trả lại cho họ đủ số kim cương để mua tiếp vé Battle Pass mùa sau. Cơ chế này vừa tạo động lực 'cày game' không ngừng nghỉ, vừa giữ chân người chơi trung thành suốt nhiều năm. Bên cạnh cơ chế hoàn vốn, một Battle Pass bền vững cần thêm 3 trụ cột sau để không đánh mất niềm tin của game thủ:",
+        en: "The Battle Pass is the ultimate engine for converting F2P users into recurring subscribers. Implement the Cashback Loop: if players complete all tiers (Levels 80 - 100), grant back enough premium currency to fund the next season's pass. This reinforces tireless engagement while securing long-term player retention. Beyond the cashback loop, a sustainable Battle Pass needs 3 more pillars so it never erodes player trust:",
       } },
+      { type: "ul", items: [
+        { vi: "Tiến độ minh bạch (Clear Milestone Progression): Người chơi luôn nhìn thấy chính xác số điểm kinh nghiệm cần thiết để mở khóa cấp tiếp theo, không có thuật toán ngầm thay đổi độ khó.", en: "Transparent XP Curves: Players clearly visualize exact XP requirements for each tier without opaque difficulty spikes." },
+        { vi: "Phần thưởng độc quyền mang tính biểu tượng (Status Prestige): Skin nhân vật, khung avatar động hoặc hiệu ứng biến về giới hạn theo mùa không thể mua lại sau khi kết thúc Battle Pass.", en: "Exclusive Prestige Rewards: Seasonal character skins, animated avatar frames, and recall SFX unobtainable once the pass concludes." },
+        { vi: "Nhịp cày cuốc linh hoạt (Flexible Catch-up Mechanics): Người chơi bận rộn vẫn có thể hoàn thành Battle Pass vào cuối mùa nhờ nhiệm vụ tích lũy cuối tuần mà không bị phạt bỏ lỡ.", en: "Forgiving Catch-Up Loops: Busy players can complete the pass toward season end through banked weekly quests without feeling penalized." },
+      ] },
     ],
   },
   {
@@ -1615,7 +1566,17 @@ const builtinPosts: Post[] = [
         vi: "Hãy chia video quảng cáo thành 3 phần: Hook (0 - 3s), Body (3 - 15s) và CTA (15 - 20s). Khi đã tìm được 1 Hook có tỷ lệ giữ chân 3s (3-second Hook Rate) vượt trội > 35%, hãy giữ nguyên Hook đó và ghép nối với 3 biến thể Gameplay khác nhau. Quy trình mô-đun hóa này giúp nhân rộng số lượng creative với chi phí sản xuất thấp nhất.",
         en: "Break every video ad into 3 modules: Hook (0 - 3s), Body (3 - 15s), and CTA (15 - 20s). Once a hook achieves a 3-second retention rate above 35%, lock that hook and test it against 3 different gameplay bodies. This modular workflow multiplies creative output while minimizing production overhead.",
       } },
-      { type: "h2", text: { vi: "3. Nguyên tắc phân bổ ngân sách 80/20", en: "3. The 80/20 Ad Spend Rule" } },
+      { type: "h2", text: { vi: "3. Ba nhóm Hook mở đầu có tỷ lệ giữ chân cao nhất", en: "3. Three High-Performing Hook Archetypes" } },
+      { type: "ul", items: [
+        { vi: "Hook Nhập vai / Kích hoạt Mong muốn (Fantasy Hook): Đặt người xem vào vị trí thủ lĩnh đưa ra quyết định sinh tử (Xây thành hay Tấn công bang hội đối thủ) ngay giây thứ 1.", en: "Fantasy Immersion Hook: Drops the viewer into a high-stakes leadership dilemma (Build Defenses vs Ambush Rival Guild) at second 1." },
+        { vi: "Hook Thử thách Thất bại (Skill Challenge Hook): Đưa ra tình huống ghép đồ hoặc né chiêu hỏng với câu hỏi khiêu khích: 'Chỉ 1% người chơi qua nổi ải này'.", en: "Skill Challenge Hook: Demonstrates a catastrophic rookie misplay paired with an ego-challenging prompt: 'Only 1% of commanders beat this level'." },
+        { vi: "Hook Phản ứng Thực tế (Social Proof Reaction): Video Creator mở gói thẻ hiếm hoặc phản ứng ngỡ ngàng trước đồ họa Unreal Engine 5 của game.", en: "Social Proof Reaction Hook: Real creator reacting with authentic surprise to an ultra-rare pull or Unreal Engine 5 visual spectacle." },
+      ] },
+      { type: "p", text: {
+        vi: "Một biến thể video được xem là Winner khi thỏa mãn đồng thời 3 điều kiện: 3-Second Hook Rate > 35%, Video Average Watch Time > 6 giây, và Tỷ lệ chuyển đổi cài đặt eCPI thấp hơn 20% so với mức trung bình của tài khoản. Chỉ bơm thêm ngân sách khi cả 3 chỉ số đều xanh.",
+        en: "A variant qualifies as a Winner only when meeting 3 criteria simultaneously: 3-Second Hook Rate > 35%, Average Watch Time > 6 seconds, and eCPI at least 20% below account benchmark. Scale acquisition spend only when all 3 metrics pass.",
+      } },
+      { type: "h2", text: { vi: "4. Nguyên tắc phân bổ ngân sách 80/20", en: "4. The 80/20 Ad Spend Rule" } },
       { type: "p", text: {
         vi: "Dành 80% ngân sách quảng cáo cho các Creative Winner đã được chứng minh hiệu quả ROAS và D7 Retention. 20% ngân sách còn lại luôn được phân bổ cố định cho 'Phòng thí nghiệm Creative' để liên tục thử nghiệm các góc tiếp cận mới, ngăn chặn hiện tượng kiệt sức quảng cáo (Creative Fatigue) trước khi hiệu suất sụt giảm.",
         en: "Allocate 80% of acquisition budget to proven Winning Creatives that drive stable ROAS and D7 retention. The remaining 20% must be reserved for the 'Creative Testing Lab' to explore new angles, preventing creative fatigue before campaign performance deteriorates.",
@@ -1965,78 +1926,6 @@ const builtinPosts: Post[] = [
     ],
   },
   {
-    slug: "battle-pass-game-mobile-thiet-ke-gia-tri",
-    slug_en: "designing-mobile-game-battle-passes-balancing-in-app-revenue",
-    title: { vi: "Thiết kế Battle Pass game mobile: Cân bằng giữa Doanh thu và Niềm tin Game thủ", en: "Designing Mobile Game Battle Passes: Balancing In-App Revenue with Player Goodwill" },
-    excerpt: { vi: "Người chơi nhận ra rất nhanh khi một Battle Pass được dựng lên để 'vắt kiệt tiền' thay vì tôn vinh công sức chơi. Cách thiết kế 4 tầng giá trị và nhịp hoàn thành giữ vững D30 Retention.", en: "Gamers immediately spot a predatory Battle Pass engineered for cash extraction versus one that honors playtime. Designing 4 value layers and sustainable pacing." },
-    category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "strategy",
-    cover: "/blog-covers/battle-pass-value.jpg",
-    sources: [
-      { label: { vi: "Apple In-App Purchases & Subscriptions Guide", en: "Apple In-App Purchases & Subscriptions Guide" }, href: "https://developer.apple.com/in-app-purchase/" },
-      { label: { vi: "Google Play Store Monetization Best Practices", en: "Google Play Store Monetization Best Practices" }, href: "https://support.google.com/googleplay/android-developer/answer/10281818" },
-    ],
-    body: [
-      { type: "p", text: {
-        vi: "Battle Pass (Vé Sự Kiện Mùa) là một bản hợp đồng tinh thần giữa NPH và game thủ: nếu người chơi đầu tư thời gian hoàn thành nhiệm vụ mỗi ngày, họ sẽ nhận được khối lượng tài nguyên và vật phẩm trang trí có giá trị vượt trội gấp 5 - 10 lần so với mua lẻ. Khi một Battle Pass quá khó hoặc đặt nặng yếu tố Pay-to-Win, nó sẽ phá hủy lòng tin và gây sụt giảm nghiêm trọng chỉ số giữ chân người chơi.",
-        en: "A Battle Pass represents a psychological contract between publisher and gamer: if players commit consistent playtime to complete seasonal milestones, they unlock resource bundles and exclusive cosmetics valued at 5x to 10x standard direct purchases. When a battle pass is overly grinding or heavily pay-to-win, it erodes trust and accelerates player churn.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/battle-pass-value.jpg",
-        alt: { vi: "Sơ đồ thiết kế hệ thống phần thưởng Battle Pass theo mùa cho game mobile", en: "Seasonal mobile game Battle Pass reward tier architecture and progression pacing" },
-        caption: { vi: "Phân chia 2 luồng phần thưởng Miễn phí (Free Track) và Trả phí (Premium Track) giúp duy trì động lực cày cuốc cho cả game thủ F2P và người nạp tiền.", en: "Segmenting Free and Premium tracks sustains daily progression incentives for both free-to-play grinders and paying spenders." },
-      },
-      { type: "h2", text: { vi: "1. Bốn tầng giá trị cốt lõi của Battle Pass bền vững", en: "1. Four Core Pillars of a Sustainable Battle Pass" } },
-      { type: "ul", items: [
-        { vi: "Tiến độ minh bạch (Clear Milestone Progression): Người chơi luôn nhìn thấy chính xác số điểm kinh nghiệm cần thiết để mở khóa cấp tiếp theo, không có thuật toán ngầm thay đổi độ khó.", en: "Transparent XP Curves: Players clearly visualize exact XP requirements for each tier without opaque difficulty spikes." },
-        { vi: "Phần thưởng độc quyền mang tính biểu tượng (Status Prestige): Skin nhân vật, khung avatar động hoặc hiệu ứng biến về giới hạn theo mùa không thể mua lại sau khi kết thúc Battle Pass.", en: "Exclusive Prestige Rewards: Seasonal character skins, animated avatar frames, and recall SFX unobtainable once the pass concludes." },
-        { vi: "Nhịp cày cuốc linh hoạt (Flexible Catch-up Mechanics): Người chơi bận rộn vẫn có thể hoàn thành Battle Pass vào cuối mùa nhờ nhiệm vụ tích lũy cuối tuần mà không bị phạt bỏ lỡ.", en: "Forgiving Catch-Up Loops: Busy players can complete the pass toward season end through banked weekly quests without feeling penalized." },
-        { vi: "Hoàn lại một phần đơn vị tiền tệ cao cấp (Currency Rebate): Cung cấp lại 50% - 80% số kim cương đã bỏ ra khi hoàn thành cấp tối đa, kích thích người chơi tiếp tục mua Battle Pass mùa sau.", en: "Partial Currency Rebates: Returning 50% - 80% of premium gems upon maxing the pass, naturally priming repeat subscriptions for the subsequent season." },
-      ] },
-    ],
-  },
-  {
-    slug: "quang-cao-game-mobile-viet-nam-ke-hoach-ngan-sach",
-    slug_en: "mobile-game-advertising-vietnam-3-phase-budget-allocation-strategy",
-    title: { vi: "Quảng cáo game mobile tại Việt Nam: Chiến lược phân bổ ngân sách 3 giai đoạn", en: "Mobile Game Advertising in Vietnam: 3-Phase Budget Allocation Strategy" },
-    excerpt: { vi: "Đổ dồn 100% ngân sách vào tuần lễ ra mắt là cách nhanh nhất để 'cháy túi' trước khi có dữ liệu tối ưu. Phân bổ ngân sách theo 3 giai đoạn: Thử nghiệm (Test), Tăng tốc (Scale) và Tái kích hoạt (Retarget).", en: "Pouring 100% of acquisition funds into launch week exhausts budgets before data matures. Allocating capital across 3 deliberate stages: Test, Scale, and Retargeting." },
-    category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-18", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
-    cover: "/blog-covers/performance-3d.png",
-    sources: [
-      { label: { vi: "Google Ads: App Campaigns Best Practices", en: "Google Ads: App Campaigns Best Practices" }, href: "https://support.google.com/google-ads/answer/6247380" },
-      { label: { vi: "Meta for Business: Mobile App Ads Guide", en: "Meta for Business: Mobile App Ads Guide" }, href: "https://www.facebook.com/business/ads/app-ads" },
-    ],
-    body: [
-      { type: "p", text: {
-        vi: "Một trong những sai lầm phổ biến nhất của các đội ngũ phát hành game là dồn toàn bộ ngân sách Paid UA vào ngày mở server (D-Day) để leo Top bảng xếp hạng App Store / Google Play. Khi đợt bùng nổ ban đầu qua đi, chi phí CPI tăng vọt, ngân sách cạn kiệt đúng vào thời điểm đội ngũ cần tiền để mở rộng các tệp người chơi sinh lời cao.",
-        en: "One of the most frequent publishing missteps is concentrating all acquisition capital on launch day purely to brute-force app store rankings. Once the artificial surge fades, CPI skyrockets and budgets dry up precisely when teams need capital to scale profitable payer cohorts.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/performance-ad-campaigns.jpg",
-        alt: { vi: "Phân bổ ngân sách chiến dịch quảng cáo game theo từng giai đoạn", en: "Mobile game ad budget allocation across test, scale and retargeting stages" },
-        caption: { vi: "Phân chia ngân sách theo 3 giai đoạn giúp bảo toàn vốn và tăng tỷ lệ hoàn vốn ROAS.", en: "Phased ad budget allocation preserves capital and increases cumulative ROAS." },
-      },
-      { type: "h2", text: { vi: "1. Khung phân bổ ngân sách 3 giai đoạn (15%: 70%: 15%)", en: "1. The 3-Phase Budget Allocation Framework (15%: 70%: 15%)" } },
-      { type: "ul", items: [
-        { vi: "Giai đoạn 1: Thử nghiệm & Tìm Winning Hook (15% ngân sách, D-14 đến D+7): Chạy nhiều biến thể video trên Meta Ads và TikTok Ads với mức ngân sách nhỏ để xác định góc tiếp cận có Hook Rate > 35% và eCPI thấp nhất.", en: "Phase 1, Creative Testing Lab (15% budget, D-14 to D+7): Rapidly iterate video concepts across Meta and TikTok to isolate hooks with >35% 3-second retention and optimal eCPI." },
-        { vi: "Giai đoạn 2: Tăng tốc quy mô (70% ngân sách, D+8 đến D+60): Tập trung toàn lực bơm ngân sách cho các Creative Winner, mở rộng tệp Lookalike (LAL) và nhắm mục tiêu theo sự kiện tối ưu nạp tiền (AEO / VO).", en: "Phase 2, Scaled Acquisition (70% budget, D+8 to D+60): Aggressively scale winning creatives into high-value lookalikes and App Event Optimization (AEO / Value Optimization) campaigns." },
-        { vi: "Giai đoạn 3: Tái kích hoạt & Chống rơi rớt (15% ngân sách, D+61 trở đi): Chạy quảng cáo Retargeting nhắm vào nhóm người chơi cũ đã tạm ngưng đăng nhập bằng thông điệp bản cập nhật tướng mới và quà tặng trở lại.", en: "Phase 3, Churn Retargeting & Re-Engagement (15% budget, D+61 onward): Deploy retargeting ads highlighting major update features and comeback rewards to reactivate lapsed players." },
-      ] },
-      {
-        type: "image",
-        src: "/blog-covers/creative-testing-lab.jpg",
-        alt: { vi: "Quy trình kiểm thử A/B Testing tối ưu hóa chi phí quảng cáo game mobile", en: "Mobile game ad A/B testing workflow and performance creative lab" },
-        caption: { vi: "Tách nhỏ ngân sách thử nghiệm giúp sàng lọc ra các mẫu quảng cáo có D7 ROAS cao trước khi tăng ngân sách diện rộng.", en: "Micro-budget testing filters high-D7 ROAS winners before deploying large-scale acquisition capital." },
-      },
-      { type: "h2", text: { vi: "2. Đo lường Blended eCPI thay vì nhìn CPI từng kênh", en: "2. Measuring Blended eCPI vs Channel-Isolated CPI" } },
-      { type: "p", text: {
-        vi: "Khi chạy chiến dịch quy mô lớn, một phần lớn người chơi nhìn thấy quảng cáo trên TikTok nhưng sau đó tự tìm kiếm và tải game tự nhiên trên Store (Organic Uplift). Việc đo lường Blended eCPI (Tổng chi phí quảng cáo chia cho Tổng lượt cài đặt thực tế) giúp đội ngũ đánh giá đúng ROI tổng thể mà không cắt nhầm các kênh tạo nhận diện mạnh.",
-        en: "During large campaigns, many players exposed to TikTok ads search and install organically on the store (Organic Uplift). Tracking Blended eCPI (Total Ad Spend divided by Total Installs) ensures teams assess true macro ROI without prematurely cutting high-awareness channels.",
-      } },
-    ],
-  },
-  {
     slug: "tiktok-marketing-cho-game-mobile-viet-nam",
     slug_en: "mobile-game-tiktok-marketing-2-second-hook-frameworks-viral",
     title: { vi: "TikTok marketing game mobile: Công thức sản xuất Creative giữ chân game thủ trong 2 giây đầu", en: "Mobile Game TikTok Marketing: 2-Second Hook Frameworks for Viral Conversion" },
@@ -2277,47 +2166,6 @@ const builtinPosts: Post[] = [
     ],
   },
   {
-    slug: "creative-strategy-game-mobile-test-hook",
-    slug_en: "mobile-game-creative-strategy-modular-hook-testing-framework",
-    title: { vi: "Chiến lược Creative Game Mobile: Ma trận thử nghiệm Modular Hook trước khi sản xuất quy mô lớn", en: "Mobile Game Creative Strategy: Modular Hook Testing Framework Before Scale" },
-    excerpt: { vi: "Sản xuất video quảng cáo hoàn chỉnh rồi mới phát hiện không hiệu quả là cách đốt ngân sách lãng phí nhất. Hướng dẫn bóc tách video thành 3 module (Hook 3s, Gameplay, CTA) để kiểm thử A/B vi mô.", en: "Producing finished ad videos before testing assumptions is a costly money sink. Deconstructing video creatives into 3 modular building blocks (Hook, Gameplay, CTA) for rapid micro-testing." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-20", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "game",
-    cover: "/blog-covers/creative-testing.jpg",
-    sources: [
-      { label: { vi: "TikTok Creative Center: Modular Testing Framework", en: "TikTok Creative Center: Modular Testing Framework" }, href: "https://ads.tiktok.com/business/creativecenter/" },
-      { label: { vi: "Meta for Business: Creative Diversity Playbook", en: "Meta for Business: Creative Diversity Playbook" }, href: "https://www.facebook.com/business/ads" },
-    ],
-    body: [
-      { type: "p", text: {
-        vi: "Trong kỷ nguyên thuật toán phân phối tự động của Meta Advantage+ và TikTok Smart Performance Campaign, mẫu quảng cáo (Creative) chính là công cụ nhắm mục tiêu (Targeting) quan trọng nhất. Thay vì sản xuất 10 video hoàn chỉnh từ đầu đến cuối, các đội ngũ UA hàng đầu áp dụng phương pháp Modular Creative: quay 5 hook mở đầu khác nhau ghép với 2 đoạn gameplay cốt lõi và 2 màn hình kêu gọi hành động (CTA) để tạo ra 20 biến thể kiểm thử tốc độ cao.",
-        en: "Under modern automated algorithmic delivery (Meta Advantage+ & TikTok Smart Performance Campaigns), the creative asset itself is the primary targeting mechanism. Rather than producing 10 distinct full-length videos, elite UA teams deploy Modular Creatives: combining 5 distinct opening hooks with 2 core gameplay segments and 2 distinct CTAs to generate 20 rapid testing permutations.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/livestream-creator-setup.jpg",
-        alt: { vi: "Quy trình thử nghiệm Creative Hook và concept quảng cáo game", en: "Creative hook testing workflow and mobile game ad concept discovery" },
-        caption: { vi: "Thử nghiệm tách biệt giữa Hook, Fantasy và Proof giúp tìm ra công thức quảng cáo thắng bền vững.", en: "Isolating Hook, Fantasy, and Proof unlocks sustainable winning ad formulas." },
-      },
-      { type: "h2", text: { vi: "1. Ba nhóm Hook mở đầu có tỷ lệ giữ chân cao nhất", en: "1. Three High-Performing Hook Archetypes" } },
-      { type: "ul", items: [
-        { vi: "Hook Nhập vai / Kích hoạt Mong muốn (Fantasy Hook): Đặt người xem vào vị trí thủ lĩnh đưa ra quyết định sinh tử (Xây thành hay Tấn công bang hội đối thủ) ngay giây thứ 1.", en: "Fantasy Immersion Hook: Drops the viewer into a high-stakes leadership dilemma (Build Defenses vs Ambush Rival Guild) at second 1." },
-        { vi: "Hook Thử thách Thất bại (Skill Challenge Hook): Đưa ra tình huống ghép đồ hoặc né chiêu hỏng với câu hỏi khiêu khích: 'Chỉ 1% người chơi qua nổi ải này'.", en: "Skill Challenge Hook: Demonstrates a catastrophic rookie misplay paired with an ego-challenging prompt: 'Only 1% of commanders beat this level'." },
-        { vi: "Hook Phản ứng Thực tế (Social Proof Reaction): Video Creator mở gói thẻ hiếm hoặc phản ứng ngỡ ngàng trước đồ họa Unreal Engine 5 của game.", en: "Social Proof Reaction Hook: Real creator reacting with authentic surprise to an ultra-rare pull or Unreal Engine 5 visual spectacle." },
-      ] },
-      {
-        type: "image",
-        src: "/blog-covers/creative-testing-lab.jpg",
-        alt: { vi: "Phòng lab thử nghiệm và phân tích dữ liệu hiệu suất mẫu quảng cáo game", en: "Ad performance analytics lab and creative testing dashboard" },
-        caption: { vi: "Phân tích 3-second Hook Rate và Thumbstop Ratio để loại bỏ các biến thể kém hiệu quả trong vòng 48 giờ.", en: "Analyzing 3-second Hook Rates and Thumbstop Ratios filters out underperforming variants within 48 hours." },
-      },
-      { type: "h2", text: { vi: "2. Quy tắc lọc Creative Winner trong 48 giờ", en: "2. The 48-Hour Creative Filter Rules" } },
-      { type: "p", text: {
-        vi: "Một biến thể video được xem là Winner khi thỏa mãn đồng thời 3 điều kiện: 3-Second Hook Rate > 35%, Video Average Watch Time > 6 giây, và Tỷ lệ chuyển đổi cài đặt eCPI thấp hơn 20% so với mức trung bình của tài khoản. Chỉ bơm thêm ngân sách khi cả 3 chỉ số đều xanh.",
-        en: "A variant qualifies as a Winner only when meeting 3 criteria simultaneously: 3-Second Hook Rate > 35%, Average Watch Time > 6 seconds, and eCPI at least 20% below account benchmark. Scale acquisition spend only when all 3 metrics pass.",
-      } },
-    ],
-  },
-  {
     slug: "game-marketing-b2b-case-study-viet-nam",
     slug_en: "publishing-credible-game-marketing-case-studies-empirical-b2b",
     title: { vi: "Case Study Marketing Game tại Việt Nam: Cấu trúc báo cáo thực chứng tạo dựng niềm tin tuyệt đối với NPH", en: "Publishing Credible Game Marketing Case Studies: The Empirical B2B Trust Framework" },
@@ -2398,47 +2246,6 @@ const builtinPosts: Post[] = [
       { type: "p", text: {
         vi: "Nếu game của bạn có D1 Retention thấp hơn 30% so với benchmark cùng thể loại, hãy ngừng ngay việc mở rộng ngân sách quảng cáo. Vấn đề lúc này nằm ở trải nghiệm tân thủ (FTUE) hoặc dung lượng tải game quá nặng, không phải do quảng cáo chưa đủ hay.",
         en: "If your title's D1 retention sits 30% below genre benchmark, immediately freeze ad scaling. The core issue resides in onboarding friction (FTUE) or oversized background asset downloads, not ad creative quality.",
-      } },
-    ],
-  },
-  {
-    slug: "aso-game-mobile-title-description-screenshot",
-    slug_en: "mobile-game-aso-optimization-title-description-first-3",
-    title: { vi: "Tối ưu ASO Game Mobile: Thiết kế Title, Short Description và Bộ 3 Screenshot đầu tiên", en: "Mobile Game ASO Optimization: Title, Description & The First 3 Screenshots" },
-    excerpt: { vi: "Trang Store không phải là nơi lưu trữ ảnh tĩnh vô hồn mà là phễu chuyển đổi quyết định lượt cài đặt. Công thức sắp xếp Title chuẩn từ khóa và bộ Screenshot theo cấu trúc kể chuyện thị giác (Visual Storytelling).", en: "Your store listing is an active conversion engine. The proven formula for keyword-optimized Titles and a 3-screenshot visual storytelling sequence that converts browsing players into installs." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
-    cover: "/blog-covers/app-store-conversion-funnel.jpg",
-    sources: [
-      { label: { vi: "Google Play Console: Store Listing Experiments Guide", en: "Google Play Console: Store Listing Experiments Guide" }, href: "https://support.google.com/googleplay/android-developer/answer/9859152" },
-      { label: { vi: "Apple App Store Product Page Optimization (PPO)", en: "Apple App Store Product Page Optimization (PPO)" }, href: "https://developer.apple.com/app-store/product-page-optimization/" },
-    ],
-    body: [
-      { type: "p", text: {
-        vi: "Phần lớn người dùng quyết định tải game chỉ trong vài giây đầu tiên lướt qua màn hình Store, thường không hề bấm nút 'Đọc thêm' (Read More) phần mô tả. Một sai lầm kinh điển của các studio là nhồi nhét quá nhiều chữ kỹ thuật hoặc chọn screenshot phong cảnh mờ nhạt thay vì thể hiện trực diện sức mạnh gameplay và cảm xúc chiến đấu.",
-        en: "Most users decide whether to install within the first few seconds of viewing a store page, often without ever expanding the 'Read More' description fold. A classic studio blunder is cluttering visuals with tiny text or showing generic scenery screenshots rather than highlighting visceral combat action and immediate player empowerment.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/aso-store-optimization.jpg",
-        alt: { vi: "Tối ưu hóa hình ảnh Title, Icon và Screenshots trên trang App Store", en: "Optimizing Title, Icon, and Screenshot assets on App Store listings" },
-        caption: { vi: "Thiết kế bộ screenshots truyền tải đúng gameplay chính giúp nâng cao tỷ lệ chuyển đổi cài đặt.", en: "Screenshot sets highlighting core gameplay mechanics significantly improve store conversion." },
-      },
-      { type: "h2", text: { vi: "1. Công thức 3 Screenshot đầu tiên theo thứ tự kể chuyện", en: "1. The 3-Screenshot Visual Storytelling Formula" } },
-      { type: "ul", items: [
-        { vi: "Screenshot 1, Khơi dậy Ước mơ / Nhân vật Chính (The Core Fantasy): Hình ảnh tướng SSR hoặc chiến binh chủ lực thi triển chiêu thức tối thượng kèm tiêu đề ngắn gọn (Dưới 5 từ): 'Chiến thuật 4X Đỉnh Cao'.", en: "Screenshot 1, The Core Fantasy: Hero visual unleashing an ultimate skill paired with a punchy value headline (<5 words): 'Next-Gen 4X Strategy'." },
-        { vi: "Screenshot 2, Hệ thống Chiến đấu & Gameplay Thực tế (The Core Gameplay Loop): Giao diện bàn cờ chiến thuật hoặc trận đấu 5v5 thời gian thực chứng minh chất lượng đồ họa.", en: "Screenshot 2, The Core Gameplay Loop: Real in-game battlefield or 5v5 tactical arena proving authentic graphical fidelity." },
-        { vi: "Screenshot 3, Tính năng Xã hội / Phúc lợi Tân thủ (Guild Wars & Rewards): Thể hiện quà tặng 1.000 lượt quay gacha miễn phí hoặc hoạt động Công Thành Chiến ngàn người.", en: "Screenshot 3, Social Proof & Launch Bounty: Highlighting 1,000 free gacha pulls or massive 1,000-player Siege Warfare battles." },
-      ] },
-      {
-        type: "image",
-        src: "/blog-covers/app-store-conversion-funnel.jpg",
-        alt: { vi: "Phễu chuyển đổi từ tìm kiếm từ khóa đến tải game trên App Store và Google Play", en: "Store conversion funnel from keyword search to completed app install" },
-        caption: { vi: "Kiểm thử A/B Testing bộ ảnh Screenshot có thể mang lại mức tăng trưởng đáng kể về tỷ lệ chuyển đổi tự nhiên.", en: "A/B testing store screenshots can meaningfully lift organic conversion rate." },
-      },
-      { type: "h2", text: { vi: "2. Cấu trúc Title & Subtitle chuẩn thuật toán ASO", en: "2. Algorithmic Title & Subtitle Best Practices" } },
-      { type: "p", text: {
-        vi: "Áp dụng cấu trúc vàng: [Tên Game Chính] + [Dấu gạch ngang] + [Thể loại cốt lõi] + [Từ khóa tìm kiếm phổ biến]. Ví dụ: 'Võ Lâm Chiến, Game Kiếm Hiệp 3D Nhập Vai'. Tránh lặp lại từ khóa giữa Title và Subtitle để không bị thuật toán Apple phạt spam.",
-        en: "Apply the proven formula: [Brand Name] + [Separator] + [Core Genre] + [High-Volume Semantic Keyword]. E.g., 'Kingdoms Clash, Real-Time 4X Strategy RPG'. Never duplicate keywords between Title and Subtitle to avoid Apple metadata penalties.",
       } },
     ],
   },

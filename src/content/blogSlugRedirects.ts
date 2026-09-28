@@ -23,7 +23,6 @@ export const blogViToEnSlug: Record<string, string> = {
   "retention-game-mobile-tang-d1-d7-d30": "optimizing-mobile-game-retention-9-proven-formulas-d1",
   "liveops-game-mobile-lich-su-kien-giu-nguoi-choi": "mobile-game-liveops-designing-year-round-event-calendars-that",
   "localization-game-mobile-viet-nam": "mobile-game-localization-vietnam-bridging-language-gamer-culture",
-  "user-acquisition-game-mobile-kenh-quang-cao": "mobile-game-user-acquisition-channel-selection-strategy-budget",
   "monetization-game-mobile-iap-battle-pass": "mobile-game-monetization-combining-iap-battle-pass-rewarded",
   "do-luong-game-mobile-cpi-ltv-roas": "mobile-game-analytics-building-unified-dashboards-cpi-ltv",
   "ra-mat-game-mobile-viet-nam-checklist": "launching-mobile-game-vietnam-complete-checklist-licensing-your",
@@ -36,17 +35,13 @@ export const blogViToEnSlug: Record<string, string> = {
   "game-mobile-ugc-creator-program": "mobile-game-creator-programs-engineering-self-sustaining-ugc-ecosystem",
   "seo-game-mobile-topic-cluster": "mobile-game-seo-building-topic-clusters-dominate-search",
   "game-mobile-onboarding-tang-activation": "mobile-game-onboarding-5-golden-rules-maximize-first-session",
-  "battle-pass-game-mobile-thiet-ke-gia-tri": "designing-mobile-game-battle-passes-balancing-in-app-revenue",
-  "quang-cao-game-mobile-viet-nam-ke-hoach-ngan-sach": "mobile-game-advertising-vietnam-3-phase-budget-allocation-strategy",
   "tiktok-marketing-cho-game-mobile-viet-nam": "mobile-game-tiktok-marketing-2-second-hook-frameworks-viral",
   "pheu-marketing-game-mobile-tu-nhan-biet-den-retention": "full-funnel-mobile-game-marketing-playbook-first-impression-d30",
   "thanh-toan-game-mobile-viet-nam-tang-conversion": "mobile-game-payment-gateways-vietnam-minimizing-friction-lifting",
   "community-manager-game-mobile-kpi": "mobile-game-community-manager-kpis-health-telemetry-long-term",
   "localization-game-mobile-chi-phi-va-quy-trinh": "mobile-game-localization-costs-lqa-workflows-eliminating-hidden",
-  "creative-strategy-game-mobile-test-hook": "mobile-game-creative-strategy-modular-hook-testing-framework",
   "game-marketing-b2b-case-study-viet-nam": "publishing-credible-game-marketing-case-studies-empirical-b2b",
   "mobile-game-user-acquisition-vietnam-benchmark": "vietnam-mobile-game-user-acquisition-benchmarks-2026-cpi",
-  "aso-game-mobile-title-description-screenshot": "mobile-game-aso-optimization-title-description-first-3",
   "game-mobile-retention-push-notification": "mobile-game-push-notifications-re-engaging-lapsed-players-spam",
   "game-mobile-influencer-brief-mau": "mobile-game-influencer-brief-template-empowering-authentic-creator",
   "monetization-game-mobile-arppu-arpu": "mobile-game-arpu-vs-arppu-decoding-monetization-models",
@@ -69,3 +64,22 @@ export const blogViToEnSlug: Record<string, string> = {
 export const blogEnToViSlug: Record<string, string> = Object.fromEntries(
   Object.entries(blogViToEnSlug).map(([vi, en]) => [en, vi])
 );
+
+// Slugs of posts that were merged into another post (topic-cluster
+// de-duplication) and no longer exist in posts.ts. Maps the old slug
+// (vi or en form) directly to the surviving post's slug in the SAME
+// locale, so old indexed URLs 308-redirect to the merged content instead
+// of 404ing. Add both the old vi slug and old slug_en whenever a post is
+// deleted this way.
+export const mergedPostRedirects: Record<string, string> = {
+  "battle-pass-game-mobile-thiet-ke-gia-tri": "monetization-game-mobile-iap-battle-pass",
+  "designing-mobile-game-battle-passes-balancing-in-app-revenue": "mobile-game-monetization-combining-iap-battle-pass-rewarded",
+  "creative-strategy-game-mobile-test-hook": "creative-testing-game-mobile-quang-cao",
+  "mobile-game-creative-strategy-modular-hook-testing-framework": "mobile-game-creative-testing-3-step-process-winning-ads",
+  "aso-game-mobile-title-description-screenshot": "aso-game-mobile-viet-nam",
+  "mobile-game-aso-optimization-title-description-first-3": "mobile-game-aso-vietnam-strategic-organic-app-store",
+  "user-acquisition-game-mobile-kenh-quang-cao": "marketing-game-app-toi-uu-cpi-roas",
+  "mobile-game-user-acquisition-channel-selection-strategy-budget": "mobile-game-app-marketing-practical-cpi-roas-ltv",
+  "quang-cao-game-mobile-viet-nam-ke-hoach-ngan-sach": "marketing-game-app-toi-uu-cpi-roas",
+  "mobile-game-advertising-vietnam-3-phase-budget-allocation-strategy": "mobile-game-app-marketing-practical-cpi-roas-ltv",
+};
