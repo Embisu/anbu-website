@@ -345,31 +345,31 @@ const builtinPosts: Post[] = [
       {
         type: "image",
         src: "/blog-covers/tien-nghich-mobile-joygames-jun-vu.jpg",
-        alt: { vi: "Tiên Nghịch Mobile kết hợp bản quyền Tencent Video và diễn viên Jun Vũ làm đại sứ thương hiệu", en: "Tien Nghich Mobile (JoyGames) combining official Tencent Video IP licensing with celebrity ambassador Jun Vu" },
-        caption: { vi: "Chiến dịch ra mắt Tiên Nghịch Mobile (JoyGames) khẳng định công thức thành công: Kết hợp IP hoạt hình 3D top đầu Tencent Video cùng Đại sứ thương hiệu hạng A (Jun Vũ - Lý Mộ Uyển) để tạo bão truyền thông ngày mở server.", en: "The Tien Nghich Mobile launch exemplifies modern mastery: pairing a top-tier Tencent Video 3D donghua IP with an A-list brand ambassador (Jun Vu as Li Muyuan) to ignite overwhelming day-one viral buzz." },
+        alt: { vi: "Ví dụ minh họa: kết hợp bản quyền IP hoạt hình nổi tiếng và đại sứ thương hiệu hạng A", en: "Illustrative example: combining renowned animated IP licensing with an A-list brand ambassador" },
+        caption: { vi: "Kết hợp IP hoạt hình 3D nổi tiếng cùng Đại sứ thương hiệu phù hợp tạo hình nhân vật là công thức phổ biến để tạo bão truyền thông ngày mở server.", en: "Pairing a renowned 3D animated IP with a brand ambassador matching the character's image is a common formula for day-one launch buzz." },
       },
-      { type: "h2", text: { vi: "4. Đòn bẩy kép: Bản quyền IP danh tiếng & Đại sứ thương hiệu hạng A (Tiên Nghịch & Jun Vũ)", en: "4. The Twin Engine: Renowned IP Licensing & A-List Brand Ambassadors (Tien Nghich & Jun Vu)" } },
+      { type: "h2", text: { vi: "4. Đòn bẩy kép: Bản quyền IP danh tiếng & Đại sứ thương hiệu hạng A", en: "4. The Twin Engine: Renowned IP Licensing & A-List Brand Ambassadors" } },
       {
         type: "p",
         text: {
-          vi: "Giữa hàng trăm tựa game ra mắt mỗi năm, làm thế nào để game của bạn nổi bật và chiếm trọn niềm tin của người chơi ngay trong ngày đầu tiên? Chiến dịch ra mắt Tiên Nghịch Mobile của JoyGames là một bài học mẫu mực về việc kết hợp sức mạnh IP và đại sứ hình ảnh. Bằng cách sở hữu bản quyền chính thức từ siêu phẩm hoạt hình 3D của Tencent Video, kết hợp cùng hình ảnh diễn viên Jun Vũ hóa thân xuất thần thành nàng Lý Mộ Uyển thanh khiết, tựa game lập tức giải quyết được 3 bài toán sống còn:",
-          en: "Amid hundreds of annual game releases, how do you capture immediate player trust on launch day? The launch of Tien Nghich Mobile by JoyGames offers a masterclass in synchronizing licensed IP prestige with celebrity ambassador power. By securing official rights from Tencent Video's flagship donghua and casting renowned actress Jun Vu as heroine Li Muyuan, the campaign conquered 3 crucial milestones:"
+          vi: "Giữa hàng trăm tựa game ra mắt mỗi năm, làm thế nào để game của bạn nổi bật và chiếm trọn niềm tin của người chơi ngay trong ngày đầu tiên? Một hướng đi phổ biến là kết hợp sức mạnh IP và đại sứ hình ảnh: sở hữu bản quyền chính thức từ một IP hoạt hình/truyện tranh có sẵn lượng fan lớn, kết hợp cùng một gương mặt đại sứ thương hiệu phù hợp hình tượng nhân vật. Cách làm này thường giúp giải quyết 3 bài toán:",
+          en: "Amid hundreds of annual game releases, how do you capture immediate player trust on launch day? One common approach is combining licensed IP prestige with celebrity ambassador power: securing official rights from a popular anime/comic IP and pairing it with a brand ambassador who matches the character's image. This approach typically addresses 3 challenges:"
         },
       },
       {
         type: "ul",
         items: [
           {
-            vi: "Xóa tan định kiến 'game lậu': Tính chính danh từ bản quyền Tencent Video và giấy phép G1 minh bạch giúp người chơi an tâm nạp thẻ gắn bó lâu dài.",
-            en: "Eliminating pirate server skepticism: Official Tencent Video licensing and verified G1 compliance assure players of long-term operational longevity."
+            vi: "Xóa tan định kiến 'game lậu': Tính chính danh từ bản quyền IP chính thức và giấy phép G1 minh bạch giúp người chơi an tâm nạp thẻ gắn bó lâu dài.",
+            en: "Eliminating pirate server skepticism: Official IP licensing and verified G1 compliance assure players of long-term operational longevity."
           },
           {
-            vi: "Giảm mạnh chi phí quảng cáo (CPI): Hình ảnh đại sứ Jun Vũ trong tạo hình tiên hiệp cổ trang thu hút tỷ lệ nhấp chuột cực cao trên Meta, TikTok và biển bảng ngoài trời OOH.",
-            en: "Drastically lowering acquisition CPI: Visuals of ambassador Jun Vu in ethereal martial garb supercharge ad CTR across social channels and prime billboards."
+            vi: "Hỗ trợ hiệu quả quảng cáo: Hình ảnh đại sứ thương hiệu phù hợp tạo hình nhân vật trong game thường thu hút tỷ lệ nhấp chuột tốt hơn trên Meta, TikTok và biển bảng ngoài trời OOH so với hình ảnh quảng cáo thông thường.",
+            en: "Supporting ad performance: Ambassador visuals that match the in-game character art typically outperform generic ad creative in click-through rate across social channels and OOH billboards."
           },
           {
-            vi: "Kích hoạt hiệu ứng truyền thông tự nhiên: Báo chí, diễn đàn phim ảnh và fan tiểu thuyết tiên hiệp đồng loạt chia sẻ, mang lại hàng triệu lượt hiển thị tự nhiên hoàn toàn miễn phí.",
-            en: "Igniting organic earned media: Mainstream culture portals, film forums, and novel reader hubs enthusiastically discussed the launch across millions of organic impressions."
+            vi: "Kích hoạt hiệu ứng truyền thông tự nhiên: Báo chí, diễn đàn phim ảnh và cộng đồng fan nguyên tác thường chủ động chia sẻ, mang lại lượt hiển thị tự nhiên không tốn ngân sách.",
+            en: "Igniting organic earned media: Mainstream culture portals, film forums, and the source material's fan community often share the launch organically, at no media cost."
           },
         ],
       },
@@ -1445,13 +1445,13 @@ const builtinPosts: Post[] = [
   {
     slug: "ra-mat-game-mobile-viet-nam-checklist",
     title: { vi: "Ra mắt game mobile tại Việt Nam: checklist đầy đủ từ pháp lý đến 90 ngày đầu", en: "Launching a mobile game in Vietnam: the complete checklist from licensing to your first 90 days" },
-    excerpt: { vi: "Ra mắt game ở Việt Nam thất bại hiếm khi vì marketing yếu. Phần lớn vỡ trận vì giấy phép chưa xong, bản dịch sai ngữ cảnh hoặc không ai trực xử lý sự cố. Đây là checklist đầy đủ ANBU dùng khi đồng hành cùng studio quốc tế vào thị trường này.", en: "Game launches in Vietnam rarely fail because of weak marketing. They fail because licensing wasn't finished, translation missed the context, or nobody was on call for a crisis. This is the full checklist ANBU uses when bringing international studios into this market." },
+    excerpt: { vi: "Ra mắt game ở Việt Nam thất bại hiếm khi vì marketing yếu. Phần lớn vỡ trận vì giấy phép chưa xong, bản dịch sai ngữ cảnh hoặc không ai trực xử lý sự cố. Đây là checklist đầy đủ ANBU tổng hợp để đồng hành cùng studio quốc tế vào thị trường này.", en: "Game launches in Vietnam rarely fail because of weak marketing. They fail because licensing wasn't finished, translation missed the context, or nobody was on call for a crisis. This is the full checklist ANBU has put together to support international studios entering this market." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-15", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "strategy", cover: "/blog-covers/launch-checklist.jpg",
     sources: [{ label: { vi: "Cổng thông tin Chính phủ: Nghị định 147/2024/NĐ-CP", en: "Vietnam Government Portal: Decree 147/2024/ND-CP" }, href: "https://vanban.chinhphu.vn/?pageid=27160&docid=211230" }, { label: { vi: "Google Play: developer policy", en: "Google Play: developer policy" }, href: "https://play.google.com/about/developer-content-policy/" }, { label: { vi: "Google Play: checklist phát hành", en: "Google Play: launch best practices" }, href: "https://developer.android.com/distribute/best-practices/launch" }, { label: { vi: "Apple: chuẩn bị phát hành ứng dụng", en: "Apple: prepare for app release" }, href: "https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds/" }],
     body: [
       { type: "p", text: {
-        vi: "Ra mắt game ở Việt Nam ít khi đổ vỡ vì một quảng cáo dở. Nó đổ vỡ vì ba tuần trước ngày mở cửa, đội ngũ mới phát hiện game chưa đủ điều kiện giấy phép, bản dịch tiếng Việt sai ngữ cảnh gameplay, hoặc không ai trực xử lý khủng hoảng nếu server sập lúc 11 giờ đêm. Dưới đây là checklist đầy đủ ANBU dùng mỗi khi đồng hành một studio quốc tế đưa game vào thị trường này, từ pháp lý, bản địa hóa, đến 90 ngày đầu sau khi mở cửa.",
-        en: "Game launches in Vietnam rarely fall apart because of one bad ad. They fall apart three weeks out, when a team discovers the title isn't licensed yet, the Vietnamese translation misses the gameplay context, or nobody is on call if the server goes down at 11pm. Here is the full checklist ANBU runs through with every international studio we bring into this market, from licensing and localization through the first 90 days after launch.",
+        vi: "Ra mắt game ở Việt Nam ít khi đổ vỡ vì một quảng cáo dở. Nó đổ vỡ vì ba tuần trước ngày mở cửa, đội ngũ mới phát hiện game chưa đủ điều kiện giấy phép, bản dịch tiếng Việt sai ngữ cảnh gameplay, hoặc không ai trực xử lý khủng hoảng nếu server sập lúc 11 giờ đêm. Dưới đây là checklist đầy đủ ANBU tổng hợp để đồng hành cùng studio quốc tế đưa game vào thị trường này, từ pháp lý, bản địa hóa, đến 90 ngày đầu sau khi mở cửa.",
+        en: "Game launches in Vietnam rarely fall apart because of one bad ad. They fall apart three weeks out, when a team discovers the title isn't licensed yet, the Vietnamese translation misses the gameplay context, or nobody is on call if the server goes down at 11pm. Here is the full checklist ANBU has put together to support international studios entering this market, from licensing and localization through the first 90 days after launch.",
       } },
       {
         type: "image",
@@ -1472,8 +1472,8 @@ const builtinPosts: Post[] = [
       ] },
       { type: "h2", text: { vi: "Bước 2: Bản địa hóa là ngữ cảnh, không chỉ là dịch", en: "Step 2: Localization means context, not just translation" } },
       { type: "p", text: {
-        vi: "Một bản dịch đúng ngữ pháp vẫn có thể sai hoàn toàn nếu nó không khớp với gameplay. Tên kỹ năng, thuật ngữ chiến đấu, thông báo trong game và cả giọng điệu quảng cáo cần được kiểm tra trực tiếp trên bản build, không chỉ trên file text rời. Với một game nhập vai như Honkai Impact 3 hay MU Vinh Dự, dịch sai một thuật ngữ chiến đấu có thể khiến người chơi hiểu lầm cơ chế cốt lõi ngay từ phiên chơi đầu tiên.",
-        en: "A grammatically correct translation can still be completely wrong if it doesn't match the gameplay. Skill names, combat terms, in-game notifications and even ad copy need to be checked against a real build, not a text file in isolation. In an RPG like Honkai Impact 3 or MU Vinh Dự, getting one combat term wrong can make players misread a core mechanic in their very first session.",
+        vi: "Một bản dịch đúng ngữ pháp vẫn có thể sai hoàn toàn nếu nó không khớp với gameplay. Tên kỹ năng, thuật ngữ chiến đấu, thông báo trong game và cả giọng điệu quảng cáo cần được kiểm tra trực tiếp trên bản build, không chỉ trên file text rời. Với một game nhập vai như Honkai Impact 3, dịch sai một thuật ngữ chiến đấu có thể khiến người chơi hiểu lầm cơ chế cốt lõi ngay từ phiên chơi đầu tiên.",
+        en: "A grammatically correct translation can still be completely wrong if it doesn't match the gameplay. Skill names, combat terms, in-game notifications and even ad copy need to be checked against a real build, not a text file in isolation. In an RPG like Honkai Impact 3, getting one combat term wrong can make players misread a core mechanic in their very first session.",
       } },
       { type: "ul", items: [
         { vi: "Dịch trong ngữ cảnh: có screenshot hoặc build thật, không dịch câu rời rạc", en: "Translate in context, use real screenshots or a build, not isolated strings" },
@@ -1514,8 +1514,8 @@ const builtinPosts: Post[] = [
       } },
       { type: "h2", text: { vi: "ANBU đồng hành ra sao", en: "How ANBU works alongside you" } },
       { type: "p", text: {
-        vi: "ANBU không chỉ đưa checklist rồi để bạn tự triển khai. Với các studio quốc tế, chúng tôi thường tham gia từ giai đoạn đánh giá độ sẵn sàng pháp lý, phối hợp localization và creator, đến vận hành cộng đồng và đo lường trong chính 90 ngày đầu, cùng một đội ngũ, một đường thời gian, thay vì nhiều bên rời rạc mỗi người biết một phần việc.",
-        en: "ANBU doesn't just hand you a checklist and walk away. With international studios, we typically stay involved from the legal-readiness assessment through localization and creator coordination to community operations and measurement across those first 90 days, one team, one timeline, instead of scattered vendors who each know only their own piece.",
+        vi: "ANBU không chỉ đưa checklist rồi để bạn tự triển khai. Với các studio quốc tế, chúng tôi sẵn sàng đồng hành từ giai đoạn đánh giá độ sẵn sàng pháp lý, phối hợp localization và creator, đến vận hành cộng đồng và đo lường trong chính 90 ngày đầu, cùng một đội ngũ, một đường thời gian, thay vì nhiều bên rời rạc mỗi người biết một phần việc.",
+        en: "ANBU doesn't just hand you a checklist and walk away. For international studios, we're ready to stay involved from the legal-readiness assessment through localization and creator coordination to community operations and measurement across those first 90 days, one team, one timeline, instead of scattered vendors who each know only their own piece.",
       } },
       { type: "quote", text: {
         vi: "Nếu bạn đang chuẩn bị đưa game vào Việt Nam và chưa chắc mình đã sẵn sàng ở đâu, hãy gửi cho ANBU thông tin sản phẩm và thời gian dự kiến. Chúng tôi sẽ cùng bạn rà lại từng hạng mục trước khi đặt ngày ra mắt.",
@@ -2529,38 +2529,7 @@ const builtinPosts: Post[] = [
         vi: "Tuyệt đối không bán thẳng các trang bị 'vô địch' chỉ bằng tiền mặt mà không thể cày cuốc được trong game. Hãy bán thời gian tiện lợi, vật phẩm trang trí làm đẹp độc quyền và các gói tài nguyên gia tốc tiến độ để đảm bảo môi trường cạnh tranh công bằng cho mọi tầng lớp game thủ.",
         en: "Never sell unbeatable pay-to-win items exclusively for cash without in-game grind paths. Monetize convenience, cosmetic prestige, and progression velocity to preserve competitive integrity across all player cohorts.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Phân tầng cơ cấu người nạp tiền: Minnows (Cá con) vs Dolphins (Cá heo) vs Whales (Cá voi)",
-      "en": "3. Player Monetization Segmentation: Minnows, Dolphins, and Whales"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Doanh thu bền vững của một tựa game mobile tại thị trường Việt Nam được phân bổ theo quy luật Pareto lũy thừa giữa 3 tệp người chơi chính:",
-      "en": "Sustainable mobile game monetization in Southeast Asia adheres to power-law distribution across three primary payer segments:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Minnows (Cá con - 70% tổng số người nạp / Chi tiêu $0.99 - $9.99/tháng): Đây là nhóm nhạy cảm về giá, mua gói nạp đầu, vé tuần và Battle Pass giá rẻ. Họ đóng vai trò tạo thanh khoản và sự sôi động cho server.",
-        "en": "Minnows (70% of payers / $0.99-$9.99 monthly): Price-sensitive supporters buying starter packs and basic passes, creating active multiplayer ecosystems."
-      },
-      {
-        "vi": "Dolphins (Cá heo - 25% tổng số người nạp / Chi tiêu $10 - $100/tháng): Nhóm người chơi trung thành, mua trọn gói vé tháng, sự kiện tích lũy nạp định kỳ và quay gacha tướng yêu thích.",
-        "en": "Dolphins (25% of payers / $10-$100 monthly): Reliable core spenders subscribing to monthly cards and seasonal event bundles."
-      },
-      {
-        "vi": "Whales (Cá voi - 5% tổng số người nạp / Chi tiêu $500 - $10.000+/tháng): Nhóm đóng góp tới 60 - 75% tổng doanh thu của game, đam mê vị thế đứng đầu bảng xếp hạng, sở hữu vật phẩm thần thoại độc bản và bang hội hùng mạnh.",
-        "en": "Whales (5% of payers / $500-$10,000+ monthly): Top-tier competitive VIPs generating 60-75% of total revenue, competing for leaderboard dominance."
-      }
-    ]
-  }],
+    ],
   },
   {
     slug: "game-mobile-analytics-dashboard-can-co",
@@ -2695,38 +2664,7 @@ const builtinPosts: Post[] = [
         vi: "Một cộng đồng game mạnh không đo bằng số lượng thành viên im lặng trong server, mà đo bằng tốc độ người chơi tìm được đồng đội để cùng nhau chinh chiến mỗi ngày.",
         en: "A powerful gaming community is not measured by silent member headcounts, but by how fast players find reliable teammates to conquer challenges together every single day.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Cấu trúc kênh và hệ thống Bot tự động hóa cho Server Discord Game 50.000 thành viên",
-      "en": "3. Channel Architecture and Automated Bots for 50,000-Member Discord Servers"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Một server Discord game mobile chuyên nghiệp cần được thiết kế với cấu trúc phân quyền bảo mật và các hoạt động tương tác tự động 24/7:",
-      "en": "A professional gaming Discord server requires role-based permissions and 24/7 automated engagement loops:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Kênh Đón tiếp & Xác thực (Verification Gate): Sử dụng bot Captcha để lọc 100% tài khoản bot spam và tự động gán role tân thủ.",
-        "en": "Verification Gate: Automated Captcha bots filtering spam and auto-assigning starter roles."
-      },
-      {
-        "vi": "Kênh Voice Room Tự Động (Temp Voice Generator): Cho phép người chơi tự động tạo phòng voice riêng khi ghép đội leo rank hoặc đánh boss bang hội.",
-        "en": "Dynamic Voice Generator: Allowing players to spawn private voice channels for guild raids and ranked matchmaking."
-      },
-      {
-        "vi": "Hệ thống Mini-Game & Tích điểm Server: Tích hợp bot đổi quà (Discord Points to In-game Giftcode) để duy trì nhiệt độ thảo luận liên tục.",
-        "en": "Gamification & Economy Bots: Rewarding active chat participation with in-game currency redemption codes."
-      }
-    ]
-  }],
+    ],
   },
   {
     slug: "marketing-game-mobile-mua-tet-viet-nam",
@@ -2766,38 +2704,7 @@ const builtinPosts: Post[] = [
         vi: "Nhiều tựa game đạt kỷ lục doanh thu trong 5 ngày Tết nhưng sụt giảm 70% DAU ngay sau khi kỳ nghỉ kết thúc. Để giữ chân dòng người chơi mới thu nạp được trong dịp Tết, NPH cần chuẩn bị sẵn một bản cập nhật lớn (Major Update) vào tuần thứ 2 sau Tết, mở khóa tính năng liên server mới hoặc chương trình tri ân bang hội để chuyển hóa người chơi giải trí ngắn hạn thành game thủ trung thành gắn bó cả năm.",
         en: "Many titles register record revenue over Tet only to suffer a 70% DAU collapse immediately afterward. To retain new cohort influxes, publishers must schedule a Major Update in the second week post-Tet, unlocking new cross-server mechanics or guild loyalty milestones to transition festive holiday players into year-round dedicated advocates.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Kế hoạch LiveOps Mùa Tết 3 tuần: Trước Tết, Trong Tết, Sau Tết",
-      "en": "3. The 3-Week Lunar New Year LiveOps Campaign Matrix"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Tết Nguyên Đán là thời điểm doanh thu in-game tăng trưởng 200 - 350% nhờ dòng tiền lì xì dồi dào và thời gian rảnh rỗi của game thủ. Lộ trình triển khai chiến dịch Tết chuẩn bao gồm:",
-      "en": "Lunar New Year sees a 200-350% surge in game spending driven by holiday lucky money and leisure time. The proven 3-phase execution model:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Tuần Trước Tết (20 - 28 Tháng Chạp): Tung sự kiện tích lũy đăng nhập, mở chuỗi nhiệm vụ 'Dọn dẹp đón Tết' và bán trước các gói vé ưu đãi đầu năm.",
-        "en": "Pre-Tet Week: Login streak events, 'Spring Cleaning' quest chains, and early-bird holiday pack sales."
-      },
-      {
-        "vi": "Tuần Trong Tết (Mùng 1 đến Mùng 6 Tết): Bùng nổ sự kiện Lì xì may mắn, Gacha nhân vật Thần Tài giới hạn và giải đấu Showmatch liên server du xuân.",
-        "en": "Tet Week (Days 1-6): Peak lucky red envelope drop events, exclusive Fortune God gacha banners, and festival showmatches."
-      },
-      {
-        "vi": "Tuần Sau Tết (Mùng 7 đến Rằm Tháng Giêng): Sự kiện 'Khai xuân đắc lộc', mở lại các vòng quay ưu đãi để tận dụng lượng tiền lì xì còn lại của người chơi.",
-        "en": "Post-Tet Week: Spring celebration recap events and bonus top-up tiers capturing lingering holiday spend."
-      }
-    ]
-  }],
+    ],
   },
   {
     slug: "seo-game-marketing-viet-nam-internal-link",
@@ -2896,7 +2803,7 @@ const builtinPosts: Post[] = [
         alt: { vi: "Giao diện tương tác nhân vật T-Doll trong Girls' Frontline 2 Exilium (Lưu Đày 2) minh chứng cho văn hóa tiếng lóng Waifu và Gacha", en: "Interactive T-Doll character interface in Girls' Frontline 2: Exilium demonstrating ACGN waifu and gacha slang localization" },
         caption: { vi: "Girls' Frontline 2: Exilium là minh chứng kinh điển cho hệ sinh thái tiếng lóng ACGN: Từ cách gọi thân mật 'game Lưu Tày' (chơi chữ từ Lưu Đày) cho đến các khái niệm 'T-Doll', 'Vợ yêu', 'Nổ vàng', 'Lệch rate'.", en: "Girls' Frontline 2: Exilium exemplifies ACGN subculture localization: from community nicknames like 'Luu Tay' (pun on Exilium/Luu Day) to core vernacular like 'T-Doll', 'Waifu', 'Golden Sparkles', and 'Rate-off 50/50'." },
       },
-      { type: "h2", text: { vi: "1. Case study Girls' Frontline 2: Sức mạnh của tiếng lóng ACGN, 'Lưu Tày' và 'T-Doll Vợ Yêu'", en: "1. Girls' Frontline 2 Case Study: Decoding ACGN Subculture, 'Luu Tay' & 'T-Doll Waifus'" } },
+      { type: "h2", text: { vi: "1. Ví dụ minh họa Girls' Frontline 2: Sức mạnh của tiếng lóng ACGN, 'Lưu Tày' và 'T-Doll Vợ Yêu'", en: "1. Illustrative Example (Girls' Frontline 2): Decoding ACGN Subculture, 'Luu Tay' & 'T-Doll Waifus'" } },
       {
         type: "p",
         text: {
@@ -3112,42 +3019,7 @@ const builtinPosts: Post[] = [
         vi: "Tuyệt đối không xóa bài ẩn ý kiến đóng góp của game thủ khi xảy ra sự cố server. Hãy ban hành thông báo xin lỗi công khai trong vòng 15 phút, nêu rõ nguyên nhân kỹ thuật, thời gian dự kiến khắc phục và gói đền bù (Compensation Pack) thỏa đáng.",
         en: "Never delete legitimate player feedback during server outages. Publish an official statement within 15 minutes acknowledging the bug, providing clear restoration timelines, and issuing a generous compensation package.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Kế hoạch xử lý khủng hoảng truyền thông game (Crisis Management Playbook)",
-      "en": "3. The 4-Step Crisis Management Playbook for Gaming Communities"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Khi xảy ra sự cố bảo trì kéo dài, lỗi nạp thẻ hoặc bug dupe đồ, một sai lầm trong phát ngôn của Community Manager có thể phá hủy hàng năm trời xây dựng niềm tin. Quy trình xử lý khủng hoảng chuẩn bao gồm:",
-      "en": "During unexpected extended maintenance, billing errors, or item duplication exploits, a single misstep by the community team can destroy years of hard-won trust. The crisis response playbook requires:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Bước 1: Phản hồi trong 15 phút đầu (First Acknowledgment): Lên thông báo ngắn gọn xác nhận NPH đã tiếp nhận sự cố và đội ngũ kỹ thuật đang tập trung xử lý, tuyệt đối không im lặng.",
-        "en": "Step 1: First Acknowledgment within 15 mins: Post a transparent notice confirming the team is actively investigating. Never maintain radio silence."
-      },
-      {
-        "vi": "Bước 2: Cập nhật tiến độ mỗi 60 phút: Giữ cho cộng đồng cảm thấy được tôn trọng bằng cách cập nhật tình hình thực tế định kỳ, tránh để tin đồn thất thiệt lan truyền.",
-        "en": "Step 2: Hourly Progress Updates: Provide transparent operational updates every 60 minutes to neutralize rumors."
-      },
-      {
-        "vi": "Bước 3: Gói quà đền bù thỏa đáng (Compensation Package): Sau khi sửa lỗi xong, gửi thư ingame xin lỗi chân thành kèm gói quà đền bù tài nguyên có giá trị tương xứng với thời gian người chơi phải chờ đợi.",
-        "en": "Step 3: Meaningful Compensation: Upon resolution, issue sincere in-game apology mailings with compensatory items matching the duration of downtime."
-      },
-      {
-        "vi": "Bước 4: Báo cáo nguyên nhân minh bạch (Post-Mortem): Đăng bài giải thích nguyên nhân kỹ thuật và giải pháp ngăn ngừa tái diễn để củng cố uy tín của NPH.",
-        "en": "Step 4: Transparent Post-Mortem: Publish a technical post-mortem detailing preventative measures to restore lasting publisher confidence."
-      }
-    ]
-  }],
+    ],
   },
   {
     slug: "ai-search-seo-game-marketing",
@@ -3306,8 +3178,8 @@ const builtinPosts: Post[] = [
       en: "Micro-Influencer Playbook for Mobile Games in Vietnam: Maximizing Conversions & Budget (2026)",
     },
     excerpt: {
-      vi: "Nhiều nhà phát hành từng nếm trái đắng khi chi hàng trăm triệu thuê một ngôi sao triệu view nhưng chỉ thu về vài lượt tải lèo tèo. Ngược lại, việc bắt tay cùng mạng lưới Micro Creator thực chiến lại tạo ra tỷ lệ giữ chân và nạp thẻ cao bất ngờ. Khám phá cách các tựa game đình đám tận dụng sức mạnh của những gương mặt như Thỏ Gờ Rin, Lily Phan và chiến lược phủ sóng đa tầng của Nguyệt Mộng.",
-      en: "Many publishers waste hundreds of millions on mainstream celebrity endorsements that barely yield active downloads. Conversely, deploying a synchronized fleet of gaming micro-creators generates exceptional retention and payer conversion. Here is how breakout titles leverage authentic creators like Tho Go Rin, Lily Phan, and Nguyet Mong's multi-layered network.",
+      vi: "Nhiều nhà phát hành từng nếm trái đắng khi chi hàng trăm triệu thuê một ngôi sao triệu view nhưng chỉ thu về vài lượt tải lèo tèo. Ngược lại, việc bắt tay cùng mạng lưới Micro Creator thực chiến lại tạo ra tỷ lệ giữ chân và nạp thẻ cao bất ngờ. Khám phá cách một chiến lược Micro Influencer bài bản có thể vận hành, qua ví dụ minh họa Nguyệt Mộng.",
+      en: "Many publishers waste hundreds of millions on mainstream celebrity endorsements that barely yield active downloads. Conversely, deploying a synchronized fleet of gaming micro-creators generates exceptional retention and payer conversion. Here is how a structured micro-influencer strategy can work, illustrated through the Nguyet Mong example.",
     },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" },
     date: "2026-08-24",
@@ -3331,15 +3203,15 @@ const builtinPosts: Post[] = [
       {
         type: "image",
         src: "/blog-covers/tho-go-rin-micro-influencer-game.png",
-        alt: { vi: "Thỏ Gờ Rin là một trong những micro influencer gaming mang lại hiệu quả chuyển đổi cao cho các nhãn hàng game", en: "Tho Go Rin is one of the highest-performing gaming micro-influencers in Vietnam delivering exceptional brand conversion" },
-        caption: { vi: "Thỏ Gờ Rin là một trong những micro influencer về game mang lại hiệu quả cao cho các nhãn hàng nhờ phong cách chơi game dí dỏm, chân thực và tệp người xem trung thành.", en: "Tho Go Rin exemplifies high-performing gaming micro-influencers, delivering superior brand conversion through witty, authentic gameplay and a fiercely loyal fan base." },
+        alt: { vi: "Một Micro Creator gaming tiêu biểu mang lại hiệu quả chuyển đổi cao cho các nhãn hàng game", en: "A representative gaming micro-influencer delivering strong conversion for game brands" },
+        caption: { vi: "Micro Creator về game thường mang lại hiệu quả cao cho các nhãn hàng nhờ phong cách chơi game dí dỏm, chân thực và tệp người xem trung thành.", en: "Gaming micro-creators often deliver strong brand conversion through witty, authentic gameplay and a loyal fan base." },
       },
-      { type: "h2", text: { vi: "1. Sức mạnh của 'Độ chân thực': Vì sao Micro Creator như Thỏ Gờ Rin lại chiến thắng?", en: "1. The Power of Authenticity: Why Micro-Creators Like Tho Go Rin Win" } },
+      { type: "h2", text: { vi: "1. Sức mạnh của 'Độ chân thực': Vì sao Micro Creator lại chiến thắng?", en: "1. The Power of Authenticity: Why Micro-Creators Win" } },
       {
         type: "p",
         text: {
-          vi: "Điểm khác biệt lớn nhất giữa một ngôi sao giải trí và một Micro Creator như Thỏ Gờ Rin nằm ở độ tin cậy cộng đồng (Community Trust). Khi Thỏ Gờ Rin làm video với thông điệp gần gũi như 'Game huyền thoại tuổi thơ của anh em game thủ', khán giả đón nhận đó như một lời rủ rê chân thành từ một người bạn cùng chơi game, chứ không phải một bài quảng cáo sáo rỗng. Tỷ lệ tương tác (Engagement Rate) của các Micro Creator này thường đạt từ 8% đến 12%, cao gấp 3 lần so với các tài khoản triệu view đại chúng. Người xem sẵn sàng để lại bình luận hỏi về cấu hình máy, xin link tải và hỏi mẹo vượt ải tân thủ. Đây chính là tệp người chơi chất lượng cao mà bất kỳ NPH nào cũng khao khát.",
-          en: "The critical distinction between mainstream celebrities and dedicated micro-creators like Tho Go Rin lies in organic community trust. When Tho Go Rin produces content framed around nostalgic gamer memories, audiences perceive it as a genuine invitation from a trusted gaming buddy rather than a paid corporate ad. Engagement rates for authentic gaming micro-creators regularly achieve 8% to 12%, triple that of generic mass-market accounts. Viewers actively comment asking about specs, download links, and beginner progression tips, generating the exact high-intent players publishers covet."
+          vi: "Điểm khác biệt lớn nhất giữa một ngôi sao giải trí và một Micro Creator nằm ở độ tin cậy cộng đồng (Community Trust). Khi một Micro Creator làm video với thông điệp gần gũi như 'Game huyền thoại tuổi thơ của anh em game thủ', khán giả đón nhận đó như một lời rủ rê chân thành từ một người bạn cùng chơi game, chứ không phải một bài quảng cáo sáo rỗng. Người xem sẵn sàng để lại bình luận hỏi về cấu hình máy, xin link tải và hỏi mẹo vượt ải tân thủ. Đây chính là tệp người chơi chất lượng cao mà bất kỳ NPH nào cũng khao khát.",
+          en: "The critical distinction between mainstream celebrities and dedicated micro-creators lies in organic community trust. When a micro-creator produces content framed around nostalgic gamer memories, audiences perceive it as a genuine invitation from a trusted gaming buddy rather than a paid corporate ad. Viewers actively comment asking about specs, download links, and beginner progression tips, generating the exact high-intent players publishers covet."
         },
       },
       {
@@ -3348,7 +3220,7 @@ const builtinPosts: Post[] = [
         alt: { vi: "Nguyệt Mộng là tựa game áp dụng chiến lược mạng lưới micro influencer cực kỳ bài bản và hiệu quả", en: "Nguyet Mong successfully activated a massive multi-genre micro-influencer network across Vietnam" },
         caption: { vi: "Nguyệt Mộng là một trong những game áp dụng micro influencer hiệu quả bậc nhất, kích hoạt hàng chục KOC thời trang, cosplay cổ phong và reviewer ngôn tình cùng lúc.", en: "Nguyet Mong represents one of the most effective mobile games leveraging micro-influencers, synchronizing fashion KOCs, ancient cosplay creators, and romance reviewers simultaneously." },
       },
-      { type: "h2", text: { vi: "2. Case study Nguyệt Mộng: Nghệ thuật kích hoạt mạng lưới Micro Creator đa lĩnh vực", en: "2. Nguyet Mong Case Study: Orchestrating a Cross-Vertical Micro-Creator Network" } },
+      { type: "h2", text: { vi: "2. Ví dụ minh họa Nguyệt Mộng: Nghệ thuật kích hoạt mạng lưới Micro Creator đa lĩnh vực", en: "2. Illustrative Example (Nguyet Mong): Orchestrating a Cross-Vertical Micro-Creator Network" } },
       {
         type: "p",
         text: {
@@ -3376,15 +3248,15 @@ const builtinPosts: Post[] = [
       {
         type: "image",
         src: "/blog-covers/lily-phan-streamer-game-vietnam.png",
-        alt: { vi: "Lily Phan là một trong những gương mặt streamer bảo chứng chuyển đổi cho nhiều tựa game phát hành tại Việt Nam", en: "Lily Phan is a top-tier gaming streamer recognized as a conversion benchmark for game launches in Vietnam" },
-        caption: { vi: "Lily Phan vẫn là một trong những cái tên bảo chứng cho nhiều tựa game phát hành ở Việt Nam nhờ ngoại hình sáng, khả năng tương tác livestream cuốn hút và tỷ lệ người chơi nạp đầu vượt trội.", en: "Lily Phan remains a premier conversion guarantee for game releases in Vietnam, combining charismatic livestream presence with exceptional first-purchase player conversion rates." },
+        alt: { vi: "Một gương mặt Livestreamer có sức ảnh hưởng, đại diện cho nhóm Influencer bảo chứng chuyển đổi cho game phát hành tại Việt Nam", en: "A representative gaming livestreamer recognized as a conversion benchmark for game launches in Vietnam" },
+        caption: { vi: "Những gương mặt Livestreamer có sức ảnh hưởng lớn thường trở thành cái tên bảo chứng cho nhiều tựa game phát hành ở Việt Nam nhờ khả năng tương tác livestream cuốn hút.", en: "High-influence livestreamers often become a conversion guarantee for game releases in Vietnam through charismatic live interaction." },
       },
-      { type: "h2", text: { vi: "3. Lily Phan và công thức 'Bảo chứng chuyển đổi' cho các tựa game phát hành", en: "3. Lily Phan: The Conversion Benchmark for Game Launches in Vietnam" } },
+      { type: "h2", text: { vi: "3. 'Bảo chứng chuyển đổi': Vai trò của Livestreamer có sức ảnh hưởng lớn", en: "3. The 'Conversion Benchmark' Livestreamer Archetype" } },
       {
         type: "p",
         text: {
-          vi: "Trong bản đồ Creator Gaming tại Việt Nam, Lily Phan là một ví dụ điển hình cho nhóm Influencer có khả năng tạo ra chuyển đổi thực tế (Performance-driven Creator). Không chỉ sở hữu ngoại hình thu hút chuẩn gu cộng đồng game thủ, Lily Phan còn có khả năng tương tác trực tiếp, dẫn dắt câu chuyện tự nhiên trên livestream và kích thích người xem cùng tải game để trải nghiệm. Kinh nghiệm thực chiến cho thấy, khi kết hợp buổi livestream trải nghiệm của những Creator như Lily Phan với các sự kiện tặng quà tân thủ độc quyền (Exclusive Giftcode), tỷ lệ chuyển đổi từ người xem sang người chơi nạp tiền lần đầu (First-time Payer) có thể tăng vọt từ 15% lên tới 28%. Đó là lý do các NPH lớn luôn giữ những gương mặt bảo chứng như Lily Phan trong danh sách ưu tiên hàng đầu mỗi khi chuẩn bị mở server mới.",
-          en: "Across Vietnam's gaming creator landscape, Lily Phan represents the gold standard of performance-driven influencers. Beyond captivating on-camera charisma tailored to gaming audiences, Lily Phan excels at spontaneous live interaction, relatable storytelling, and driving viewers to download and jump into server battles. Field data proves that pairing a live playthrough by proven creators like Lily Phan with exclusive starter giftcodes can elevate first-time payer conversion rates from 15% to 28%. This consistency makes seasoned names like Lily Phan indispensable on top publishers' priority booking rosters."
+          vi: "Trong bản đồ Creator Gaming tại Việt Nam, có một nhóm Influencer nổi bật với khả năng tạo ra chuyển đổi thực tế (Performance-driven Creator): sở hữu ngoại hình thu hút chuẩn gu cộng đồng game thủ, khả năng tương tác trực tiếp, dẫn dắt câu chuyện tự nhiên trên livestream và kích thích người xem cùng tải game để trải nghiệm. Khi kết hợp buổi livestream trải nghiệm của nhóm Creator này với các sự kiện tặng quà tân thủ độc quyền (Exclusive Giftcode), tỷ lệ chuyển đổi từ người xem sang người chơi nạp tiền lần đầu (First-time Payer) thường có thể cải thiện đáng kể. Đó là lý do các NPH lớn luôn giữ những gương mặt bảo chứng dạng này trong danh sách ưu tiên hàng đầu mỗi khi chuẩn bị mở server mới.",
+          en: "Across Vietnam's gaming creator landscape, one influencer archetype stands out for performance-driven conversion: captivating on-camera charisma tailored to gaming audiences, spontaneous live interaction, relatable storytelling, and the ability to drive viewers to download and jump into server battles. Pairing a live playthrough by this type of creator with exclusive starter giftcodes can meaningfully lift first-time payer conversion. This is why top publishers keep this archetype of creator on their priority booking rosters."
         },
       },
       { type: "h2", text: { vi: "4. Bốn bước triển khai chiến dịch Micro Influencer đạt ROI cao nhất năm 2026", en: "4. Four Practical Steps to Maximize Micro-Influencer Campaign ROI in 2026" } },
@@ -3475,14 +3347,14 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/ragnarok-huyen-thoai-mmo-vietnam-aso.jpg",
         alt: { vi: "Banner và Screenshot bản địa hóa của Ragnarok Huyền Thoại MMO khơi gợi ký ức tuổi thơ", en: "Localized feature banner and typography for Ragnarok: Legend MMO in Vietnam" },
-        caption: { vi: "Case study Ragnarok: Huyền Thoại MMO với thông điệp 'Cùng trở lại thế giới Midgard!' sử dụng nghệ thuật Typography Việt hóa nổi bật và hình ảnh thân thuộc để khơi gợi ký ức tuổi thơ (Nostalgia), thúc đẩy tỷ lệ click tải vượt trội.", en: "Ragnarok: Legend MMO exemplifies visual localization with 'Return to Midgard!' messaging, bold Vietnamese typography, and nostalgic imagery that drives high click-to-install conversions." },
+        caption: { vi: "Ví dụ minh họa Ragnarok: Huyền Thoại MMO với thông điệp 'Cùng trở lại thế giới Midgard!' sử dụng nghệ thuật Typography Việt hóa nổi bật và hình ảnh thân thuộc để khơi gợi ký ức tuổi thơ (Nostalgia).", en: "Illustrative example, Ragnarok: Legend MMO, showcasing visual localization with 'Return to Midgard!' messaging, bold Vietnamese typography, and nostalgic imagery." },
       },
       { type: "h2", text: { vi: "2. Tối ưu Visual Store Listing: Nghệ thuật chạm vào cảm xúc và ký ức game thủ", en: "2. Visual Store Listing Optimization: Tapping Nostalgia & High-Contrast Typography" } },
       {
         type: "p",
         text: {
-          vi: "Hình ảnh Feature Graphic và Bộ 3 Screenshot đầu tiên quyết định đến 70% quyết định cài đặt của người dùng khi họ ghé thăm trang ứng dụng. Case study của Ragnarok: Huyền Thoại MMO là một ví dụ mẫu mực về visual localization:",
-          en: "Feature graphics and the first 3 screenshots dictate over 70% of install decisions when users view a store listing. Ragnarok: Legend MMO provides a textbook case study in visual localization:"
+          vi: "Hình ảnh Feature Graphic và Bộ 3 Screenshot đầu tiên có ảnh hưởng lớn đến quyết định cài đặt của người dùng khi họ ghé thăm trang ứng dụng. Ragnarok: Huyền Thoại MMO là một ví dụ minh họa về visual localization:",
+          en: "Feature graphics and the first 3 screenshots have significant influence on install decisions when users view a store listing. Ragnarok: Legend MMO is an illustrative example of visual localization:"
         },
       },
       {
@@ -3612,8 +3484,8 @@ const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "Khung đo lường 4 tầng: Từ Nhận biết đến Tiền mặt", en: "The 4-Tier Measurement Framework: From Awareness to Revenue" } },
       { type: "p", text: {
-        vi: "Tại ANBU, chúng tôi giúp các thương hiệu tiếp cận việc tài trợ Esports theo mô hình 4 tầng mạch lạc, gắn chặt giữa sự hiện diện truyền thông và tác động doanh số thực tế:",
-        en: "At ANBU, we guide brands through a 4-tier sponsorship framework that tightly connects media presence directly to quantifiable business outcomes:",
+        vi: "Một cách tiếp cận hợp lý để đánh giá tài trợ Esports là mô hình 4 tầng, gắn chặt giữa sự hiện diện truyền thông và tác động doanh số thực tế:",
+        en: "A sound framework for evaluating esports sponsorship is a 4-tier model that connects media presence directly to quantifiable business outcomes:",
       } },
       { type: "h2", text: { vi: "1. Tầng Media Exposure, Tính giá trị thực với Nielsen Quality Index (QI)", en: "1. Media Exposure Tier, True Valuation with Nielsen Quality Index (QI)" } },
       { type: "p", text: {
@@ -3641,11 +3513,15 @@ const builtinPosts: Post[] = [
         vi: "Tầng cuối cùng là đối chiếu chi phí tài trợ với doanh thu trực tiếp phát sinh: Số lượng tài khoản mới mở (đối với ứng dụng ngân hàng, ví điện tử), số đơn hàng đặt qua mã khuyến mãi giải đấu (đối với F&B, thời trang), và so sánh chi phí sở hữu một khách hàng mới (CAC) từ kênh Esports với các chiến dịch Facebook Ads / Google Ads thông thường. Trên thực tế, nhiều nhãn hàng tiêu dùng nhanh ghi nhận CAC từ Esports rẻ hơn 30 - 45% so với quảng cáo hiển thị thông thường nhờ tính tập trung đối tượng cực cao.",
         en: "The final tier correlates sponsorship spend directly with attributable business results: new app activations for fintech apps, redemptions on tournament promos for FMCG/fashion, and comparing the customer acquisition cost (CAC) of esports audiences against standard Meta or Google ad sets. In practice, focused esports activations frequently achieve a 30 - 45% lower CAC thanks to extreme demographic density.",
       } },
-      { type: "h2", text: { vi: "Case Studies thực tế: Họ đã làm điều đó như thế nào?", en: "Real-World Case Studies: How Market Leaders Won" } },
+      { type: "h2", text: { vi: "Mô hình kích hoạt tài trợ phổ biến theo ngành hàng", en: "Common Sponsorship Activation Patterns by Industry" } },
+      { type: "p", text: {
+        vi: "Cách các nhãn hàng khai thác tài trợ Esports thường khác nhau theo đặc thù ngành. Dưới đây là các mô hình kích hoạt phổ biến trong ngành — không phải số liệu hay chiến dịch cụ thể của một nhãn hàng nào, mà là khuôn mẫu chung nên tham khảo và điều chỉnh theo thực tế đàm phán với đơn vị tổ chức giải đấu.",
+        en: "How brands activate esports sponsorships tends to vary by industry. The patterns below are common industry playbooks, not the specific figures or campaign of any named brand, and should be adapted to what you actually negotiate with a tournament organizer.",
+      } },
       { type: "ul", items: [
-        { vi: "Ngành Nước tăng lực & Tiêu dùng nhanh (Sting, Monster, Red Bull): Không dừng lại ở việc dán logo, các nhãn hàng này đặt sản phẩm trên bàn thi đấu của tuyển thủ, tài trợ riêng góc phân tích chiến thuật (Analysis Corner) và in mã quà tặng nạp game trực tiếp dưới nắp chai, tạo ra động lực mua hàng ngay tại các điểm bán lẻ và quán net.", en: "Energy Drinks & FMCG (Sting, Monster, Red Bull): Beyond logo badges, these brands place products directly on player battle stations, sponsor tactical Analysis Desks, and print in-game top-up codes under bottle caps, sparking instant retail purchases across convenience stores and cyber cafes." },
-        { vi: "Ngành Ngân hàng & Fintech (MB Bank, Cake, VIB): Tận dụng giải đấu Đấu Trường Danh Vọng để phát hành thẻ thanh toán mang họa tiết tướng Liên Quân Mobile, đi kèm ưu đãi hoàn tiền 20% khi thanh toán trên cổng nạp chính thức, chuyển đổi hàng chục nghìn game thủ trẻ mở tài khoản ngân hàng đầu tiên trong đời.", en: "Banking & Digital Finance (MB Bank, Cake, VIB): Partnering with Arena of Valor pro leagues to launch gaming-themed cards with 20% cashback on official game top-ups, successfully onboarding tens of thousands of first-time Gen Z banking customers." },
-        { vi: "Ngành Thiết bị & Phần cứng (Logitech G, ASUS ROG, Samsung): Trở thành 'Trang bị thi đấu chính thức' đồng hành cùng các đội tuyển như Team Flash hay GAM Esports. Khi tuyển thủ sử dụng chuột, bàn phím hay màn hình của hãng để giành chiến thắng trong các pha giao tranh nghẹt thở, đó là minh chứng chất lượng sản phẩm thuyết phục hơn mọi lời quảng cáo.", en: "Gaming Hardware (Logitech G, ASUS ROG, Samsung): Sponsoring premier teams like Team Flash and GAM as Official Tournament Equipment. When athletes execute clutch game-winning plays using brand peripherals, it delivers product credibility no traditional commercial can match." },
+        { vi: "Ngành Nước tăng lực & Tiêu dùng nhanh: Ngoài dán logo, nhóm ngành này thường đặt sản phẩm trên bàn thi đấu, tài trợ riêng góc phân tích chiến thuật (Analysis Corner) và tích hợp mã khuyến mãi trên bao bì để tạo động lực mua hàng tại điểm bán.", en: "Energy Drinks & FMCG: Beyond logo badges, this category typically places product on player battle stations, sponsors a tactical Analysis Desk, and ties in on-pack promo codes to drive retail purchase intent." },
+        { vi: "Ngành Ngân hàng & Fintech: Thường khai thác giải đấu để ra mắt sản phẩm thẻ/ví có thiết kế theo chủ đề game, đi kèm ưu đãi hoàn tiền khi thanh toán qua cổng chính thức, nhắm vào nhóm khách hàng trẻ chưa có tài khoản ngân hàng.", en: "Banking & Fintech: Often uses tournaments to launch game-themed cards or wallets with cashback incentives on official payment gateways, targeting young, previously unbanked audiences." },
+        { vi: "Ngành Thiết bị & Phần cứng: Thường trở thành 'trang bị thi đấu chính thức' đồng hành cùng các đội tuyển chuyên nghiệp, dùng khoảnh khắc thi đấu đỉnh cao làm minh chứng chất lượng sản phẩm thay cho quảng cáo truyền thống.", en: "Gaming Hardware: Frequently becomes the 'official tournament equipment' partner for pro teams, letting clutch in-game moments serve as product proof instead of traditional advertising." },
       ] },
       { type: "h2", text: { vi: "Lời khuyên 'xương máu' khi đàm phán hợp đồng tài trợ", en: "Hard-Won Rules for Negotiating Sponsorship Contracts" } },
       { type: "p", text: {
@@ -3661,38 +3537,7 @@ const builtinPosts: Post[] = [
         vi: "Tài trợ Esports không phải là mua một vị trí đặt logo, mà là mua một tấm vé bước vào trái tim của thế hệ người tiêu dùng mới. Nhãn hàng nào tôn trọng văn hóa game thủ và biết đo lường bằng dữ liệu thực sẽ luôn là người chiến thắng lâu dài.",
         en: "Esports sponsorship is not about buying logo real estate; it is an investment in the passion of millions of fans. Brands that respect gaming culture and measure with hard data will always build lasting market leadership.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Mô hình đo lường giá trị truyền thông tương đương (Earned Media Value - EMV)",
-      "en": "3. Earned Media Value (EMV) and Brand Lift Measurement Framework"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Để bảo vệ ngân sách tài trợ trước ban giám đốc, các nhãn hàng cần áp dụng công thức đo lường EMV đa chiều thay vì chỉ đếm lượt xem thô:",
-      "en": "To justify esports sponsorship budgets before executive boards, brands must apply multidimensional EMV formulas rather than relying solely on raw livestream view counts:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Logo Screen-Time & Share of Voice (SoV): Sử dụng công nghệ AI quét nhận diện thời lượng hiển thị logo rõ nét trên áo đấu, backdrop sân khấu và khung stream để quy đổi sang chi phí quảng cáo truyền hình tương đương.",
-        "en": "Logo Screen-Time & Share of Voice: AI-powered computer vision scanning logo visibility across jerseys, stage backdrops, and broadcast overlays."
-      },
-      {
-        "vi": "Tỷ lệ tương tác tự nhiên (Organic Sentiment Score): Đo lường tỷ lệ bình luận tích cực nhắc đến thương hiệu trong luồng chat trực tiếp (YouTube/TikTok Live Chat) trong các pha combat đỉnh cao.",
-        "en": "Organic Chat Sentiment: Tracking real-time positive chat mentions and brand sentiment during peak tournament clutch moments."
-      },
-      {
-        "vi": "Hiệu quả kích hoạt mua hàng (Promo Code Redemption): Đo lường trực tiếp số lượng đơn hàng hoặc lượt tải app phát sinh thông qua voucher độc quyền của giải đấu.",
-        "en": "Commercial Activation & Promo Redemptions: Attributing exact sales orders and app installs generated through tournament promo codes."
-      }
-    ]
-  }],
+    ],
   },
 ];
 
