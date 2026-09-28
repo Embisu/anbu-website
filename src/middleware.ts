@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { locales, defaultLocale } from "@/i18n/config";
+import { blogViToEnSlug, blogEnToViSlug } from "@/content/blogSlugRedirects";
 
 function getLocale(request: NextRequest): string {
   const accept = request.headers.get("accept-language");
@@ -27,7 +28,34 @@ export function middleware(request: NextRequest) {
   const hasLocale = locales.some(
     (loc) => pathname === `/${loc}` || pathname.startsWith(`/${loc}/`)
   );
-  if (hasLocale) return NextResponse.next();
+
+  if (hasLocale) {
+    // Canonicalize blog post URLs so each locale always serves its own slug
+    // (e.g. /en/blog/<vi-slug> -> /en/blog/<en-slug>). Done here instead of
+    // via next/navigation's redirect() inside the page component because
+    // that API returns HTTP 200 instead of a real redirect on Edge Runtime
+    // routes (a known Next.js limitation, https://github.com/vercel/next.js/issues/46437) -
+    // middleware-level NextResponse.redirect() is unaffected by that bug.
+    const enBlogMatch = pathname.match(/^\/en\/blog\/([^/]+)\/?$/);
+    if (enBlogMatch) {
+      const correctEnSlug = blogViToEnSlug[enBlogMatch[1]];
+      if (correctEnSlug) {
+        const url = request.nextUrl.clone();
+        url.pathname = `/en/blog/${correctEnSlug}`;
+        return NextResponse.redirect(url, 308);
+      }
+    }
+    const viBlogMatch = pathname.match(/^\/vi\/blog\/([^/]+)\/?$/);
+    if (viBlogMatch) {
+      const correctViSlug = blogEnToViSlug[viBlogMatch[1]];
+      if (correctViSlug) {
+        const url = request.nextUrl.clone();
+        url.pathname = `/vi/blog/${correctViSlug}`;
+        return NextResponse.redirect(url, 308);
+      }
+    }
+    return NextResponse.next();
+  }
 
   const locale = getLocale(request);
   const url = request.nextUrl.clone();
