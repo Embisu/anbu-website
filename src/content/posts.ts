@@ -296,8 +296,8 @@ const builtinPosts: Post[] = [
       {
         type: "p",
         text: {
-          vi: "Nếu chỉ nhìn vào hàng chục tựa game mở server ồ ạt mỗi tháng rồi lặng lẽ 'bay màu' sau vài tuần, bạn sẽ rất dễ vội vã nghĩ rằng thị trường game Việt đã cạn kiệt cơ hội. Nhưng hãy nhìn vào bức tranh thực tế: Doanh thu toàn ngành vẫn vững vàng vượt mốc 500 triệu USD, và những tựa game đầu tư bài bản về đồ họa, cốt truyện hay IP vẫn liên tục xô đổ các kỷ lục doanh thu ngày mở màn. Thực tế, game thủ Việt Nam chưa bao giờ hết đam mê game. Họ chỉ đang thông thái hơn, khắt khe hơn và không còn dễ dãi với những tựa game 'mì ăn liền' đập vào mắt bằng vài ba hình ảnh quảng cáo bóng bẩy. Thị trường không bão hòa người chơi; nó chỉ đang đào thải không thương tiếc những sản phẩm thiếu chiều sâu để dọn đường cho những thế lực mới.",
-          en: "If one only watches dozens of generic servers opening monthly and quietly vanishing weeks later, it is easy to assume Vietnam's gaming market is exhausted. But empirical data proves otherwise: industry revenues comfortably exceed $500M USD, while projects investing seriously in graphical fidelity, lore, and IP repeatedly shatter launch-day records. In truth, Vietnamese gamers haven't lost passion; they have simply matured, demanding genuine depth over superficial ad promises. The market is not running out of players: it is ruthlessly weeding out low-effort titles to clear the stage for true innovators.",
+          vi: "Nếu chỉ nhìn vào hàng chục tựa game mở server ồ ạt mỗi tháng rồi lặng lẽ 'bay màu' sau vài tuần, bạn sẽ rất dễ vội vã nghĩ rằng thị trường game Việt đã cạn kiệt cơ hội. Nhưng hãy nhìn vào bức tranh thực tế: doanh thu toàn ngành vẫn duy trì đà tăng trưởng vững vàng, và những tựa game đầu tư bài bản về đồ họa, cốt truyện hay IP vẫn liên tục xô đổ các kỷ lục doanh thu ngày mở màn. Thực tế, game thủ Việt Nam chưa bao giờ hết đam mê game. Họ chỉ đang thông thái hơn, khắt khe hơn và không còn dễ dãi với những tựa game 'mì ăn liền' đập vào mắt bằng vài ba hình ảnh quảng cáo bóng bẩy. Thị trường không bão hòa người chơi; nó chỉ đang đào thải không thương tiếc những sản phẩm thiếu chiều sâu để dọn đường cho những thế lực mới.",
+          en: "If one only watches dozens of generic servers opening monthly and quietly vanishing weeks later, it is easy to assume Vietnam's gaming market is exhausted. But the reality tells a different story: industry revenue keeps growing steadily, while projects investing seriously in graphical fidelity, lore, and IP repeatedly shatter launch-day records. In truth, Vietnamese gamers haven't lost passion; they have simply matured, demanding genuine depth over superficial ad promises. The market is not running out of players: it is ruthlessly weeding out low-effort titles to clear the stage for true innovators.",
         },
       },
       {
@@ -423,8 +423,8 @@ const builtinPosts: Post[] = [
       {
         type: "p",
         text: {
-          vi: "Trong các buổi review chiến dịch ra mắt game mobile, một trong những sai lầm chết người phổ biến nhất là đội ngũ User Acquisition (UA) vội vã ăn mừng khi thấy chỉ số CPI (Cost Per Install) giảm xuống dưới mức 0.20 - 0.30 USD. Nhưng chỉ một tuần sau ngày Open Beta, khi nhìn vào biểu đồ Cohort Retention và doanh thu In-App Purchases (IAP), cả ban điều hành mới bàng hoàng nhận ra phần lớn lượt tải đến từ các kênh giá rẻ, tệp người dùng không có nhu cầu nạp tiền hoặc gỡ app ngay sau màn tân thủ. Trong khi đó, một tệp người chơi chất lượng cao có giá CPI 0.85 USD từ Meta Ads hay Google UAC lại có thể mang về D30 LTV lên tới 4.20 USD, đem lại mức lãi ròng gấp 5 lần. Tối ưu marketing game không phải là tìm kiếm CPI rẻ nhất; đó là nghệ thuật tối đa hóa biên độ chênh lệch giữa LTV và chi phí thu nạp (LTV - CAC Moat).",
-          en: "In mobile game post-launch postmortems, a fatal mistake is UA teams celebrating prematurely when CPI dips under $0.20 - $0.30. A week post-launch, as Cohort Retention flatlines and in-app revenue stalls, leadership discovers that low-cost installs stemmed from low-intent users who churned immediately after tutorial screens. Conversely, a high-quality cohort acquired at $0.85 CPI via Meta Ads or Google UAC can achieve a D30 LTV of $4.20, generating a 5x net profit margin. Game marketing optimization is never about pursuing the cheapest CPI; it is the science of maximizing the spread between player Lifetime Value and Customer Acquisition Cost (LTV - CAC).",
+          vi: "Trong các buổi review chiến dịch ra mắt game mobile, một trong những sai lầm phổ biến nhất là đội ngũ User Acquisition (UA) vội vã ăn mừng khi thấy chỉ số CPI (Cost Per Install) giảm sâu. Nhưng chỉ một tuần sau ngày Open Beta, khi nhìn vào biểu đồ Cohort Retention và doanh thu In-App Purchases (IAP), có thể phát hiện ra phần lớn lượt tải đến từ các kênh giá rẻ, tệp người dùng không có nhu cầu nạp tiền hoặc gỡ app ngay sau màn tân thủ. Trong khi đó, một tệp người chơi chất lượng cao dù có CPI cao hơn từ Meta Ads hay Google UAC lại thường mang về LTV và lãi ròng vượt trội hơn hẳn. Tối ưu marketing game không phải là tìm kiếm CPI rẻ nhất; đó là nghệ thuật tối đa hóa biên độ chênh lệch giữa LTV và chi phí thu nạp (LTV - CAC Moat).",
+          en: "In mobile game post-launch postmortems, a common mistake is UA teams celebrating prematurely when CPI drops sharply. A week post-launch, as Cohort Retention flatlines and in-app revenue stalls, it often becomes clear that low-cost installs stemmed from low-intent users who churned immediately after tutorial screens. Conversely, a higher-CPI cohort acquired via Meta Ads or Google UAC can often deliver far stronger LTV and net profit. Game marketing optimization is never about pursuing the cheapest CPI; it is the science of maximizing the spread between player Lifetime Value and Customer Acquisition Cost (LTV - CAC).",
         },
       },
       {
@@ -769,7 +769,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/brand-identity-design.jpg",
         alt: { vi: "Hệ thống thiết kế nhận diện thương hiệu và ứng dụng đồng bộ trên các ấn phẩm truyền thông", en: "Brand identity design system and consistent multi-touchpoint brand collateral" },
-        caption: { vi: "Sự nhất quán về mặt hình ảnh và thông điệp trên mọi nền tảng giúp tăng 3,5 lần mức độ ghi nhớ thương hiệu tự nhiên.", en: "Visual and messaging consistency across every customer touchpoint lifts organic brand recall by 3.5x." },
+        caption: { vi: "Sự nhất quán về mặt hình ảnh và thông điệp trên mọi nền tảng giúp nâng cao đáng kể mức độ ghi nhớ thương hiệu tự nhiên.", en: "Visual and messaging consistency across every customer touchpoint meaningfully lifts organic brand recall." },
       },
       { type: "quote", text: {
         vi: "Thương hiệu không phải là những gì bạn tự nói về mình trong quảng cáo. Thương hiệu là những gì khách hàng nói về bạn khi bạn rời khỏi phòng.",
@@ -807,7 +807,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/performance-ad-campaigns.jpg",
         alt: { vi: "Thiết lập và theo dõi chiến dịch Performance Marketing trên Meta Ads và Google Ads", en: "Performance Marketing campaign dashboard monitoring cost per acquisition and ROAS" },
-        caption: { vi: "Thiết lập cấu trúc chiến dịch phân tầng theo mức độ trưởng thành của tệp đối tượng giúp giảm tới 30% chi phí chuyển đổi.", en: "Segmenting ad campaign structures across audience maturity stages reduces cost per acquisition by up to 30%." },
+        caption: { vi: "Thiết lập cấu trúc chiến dịch phân tầng theo mức độ trưởng thành của tệp đối tượng giúp giảm đáng kể chi phí chuyển đổi.", en: "Segmenting ad campaign structures across audience maturity stages meaningfully reduces cost per acquisition." },
       },
       { type: "h2", text: { vi: "1. Bắt đầu với chỉ số kinh tế đơn vị (Unit Economics)", en: "1. Start with unit economics" } },
       { type: "p", text: {
@@ -839,8 +839,8 @@ const builtinPosts: Post[] = [
       en: "Mobile Game ASO in Vietnam: Strategic Organic App Store Optimization",
     },
     excerpt: {
-      vi: "Một trang Store được tối ưu chuẩn mực có thể tăng tỷ lệ chuyển đổi (CVR) thêm 35% và giảm chỉ số Blended CPI xuống một nửa. Bí quyết tối ưu icon, bộ 5 screenshot và video preview để biến người tìm kiếm thành người chơi trung thành.",
-      en: "A meticulously optimized store page boosts CVR by 35% and cuts blended CPI in half. The art of optimizing icons, screenshot sets, and gameplay previews to turn searchers into dedicated players.",
+      vi: "Một trang Store được tối ưu chuẩn mực có thể tăng đáng kể tỷ lệ chuyển đổi (CVR) và giảm chỉ số Blended CPI. Bí quyết tối ưu icon, bộ 5 screenshot và video preview để biến người tìm kiếm thành người chơi trung thành.",
+      en: "A meticulously optimized store page can meaningfully boost CVR and cut blended CPI. The art of optimizing icons, screenshot sets, and gameplay previews to turn searchers into dedicated players.",
     },
     category: { vi: "Game Marketing", en: "Game Marketing" },
     date: "2026-08-14",
@@ -862,7 +862,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/aso-store-optimization.jpg",
         alt: { vi: "Quy trình thiết kế và tối ưu hóa hình ảnh icon và screenshot Store Listing trên App Store và Google Play", en: "Design and optimization workflow for mobile game icons and screenshot sets on Store listings" },
-        caption: { vi: "Thử nghiệm A/B Testing Icon và Headline trên 3 biến thể giúp tăng tới 28% tỷ lệ CVR trên Google Play Store.", en: "A/B testing three icon and headline variants yields up to 28% conversion rate lift on Google Play." },
+        caption: { vi: "Thử nghiệm A/B Testing Icon và Headline trên 3 biến thể giúp cải thiện đáng kể tỷ lệ CVR trên Google Play Store.", en: "A/B testing three icon and headline variants can meaningfully lift conversion rate on Google Play." },
       },
       { type: "h2", text: { vi: "1. Nguyên tắc vàng khi thiết kế bộ 5 Screenshot Store", en: "1. The Golden Rules for a High-Converting Screenshot Set" } },
       { type: "p", text: {
@@ -1000,8 +1000,8 @@ const builtinPosts: Post[] = [
       en: "UGC for Mobile Games: Turning Passionate Players into Content Creators",
     },
     excerpt: {
-      vi: "Một clip highlight xuất thần hay meme hài hước do game thủ tự làm có sức thuyết phục cao gấp 10 lần quảng cáo truyền thống. Bí quyết xây dựng chương trình Creator Program và giải đấu cộng đồng để kích hoạt làn sóng UGC bùng nổ.",
-      en: "A player-generated highlight clip or funny meme is 10x more persuasive than traditional ads. The secret to structuring Creator Programs and community tournaments to trigger an organic UGC explosion.",
+      vi: "Một clip highlight xuất thần hay meme hài hước do game thủ tự làm thường có sức thuyết phục cao hơn hẳn quảng cáo truyền thống. Bí quyết xây dựng chương trình Creator Program và giải đấu cộng đồng để kích hoạt làn sóng UGC bùng nổ.",
+      en: "A player-generated highlight clip or funny meme is often far more persuasive than traditional ads. The secret to structuring Creator Programs and community tournaments to trigger an organic UGC explosion.",
     },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" },
     date: "2026-08-15",
@@ -1023,7 +1023,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/ugc-creator-community.jpg",
         alt: { vi: "Nhóm game thủ và creator trẻ hợp tác sản xuất video ngắn và chia sẻ kinh nghiệm chơi game", en: "Young gamers and creators collaborating on short-form gameplay videos" },
-        caption: { vi: "Cung cấp sẵn âm thanh mẫu, hiệu ứng filter và mẫu kịch bản giúp tăng 300% số lượng video UGC do game thủ đăng tải.", en: "Providing pre-cut audio tracks, custom CapCut templates, and filter assets triples community UGC output." },
+        caption: { vi: "Cung cấp sẵn âm thanh mẫu, hiệu ứng filter và mẫu kịch bản giúp tăng đáng kể số lượng video UGC do game thủ đăng tải.", en: "Providing pre-cut audio tracks, custom CapCut templates, and filter assets meaningfully boosts community UGC output." },
       },
       { type: "h2", text: { vi: "1. Ba định dạng UGC có tỷ lệ lan truyền cao nhất", en: "1. Three Highest-Performing UGC Formats" } },
       { type: "ul", items: [
@@ -1181,7 +1181,7 @@ const builtinPosts: Post[] = [
       { type: "h2", text: { vi: "1. Ba tầng bản địa hóa chuyên sâu", en: "1. Three Layers of Deep Game Localization" } },
       { type: "ul", items: [
         { vi: "Tầng Thuật ngữ & Thói quen gọi tên (Gaming Jargon): Sử dụng đúng các khái niệm quen thuộc trong văn hóa game Việt như 'farm quái', 'gank tem', 'lật kèo', 'outplay', 'đập đồ', 'ép ngọc' thay vì dịch thô chữ nghĩa theo sách vở.", en: "Gaming Jargon & Vernacular: Incorporating familiar Vietnamese gamer idioms rather than sterile academic phrasing." },
-        { vi: "Tầng Đại từ nhân xưng & Phong thái (Tone of Voice): Tiếng Việt có hệ thống xưng hô vô cùng phong phú (Huynh/Đệ, Đại hiệp/Tiểu muội, Chỉ huy/Binh sĩ, Sư phụ/Đồ đệ). Việc chọn đúng đại từ phù hợp với bối cảnh cổ trang hay khoa học viễn tưởng quyết định 80% cảm xúc nhập vai.", en: "Pronouns & Narrative Immersion: Navigating complex Vietnamese cultural honorifics to match martial arts lore or sci-fi hierarchy, which defines 80% of emotional roleplaying depth." },
+        { vi: "Tầng Đại từ nhân xưng & Phong thái (Tone of Voice): Tiếng Việt có hệ thống xưng hô vô cùng phong phú (Huynh/Đệ, Đại hiệp/Tiểu muội, Chỉ huy/Binh sĩ, Sư phụ/Đồ đệ). Việc chọn đúng đại từ phù hợp với bối cảnh cổ trang hay khoa học viễn tưởng ảnh hưởng rất lớn đến cảm xúc nhập vai.", en: "Pronouns & Narrative Immersion: Navigating complex Vietnamese cultural honorifics to match martial arts lore or sci-fi hierarchy, which has major influence on emotional roleplaying depth." },
         { vi: "Tầng Kỹ thuật & Giao diện (Linguistic Quality Assurance - LQA): Tiếng Việt có dấu và độ dài từ trung bình dài hơn tiếng Anh khoảng 25 - 35%. Cần kiểm tra kỹ lưỡng để không bị vỡ font chữ, mất dấu tiếng Việt hoặc tràn khung nút bấm trên màn hình nhỏ.", en: "Technical LQA & UI Constraints: Vietnamese text expands 25 - 35% longer than English. Rigorous LQA ensures diacritics render perfectly without clipping button boundaries." },
       ] },
     
@@ -1338,8 +1338,8 @@ const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Công thức phá vỡ 'rào cản nạp lần đầu'", en: "1. Overcoming the First-Purchase Friction" } },
       { type: "p", text: {
-        vi: "Tại thị trường Việt Nam, mức giá cho gói nạp lần đầu tối ưu nhất nằm trong khoảng 20.000đ đến 50.000đ (tương đương $1 - $2). Gói này không nên bán tài nguyên thông thường mà cần trao ngay một nhân vật có ngoại hình bắt mắt, vũ khí SSR độc quyền hoặc đặc quyền VIP 3 ngày. Khi người chơi đã thực hiện giao dịch đầu tiên thành công, tỷ lệ họ tiếp tục chi tiêu trong các sự kiện tiếp theo sẽ tăng vọt hơn 300%.",
-        en: "In Vietnam, the optimal price point for a starter bundle ranges from 20,000 VND to 50,000 VND ($1 - $2 USD). This starter pack should grant an exclusive aesthetic skin, SSR weapon, or 3-day VIP perk rather than mundane gold. Once a player makes their initial purchase, their propensity to monetize in future events surges over 300%.",
+        vi: "Tại thị trường Việt Nam, mức giá cho gói nạp lần đầu tối ưu nhất nằm trong khoảng 20.000đ đến 50.000đ (tương đương $1 - $2). Gói này không nên bán tài nguyên thông thường mà cần trao ngay một nhân vật có ngoại hình bắt mắt, vũ khí SSR độc quyền hoặc đặc quyền VIP 3 ngày. Khi người chơi đã thực hiện giao dịch đầu tiên thành công, tỷ lệ họ tiếp tục chi tiêu trong các sự kiện tiếp theo thường tăng đáng kể.",
+        en: "In Vietnam, the optimal price point for a starter bundle ranges from 20,000 VND to 50,000 VND ($1 - $2 USD). This starter pack should grant an exclusive aesthetic skin, SSR weapon, or 3-day VIP perk rather than mundane gold. Once a player makes their initial purchase, their propensity to monetize in future events typically rises substantially.",
       } },
       {
         type: "image",
@@ -1924,7 +1924,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/onboarding-activation.jpg",
         alt: { vi: "Thiết kế trải nghiệm người dùng Onboarding và phân tích phễu kích hoạt cho game mobile", en: "Mobile game onboarding UX design and first-session activation funnel analysis" },
-        caption: { vi: "Rút ngắn Thời gian chạm đến Khoảnh khắc Sướng đầu tiên (Time-to-First-Joy) giúp tỷ lệ hoàn thành màn tân thủ tăng từ 45% lên trên 75%.", en: "Shortening Time-to-First-Joy lifts tutorial completion rates from 45% to over 75% across core player cohorts." },
+        caption: { vi: "Rút ngắn Thời gian chạm đến Khoảnh khắc Sướng đầu tiên (Time-to-First-Joy) giúp tỷ lệ hoàn thành màn tân thủ tăng đáng kể.", en: "Shortening Time-to-First-Joy meaningfully lifts tutorial completion rates across core player cohorts." },
       },
       { type: "h2", text: { vi: "1. Năm nguyên tắc giảm ma sát trong 180 giây đầu", en: "1. Five Friction-Reduction Principles in the First 180 Seconds" } },
       { type: "ul", items: [
@@ -2037,12 +2037,12 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/ugc-creator-community.jpg",
         alt: { vi: "Triển khai chiến dịch Spark Ads kết hợp bài đăng tự nhiên của Gaming Creator trên TikTok", en: "Deploying Spark Ads leveraging organic TikTok creator video posts" },
-        caption: { vi: "Chạy quảng cáo Spark Ads trực tiếp từ tài khoản của Creator giúp tăng 40% tỷ lệ nhấp CTR so với tài khoản quảng cáo thông thường.", en: "Running Spark Ads directly from authentic creator handles drives a 40% CTR boost compared to brand-owned ads." },
+        caption: { vi: "Chạy quảng cáo Spark Ads trực tiếp từ tài khoản của Creator thường giúp tăng tỷ lệ nhấp CTR đáng kể so với tài khoản quảng cáo thông thường.", en: "Running Spark Ads directly from authentic creator handles typically drives a meaningful CTR boost compared to brand-owned ads." },
       },
       { type: "h2", text: { vi: "2. Chiến lược Spark Ads: Mượn uy tín Creator", en: "2. The Spark Ads Strategy: Leveraging Creator Social Proof" } },
       { type: "p", text: {
-        vi: "Thay vì chạy quảng cáo từ tài khoản Fanpage của NPH, hãy xin mã ủy quyền (Spark Ads Code) từ các video của Creator đã đăng trên kênh cá nhân của họ. Video Spark Ads giữ nguyên lượt like, comment và cảm giác tự nhiên, giúp giảm thiểu 30% - 50% chi phí cài đặt eCPI.",
-        en: "Rather than running ads from a brand account, obtain Spark Ads authorization codes from creators' organic posts. Spark Ads preserve existing social proof (likes, comments) and authentic creator identity, lowering eCPI by 30% to 50%.",
+        vi: "Thay vì chạy quảng cáo từ tài khoản Fanpage của NPH, hãy xin mã ủy quyền (Spark Ads Code) từ các video của Creator đã đăng trên kênh cá nhân của họ. Video Spark Ads giữ nguyên lượt like, comment và cảm giác tự nhiên, thường giúp giảm đáng kể chi phí cài đặt eCPI.",
+        en: "Rather than running ads from a brand account, obtain Spark Ads authorization codes from creators' organic posts. Spark Ads preserve existing social proof (likes, comments) and authentic creator identity, typically lowering eCPI meaningfully.",
       } },
     
       {
@@ -2185,7 +2185,7 @@ const builtinPosts: Post[] = [
         { vi: "Nhóm 1, Mức độ Gắn kết Thực (Vitality & Engagement Rate): Tỷ lệ Thành viên Hoạt động Hằng ngày (DAU/MAU trong Discord > 22%), số lượng thảo luận tự nhiên không qua minigame 'xin code'.", en: "Vitality & Engagement: Community DAU/MAU ratio (>22% on Discord) and volume of organic discussions unprompted by gift code giveaways." },
         { vi: "Nhóm 2, Tốc độ & Hiệu quả Hỗ trợ (SLA & Issue Resolution): Thời gian phản hồi thắc mắc kỹ thuật trung bình (<10 phút trong giờ cao điểm) và tỷ lệ giải quyết khiếu nại nạp tiền/báo lỗi thành công.", en: "Support SLA & Resolution: Average first response time (<10 mins during peak hours) and verified payment/bug ticket resolution rate." },
         { vi: "Nhóm 3, Chỉ số Sức khỏe Tâm lý & Cảm xúc (Sentiment Score): Tỷ lệ phản hồi tích cực/tiêu cực sau mỗi bản vá (Patch Notes) và phát hiện sớm mầm mống khủng hoảng tẩy chay.", en: "Sentiment Health Score: Positive-to-negative sentiment ratio following patch releases and early detection of community boycott risks." },
-        { vi: "Nhóm 4, Đóng góp Doanh thu & Tỷ lệ Giữ chân (Retention Impact): Tỷ lệ D30 Retention của người chơi tham gia Discord/Group cao hơn 15% - 25% so với tệp người chơi không vào cộng đồng.", en: "Product & Retention Impact: D30 Retention of community-active players outperforming non-community cohorts by 15% to 25%." },
+        { vi: "Nhóm 4, Đóng góp Doanh thu & Tỷ lệ Giữ chân (Retention Impact): Tỷ lệ D30 Retention của người chơi tham gia Discord/Group thường cao hơn rõ rệt so với tệp người chơi không vào cộng đồng.", en: "Product & Retention Impact: D30 Retention of community-active players typically and clearly outperforms non-community cohorts." },
       ] },
       {
         type: "image",
@@ -2325,7 +2325,7 @@ const builtinPosts: Post[] = [
   {
     slug: "mobile-game-user-acquisition-vietnam-benchmark",
     title: { vi: "Bộ Benchmark User Acquisition Game Mobile tại Việt Nam (2026): Chỉ số CPI, CVR và Retention theo thể loại", en: "Vietnam Mobile Game User Acquisition Benchmarks (2026): CPI, CVR & Retention by Genre" },
-    excerpt: { vi: "So sánh CPI giữa game Casual và MMORPG là sai lầm chết người. Bảng tổng hợp Benchmark chi tiết chi phí cài đặt (CPI), Tỷ lệ chuyển đổi trang Store (CVR) và Giữ chân D1/D7/D30 tại thị trường Việt Nam.", en: "Comparing Casual and Hardcore RPG CPIs is a fatal analytical error. A definitive 2026 Vietnam benchmark detailing CPI, Store CVR, and D1/D7/D30 retention curves across 4 key genres." },
+    excerpt: { vi: "So sánh CPI giữa game Casual và MMORPG là một sai lầm phổ biến. Bảng tham khảo chung ngành (không phải số liệu độc quyền của một thị trường cụ thể) về chi phí cài đặt (CPI), Tỷ lệ chuyển đổi trang Store (CVR) và Giữ chân D1/D7/D30 theo thể loại.", en: "Comparing Casual and Hardcore RPG CPIs is a common analytical error. A general industry reference range (not proprietary market-specific data) for CPI, Store CVR, and D1/D7/D30 retention across 4 key genres." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "performance",
     cover: "/blog-covers/analytics-dashboard.jpg",
     sources: [
@@ -2334,8 +2334,8 @@ const builtinPosts: Post[] = [
     ],
     body: [
       { type: "p", text: {
-        vi: "Không có một con số CPI 'chuẩn' duy nhất cho toàn bộ thị trường game mobile Việt Nam. Một tựa game Hyper-Casual có thể đạt CPI 0.15$ nhưng D7 retention chỉ 4%, trong khi một tựa game Chiến thuật 4X / SLG có CPI lên đến 3.50$ nhưng giá trị vòng đời người chơi (LTV) lên tới 45$. Hiểu rõ benchmark theo từng phân khúc thể loại là điều kiện tiên quyết để xây dựng kế hoạch kinh doanh khả thi.",
-        en: "There is no single universal CPI benchmark for the Vietnamese gaming ecosystem. A Hyper-Casual game may achieve a $0.15 CPI with only 4% D7 retention, whereas a 4X Strategy / SLG title commands a $3.50 CPI alongside a $45 player lifetime value (LTV). Understanding genre-segmented benchmarks is crucial for viable P&L forecasting.",
+        vi: "Không có một con số CPI 'chuẩn' duy nhất cho toàn bộ thị trường game mobile. Một tựa game Hyper-Casual thường có CPI rất thấp nhưng D7 retention cũng thấp tương ứng, trong khi một tựa game Chiến thuật 4X / SLG có CPI cao hơn hẳn nhưng bù lại giá trị vòng đời người chơi (LTV) cũng lớn hơn nhiều. Các con số dưới đây là khoảng tham khảo chung của ngành, tổng hợp từ nhiều báo cáo UA quốc tế, dùng để hiệu chỉnh kỳ vọng ban đầu — không phải số liệu đo lường riêng cho thị trường Việt Nam, và nên được đối chiếu lại với dữ liệu thực tế của từng chiến dịch.",
+        en: "There is no single universal CPI benchmark across mobile gaming. A Hyper-Casual game typically has a very low CPI but correspondingly low D7 retention, whereas a 4X Strategy / SLG title commands a much higher CPI offset by a much larger player lifetime value (LTV). The ranges below are general industry reference points compiled from international UA reports, meant to calibrate initial expectations — not measured data specific to the Vietnamese market, and should be validated against your own campaign data.",
       } },
       {
         type: "image",
@@ -2343,7 +2343,7 @@ const builtinPosts: Post[] = [
         alt: { vi: "Bảng phân tích chỉ số User Acquisition và điểm hòa vốn LTV/CAC", en: "User acquisition dashboard analyzing cohort LTV and payback period" },
         caption: { vi: "Theo dõi chỉ số User Acquisition theo từng kênh giúp tối ưu chi phí CPI và nâng cao chất lượng người chơi.", en: "Tracking acquisition metrics by channel optimizes CPI and player lifetime value." },
       },
-      { type: "h2", text: { vi: "1. Bảng Benchmark chỉ số chính theo thể loại tại Việt Nam", en: "1. Key Performance Benchmarks by Genre in Vietnam" } },
+      { type: "h2", text: { vi: "1. Bảng tham khảo chỉ số chính theo thể loại (khoảng phổ biến trong ngành)", en: "1. Reference Ranges by Genre (Common Industry Ballpark)" } },
       { type: "ul", items: [
         { vi: "Game Casual / Puzzle / Idle: CPI trung bình 0.20$ - 0.50$ | Store CVR: 32% - 40% | D1: 35% - 42% | D7: 12% - 18% | Điểm hòa vốn ROAS: Ngày 14 - 30.", en: "Casual / Puzzle / Idle: CPI $0.20 - $0.50 | Store CVR: 32% - 40% | D1: 35% - 42% | D7: 12% - 18% | ROAS Payback: Days 14 - 30." },
         { vi: "Game MMORPG / Tiên hiệp / Kiếm hiệp: CPI trung bình 1.20$ - 2.50$ | Store CVR: 24% - 30% | D1: 38% - 45% | D7: 16% - 22% | D30: 8% - 12% | Điểm hòa vốn ROAS: Ngày 45 - 90.", en: "MMORPG / Martial Arts: CPI $1.20 - $2.50 | Store CVR: 24% - 30% | D1: 38% - 45% | D7: 16% - 22% | D30: 8% - 12% | ROAS Payback: Days 45 - 90." },
@@ -2365,7 +2365,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "aso-game-mobile-title-description-screenshot",
-    title: { vi: "Tối ưu ASO Game Mobile: Thiết kế Title, Short Description và Bộ 3 Screenshot đầu tiên tăng 40% CVR", en: "Mobile Game ASO Optimization: Title, Description & First 3 Screenshots for 40% CVR Lift" },
+    title: { vi: "Tối ưu ASO Game Mobile: Thiết kế Title, Short Description và Bộ 3 Screenshot đầu tiên", en: "Mobile Game ASO Optimization: Title, Description & The First 3 Screenshots" },
     excerpt: { vi: "Trang Store không phải là nơi lưu trữ ảnh tĩnh vô hồn mà là phễu chuyển đổi quyết định lượt cài đặt. Công thức sắp xếp Title chuẩn từ khóa và bộ Screenshot theo cấu trúc kể chuyện thị giác (Visual Storytelling).", en: "Your store listing is an active conversion engine. The proven formula for keyword-optimized Titles and a 3-screenshot visual storytelling sequence that converts browsing players into installs." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
     cover: "/blog-covers/app-store-conversion-funnel.jpg",
@@ -2375,8 +2375,8 @@ const builtinPosts: Post[] = [
     ],
     body: [
       { type: "p", text: {
-        vi: "Hơn 70% người dùng quyết định tải game dựa trên 3 giây đầu tiên lướt qua màn hình Store mà không hề bấm nút 'Đọc thêm' (Read More) phần mô tả. Một sai lầm kinh điển của các studio là nhồi nhét quá nhiều chữ kỹ thuật hoặc chọn screenshot phong cảnh mờ nhạt thay vì thể hiện trực diện sức mạnh gameplay và cảm xúc chiến đấu.",
-        en: "Over 70% of store visitors decide whether to install within 3 seconds without ever expanding the 'Read More' description fold. A classic studio blunder is cluttering visuals with tiny text or showing generic scenery screenshots rather than highlighting visceral combat action and immediate player empowerment.",
+        vi: "Phần lớn người dùng quyết định tải game chỉ trong vài giây đầu tiên lướt qua màn hình Store, thường không hề bấm nút 'Đọc thêm' (Read More) phần mô tả. Một sai lầm kinh điển của các studio là nhồi nhét quá nhiều chữ kỹ thuật hoặc chọn screenshot phong cảnh mờ nhạt thay vì thể hiện trực diện sức mạnh gameplay và cảm xúc chiến đấu.",
+        en: "Most users decide whether to install within the first few seconds of viewing a store page, often without ever expanding the 'Read More' description fold. A classic studio blunder is cluttering visuals with tiny text or showing generic scenery screenshots rather than highlighting visceral combat action and immediate player empowerment.",
       } },
       {
         type: "image",
@@ -2394,7 +2394,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/app-store-conversion-funnel.jpg",
         alt: { vi: "Phễu chuyển đổi từ tìm kiếm từ khóa đến tải game trên App Store và Google Play", en: "Store conversion funnel from keyword search to completed app install" },
-        caption: { vi: "Kiểm thử A/B Testing bộ ảnh Screenshot có thể mang lại mức tăng trưởng chuyển đổi tự nhiên lên đến 35%.", en: "Systematic A/B testing of store screenshots yields up to a 35% organic conversion rate uplift." },
+        caption: { vi: "Kiểm thử A/B Testing bộ ảnh Screenshot có thể mang lại mức tăng trưởng đáng kể về tỷ lệ chuyển đổi tự nhiên.", en: "A/B testing store screenshots can meaningfully lift organic conversion rate." },
       },
       { type: "h2", text: { vi: "2. Cấu trúc Title & Subtitle chuẩn thuật toán ASO", en: "2. Algorithmic Title & Subtitle Best Practices" } },
       { type: "p", text: {
@@ -2406,7 +2406,7 @@ const builtinPosts: Post[] = [
   {
     slug: "game-mobile-retention-push-notification",
     title: { vi: "Tối ưu Push Notification Game Mobile: Nghệ thuật kéo người chơi quay lại mà không gây ức chế", en: "Mobile Game Push Notifications: Re-Engaging Lapsed Players Without Spam Fatigue" },
-    excerpt: { vi: "Hơn 60% người chơi tắt hoàn toàn thông báo nếu bị làm phiền bởi các tin nhắn quảng cáo nạp tiền vô nghĩa. Hướng dẫn thiết lập ma trận thông báo cá nhân hóa theo tiến độ và thời gian thực.", en: "Over 60% of players permanently disable notifications after receiving spammy monetization push alerts. A personalized notification matrix triggered by real-time in-game events and milestones." },
+    excerpt: { vi: "Rất nhiều người chơi tắt hoàn toàn thông báo nếu bị làm phiền bởi các tin nhắn quảng cáo nạp tiền vô nghĩa. Hướng dẫn thiết lập ma trận thông báo cá nhân hóa theo tiến độ và thời gian thực.", en: "Many players permanently disable notifications after receiving spammy monetization push alerts. A personalized notification matrix triggered by real-time in-game events and milestones." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "social",
     cover: "/blog-covers/retention-3d.png",
     sources: [
@@ -2434,7 +2434,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/onboarding-activation.jpg",
         alt: { vi: "Đo lường tỷ lệ mở thông báo và tác động đến chỉ số D7 D30 Retention", en: "Measuring push open rates and impact on D7-D30 retention curves" },
-        caption: { vi: "Thiết lập khung giờ yên tĩnh (Quiet Hours từ 22:00 đến 08:00) giúp bảo vệ trải nghiệm và giảm 80% tỷ lệ tắt thông báo.", en: "Enforcing strict quiet hours (22:00 to 08:00) respects player habits and cuts notification opt-outs by 80%." },
+        caption: { vi: "Thiết lập khung giờ yên tĩnh (Quiet Hours từ 22:00 đến 08:00) giúp bảo vệ trải nghiệm và giảm đáng kể tỷ lệ tắt thông báo.", en: "Enforcing strict quiet hours (22:00 to 08:00) respects player habits and meaningfully cuts notification opt-outs." },
       },
       { type: "h2", text: { vi: "2. Ba nguyên tắc vàng bảo vệ quyền gửi thông báo", en: "2. Three Golden Rules to Protect Push Opt-In Rates" } },
       { type: "ul", items: [
@@ -2823,8 +2823,8 @@ const builtinPosts: Post[] = [
             en: "T-Dolls & 'Waifu Attachment': While lore designates humanoid androids as T-Dolls, player psychology views them as beloved 'Waifus.' High-fidelity 3D interactions and intimate dormitory lore form deep emotional bonds that fuel collection and monetization."
           },
           {
-            vi: "Ngôn ngữ Gacha thực chiến: 'Nổ vàng' (quay ra nhân vật SSR 5 sao), 'Lệch rate' (thua tỷ lệ 50/50 ra nhân vật không mong muốn), 'Trấn' (Vũ khí chuyên dụng dành riêng cho T-Doll), 'Ăn bảo hiểm' (đạt đủ 80 lượt quay bắt buộc). Khi NPH sử dụng đúng các từ khóa này trong tiêu đề video và bài hướng dẫn, tỷ lệ nhấp chuột (CTR) tăng từ 2.8% lên trên 8.5%.",
-            en: "Colloquial Gacha Terminology: 'No vang' (gold SSR pull), 'Lech rate' (losing 50/50 pity), 'Tran' (signature weapon), 'An bao hiem' (hitting hard pity). Aligning video titles and guides with this native lexicon quadruples organic CTR from 2.8% to 8.5%."
+            vi: "Ngôn ngữ Gacha thực chiến: 'Nổ vàng' (quay ra nhân vật SSR 5 sao), 'Lệch rate' (thua tỷ lệ 50/50 ra nhân vật không mong muốn), 'Trấn' (Vũ khí chuyên dụng dành riêng cho T-Doll), 'Ăn bảo hiểm' (đạt đủ 80 lượt quay bắt buộc). Khi NPH sử dụng đúng các từ khóa này trong tiêu đề video và bài hướng dẫn, tỷ lệ nhấp chuột (CTR) thường cải thiện rõ rệt.",
+            en: "Colloquial Gacha Terminology: 'No vang' (gold SSR pull), 'Lech rate' (losing 50/50 pity), 'Tran' (signature weapon), 'An bao hiem' (hitting hard pity). Aligning video titles and guides with this native lexicon typically boosts organic CTR noticeably."
           },
         ],
       },
@@ -2854,8 +2854,8 @@ const builtinPosts: Post[] = [
             en: "Match Dynamics Slang: 'Gank tem' (ambushing the entire enemy squad), 'Lat keo' (miraculous comeback from behind), 'Outplay' (superior micro-skill clutch), 'Combat tong' (decisive teamfight clash)."
           },
           {
-            vi: "Ứng dụng trong Performance Ads: Đưa các cụm từ như 'Pha lật kèo Rush B mãn nhãn' hoặc 'Bí kíp gank tem không trượt phát nào' vào 3 giây đầu của video quảng cáo TikTok/Reels giúp tỷ lệ giữ chân người xem (Hold Rate) tăng thêm 40%.",
-            en: "Performance Ad Applications: Integrating phrases like 'Unbelievable Rush B Comeback' or 'Flawless Gank Tactics' into the first 3 seconds of short-form video ads elevates viewer hold rate by 40%."
+            vi: "Ứng dụng trong Performance Ads: Đưa các cụm từ như 'Pha lật kèo Rush B mãn nhãn' hoặc 'Bí kíp gank tem không trượt phát nào' vào 3 giây đầu của video quảng cáo TikTok/Reels giúp tỷ lệ giữ chân người xem (Hold Rate) tăng rõ rệt.",
+            en: "Performance Ad Applications: Integrating phrases like 'Unbelievable Rush B Comeback' or 'Flawless Gank Tactics' into the first 3 seconds of short-form video ads noticeably elevates viewer hold rate."
           },
         ],
       },
@@ -3012,7 +3012,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/community-meetup-collab.jpg",
         alt: { vi: "Xây dựng môi trường thảo luận an toàn và quy tắc ứng xử cho cộng đồng game thủ", en: "Building safe discussion spaces and moderation code of conduct for gaming communities" },
-        caption: { vi: "Lắng nghe và đối thoại chân thành với đại diện các Bang hội lớn giúp dập tắt 90% mầm mống khủng hoảng truyền thông.", en: "Proactive dialogues with top guild leaders defuse 90% of potential community PR crises before escalation." },
+        caption: { vi: "Lắng nghe và đối thoại chân thành với đại diện các Bang hội lớn giúp dập tắt phần lớn mầm mống khủng hoảng truyền thông trước khi lan rộng.", en: "Proactive dialogues with top guild leaders defuse most potential community PR crises before they escalate." },
       },
       { type: "h2", text: { vi: "2. Nguyên tắc vàng khi đối thoại trong khủng hoảng", en: "2. Crisis Communication: The Empathy-First Rule" } },
       { type: "p", text: {
@@ -3196,8 +3196,8 @@ const builtinPosts: Post[] = [
       {
         type: "p",
         text: {
-          vi: "Trong giới marketing game mobile, có một sự thật mà bất kỳ ai từng 'đốt tiền' chạy chiến dịch đều thấm thía: Lượt xem không tự động biến thành lượt tải, và người nổi tiếng triệu view chưa chắc đã là người thuyết phục được game thủ. Game thủ là một tệp khán giả cực kỳ nhạy bén; họ lập tức ngửi thấy mùi 'đọc kịch bản quảng cáo trả tiền' và sẵn sàng lướt qua chỉ sau một giây. Đó là lý do tại sao chiến lược Micro Influencer (những nhà sáng tạo nội dung sở hữu từ 10.000 đến 100.000 người theo dõi) đang trở thành vũ khí bí mật giúp các nhà phát hành tại Việt Nam vừa tiết kiệm đến 60% chi phí, vừa đạt tỷ lệ người chơi nạp tiền lần đầu (First Purchase Conversion) vượt trội.",
-          en: "In mobile game marketing, veteran practitioners understand a fundamental truth: views do not automatically equate to installs, and mainstream celebrities rarely convince hardcore gamers. Gamers are an exceptionally discerning audience; they instantly detect scripted sponsor reads and swipe away within seconds. That is why micro-influencer strategies (creators commanding 10k to 100k dedicated followers) have become the secret growth engine for Vietnamese publishers, slashing CPI by up to 60% while generating outstanding first-purchase conversion rates.",
+          vi: "Trong giới marketing game mobile, có một sự thật mà bất kỳ ai từng 'đốt tiền' chạy chiến dịch đều thấm thía: Lượt xem không tự động biến thành lượt tải, và người nổi tiếng triệu view chưa chắc đã là người thuyết phục được game thủ. Game thủ là một tệp khán giả cực kỳ nhạy bén; họ lập tức ngửi thấy mùi 'đọc kịch bản quảng cáo trả tiền' và sẵn sàng lướt qua chỉ sau một giây. Đó là lý do tại sao chiến lược Micro Influencer (những nhà sáng tạo nội dung sở hữu từ 10.000 đến 100.000 người theo dõi) đang trở thành vũ khí bí mật giúp các nhà phát hành tại Việt Nam vừa tiết kiệm chi phí đáng kể, vừa đạt tỷ lệ người chơi nạp tiền lần đầu (First Purchase Conversion) tốt hơn.",
+          en: "In mobile game marketing, veteran practitioners understand a fundamental truth: views do not automatically equate to installs, and mainstream celebrities rarely convince hardcore gamers. Gamers are an exceptionally discerning audience; they instantly detect scripted sponsor reads and swipe away within seconds. That is why micro-influencer strategies (creators commanding 10k to 100k dedicated followers) have become the secret growth engine for Vietnamese publishers, meaningfully cutting CPI while generating stronger first-purchase conversion rates.",
         },
       },
       {
@@ -3338,8 +3338,8 @@ const builtinPosts: Post[] = [
             en: "Vietnamese Flag Icon Badges: Top chart titles frequently feature a subtle Vietnamese flag corner badge. This acts as a powerful trust signal, assuring players of dedicated local servers, zero ping lag, and full official support."
           },
           {
-            vi: "Dung lượng gói cài đặt ban đầu tối ưu (Dưới 600MB): Người dùng di động tại Việt Nam có thói quen tải game nhanh qua mạng 4G. Giữ dung lượng file cài đặt ban đầu từ 300MB đến 600MB (tải ngầm phần dữ liệu còn lại sau khi vào game) giúp tăng 35% tỷ lệ hoàn tất cài đặt (Install Completion Rate).",
-            en: "Optimized Initial Package Size (Under 600MB): Mobile users in Vietnam often download on cellular 4G. Keeping initial download sizes between 300MB and 600MB boosts install completion rates by 35%."
+            vi: "Dung lượng gói cài đặt ban đầu tối ưu (Dưới 600MB): Người dùng di động tại Việt Nam có thói quen tải game nhanh qua mạng 4G. Giữ dung lượng file cài đặt ban đầu từ 300MB đến 600MB (tải ngầm phần dữ liệu còn lại sau khi vào game) giúp tăng đáng kể tỷ lệ hoàn tất cài đặt (Install Completion Rate).",
+            en: "Optimized Initial Package Size (Under 600MB): Mobile users in Vietnam often download on cellular 4G. Keeping initial download sizes between 300MB and 600MB meaningfully boosts install completion rates."
           },
         ],
       },
@@ -3378,7 +3378,7 @@ const builtinPosts: Post[] = [
         type: "image",
         src: "/blog-covers/aso-store-optimization.jpg",
         alt: { vi: "Cấu trúc thiết kế bộ 3 Screenshot đầu tiên tối ưu tỷ lệ chuyển đổi cho game mobile", en: "Designing high-converting localized screenshot sets for mobile games" },
-        caption: { vi: "Thiết kế bộ 3 Screenshot đầu tiên với Call-To-Action tiếng Việt nổi bật về phúc lợi tân thủ ('Tặng 1000 lượt quay', 'Đăng nhập nhận VIP') giúp tăng 35% tỷ lệ chuyển đổi (CVR).", en: "Crafting the first 3 screenshots with high-impact Vietnamese bounty CTAs ('1000 Free Pulls', 'Login for VIP Status') delivers a 35% boost in store conversion rate." },
+        caption: { vi: "Thiết kế bộ 3 Screenshot đầu tiên với Call-To-Action tiếng Việt nổi bật về phúc lợi tân thủ ('Tặng 1000 lượt quay', 'Đăng nhập nhận VIP') giúp tăng đáng kể tỷ lệ chuyển đổi (CVR).", en: "Crafting the first 3 screenshots with high-impact Vietnamese bounty CTAs ('1000 Free Pulls', 'Login for VIP Status') can meaningfully boost store conversion rate." },
       },
       { type: "h2", text: { vi: "3. Ma trận 4 nhóm từ khóa ASO có lượng tìm kiếm cao nhất tại Việt Nam", en: "3. Four High-Converting ASO Keyword Clusters in Vietnam" } },
       {
@@ -3510,8 +3510,8 @@ const builtinPosts: Post[] = [
       } },
       { type: "h2", text: { vi: "4. Tầng Doanh số & Tối ưu Chi phí sở hữu khách hàng (CAC / LTV)", en: "4. Direct Sales & Customer Lifetime Value (CAC / LTV)" } },
       { type: "p", text: {
-        vi: "Tầng cuối cùng là đối chiếu chi phí tài trợ với doanh thu trực tiếp phát sinh: Số lượng tài khoản mới mở (đối với ứng dụng ngân hàng, ví điện tử), số đơn hàng đặt qua mã khuyến mãi giải đấu (đối với F&B, thời trang), và so sánh chi phí sở hữu một khách hàng mới (CAC) từ kênh Esports với các chiến dịch Facebook Ads / Google Ads thông thường. Trên thực tế, nhiều nhãn hàng tiêu dùng nhanh ghi nhận CAC từ Esports rẻ hơn 30 - 45% so với quảng cáo hiển thị thông thường nhờ tính tập trung đối tượng cực cao.",
-        en: "The final tier correlates sponsorship spend directly with attributable business results: new app activations for fintech apps, redemptions on tournament promos for FMCG/fashion, and comparing the customer acquisition cost (CAC) of esports audiences against standard Meta or Google ad sets. In practice, focused esports activations frequently achieve a 30 - 45% lower CAC thanks to extreme demographic density.",
+        vi: "Tầng cuối cùng là đối chiếu chi phí tài trợ với doanh thu trực tiếp phát sinh: Số lượng tài khoản mới mở (đối với ứng dụng ngân hàng, ví điện tử), số đơn hàng đặt qua mã khuyến mãi giải đấu (đối với F&B, thời trang), và so sánh chi phí sở hữu một khách hàng mới (CAC) từ kênh Esports với các chiến dịch Facebook Ads / Google Ads thông thường. Trên thực tế, nhờ tính tập trung đối tượng cực cao, CAC từ Esports thường rẻ hơn đáng kể so với quảng cáo hiển thị thông thường.",
+        en: "The final tier correlates sponsorship spend directly with attributable business results: new app activations for fintech apps, redemptions on tournament promos for FMCG/fashion, and comparing the customer acquisition cost (CAC) of esports audiences against standard Meta or Google ad sets. In practice, thanks to extreme demographic density, focused esports activations typically achieve a meaningfully lower CAC.",
       } },
       { type: "h2", text: { vi: "Mô hình kích hoạt tài trợ phổ biến theo ngành hàng", en: "Common Sponsorship Activation Patterns by Industry" } },
       { type: "p", text: {
