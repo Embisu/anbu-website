@@ -60,6 +60,7 @@ export function categoryForPost(post: Post) {
 const builtinPosts: Post[] = [
   {
     slug: "ban-do-nha-phat-hanh-game-viet-nam",
+    slug_en: "vietnam-s-game-publisher-landscape-established-leaders-emerging",
     title: {
       vi: "Bản đồ nhà phát hành game Việt Nam: các đối tác nổi bật",
       en: "Vietnam's game publisher landscape: established leaders and emerging partners",
@@ -273,6 +274,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "thi-truong-game-viet-nam-bao-hoa-chien-luoc-tang-truong",
+    slug_en: "vietnam-s-mobile-gaming-landscape-why-quality-flight",
     title: {
       vi: "Thị trường game Việt Nam: Không hề bão hòa, đây là cuộc thanh lọc chất lượng (2026)",
       en: "Vietnam's Mobile Gaming Landscape: Why Quality Flight Beats Saturation (2026)",
@@ -399,6 +401,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "marketing-game-app-toi-uu-cpi-roas",
+    slug_en: "mobile-game-app-marketing-practical-cpi-roas-ltv",
     title: {
       vi: "Marketing Game & App: Tối ưu CPI, ROAS và LTV thực chiến khi ra mắt (2026)",
       en: "Mobile Game & App Marketing: Practical CPI, ROAS & LTV Optimization at Launch (2026)",
@@ -554,6 +557,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "influencer-marketing-chon-kol-koc-dung-cach",
+    slug_en: "influencer-marketing-choosing-right-gaming-kols-kocs-vanity",
     title: {
       vi: "Influencer Marketing: Chọn KOL & KOC Gaming đúng cách, tránh bẫy view ảo",
       en: "Influencer Marketing: Choosing the Right Gaming KOLs & KOCs Without Vanity Metrics",
@@ -614,6 +618,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "chien-luoc-noi-dung-tiktok-cho-thuong-hieu",
+    slug_en: "tiktok-content-strategy-gaming-brands-mastering-first-3",
     title: {
       vi: "Chiến lược nội dung TikTok cho Game và Thương hiệu: Giữ chân 3 giây đầu",
       en: "TikTok Content Strategy for Gaming & Brands: Mastering the First 3 Seconds",
@@ -674,6 +679,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "seo-2026-huong-dan-toan-dien",
+    slug_en: "seo-2026-complete-playbook-ai-search-google-e-e-a-t",
     title: {
       vi: "SEO 2026: Hướng dẫn toàn diện để thích ứng với AI Search và Google E-E-A-T",
       en: "SEO in 2026: The Complete Playbook for AI Search & Google E-E-A-T",
@@ -728,6 +734,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "xay-dung-thuong-hieu-tu-con-so-0",
+    slug_en: "building-brand-scratch-5-foundational-steps-mindshare-dominance",
     title: {
       vi: "Xây dựng thương hiệu từ con số 0: 5 bước thiết lập nền móng và chiếm lĩnh tâm trí khách hàng",
       en: "Building a Brand from Scratch: 5 Foundational Steps to Mindshare Dominance",
@@ -779,6 +786,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "performance-marketing-toi-uu-ngan-sach",
+    slug_en: "performance-marketing-budget-optimization-ltv-cac-control",
     title: {
       vi: "Performance Marketing: Chiến lược tối ưu ngân sách và kiểm soát LTV/CAC",
       en: "Performance Marketing: Budget Optimization and LTV/CAC Control",
@@ -834,6 +842,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "aso-game-mobile-viet-nam",
+    slug_en: "mobile-game-aso-vietnam-strategic-organic-app-store",
     title: {
       vi: "ASO Game Mobile tại Việt Nam: Chiến lược tối ưu lượt tải tự nhiên (Organic Installs)",
       en: "Mobile Game ASO in Vietnam: Strategic Organic App Store Optimization",
@@ -889,6 +898,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "soft-launch-game-mobile-viet-nam",
+    slug_en: "mobile-game-soft-launch-vietnam-technical-testing-risk",
     title: {
       vi: "Soft Launch Game Mobile tại Việt Nam: Playbook thử nghiệm kỹ thuật và đo lường rủi ro",
       en: "Mobile Game Soft Launch in Vietnam: Technical Testing and Risk Measurement Playbook",
@@ -941,6 +951,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "xay-dung-cong-dong-game-mobile-viet-nam",
+    slug_en: "building-mobile-gaming-communities-vietnam-facebook-groups-liveops",
     title: {
       vi: "Xây dựng cộng đồng Game Mobile tại Việt Nam: Từ Group Facebook đến LiveOps",
       en: "Building Mobile Gaming Communities in Vietnam: From Facebook Groups to LiveOps",
@@ -995,6 +1006,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "ugc-game-mobile-cach-kich-hoat-nguoi-choi",
+    slug_en: "ugc-mobile-games-turning-passionate-players-content-creators",
     title: {
       vi: "UGC cho Game Mobile: Cách biến người chơi thành nhà sáng tạo nội dung",
       en: "UGC for Mobile Games: Turning Passionate Players into Content Creators",
@@ -1046,6 +1058,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "retention-game-mobile-tang-d1-d7-d30",
+    slug_en: "optimizing-mobile-game-retention-9-proven-formulas-d1",
     title: {
       vi: "Tối ưu Retention Game Mobile: 9 công thức vàng giữ chân D1, D7 và D30",
       en: "Optimizing Mobile Game Retention: 9 Proven Formulas for D1, D7, and D30",
@@ -1097,6 +1110,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "liveops-game-mobile-lich-su-kien-giu-nguoi-choi",
+    slug_en: "mobile-game-liveops-designing-year-round-event-calendars-that",
     title: {
       vi: "LiveOps Game Mobile: Thiết kế nhịp sự kiện giữ lửa người chơi quanh năm",
       en: "Mobile Game LiveOps: Designing Year-Round Event Calendars That Retain Players",
@@ -1148,6 +1162,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "localization-game-mobile-viet-nam",
+    slug_en: "mobile-game-localization-vietnam-bridging-language-gamer-culture",
     title: {
       vi: "Bản địa hóa Game Mobile tại Việt Nam: Từ rào cản ngôn ngữ đến văn hóa game thủ",
       en: "Mobile Game Localization in Vietnam: Bridging Language and Gamer Culture",
@@ -1223,6 +1238,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "user-acquisition-game-mobile-kenh-quang-cao",
+    slug_en: "mobile-game-user-acquisition-channel-selection-strategy-budget",
     title: {
       vi: "User Acquisition Game Mobile: Chiến lược chọn kênh quảng cáo và phân bổ ngân sách tối ưu",
       en: "Mobile Game User Acquisition: Channel Selection Strategy and Budget Optimization",
@@ -1306,6 +1322,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "monetization-game-mobile-iap-battle-pass",
+    slug_en: "mobile-game-monetization-combining-iap-battle-pass-rewarded",
     title: {
       vi: "Monetization Game Mobile: Chiến lược kết hợp IAP, Battle Pass và Quảng cáo nhận thưởng",
       en: "Mobile Game Monetization: Combining IAP, Battle Pass, and Rewarded Ads for Sustainable Revenue",
@@ -1356,6 +1373,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "do-luong-game-mobile-cpi-ltv-roas",
+    slug_en: "mobile-game-analytics-building-unified-dashboards-cpi-ltv",
     title: {
       vi: "Đo lường Game Mobile: Xây dựng Dashboard theo dõi CPI, LTV, ROAS và Payback Period",
       en: "Mobile Game Analytics: Building Unified Dashboards for CPI, LTV, ROAS, and Payback Period",
@@ -1444,6 +1462,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "ra-mat-game-mobile-viet-nam-checklist",
+    slug_en: "launching-mobile-game-vietnam-complete-checklist-licensing-your",
     title: { vi: "Ra mắt game mobile tại Việt Nam: checklist đầy đủ từ pháp lý đến 90 ngày đầu", en: "Launching a mobile game in Vietnam: the complete checklist from licensing to your first 90 days" },
     excerpt: { vi: "Ra mắt game ở Việt Nam thất bại hiếm khi vì marketing yếu. Phần lớn vỡ trận vì giấy phép chưa xong, bản dịch sai ngữ cảnh hoặc không ai trực xử lý sự cố. Đây là checklist đầy đủ ANBU tổng hợp để đồng hành cùng studio quốc tế vào thị trường này.", en: "Game launches in Vietnam rarely fail because of weak marketing. They fail because licensing wasn't finished, translation missed the context, or nobody was on call for a crisis. This is the full checklist ANBU has put together to support international studios entering this market." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-15", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "strategy", cover: "/blog-covers/launch-checklist.jpg",
@@ -1560,6 +1579,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "creative-testing-game-mobile-quang-cao",
+    slug_en: "mobile-game-creative-testing-3-step-process-winning-ads",
     title: { vi: "Creative testing game mobile: quy trình 3 bước tìm mẫu quảng cáo thắng", en: "Mobile Game Creative Testing: A 3-Step Process for Winning Ads" },
     excerpt: { vi: "Mẫu quảng cáo đẹp nhất không phải là mẫu quảng cáo mang lại ROAS cao nhất. Quy trình tách biến số và ma trận 4 góc tiếp cận giúp chuyển hóa ngân sách test thành doanh thu.", en: "The prettiest ad is rarely the one driving the highest ROAS. A structured variable testing framework and 4-angle creative matrix to turn test budgets into revenue." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-16", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "strategy",
@@ -1604,6 +1624,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "pr-game-mobile-viet-nam-ra-mat",
+    slug_en: "mobile-game-pr-vietnam-media-storytelling-launch-strategy",
     title: { vi: "PR game mobile tại Việt Nam: Chiến lược xây dựng câu chuyện truyền thông ra mắt", en: "Mobile Game PR in Vietnam: Media Storytelling & Launch Strategy" },
     excerpt: { vi: "Một tựa game mới không tự nhiên thành tin tức sốt dẻo chỉ vì nó chuẩn bị phát hành. Chiến lược PR 3 giai đoạn kết nối báo chí, chuyên trang game và cộng đồng.", en: "A new game is not instant news simply because it is launching. A 3-phase PR roadmap connecting mainstream press, specialized gaming portals, and core communities." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-16", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
@@ -1643,6 +1664,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "influencer-game-mobile-do-luong-hieu-qua",
+    slug_en: "measuring-influencer-marketing-mobile-games-beyond-vanity-views",
     title: { vi: "Đo lường influencer marketing cho game mobile: Vượt qua cái bẫy lượt xem", en: "Measuring Influencer Marketing for Mobile Games: Beyond Vanity Views" },
     excerpt: { vi: "Lượt xem video không đồng nghĩa với người chơi thật. Khung đo lường 3 tầng từ Lượt hiển thị, Tỷ lệ chuyển đổi cài đặt đến D30 Retention theo từng Creator.", en: "Video views do not equal active players. A 3-tier measurement framework tracking Impressions, Install Conversion, and D30 Retention per creator." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-16", readingTime: 5, author: "ANBU Team", color: "from-orange-500 to-navy-800", variant: "influencer",
@@ -1682,6 +1704,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "app-store-conversion-rate-game-mobile",
+    slug_en: "improving-app-store-google-play-conversion-rates-3-second",
     title: { vi: "Tăng tỷ lệ chuyển đổi trang App Store & Google Play: Quy tắc 3 giây", en: "Improving App Store & Google Play Conversion Rates: The 3-Second Rule" },
     excerpt: { vi: "Người xem quyết định cài game hay lướt tiếp trong chưa đầy 3 giây. Hướng dẫn tối ưu hóa Icon, 3 ảnh Screenshot đầu tiên và Video Preview theo tâm lý game thủ Việt.", en: "Users decide to install or scroll past in under 3 seconds. How to optimize Icons, the first 3 Screenshots, and Video Previews for Vietnamese gamers." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-16", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
@@ -1725,6 +1748,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "community-launch-game-mobile-90-ngay",
+    slug_en: "90-day-community-playbook-launching-sustaining-mobile-game-retention",
     title: { vi: "Kế hoạch 90 ngày xây dựng và duy trì nhiệt độ cộng đồng game mobile", en: "90-Day Community Playbook: Launching & Sustaining Mobile Game Retention" },
     excerpt: { vi: "Cộng đồng không thể tự duy trì nếu thiếu lộ trình vận hành bài bản. Kế hoạch hành động 3 giai đoạn giúp giữ chân người chơi sau đợt quảng cáo rầm rộ ban đầu.", en: "A gaming community cannot sustain itself without structured operational rhythms. A 3-phase action plan to retain players after the initial launch spike." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-16", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
@@ -1763,6 +1787,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "soft-launch-game-mobile-do-gi-truoc-global-launch",
+    slug_en: "mobile-game-soft-launch-4-golden-metric-clusters",
     title: { vi: "Soft launch game mobile: 4 nhóm chỉ số vàng cần kiểm chứng trước Global Launch", en: "Mobile Game Soft Launch: 4 Golden Metric Clusters to Validate Before Global Launch" },
     excerpt: { vi: "Soft launch không phải là một bản phát hành thu nhỏ để kiếm vài lượt cài đặt. Đây là nơi rẻ nhất để phát hiện lỗi kỹ thuật và rò rỉ phễu nạp trước khi bung hàng triệu USD cho ngày mở rộng toàn cầu.", en: "A soft launch is not a miniature release to harvest early installs. It is the most cost-effective stage to catch technical bottlenecks and monetization leaks before scaling global budgets." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "game",
@@ -1833,6 +1858,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-mobile-ugc-creator-program",
+    slug_en: "mobile-game-creator-programs-engineering-self-sustaining-ugc-ecosystem",
     title: { vi: "Xây dựng Creator Program cho game mobile: Nuôi dưỡng hệ sinh thái nội dung tự sinh (UGC)", en: "Mobile Game Creator Programs: Engineering a Self-Sustaining UGC Ecosystem" },
     excerpt: { vi: "Một chương trình Creator thành công không phải là chi tiền thuê quảng cáo một lần, mà là thiết kế hệ sinh thái 3 tầng giúp cộng đồng sáng tạo tự sản sinh hàng nghìn video mỗi tháng.", en: "A successful creator program is not a one-off paid endorsement, but a 3-tier ecosystem engineered to generate thousands of organic community videos monthly." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "social",
@@ -1872,6 +1898,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "seo-game-mobile-topic-cluster",
+    slug_en: "mobile-game-seo-building-topic-clusters-dominate-search",
     title: { vi: "SEO game mobile: Xây dựng Topic Cluster để chiếm lĩnh thứ hạng tìm kiếm", en: "Mobile Game SEO: Building Topic Clusters to Dominate Search Rankings" },
     excerpt: { vi: "Người chơi không chỉ tìm tên game, họ tìm hướng dẫn, giftcode, cấu hình máy, và bảng xếp hạng nhân vật. Cấu trúc Topic Cluster giúp website gom trọn toàn bộ lưu lượng tìm kiếm tự nhiên.", en: "Players do not just search your game's title, they search guides, redeem codes, system specs, and tier lists. A Topic Cluster structure captures full organic search demand." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
@@ -1907,6 +1934,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-mobile-onboarding-tang-activation",
+    slug_en: "mobile-game-onboarding-5-golden-rules-maximize-first-session",
     title: { vi: "Onboarding game mobile: 5 nguyên tắc vàng tăng tỷ lệ kích hoạt (Activation Rate)", en: "Mobile Game Onboarding: 5 Golden Rules to Maximize First-Session Activation" },
     excerpt: { vi: "Phần lớn game thủ quyết định ở lại hay xóa app trong 3 phút đầu tiên. Rút ngắn thời gian chạm đến khoảnh khắc sảng khoái (Time-to-First-Joy) và loại bỏ ma sát giao diện.", en: "Over 60% of players decide whether to stay or churn within their first 3 minutes. Shortening Time-to-First-Joy and eliminating onboarding UI friction." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "game",
@@ -1938,6 +1966,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "battle-pass-game-mobile-thiet-ke-gia-tri",
+    slug_en: "designing-mobile-game-battle-passes-balancing-in-app-revenue",
     title: { vi: "Thiết kế Battle Pass game mobile: Cân bằng giữa Doanh thu và Niềm tin Game thủ", en: "Designing Mobile Game Battle Passes: Balancing In-App Revenue with Player Goodwill" },
     excerpt: { vi: "Người chơi nhận ra rất nhanh khi một Battle Pass được dựng lên để 'vắt kiệt tiền' thay vì tôn vinh công sức chơi. Cách thiết kế 4 tầng giá trị và nhịp hoàn thành giữ vững D30 Retention.", en: "Gamers immediately spot a predatory Battle Pass engineered for cash extraction versus one that honors playtime. Designing 4 value layers and sustainable pacing." },
     category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "strategy",
@@ -1968,6 +1997,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "quang-cao-game-mobile-viet-nam-ke-hoach-ngan-sach",
+    slug_en: "mobile-game-advertising-vietnam-3-phase-budget-allocation-strategy",
     title: { vi: "Quảng cáo game mobile tại Việt Nam: Chiến lược phân bổ ngân sách 3 giai đoạn", en: "Mobile Game Advertising in Vietnam: 3-Phase Budget Allocation Strategy" },
     excerpt: { vi: "Đổ dồn 100% ngân sách vào tuần lễ ra mắt là cách nhanh nhất để 'cháy túi' trước khi có dữ liệu tối ưu. Phân bổ ngân sách theo 3 giai đoạn: Thử nghiệm (Test), Tăng tốc (Scale) và Tái kích hoạt (Retarget).", en: "Pouring 100% of acquisition funds into launch week exhausts budgets before data matures. Allocating capital across 3 deliberate stages: Test, Scale, and Retargeting." },
     category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-18", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
@@ -2008,6 +2038,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "tiktok-marketing-cho-game-mobile-viet-nam",
+    slug_en: "mobile-game-tiktok-marketing-2-second-hook-frameworks-viral",
     title: { vi: "TikTok marketing game mobile: Công thức sản xuất Creative giữ chân game thủ trong 2 giây đầu", en: "Mobile Game TikTok Marketing: 2-Second Hook Frameworks for Viral Conversion" },
     excerpt: { vi: "Người dùng TikTok lướt qua video quảng cáo trong chưa đầy 1,5 giây. Ba định dạng video dọc (Vertical Formats) và chiến lược Spark Ads giúp tối ưu chi phí CPI cho game thủ Việt.", en: "TikTok users scroll past ads in under 1.5 seconds. Three vertical video formats and Spark Ads strategies to maximize install conversion among Vietnamese gamers." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-18", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "social",
@@ -2079,6 +2110,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "pheu-marketing-game-mobile-tu-nhan-biet-den-retention",
+    slug_en: "full-funnel-mobile-game-marketing-playbook-first-impression-d30",
     title: { vi: "Phễu marketing game mobile toàn diện: Từ Lượt hiển thị đầu tiên đến D30 Retention", en: "The Full-Funnel Mobile Game Marketing Playbook: From First Impression to D30 Retention" },
     excerpt: { vi: "Chiến dịch marketing thất bại khi các mắt xích trong phễu bị đứt đoạn. Mô hình 4 tầng phễu kết nối liền mạch từ Nhận biết (Awareness), Chuyển đổi (Conversion) đến Kích hoạt (Activation) và Giữ chân (Retention).", en: "Marketing campaigns fail when funnel links break. A 4-stage connected telemetry model bridging Awareness, Store Conversion, Activation, and Long-Term Retention." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-19", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "strategy",
@@ -2120,6 +2152,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "thanh-toan-game-mobile-viet-nam-tang-conversion",
+    slug_en: "mobile-game-payment-gateways-vietnam-minimizing-friction-lifting",
     title: { vi: "Cổng thanh toán game mobile tại Việt Nam: Tối ưu ma sát & Tăng tỷ lệ hoàn tất giao dịch", en: "Mobile Game Payment Gateways in Vietnam: Minimizing Friction & Lifting Transaction Conversion" },
     excerpt: { vi: "Hơn 30% doanh thu game bị thất thoát không phải vì giá đắt, mà vì người chơi bị đứt gãy luồng thanh toán ví điện tử hoặc ngân hàng. Hướng dẫn thiết kế cổng nạp đa kênh và Webshop.", en: "Over 30% of potential game revenue is lost due to payment drop-offs across e-wallets or banking gateways. Architecture guidelines for multi-channel in-app and Webshop payment systems." },
     category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-19", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
@@ -2161,6 +2194,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "community-manager-game-mobile-kpi",
+    slug_en: "mobile-game-community-manager-kpis-health-telemetry-long-term",
     title: { vi: "Bộ chỉ số KPI cho Community Manager Game Mobile: Đo lường sức khỏe cộng đồng và tác động Retention", en: "Mobile Game Community Manager KPIs: Health Telemetry & Long-Term Retention Metrics" },
     excerpt: { vi: "Số lượng thành viên trong Group chỉ là chỉ số phù phiếm nếu không chuyển hóa thành tương tác thật. Bộ KPI 4 nhóm lượng hóa sức khỏe cộng đồng Discord, Facebook Group và chỉ số gắn kết game thủ.", en: "Group member counts are vanity metrics without active participation. A 4-pillar KPI telemetry measuring Discord/Facebook community vitality, sentiment health, and in-game retention lift." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-19", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "social",
@@ -2202,6 +2236,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "localization-game-mobile-chi-phi-va-quy-trinh",
+    slug_en: "mobile-game-localization-costs-lqa-workflows-eliminating-hidden",
     title: { vi: "Chi phí và quy trình bản địa hóa (Localization & LQA) game mobile: Tránh bẫy phát sinh chi phí ẩn", en: "Mobile Game Localization Costs & LQA Workflows: Eliminating Hidden Expense Traps" },
     excerpt: { vi: "Nhiều studio vỡ ngân sách bản địa hóa vì chỉ tính tiền dịch theo số từ (Word Count) mà bỏ quên chi phí LQA trên thiết bị, thu âm lồng tiếng (Voiceover) và vòng lặp cập nhật LiveOps hằng tháng.", en: "Studios blow localization budgets by counting only per-word translation fees while ignoring on-device LQA, character voiceover, and recurring LiveOps update pipelines." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-20", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
@@ -2243,6 +2278,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "creative-strategy-game-mobile-test-hook",
+    slug_en: "mobile-game-creative-strategy-modular-hook-testing-framework",
     title: { vi: "Chiến lược Creative Game Mobile: Ma trận thử nghiệm Modular Hook trước khi sản xuất quy mô lớn", en: "Mobile Game Creative Strategy: Modular Hook Testing Framework Before Scale" },
     excerpt: { vi: "Sản xuất video quảng cáo hoàn chỉnh rồi mới phát hiện không hiệu quả là cách đốt ngân sách lãng phí nhất. Hướng dẫn bóc tách video thành 3 module (Hook 3s, Gameplay, CTA) để kiểm thử A/B vi mô.", en: "Producing finished ad videos before testing assumptions is a costly money sink. Deconstructing video creatives into 3 modular building blocks (Hook, Gameplay, CTA) for rapid micro-testing." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-20", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "game",
@@ -2283,6 +2319,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-marketing-b2b-case-study-viet-nam",
+    slug_en: "publishing-credible-game-marketing-case-studies-empirical-b2b",
     title: { vi: "Case Study Marketing Game tại Việt Nam: Cấu trúc báo cáo thực chứng tạo dựng niềm tin tuyệt đối với NPH", en: "Publishing Credible Game Marketing Case Studies: The Empirical B2B Trust Framework" },
     excerpt: { vi: "Một bài viết chỉ khoe chỉ số triệu view ảo sẽ không thuyết phục được các NPH game quốc tế khó tính. Cấu trúc 4 phần minh bạch bối cảnh, thử nghiệm thực tế và giải bài toán tăng trưởng LTV.", en: "Fluffy vanity metrics like impressions fail to impress discerning international game publishers. A 4-part empirical framework detailing context, methodology, and verifiable LTV growth." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-20", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "strategy",
@@ -2324,6 +2361,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "mobile-game-user-acquisition-vietnam-benchmark",
+    slug_en: "vietnam-mobile-game-user-acquisition-benchmarks-2026-cpi",
     title: { vi: "Bộ Benchmark User Acquisition Game Mobile tại Việt Nam (2026): Chỉ số CPI, CVR và Retention theo thể loại", en: "Vietnam Mobile Game User Acquisition Benchmarks (2026): CPI, CVR & Retention by Genre" },
     excerpt: { vi: "So sánh CPI giữa game Casual và MMORPG là một sai lầm phổ biến. Bảng tham khảo chung ngành (không phải số liệu độc quyền của một thị trường cụ thể) về chi phí cài đặt (CPI), Tỷ lệ chuyển đổi trang Store (CVR) và Giữ chân D1/D7/D30 theo thể loại.", en: "Comparing Casual and Hardcore RPG CPIs is a common analytical error. A general industry reference range (not proprietary market-specific data) for CPI, Store CVR, and D1/D7/D30 retention across 4 key genres." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "performance",
@@ -2365,6 +2403,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "aso-game-mobile-title-description-screenshot",
+    slug_en: "mobile-game-aso-optimization-title-description-first-3",
     title: { vi: "Tối ưu ASO Game Mobile: Thiết kế Title, Short Description và Bộ 3 Screenshot đầu tiên", en: "Mobile Game ASO Optimization: Title, Description & The First 3 Screenshots" },
     excerpt: { vi: "Trang Store không phải là nơi lưu trữ ảnh tĩnh vô hồn mà là phễu chuyển đổi quyết định lượt cài đặt. Công thức sắp xếp Title chuẩn từ khóa và bộ Screenshot theo cấu trúc kể chuyện thị giác (Visual Storytelling).", en: "Your store listing is an active conversion engine. The proven formula for keyword-optimized Titles and a 3-screenshot visual storytelling sequence that converts browsing players into installs." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
@@ -2405,6 +2444,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-mobile-retention-push-notification",
+    slug_en: "mobile-game-push-notifications-re-engaging-lapsed-players-spam",
     title: { vi: "Tối ưu Push Notification Game Mobile: Nghệ thuật kéo người chơi quay lại mà không gây ức chế", en: "Mobile Game Push Notifications: Re-Engaging Lapsed Players Without Spam Fatigue" },
     excerpt: { vi: "Rất nhiều người chơi tắt hoàn toàn thông báo nếu bị làm phiền bởi các tin nhắn quảng cáo nạp tiền vô nghĩa. Hướng dẫn thiết lập ma trận thông báo cá nhân hóa theo tiến độ và thời gian thực.", en: "Many players permanently disable notifications after receiving spammy monetization push alerts. A personalized notification matrix triggered by real-time in-game events and milestones." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "social",
@@ -2446,6 +2486,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-mobile-influencer-brief-mau",
+    slug_en: "mobile-game-influencer-brief-template-empowering-authentic-creator",
     title: { vi: "Mẫu Brief Influencer Game Mobile: Công thức tự do trong khuôn khổ giúp Creator sáng tạo tự nhiên", en: "Mobile Game Influencer Brief Template: Empowering Authentic Creator Creativity" },
     excerpt: { vi: "Một bản brief ép Creator đọc kịch bản cứng nhắc sẽ bị cộng đồng gắn mác quảng cáo giả tạo. Mẫu brief chuẩn 5 phần giúp Creator giữ nguyên chất riêng mà vẫn chuyển đổi lượt cài đặt vượt trội.", en: "Forcing creators to read rigid corporate scripts triggers instant community backlash. A 5-part 'Freedom within Boundaries' brief maximizing authentic storytelling and install conversion." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "influencer",
@@ -2488,6 +2529,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "monetization-game-mobile-arppu-arpu",
+    slug_en: "mobile-game-arpu-vs-arppu-decoding-monetization-models",
     title: { vi: "Phân tích ARPU và ARPPU Game Mobile: Giải mã mô hình doanh thu và cấu trúc người chi tiêu", en: "Mobile Game ARPU vs ARPPU: Decoding Monetization Models & Spender Segmentation" },
     excerpt: { vi: "ARPU tăng không đồng nghĩa với việc game đang kiếm tiền tốt hơn nếu tỷ lệ người nạp (Payer Conversion) bị sụt giảm. Công thức phân tầng doanh thu giữa Cá con (Minnows), Cá heo (Dolphins) và Cá voi (Whales).", en: "Rising ARPU can be misleading if paying player conversion is collapsing. The revenue decomposition formula balancing Minnows ($0.99), Dolphins ($10 - $99), and Whales ($500+)." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "performance",
@@ -2533,6 +2575,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-mobile-analytics-dashboard-can-co",
+    slug_en: "mobile-game-analytics-dashboard-10-core-metrics-growth",
     title: { vi: "Dashboard analytics game mobile: 10 chỉ số vàng cho đội ngũ tăng trưởng", en: "Mobile Game Analytics Dashboard: 10 Core Metrics for Growth Teams" },
     excerpt: { vi: "Nhiều dashboard chứa hàng chục biểu đồ rối rắm nhưng không trả lời được câu hỏi cốt lõi: người chơi rời đi vì đâu và doanh thu sụt giảm do nguyên nhân nào. 10 chỉ số cốt lõi và ngưỡng cảnh báo cần thiết.", en: "Many dashboards hold dozens of convoluted charts without answering the fundamental questions: why are players churning and where is revenue dropping? 10 actionable metrics and alert thresholds." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 6, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "seo",
@@ -2585,6 +2628,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-mobile-community-discord-viet-nam",
+    slug_en: "building-running-gaming-discord-community-vietnam-practical-playbook",
     title: { vi: "Xây dựng và vận hành Discord cho cộng đồng game tại Việt Nam: Hướng dẫn thực chiến", en: "Building and Running a Gaming Discord Community in Vietnam: A Practical Playbook" },
     excerpt: { vi: "Một server Discord không tự nhiên đông vui chỉ vì tạo nhiều kênh. Đây là kiến trúc phân quyền 4 tầng, bộ bot vận hành không thể thiếu và kịch bản 30 ngày đầu giúp giữ chân game thủ Việt.", en: "A gaming Discord server doesn't thrive just by creating dozens of channels. Here is the 4-tier permission architecture, essential bot stack, and 30-day onboarding playbook to retain Vietnamese gamers." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-21", readingTime: 6, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
@@ -2668,6 +2712,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "marketing-game-mobile-mua-tet-viet-nam",
+    slug_en: "tet-gaming-marketing-vietnam-cultural-liveops-revenue-acceleration",
     title: { vi: "Marketing game mobile mùa Tết tại Việt Nam: Chiến lược LiveOps & Chiến dịch Văn hóa", en: "Tet Gaming Marketing in Vietnam: Cultural LiveOps & Revenue Acceleration Playbook" },
     excerpt: { vi: "Tết Nguyên Đán là 'cửa sổ vàng' khi thời gian rảnh và mức sẵn sàng chi tiêu (Lì xì) của game thủ Việt cùng đạt đỉnh. Kế hoạch LiveOps 3 giai đoạn kết hợp phong tục truyền thống và sự kiện Bang Hội.", en: "Lunar New Year is the prime window when player free time and disposable income (Lucky Money) surge simultaneously. A 3-phase LiveOps and cultural event roadmap." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "branding",
@@ -2708,6 +2753,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "seo-game-marketing-viet-nam-internal-link",
+    slug_en: "internal-linking-game-websites-building-seo-topic-clusters",
     title: { vi: "Internal link website game: xây topic cluster cho SEO", en: "Internal linking for game websites: building SEO topic clusters" },
     excerpt: { vi: "Hàng chục bài viết tốt nhưng không link đến nhau khiến mỗi bài phải tự gánh toàn bộ sức mạnh SEO của mình. Cách xây internal link để cả cụm bài cùng hỗ trợ nhau.", en: "Dozens of good posts that never link to each other force each one to carry its SEO weight alone. How to build internal links so the whole cluster supports itself." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
@@ -2739,6 +2785,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "ab-test-store-listing-game-mobile",
+    slug_en: "mobile-game-store-listing-b-tests-what-test",
     title: { vi: "A/B test store listing game mobile: nên thử gì?", en: "Mobile game store listing A/B tests: what to test" },
     excerpt: { vi: "Thay nhiều biến cùng lúc có thể cho kết quả tốt hơn, nhưng bạn sẽ không bao giờ biết chính xác điều gì tạo ra sự khác biệt đó. Cách chạy A/B test store listing đúng cách.", en: "Changing several variables at once might win, but you'll never know exactly what caused it. How to run store listing A/B tests the right way." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "seo",
@@ -2770,6 +2817,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-marketing-localization-vietnam-keyword",
+    slug_en: "game-keyword-slang-localization-vietnam-decoding-gamer-vernacular",
     title: {
       vi: "Bản địa hóa Từ khóa & Tiếng lóng Game tại Việt Nam: Từ 'Rush B', 'Lưu Tày' đến 'T-Doll Vợ Yêu' (2026)",
       en: "Game Keyword & Slang Localization in Vietnam: Decoding Gamer Vernacular & Search Intent (2026)",
@@ -2907,6 +2955,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-mobile-user-acquisition-creative-fatigue",
+    slug_en: "overcoming-creative-fatigue-mobile-game-ua-3-early",
     title: { vi: "Xử lý Creative Fatigue trong Quảng cáo Game Mobile: 3 Dấu hiệu cảnh báo sớm và Kế hoạch làm mới góc tiếp cận", en: "Overcoming Creative Fatigue in Mobile Game UA: 3 Early Warning Signals & Angle Refresh" },
     excerpt: { vi: "Khi chi phí CPI bất ngờ tăng vọt sau 3 tuần chạy quảng cáo, nguyên nhân 90% đến từ việc Creative bị bào mòn (Fatigue). Phương pháp xoay chuyển Angle thay vì chỉ đổi màu nền.", en: "When CPI suddenly spikes after 3 weeks of scaling, creative fatigue is almost always the culprit. How to execute structural angle pivots rather than cosmetic tweaks." },
     category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
@@ -2982,6 +3031,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-community-moderation-vietnam",
+    slug_en: "game-community-moderation-vietnam-safe-discussion-spaces-crisis",
     title: { vi: "Kiểm duyệt & Quản trị Cộng đồng Game tại Việt Nam: Xây dựng môi trường an toàn và Xử lý khủng hoảng truyền thông", en: "Game Community Moderation in Vietnam: Safe Discussion Spaces & Crisis De-escalation" },
     excerpt: { vi: "Một đợt khủng hoảng tẩy chay hoặc tràn ngập bài đăng toxic có thể phá hủy hàng năm trời xây dựng thương hiệu game. Hướng dẫn thiết lập quy chế kiểm duyệt 4 cấp và đội ngũ Mod tinh nhuệ.", en: "Unchecked toxic spam or community boycotts can destroy years of brand equity overnight. A 4-tier escalating moderation playbook and crisis de-escalation protocols." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
@@ -3023,6 +3073,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "ai-search-seo-game-marketing",
+    slug_en: "game-marketing-seo-ai-search-how-win-citations",
     title: { vi: "SEO Game Marketing trong Kỷ nguyên AI Search: Chiến lược để trở thành nguồn trích dẫn ưu tiên", en: "Game Marketing SEO for AI Search: How to Win Citations on ChatGPT & AI Overviews" },
     excerpt: { vi: "Các mô hình AI như ChatGPT Search, Perplexity và Google AI Overviews ưu tiên trích dẫn các bài viết có cấu trúc dữ liệu rõ ràng và số liệu thực chứng. Hướng dẫn tối ưu hóa Answer-First.", en: "Generative search engines prioritize structured data, definitive direct answers, and empirical case benchmarks. A blueprint for dominating AI search summaries." },
     category: { vi: "SEO", en: "SEO" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
@@ -3094,6 +3145,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "game-launch-marketing-thailand",
+    slug_en: "mobile-game-launch-thailand-southeast-asian-market-entry",
     title: { vi: "Chiến lược phát hành game mobile tại Thái Lan: Playbook thâm nhập thị trường Đông Nam Á", en: "Mobile Game Launch in Thailand: Southeast Asian Market Entry Playbook" },
     excerpt: { vi: "Phát hành game tại Thái Lan không đơn giản là đổi tiếng Việt sang tiếng Thái. Playbook thực chiến về bản địa hóa văn hóa, hợp tác Gaming Creator trên YouTube/TikTok và mạng lưới sự kiện TGS (Thailand Game Show).", en: "Launching in Thailand is far more than swapping Vietnamese for Thai. An actionable playbook covering cultural nuances, creator ecosystems, and Thailand Game Show (TGS) live activations." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-23", readingTime: 6, author: "ANBU Team", color: "from-blue-950 to-orange-600", variant: "game",
@@ -3141,6 +3193,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "app-review-management-game-vietnam",
+    slug_en: "managing-mobile-game-app-reviews-vietnam-growth",
     title: { vi: "Quản lý review app game tại Việt Nam: biến phản hồi thành tăng trưởng", en: "Managing mobile game app reviews in Vietnam for growth" },
     excerpt: { vi: "Một review một sao về lỗi crash quan trọng hơn nhiều một review một sao vì thua trận, dù cả hai kéo rating trung bình xuống như nhau. Cách quản lý review để sửa đúng vấn đề.", en: "A one-star review about a crash matters far more than one from a player who just lost a match, even though both hurt the average equally. How to manage reviews and fix the right problem." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-22", readingTime: 4, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "game",
@@ -3173,6 +3226,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "micro-influencer-game-campaign-vietnam",
+    slug_en: "micro-influencer-playbook-mobile-games-vietnam-maximizing-conversions-budget",
     title: {
       vi: "Chiến dịch Micro Influencer cho Game Mobile: Bí quyết bùng nổ chuyển đổi và tối ưu ngân sách (2026)",
       en: "Micro-Influencer Playbook for Mobile Games in Vietnam: Maximizing Conversions & Budget (2026)",
@@ -3285,6 +3339,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "aso-localization-vietnam-mobile-game",
+    slug_en: "mobile-game-aso-localization-vietnam-keyword-slang-metadata",
     title: {
       vi: "ASO bản địa hóa cho Game Mobile tại Việt Nam: Tối ưu bộ từ khóa và chuyển đổi lượt tải tự nhiên (2026)",
       en: "Mobile Game ASO Localization in Vietnam: Keyword Slang, Metadata & Organic CVR (2026)",
@@ -3432,6 +3487,7 @@ const builtinPosts: Post[] = [
   },
   {
     slug: "esports-sponsorship-vietnam-roi",
+    slug_en: "measuring-esports-sponsorship-roi-vietnam-practical-guide-brands",
     title: {
       vi: "Đo ROI tài trợ Esports tại Việt Nam: Bài toán thực chiến cho nhãn hàng",
       en: "Measuring Esports Sponsorship ROI in Vietnam: A Practical Guide for Brands",

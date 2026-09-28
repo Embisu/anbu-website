@@ -66,7 +66,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       });
     }
     for (const po of allPosts) {
-      const path = `/blog/${po.slug}`;
+      const slugByLocale: Record<string, string> = {
+        vi: po.slug,
+        en: po.slug_en || po.slug,
+      };
+      const path = `/blog/${slugByLocale[locale] || po.slug}`;
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
         lastModified: new Date(po.date),
@@ -74,8 +78,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.6,
         alternates: {
           languages: {
-            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])),
-            "x-default": `${siteUrl}/vi${path}`,
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}/blog/${slugByLocale[l] || po.slug}`])),
+            "x-default": `${siteUrl}/vi/blog/${po.slug}`,
           },
         },
       });
