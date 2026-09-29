@@ -162,6 +162,7 @@ export function FeaturedPost({
         <EditorialMedia
           src={editorialImageForPostData(post)}
           alt={t(post.title, locale)}
+          focal={post.focal}
           className="absolute inset-0 transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-[1.02]"
           priority
         />

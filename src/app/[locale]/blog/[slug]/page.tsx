@@ -691,7 +691,7 @@ export default async function BlogPostPage({
                   {related.slice(2, 3).map((item) => (
                     <Link key={item.slug} href={localePath(locale, `/blog/${item.slug}`)} className="group block">
                       <div className="overflow-hidden rounded-2xl bg-navy-50">
-                        <EditorialMedia src={editorialImageForPostData(item)} alt={t(item.title, locale)} className="aspect-[16/10] transition duration-300 group-hover:scale-105" />
+                        <EditorialMedia src={editorialImageForPostData(item)} alt={t(item.title, locale)} focal={item.focal} className="aspect-[16/10] transition duration-300 group-hover:scale-105" />
                       </div>
                       <h3 className="mt-3 text-sm font-bold leading-snug text-navy-800 transition group-hover:text-orange-600">
                         {t(item.title, locale)}

@@ -84,7 +84,7 @@ export default async function BlogPage({ params }: { params: { locale: string } 
           <Reveal>
             <Link href={localePath(locale, `/blog/${sorted[0].slug}`)} className="group grid overflow-hidden rounded-3xl bg-navy-900 lg:grid-cols-2">
               <div className="relative min-h-72 overflow-hidden">
-                <EditorialMedia src={editorialImageForPostData(sorted[0])} alt={t(sorted[0].title, locale)} className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.03]" priority />
+                <EditorialMedia src={editorialImageForPostData(sorted[0])} alt={t(sorted[0].title, locale)} focal={sorted[0].focal} className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.03]" priority />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-navy-900/20" />
               </div>
               <div className="flex flex-col justify-center p-7 sm:p-10">

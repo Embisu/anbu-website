@@ -591,7 +591,7 @@ const builtinPosts: Post[] = [
       vi: "Một video triệu view trên TikTok hay YouTube chưa chắc chuyển đổi thành một lượt tải game nếu tệp khán giả không đúng mục tiêu. Cách phân bổ ngân sách thông minh giữa Hero KOL, Mid-tier Streamer và KOC trải nghiệm thực tế để tối ưu chi phí chuyển đổi (Cost Per Acquisition).",
       en: "A million-view gaming video rarely translates to game installs if the audience demographic does not match. How to strategically balance budgets between Hero KOLs, mid-tier streamers, and authentic KOCs to minimize CPA.",
     },
-    category: { vi: "Influencer", en: "Influencer" },
+    category: { vi: "Cộng đồng Game", en: "Gaming Community" },
     date: "2026-06-10",
     readingTime: 6,
     author: "ANBU Team",
@@ -652,7 +652,7 @@ const builtinPosts: Post[] = [
       vi: "Thuật toán TikTok không ưu tiên thương hiệu chi nhiều tiền, mà ưu tiên nội dung giữ chân người xem đến giây cuối cùng. Hướng dẫn xây dựng ma trận 4 tuyến nội dung, công thức sáng tạo hook 3 giây đầu và phương pháp biến xu hướng thịnh hành thành lượt tải game tự nhiên.",
       en: "TikTok's algorithm rewards viewer retention, not brand ad spend. A comprehensive guide to building a 4-pillar content matrix, crafting high-impact 3-second hooks, and turning viral trends into organic app installs.",
     },
-    category: { vi: "Social", en: "Social" },
+    category: { vi: "Cộng đồng Game", en: "Gaming Community" },
     date: "2026-05-20",
     readingTime: 6,
     author: "ANBU Team",
@@ -712,7 +712,7 @@ const builtinPosts: Post[] = [
     excerpt: {
       vi: "Khi công cụ tìm kiếm chuyển từ việc liệt kê đường link sang AI Overviews và trả lời trực tiếp, thứ hạng truyền thống không còn là đích đến duy nhất. Chiến lược tối ưu hóa để trở thành nguồn trích dẫn ưu tiên của cả AI và người đọc.",
       en: "As search engines shift from ten blue links to AI Overviews and direct synthetic answers, traditional rank is no longer enough. Strategies to become the cited authority for both AI engines and human searchers." },
-    category: { vi: "SEO", en: "SEO" },
+    category: { vi: "Marketing Game", en: "Game Marketing" },
     date: "2026-06-20",
     readingTime: 6,
     author: "ANBU Team",
@@ -767,7 +767,7 @@ const builtinPosts: Post[] = [
     excerpt: {
       vi: "Thương hiệu không bắt đầu từ logo hào nhoáng hay bảng màu thời thượng. Nó bắt đầu từ lời hứa giá trị độc bản, định vị sắc nét và sự nhất quán trên mọi điểm chạm khách hàng.",
       en: "A brand does not begin with a flashy logo or trendy color palette. It starts with an unmistakable value promise, sharp positioning, and flawless multi-touchpoint consistency." },
-    category: { vi: "Thương hiệu", en: "Branding" },
+    category: { vi: "Marketing Game", en: "Game Marketing" },
     date: "2026-05-14",
     readingTime: 6,
     author: "ANBU Team",
@@ -820,7 +820,7 @@ const builtinPosts: Post[] = [
       vi: "Ngân sách quảng cáo hiếm khi thất thoát chỉ vì một mẫu quảng cáo kém. Phần lớn lãng phí đến từ việc phân bổ tiền khi chưa biết tín hiệu nào đáng tin, nhóm khách hàng nào thực sự có giá trị và lúc nào nên dừng để học trước khi chi tiếp.",
       en: "Advertising budgets are rarely wasted because of one weak creative alone. Most waste comes from spending before knowing which signals are trustworthy, which customers create value and when to pause and learn before investing more.",
     },
-    category: { vi: "Marketing", en: "Marketing" },
+    category: { vi: "Analytics Game", en: "Game Analytics" },
     date: "2026-04-02",
     readingTime: 6,
     author: "ANBU Team",
@@ -876,7 +876,7 @@ const builtinPosts: Post[] = [
       vi: "Một trang Store được tối ưu chuẩn mực có thể tăng đáng kể tỷ lệ chuyển đổi (CVR) và giảm chỉ số Blended CPI. Bí quyết tối ưu icon, bộ 5 screenshot và video preview để biến người tìm kiếm thành người chơi trung thành.",
       en: "A meticulously optimized store page can meaningfully boost CVR and cut blended CPI. The art of optimizing icons, screenshot sets, and gameplay previews to turn searchers into dedicated players.",
     },
-    category: { vi: "Game Marketing", en: "Game Marketing" },
+    category: { vi: "Marketing Game", en: "Game Marketing" },
     date: "2026-08-14",
     readingTime: 6,
     author: "ANBU Team",
@@ -937,7 +937,7 @@ const builtinPosts: Post[] = [
       vi: "Đổ ngân sách hàng tỷ đồng vào ngày Open Beta mà không qua Soft Launch là canh bạc mạo hiểm nhất. Khung hướng dẫn 4 bước kiểm thử tải máy chủ, tỷ lệ crash, phễu onboarding và chỉ số hoàn vốn Payback Period trước khi scale lớn.",
       en: "Deploying huge launch budgets without a controlled Soft Launch is reckless gambling. A 4-step framework to test server telemetry, crash rates, onboarding funnels, and payback benchmarks before full-scale release.",
     },
-    category: { vi: "Game Marketing", en: "Game Marketing" },
+    category: { vi: "Vận hành Game", en: "Game Operations" },
     date: "2026-08-14",
     readingTime: 6,
     author: "ANBU Team",
@@ -1229,42 +1229,18 @@ const builtinPosts: Post[] = [
         { vi: "Tầng Đại từ nhân xưng & Phong thái (Tone of Voice): Tiếng Việt có hệ thống xưng hô vô cùng phong phú (Huynh/Đệ, Đại hiệp/Tiểu muội, Chỉ huy/Binh sĩ, Sư phụ/Đồ đệ). Việc chọn đúng đại từ phù hợp với bối cảnh cổ trang hay khoa học viễn tưởng ảnh hưởng rất lớn đến cảm xúc nhập vai.", en: "Pronouns & Narrative Immersion: Navigating complex Vietnamese cultural honorifics to match martial arts lore or sci-fi hierarchy, which has major influence on emotional roleplaying depth." },
         { vi: "Tầng Kỹ thuật & Giao diện (Linguistic Quality Assurance - LQA): Tiếng Việt có dấu và độ dài từ trung bình dài hơn tiếng Anh khoảng 25 - 35%. Cần kiểm tra kỹ lưỡng để không bị vỡ font chữ, mất dấu tiếng Việt hoặc tràn khung nút bấm trên màn hình nhỏ.", en: "Technical LQA & UI Constraints: Vietnamese text expands 25 - 35% longer than English. Rigorous LQA ensures diacritics render perfectly without clipping button boundaries." },
       ] },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "2. Quy trình LQA 4 giai đoạn ngăn ngừa lỗi giao diện và sai lệch ngữ cảnh",
-      "en": "2. Four-Stage LQA (Linguistic Quality Assurance) Protocol"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Bản địa hóa chuyên nghiệp không chỉ diễn ra trên bảng tính Excel mà phải được kiểm thử trực tiếp trên bản build thực tế (In-Context Testing) qua 4 bước nghiêm ngặt:",
-      "en": "Professional game localization happens on live game builds, not static spreadsheets, following a strict 4-stage protocol:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Giai đoạn 1: Xây dựng Bộ thuật ngữ (Glossary & Style Guide): Thống nhất tên nhân vật, địa danh, chiêu thức kỹ năng và bảng đại từ nhân xưng chuẩn phong thái game (Cổ trang kiếm hiệp, Kỳ ảo phương Tây hay Cyberpunk viễn tưởng).",
-        "en": "Stage 1: Terminology Glossary & Style Guide: Standardizing character names, lore locations, skill abilities, and pronoun matrices matching the narrative genre."
-      },
-      {
-        "vi": "Giai đoạn 2: Bản dịch ngữ cảnh sâu (In-Context Translation): Dịch thuật trực tiếp trên phần mềm chuyên dụng hỗ trợ xem trước độ dài chuỗi ký tự (String Length Preview) để kiểm soát tỷ lệ giãn nở chữ tiếng Việt.",
-        "en": "Stage 2: In-Context Translation: Translating with real-time character limit previews to manage Vietnamese text expansion."
-      },
-      {
-        "vi": "Giai đoạn 3: LQA trên thiết bị thật (On-Device LQA): Chơi thử 100% các phó bản, giao diện gacha, bảng nhiệm vụ và cửa hàng để phát hiện lỗi tràn khung chữ (Text Overflow), mất dấu tiếng Việt và lỗi gãy dòng ngớ ngẩn.",
-        "en": "Stage 3: On-Device LQA: Playtesting 100% of dungeons, gacha interfaces, quest logs, and store menus to eliminate UI overflows and clipping."
-      },
-      {
-        "vi": "Giai đoạn 4: Lồng tiếng bản địa (Voice Acting Mastery): Tuyển chọn các diễn viên lồng tiếng chuyên nghiệp, quen thuộc với cộng đồng game thủ để thổi hồn vào từng câu thoại xuất chiêu và cốt truyện chính.",
-        "en": "Stage 4: Localized Voice Acting: Casting authentic voice actors renowned in the local gaming space to bring combat battle cries and cinematic cutscenes to life."
-      }
-    ]
-  }],
+      { type: "h2", text: { vi: "2. Quy trình LQA 4 giai đoạn ngăn ngừa lỗi giao diện và sai lệch ngữ cảnh", en: "2. Four-Stage LQA (Linguistic Quality Assurance) Protocol" } },
+      { type: "p", text: {
+        vi: "Bản địa hóa chuyên nghiệp không chỉ diễn ra trên bảng tính Excel mà phải được kiểm thử trực tiếp trên bản build thực tế (In-Context Testing) qua 4 bước nghiêm ngặt:",
+        en: "Professional game localization happens on live game builds, not static spreadsheets, following a strict 4-stage protocol:",
+      } },
+      { type: "ul", items: [
+        { vi: "Giai đoạn 1: Xây dựng Bộ thuật ngữ (Glossary & Style Guide): Thống nhất tên nhân vật, địa danh, chiêu thức kỹ năng và bảng đại từ nhân xưng chuẩn phong thái game (Cổ trang kiếm hiệp, Kỳ ảo phương Tây hay Cyberpunk viễn tưởng).", en: "Stage 1: Terminology Glossary & Style Guide: Standardizing character names, lore locations, skill abilities, and pronoun matrices matching the narrative genre." },
+        { vi: "Giai đoạn 2: Bản dịch ngữ cảnh sâu (In-Context Translation): Dịch thuật trực tiếp trên phần mềm chuyên dụng hỗ trợ xem trước độ dài chuỗi ký tự (String Length Preview) để kiểm soát tỷ lệ giãn nở chữ tiếng Việt.", en: "Stage 2: In-Context Translation: Translating with real-time character limit previews to manage Vietnamese text expansion." },
+        { vi: "Giai đoạn 3: LQA trên thiết bị thật (On-Device LQA): Chơi thử 100% các phó bản, giao diện gacha, bảng nhiệm vụ và cửa hàng để phát hiện lỗi tràn khung chữ (Text Overflow), mất dấu tiếng Việt và lỗi gãy dòng ngớ ngẩn.", en: "Stage 3: On-Device LQA: Playtesting 100% of dungeons, gacha interfaces, quest logs, and store menus to eliminate UI overflows and clipping." },
+        { vi: "Giai đoạn 4: Lồng tiếng bản địa (Voice Acting Mastery): Tuyển chọn các diễn viên lồng tiếng chuyên nghiệp, quen thuộc với cộng đồng game thủ để thổi hồn vào từng câu thoại xuất chiêu và cốt truyện chính.", en: "Stage 4: Localized Voice Acting: Casting authentic voice actors renowned in the local gaming space to bring combat battle cries and cinematic cutscenes to life." },
+      ] },
+    ],
   },
   {
     slug: "monetization-game-mobile-iap-battle-pass",
@@ -1374,42 +1350,18 @@ const builtinPosts: Post[] = [
         vi: "Hãy tích hợp một nền tảng MMP đáng tin cậy (AppsFlyer, Adjust hoặc Singular) để gắn thẻ sự kiện sâu (In-App Events: hoàn thành level 5, gia nhập bang hội, nạp gói đầu). Đẩy toàn bộ dữ liệu raw log từ MMP và Google Play/App Store về kho dữ liệu BigQuery để xây dựng các biểu đồ Cohort Analysis tự động cập nhật mỗi sáng.",
         en: "Integrate a certified Mobile Measurement Partner (AppsFlyer, Adjust, or Singular) to track granular deep events (reaching Level 5, joining a guild, first purchase). Stream raw event logs into BigQuery or Snowflake to fuel automated daily cohort progression models.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Khung phân tích Cohort Analysis theo ngày cài đặt D1-D90",
-      "en": "3. Cohort Analysis Framework Across Install Cohorts D1-D90"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Đo lường doanh thu trung bình không thể cho bạn biết chiến dịch marketing ngày hôm nay có thực sự sinh lời hay không. Đội ngũ Data Analytics phải theo dõi doanh thu tích lũy theo từng Cohort ngày cài đặt để vẽ đường cong LTV thực tế:",
-      "en": "Blended average revenue metrics conceal whether today's ad campaigns are genuinely profitable. Data analytics teams must track cumulative cohort revenue by install date to plot authentic LTV curves:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "ROAS Day 1 (15 - 25%): Đánh giá khả năng kích hoạt người chơi nạp gói tân thủ $0.99 - $4.99 ngay trong 24 giờ đầu tiên.",
-        "en": "Day 1 ROAS (15-25%): Measures conversion speed for starter packs ($0.99-$4.99) within the first 24 hours."
-      },
-      {
-        "vi": "ROAS Day 7 (35 - 50%): Phản ánh tỷ lệ mua Vé Tháng (Monthly Card) và Battle Pass đầu tiên.",
-        "en": "Day 7 ROAS (35-50%): Reflects adoption of Monthly Cards and the inaugural Battle Pass season."
-      },
-      {
-        "vi": "ROAS Day 30 (75 - 100%): Điểm hòa vốn lý tưởng cho các tựa game MMORPG và Thẻ Tướng tại thị trường Việt Nam.",
-        "en": "Day 30 ROAS (75-100%): The target break-even milestone for leading MMORPG and Card Battler titles in Vietnam."
-      },
-      {
-        "vi": "ROAS Day 90 (150 - 250%+): Giai đoạn sinh lời bền vững nhờ các bản cập nhật sự kiện LiveOps định kỳ.",
-        "en": "Day 90 ROAS (150-250%+): The pure profit generation phase driven by recurring LiveOps event schedules."
-      }
-    ]
-  }],
+      { type: "h2", text: { vi: "3. Khung phân tích Cohort Analysis theo ngày cài đặt D1-D90", en: "3. Cohort Analysis Framework Across Install Cohorts D1-D90" } },
+      { type: "p", text: {
+        vi: "Đo lường doanh thu trung bình không thể cho bạn biết chiến dịch marketing ngày hôm nay có thực sự sinh lời hay không. Đội ngũ Data Analytics phải theo dõi doanh thu tích lũy theo từng Cohort ngày cài đặt để vẽ đường cong LTV thực tế:",
+        en: "Blended average revenue metrics conceal whether today's ad campaigns are genuinely profitable. Data analytics teams must track cumulative cohort revenue by install date to plot authentic LTV curves:",
+      } },
+      { type: "ul", items: [
+        { vi: "ROAS Day 1 (15 - 25%): Đánh giá khả năng kích hoạt người chơi nạp gói tân thủ $0.99 - $4.99 ngay trong 24 giờ đầu tiên.", en: "Day 1 ROAS (15-25%): Measures conversion speed for starter packs ($0.99-$4.99) within the first 24 hours." },
+        { vi: "ROAS Day 7 (35 - 50%): Phản ánh tỷ lệ mua Vé Tháng (Monthly Card) và Battle Pass đầu tiên.", en: "Day 7 ROAS (35-50%): Reflects adoption of Monthly Cards and the inaugural Battle Pass season." },
+        { vi: "ROAS Day 30 (75 - 100%): Điểm hòa vốn lý tưởng cho các tựa game MMORPG và Thẻ Tướng tại thị trường Việt Nam.", en: "Day 30 ROAS (75-100%): The target break-even milestone for leading MMORPG and Card Battler titles in Vietnam." },
+        { vi: "ROAS Day 90 (150 - 250%+): Giai đoạn sinh lời bền vững nhờ các bản cập nhật sự kiện LiveOps định kỳ.", en: "Day 90 ROAS (150-250%+): The pure profit generation phase driven by recurring LiveOps event schedules." },
+      ] },
+    ],
   },
   {
     slug: "ra-mat-game-mobile-viet-nam-checklist",
@@ -1468,7 +1420,18 @@ const builtinPosts: Post[] = [
         { vi: "Creator: danh sách đối tác, brief, disclosure và lịch đăng đã chốt", en: "Creators: partner list, briefs, disclosures and a locked posting calendar" },
         { vi: "Đo lường: event tracking, dashboard, cohort và ngưỡng cảnh báo đã chạy thử", en: "Measurement: event tracking, dashboard, cohorts and alert thresholds, tested end to end" },
       ] },
-      { type: "h2", text: { vi: "Bước 4: Ra mắt theo tầng rủi ro, đừng mở toang ngay ngày đầu", en: "Step 4: Launch in risk-managed stages, not all at once" } },
+      { type: "h2", text: { vi: "Bước 4: Khung kiểm tra kỹ thuật và pháp lý trước giờ G (D-7 Checklist)", en: "Step 4: The technical and compliance verification checklist 7 days out" } },
+      { type: "p", text: {
+        vi: "Trong 7 ngày cuối cùng trước khi mở cổng máy chủ, đội ngũ phát hành cần hoàn tất một vòng kiểm tra khẩn cấp để tránh sự cố giờ chót:",
+        en: "In the final 7 days before server opening, the publishing team needs one last emergency verification pass to catch last-minute failures:",
+      } },
+      { type: "ul", items: [
+        { vi: "Kiểm tra tải máy chủ (Stress Testing): Giả lập lượng truy cập đồng thời gấp 3 lần dự kiến để cấu hình cân bằng tải (Load Balancer) và cụm máy chủ tự động co giãn (Auto-scaling Cloud).", en: "Server stress testing: Simulating 3x projected peak concurrency to tune load balancers and cloud auto-scaling policies." },
+        { vi: "Kiểm tra cổng thanh toán IAP Sandbox: Rà soát toàn bộ các mệnh giá nạp trên cả App Store In-App Purchase, Google Play Billing và cổng nạp Web (MoMo, ZaloPay, thẻ ATM/Visa).", en: "End-to-end payment sandbox audits: Verifying all price tiers across iOS IAP, Google Play Billing, and direct web payment gateways." },
+        { vi: "Duyệt bản build cuối cùng: Đảm bảo bản build phát hành chính thức đã vượt qua kiểm duyệt Store tối thiểu 3 ngày trước giờ G để tránh rủi ro bị từ chối đột xuất.", en: "Final build approval window: Securing store review approvals at least 72 hours in advance to eliminate unexpected rejection delays." },
+        { vi: "Sẵn sàng hệ thống Fanpage & CSKH: Chuẩn bị sẵn kịch bản trả lời tự động và nhân sự trực xử lý sự cố đăng nhập ngay trong giờ đầu tiên.", en: "Support and fanpage readiness: Pre-configuring automated response scripts and live agents for instantaneous launch-hour ticket triage." },
+      ] },
+      { type: "h2", text: { vi: "Bước 5: Ra mắt theo tầng rủi ro, đừng mở toang ngay ngày đầu", en: "Step 5: Launch in risk-managed stages, not all at once" } },
       { type: "p", text: {
         vi: "Soft launch tồn tại để kiểm tra crash, tải máy chủ, onboarding, thanh toán và phản ứng cộng đồng trước khi bạn đổ ngân sách quảng cáo. Chỉ mở rộng khi các ngưỡng chất lượng, retention và năng lực hỗ trợ đã đạt, đừng dùng số lượt cài đặt làm thước đo duy nhất để quyết định scale.",
         en: "A soft launch exists to test crashes, server load, onboarding, payments and community response before you spend ad budget at scale. Expand only once quality, retention and support capacity clear their thresholds, install count alone should never be the signal to scale.",
@@ -1491,42 +1454,7 @@ const builtinPosts: Post[] = [
         vi: "Nếu bạn đang chuẩn bị đưa game vào Việt Nam và chưa chắc mình đã sẵn sàng ở đâu, hãy gửi cho ANBU thông tin sản phẩm và thời gian dự kiến. Chúng tôi sẽ cùng bạn rà lại từng hạng mục trước khi đặt ngày ra mắt.",
         en: "If you're preparing to bring a game into Vietnam and aren't sure where you stand, send ANBU your product details and target timeline. We'll walk through every item on this list with you before you lock a launch date.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Khung kiểm tra kỹ thuật và pháp lý trước giờ G (D-7 Checklist)",
-      "en": "3. Technical and Compliance Verification Matrix 7 Days Prior to Launch"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Trong 7 ngày cuối cùng trước khi mở cổng máy chủ, đội ngũ phát hành phải hoàn tất bảng kiểm toán 5 tiêu chuẩn khẩn cấp để đảm bảo ngày ra mắt diễn ra hoàn hảo:",
-      "en": "During the final 7 days leading to server opening, publishing operations must clear a 5-point emergency audit protocol:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Kiểm tra tải máy chủ (Stress Testing 50.000 CCU): Giả lập lượng truy cập đồng thời gấp 3 lần dự kiến để cấu hình cân bằng tải (Load Balancer) và cụm máy chủ tự động co giãn (Auto-scaling Cloud).",
-        "en": "Server Stress Testing (50k Concurrent Users): Simulating 3x projected peak concurrency to tune load balancers and cloud auto-scaling policies."
-      },
-      {
-        "vi": "Kiểm tra cổng thanh toán IAP Sandbox: Rà soát 100% các mệnh giá nạp từ 10.000 VNĐ đến 20.000.000 VNĐ trên cả App Store In-App Purchase, Google Play Billing và Cổng nạp Web (MoMo, ZaloPay, Thẻ ATM/Visa).",
-        "en": "End-to-End Payment Sandbox Audits: Verifying all price tiers across iOS IAP, Google Play Billing, and direct web payment gateways."
-      },
-      {
-        "vi": "Duyệt bản build cuối cùng (App Store & Google Play Approval): Đảm bảo bản build phát hành chính thức đã vượt qua kiểm duyệt Store tối thiểu 3 ngày trước giờ G để tránh rủi ro bị từ chối đột xuất.",
-        "en": "Store Version Approval Window: Securing store review approvals at least 72 hours in advance to eliminate unexpected rejection delays."
-      },
-      {
-        "vi": "Sẵn sàng hệ thống Fanpage & CSKH 24/7: Chuẩn bị sẵn kịch bản trả lời tự động (Chatbot Templates) và nhân sự trực xử lý sự cố đăng nhập ngay trong giờ đầu tiên.",
-        "en": "24/7 Support Escalation Readiness: Pre-configuring automated chatbot scripts and live agents for instantaneous launch-hour ticket triage."
-      }
-    ]
-  }],
+    ],
   },
   {
     slug: "creative-testing-game-mobile-quang-cao",
@@ -1780,42 +1708,7 @@ const builtinPosts: Post[] = [
         vi: "Hãy chọn các quốc gia có hành vi người chơi và phân khúc thiết bị tương đồng với thị trường mục tiêu nhưng có chi phí mua người dùng (CPI) rẻ hơn (ví dụ: Philippines, Indonesia hoặc Thái Lan trước khi đánh vào thị trường Đông Nam Á hoặc Global).",
         en: "Select testing territories that mirror target player demographics and hardware distributions but offer significantly lower acquisition costs (CPI): such as the Philippines or Thailand prior to broader Southeast Asian or global rollouts.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Bộ tiêu chuẩn kỹ thuật & Độ ổn định bắt buộc phải vượt qua trong Soft Launch",
-      "en": "3. Technical Stability & Performance Benchmarks to Clear During Soft Launch"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Một tựa game chưa sẵn sàng cho chiến dịch phát hành quy mô lớn (Official Launch) nếu chưa đáp ứng các chỉ số kỹ thuật tiêu chuẩn quốc tế sau:",
-      "en": "A mobile game is not viable for full-scale commercial scaling until it reliably meets these international quality benchmarks:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Tỷ lệ Crash Rate (< 0.25% Sessions): Tỷ lệ phiên chơi bị văng ứng dụng phải duy trì dưới 0.25% trên cả thiết bị cấu hình thấp (Android RAM 3GB/4GB).",
-        "en": "Crash Rate Under 0.25%: Total crash-free sessions must exceed 99.75% across low-tier Android hardware (3GB-4GB RAM)."
-      },
-      {
-        "vi": "Thời gian tải ban đầu (Initial Cold Boot < 4.5s): Thời gian từ lúc chạm vào Icon game đến khi hiển thị màn hình đăng nhập không được vượt quá 4.5 giây.",
-        "en": "Cold Boot Time (< 4.5s): Cold launch duration to main title screen must stay under 4.5 seconds."
-      },
-      {
-        "vi": "Dữ liệu giữ chân mục tiêu (Target Retention Metrics): D1 Retention $ge 38%$, D7 Retention $ge 16%$, D30 Retention $ge 7%$ đối với game RPG/SLG.",
-        "en": "Retention Targets: D1 >= 38%, D7 >= 16%, D30 >= 7% for core RPG and strategy titles."
-      },
-      {
-        "vi": "Tỷ lệ nạp tiền tân thủ (Starter Payer Conversion $ge 4.5%$): Đảm bảo ít nhất 4.5% người chơi hoàn thành vòng lặp nạp đầu tiên trong 7 ngày đầu.",
-        "en": "First-Payer Conversion (>= 4.5%): Confirming viable early willingness-to-pay within the first 7 active days."
-      }
-    ]
-  }],
+    ],
   },
   {
     slug: "game-mobile-ugc-creator-program",
@@ -1964,38 +1857,17 @@ const builtinPosts: Post[] = [
         vi: "Thay vì chạy quảng cáo từ tài khoản Fanpage của NPH, hãy xin mã ủy quyền (Spark Ads Code) từ các video của Creator đã đăng trên kênh cá nhân của họ. Video Spark Ads giữ nguyên lượt like, comment và cảm giác tự nhiên, thường giúp giảm đáng kể chi phí cài đặt eCPI.",
         en: "Rather than running ads from a brand account, obtain Spark Ads authorization codes from creators' organic posts. Spark Ads preserve existing social proof (likes, comments) and authentic creator identity, typically lowering eCPI meaningfully.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Công thức 3 giây đầu giữ chân game thủ trên TikTok (Hook-Story-Offer)",
-      "en": "3. The 3-Second Hook-Story-Offer Formula for High-Converting TikTok Ads"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Thuật toán TikTok quét và loại bỏ các video có tỷ lệ xem 2 giây đầu dưới 25%. Một video TikTok Ads triệu view cho game mobile bắt buộc phải áp dụng cấu trúc 3 phần chặt chẽ:",
-      "en": "TikTok's recommendation engine downranks videos with 2-second view-through rates below 25%. A high-converting TikTok gaming creative must follow a disciplined 3-part structure:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "0 - 3s (The Visual Hook): Đặt ngay tình huống kịch tính, câu hỏi gây tranh cãi hoặc pha 'lật kèo' highlight với âm thanh bắt tai (ví dụ: 'Đừng chơi tướng này nếu không muốn bị report hack!').",
-        "en": "0-3s (Visual Hook): Instant high-stakes dramatic action, controversial gaming question, or outplay highlight ('Do NOT pick this hero unless you want to get reported for hacking!')."
-      },
-      {
-        "vi": "3 - 15s (The Gameplay Story): Trình diễn lối chơi thực tế mượt mà, cảm giác tung chiêu mãn nhãn và hướng dẫn mẹo chơi hữu ích mà game thủ chưa từng biết.",
-        "en": "3-15s (Gameplay Story): Showcase authentic fluid combat, satisfying ultimate effects, and secret operational tips."
-      },
-      {
-        "vi": "15 - 25s (The Compelling Offer & CTA): Kêu gọi hành động rõ ràng kèm quà tặng độc quyền ('Bấm vào link bên dưới tải ngay để nhận 100 vé quay tướng SSR miễn phí').",
-        "en": "15-25s (Compelling Offer & CTA): Crystal clear call-to-action featuring tangible launch bonuses ('Tap below to download and claim 100 free SSR summons')."
-      }
-    ]
-  }],
+      { type: "h2", text: { vi: "3. Công thức 3 giây đầu giữ chân game thủ trên TikTok (Hook-Story-Offer)", en: "3. The 3-Second Hook-Story-Offer Formula for High-Converting TikTok Ads" } },
+      { type: "p", text: {
+        vi: "Thuật toán TikTok quét và loại bỏ các video có tỷ lệ xem 2 giây đầu dưới 25%. Một video TikTok Ads triệu view cho game mobile bắt buộc phải áp dụng cấu trúc 3 phần chặt chẽ:",
+        en: "TikTok's recommendation engine downranks videos with 2-second view-through rates below 25%. A high-converting TikTok gaming creative must follow a disciplined 3-part structure:",
+      } },
+      { type: "ul", items: [
+        { vi: "0 - 3s (The Visual Hook): Đặt ngay tình huống kịch tính, câu hỏi gây tranh cãi hoặc pha 'lật kèo' highlight với âm thanh bắt tai (ví dụ: 'Đừng chơi tướng này nếu không muốn bị report hack!').", en: "0-3s (Visual Hook): Instant high-stakes dramatic action, controversial gaming question, or outplay highlight ('Do NOT pick this hero unless you want to get reported for hacking!')." },
+        { vi: "3 - 15s (The Gameplay Story): Trình diễn lối chơi thực tế mượt mà, cảm giác tung chiêu mãn nhãn và hướng dẫn mẹo chơi hữu ích mà game thủ chưa từng biết.", en: "3-15s (Gameplay Story): Showcase authentic fluid combat, satisfying ultimate effects, and secret operational tips." },
+        { vi: "15 - 25s (The Compelling Offer & CTA): Kêu gọi hành động rõ ràng kèm quà tặng độc quyền ('Bấm vào link bên dưới tải ngay để nhận 100 vé quay tướng SSR miễn phí').", en: "15-25s (Compelling Offer & CTA): Crystal clear call-to-action featuring tangible launch bonuses ('Tap below to download and claim 100 free SSR summons')." },
+      ] },
+    ],
   },
   {
     slug: "pheu-marketing-game-mobile-tu-nhan-biet-den-retention",
@@ -2765,7 +2637,7 @@ const builtinPosts: Post[] = [
     slug_en: "overcoming-creative-fatigue-mobile-game-ua-3-early",
     title: { vi: "Xử lý Creative Fatigue trong Quảng cáo Game Mobile: 3 Dấu hiệu cảnh báo sớm và Kế hoạch làm mới góc tiếp cận", en: "Overcoming Creative Fatigue in Mobile Game UA: 3 Early Warning Signals & Angle Refresh" },
     excerpt: { vi: "Khi chi phí CPI bất ngờ tăng vọt sau 3 tuần chạy quảng cáo, nguyên nhân 90% đến từ việc Creative bị bào mòn (Fatigue). Phương pháp xoay chuyển Angle thay vì chỉ đổi màu nền.", en: "When CPI suddenly spikes after 3 weeks of scaling, creative fatigue is almost always the culprit. How to execute structural angle pivots rather than cosmetic tweaks." },
-    category: { vi: "Performance Marketing", en: "Performance Marketing" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
+    category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
     cover: "/blog-covers/creative-fatigue-3d.png",
     sources: [
       { label: { vi: "Meta for Business: Creative Diversification Guide", en: "Meta for Business: Creative Diversification Guide" }, href: "https://www.facebook.com/business/m/creative-diversification" },
@@ -2799,42 +2671,18 @@ const builtinPosts: Post[] = [
         vi: "Đừng lãng phí thời gian chỉ để đổi màu nút bấm hay đổi font chữ. Hãy thực hiện một cú xoay góc tiếp cận (Angle Pivot): Nếu video hiện tại đang tập trung vào đồ họa 3D lộng lẫy, hãy đổi sang video dạng meme hài hước hoặc video phản ứng thật của game thủ.",
         en: "Do not waste cycles tweaking button colors. Execute a structural Angle Pivot: if your reigning creative is a high-fantasy cinematic, pivot immediately to a comical UGC skit or an analytical meta-tier list guide.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Kế hoạch làm mới Creative (Creative Refresh Cadence) 14 ngày",
-      "en": "3. The 14-Day Systematic Creative Refresh Protocol"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Để duy trì hiệu suất quảng cáo ổn định mà không bị bão hòa, đội ngũ Design & UA phải vận hành quy trình sản xuất Creative liên tục theo chu kỳ 14 ngày:",
-      "en": "To maintain stable ROAS without creative exhaustion, design and performance UA teams must operate a continuous 14-day production rhythm:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Ngày 1 - 3: Phân tích báo cáo tuần, xác định top 20% Creative chiến thắng (Winning Ads) và 80% Creative đã bị suy giảm CTR.",
-        "en": "Days 1-3: Analyze weekly performance, identify the top 20% winning assets and retire underperforming variations."
-      },
-      {
-        "vi": "Ngày 4 - 7: Sản xuất 5 - 10 biến thể Modular Hooks mới (thay đổi 3 giây đầu, đổi nhạc nền trending, đổi giọng lồng tiếng Voiceover) cho các Winning Ads hiện có.",
-        "en": "Days 4-7: Produce 5-10 modular hook variations (altering opening 3 seconds, trending audio, new VO styles) for proven concepts."
-      },
-      {
-        "vi": "Ngày 8 - 10: Thử nghiệm A/B Testing trong nhóm chiến dịch Sandbox với ngân sách kiểm soát $50 - $100/creative.",
-        "en": "Days 8-10: Launch sandbox A/B tests with controlled test budgets of $50-$100 per asset."
-      },
-      {
-        "vi": "Ngày 11 - 14: Scale ngân sách gấp 3 - 5 lần cho các Creative mới vượt qua bài kiểm tra để thay thế các quảng cáo cũ mệt mỏi.",
-        "en": "Days 11-14: Scale winning new creatives by 3-5x to seamlessly replace fatigued ads."
-      }
-    ]
-  }],
+      { type: "h2", text: { vi: "3. Kế hoạch làm mới Creative (Creative Refresh Cadence) 14 ngày", en: "3. The 14-Day Systematic Creative Refresh Protocol" } },
+      { type: "p", text: {
+        vi: "Để duy trì hiệu suất quảng cáo ổn định mà không bị bão hòa, đội ngũ Design & UA phải vận hành quy trình sản xuất Creative liên tục theo chu kỳ 14 ngày:",
+        en: "To maintain stable ROAS without creative exhaustion, design and performance UA teams must operate a continuous 14-day production rhythm:",
+      } },
+      { type: "ul", items: [
+        { vi: "Ngày 1 - 3: Phân tích báo cáo tuần, xác định top 20% Creative chiến thắng (Winning Ads) và 80% Creative đã bị suy giảm CTR.", en: "Days 1-3: Analyze weekly performance, identify the top 20% winning assets and retire underperforming variations." },
+        { vi: "Ngày 4 - 7: Sản xuất 5 - 10 biến thể Modular Hooks mới (thay đổi 3 giây đầu, đổi nhạc nền trending, đổi giọng lồng tiếng Voiceover) cho các Winning Ads hiện có.", en: "Days 4-7: Produce 5-10 modular hook variations (altering opening 3 seconds, trending audio, new VO styles) for proven concepts." },
+        { vi: "Ngày 8 - 10: Thử nghiệm A/B Testing trong nhóm chiến dịch Sandbox với ngân sách kiểm soát $50 - $100/creative.", en: "Days 8-10: Launch sandbox A/B tests with controlled test budgets of $50-$100 per asset." },
+        { vi: "Ngày 11 - 14: Scale ngân sách gấp 3 - 5 lần cho các Creative mới vượt qua bài kiểm tra để thay thế các quảng cáo cũ mệt mỏi.", en: "Days 11-14: Scale winning new creatives by 3-5x to seamlessly replace fatigued ads." },
+      ] },
+    ],
   },
   {
     slug: "game-community-moderation-vietnam",
@@ -2883,7 +2731,7 @@ const builtinPosts: Post[] = [
     slug_en: "game-marketing-seo-ai-search-how-win-citations",
     title: { vi: "SEO Game Marketing trong Kỷ nguyên AI Search: Chiến lược để trở thành nguồn trích dẫn ưu tiên", en: "Game Marketing SEO for AI Search: How to Win Citations on ChatGPT & AI Overviews" },
     excerpt: { vi: "Các mô hình AI như ChatGPT Search, Perplexity và Google AI Overviews ưu tiên trích dẫn các bài viết có cấu trúc dữ liệu rõ ràng và số liệu thực chứng. Hướng dẫn tối ưu hóa Answer-First.", en: "Generative search engines prioritize structured data, definitive direct answers, and empirical case benchmarks. A blueprint for dominating AI search summaries." },
-    category: { vi: "SEO", en: "SEO" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
+    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
     cover: "/blog-covers/ai-search-3d.png",
     sources: [
       { label: { vi: "Google Search Central: Generative AI Features", en: "Google Search Central: Generative AI Features" }, href: "https://developers.google.com/search/docs/appearance/ai-features" },
@@ -2917,38 +2765,17 @@ const builtinPosts: Post[] = [
         vi: "Các thuật toán tìm kiếm AI ngày nay có khả năng phát hiện cực nhạy các bài viết xào nấu lại từ các nguồn khác mà không có trải nghiệm thực tế (E-E-A-T). Hãy đầu tư vào các bài phân tích chuyên sâu, chia sẻ thất bại thực chiến và bài học kinh nghiệm chỉ có người làm nghề mới biết.",
         en: "Modern AI search algorithms effortlessly penalize recycled synthetic content lacking first-hand experience (E-E-A-T). Invest in hard-won operational post-mortems, practitioner case studies, and proprietary industry benchmarks.",
       } },
-    
-      {
-    "type": "h2",
-    "text": {
-      "vi": "3. Chiến lược Tối ưu hóa Mô hình Ngôn ngữ Lớn (LLM & GEO - Generative Engine Optimization)",
-      "en": "3. Generative Engine Optimization (GEO) for AI Search Engines"
-    }
-  },
-  {
-    "type": "p",
-    "text": {
-      "vi": "Để các công cụ tìm kiếm AI như Google Gemini, ChatGPT Search và Perplexity trích dẫn thương hiệu game của bạn làm câu trả lời chính thức, cấu trúc nội dung phải được tối ưu theo 3 tiêu chuẩn định dạng:",
-      "en": "To ensure AI engines like Google Gemini, ChatGPT Search, and Perplexity cite your gaming brand as an authoritative reference, content must be structured according to 3 generative criteria:"
-    }
-  },
-  {
-    "type": "ul",
-    "items": [
-      {
-        "vi": "Định dạng Bảng Biểu & Số liệu Thống kê Độc quyền: AI luôn ưu tiên trích dẫn các bảng dữ liệu có cấu trúc rõ ràng (so sánh thông số, tỷ lệ nạp, cấu hình máy chơi game).",
-        "en": "Structured Tables & Proprietary Data: AI models prioritize tabular comparative data (system requirements, drop rates, device specs)."
-      },
-      {
-        "vi": "Đoạn văn định nghĩa hạt nhân (Entity Definition Sentences): Viết các câu định nghĩa trực diện dài 25 - 40 từ ở đầu mỗi mục H2 để AI dễ dàng trích xuất làm câu trả lời tóm tắt (Direct Answer Snippet).",
-        "en": "Direct Entity Definitions: 25-40 word direct explanatory sentences at the start of each H2 for instant AI direct snippet extraction."
-      },
-      {
-        "vi": "Trích dẫn E-E-A-T từ Chuyên gia Thực chiến: Đính kèm hồ sơ tác giả có kinh nghiệm phát hành game thực tế để vượt qua bộ lọc đánh giá độ tin cậy của thuật toán AI.",
-        "en": "Practitioner E-E-A-T Author Signatures: Verify articles with proven industry credentials to pass automated trust filters."
-      }
-    ]
-  }],
+      { type: "h2", text: { vi: "3. Chiến lược Tối ưu hóa Mô hình Ngôn ngữ Lớn (LLM & GEO - Generative Engine Optimization)", en: "3. Generative Engine Optimization (GEO) for AI Search Engines" } },
+      { type: "p", text: {
+        vi: "Để các công cụ tìm kiếm AI như Google Gemini, ChatGPT Search và Perplexity trích dẫn thương hiệu game của bạn làm câu trả lời chính thức, cấu trúc nội dung phải được tối ưu theo 3 tiêu chuẩn định dạng:",
+        en: "To ensure AI engines like Google Gemini, ChatGPT Search, and Perplexity cite your gaming brand as an authoritative reference, content must be structured according to 3 generative criteria:",
+      } },
+      { type: "ul", items: [
+        { vi: "Định dạng Bảng Biểu & Số liệu Thống kê Độc quyền: AI luôn ưu tiên trích dẫn các bảng dữ liệu có cấu trúc rõ ràng (so sánh thông số, tỷ lệ nạp, cấu hình máy chơi game).", en: "Structured Tables & Proprietary Data: AI models prioritize tabular comparative data (system requirements, drop rates, device specs)." },
+        { vi: "Đoạn văn định nghĩa hạt nhân (Entity Definition Sentences): Viết các câu định nghĩa trực diện dài 25 - 40 từ ở đầu mỗi mục H2 để AI dễ dàng trích xuất làm câu trả lời tóm tắt (Direct Answer Snippet).", en: "Direct Entity Definitions: 25-40 word direct explanatory sentences at the start of each H2 for instant AI direct snippet extraction." },
+        { vi: "Trích dẫn E-E-A-T từ Chuyên gia Thực chiến: Đính kèm hồ sơ tác giả có kinh nghiệm phát hành game thực tế để vượt qua bộ lọc đánh giá độ tin cậy của thuật toán AI.", en: "Practitioner E-E-A-T Author Signatures: Verify articles with proven industry credentials to pass automated trust filters." },
+      ] },
+    ],
   },
   {
     slug: "game-launch-marketing-thailand",
