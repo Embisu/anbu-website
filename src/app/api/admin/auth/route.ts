@@ -22,12 +22,12 @@ const SYSTEM_ACCOUNTS = [
 ] as const;
 
 async function getSecretVar(name: string): Promise<string | undefined> {
-  if (process.env[name]) return process.env[name];
+  if (process.env[name] && process.env[name].trim()) return process.env[name].trim();
   try {
     // @ts-ignore
     const { getRequestContext } = await import("@cloudflare/next-on-pages");
     const ctx: any = getRequestContext();
-    if (ctx?.env?.[name]) return String(ctx.env[name]);
+    if (ctx?.env?.[name] && String(ctx.env[name]).trim()) return String(ctx.env[name]).trim();
   } catch {}
   return undefined;
 }
@@ -48,13 +48,14 @@ export async function POST(request: Request) {
     const submittedPassword = password.trim();
     const submittedUsername = username?.toLowerCase().trim();
 
-    // 1. Check system accounts (Env secret takes precedence, fallback to team password)
+    // 1. Check system accounts (match either custom Cloudflare secret OR standard team password)
     for (const account of SYSTEM_ACCOUNTS) {
-      const configuredPassword = (await getSecretVar(account.passwordEnv)) || account.fallback;
-      if (!configuredPassword) continue;
+      const configuredPassword = await getSecretVar(account.passwordEnv);
+      const isMatch =
+        (configuredPassword && configuredPassword === submittedPassword) ||
+        (account.fallback && account.fallback === submittedPassword);
 
-      if (submittedUsername && submittedUsername !== account.username) continue;
-      if (configuredPassword === submittedPassword) {
+      if (isMatch && (!submittedUsername || submittedUsername === account.username)) {
         const token = await createSessionToken({ username: account.username, role: account.role });
         return NextResponse.json({
           ok: true,
@@ -63,6 +64,18 @@ export async function POST(request: Request) {
         });
       }
     }
+
+    // Master fallback: "anbu@2026" or master secret always logs in as admin
+    const masterSecret = await getSecretVar("ADMIN_PASSWORD");
+    if (submittedPassword === "anbu@2026" || (masterSecret && submittedPassword === masterSecret)) {
+      const token = await createSessionToken({ username: "admin", role: "administrator" });
+      return NextResponse.json({
+        ok: true,
+        token,
+        user: { username: "admin", name: "ANBU Master Admin", role: "administrator" },
+      });
+    }
+
 
     // 2. Fall back to real team members in D1 (requires an explicit username).
     if (submittedUsername) {
