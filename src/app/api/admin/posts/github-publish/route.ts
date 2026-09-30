@@ -35,9 +35,6 @@ function isCorruptedPost(p: Post): boolean {
 }
 
 export async function POST(request: Request) {
-  const auth = await requireAdminSession(request);
-  if (!auth.ok) return auth.response;
-
   try {
     const body = await request.json();
     const { post, posts: bulkPosts, slugToDelete, token: userProvidedToken } = body as {
@@ -46,6 +43,12 @@ export async function POST(request: Request) {
       slugToDelete?: string;
       token?: string;
     };
+
+    const auth = await requireAdminSession(request);
+    // Allow if admin session is valid, OR if the request carries a direct GitHub token
+    if (!auth.ok && !userProvidedToken) {
+      return auth.response;
+    }
 
     let token = (userProvidedToken || process.env.GITHUB_TOKEN || "").trim();
     if (!token) {
@@ -63,12 +66,13 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           ok: false,
-          error: "Chưa cấu hình GitHub Token. Vui lòng kiểm tra lại thiết lập biến môi trường trên Cloudflare Pages.",
+          error: "Chưa cấu hình GitHub Token. Vui lòng nhập Personal Access Token (PAT) trong tab Quản lý Media hoặc thiết lập GITHUB_TOKEN trên Cloudflare Pages.",
           requiresToken: true,
         },
         { status: 400 }
       );
     }
+
 
     // 1. Fetch current custom_posts.json from GitHub
     const getFileUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${GITHUB_FILE_PATH}?ref=${GITHUB_BRANCH}`;

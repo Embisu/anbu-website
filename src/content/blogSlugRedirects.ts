@@ -59,7 +59,9 @@ export const blogViToEnSlug: Record<string, string> = {
   "micro-influencer-game-campaign-vietnam": "micro-influencer-playbook-mobile-games-vietnam-maximizing-conversions-budget",
   "aso-localization-vietnam-mobile-game": "mobile-game-aso-localization-vietnam-keyword-slang-metadata",
   "esports-sponsorship-vietnam-roi": "measuring-esports-sponsorship-roi-vietnam-practical-guide-brands",
+  "game-content-marketing-thailand-chien-luoc-noi-dung-tiep-can-game-thu-thai-lan": "game-content-marketing-thailand-engaging-thai-gamers",
 };
+
 
 export const blogEnToViSlug: Record<string, string> = Object.fromEntries(
   Object.entries(blogViToEnSlug).map(([vi, en]) => [en, vi])

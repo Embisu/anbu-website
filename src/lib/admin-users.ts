@@ -73,23 +73,60 @@ export async function getAdminDB(): Promise<any | null> {
   }
 }
 
+export async function ensureAdminUsersTable(db: any): Promise<void> {
+  if (!db?.exec) return;
+  try {
+    await db.exec(`
+      CREATE TABLE IF NOT EXISTS admin_users (
+        id TEXT PRIMARY KEY,
+        username TEXT UNIQUE NOT NULL,
+        password_hash TEXT NOT NULL,
+        role TEXT NOT NULL,
+        display_name TEXT NOT NULL,
+        jobTitle TEXT,
+        bio TEXT,
+        avatar TEXT,
+        email TEXT,
+        facebook TEXT,
+        telegram TEXT,
+        created_at TEXT NOT NULL
+      );
+    `);
+  } catch (e) {
+    console.warn("Could not ensure admin_users table:", e);
+  }
+}
+
 const SELECT_COLUMNS =
   "id, username, role, display_name, job_title, bio, avatar, email, facebook, telegram, created_at";
 
 export async function findAdminUserByUsername(db: any, username: string): Promise<
   (AdminUserRecord & { password_hash: string }) | null
 > {
-  const row = await db
-    .prepare(`SELECT id, username, password_hash, role, display_name, job_title, bio, avatar, email, facebook, telegram, created_at FROM admin_users WHERE username = ?`)
-    .bind(username.toLowerCase().trim())
-    .first();
-  return (row as any) ?? null;
+  if (!db?.prepare) return null;
+  try {
+    const row = await db
+      .prepare(`SELECT id, username, password_hash, role, display_name, job_title, bio, avatar, email, facebook, telegram, created_at FROM admin_users WHERE username = ?`)
+      .bind(username.toLowerCase().trim())
+      .first();
+    return (row as any) ?? null;
+  } catch (e) {
+    console.warn("Error querying admin_users:", e);
+    return null;
+  }
 }
 
 export async function listAdminUsers(db: any): Promise<AdminUserRecord[]> {
-  const { results } = await db.prepare(`SELECT ${SELECT_COLUMNS} FROM admin_users ORDER BY created_at ASC`).all();
-  return (results as AdminUserRecord[]) ?? [];
+  if (!db?.prepare) return [];
+  try {
+    const { results } = await db.prepare(`SELECT ${SELECT_COLUMNS} FROM admin_users ORDER BY created_at ASC`).all();
+    return (results as AdminUserRecord[]) ?? [];
+  } catch (e) {
+    console.warn("Error listing admin_users:", e);
+    return [];
+  }
 }
+
 
 export async function createAdminUser(
   db: any,
