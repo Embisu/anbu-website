@@ -61,12 +61,14 @@ export async function generateMetadata({
   const viSlug = post.slug;
   const enSlug = post.slug_en || post.slug;
   const activeSlug = locale === "en" ? enSlug : viSlug;
+  const postCover = editorialImageForPostData(post);
 
   return buildMetadata({
     locale,
     path: `/blog/${activeSlug}`,
     title: t(post.title, locale),
     description: t(post.excerpt, locale),
+    image: postCover,
     type: "article",
     alternatesLanguages: {
       vi: `${siteUrl}/vi/blog/${viSlug}`,
@@ -75,6 +77,7 @@ export async function generateMetadata({
     },
   });
 }
+
 
 function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Locale; headingId?: string }) {
   switch (block.type) {

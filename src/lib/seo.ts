@@ -115,6 +115,10 @@ export function buildMetadata({
     ? `${title.slice(0, 57).replace(/\s+\S*$/, "").trim()}...`
     : title;
   const url = `${siteUrl}/${locale}${path === "/" ? "" : path}`;
+  const absoluteImage = image.startsWith("http")
+    ? image
+    : `${siteUrl}${image.startsWith("/") ? "" : "/"}${image}`;
+
   return {
     title: compactTitle,
     description,
@@ -129,13 +133,14 @@ export function buildMetadata({
       description,
       siteName: site.name,
       locale: locale === "vi" ? "vi_VN" : "en_US",
-      images: [{ url: image, width: 1200, height: 630, alt: site.name }],
+      images: [{ url: absoluteImage, width: 1200, height: 630, alt: compactTitle }],
     },
     twitter: {
       card: "summary_large_image",
       title: compactTitle,
       description,
-      images: [image],
+      images: [absoluteImage],
     },
   };
 }
+
