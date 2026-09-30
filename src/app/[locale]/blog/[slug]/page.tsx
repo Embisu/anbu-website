@@ -357,6 +357,7 @@ export default async function BlogPostPage({
   }
 
   const activeSlug = locale === "en" && post.slug_en ? post.slug_en : post.slug;
+  const postCover = editorialImageForPostData(post);
 
   const related = [
     ...posts.filter((p) => p.slug !== post.slug && p.category.vi === post.category.vi),
@@ -467,39 +468,51 @@ export default async function BlogPostPage({
             </a>
           </div>
         )}
-        <header className={`relative overflow-hidden bg-gradient-to-br ${post.color} text-white`}>
-          <EditorialMedia
-            src={editorialImageForPostData(post)}
-            alt={t(post.title, locale)}
-            focal={post.focal}
-            className="pointer-events-none absolute inset-0 opacity-45"
-            priority
-          />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-900/80 to-navy-900/35" />
-          <div className="container-x relative py-10 sm:py-16 md:py-20">
-            <div className="mx-auto max-w-3xl">
-              <Link href={localePath(locale, "/blog")} className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-white/80 hover:text-white">
+        <header className="relative overflow-hidden bg-[#070d1e] text-white">
+          {/* Subtle Ambient Glow */}
+          <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 h-[500px] w-full max-w-7xl rounded-full bg-gradient-to-r from-orange-500/15 via-blue-500/10 to-orange-500/15 blur-[140px]" />
+
+          <div className="container-x relative pt-8 pb-10 sm:pt-12 sm:pb-14 md:pt-16 md:pb-16">
+            <div className="mx-auto max-w-4xl">
+              <Link href={localePath(locale, "/blog")} className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-white/70 hover:text-white transition">
                 <Icon name="arrow" className="h-3.5 w-3.5 sm:h-4 sm:w-4 rotate-180" />
                 {dict.blogSection.back}
               </Link>
-              <div className="mt-4 sm:mt-6 flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-white/80">
-                <span className="rounded-full bg-white/15 px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
+              <div className="mt-4 sm:mt-6 flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-slate-300">
+                <span className="rounded-full bg-orange-500/20 border border-orange-500/30 px-3 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-orange-400">
                   {t(post.category, locale)}
                 </span>
                 <time dateTime={post.date}>{formatDate(post.date, locale)}</time>
                 <span>·</span>
                 <span>{post.readingTime} {dict.blogSection.readTime}</span>
+                <span>·</span>
+                <span className="text-white/80">{locale === "vi" ? "Biên soạn bởi" : "Written by"} {post.author}</span>
               </div>
-              <p className="mt-3 sm:mt-4 text-xs sm:text-sm font-medium text-white/75">
-                {locale === "vi" ? "Biên soạn bởi" : "Written by"} {post.author}
-              </p>
-              <h1 className="text-balance mt-4 sm:mt-5 font-display text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight tracking-tight">
+              <h1 className="text-balance mt-4 sm:mt-5 font-display text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] font-black leading-[1.25] tracking-tight text-white">
                 {t(post.title, locale)}
               </h1>
-              <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed text-white/90">{t(post.excerpt, locale)}</p>
+              <p className="mt-3.5 sm:mt-5 text-base sm:text-lg leading-relaxed text-slate-300/95 font-normal">
+                {t(post.excerpt, locale)}
+              </p>
+
+              {/* Clean Featured Cover Showcase */}
+              {postCover && (
+                <div className="mt-8 sm:mt-10 overflow-hidden rounded-2xl sm:rounded-3xl border border-white/10 shadow-2xl bg-slate-900/60 ring-1 ring-white/10">
+                  <div className="relative aspect-[16/9] w-full">
+                    <EditorialMedia
+                      src={postCover}
+                      alt={t(post.title, locale)}
+                      focal={post.focal || "center"}
+                      className="h-full w-full object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </header>
+
 
         <div className="container-x py-8 sm:py-14 md:py-16">
           <div className="mx-auto grid max-w-[1320px] items-start gap-8 xl:grid-cols-[220px_minmax(0,768px)_220px]">
