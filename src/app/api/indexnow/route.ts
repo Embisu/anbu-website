@@ -36,7 +36,7 @@ export async function POST(request: Request) {
         `https://${INDEXNOW_HOST}/en/blog`,
         ...allPosts.flatMap((p) => [
           `https://${INDEXNOW_HOST}/vi/blog/${p.slug}`,
-          `https://${INDEXNOW_HOST}/en/blog/${p.slug}`,
+          `https://${INDEXNOW_HOST}/en/blog/${p.slug_en || p.slug}`,
         ]),
       ];
     }

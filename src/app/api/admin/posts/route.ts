@@ -80,7 +80,7 @@ export async function POST(request: Request) {
       // Auto-ping IndexNow to Bing, Yandex, Naver, Seznam
       submitToIndexNow([
         `https://anbu.asia/vi/blog/${post.slug}`,
-        `https://anbu.asia/en/blog/${post.slug}`,
+        `https://anbu.asia/en/blog/${post.slug_en || post.slug}`,
       ]).catch(() => {});
 
       return NextResponse.json({

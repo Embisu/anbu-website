@@ -109,11 +109,11 @@ export function buildMetadata({
   type = "website",
   alternatesLanguages,
 }: BuildMetaArgs): Metadata {
-  // Keep search snippets compact without changing the visible H1 on the page.
-  // Truncating at a word boundary avoids mid-word ellipses on mobile results.
-  const compactTitle = title.length > 60
-    ? `${title.slice(0, 57).replace(/\s+\S*$/, "").trim()}...`
-    : title;
+  // Never hard-truncate with a literal "..." in the <title> tag: Google computes
+  // its own pixel-width truncation for the SERP snippet at render time, so a
+  // source-level ellipsis only destroys keywords (and trailing context like a
+  // year or country name) without preventing Google's own display truncation.
+  const compactTitle = title;
   const url = `${siteUrl}/${locale}${path === "/" ? "" : path}`;
   const absoluteImage = image.startsWith("http")
     ? image
