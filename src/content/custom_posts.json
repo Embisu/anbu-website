@@ -3,186 +3,634 @@
     "slug": "vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh",
     "slug_en": "vietnam-gaming-market-overview-opportunities-publishers",
     "title": {
-      "vi": "Thị trường Game Việt Nam: Toàn cảnh và Cơ hội cho Nhà phát hành Quốc tế (2026)",
-      "en": "Vietnam Gaming Market: Overview and Opportunities for International Publishers (2026)"
+      "vi": "Vietnam Gaming Market: Tổng quan thị trường game Việt Nam và cơ hội cho nhà phát hành",
+      "en": "Vietnam Gaming Market: An Overview of Vietnam's Gaming Market and Opportunities for Publishers"
     },
     "excerpt": {
-      "vi": "Trước khi quyết định đổ ngân sách vào Việt Nam, nhà phát hành quốc tế cần hiểu đúng quy mô thị trường, các xu hướng đang định hình ngành và những khoảng trống cơ hội còn bỏ ngỏ. Toàn cảnh thị trường game Việt Nam, kèm khung tiếp cận thực chiến từ dữ liệu đến pháp lý.",
-      "en": "Before committing budget to Vietnam, international publishers need an accurate read on market size, the trends reshaping the industry, and the whitespace opportunities still open. A full market overview paired with a practical approach framework, from data to legal readiness."
+      "vi": "Năm 2025, thị trường mobile game Việt Nam có khoảng 54 triệu người chơi và doanh thu ước tính 825 triệu USD. Nhưng lượt tải không còn đủ để đo hiệu quả: giá trị dài hạn, thanh toán nội địa, bản địa hóa và nghiên cứu người chơi đang quyết định cơ hội của nhà phát hành.",
+      "en": "In 2025, Vietnam's mobile gaming market had roughly 54 million players and an estimated USD 825 million in revenue. But downloads alone no longer measure success: long-term value, local payments, localization, and player research now shape publishers' opportunities."
     },
     "category": {
       "vi": "Thị trường Game",
       "en": "Gaming Market"
     },
     "date": "2026-10-01",
-    "readingTime": 6,
+    "readingTime": 9,
     "cover": "/blog-media/1790864122394-1-17.jpg",
     "focal": "center",
     "author": "ANBU Team",
     "color": "from-orange-600 to-navy-900",
     "variant": "game",
     "sources": [
-      { "label": { "vi": "Bộ Thông tin và Truyền thông: Nghị định 147/2024/NĐ-CP", "en": "Ministry of Information and Communications: Decree 147/2024/ND-CP" }, "href": "https://mic.gov.vn/nghi-dinh-147-2024-nd-cp-quan-ly-chat-che-dich-vu-tro-choi-dien-tu-tren-mang-va-thong-tin-tren-internet-197241227124622733.htm" },
-      { "label": { "vi": "Google Play: Thông tin thị trường Đông Nam Á", "en": "Google Play: Southeast Asia Market Insights" }, "href": "https://support.google.com/googleplay/android-developer/answer/6223646" }
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025",
+          "en": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025"
+        },
+        "href": "https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/"
+      },
+      {
+        "label": {
+          "vi": "VNG: Báo cáo thường niên 2025",
+          "en": "VNG: 2025 Annual Report"
+        },
+        "href": "https://ar2025.vng.com.vn/en/business-report/"
+      },
+      {
+        "label": {
+          "vi": "Gamota: Thời gian phát hành mobile game tại Việt Nam",
+          "en": "Gamota: How long does it take to launch a mobile game in Vietnam"
+        },
+        "href": "https://gamota.com/en_GB/gamota-lab/how-long-does-it-take-to-launch-a-mobile-game-in-vietnam/"
+      },
+      {
+        "label": {
+          "vi": "VnExpress: Vietnam GameVerse 2026",
+          "en": "VnExpress: Vietnam GameVerse 2026"
+        },
+        "href": "https://vnexpress.net/vietnam-gameverse-hut-35000-nguoi-trong-nam-dau-ban-ve-5072255.html"
+      }
     ],
     "body": [
       {
         "type": "p",
         "text": {
-          "vi": "Việt Nam liên tục được nhắc đến như một trong những thị trường game di động tăng trưởng nhanh nhất Đông Nam Á, nhưng với nhà phát hành quốc tế, câu hỏi thực sự không phải là 'thị trường có lớn không' mà là 'cơ hội cụ thể nằm ở đâu, và cần chuẩn bị gì trước khi vào'. Dưới đây là toàn cảnh thị trường, các xu hướng đang định hình ngành, và khung tiếp cận thực chiến ANBU áp dụng khi đồng hành cùng các studio quốc tế.",
-          "en": "Vietnam is consistently cited as one of Southeast Asia's fastest-growing mobile gaming markets, but for international publishers the real question isn't whether the market is big, it's where the concrete opportunity sits and what needs to be in place before entering. Here is a market overview, the trends reshaping the industry, and the practical approach framework ANBU uses when supporting international studios."
+          "vi": "Vietnam Gaming Market đang bước vào giai đoạn phát triển theo hướng chú trọng chất lượng người chơi và giá trị dài hạn. Năm 2025, [thị trường mobile game Việt Nam có khoảng 54 triệu người chơi, với doanh thu ước tính 825 triệu USD, tăng 9,16% so với năm trước](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/).",
+          "en": "The Vietnam Gaming Market is entering a stage of development that places greater emphasis on player quality and long-term value. In 2025, [the Vietnam mobile gaming market had approximately 54 million players, with estimated revenue reaching USD 825 million, up 9.16% year-on-year](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/)."
         }
       },
       {
         "type": "image",
         "src": "/blog-media/1790864122394-1-17.jpg",
         "alt": {
-          "vi": "Toàn cảnh thị trường Game Việt Nam và cơ hội cho nhà phát hành quốc tế",
-          "en": "Vietnam gaming market overview and opportunities for international publishers"
+          "vi": "Vietnam Gaming Market: tổng quan thị trường game Việt Nam và cơ hội cho nhà phát hành",
+          "en": "Vietnam Gaming Market: an overview of Vietnam's gaming market and opportunities for publishers"
         },
         "caption": {
-          "vi": "Toàn cảnh thị trường Game Việt Nam: quy mô, xu hướng và cơ hội cho nhà phát hành quốc tế.",
-          "en": "Vietnam gaming market at a glance: scale, trends, and opportunities for international publishers."
+          "vi": "Tổng quan Vietnam Gaming Market: quy mô người chơi, xu hướng và cơ hội cho nhà phát hành.",
+          "en": "Vietnam Gaming Market at a glance: player scale, trends, and opportunities for publishers."
         }
       },
-      { "type": "h2", "text": { "vi": "1. Thị trường Game Việt Nam đang phát triển ra sao?", "en": "1. How Is the Vietnam Gaming Market Developing?" } },
       {
-        "type": "p",
+        "type": "h2",
         "text": {
-          "vi": "Game di động là trung tâm của thị trường Việt Nam, với dân số trẻ, tỷ lệ sử dụng smartphone cao và thói quen chi tiêu cho giải trí số ngày càng rõ nét. Việt Nam nhiều năm liền nằm trong nhóm thị trường mobile gaming có lượt tải và mức độ tương tác hàng đầu Đông Nam Á, với hệ sinh thái nhà phát hành nội địa đủ trưởng thành để vận hành các tựa game quy mô lớn dài hạn, chứ không chỉ các sản phẩm casual ngắn hạn.",
-          "en": "Mobile gaming sits at the center of Vietnam's market, driven by a young population, high smartphone penetration, and growing willingness to spend on digital entertainment. For several years running, Vietnam has ranked among Southeast Asia's top mobile gaming markets by downloads and engagement, backed by a domestic publisher ecosystem mature enough to operate large-scale, long-lived titles rather than short-lived casual releases."
+          "vi": "1. Vietnam Gaming Market đang phát triển như thế nào?",
+          "en": "1. How Is the Vietnam Gaming Market Developing?"
         }
       },
       {
         "type": "image",
         "src": "/blog-media/1790864167322-2-17.webp",
         "alt": {
-          "vi": "Thị trường Game Việt Nam đang phát triển ra sao",
-          "en": "How the Vietnam gaming market is developing"
+          "vi": "Vietnam Gaming Market đang phát triển như thế nào",
+          "en": "How the Vietnam Gaming Market is developing"
         },
         "caption": {
-          "vi": "Dân số trẻ, hạ tầng thanh toán cải thiện và hệ sinh thái nhà phát hành trưởng thành là ba trụ cột tăng trưởng.",
-          "en": "A young population, improving payment infrastructure, and a maturing publisher ecosystem form the three pillars of growth."
+          "vi": "Quy mô người chơi lớn, nhưng nhà phát hành cần nhìn sâu hơn vào chất lượng người dùng và giá trị dài hạn.",
+          "en": "The player base is large, but publishers need to look deeper at user quality and long-term value."
         }
       },
       {
-        "type": "ul",
-        "items": [
-          { "vi": "Dân số trẻ và tỷ lệ sử dụng smartphone cao: Phần lớn dân số thuộc nhóm tuổi tiêu dùng nội dung số chủ động, quen thuộc với thanh toán di động và sẵn sàng chi tiêu cho vật phẩm ảo.", "en": "Young demographics and high smartphone penetration: A large share of the population falls into the most digitally active age bracket, comfortable with mobile payments and willing to spend on virtual goods." },
-          { "vi": "Hệ sinh thái nhà phát hành nội địa trưởng thành: Từ các tập đoàn công nghệ lớn đến các studio chuyên biệt, thị trường có đủ năng lực vận hành game dài hạn, không chỉ phát hành rồi bỏ ngỏ.", "en": "A maturing domestic publisher ecosystem: From large technology groups to specialized studios, the market has the operational depth to run titles long-term rather than publish-and-abandon." },
-          { "vi": "Hạ tầng thanh toán và phân phối số liên tục cải thiện: Ví điện tử, QR code và các kênh thanh toán nội địa giúp giảm ma sát nạp tiền, điều từng là rào cản lớn với game quốc tế.", "en": "Steadily improving payment and distribution infrastructure: E-wallets, QR codes, and local payment rails reduce the checkout friction that once held back international titles." }
-        ]
+        "type": "h3",
+        "text": {
+          "vi": "Quy mô người chơi lớn nhưng doanh thu cần được nhìn sâu hơn",
+          "en": "Large player base, but revenue requires a deeper look"
+        }
       },
-      { "type": "h2", "text": { "vi": "2. Những xu hướng đang định hình thị trường", "en": "2. Trends Shaping the Vietnam Gaming Market" } },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việt Nam có cộng đồng người chơi game lớn, đặc biệt ở phân khúc mobile. Theo Vietnam Mobile Gaming Year-in-Review 2025 của Gamota, thị trường mobile gaming Việt Nam đạt khoảng 54 triệu người chơi trong năm 2025, trong khi doanh thu ước tính đạt 825 triệu USD, tăng 9,16% so với năm 2024.",
+          "en": "Vietnam has a large gaming community, particularly in the mobile segment. According to Gamota's Vietnam Mobile Gaming Year-in-Review 2025, the Vietnam mobile gaming market reached approximately 54 million players in 2025, while estimated revenue reached USD 825 million, up 9.16% from 2024."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những con số này cho thấy Việt Nam vẫn là một thị trường đáng quan tâm đối với các nhà phát hành muốn mở rộng hoạt động tại Đông Nam Á. Tuy nhiên, quy mô người chơi không thể được sử dụng như chỉ số duy nhất để đánh giá tiềm năng thị trường.",
+          "en": "These figures show that Vietnam remains a market of interest for publishers looking to expand across Southeast Asia. However, the size of the player base alone cannot be used as the only indicator of market potential."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Gamota nhận định thị trường Việt Nam đang có khoảng cách giữa số lượng người chơi và kết quả kinh doanh thực tế](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), khiến nhà phát hành cần quan tâm nhiều hơn đến chất lượng người dùng, khả năng giữ chân và hiệu quả kiếm tiền.",
+          "en": "[Gamota notes that there is a gap between the number of players and actual business performance in Vietnam](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), meaning publishers need to pay greater attention to user quality, retention, and monetization efficiency."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, khi đánh giá Vietnam Gaming Market, doanh nghiệp cần nhìn đồng thời vào quy mô người chơi, mức độ tương tác, khả năng chi trả và giá trị vòng đời người chơi, thay vì chỉ dựa vào lượt tải.",
+          "en": "Therefore, when evaluating the Vietnam Gaming Market, businesses need to consider player scale, engagement, spending capacity, and player lifetime value together, rather than relying solely on download numbers."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Lượt tải cao không đồng nghĩa với hiệu quả kinh doanh",
+          "en": "High downloads do not mean business success"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một trong những thay đổi đáng chú ý của thị trường Việt Nam là lượt tải ngày càng không đủ để phản ánh hiệu quả của một tựa game.",
+          "en": "One of the notable changes in the Vietnamese market is that download numbers are increasingly insufficient to reflect the performance of a game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Gamota cho biết năm 2025, thị trường có khoảng 54 triệu người chơi, nhưng thành công không còn được đánh giá đơn thuần bằng số lượt tải](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/). Báo cáo nhấn mạnh khoảng cách giữa lượng người chơi và kết quả kinh doanh, đồng thời cho rằng nhà phát hành cần chuyển trọng tâm sang giá trị thực và khả năng sinh lời bền vững.",
+          "en": "[Gamota reported that in 2025, the market had approximately 54 million players, but success was no longer measured simply by the number of downloads](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/). The report highlights the gap between player volume and business performance and emphasizes the need for publishers to shift their focus toward real value and sustainable profitability."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này có nghĩa một game có thể tạo ra lượng cài đặt lớn nhưng vẫn gặp khó khăn nếu người chơi không tiếp tục sử dụng hoặc không có động lực chi tiêu.",
+          "en": "This means a game can generate a large number of installs but still struggle if players do not continue playing or lack motivation to spend."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với Vietnam Gaming Market, câu hỏi quan trọng vì thế không chỉ là “Có bao nhiêu người chơi?” mà còn là “Nhóm người chơi nào có giá trị và điều gì khiến họ tiếp tục gắn bó với game?”.",
+          "en": "For the Vietnam Gaming Market, the important questions are therefore not only “How many players are there?” but also “Which player segments create value, and what keeps them engaged with the game?”"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Giá trị dài hạn đang trở thành trọng tâm",
+          "en": "Long-term value is becoming a central focus"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sự thay đổi này cũng được thể hiện qua hoạt động của các doanh nghiệp lớn trong ngành.",
+          "en": "This shift can also be seen in the activities of major companies in the industry."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [Báo cáo thường niên 2025 của VNG](https://ar2025.vng.com.vn/en/business-report/), mảng Games & Entertainment đạt 7.054 tỷ đồng doanh thu, tăng 8%; tổng bookings đạt 8.162 tỷ đồng, tăng 13%; trong khi tỷ lệ người dùng trả phí tăng từ 3,7% lên 4,6%.",
+          "en": "According to [VNG's 2025 Annual Report](https://ar2025.vng.com.vn/en/business-report/), its Games & Entertainment segment generated VND 7.054 trillion in revenue, up 8%; total bookings reached VND 8.162 trillion, up 13%; while the paying-user rate increased from 3.7% to 4.6%."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "VNG cũng cho biết QAU của mảng Games giảm từ [65,8 triệu xuống 57,3 triệu](https://ar2025.vng.com.vn/en/business-report/), nhưng mức độ tương tác và thời gian chơi của nhóm người dùng được giữ lại được cải thiện. Doanh nghiệp chuyển trọng tâm từ quy mô người dùng sang giá trị dài hạn của người chơi và mô hình Games-as-a-Service.",
+          "en": "VNG also reported that QAU for its Games segment decreased from [65.8 million to 57.3 million](https://ar2025.vng.com.vn/en/business-report/), while engagement and playtime among retained users improved. The company shifted its focus from user scale toward long-term player value and the Games-as-a-Service model."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây là một tín hiệu đáng chú ý đối với Vietnam Gaming Market: tăng trưởng người dùng không còn là mục tiêu duy nhất. Nhà phát hành cần xây dựng sản phẩm có khả năng giữ chân người chơi và tạo doanh thu trong thời gian dài.",
+          "en": "This is an important signal for the Vietnam Gaming Market: user growth is no longer the only objective. Publishers need to build products capable of retaining players and generating revenue over the long term."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Những xu hướng đang định hình Vietnam Gaming Market",
+          "en": "2. Trends Shaping the Vietnam Gaming Market"
+        }
+      },
       {
         "type": "image",
         "src": "/blog-media/1790864210502-3-16.webp",
         "alt": {
-          "vi": "Những xu hướng đang định hình thị trường Game Việt Nam",
-          "en": "Trends shaping the Vietnam gaming market"
+          "vi": "Những xu hướng đang định hình Vietnam Gaming Market",
+          "en": "Trends shaping the Vietnam Gaming Market"
         },
         "caption": {
-          "vi": "Game thủ Việt đang chuyển dịch về hình thái tiêu dùng, chứ không hề thu hẹp quy mô.",
-          "en": "Vietnamese gamers are shifting in how they consume, not shrinking in how much they play."
+          "vi": "Vận hành dài hạn, thanh toán nội địa và bản địa hóa đang định hình cách nhà phát hành tiếp cận thị trường.",
+          "en": "Long-term operations, local payments, and localization are reshaping how publishers approach the market."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Game cần được vận hành như một dịch vụ dài hạn",
+          "en": "Games need to be operated as long-term services"
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Thị trường game Việt Nam đang chuyển dịch rõ rệt về hình thái tiêu dùng, chứ không hề thu hẹp quy mô. Ba xu hướng sau đang định hình lại cách người chơi lựa chọn và gắn bó với sản phẩm:",
-          "en": "Vietnam's gaming market is visibly shifting in shape, not shrinking in size. Three trends stand out to anyone tracking the local scene:"
+          "vi": "Một tựa game sau khi phát hành không kết thúc ở ngày ra mắt. Đặc biệt với mobile game và những sản phẩm có yếu tố cộng đồng, nhà phát hành cần liên tục cập nhật nội dung, tổ chức hoạt động, chăm sóc người chơi và duy trì sự tương tác.",
+          "en": "A game does not end on launch day. Particularly for mobile games and products with strong community elements, publishers need to continuously update content, organize activities, support players, and maintain engagement."
         }
       },
       {
-        "type": "ul",
-        "items": [
-          { "vi": "Game thủ chuyển dịch sang trải nghiệm có chiều sâu: Thể loại nhập vai, chiến thuật và gacha có cốt truyện đầu tư đang thu hút sự gắn bó dài hạn hơn so với các sản phẩm hypercasual đơn thuần.", "en": "Players are migrating toward deeper experiences: RPG, strategy, and story-driven gacha titles are earning longer-term loyalty than pure hypercasual products." },
-          { "vi": "Nhà sáng tạo nội dung trở thành kênh khám phá chính: TikTok, YouTube và livestream định hình quyết định tải game nhiều hơn quảng cáo hiển thị truyền thống.", "en": "Creators have become the primary discovery channel: TikTok, YouTube, and livestreams now shape install decisions more than traditional display advertising." },
-          { "vi": "Esports và cộng đồng cạnh tranh tiếp tục mở rộng: Các tựa game có yếu tố PvP và giải đấu vẫn duy trì sức hút bền vững, kéo theo nhu cầu vận hành cộng đồng chuyên nghiệp hơn.", "en": "Esports and competitive communities keep expanding: PvP-driven titles retain durable appeal, raising the bar for professional community operations." }
-        ]
+        "type": "p",
+        "text": {
+          "vi": "VNG cho biết trong năm 2025, doanh nghiệp tiếp tục chuyển sang mô hình Games-as-a-Service, tập trung vào những tựa game có vòng đời dài. Các game có vòng đời dài đóng góp [46% doanh thu của mảng Games trong năm 2025](https://ar2025.vng.com.vn/en/business-report/).",
+          "en": "VNG stated that in 2025, the company continued shifting toward the Games-as-a-Service model, focusing on games with longer lifecycles. Long-lifecycle games accounted for [46% of Games revenue in 2025](https://ar2025.vng.com.vn/en/business-report/)."
+        }
       },
-      { "type": "h2", "text": { "vi": "3. Cơ hội cho Nhà phát hành Quốc tế", "en": "3. Opportunities for International Publishers" } },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này cho thấy hoạt động sau launch ngày càng quan trọng. Một sản phẩm muốn phát triển lâu dài cần được đầu tư cho nội dung, cộng đồng, chăm sóc người chơi và khả năng giữ chân, thay vì chỉ tập trung ngân sách vào giai đoạn ra mắt.",
+          "en": "This shows that post-launch operations are becoming increasingly important. A product intended to grow over the long term needs continued investment in content, community, player support, and retention, rather than concentrating the budget solely on the launch phase."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Thanh toán nội địa trở thành một phần của bài toán phát hành",
+          "en": "Local payments are becoming a part of the publishing equation"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thanh toán cũng đang trở thành một yếu tố cần được nhà phát hành quan tâm khi bước vào Việt Nam.",
+          "en": "Payment infrastructure is also becoming a significant consideration for publishers entering Vietnam."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [**Vietnam Mobile Gaming Year-in-Review 2025**](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), dòng tiền trong thị trường mobile game đang dịch chuyển mạnh hơn qua hệ sinh thái thanh toán trong nước, thay vì phụ thuộc hoàn toàn vào các kho ứng dụng quốc tế. Gamota cho rằng xu hướng này giúp doanh nghiệp tối ưu dòng tiền nhưng đồng thời đặt ra yêu cầu cao hơn về năng lực vận hành và tuân thủ pháp lý.",
+          "en": "According to the [**Vietnam Mobile Gaming Year-in-Review 2025**](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), cash flow in the mobile gaming market is increasingly moving through domestic payment ecosystems rather than relying entirely on international app stores. Gamota notes that this trend can help businesses optimize cash flow, while also creating higher requirements for operational capabilities and legal compliance."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một bài phân tích khác của Gamota cũng nhấn mạnh rằng nhà phát hành nước ngoài khi vào Việt Nam cần tính đến [**sự cấp phép, phương thức thanh toán địa phương, việc vận hành cộng đồng**](https://gamota.com/en_GB/gamota-lab/how-long-does-it-take-to-launch-a-mobile-game-in-vietnam/), chứ không chỉ dịch game và chạy quảng cáo.",
+          "en": "Another Gamota analysis also emphasizes that foreign publishers entering Vietnam need to consider [**licensing, local payments, and community operations**](https://gamota.com/en_GB/gamota-lab/how-long-does-it-take-to-launch-a-mobile-game-in-vietnam/), rather than simply translating the game and running advertising campaigns."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, chiến lược phát hành cần được chuẩn bị đồng thời ở nhiều khía cạnh: sản phẩm, thanh toán, chăm sóc khách hàng, cộng đồng và pháp lý.",
+          "en": "Therefore, a publishing strategy needs to be prepared across multiple areas simultaneously: product, payments, customer support, community, and legal compliance."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bản địa hóa không chỉ là dịch ngôn ngữ",
+          "en": "Localization goes beyond language translation"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một game được dịch sang tiếng Việt chưa có nghĩa là game đã được bản địa hóa hoàn chỉnh.",
+          "en": "Translating a game into Vietnamese does not mean that the game has been fully localized."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Người chơi Việt Nam có những đặc điểm riêng về hành vi, nội dung yêu thích, mức chi tiêu, cộng đồng và cách tiếp nhận quảng cáo. Vì vậy, nhà phát hành cần xem xét cả gameplay, sự kiện, nội dung truyền thông, creator, cộng đồng và cách vận hành sau khi game ra mắt.",
+          "en": "Vietnamese players have distinct characteristics in terms of behavior, content preferences, spending patterns, communities, and advertising consumption. Publishers therefore need to consider gameplay, events, communication content, creators, communities, and post-launch operations."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa tốt cần trả lời được câu hỏi: **Điều gì khiến sản phẩm này phù hợp với người chơi Việt Nam?**",
+          "en": "Effective localization needs to answer one key question: **What makes this product relevant to Vietnamese players?**"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây là lý do nghiên cứu người chơi có thể đóng vai trò quan trọng trước khi phát hành. Thay vì giả định một chiến lược thành công ở thị trường khác sẽ hoạt động tương tự tại Việt Nam, doanh nghiệp có thể kiểm chứng trước bằng dữ liệu và phản hồi trực tiếp từ người chơi.",
+          "en": "This is why player research can play an important role before launch. Instead of assuming that a strategy successful in another market will work in Vietnam in the same way, businesses can validate their assumptions through data and direct player feedback."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Cơ hội cho nhà phát hành trong Vietnam Gaming Market",
+          "en": "3. Opportunities for Publishers in the Vietnam Gaming Market"
+        }
+      },
       {
         "type": "image",
         "src": "/blog-media/1790864255710-4-18.webp",
         "alt": {
-          "vi": "Cơ hội cho nhà phát hành trong thị trường Game Việt Nam",
-          "en": "Opportunities for publishers in the Vietnam gaming market"
+          "vi": "Cơ hội cho nhà phát hành trong Vietnam Gaming Market",
+          "en": "Opportunities for publishers in the Vietnam Gaming Market"
         },
         "caption": {
-          "vi": "Ba mảng mở ra khoảng trống cơ hội rõ rệt nhất: Game Mobile, Dữ liệu thị trường và Hệ sinh thái Gaming.",
-          "en": "Three areas offer the clearest whitespace: mobile games, market data, and the gaming ecosystem."
+          "vi": "Game mobile, dữ liệu thị trường và hệ sinh thái gaming là ba hướng cơ hội cho nhà phát hành.",
+          "en": "Mobile games, market data, and the gaming ecosystem are three areas of opportunity for publishers."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Việt Nam vẫn là thị trường đáng chú ý đối với game mobile",
+          "en": "Vietnam remains a significant market for mobile games"
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Ba mảng sau đang mở ra khoảng trống cơ hội rõ rệt nhất cho các nhà phát hành quốc tế muốn bước vào thị trường này:",
-          "en": "Three areas currently offer the clearest whitespace for international publishers entering this market:"
+          "vi": "Với khoảng [54 triệu người chơi mobile](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/) và doanh thu [825 triệu USD trong năm 2025](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), Việt Nam có quy mô đủ lớn để các nhà phát hành quốc tế quan tâm.",
+          "en": "With approximately [54 million mobile players](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/) and [USD 825 million in revenue in 2025](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), Vietnam is large enough to attract the attention of international publishers."
         }
       },
       {
-        "type": "ul",
-        "items": [
-          { "vi": "Game Mobile: Nhiều thể loại ngách (mid-core chiến thuật, mô phỏng, game hướng đến người chơi nữ) vẫn chưa có đối thủ nội địa chiếm lĩnh rõ ràng, tạo khoảng trống cho sản phẩm quốc tế chất lượng cao.", "en": "Mobile Games: Several niche genres (mid-core strategy, simulation, female-focused titles) still lack a dominant local incumbent, leaving room for high-quality international products." },
-          { "vi": "Dữ liệu thị trường (Market Data): Nhà phát hành nắm được dữ liệu hành vi người chơi bản địa thực tế, thay vì áp dụng giả định từ thị trường khác, có lợi thế quyết định trong việc bản địa hóa và định giá.", "en": "Market Data: Publishers who ground decisions in real local player behavior, rather than assumptions carried over from other markets, gain a decisive edge in localization and pricing." },
-          { "vi": "Hệ sinh thái Gaming (Gaming Ecosystem): Hợp tác với mạng lưới creator, giải đấu esports và cộng đồng game thủ hiện có giúp rút ngắn đáng kể thời gian xây dựng lòng tin với người chơi mới.", "en": "Gaming Ecosystem: Partnering with existing creator networks, esports tournaments, and player communities meaningfully shortens the time needed to earn new players' trust." }
-        ]
+        "type": "p",
+        "text": {
+          "vi": "Tuy nhiên, cơ hội không nằm ở việc đưa càng nhiều game vào thị trường càng tốt. Cạnh tranh về sự chú ý ngày càng cao, trong khi người chơi có nhiều lựa chọn về game và nội dung giải trí.",
+          "en": "However, the opportunity does not simply lie in bringing as many games into the market as possible. Competition for attention is increasing, while players have more choices in both games and entertainment content."
+        }
       },
-      { "type": "h2", "text": { "vi": "4. Làm thế nào để tiếp cận thị trường hiệu quả?", "en": "4. How Can Publishers Approach the Market Effectively?" } },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một sản phẩm muốn tạo được chỗ đứng cần xác định rõ nhóm người chơi phù hợp, lý do họ lựa chọn game và những yếu tố khiến họ tiếp tục gắn bó.",
+          "en": "A product seeking to establish a position in the market needs to clearly identify its relevant player segments, why they choose the game, and what keeps them engaged."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với nhà phát hành quốc tế, đây là lúc nghiên cứu thị trường trở thành một bước quan trọng trước khi quyết định đầu tư.",
+          "en": "For international publishers, this is where market research becomes an important step before making investment decisions."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Nghiên cứu người chơi giúp hiểu thị trường sâu hơn",
+          "en": "Player research helps us understand the market more deeply"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dữ liệu thị trường có thể cho biết Việt Nam có bao nhiêu người chơi hoặc doanh thu đạt bao nhiêu, nhưng không thể trả lời toàn bộ câu hỏi về động cơ và hành vi.",
+          "en": "Market data can tell us how many players Vietnam has or how much revenue the market generates, but it cannot answer every question about player motivations and behavior."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ví dụ, số liệu có thể cho thấy một thể loại game đang có hiệu quả tốt. Nhưng để quyết định có nên đầu tư vào thể loại đó hay không, nhà phát hành cần biết người chơi lựa chọn game vì gameplay, hình ảnh, IP, creator, cộng đồng hay một yếu tố khác.",
+          "en": "For example, data may show that a particular game genre is performing well. However, before deciding whether to invest in that genre, publishers need to understand whether players choose those games because of gameplay, visuals, IP, creators, communities, or other factors."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây là phần mà nghiên cứu định tính và định lượng có thể bổ sung cho dữ liệu thị trường.",
+          "en": "This is where qualitative and quantitative research can complement market data."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với kinh nghiệm thực hiện nghiên cứu người chơi, ANBU có thể hỗ trợ nhà phát hành thông qua khảo sát, phỏng vấn và phân tích insight để tìm hiểu nhu cầu, hành vi và phản hồi của game thủ Việt Nam.",
+          "en": "With experience in player research, ANBU can support publishers through surveys, interviews, and insight analysis to understand the needs, behaviors, and feedback of Vietnamese gamers."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chỉ tìm câu trả lời cho **“người chơi Việt Nam chơi gì?”**, nghiên cứu cần đi sâu hơn vào **“vì sao họ chơi, vì sao họ rời bỏ và điều gì khiến họ sẵn sàng gắn bó với một game?”**",
+          "en": "Instead of simply asking **“What do Vietnamese players play?”**, research should go deeper into **“Why do they play, why do they leave, and what makes them willing to stay with a game?”**"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những insight này có thể được sử dụng để xây dựng định vị sản phẩm, xác định nhóm người chơi mục tiêu, điều chỉnh thông điệp marketing và tối ưu hoạt động sau khi game ra mắt.",
+          "en": "These insights can be used to develop product positioning, identify target player segments, refine marketing messages, and optimize post-launch operations."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Hệ sinh thái gaming đang mở rộng ra ngoài game",
+          "en": "The gaming ecosystem is expanding beyond games"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vietnam Gaming Market không chỉ bao gồm game và nhà phát hành. Esports, creator, cộng đồng, sự kiện và thương hiệu ngoài ngành đang trở thành những thành phần ngày càng rõ nét trong hệ sinh thái.",
+          "en": "The Vietnam Gaming Market is not limited to games and publishers. Esports, creators, communities, events, and brands from outside the gaming industry are becoming increasingly visible components of the ecosystem."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vietnam GameVerse 2026 là một ví dụ. Sự kiện thu hút [35.000 lượt tham dự trong hai ngày](https://vnexpress.net/vietnam-gameverse-hut-35000-nguoi-trong-nam-dau-ban-ve-5072255.html), được tổ chức trên không gian 40.000 m² với hơn 100 gian hàng.",
+          "en": "Vietnam GameVerse 2026 is one example. The event attracted [35,000 attendees over two days](https://vnexpress.net/vietnam-gameverse-hut-35000-nguoi-trong-nam-dau-ban-ve-5072255.html) and was held across a 40,000-square-meter venue with more than 100 booths."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Sự kiện](https://vnexpress.net/vietnam-gameverse-hut-35000-nguoi-trong-nam-dau-ban-ve-5072255.html) quy tụ nhiều nhóm khác nhau, từ game thủ, nhà phát hành, nhà phát triển, esports đến doanh nghiệp công nghệ và các cộng đồng văn hóa trẻ.",
+          "en": "[The event](https://vnexpress.net/vietnam-gameverse-hut-35000-nguoi-trong-nam-dau-ban-ve-5072255.html) brought together various groups, including gamers, publishers, developers, esports organizations, technology companies, and young cultural communities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đáng chú ý, Vietnam GameVerse 2026 còn có [87 vận động viên đến từ 11 quốc gia](https://daibieunhandan.vn/vietnam-gameverse-2026-cu-hich-ty-do-va-giac-mo-dinh-danh-ban-sac-viet-10416656.html) tham dự SEA Esports Nations Cup, cho thấy gaming tại Việt Nam đang mở rộng thêm kết nối với hệ sinh thái esports khu vực.",
+          "en": "Notably, Vietnam GameVerse 2026 also featured [87 athletes from 11 countries](https://daibieunhandan.vn/vietnam-gameverse-2026-cu-hich-ty-do-va-giac-mo-dinh-danh-ban-sac-viet-10416656.html) participating in the SEA Esports Nations Cup, demonstrating how gaming in Vietnam is developing stronger connections with the regional esports ecosystem."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này mở ra thêm cơ hội cho nhà phát hành trong việc xây dựng cộng đồng và partnership, thay vì chỉ cạnh tranh bằng quảng cáo trả phí.",
+          "en": "This creates additional opportunities for publishers to build communities and partnerships rather than competing solely through paid advertising."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "4. Làm thế nào để tiếp cận Vietnam Gaming Market hiệu quả?",
+          "en": "4. How Can Publishers Approach the Vietnam Gaming Market Effectively?"
+        }
+      },
       {
         "type": "image",
         "src": "/blog-media/1790864274740-5-17.webp",
         "alt": {
-          "vi": "Khung 5 bước tiếp cận thị trường Game Việt Nam hiệu quả",
-          "en": "A 5-step framework to approach the Vietnam gaming market effectively"
+          "vi": "Cách tiếp cận Vietnam Gaming Market hiệu quả",
+          "en": "How to approach the Vietnam Gaming Market effectively"
         },
         "caption": {
-          "vi": "Từ dữ liệu, chiến lược, pháp lý, tiền ra mắt đến vận hành: 5 trụ cột ANBU áp dụng cùng studio quốc tế.",
-          "en": "From data and strategy to legal, pre-launch, and operations: the 5 pillars ANBU applies alongside international studios."
+          "vi": "Dữ liệu, chiến lược, pháp lý, thanh toán và vận hành cần được chuẩn bị đồng thời trước khi ra mắt.",
+          "en": "Data, strategy, legal, payments, and operations need to be prepared together before launch."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đánh giá thị trường trước khi ra mắt",
+          "en": "Evaluate the market before launch"
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "ANBU đồng hành cùng các studio quốc tế theo một khung 5 bước, từ nghiên cứu dữ liệu đến vận hành sau ra mắt:",
-          "en": "ANBU guides international studios through a 5-step framework, from data research to post-launch operations:"
+          "vi": "Trước khi đưa một game vào Việt Nam, nhà phát hành cần trả lời một số câu hỏi cơ bản:",
+          "en": "Before bringing a game to Vietnam, publishers need to answer several fundamental questions:"
         }
       },
       {
         "type": "ul",
         "items": [
-          { "vi": "Dữ liệu (Data): Nghiên cứu hành vi người chơi, đối thủ cạnh tranh trực tiếp và khoảng trống thể loại trước khi quyết định đầu tư.", "en": "Data: Research player behavior, direct competitors, and genre whitespace before committing investment." },
-          { "vi": "Chiến lược (Strategy): Xác định định vị sản phẩm, mô hình kiếm tiền và lộ trình bản địa hóa phù hợp với đúng tệp người chơi mục tiêu.", "en": "Strategy: Define product positioning, monetization model, and a localization roadmap matched to the right target audience." },
-          { "vi": "Pháp lý (Legal): Hoàn tất phân loại và giấy phép phát hành theo Nghị định 147/2024/NĐ-CP trước khi khóa lịch ra mắt.", "en": "Legal: Complete classification and publishing licensing under Decree 147/2024/ND-CP before locking a launch date." },
-          { "vi": "Tiền ra mắt (Pre-Launch): Chạy soft launch, kiểm thử kỹ thuật và xây dựng cộng đồng ban đầu để xác thực các giả thuyết trước khi mở rộng ngân sách.", "en": "Pre-Launch: Run a soft launch, technical testing, and early community building to validate assumptions before scaling budget." },
-          { "vi": "Vận hành (Operation): Duy trì lịch sự kiện LiveOps, chăm sóc cộng đồng và đo lường liên tục sau ngày mở cửa chính thức.", "en": "Operation: Sustain a LiveOps event calendar, community care, and continuous measurement after official launch." }
+          {
+            "vi": "Nhóm người chơi mục tiêu là ai?",
+            "en": "Who is the target player segment?"
+          },
+          {
+            "vi": "Thể loại game có phù hợp với nhu cầu hiện tại không?",
+            "en": "Is the game genre aligned with current market demand?"
+          },
+          {
+            "vi": "Đối thủ trực tiếp và gián tiếp là những ai?",
+            "en": "Who are the direct and indirect competitors?"
+          },
+          {
+            "vi": "Người chơi biết đến game thông qua những kênh nào?",
+            "en": "Through which channels do players discover games?"
+          },
+          {
+            "vi": "Mức độ sẵn sàng chi trả của nhóm mục tiêu ra sao?",
+            "en": "How willing is the target audience to spend?"
+          },
+          {
+            "vi": "Game cần bản địa hóa những yếu tố nào?",
+            "en": "What aspects of the game need to be localized?"
+          },
+          {
+            "vi": "Mô hình phát hành và vận hành có đáp ứng yêu cầu tại Việt Nam không?",
+            "en": "Does the current publishing and operation model meet the requirements in Vietnam?"
+          }
         ]
       },
       {
         "type": "p",
         "text": {
-          "vi": "Thị trường game Việt Nam không thưởng cho tốc độ copy sản phẩm có sẵn. Nó thưởng cho những nhà phát hành hiểu đúng người chơi, chuẩn bị kỹ về pháp lý và vận hành, và sẵn sàng gắn bó đường dài thay vì chỉ đến ra mắt rồi rời đi.",
-          "en": "Vietnam's gaming market doesn't reward speed-copying existing products. It rewards publishers who understand players correctly, prepare properly on legal and operational fronts, and commit to the long run instead of launching and leaving."
+          "vi": "Những câu hỏi này giúp doanh nghiệp đánh giá thị trường trước khi phân bổ ngân sách cho marketing.",
+          "en": "These questions help businesses evaluate the market before allocating marketing budgets."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đặc biệt, nhà phát hành không nên chỉ dựa vào số liệu tổng quan. Một thị trường có [54 triệu người chơi mobile](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/) không có nghĩa tất cả đều phù hợp với cùng một tựa game.",
+          "en": "In particular, publishers should not rely solely on overall market figures. A market with [54 million mobile players](https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/) does not mean that all of them are suitable for the same game."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Chuẩn bị pháp lý, thanh toán và vận hành",
+          "en": "Prepare for legal, payment, and operations"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vietnam Gaming Market có những yêu cầu riêng về phát hành game. Theo Gamota, loại game [G1, G2, G3 hoặc G4](https://gamota.com/en_GB/gamota-lab/how-long-does-it-take-to-launch-a-mobile-game-in-vietnam/), tình trạng giấy phép của nhà phát hành và mức độ hoàn thiện của hồ sơ có thể ảnh hưởng trực tiếp đến thời điểm game đủ điều kiện phát hành.",
+          "en": "The Vietnam Gaming Market has specific requirements for game publishing. According to Gamota, the game classification [G1, G2, G3, or G4](https://gamota.com/en_GB/gamota-lab/how-long-does-it-take-to-launch-a-mobile-game-in-vietnam/), together with the publisher's licensing status and the completeness of its documentation, can directly affect when a game becomes eligible for release."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu game đã tương đối ổn định và studio làm việc với một nhà phát hành trong nước đã có giấy phép hoặc chứng nhận cần thiết, [Gamota đưa ra 8–12 tuần như một khoảng thời gian lập kế hoạch tham khảo](https://gamota.com/en_GB/gamota-lab/how-long-does-it-take-to-launch-a-mobile-game-in-vietnam/). Tuy nhiên, đây không phải thời hạn pháp lý cố định; những sản phẩm cần thay đổi nội dung, kỹ thuật hoặc bắt đầu quy trình cấp phép từ đầu có thể mất nhiều thời gian hơn.",
+          "en": "If a game is relatively stable and the studio works with a local publisher that already has the necessary licenses or certifications, [Gamota provides 8-12 weeks as a reference planning timeframe](https://gamota.com/en_GB/gamota-lab/how-long-does-it-take-to-launch-a-mobile-game-in-vietnam/). However, this is not a fixed legal deadline; products requiring content or technical changes, or those starting the licensing process from scratch, may take longer."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, kế hoạch vào thị trường nên được chuẩn bị đồng thời ở nhiều khía cạnh: sản phẩm, pháp lý, thanh toán, bản địa hóa, marketing và vận hành cộng đồng.",
+          "en": "Therefore, a market-entry plan should be prepared across multiple areas simultaneously: product, legal compliance, payments, localization, marketing, and community operations."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Chuyển dữ liệu thành chiến lược",
+          "en": "Turn data into strategy"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dữ liệu chỉ có giá trị khi giúp doanh nghiệp đưa ra quyết định.",
+          "en": "Data only creates value when it helps businesses make decisions."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một báo cáo thị trường có thể cho biết quy mô người chơi, nhưng nhà phát hành vẫn cần xác định nhóm người chơi nào phù hợp với sản phẩm. Dữ liệu doanh thu có thể cho biết thị trường đang tăng trưởng, nhưng nghiên cứu người chơi mới giúp giải thích điều gì thúc đẩy hành vi chi tiêu.",
+          "en": "A market report can reveal the size of the player base, but publishers still need to determine which player segments are relevant to their product. Revenue data can show that a market is growing, but player research can help explain what drives spending behavior."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây cũng là hướng ANBU có thể hỗ trợ các nhà phát hành: kết nối dữ liệu thị trường với insight người chơi, từ đó tạo cơ sở cho các quyết định về sản phẩm, marketing và chiến lược phát hành.",
+          "en": "This is also where ANBU can support publishers: connecting market data with player insights to provide a foundation for product, marketing, and publishing strategy decisions."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Quy mô người chơi và doanh thu cho thấy Việt Nam là một thị trường đáng quan tâm. Tuy nhiên, nhà phát hành cần đánh giá riêng mức độ phù hợp của từng sản phẩm, nhóm người chơi, mô hình kiếm tiền và yêu cầu vận hành trước khi đầu tư.",
+          "en": "Player numbers and revenue demonstrate that Vietnam is a market worth considering. However, publishers need to separately evaluate product-market fit, player segments, monetization models, and operational requirements before investing."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nghiên cứu giúp doanh nghiệp hiểu rõ nhóm người chơi mục tiêu, nhu cầu, động lực chơi, hành vi chi tiêu và những yếu tố ảnh hưởng đến quyết định tiếp tục sử dụng game. Từ đó, nhà phát hành có thêm cơ sở để điều chỉnh sản phẩm và chiến lược marketing.",
+          "en": "Research helps businesses understand their target player segments, needs, motivations, spending behavior, and the factors influencing their decision to continue using a game. This gives publishers a stronger basis for adjusting their products and marketing strategies."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các nhà phát hành có nhu cầu khảo sát thị trường có thể liên hệ ANBU. ANBU hỗ trợ nghiên cứu thị trường, nghiên cứu người chơi, phân tích insight và hành vi cộng đồng, giúp nhà phát hành có thêm cơ sở để đánh giá Vietnam Gaming Market và xây dựng chiến lược phát hành, marketing phù hợp.",
+          "en": "Publishers looking to conduct market research can contact ANBU. ANBU supports market research, player research, insight analysis, and community behavior analysis, helping publishers better evaluate the Vietnam Gaming Market and develop appropriate publishing and marketing strategies."
         }
       },
       {
         "type": "image",
         "src": "/blog-media/1790864295272-6-10.webp",
         "alt": {
-          "vi": "Liên hệ ANBU để nghiên cứu thị trường Game Việt Nam",
+          "vi": "Liên hệ ANBU để nghiên cứu thị trường game Việt Nam",
           "en": "Contact ANBU for Vietnam gaming market research"
         },
         "caption": {
-          "vi": "Cần nghiên cứu thị trường Game? Liên hệ ANBU để nhận insight người chơi và xây dựng chiến lược phù hợp.",
+          "vi": "Cần nghiên cứu thị trường game? Liên hệ ANBU để có insight người chơi và xây dựng chiến lược phù hợp.",
           "en": "Need gaming market research? Contact ANBU to gain player insights and develop a tailored strategy."
         }
       },
       {
         "type": "quote",
         "text": {
-          "vi": "Nếu bạn đang cân nhắc đưa game vào Việt Nam và cần dữ liệu thị trường thực tế để ra quyết định, hãy liên hệ ANBU. Chúng tôi sẽ cùng bạn phân tích insight người chơi và xây dựng chiến lược phù hợp.",
-          "en": "If you're considering bringing a game into Vietnam and need real market data to decide, reach out to ANBU. We'll work with you to analyze player insights and build a tailored strategy."
+          "vi": "Cần nghiên cứu thị trường game? **Liên hệ ANBU** để có insight người chơi và xây dựng chiến lược phù hợp.",
+          "en": "Need to conduct gaming market research? **Contact ANBU** to gain player insights and develop a tailored strategy."
         }
       }
     ]
@@ -371,10 +819,8 @@
       }
     ]
   },
-
   {
     "slug": "gaming-brand-partnership-thailand-chien-luoc-hop-tac-thuong-hieu-trong-thi-truong-game-thai-lan",
-
     "title": {
       "vi": "Gaming Brand Partnership Thailand: Chiến Lược Hợp Tác Thương Hiệu Trong Thị Trường Game Thái Lan",
       "en": "Gaming Brand Partnership Thailand: Brand Partnership Strategies in the Thai Gaming Market"
