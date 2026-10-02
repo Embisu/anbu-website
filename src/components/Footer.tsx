@@ -134,7 +134,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-navy-400">
           <p>© {year} {site.name}, All rights reserved.</p>
           <p className="mt-2">
-            {locale === "vi" ? "Cùng hệ sinh thái: " : "Part of the same ecosystem: "}
+            {locale === "vi" ? "Thuộc hệ sinh thái ANBU: " : "Part of the ANBU ecosystem: "}
             <a
               href="https://otahub.asia/"
               target="_blank"
