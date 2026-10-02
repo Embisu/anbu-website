@@ -15,7 +15,6 @@ import EditorialMedia, { editorialImageForPostData } from "@/components/Editoria
 import { PostCard } from "@/components/cards";
 import ClientCustomPostViewer from "@/components/ClientCustomPostViewer";
 import PostComments from "@/components/PostComments";
-import { fetchSupabasePostBySlug } from "@/lib/supabase";
 import { renderRichText } from "@/lib/renderRichText";
 import ResilientImage from "@/components/ResilientImage";
 
@@ -41,14 +40,8 @@ export async function generateMetadata({
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
-  let post = getPost(params.slug);
+  const post = getPost(params.slug);
   if (!post || isCorruptedPost(post)) {
-    const supaPost = await fetchSupabasePostBySlug(params.slug);
-    if (supaPost && !isCorruptedPost(supaPost)) {
-      post = supaPost;
-    }
-  }
-  if (!post) {
     return buildMetadata({
       locale,
       path: `/blog/${params.slug}`,
@@ -338,14 +331,9 @@ export default async function BlogPostPage({
 }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
-  let post = getPost(params.slug);
+  const post = getPost(params.slug);
   if (!post || isCorruptedPost(post)) {
-    const supaPost = await fetchSupabasePostBySlug(params.slug);
-    if (supaPost && !isCorruptedPost(supaPost)) {
-      post = supaPost;
-    } else if (!post) {
-      return <ClientCustomPostViewer slug={params.slug} locale={locale} dict={dict} />;
-    }
+    return <ClientCustomPostViewer slug={params.slug} locale={locale} dict={dict} />;
   }
 
   // Smart Bilingual Slug Canonical Redirection

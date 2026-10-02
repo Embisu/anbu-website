@@ -11,7 +11,6 @@ import { localePath, formatDate } from "@/lib/utils";
 import Icon from "./Icon";
 import CTASection from "./CTASection";
 import EditorialMedia, { editorialImageForPostData } from "./EditorialMedia";
-import { fetchSupabasePostBySlug } from "@/lib/supabase";
 import ResilientImage from "./ResilientImage";
 import JsonLd from "./JsonLd";
 import { siteUrl, breadcrumbLd, articleLd } from "@/lib/seo";
@@ -65,21 +64,16 @@ export default function ClientCustomPostViewer({
       console.error(e);
     }
 
-    // 2. Query both API and Supabase directly for 100% reliability
-    Promise.allSettled([
-      fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`).then((res) => (res.ok ? res.json() : null)),
-      fetchSupabasePostBySlug(slug),
-    ])
-      .then(([apiRes, supaRes]) => {
-        if (apiRes.status === "fulfilled" && apiRes.value?.ok && apiRes.value?.post) {
-          setPost(apiRes.value.post);
-        } else if (supaRes.status === "fulfilled" && supaRes.value) {
-          setPost(supaRes.value);
-        } else {
-          setPost(null);
-        }
+    // 2. Last resort: the in-memory cache on the edge worker that handled the
+    // most recent save (only reachable if this request happens to land on the
+    // same isolate — not reliable, but free to try).
+    fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => setPost(data?.ok && data?.post ? data.post : null))
+      .catch((err) => {
+        console.error(err);
+        setPost(null);
       })
-      .catch((err) => console.error(err))
       .finally(() => setLoading(false));
   }, [slug]);
 
@@ -101,8 +95,8 @@ export default function ClientCustomPostViewer({
         </h1>
         <p className="mt-2 text-sm text-navy-500">
           {locale === "vi"
-            ? "Bài viết này chưa được xuất bản hoặc đường dẫn không chính xác."
-            : "This post has not been published or the URL is invalid."}
+            ? "Đường dẫn không đúng, hoặc nếu bạn vừa đăng bài này từ trang Admin, Cloudflare có thể đang build lại (thường mất 1-3 phút) — hãy đợi rồi tải lại trang."
+            : "This link is wrong, or if you just published this post from the Admin panel, Cloudflare may still be rebuilding (usually 1-3 minutes) — wait and reload."}
         </p>
         <div className="mt-6 flex justify-center gap-3">
           <Link href={localePath(locale, "/blog")} className="btn-primary">

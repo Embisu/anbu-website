@@ -4,19 +4,12 @@ import { services } from "@/content/services";
 import { projects } from "@/content/projects";
 import { posts, blogCategories } from "@/content/posts";
 import { siteUrl } from "@/lib/seo";
-import { fetchSupabasePosts } from "@/lib/supabase";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPaths = ["", "/services", "/work", "/about", "/blog", "/contact", "/privacy", "/terms"];
   const now = new Date();
 
-  const supaPosts = await fetchSupabasePosts().catch(() => []);
-  const allPosts = [...supaPosts];
-  posts.forEach((p) => {
-    if (!allPosts.some((ap) => ap.slug === p.slug)) {
-      allPosts.push(p);
-    }
-  });
+  const allPosts = posts;
 
   const entries: MetadataRoute.Sitemap = [];
 

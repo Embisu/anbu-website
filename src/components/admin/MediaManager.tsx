@@ -2,7 +2,6 @@
 
 import React, { useState, useRef } from "react";
 import Icon from "@/components/Icon";
-import { supabase } from "@/lib/supabase";
 import { adminFetch } from "@/lib/adminFetch";
 
 // List of all verified images available in public/blog-covers/
@@ -203,18 +202,6 @@ export default function MediaManager({ locale, onSelectImage }: MediaManagerProp
       }
     } catch (e) {}
 
-    // 3. Remove from Supabase Storage if cloud item
-    if (asset.src.includes("blog-media")) {
-      try {
-        const parts = asset.src.split("/blog-media/");
-        const fileName = parts[1]?.split("?")[0];
-        if (fileName) {
-          await supabase.storage.from("blog-media").remove([decodeURIComponent(fileName)]);
-        }
-      } catch (err) {
-        console.error("Storage delete exception:", err);
-      }
-    }
   };
 
   const allTags = ["all", ...Array.from(new Set(mediaList.flatMap((item) => item.tags)))];

@@ -1,14 +1,12 @@
-import { createClient } from "@supabase/supabase-js";
 import type { Post } from "@/content/posts";
 
-export const SUPABASE_URL =
-  process.env.NEXT_PUBLIC_SUPABASE_URL || "https://ulagmhvjozqdikllpqfr.supabase.co";
-export const SUPABASE_ANON_KEY =
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-  "sb_publishable_x3MuOy76k6woOh25u_3ZBg_8F5HBa78";
-
-export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+// The Supabase project this module used to talk to was deleted (DNS for its
+// project URL now returns NXDOMAIN). Posts and comments are no longer backed
+// by Supabase: posts persist via the GitHub-publish flow into
+// src/content/custom_posts.json (see api/admin/posts/github-publish), and
+// comments are disabled until a replacement backend (e.g. D1, like
+// admin-auth) is built. These functions are kept as no-op stubs, matching
+// their original signatures, so existing call sites don't need to change.
 
 export function mapRowToPost(row: any): Post {
   const slug_en = row.slug_en || row.title?.slug_en || undefined;
@@ -32,98 +30,20 @@ export function mapRowToPost(row: any): Post {
   };
 }
 
-export function mapPostToRow(post: Post) {
-  const titleObj: any = {
-    vi: post.title?.vi || "",
-    en: post.title?.en || "",
-  };
-  if (post.slug_en) {
-    titleObj.slug_en = post.slug_en;
-  }
-  return {
-    slug: post.slug,
-    title: titleObj,
-    excerpt: post.excerpt,
-    category: post.category,
-    date: post.date,
-    reading_time: post.readingTime,
-    author: post.author,
-    color: post.color,
-    variant: post.variant,
-    cover: post.cover || null,
-    sources: post.sources || null,
-    body: post.body,
-    updated_at: new Date().toISOString(),
-  };
-}
-
 export async function fetchSupabasePosts(): Promise<Post[]> {
-  try {
-    const { data, error } = await supabase
-      .from("posts")
-      .select("*")
-      .order("created_at", { ascending: false });
-
-    if (error) {
-      console.warn("Supabase fetch posts error:", error.message);
-      return [];
-    }
-    return (data || []).map(mapRowToPost);
-  } catch (e) {
-    console.warn("Supabase fetch exception:", e);
-    return [];
-  }
+  return [];
 }
 
-export async function fetchSupabasePostBySlug(slug: string): Promise<Post | null> {
-  try {
-    let { data, error } = await supabase
-      .from("posts")
-      .select("*")
-      .eq("slug", slug)
-      .maybeSingle();
-
-    if (!data) {
-      // If not found by primary slug, search by title->>slug_en
-      const res = await supabase
-        .from("posts")
-        .select("*")
-        .filter("title->>slug_en", "eq", slug)
-        .maybeSingle();
-      if (res.data) {
-        data = res.data;
-      }
-    }
-
-    if (error || !data) return null;
-    return mapRowToPost(data);
-  } catch (e) {
-    console.warn("Supabase fetch post error:", e);
-    return null;
-  }
+export async function fetchSupabasePostBySlug(_slug: string): Promise<Post | null> {
+  return null;
 }
 
-export async function upsertSupabasePost(post: Post): Promise<{ ok: boolean; error?: string }> {
-  try {
-    const row = mapPostToRow(post);
-    const { error } = await supabase.from("posts").upsert(row, { onConflict: "slug" });
-    if (error) {
-      return { ok: false, error: error.message };
-    }
-    return { ok: true };
-  } catch (e: any) {
-    return { ok: false, error: e.message };
-  }
+export async function upsertSupabasePost(_post: Post): Promise<{ ok: boolean; error?: string }> {
+  return { ok: false, error: "Supabase backend removed; posts persist via GitHub publish only." };
 }
 
-export async function deleteSupabasePost(slug: string): Promise<{ ok: boolean; error?: string }> {
-  try {
-    const { error } = await supabase.from("posts").delete().eq("slug", slug);
-    if (error) return { ok: false, error: error.message };
-    return { ok: true };
-  } catch (e: any) {
-    return { ok: false, error: e.message };
-  }
+export async function deleteSupabasePost(_slug: string): Promise<{ ok: boolean; error?: string }> {
+  return { ok: false, error: "Supabase backend removed; posts persist via GitHub publish only." };
 }
 
 export type Comment = {
@@ -137,88 +57,28 @@ export type Comment = {
 };
 
 export async function fetchComments(
-  postSlug?: string,
-  status?: "all" | "pending" | "approved" | "spam"
+  _postSlug?: string,
+  _status?: "all" | "pending" | "approved" | "spam"
 ): Promise<Comment[]> {
-  try {
-    let query = supabase
-      .from("comments")
-      .select("*")
-      .order("created_at", { ascending: false });
-
-    if (postSlug) {
-      query = query.eq("post_slug", postSlug);
-    }
-    if (status && status !== "all") {
-      query = query.eq("status", status);
-    }
-
-    const { data, error } = await query;
-    if (error) {
-      console.warn("Supabase fetch comments error:", error.message);
-      return [];
-    }
-    return (data || []) as Comment[];
-  } catch (e) {
-    console.warn("Supabase fetch comments exception:", e);
-    return [];
-  }
+  return [];
 }
 
-export async function submitComment(comment: {
+export async function submitComment(_comment: {
   post_slug: string;
   author_name: string;
   author_email?: string;
   content: string;
 }): Promise<{ ok: boolean; comment?: Comment; error?: string }> {
-  try {
-    const newComment = {
-      post_slug: comment.post_slug,
-      author_name: comment.author_name.trim(),
-      author_email: (comment.author_email || "").trim(),
-      content: comment.content.trim(),
-      status: "pending",
-      created_at: new Date().toISOString(),
-    };
-
-    const { data, error } = await supabase
-      .from("comments")
-      .insert(newComment)
-      .select()
-      .single();
-
-    if (error) {
-      return { ok: false, error: error.message };
-    }
-    return { ok: true, comment: data as Comment };
-  } catch (e: any) {
-    return { ok: false, error: e.message };
-  }
+  return { ok: false, error: "Comments are temporarily disabled." };
 }
 
 export async function updateCommentStatus(
-  id: number | string,
-  status: "approved" | "pending" | "spam"
+  _id: number | string,
+  _status: "approved" | "pending" | "spam"
 ): Promise<{ ok: boolean; error?: string }> {
-  try {
-    const { error } = await supabase
-      .from("comments")
-      .update({ status })
-      .eq("id", id);
-
-    if (error) return { ok: false, error: error.message };
-    return { ok: true };
-  } catch (e: any) {
-    return { ok: false, error: e.message };
-  }
+  return { ok: false, error: "Comments are temporarily disabled." };
 }
 
-export async function deleteComment(id: number | string): Promise<{ ok: boolean; error?: string }> {
-  try {
-    const { error } = await supabase.from("comments").delete().eq("id", id);
-    if (error) return { ok: false, error: error.message };
-    return { ok: true };
-  } catch (e: any) {
-    return { ok: false, error: e.message };
-  }
+export async function deleteComment(_id: number | string): Promise<{ ok: boolean; error?: string }> {
+  return { ok: false, error: "Comments are temporarily disabled." };
 }

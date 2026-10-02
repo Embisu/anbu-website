@@ -15,7 +15,6 @@ import UsersManager from "@/components/admin/UsersManager";
 import RankMathSiteAudit from "@/components/admin/RankMathSiteAudit";
 import SiteSettingsManager from "@/components/admin/SiteSettingsManager";
 import { calculatePostSeoScore } from "@/lib/seo-score";
-import { deleteSupabasePost } from "@/lib/supabase";
 import { adminFetch } from "@/lib/adminFetch";
 
 export default function AdminDashboardPage({ params }: { params: { locale: string } }) {
@@ -248,7 +247,6 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
     }
     try {
       await adminFetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" });
-      await deleteSupabasePost(slug);
     } catch (err) {
       console.error("Delete post error:", err);
     }

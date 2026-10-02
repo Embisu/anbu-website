@@ -1,17 +1,14 @@
 import { NextResponse } from "next/server";
 import { posts as defaultPosts, type Post } from "@/content/posts";
-import {
-  fetchSupabasePosts,
-  fetchSupabasePostBySlug,
-  upsertSupabasePost,
-  deleteSupabasePost,
-} from "@/lib/supabase";
 import { submitToIndexNow } from "@/lib/indexnow";
 import { requireAdminSession } from "@/lib/admin-auth";
 
 export const runtime = "edge";
 
-// In-memory fallback cache for edge runtime
+// Best-effort cache for the edge worker isolate that handled the most recent
+// save, so a post can preview instantly before the GitHub-publish commit
+// finishes rebuilding. NOT reliable across requests/regions — the durable
+// source of truth is src/content/custom_posts.json via github-publish.
 let inMemoryCustomPosts: Post[] = [];
 
 export async function GET(request: Request) {
@@ -20,15 +17,8 @@ export async function GET(request: Request) {
     const slug = searchParams.get("slug");
 
     if (slug) {
-      // 1. Try Supabase
-      const supaPost = await fetchSupabasePostBySlug(slug);
-      if (supaPost) {
-        return NextResponse.json({ ok: true, post: supaPost, source: "supabase" });
-      }
-
-      // 2. Try static / in-memory
       const all = [...inMemoryCustomPosts, ...defaultPosts];
-      const match = all.find((p) => p.slug === slug);
+      const match = all.find((p) => p.slug === slug || p.slug_en === slug);
       if (match) {
         return NextResponse.json({ ok: true, post: match, source: "static" });
       }
@@ -36,10 +26,7 @@ export async function GET(request: Request) {
     }
 
     // List all
-    const supaPosts = await fetchSupabasePosts();
-    const activeCustom = supaPosts.length > 0 ? supaPosts : inMemoryCustomPosts;
-
-    const merged = [...activeCustom];
+    const merged = [...inMemoryCustomPosts];
     defaultPosts.forEach((dp) => {
       if (!merged.some((m) => m.slug === dp.slug)) {
         merged.push(dp);
@@ -48,9 +35,9 @@ export async function GET(request: Request) {
 
     return NextResponse.json({
       ok: true,
-      posts: activeCustom,
+      posts: inMemoryCustomPosts,
       allPosts: merged,
-      source: supaPosts.length > 0 ? "supabase" : "static",
+      source: "static",
     });
   } catch (err: any) {
     return NextResponse.json({ ok: false, error: err.message }, { status: 500 });
@@ -66,10 +53,6 @@ export async function POST(request: Request) {
     const { post, posts: bulkPosts } = body as { post?: Post; posts?: Post[] };
 
     if (post) {
-      // Upsert to Supabase
-      const supaRes = await upsertSupabasePost(post);
-
-      // Also keep in-memory
       const idx = inMemoryCustomPosts.findIndex((p) => p.slug === post.slug);
       if (idx >= 0) {
         inMemoryCustomPosts[idx] = post;
@@ -86,16 +69,11 @@ export async function POST(request: Request) {
       return NextResponse.json({
         ok: true,
         post,
-        supabaseSynced: supaRes.ok,
-        supabaseError: supaRes.error,
         indexNowPinged: true,
       });
     }
 
     if (Array.isArray(bulkPosts)) {
-      for (const p of bulkPosts) {
-        await upsertSupabasePost(p);
-      }
       inMemoryCustomPosts = bulkPosts;
       return NextResponse.json({ ok: true, count: bulkPosts.length });
     }
@@ -133,7 +111,6 @@ export async function DELETE(request: Request) {
     }
 
     for (const s of slugsToDelete) {
-      await deleteSupabasePost(s);
       inMemoryCustomPosts = inMemoryCustomPosts.filter((p) => p.slug !== s);
     }
 

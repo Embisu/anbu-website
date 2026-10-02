@@ -9,7 +9,6 @@ import { clients } from "@/content/clients";
 import { posts } from "@/content/posts";
 import { localePath } from "@/lib/utils";
 import { buildMetadata, faqLd } from "@/lib/seo";
-import { fetchSupabasePosts } from "@/lib/supabase";
 import JsonLd from "@/components/JsonLd";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
@@ -55,13 +54,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
     { value: t(site.stats.markets, locale), label: dict.hero.stat4 },
   ];
 
-  const supaPosts = await fetchSupabasePosts().catch(() => []);
-  const allHomePosts = [...supaPosts];
-  posts.forEach((p) => {
-    if (!allHomePosts.some((ap) => ap.slug === p.slug)) {
-      allHomePosts.push(p);
-    }
-  });
+  const allHomePosts = posts;
 
   return (
     <>

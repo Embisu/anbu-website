@@ -5,7 +5,6 @@ import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
 import MediaManager from "@/components/admin/MediaManager";
 import RankMathSEO from "@/components/admin/RankMathSEO";
-import { supabase } from "@/lib/supabase";
 import { renderRichText } from "@/lib/renderRichText";
 import { translateWithGlossary, generateEnglishSlug } from "@/lib/seoGlossary";
 import { adminFetch } from "@/lib/adminFetch";

@@ -7,7 +7,6 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { PostCard } from "@/components/cards";
 import Reveal from "@/components/Reveal";
-import { fetchSupabasePosts } from "@/lib/supabase";
 
 export default function ClientBlogList({
   initialPosts,
@@ -51,46 +50,33 @@ export default function ClientBlogList({
     };
 
     const syncBlogList = () => {
+      if (!isMounted) return;
       const deletedSlugs = getDeletedSlugs();
 
-      // 1. Instant check & clean localStorage
+      // Merge posts saved locally by the admin on this browser (not yet
+      // picked up by the static build) with the server-rendered initialPosts,
+      // honoring deletions and filtering out corrupted entries.
+      let custom: Post[] = [];
       try {
         const saved = localStorage.getItem("anbu_custom_posts");
         if (saved) {
-          const custom: Post[] = JSON.parse(saved);
-          if (Array.isArray(custom)) {
-            const cleaned = custom.filter((p) => !isCorrupted(p) && !deletedSlugs.includes(p.slug));
-            if (cleaned.length !== custom.length) {
-              localStorage.setItem("anbu_custom_posts", JSON.stringify(cleaned));
-            }
-            if (cleaned.length > 0) {
-              const merged = [...cleaned];
-              initialPosts.forEach((ip) => {
-                if (!merged.some((mp) => mp.slug === ip.slug) && !deletedSlugs.includes(ip.slug)) {
-                  merged.push(ip);
-                }
-              });
-              setPosts(filterPosts(merged));
+          const parsed: Post[] = JSON.parse(saved);
+          if (Array.isArray(parsed)) {
+            custom = parsed.filter((p) => !isCorrupted(p) && !deletedSlugs.includes(p.slug));
+            if (custom.length !== parsed.length) {
+              localStorage.setItem("anbu_custom_posts", JSON.stringify(custom));
             }
           }
         }
       } catch (e) {}
 
-      // 2. Fetch from Supabase for all visitors globally
-      fetchSupabasePosts()
-        .then((supaPosts) => {
-          if (!isMounted) return;
-          const currentDeleted = getDeletedSlugs();
-          const activeSupa = (supaPosts || []).filter((p) => !isCorrupted(p) && !currentDeleted.includes(p.slug));
-          const merged = [...activeSupa];
-          initialPosts.forEach((ip) => {
-            if (!merged.some((mp) => mp.slug === ip.slug) && !currentDeleted.includes(ip.slug) && !isCorrupted(ip)) {
-              merged.push(ip);
-            }
-          });
-          setPosts(filterPosts(merged));
-        })
-        .catch(() => {});
+      const merged = [...custom];
+      initialPosts.forEach((ip) => {
+        if (!merged.some((mp) => mp.slug === ip.slug) && !deletedSlugs.includes(ip.slug) && !isCorrupted(ip)) {
+          merged.push(ip);
+        }
+      });
+      setPosts(filterPosts(merged));
     };
 
     syncBlogList();

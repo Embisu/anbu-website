@@ -22,7 +22,6 @@ export async function generateMetadata({ params }: { params: { locale: string; c
 
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbLd } from "@/lib/seo";
-import { fetchSupabasePosts } from "@/lib/supabase";
 import type { Post } from "@/content/posts";
 
 import ClientBlogList from "@/components/ClientBlogList";
@@ -39,13 +38,7 @@ export default async function BlogCategoryPage({ params }: { params: { locale: s
     return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
   };
 
-  const supaPosts = await fetchSupabasePosts().catch(() => []);
-  const allMergedPosts: Post[] = [...supaPosts.filter((p) => !isCorrupted(p))];
-  posts.forEach((p) => {
-    if (!allMergedPosts.some((ap) => ap.slug === p.slug) && !isCorrupted(p)) {
-      allMergedPosts.push(p);
-    }
-  });
+  const allMergedPosts: Post[] = posts.filter((p) => !isCorrupted(p));
 
   const categoryPosts = allMergedPosts
     .filter((post) => categoryForPost(post) === params.category)

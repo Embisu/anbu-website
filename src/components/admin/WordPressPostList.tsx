@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import type { Post } from "@/content/posts";
 import { blogCategories } from "@/content/posts";
 import { calculatePostSeoScore } from "@/lib/seo-score";
-import { deleteSupabasePost } from "@/lib/supabase";
 import { adminFetch } from "@/lib/adminFetch";
 
 type WordPressPostListProps = {
@@ -193,9 +192,8 @@ export default function WordPressPostList({
       localStorage.setItem("anbu_trashed_posts", JSON.stringify(nextTrashed));
     } catch (e) {}
 
-    // Purge from live store & Supabase so it leaves public site immediately
+    // Purge from live store so it leaves public site immediately
     purgeSlugStorage(slug);
-    deleteSupabasePost(slug).catch(console.error);
     adminFetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
 
     if (onDeletePost) {
@@ -224,7 +222,7 @@ export default function WordPressPostList({
       }
     } catch (e) {}
 
-    // Re-upsert to Supabase
+    // Re-upsert to in-memory cache
     adminFetch("/api/admin/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -251,8 +249,7 @@ export default function WordPressPostList({
 
     purgeSlugStorage(slug);
 
-    // Sync deletion to Supabase and API
-    await deleteSupabasePost(slug).catch(console.error);
+    // Sync deletion to API
     await adminFetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" }).catch(console.error);
 
     if (onDeletePost) {
@@ -351,7 +348,6 @@ export default function WordPressPostList({
 
       for (const slug of slugsToDelete) {
         purgeSlugStorage(slug);
-        deleteSupabasePost(slug).catch(console.error);
         if (onDeletePost) {
           onDeletePost(slug);
         }
