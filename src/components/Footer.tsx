@@ -133,6 +133,21 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-navy-400">
           <p>© {year} {site.name}, All rights reserved.</p>
+          <p className="mt-2">
+            {locale === "vi" ? "Cùng hệ sinh thái: " : "Part of the same ecosystem: "}
+            <a
+              href="https://otahub.asia/"
+              target="_blank"
+              rel="noopener"
+              title={locale === "vi" ? "OtaHub - tin tức, đánh giá game, anime, manga" : "OtaHub - game, anime and manga news and reviews"}
+              className="font-semibold text-navy-200 underline decoration-navy-700 underline-offset-4 transition-colors hover:text-orange-400 hover:decoration-orange-400"
+            >
+              OtaHub
+            </a>
+            <span className="text-navy-500">
+              {locale === "vi" ? " · tin tức game, anime, manga" : " · game, anime & manga news"}
+            </span>
+          </p>
         </div>
       </div>
     </footer>
