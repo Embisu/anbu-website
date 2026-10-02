@@ -1,5 +1,193 @@
 [
   {
+    "slug": "vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh",
+    "slug_en": "vietnam-gaming-market-overview-opportunities-publishers",
+    "title": {
+      "vi": "Thị trường Game Việt Nam: Toàn cảnh và Cơ hội cho Nhà phát hành Quốc tế (2026)",
+      "en": "Vietnam Gaming Market: Overview and Opportunities for International Publishers (2026)"
+    },
+    "excerpt": {
+      "vi": "Trước khi quyết định đổ ngân sách vào Việt Nam, nhà phát hành quốc tế cần hiểu đúng quy mô thị trường, các xu hướng đang định hình ngành và những khoảng trống cơ hội còn bỏ ngỏ. Toàn cảnh thị trường game Việt Nam, kèm khung tiếp cận thực chiến từ dữ liệu đến pháp lý.",
+      "en": "Before committing budget to Vietnam, international publishers need an accurate read on market size, the trends reshaping the industry, and the whitespace opportunities still open. A full market overview paired with a practical approach framework, from data to legal readiness."
+    },
+    "category": {
+      "vi": "Thị trường Game",
+      "en": "Gaming Market"
+    },
+    "date": "2026-10-01",
+    "readingTime": 6,
+    "cover": "/blog-media/1790864122394-1-17.jpg",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      { "label": { "vi": "Bộ Thông tin và Truyền thông: Nghị định 147/2024/NĐ-CP", "en": "Ministry of Information and Communications: Decree 147/2024/ND-CP" }, "href": "https://mic.gov.vn/nghi-dinh-147-2024-nd-cp-quan-ly-chat-che-dich-vu-tro-choi-dien-tu-tren-mang-va-thong-tin-tren-internet-197241227124622733.htm" },
+      { "label": { "vi": "Google Play: Thông tin thị trường Đông Nam Á", "en": "Google Play: Southeast Asia Market Insights" }, "href": "https://support.google.com/googleplay/android-developer/answer/6223646" }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việt Nam liên tục được nhắc đến như một trong những thị trường game di động tăng trưởng nhanh nhất Đông Nam Á, nhưng với nhà phát hành quốc tế, câu hỏi thực sự không phải là 'thị trường có lớn không' mà là 'cơ hội cụ thể nằm ở đâu, và cần chuẩn bị gì trước khi vào'. Dưới đây là toàn cảnh thị trường, các xu hướng đang định hình ngành, và khung tiếp cận thực chiến ANBU áp dụng khi đồng hành cùng các studio quốc tế.",
+          "en": "Vietnam is consistently cited as one of Southeast Asia's fastest-growing mobile gaming markets, but for international publishers the real question isn't whether the market is big, it's where the concrete opportunity sits and what needs to be in place before entering. Here is a market overview, the trends reshaping the industry, and the practical approach framework ANBU uses when supporting international studios."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1790864122394-1-17.jpg",
+        "alt": {
+          "vi": "Toàn cảnh thị trường Game Việt Nam và cơ hội cho nhà phát hành quốc tế",
+          "en": "Vietnam gaming market overview and opportunities for international publishers"
+        },
+        "caption": {
+          "vi": "Toàn cảnh thị trường Game Việt Nam: quy mô, xu hướng và cơ hội cho nhà phát hành quốc tế.",
+          "en": "Vietnam gaming market at a glance: scale, trends, and opportunities for international publishers."
+        }
+      },
+      { "type": "h2", "text": { "vi": "1. Thị trường Game Việt Nam đang phát triển ra sao?", "en": "1. How Is the Vietnam Gaming Market Developing?" } },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Game di động là trung tâm của thị trường Việt Nam, với dân số trẻ, tỷ lệ sử dụng smartphone cao và thói quen chi tiêu cho giải trí số ngày càng rõ nét. Việt Nam nhiều năm liền nằm trong nhóm thị trường mobile gaming có lượt tải và mức độ tương tác hàng đầu Đông Nam Á, với hệ sinh thái nhà phát hành nội địa đủ trưởng thành để vận hành các tựa game quy mô lớn dài hạn, chứ không chỉ các sản phẩm casual ngắn hạn.",
+          "en": "Mobile gaming sits at the center of Vietnam's market, driven by a young population, high smartphone penetration, and growing willingness to spend on digital entertainment. For several years running, Vietnam has ranked among Southeast Asia's top mobile gaming markets by downloads and engagement, backed by a domestic publisher ecosystem mature enough to operate large-scale, long-lived titles rather than short-lived casual releases."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1790864167322-2-17.webp",
+        "alt": {
+          "vi": "Thị trường Game Việt Nam đang phát triển ra sao",
+          "en": "How the Vietnam gaming market is developing"
+        },
+        "caption": {
+          "vi": "Dân số trẻ, hạ tầng thanh toán cải thiện và hệ sinh thái nhà phát hành trưởng thành là ba trụ cột tăng trưởng.",
+          "en": "A young population, improving payment infrastructure, and a maturing publisher ecosystem form the three pillars of growth."
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          { "vi": "Dân số trẻ và tỷ lệ sử dụng smartphone cao: Phần lớn dân số thuộc nhóm tuổi tiêu dùng nội dung số chủ động, quen thuộc với thanh toán di động và sẵn sàng chi tiêu cho vật phẩm ảo.", "en": "Young demographics and high smartphone penetration: A large share of the population falls into the most digitally active age bracket, comfortable with mobile payments and willing to spend on virtual goods." },
+          { "vi": "Hệ sinh thái nhà phát hành nội địa trưởng thành: Từ các tập đoàn công nghệ lớn đến các studio chuyên biệt, thị trường có đủ năng lực vận hành game dài hạn, không chỉ phát hành rồi bỏ ngỏ.", "en": "A maturing domestic publisher ecosystem: From large technology groups to specialized studios, the market has the operational depth to run titles long-term rather than publish-and-abandon." },
+          { "vi": "Hạ tầng thanh toán và phân phối số liên tục cải thiện: Ví điện tử, QR code và các kênh thanh toán nội địa giúp giảm ma sát nạp tiền, điều từng là rào cản lớn với game quốc tế.", "en": "Steadily improving payment and distribution infrastructure: E-wallets, QR codes, and local payment rails reduce the checkout friction that once held back international titles." }
+        ]
+      },
+      { "type": "h2", "text": { "vi": "2. Những xu hướng đang định hình thị trường", "en": "2. Trends Shaping the Vietnam Gaming Market" } },
+      {
+        "type": "image",
+        "src": "/blog-media/1790864210502-3-16.webp",
+        "alt": {
+          "vi": "Những xu hướng đang định hình thị trường Game Việt Nam",
+          "en": "Trends shaping the Vietnam gaming market"
+        },
+        "caption": {
+          "vi": "Game thủ Việt đang chuyển dịch về hình thái tiêu dùng, chứ không hề thu hẹp quy mô.",
+          "en": "Vietnamese gamers are shifting in how they consume, not shrinking in how much they play."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game Việt Nam đang chuyển dịch rõ rệt về hình thái tiêu dùng, chứ không hề thu hẹp quy mô. Ba xu hướng sau đang định hình lại cách người chơi lựa chọn và gắn bó với sản phẩm:",
+          "en": "Vietnam's gaming market is visibly shifting in shape, not shrinking in size. Three trends stand out to anyone tracking the local scene:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          { "vi": "Game thủ chuyển dịch sang trải nghiệm có chiều sâu: Thể loại nhập vai, chiến thuật và gacha có cốt truyện đầu tư đang thu hút sự gắn bó dài hạn hơn so với các sản phẩm hypercasual đơn thuần.", "en": "Players are migrating toward deeper experiences: RPG, strategy, and story-driven gacha titles are earning longer-term loyalty than pure hypercasual products." },
+          { "vi": "Nhà sáng tạo nội dung trở thành kênh khám phá chính: TikTok, YouTube và livestream định hình quyết định tải game nhiều hơn quảng cáo hiển thị truyền thống.", "en": "Creators have become the primary discovery channel: TikTok, YouTube, and livestreams now shape install decisions more than traditional display advertising." },
+          { "vi": "Esports và cộng đồng cạnh tranh tiếp tục mở rộng: Các tựa game có yếu tố PvP và giải đấu vẫn duy trì sức hút bền vững, kéo theo nhu cầu vận hành cộng đồng chuyên nghiệp hơn.", "en": "Esports and competitive communities keep expanding: PvP-driven titles retain durable appeal, raising the bar for professional community operations." }
+        ]
+      },
+      { "type": "h2", "text": { "vi": "3. Cơ hội cho Nhà phát hành Quốc tế", "en": "3. Opportunities for International Publishers" } },
+      {
+        "type": "image",
+        "src": "/blog-media/1790864255710-4-18.webp",
+        "alt": {
+          "vi": "Cơ hội cho nhà phát hành trong thị trường Game Việt Nam",
+          "en": "Opportunities for publishers in the Vietnam gaming market"
+        },
+        "caption": {
+          "vi": "Ba mảng mở ra khoảng trống cơ hội rõ rệt nhất: Game Mobile, Dữ liệu thị trường và Hệ sinh thái Gaming.",
+          "en": "Three areas offer the clearest whitespace: mobile games, market data, and the gaming ecosystem."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ba mảng sau đang mở ra khoảng trống cơ hội rõ rệt nhất cho các nhà phát hành quốc tế muốn bước vào thị trường này:",
+          "en": "Three areas currently offer the clearest whitespace for international publishers entering this market:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          { "vi": "Game Mobile: Nhiều thể loại ngách (mid-core chiến thuật, mô phỏng, game hướng đến người chơi nữ) vẫn chưa có đối thủ nội địa chiếm lĩnh rõ ràng, tạo khoảng trống cho sản phẩm quốc tế chất lượng cao.", "en": "Mobile Games: Several niche genres (mid-core strategy, simulation, female-focused titles) still lack a dominant local incumbent, leaving room for high-quality international products." },
+          { "vi": "Dữ liệu thị trường (Market Data): Nhà phát hành nắm được dữ liệu hành vi người chơi bản địa thực tế, thay vì áp dụng giả định từ thị trường khác, có lợi thế quyết định trong việc bản địa hóa và định giá.", "en": "Market Data: Publishers who ground decisions in real local player behavior, rather than assumptions carried over from other markets, gain a decisive edge in localization and pricing." },
+          { "vi": "Hệ sinh thái Gaming (Gaming Ecosystem): Hợp tác với mạng lưới creator, giải đấu esports và cộng đồng game thủ hiện có giúp rút ngắn đáng kể thời gian xây dựng lòng tin với người chơi mới.", "en": "Gaming Ecosystem: Partnering with existing creator networks, esports tournaments, and player communities meaningfully shortens the time needed to earn new players' trust." }
+        ]
+      },
+      { "type": "h2", "text": { "vi": "4. Làm thế nào để tiếp cận thị trường hiệu quả?", "en": "4. How Can Publishers Approach the Market Effectively?" } },
+      {
+        "type": "image",
+        "src": "/blog-media/1790864274740-5-17.webp",
+        "alt": {
+          "vi": "Khung 5 bước tiếp cận thị trường Game Việt Nam hiệu quả",
+          "en": "A 5-step framework to approach the Vietnam gaming market effectively"
+        },
+        "caption": {
+          "vi": "Từ dữ liệu, chiến lược, pháp lý, tiền ra mắt đến vận hành: 5 trụ cột ANBU áp dụng cùng studio quốc tế.",
+          "en": "From data and strategy to legal, pre-launch, and operations: the 5 pillars ANBU applies alongside international studios."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "ANBU đồng hành cùng các studio quốc tế theo một khung 5 bước, từ nghiên cứu dữ liệu đến vận hành sau ra mắt:",
+          "en": "ANBU guides international studios through a 5-step framework, from data research to post-launch operations:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          { "vi": "Dữ liệu (Data): Nghiên cứu hành vi người chơi, đối thủ cạnh tranh trực tiếp và khoảng trống thể loại trước khi quyết định đầu tư.", "en": "Data: Research player behavior, direct competitors, and genre whitespace before committing investment." },
+          { "vi": "Chiến lược (Strategy): Xác định định vị sản phẩm, mô hình kiếm tiền và lộ trình bản địa hóa phù hợp với đúng tệp người chơi mục tiêu.", "en": "Strategy: Define product positioning, monetization model, and a localization roadmap matched to the right target audience." },
+          { "vi": "Pháp lý (Legal): Hoàn tất phân loại và giấy phép phát hành theo Nghị định 147/2024/NĐ-CP trước khi khóa lịch ra mắt.", "en": "Legal: Complete classification and publishing licensing under Decree 147/2024/ND-CP before locking a launch date." },
+          { "vi": "Tiền ra mắt (Pre-Launch): Chạy soft launch, kiểm thử kỹ thuật và xây dựng cộng đồng ban đầu để xác thực các giả thuyết trước khi mở rộng ngân sách.", "en": "Pre-Launch: Run a soft launch, technical testing, and early community building to validate assumptions before scaling budget." },
+          { "vi": "Vận hành (Operation): Duy trì lịch sự kiện LiveOps, chăm sóc cộng đồng và đo lường liên tục sau ngày mở cửa chính thức.", "en": "Operation: Sustain a LiveOps event calendar, community care, and continuous measurement after official launch." }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game Việt Nam không thưởng cho tốc độ copy sản phẩm có sẵn. Nó thưởng cho những nhà phát hành hiểu đúng người chơi, chuẩn bị kỹ về pháp lý và vận hành, và sẵn sàng gắn bó đường dài thay vì chỉ đến ra mắt rồi rời đi.",
+          "en": "Vietnam's gaming market doesn't reward speed-copying existing products. It rewards publishers who understand players correctly, prepare properly on legal and operational fronts, and commit to the long run instead of launching and leaving."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1790864295272-6-10.webp",
+        "alt": {
+          "vi": "Liên hệ ANBU để nghiên cứu thị trường Game Việt Nam",
+          "en": "Contact ANBU for Vietnam gaming market research"
+        },
+        "caption": {
+          "vi": "Cần nghiên cứu thị trường Game? Liên hệ ANBU để nhận insight người chơi và xây dựng chiến lược phù hợp.",
+          "en": "Need gaming market research? Contact ANBU to gain player insights and develop a tailored strategy."
+        }
+      },
+      {
+        "type": "quote",
+        "text": {
+          "vi": "Nếu bạn đang cân nhắc đưa game vào Việt Nam và cần dữ liệu thị trường thực tế để ra quyết định, hãy liên hệ ANBU. Chúng tôi sẽ cùng bạn phân tích insight người chơi và xây dựng chiến lược phù hợp.",
+          "en": "If you're considering bringing a game into Vietnam and need real market data to decide, reach out to ANBU. We'll work with you to analyze player insights and build a tailored strategy."
+        }
+      }
+    ]
+  },
+  {
     "slug": "game-content-marketing-thailand-chien-luoc-noi-dung-tiep-can-game-thu-thai-lan",
     "slug_en": "game-content-marketing-thailand-engaging-thai-gamers",
     "title": {
