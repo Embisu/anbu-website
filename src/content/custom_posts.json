@@ -1,5 +1,1100 @@
 [
   {
+    "slug": "vi-sao-game-thu-tai-game-nhung-khong-o-lai",
+    "slug_en": "why-do-players-download-games-but-not-stay",
+    "title": {
+      "vi": "Vì sao game thủ tải game nhưng không ở lại?",
+      "en": "Why Do Players Download Games but Not Stay?"
+    },
+    "excerpt": {
+      "vi": "Không phải cứ có nhiều lượt tải là một game đang tăng trưởng tốt. Từ chất lượng người dùng, trải nghiệm những ngày đầu đến gameplay, cộng đồng và LiveOps, nhiều yếu tố có thể quyết định người chơi tiếp tục ở lại hay nhanh chóng rời đi.",
+      "en": "A high number of downloads doesn't necessarily mean a game is growing successfully. From user quality and the initial experience to gameplay, community, and LiveOps, many factors can determine whether players stay or quickly leave."
+    },
+    "category": {
+      "vi": "Vận hành Game",
+      "en": "Game Operations"
+    },
+    "date": "2026-10-08",
+    "readingTime": 9,
+    "cover": "/blog-media/1791433341880-1-24.webp",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-navy-900 to-orange-600",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "SocialPeta & Gamota: Báo cáo Marketing Game Mobile Đông Nam Á 2026",
+          "en": "SocialPeta & Gamota: 2026 Southeast Asia Mobile Game Marketing Report"
+        },
+        "href": "https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report"
+      },
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025",
+          "en": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025"
+        },
+        "href": "https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/"
+      },
+      {
+        "label": {
+          "vi": "Adjust: Vietnam Spotlight Report 2025",
+          "en": "Adjust: Vietnam Spotlight Report 2025"
+        },
+        "href": "https://a.storyblok.com/f/47007/x/f3d6b9e21a/vietnam-spotlight-report-2025.pdf"
+      },
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Game Connect 2026 Recap",
+          "en": "Gamota: Vietnam Game Connect 2026 Recap"
+        },
+        "href": "https://gamota.com/gamota-lab/vietnam-game-connect-2026-recap-key-trends-shaping-the-gaming-industry/"
+      },
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Game Industry Monthly Report, tháng 5/2026",
+          "en": "Gamota: Vietnam Game Industry Monthly Report, May 2026"
+        },
+        "href": "https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Game Retention Vietnam tập trung vào bài toán giữ chân người chơi sau khi tải game. Khi thị trường ngày càng cạnh tranh, lượt tải chỉ là bước đầu; điều quan trọng hơn là khiến người chơi tiếp tục quay lại, tương tác và tạo ra giá trị lâu dài.",
+          "en": "Game Retention Vietnam focuses on the challenge of retaining players after they download a game. As the market becomes increasingly competitive, downloads are just the first step; what matters more is getting players to keep coming back, engaging with the game, and creating long-term value."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791433341880-1-24.webp",
+        "alt": {
+          "vi": "Vì sao game thủ tải game nhưng không ở lại",
+          "en": "Why do players download games but not stay"
+        },
+        "caption": {
+          "vi": "Lượt tải, gameplay, cộng đồng, LiveOps và giá trị dài hạn: những yếu tố quyết định người chơi ở lại hay rời đi.",
+          "en": "Downloads, gameplay, community, LiveOps, and long-term value: the factors that decide whether players stay or leave."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "1. Thị trường game Việt Nam đang chuyển từ lượt tải sang giá trị người chơi",
+          "en": "1. The Vietnam Gaming Market Is Shifting from Downloads to Player Value"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791430782245-2-21.webp",
+        "alt": {
+          "vi": "Thị trường game Việt Nam đang chuyển từ lượt tải sang giá trị người chơi",
+          "en": "The Vietnam gaming market is shifting from downloads to player value"
+        },
+        "caption": {
+          "vi": "Tăng trưởng không còn đơn thuần đến từ việc thu hút thêm người dùng mới, mà từ giá trị người chơi tạo ra.",
+          "en": "Growth no longer comes solely from attracting new users, but from the value players generate."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việt Nam vẫn là một trong những thị trường game mobile lớn tại Đông Nam Á, nhưng cách tăng trưởng đang thay đổi. Nếu trước đây số lượt tải thường được xem là một trong những chỉ số quan trọng để đánh giá hiệu quả phát hành, dữ liệu gần đây cho thấy nhà phát hành cần quan tâm nhiều hơn đến **chất lượng người chơi và giá trị họ tạo ra trong suốt vòng đời game**.",
+          "en": "Vietnam remains one of the largest mobile gaming markets in Southeast Asia, but the nature of its growth is changing. While download numbers were previously considered one of the key metrics for evaluating the success of a game launch, recent data shows that publishers need to focus more on **player quality and the value players generate throughout a game's lifecycle**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [SocialPeta và Gamota trong Báo cáo Xu hướng Marketing Game Mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), trong nửa đầu năm 2026, game mobile tại Việt Nam đạt **76,5 triệu lượt tải**, giảm 9,7% so với cùng kỳ. Tuy nhiên, doanh thu lại tăng **7,5%, lên 177 triệu USD**. Việt Nam chiếm 18,3% tổng lượt tải game mobile của Đông Nam Á nhưng chỉ chiếm 10,6% doanh thu IAP của khu vực.",
+          "en": "According to [SocialPeta and Gamota in the 2026 Southeast Asia Mobile Gaming Marketing Trends Report](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), in the first half of 2026, mobile games in Vietnam reached **76.5 million downloads**, down 9.7% year-over-year. However, revenue increased by **7.5% to 177 million USD**. Vietnam accounted for 18.3% of Southeast Asia's total mobile game downloads but only 10.6% of the region's in-app purchase (IAP) revenue."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sự chênh lệch này cho thấy quy mô lượt tải chưa phản ánh đầy đủ sức khỏe của một sản phẩm. Một game có thể thu hút rất nhiều người dùng mới nhưng vẫn gặp vấn đề nếu phần lớn trong số đó rời đi chỉ sau vài ngày.",
+          "en": "This discrepancy indicates that download volume alone does not fully reflect a product's health. A game may attract a large number of new users but still face issues if the majority of them churn after just a few days."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bức tranh năm 2025 cũng cho thấy quy mô thị trường vẫn rất lớn. Theo [Gamota](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), Việt Nam có khoảng **54 triệu người chơi mobile game** trong năm 2025 và doanh thu ước tính đạt **825 triệu USD**, tăng 9,16% so với năm trước. Báo cáo đồng thời chỉ ra xu hướng thị trường chuyển từ tăng trưởng về số lượng sang tăng trưởng về chất lượng.",
+          "en": "The 2025 picture also shows that the market remains very large. According to [Gamota](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), Vietnam had approximately **54 million mobile gamers in 2025**, with estimated revenue reaching **825 million USD**, a 9.16% increase from the previous year. The report also highlights a shift in market trends from quantity-driven growth to quality-driven growth."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi chi phí để thu hút người chơi ngày càng quan trọng, câu hỏi không còn chỉ là **“Có bao nhiêu người tải game?”** mà là **“Có bao nhiêu người thực sự ở lại?”**",
+          "en": "As the cost of acquiring players becomes increasingly important, the question is no longer just **“How many people download the game?”** but **“How many actually stay?”**"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Điều gì khiến người chơi rời game sau khi tải?",
+          "en": "2. What Causes Players to Leave a Game After Downloading It?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791430955587-3-19.webp",
+        "alt": {
+          "vi": "Điều gì khiến người chơi rời game sau khi tải",
+          "en": "What causes players to leave a game after downloading it"
+        },
+        "caption": {
+          "vi": "Cài đặt game chưa đồng nghĩa với việc người dùng đã trở thành người chơi thực sự.",
+          "en": "Installing a game doesn't mean someone has become an actual player."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việc một người cài game không đồng nghĩa với việc họ đã trở thành người chơi thực sự. Họ có thể bị thu hút bởi một đoạn quảng cáo, lời giới thiệu từ creator hoặc một chương trình ưu đãi, nhưng quyết định tiếp tục chơi chỉ được hình thành sau khi trải nghiệm sản phẩm.",
+          "en": "Just because someone installs a game doesn't mean they've become an actual player. They may be drawn in by an ad, a creator's endorsement, or a promotional offer, but the decision to continue playing is only made after experiencing the product."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dữ liệu từ [Adjust về thị trường ứng dụng Việt Nam](https://a.storyblok.com/f/47007/x/f3d6b9e21a/vietnam-spotlight-report-2025.pdf) cho thấy gaming app tại Việt Nam trong Q1/2025 có **D1 retention 18%, D7 5% và D30 chỉ 1%**. Cùng kỳ, mức trung bình toàn cầu lần lượt là 27%, 13% và 2%. Báo cáo cũng ghi nhận thời lượng mỗi phiên chơi game tại Việt Nam giảm từ 28,32 phút năm 2024 xuống 27,09 phút trong Q1/2025.",
+          "en": "Data from [Adjust on the Vietnamese app market](https://a.storyblok.com/f/47007/x/f3d6b9e21a/vietnam-spotlight-report-2025.pdf) shows that gaming apps in Vietnam in Q1 2025 had a **D1 retention rate of 18%, a D7 rate of 5%, and a D30 rate of just 1%**. During the same period, the global averages were 27%, 13%, and 2%, respectively. The report also notes that the average session duration for gaming in Vietnam decreased from 28.32 minutes in 2024 to 27.09 minutes in Q1 2025."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây không phải benchmark áp dụng cho mọi tựa game, bởi retention còn phụ thuộc vào thể loại, mô hình kiếm tiền, nguồn traffic và đối tượng người chơi. Tuy vậy, dữ liệu cho thấy khá rõ khoảng cách giữa **việc khiến người dùng cài game và khiến họ hình thành thói quen chơi**.",
+          "en": "These figures are not a universal benchmark for all games, as retention rates depend on genre, monetization model, traffic sources, and the player base. However, the data clearly illustrates the gap between **getting users to install a game and getting them to develop a habit of playing it**."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Kỳ vọng trước khi tải không khớp với trải nghiệm thực tế",
+          "en": "Pre-download expectations don't match the actual experience"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một chiến dịch quảng cáo có thể mang về hàng trăm nghìn lượt cài đặt, nhưng nếu thông điệp truyền thông khác xa sản phẩm thực tế, người chơi rất dễ rời đi.",
+          "en": "An advertising campaign may generate hundreds of thousands of downloads, but if the marketing message differs significantly from the actual product, players are likely to leave."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Chẳng hạn, quảng cáo tập trung vào combat tốc độ cao trong khi gameplay thực tế thiên về chiến thuật; trailer giới thiệu hệ thống nhân vật hấp dẫn nhưng người chơi phải mất hàng giờ mới có thể tiếp cận; hoặc hình ảnh quảng cáo được xây dựng quá khác với trải nghiệm trong game.",
+          "en": "For example, an ad might focus on high-speed combat while the actual gameplay is more tactical; a trailer might showcase an engaging character system that players can't access for hours; or promotional images might be too different from the in-game experience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong những trường hợp này, vấn đề không nhất thiết nằm ở bản thân sản phẩm. Người chơi có thể rời đi đơn giản vì **thứ họ nhận được không giống thứ họ nghĩ mình đã tải xuống**.",
+          "en": "In these cases, the problem isn't necessarily with the product itself. Players may leave simply because **what they receive doesn't match what they thought they'd downloaded**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, chất lượng người dùng cần được nhìn cùng với số lượt cài đặt. Một nguồn traffic mang về ít người hơn nhưng đúng với gameplay có thể tạo ra D7, D30 và doanh thu tốt hơn một nguồn mang về lượng install lớn nhưng churn nhanh.",
+          "en": "Therefore, user quality must be considered alongside the number of installs. A traffic source that brings in fewer users but aligns with the gameplay can generate better D7, D30, and revenue than a source that brings in a large number of installs but experiences high churn."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Những ngày đầu tiên chưa tạo được lý do để quay lại",
+          "en": "The first few days don't provide a reason to come back"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau khi cài đặt, người chơi cần nhanh chóng hiểu game có gì thú vị, mình đang làm gì và tiếp theo sẽ nhận được gì.",
+          "en": "After installation, players need to quickly understand what makes the game fun, what they're doing, and what they'll get next."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu onboarding quá dài, tutorial đưa quá nhiều thông tin hoặc người chơi phải mất nhiều thời gian mới được trải nghiệm phần gameplay chính, sự hứng thú ban đầu rất dễ giảm.",
+          "en": "If the onboarding process is too long, the tutorial provides too much information, or players have to wait too long to experience the main gameplay, their initial enthusiasm can easily wane."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây cũng là lý do retention thường được theo dõi theo nhiều mốc. **D1** phản ánh khả năng khiến người chơi quay lại sau trải nghiệm đầu tiên; **D7** cho thấy sản phẩm có bắt đầu hình thành thói quen hay không; còn **D30** phản ánh khả năng duy trì sự quan tâm trong dài hạn.",
+          "en": "This is also why retention is typically tracked at multiple milestones. **D1** reflects the ability to get players to return after their first experience; **D7** shows whether the product is beginning to foster a habit; and **D30** reflects the ability to sustain interest over the long term."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tại [Vietnam Game Connect 2026](https://gamota.com/gamota-lab/vietnam-game-connect-2026-recap-key-trends-shaping-the-gaming-industry/), các chuyên gia trong ngành phân tích hành trình này theo ba giai đoạn: D1 phụ thuộc nhiều vào **Hook**, D7 gắn với **Core Loop**, còn D30 trở đi liên quan nhiều hơn đến progression, strategy, meta và chiều sâu trải nghiệm.",
+          "en": "At [Vietnam Game Connect 2026](https://gamota.com/gamota-lab/vietnam-game-connect-2026-recap-key-trends-shaping-the-gaming-industry/), industry experts analyzed this journey in three phases: D1 depends heavily on the **Hook**, D7 is tied to the **Core Loop**, and D30 and beyond are more closely related to progression, strategy, the meta, and the depth of the experience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều đó cũng giải thích vì sao một game có thể có D1 tương đối tốt nhưng vẫn mất phần lớn người chơi trong những tuần tiếp theo.",
+          "en": "This also explains why a game can have a relatively strong D1 but still lose the majority of its players in the following weeks."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Khi game không còn lý do để quay lại",
+          "en": "When a game no longer offers a reason to return"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngay cả khi trải nghiệm ban đầu ổn, người chơi vẫn có thể rời đi nếu sau vài ngày họ không còn mục tiêu mới.",
+          "en": "Even if the initial experience is good, players may still leave if they don't have new goals after a few days."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một nhân vật mới, mùa giải mới, nhiệm vụ mới, bảng xếp hạng hay sự kiện giới hạn thời gian đều có thể trở thành lý do để quay lại. Nhưng nếu những nội dung này không gắn với trải nghiệm cốt lõi, chúng chỉ tạo ra những đợt đăng nhập ngắn thay vì hình thành thói quen lâu dài.",
+          "en": "A new character, a new season, new quests, leaderboards, or limited-time events can all serve as reasons to return. But if this content isn't tied to the core experience, it only generates short-lived login spikes rather than fostering long-term habits."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Báo cáo [Vietnam Game Industry Monthly Report – May 2026 của Gamota](https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/) cho thấy **lượt tải Midcore giảm nhưng doanh thu Midcore vẫn tăng**. Gamota liên hệ kết quả này với khả năng vận hành LiveOps, cộng đồng người chơi ổn định và các vòng lặp monetization hiệu quả.",
+          "en": "[Gamota's Vietnam Game Industry Monthly Report – May 2026](https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/) shows that while midcore **game downloads have declined, midcore revenue continues to rise**. Gamota attributes this result to effective LiveOps management, a stable player community, and efficient monetization loops."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Như vậy, bài toán giữ chân không chỉ nằm ở việc có thêm nội dung. Quan trọng hơn là **nội dung đó có tạo ra lý do đủ mạnh để người chơi quay lại hay không**.",
+          "en": "Thus, the challenge of player retention isn't just about adding more content. More importantly, it's about whether that **content provides a strong enough reason for players to return**."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Giữ chân game thủ phụ thuộc vào những yếu tố nào?",
+          "en": "3. What Factors Influence Player Retention?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791431620251-4-21.webp",
+        "alt": {
+          "vi": "Những yếu tố ảnh hưởng đến khả năng giữ chân người chơi",
+          "en": "Factors that influence player retention"
+        },
+        "caption": {
+          "vi": "Retention là kết quả của sự kết hợp giữa gameplay, tiến trình, cộng đồng và mức độ phù hợp với người chơi.",
+          "en": "Retention stems from a combination of gameplay, progression, community, and fit with the player."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi nhìn toàn bộ hành trình từ lúc cài đặt đến khi rời game, có thể thấy retention không phải kết quả của một tính năng riêng lẻ. Nó được hình thành từ sự kết hợp giữa gameplay, tiến trình, cộng đồng và mức độ phù hợp của sản phẩm với người chơi.",
+          "en": "When looking at the entire journey from installation to when a player leaves the game, it becomes clear that retention isn't the result of any single feature. It stems from a combination of gameplay, progression, community, and how well the product aligns with the player's needs."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Gameplay phải đủ hấp dẫn để tạo thành thói quen",
+          "en": "Gameplay must be engaging enough to become a habit"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Người chơi có thể đến với game vì quảng cáo, nhưng họ ở lại vì gameplay.",
+          "en": "Players may be drawn to a game by advertising, but they stay because of the gameplay."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một vòng lặp chơi tốt cần mang lại cảm giác muốn thử thêm, tiến bộ hoặc khám phá. Với game casual, đó có thể là cảm giác “chơi thêm một ván nữa”. Với RPG, động lực có thể đến từ nâng cấp nhân vật, mở khóa nội dung hoặc khám phá cốt truyện. Với game cạnh tranh, đó lại là thứ hạng, kỹ năng và cảm giác vượt qua đối thủ.",
+          "en": "A well-designed gameplay loop should create a desire to try more, make progress, or explore. For casual games, this might be the feeling of “just one more round.” For RPGs, motivation may come from leveling up characters, unlocking content, or uncovering the storyline. For competitive games, it's about rankings, skill, and the thrill of beating opponents."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, không có một công thức chung cho mọi sản phẩm. Nhà phát hành cần tìm ra **điểm nào trong core loop khiến người chơi muốn quay lại**, đồng thời xác định thời điểm vòng lặp đó bắt đầu mất sức hút.",
+          "en": "Therefore, there is no one-size-fits-all formula for every product. Publishers need to identify **which aspect of the core loop keeps players coming back**, while also determining when that loop begins to lose its appeal."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Cộng đồng tạo thêm lý do để ở lại",
+          "en": "Community creates more reasons to stay"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với những game có yếu tố xã hội, cộng đồng có thể trở thành một phần của chính trải nghiệm sản phẩm.",
+          "en": "In games with social elements, the community can become an integral part of the product experience itself."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Guild, clan, bạn bè, bảng xếp hạng, giải đấu hoặc các hoạt động nhóm khiến người chơi không chỉ quay lại vì game mà còn vì những mối quan hệ họ đã hình thành bên trong đó.",
+          "en": "Guilds, clans, friends, leaderboards, tournaments, or group activities keep players coming back not only for the game itself but also for the relationships they've formed within it."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây cũng là lý do community marketing không nên chỉ được triển khai vào thời điểm launch. Một cộng đồng hoạt động tốt có thể tạo ra nội dung, cuộc trò chuyện và động lực quay lại ngay cả khi game không có một bản cập nhật lớn.",
+          "en": "This is also why community marketing shouldn't be limited to the launch period. A thriving community can generate content, conversations, and motivation to return even when the game doesn't have a major update."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "LiveOps tiếp tục bổ sung những lý do mới để người chơi trở lại. Tuy nhiên, **nhiều event không đồng nghĩa với retention tốt**. Một event hiệu quả phải phù hợp với progression và hành vi của người chơi; nếu chỉ tạo ra một đợt đăng nhập ngắn rồi kết thúc, tác động sẽ khó duy trì.",
+          "en": "LiveOps continues to provide new reasons for players to return. However, **more events do not necessarily equate to better retention**. An effective event must align with player progression and behavior; if it merely creates a short-lived surge in logins and then ends, the impact will be difficult to sustain."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bản địa hóa phải đi xa hơn việc dịch game",
+          "en": "Localization must go beyond simply translating the game"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một sản phẩm có gameplay tốt vẫn có thể gặp khó khăn nếu người chơi cảm thấy nó không thực sự dành cho thị trường của mình.",
+          "en": "A product with solid gameplay can still struggle if players feel it isn't truly tailored to their market."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa vì vậy không chỉ là dịch giao diện sang tiếng Việt. Cách xây dựng nhân vật, hình ảnh, nội dung, thông điệp và những yếu tố văn hóa quen thuộc đều có thể ảnh hưởng đến cảm nhận của người chơi.",
+          "en": "Localization, therefore, isn't just about translating the interface into Vietnamese. Character design, visuals, content, messaging, and familiar cultural elements can all influence how players perceive the game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Báo cáo tháng 5/2026 của Gamota ghi nhận các sản phẩm có **cultural fit, football affinity hoặc legacy gameplay memory** có khả năng tạo traction tốt hơn tại Việt Nam.",
+          "en": "Gamota's May 2026 report noted that products with **cultural fit, a connection to soccer, or nostalgic gameplay memories** are more likely to gain traction in Vietnam."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong [Báo cáo Marketing Game Mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), SocialPeta và Gamota cũng nhấn mạnh vai trò của localization khi thị trường chuyển sang cạnh tranh về chất lượng. Đáng chú ý, tỷ lệ creative hiệu quả ở sáu thị trường khác nhau của Việt Nam chỉ đạt **31% với RPG và 34% với strategy**, cho thấy việc dùng nguyên một creative cho nhiều thị trường không phải lúc nào cũng hiệu quả.",
+          "en": "In [the 2026 Southeast Asia Mobile Game Marketing Report](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), SocialPeta and Gamota also emphasized the role of localization as the market shifts toward competition based on quality. Notably, the rate of effective creatives across six different markets in Vietnam **was only 31% for RPGs and 34% for strategy games**, indicating that using the same creative across multiple markets is not always effective."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với khả năng giữ chân, sự phù hợp này càng quan trọng. Nếu người chơi cảm thấy game được làm cho một thị trường khác rồi chỉ dịch lại để phát hành tại Việt Nam, rất khó để tạo ra cảm giác gắn bó lâu dài.",
+          "en": "Given the importance of player retention, this level of customization is even more critical. If players feel that a game was originally developed for another market and then simply translated for release in Vietnam, it is very difficult to foster a sense of long-term loyalty."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "4. Làm thế nào để cải thiện khả năng giữ chân người chơi?",
+          "en": "4. How Can We Improve Player Retention?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791432829365-5-26.webp",
+        "alt": {
+          "vi": "Cách cải thiện khả năng giữ chân người chơi",
+          "en": "How to improve player retention"
+        },
+        "caption": {
+          "vi": "Gameplay, thói quen, cộng đồng và bản địa hóa là những trụ cột cần được tối ưu cùng nhau.",
+          "en": "Gameplay, habit, community, and localization are pillars that need to be optimized together."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nhìn từ những yếu tố trên, việc tối ưu không nên bắt đầu bằng việc thêm thật nhiều phần thưởng hay event. Trước tiên, nhà phát hành cần xác định **người chơi đang rời đi ở đâu và nguyên nhân nằm ở trải nghiệm nào**.",
+          "en": "Based on the factors above, optimization shouldn't start by simply adding a lot of rewards or events. First, publishers need to identify **where players are churning and which aspects of the experience are causing it**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một quy trình có thể bắt đầu từ việc theo dõi cohort theo D1, D3, D7, D14 và D30, sau đó tìm ra thời điểm số phiên chơi bắt đầu giảm mạnh. Khi đã xác định được điểm rơi, người chơi có thể được phân nhóm theo nguồn acquisition, thiết bị, hành vi, mức độ hoạt động và khả năng chi tiêu.",
+          "en": "One approach could start by tracking cohorts at D1, D3, D7, D14, and D30, then identifying the point at which the number of play sessions begins to drop sharply. Once the drop-off point is identified, players can be segmented by acquisition source, device, behavior, activity level, and spending potential."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Từ đó, đội ngũ sản phẩm có thể quay lại kiểm tra onboarding, core loop, progression, độ khó, hệ thống phần thưởng và lịch LiveOps để tìm nguyên nhân thực sự.",
+          "en": "From there, the product team can revisit the onboarding process, core loop, progression, difficulty, reward system, and LiveOps schedule to identify the root cause."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điểm quan trọng là **không nên nhìn retention tách biệt khỏi acquisition và monetization**.",
+          "en": "It's important **not to view retention in isolation from acquisition and monetization**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu D1 thấp, vấn đề có thể bắt đầu từ chất lượng traffic hoặc creative. Nếu D1 tốt nhưng D7 giảm mạnh, core loop hoặc progression có thể chưa đủ hấp dẫn. Nếu D7 ổn nhưng D30 giảm, game có thể thiếu chiều sâu, nội dung dài hạn hoặc động lực cộng đồng.",
+          "en": "If D1 is low, the problem may stem from traffic quality or creative assets. If D1 is strong but D7 drops sharply, the core loop or progression may not be engaging enough. If D7 is stable but D30 declines, the game may lack depth, long-term content, or community engagement."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Retention và monetization cần được nhìn cùng nhau",
+          "en": "Retention and monetization must be viewed together"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Giữ chân tốt tạo ra nhiều cơ hội hơn để người chơi tiếp xúc với battle pass, vật phẩm, nhân vật hoặc những nội dung có khả năng chuyển đổi. Nhưng điều đó không có nghĩa cứ kéo dài thời gian chơi là doanh thu sẽ tăng.",
+          "en": "Strong retention creates more opportunities for players to engage with battle passes, in-game items, characters, or other content with conversion potential. However, that does not mean that simply extending playtime will increase revenue."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [Gamota Vietnam Mobile Gaming Year-in-Review 2025](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), khoảng **7–10% người chơi game mobile tại Việt Nam có chi tiêu**, trong khi nhóm chi tiêu cao chỉ chiếm khoảng **2–3%**.",
+          "en": "According to [Gamota Vietnam's Mobile Gaming Year-in-Review 2025](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), approximately **7–10% of mobile gamers in Vietnam make in-game purchases**, while the high-spending segment accounts for only about **2–3%**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này cho thấy giá trị không nằm ở việc biến tất cả người chơi thành payer, mà ở việc hiểu từng nhóm và tạo ra trải nghiệm phù hợp với họ.",
+          "en": "This shows that the value lies not in turning every player into a payer, but in understanding each group and creating experiences tailored to them."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một event có thể làm tăng số phiên đăng nhập nhưng không tạo ra nhiều giá trị nếu người chơi chỉ vào nhận phần thưởng rồi rời đi. Ngược lại, một nội dung có quy mô tham gia nhỏ hơn nhưng tạo ra thời gian chơi dài, tương tác tốt và khả năng chi tiêu cao vẫn có thể đáng giá hơn.",
+          "en": "An event may boost the number of login sessions but doesn't generate much value if players simply log in to claim rewards and then leave. Conversely, content with a smaller player base that fosters longer playtime, strong engagement, and a high likelihood of spending can still be more valuable."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, thay vì cố tối ưu doanh thu ngay từ đầu, nhà phát hành nên nhìn theo chuỗi **Core Loop → Retention → Monetization**. Khi trải nghiệm đủ tốt để người chơi muốn ở lại, cơ hội tạo ra giá trị lâu dài cũng lớn hơn.",
+          "en": "Therefore, instead of trying to optimize revenue from the very beginning, publishers should follow the sequence: **Core Loop → Retention → Monetization**. When the experience is good enough that players want to stay, the opportunity to create long-term value is also greater."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game Việt Nam đang bước sang giai đoạn mà **giá trị của người chơi quan trọng không kém số lượng lượt tải**. Dữ liệu H1/2026 cho thấy lượt tải game mobile giảm **9,7%**, nhưng doanh thu vẫn tăng **7,5% lên 177 triệu USD**, cho thấy tăng trưởng không còn đơn thuần đến từ việc thu hút thêm người dùng mới.",
+          "en": "The Vietnamese gaming market is entering a phase **where player value is just as important as the number of downloads**. Data from the first half of 2026 shows that mobile game downloads fell by 9.7%, but revenue still rose **by 7.5% to 177 million USD**, indicating that growth no longer comes solely from attracting new users."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Muốn duy trì người chơi lâu hơn, nhà phát hành cần nhìn toàn bộ hành trình từ **acquisition → onboarding → gameplay → progression → community → LiveOps → monetization**. Mỗi giai đoạn đều có thể trở thành điểm khiến người chơi ở lại hoặc rời đi.",
+          "en": "To retain players for longer, publishers need to consider the entire journey: **acquisition → onboarding → gameplay → progression → community → LiveOps → monetization**. Each stage can be a factor that keeps players engaged or causes them to leave."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một game có thể thu hút hàng triệu lượt tải, nhưng nếu không tạo được lý do để người chơi quay lại thì phần lớn giá trị tiềm năng sẽ mất đi ngay sau những ngày đầu tiên.",
+          "en": "A game may attract millions of downloads, but if it fails to provide a reason for players to return, most of its potential value will be lost shortly after the initial days."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791433160214-6-13.webp",
+        "alt": {
+          "vi": "Liên hệ ANBU để nghiên cứu người chơi và tối ưu khả năng giữ chân",
+          "en": "Contact ANBU for player research and retention optimization"
+        },
+        "caption": {
+          "vi": "Cần nghiên cứu người chơi và tối ưu khả năng giữ chân? Liên hệ ANBU để tìm kiếm insight và xây dựng chiến lược phù hợp.",
+          "en": "Need to research players and optimize retention? Contact ANBU to gain insights and build a tailored strategy."
+        }
+      },
+      {
+        "type": "quote",
+        "text": {
+          "vi": "Cần nghiên cứu người chơi và tối ưu khả năng giữ chân? **Liên hệ ANBU** để tìm kiếm insight và xây dựng chiến lược phù hợp.",
+          "en": "Need to research players and optimize retention? **Contact ANBU** to gain insights and build a tailored strategy."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "esports-tai-viet-nam-dang-mo-ra-co-hoi-gi-cho-thuong-hieu",
+    "slug_en": "what-opportunities-does-esports-in-vietnam-offer-brands",
+    "title": {
+      "vi": "Esports tại Việt Nam đang mở ra cơ hội gì cho thương hiệu?",
+      "en": "What Opportunities Does Esports in Vietnam Offer Brands?"
+    },
+    "excerpt": {
+      "vi": "Esports không chỉ mang lại lượng người xem lớn mà còn tạo ra nhiều điểm chạm giữa thương hiệu và cộng đồng game thủ. Từ giải đấu, tuyển thủ đến creator và nội dung hậu trường, mỗi tài sản đều có thể trở thành một phần của chiến dịch nếu được lựa chọn và khai thác đúng cách.",
+      "en": "Esports not only attracts a large audience but also creates numerous touchpoints between brands and the gaming community. From tournaments and players to creators and behind-the-scenes content, each asset can become part of a campaign if selected and leveraged correctly."
+    },
+    "category": {
+      "vi": "Cộng đồng Game",
+      "en": "Gaming Community"
+    },
+    "date": "2026-10-07",
+    "readingTime": 9,
+    "cover": "/blog-media/1791361817293-web-01-2.webp",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "social",
+    "sources": [
+      {
+        "label": {
+          "vi": "Deloitte: Thị trường esports Đông Nam Á",
+          "en": "Deloitte: The Southeast Asian Esports Market"
+        },
+        "href": "https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html"
+      },
+      {
+        "label": {
+          "vi": "VIRESA: Chiến lược phát triển esports quốc gia 2026–2030",
+          "en": "VIRESA: National Esports Development Strategy 2026–2030"
+        },
+        "href": "https://viresa.org.vn/le-ky-ket-chien-luoc-phat-trien-esports-quoc-gia-va-cong-bo-chuoi-su-kien-giai-dau-the-grand-esports-2026"
+      },
+      {
+        "label": {
+          "vi": "VNG: Công bố kết quả tài chính H1/2026 (VCT Pacific Stage 1)",
+          "en": "VNG: H1 2026 Financial Results (VCT Pacific Stage 1)"
+        },
+        "href": "https://vng.com.vn/news/press-release/vng-fs-h1-2026.html"
+      },
+      {
+        "label": {
+          "vi": "Esports Charts: VCT Pacific 2026 Stage 1",
+          "en": "Esports Charts: VCT Pacific 2026 Stage 1"
+        },
+        "href": "https://escharts.com/news/vct-pacific-2026-stage-1-record-viewership"
+      },
+      {
+        "label": {
+          "vi": "VNG Games: Vietnam GameVerse 2026",
+          "en": "VNG Games: Vietnam GameVerse 2026"
+        },
+        "href": "https://vng.com.vn/news/enterprise/hon-35-000-luot-trai-nghiem-gian-hang-vnggames-tai-vietnam-gameverse-2026.html"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Esports Marketing Agency Vietnam** giúp thương hiệu và nhà phát hành game tiếp cận cộng đồng esports thông qua giải đấu, đội tuyển, tuyển thủ, creator và nội dung gaming. Khi esports Việt Nam ngày càng phát triển, marketing không còn chỉ xoay quanh việc tài trợ cho một giải đấu mà còn cần một chiến lược phù hợp với hành vi và văn hóa của cộng đồng.",
+          "en": "**Esports Marketing Agency Vietnam** helps brands and game publishers reach the esports community through tournaments, teams, players, creators, and gaming content. As Vietnam's esports scene continues to grow, marketing is no longer just about sponsoring a tournament, it requires a strategy tailored to the community's behavior and culture."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791361817293-web-01-2.webp",
+        "alt": {
+          "vi": "Esports tại Việt Nam đang mở ra cơ hội gì cho thương hiệu",
+          "en": "What opportunities does esports in Vietnam offer brands"
+        },
+        "caption": {
+          "vi": "Esports Việt Nam: từ giải đấu, tuyển thủ đến creator, mỗi tài sản đều có thể trở thành một điểm chạm với cộng đồng.",
+          "en": "Esports in Vietnam: from tournaments and players to creators, each asset can become a touchpoint with the community."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "1. Thị trường esports Việt Nam đang mở ra những cơ hội nào?",
+          "en": "1. What Opportunities Is the Vietnam Esports Market Opening Up?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791362215178-web-02-2.webp",
+        "alt": {
+          "vi": "Cơ hội của thị trường esports Việt Nam",
+          "en": "Opportunities in the Vietnam esports market"
+        },
+        "caption": {
+          "vi": "Mức độ nhận biết và theo dõi esports tại Việt Nam thuộc nhóm cao nhất khu vực.",
+          "en": "Esports awareness and viewership in Vietnam rank among the highest in the region."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Esports tại Việt Nam đang dần chuyển từ một hoạt động giải trí của cộng đồng game thủ sang một hệ sinh thái chuyên nghiệp hơn. Cùng với sự phát triển của giải đấu, đội tuyển, tuyển thủ và creator, thương hiệu cũng có nhiều cách hơn để tham gia vào thị trường này thay vì chỉ đặt logo trên sân khấu hoặc livestream.",
+          "en": "Esports in Vietnam is gradually shifting from a form of entertainment for the gaming community to a more professional ecosystem. Along with the growth of tournaments, teams, players, and content creators, brands now have more ways to engage with this market beyond simply placing their logos on stage or in livestreams."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo nghiên cứu của [Deloitte về thị trường esports Đông Nam Á](https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html), Việt Nam là một trong những thị trường nổi bật trong khu vực với **94% mức độ nhận biết về esports và 59% người thường xuyên theo dõi**. Deloitte cũng ghi nhận mức độ quan tâm đến esports tại Việt Nam vượt qua bóng đá trong nhóm khảo sát.",
+          "en": "According to a [Deloitte study on the Southeast Asian esports market](https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html), Vietnam is one of the region's standout markets, with a **94% awareness rate for esports and 59% of people regularly following the scene**. Deloitte also noted that interest in esports in Vietnam surpassed that of soccer among the survey respondents."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đáng chú ý, người xem esports không chỉ tập trung tại các thành phố lớn. Chỉ **17% người xem sống tại các đô thị lớn**, cho thấy cộng đồng này có độ phủ tương đối rộng trên toàn quốc. Với thương hiệu, đây là lợi thế khi triển khai các chiến dịch digital, social media và livestream thay vì phụ thuộc hoàn toàn vào những sự kiện trực tiếp.",
+          "en": "Notably, esports viewers are not concentrated solely in major cities. Only **17% of viewers live in large urban areas**, indicating that this community has relatively broad nationwide reach. For brands, this presents an advantage when rolling out digital, social media, and livestream campaigns rather than relying entirely on in-person events."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Năm 2026, hệ sinh thái esports trong nước tiếp tục được thúc đẩy khi [Cục Thể dục Thể thao Việt Nam và VTC ký kết chiến lược phát triển esports giai đoạn **2026–2030**](https://viresa.org.vn/le-ky-ket-chien-luoc-phat-trien-esports-quoc-gia-va-cong-bo-chuoi-su-kien-giai-dau-the-grand-esports-2026). Định hướng này cho thấy esports đang được nhìn nhận ở quy mô rộng hơn, gắn với kinh tế thể thao và công nghiệp văn hóa.",
+          "en": "In 2026, the domestic esports ecosystem continued to gain momentum when the [Vietnam Sports Department and VTC signed a strategic plan for esports development for the **2026–2030** period](https://viresa.org.vn/le-ky-ket-chien-luoc-phat-trien-esports-quoc-gia-va-cong-bo-chuoi-su-kien-giai-dau-the-grand-esports-2026). This direction indicates that esports is being viewed on a broader scale, linked to the sports economy and the cultural industry."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những thay đổi trên mở ra nhiều cơ hội cho thương hiệu, nhưng đồng thời cũng đặt ra một câu hỏi quan trọng: **nên tham gia vào esports bằng tài sản nào và làm thế nào để sự xuất hiện của thương hiệu thực sự có ý nghĩa với người hâm mộ?**",
+          "en": "These changes open up many opportunities for brands, but they also raise an important question: **which assets should brands use to engage with esports, and how can they ensure their presence truly resonates with fans?**"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Không chỉ là tài trợ: Những cách thương hiệu có thể tham gia esports",
+          "en": "2. More Than Just Sponsorship: Ways Brands Can Engage with Esports"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791342627721-web-03.webp",
+        "alt": {
+          "vi": "Những cách thương hiệu có thể tham gia esports ngoài tài trợ",
+          "en": "Ways brands can get involved in esports beyond sponsorship"
+        },
+        "caption": {
+          "vi": "Đội tuyển, tuyển thủ, creator, giải đấu và tài trợ là các mảnh ghép của một chiến lược esports hoàn chỉnh.",
+          "en": "Teams, athletes, creators, tournaments, and sponsorship are the pieces of a complete esports strategy."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với một thị trường ngày càng chuyên nghiệp, bài toán của thương hiệu không đơn giản là tìm một giải đấu có lượng người xem lớn để tài trợ. Điều quan trọng hơn là xác định cộng đồng mục tiêu, lựa chọn tài sản phù hợp và xây dựng cách xuất hiện tự nhiên trong trải nghiệm của người hâm mộ.",
+          "en": "In an increasingly professional market, the challenge for brands is no longer simply finding a tournament with a large viewership to sponsor. What matters more is identifying the target community, selecting the right assets, and building a natural presence within the fan experience."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Tài trợ và kích hoạt giải đấu",
+          "en": "Tournament sponsorship and activation"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Giải đấu vẫn là một trong những tài sản quan trọng nhất của esports marketing. Tuy nhiên, logo xuất hiện trên sân khấu hay livestream chỉ là điểm bắt đầu.",
+          "en": "Tournaments remain one of the most important assets in esports marketing. However, having a logo appear on stage or during a livestream is just the beginning."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một hoạt động tài trợ hiệu quả cần tạo ra những tương tác thực sự giữa thương hiệu và người xem, chẳng hạn như:",
+          "en": "An effective sponsorship campaign must create genuine interactions between the brand and the audience, such as:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Dự đoán kết quả trận đấu;",
+            "en": "Predicting match outcomes;"
+          },
+          {
+            "vi": "Minigame trong thời gian livestream;",
+            "en": "Minigames during livestreams;"
+          },
+          {
+            "vi": "Nội dung đồng hành cùng giải đấu;",
+            "en": "Content accompanying the tournament;"
+          },
+          {
+            "vi": "Hoạt động trải nghiệm tại địa điểm thi đấu;",
+            "en": "On-site experiential activities at the venue;"
+          },
+          {
+            "vi": "Quà tặng và phần thưởng cho cộng đồng;",
+            "en": "Gifts and rewards for the community;"
+          },
+          {
+            "vi": "Nội dung hậu trường, highlight và những khoảnh khắc đáng nhớ.",
+            "en": "Behind-the-scenes content, highlights, and memorable moments."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Năm 2026, [VCT Pacific Stage 1 được tổ chức tại TP.HCM](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html) đã cho thấy sức hút của một giải đấu esports quy mô khu vực tại Việt Nam. Theo VNG, giải đấu đạt **533.000 người xem đồng thời**.",
+          "en": "In 2026, the [VCT Pacific Stage 1, held in Ho Chi Minh City](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html), demonstrated the appeal of a regional-scale esports tournament in Vietnam. According to VNG, the tournament reached **533,000 concurrent viewers**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong khi đó, [Esports Charts ghi nhận giải đấu đạt **553.883 người xem cao nhất** ở trận chung kết](https://escharts.com/news/vct-pacific-2026-stage-1-record-viewership). Hai nguồn sử dụng cách đo khác nhau, vì vậy, khi đánh giá hiệu quả một chiến dịch, doanh nghiệp cần thống nhất rõ chỉ số, cách đo và nguồn dữ liệu ngay từ đầu.",
+          "en": "Meanwhile, [Esports Charts reported that the tournament reached a **peak of 553,883 viewers** during the finals](https://escharts.com/news/vct-pacific-2026-stage-1-record-viewership). The two sources use different measurement methods; therefore, when evaluating the effectiveness of a campaign, businesses need to clearly define metrics, measurement methods, and data sources from the very beginning."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dù vậy, lượng người xem vẫn chỉ là bước đầu. Giá trị của một chiến dịch nằm ở việc thương hiệu có thể biến sự chú ý đó thành nhận diện, tương tác hoặc hành động cụ thể từ cộng đồng hay không.",
+          "en": "However, viewership is just the first step. The value of a campaign lies in whether the brand can convert that attention into brand awareness, engagement, or specific actions from the community."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đội tuyển, tuyển thủ và creator tạo ra kết nối dài hơn",
+          "en": "Teams, athletes, and creators foster longer-lasting connections"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu giải đấu tạo ra lượng người xem lớn trong một khoảng thời gian nhất định, đội tuyển, tuyển thủ và creator lại giúp thương hiệu duy trì sự hiện diện lâu hơn.",
+          "en": "While a tournament generates a large audience within a specific timeframe, teams, players, and creators help the brand maintain a longer-lasting presence."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Người hâm mộ esports không chỉ quan tâm đến kết quả thi đấu. Họ còn theo dõi hành trình của tuyển thủ, tính cách cá nhân, nội dung đời thường, những khoảnh khắc hậu trường và câu chuyện xoay quanh đội tuyển. Vì vậy, một gương mặt phù hợp có thể giúp thương hiệu tiếp cận cộng đồng theo cách gần gũi hơn nhiều so với một quảng cáo đơn thuần.",
+          "en": "Esports fans aren't just interested in match results. They also follow players' journeys, their personalities, everyday content, behind-the-scenes moments, and stories surrounding the teams. Therefore, the right ambassador can help a brand connect with the community in a much more personal way than a simple advertisement."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việc lựa chọn tuyển thủ hoặc creator vì thế không nên chỉ dựa vào số lượng người theo dõi. Doanh nghiệp cần xem xét thêm:",
+          "en": "Therefore, the selection of players or creators should not be based solely on the number of followers. Businesses should also consider:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Tệp người xem thực tế;",
+            "en": "The actual audience;"
+          },
+          {
+            "vi": "Bộ môn và cộng đồng mà họ đang hoạt động;",
+            "en": "The discipline and community in which they are active;"
+          },
+          {
+            "vi": "Mức độ tương tác;",
+            "en": "The level of engagement;"
+          },
+          {
+            "vi": "Hình ảnh và phong cách cá nhân;",
+            "en": "Personal image and style;"
+          },
+          {
+            "vi": "Mức độ phù hợp với thương hiệu;",
+            "en": "Brand fit;"
+          },
+          {
+            "vi": "Khả năng phát triển nội dung ngoài livestream hoặc thi đấu.",
+            "en": "The ability to create content beyond livestreams or competitions."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Cách tiếp cận này giúp tránh tình trạng “thuê KOL gaming để quảng cáo” nhưng nội dung lại không có mối liên hệ thực sự với cộng đồng.",
+          "en": "This approach helps avoid the situation where a business “hires a gaming KOL for advertising” but the content has no real connection to the community."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Từ đúng khán giả đến đúng thời điểm: Xây dựng chiến dịch như thế nào?",
+          "en": "3. From the Right Audience to the Right Time: How to Build a Campaign?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791342732253-web-06.webp",
+        "alt": {
+          "vi": "Cách xây dựng chiến dịch esports từ đúng khán giả đến đúng thời điểm",
+          "en": "How to build an esports campaign from the right audience to the right time"
+        },
+        "caption": {
+          "vi": "Một chiến dịch esports hiệu quả bắt đầu từ mục tiêu marketing và nhóm khán giả, không bắt đầu từ giải đấu.",
+          "en": "An effective esports campaign starts with marketing objectives and the audience, not with the tournament."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau khi xác định những tài sản có thể khai thác, bước tiếp theo là kết nối chúng thành một chiến lược thống nhất. Một chiến dịch hiệu quả không nên bắt đầu bằng câu hỏi “Nên tài trợ giải đấu nào?”, mà nên bắt đầu từ **mục tiêu marketing và nhóm khán giả cần tiếp cận**.",
+          "en": "After identifying the assets to leverage, the next step is to tie them together into a unified strategy. An effective campaign shouldn't start with the question “Which tournament should we sponsor?”, but rather with the **marketing objectives and the target audience to be reached**."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bắt đầu từ người xem thay vì bắt đầu từ giải đấu",
+          "en": "Start with the audience rather than the tournament"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Cộng đồng esports Việt Nam không phải là một nhóm đồng nhất. Người theo dõi VALORANT có thể có hành vi rất khác với người xem PUBG Mobile, Liên Minh Huyền Thoại hay các bộ môn mobile esports. Ngay trong cùng một tựa game, người xem giải đấu chuyên nghiệp cũng có thể khác với nhóm chủ yếu theo dõi creator.",
+          "en": "The Vietnam esports community is not a homogeneous group. VALORANT viewers may behave very differently from viewers of PUBG Mobile, League of Legends, or other mobile esports titles. Even within the same game, viewers of professional tournaments may differ from those who primarily follow content creators."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Do đó, trước khi lựa chọn tài sản esports, doanh nghiệp nên xác định:",
+          "en": "Therefore, before selecting an esports asset, businesses should determine:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Nhóm người chơi hoặc người xem mục tiêu là ai?",
+            "en": "Who is the target audience of players or viewers?"
+          },
+          {
+            "vi": "Họ theo dõi bộ môn, đội tuyển hay tuyển thủ nào?",
+            "en": "Which titles, teams, or players do they follow?"
+          },
+          {
+            "vi": "Họ thường xem nội dung ở đâu?",
+            "en": "Where do they typically consume content?"
+          },
+          {
+            "vi": "Họ quan tâm đến thi đấu, gameplay hay câu chuyện tuyển thủ?",
+            "en": "Are they interested in competition, gameplay, or player stories?"
+          },
+          {
+            "vi": "Mục tiêu chiến dịch là nhận diện, tương tác, tải game hay chuyển đổi?",
+            "en": "Is the campaign goal brand awareness, engagement, game downloads, or conversions?"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi những câu hỏi này được trả lời rõ ràng, doanh nghiệp sẽ dễ dàng hơn trong việc lựa chọn giải đấu, creator hoặc hình thức kích hoạt phù hợp, thay vì chỉ chạy theo những sự kiện có quy mô lớn.",
+          "en": "Once these questions are clearly answered, businesses will find it easier to select the appropriate tournaments, creators, or activation formats, rather than simply chasing after large-scale events."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Kéo dài chiến dịch trước, trong và sau giải đấu",
+          "en": "Extend the campaign before, during, and after the tournament"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một chiến dịch esports không nhất thiết bắt đầu khi trận đấu đầu tiên diễn ra và kết thúc ngay sau trận chung kết. Một sự kiện có thể trở thành nguồn nội dung kéo dài trong nhiều tuần nếu được lên kế hoạch từ trước.",
+          "en": "An esports campaign doesn't necessarily have to start when the first match begins and end immediately after the finals. An event can become a source of content that lasts for weeks if planned in advance."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Trước giải đấu:** tạo sự quan tâm thông qua teaser, giới thiệu tuyển thủ, nội dung dự đoán, creator collaboration hoặc hoạt động cộng đồng.",
+          "en": "**Before the tournament:** generate buzz through teasers, player profiles, prediction content, creator collaborations, or community activities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Trong giải đấu:** tận dụng livestream, khoảnh khắc thi đấu, highlight, minigame và các hoạt động tương tác để đưa thương hiệu vào trải nghiệm của người xem.",
+          "en": "**During the tournament:** leverage livestreams, in-game moments, highlights, minigames, and interactive activities to integrate the brand into the viewers' experience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Sau giải đấu:** tiếp tục khai thác hậu trường, phỏng vấn, highlight, câu chuyện tuyển thủ và nội dung cộng đồng để kéo dài vòng đời chiến dịch.",
+          "en": "**After the tournament:** continue to leverage behind-the-scenes footage, interviews, highlights, player stories, and community content to extend the campaign's lifespan."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Cách triển khai này đặc biệt phù hợp với digital marketing bởi một sự kiện có thể tạo ra nhiều dạng nội dung cho TikTok, YouTube, Facebook, livestream và các cộng đồng game.",
+          "en": "This approach is particularly well-suited for digital marketing, as a single event can generate diverse content formats for TikTok, YouTube, Facebook, livestreams, and gaming communities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vietnam GameVerse 2026 là một ví dụ cho khả năng kết hợp giữa esports và trải nghiệm cộng đồng. [Theo VNG Games, sự kiện thu hút hơn **35.000 lượt khách trong hai ngày**](https://vng.com.vn/news/enterprise/hon-35-000-luot-trai-nghiem-gian-hang-vnggames-tai-vietnam-gameverse-2026.html), đồng thời lần đầu đưa SEA Esports Nations Cup – giải đấu cấp đội tuyển quốc gia của Đông Nam Á – đến Việt Nam với **87 vận động viên từ 11 quốc gia**.",
+          "en": "Vietnam GameVerse 2026 is an example of the potential synergy between esports and community experiences. [According to VNG Games, the event attracted over **35,000 visitors over two days**](https://vng.com.vn/news/enterprise/hon-35-000-luot-trai-nghiem-gian-hang-vnggames-tai-vietnam-gameverse-2026.html) and marked the first time the SEA Esports Nations Cup, a national-team-level tournament in Southeast Asia, was held in Vietnam, featuring **87 athletes from 11 countries**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này cho thấy esports marketing ngày càng có thể kết hợp giữa **thi đấu, trải nghiệm trực tiếp, nội dung số và hoạt động cộng đồng**, thay vì chỉ dựa vào quảng cáo trong livestream.",
+          "en": "This demonstrates that esports marketing is increasingly capable of **integrating competition, in-person experiences, digital content, and community activities**, rather than relying solely on in-stream advertising."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "4. Agency mang lại giá trị gì cho một chiến dịch esports?",
+          "en": "4. What Value Does an Agency Bring to an Esports Campaign?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791343002317-web-04.webp",
+        "alt": {
+          "vi": "Giá trị của agency trong một chiến dịch esports",
+          "en": "The value an agency brings to an esports campaign"
+        },
+        "caption": {
+          "vi": "Agency esports có thể tham gia từ giai đoạn nghiên cứu đến triển khai và đo lường.",
+          "en": "An esports agency can be involved from research through implementation and measurement."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tự triển khai esports marketing có thể phù hợp với những thương hiệu đã có đội ngũ gaming chuyên biệt. Tuy nhiên, với doanh nghiệp mới bước vào thị trường, thách thức thường nằm ở việc hiểu cộng đồng, lựa chọn đúng tài sản và tìm ra cách xuất hiện mà không làm mất đi trải nghiệm của người hâm mộ.",
+          "en": "Handling esports marketing in-house may be suitable for brands that already have a dedicated gaming team. However, for businesses new to the market, the challenge often lies in understanding the community, selecting the right assets, and finding ways to engage without detracting from the fan experience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một agency chuyên về esports có thể tham gia từ giai đoạn nghiên cứu đến triển khai thực tế, bao gồm:",
+          "en": "An esports-specialized agency can be involved from the research phase through to actual implementation, including:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "**Nghiên cứu người chơi:** Xác định nhóm game thủ, người xem và cộng đồng mục tiêu.",
+            "en": "**Player research:** Identifying target groups of gamers, viewers, and communities."
+          },
+          {
+            "vi": "**Xây dựng chiến lược:** Xác định vai trò của esports trong tổng thể kế hoạch marketing.",
+            "en": "**Strategy development:** Defining the role of esports within the overall marketing plan."
+          },
+          {
+            "vi": "**Kích hoạt giải đấu:** Phát triển ý tưởng tài trợ và hoạt động tương tác.",
+            "en": "**Tournament activation:** Developing sponsorship ideas and interactive activities."
+          },
+          {
+            "vi": "**Hợp tác với đội tuyển, tuyển thủ:** Lựa chọn đối tác phù hợp với mục tiêu thương hiệu.",
+            "en": "**Collaboration with teams and players:** Selecting partners aligned with brand objectives."
+          },
+          {
+            "vi": "**Creator marketing:** Kết nối với gaming creator và phát triển nội dung phù hợp.",
+            "en": "**Creator marketing:** Connecting with gaming creators and developing relevant content."
+          },
+          {
+            "vi": "**Content marketing:** Xây dựng nội dung trước, trong và sau giải đấu.",
+            "en": "**Content marketing:** Creating content before, during, and after tournaments."
+          },
+          {
+            "vi": "**Community marketing:** Tạo hoạt động kết nối và duy trì tương tác với cộng đồng.",
+            "en": "**Community marketing:** Organizing engagement activities and maintaining interaction with the community."
+          },
+          {
+            "vi": "**Đo lường:** Theo dõi lượt xem, tương tác, độ tiếp cận, traffic và chuyển đổi.",
+            "en": "**Measurement:** Tracking views, engagement, reach, traffic, and conversions."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điểm quan trọng là hiệu quả không nên được đánh giá chỉ bằng một con số lượt xem. Doanh nghiệp cần biết **lượng người xem đó đến từ đâu, thuộc nhóm khán giả nào, họ tương tác ra sao và sự quan tâm đó có tạo ra giá trị cho thương hiệu hay không**.",
+          "en": "It's important to note that effectiveness shouldn't be judged solely by the number of views. Businesses need to know **where those viewers come from, which audience segments they belong to, how they engage, and whether that interest creates value for the brand**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Esports Việt Nam đang bước vào giai đoạn chuyên nghiệp hơn với sự phát triển đồng thời của giải đấu, đội tuyển, tuyển thủ, creator và các hoạt động cộng đồng. Định hướng phát triển esports giai đoạn **2026–2030** cũng cho thấy lĩnh vực này ngày càng được nhìn nhận như một phần của kinh tế thể thao và công nghiệp văn hóa.",
+          "en": "Vietnam's esports scene is entering a more professional phase with the simultaneous growth of tournaments, teams, players, content creators, and community activities. The esports development roadmap for **2026–2030** also indicates that this sector is increasingly recognized as part of the sports economy and cultural industry."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong bối cảnh đó, một **Esports Marketing Agency** không chỉ đơn thuần là bên kết nối thương hiệu với một giải đấu. Giá trị lớn hơn nằm ở khả năng hiểu cộng đồng, lựa chọn đúng tài sản, xây dựng nội dung phù hợp và biến sự chú ý của người hâm mộ thành mối quan hệ lâu dài với thương hiệu.",
+          "en": "In this context, an **esports marketing agency** is more than just a bridge connecting brands to a tournament. Its greater value lies in the ability to understand the community, select the right assets, create relevant content, and transform fan engagement into long-term brand relationships."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu doanh nghiệp đang tìm kiếm đối tác triển khai **esports marketing tại Việt Nam**, ANBU có thể hỗ trợ từ nghiên cứu thị trường, xây dựng chiến lược đến phát triển nội dung và kết nối với cộng đồng phù hợp.",
+          "en": "If your business is looking for a partner to implement **esports marketing in Vietnam**, ANBU can assist with everything from market research and strategy development to content creation and connecting with the right community."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791343180897-web-05.webp",
+        "alt": {
+          "vi": "ANBU hỗ trợ esports marketing tại Việt Nam",
+          "en": "ANBU supports esports marketing in Vietnam"
+        },
+        "caption": {
+          "vi": "ANBU hỗ trợ esports marketing tại Việt Nam qua nghiên cứu thị trường, chiến lược, nội dung và kết nối cộng đồng.",
+          "en": "ANBU supports esports marketing in Vietnam through market research, strategy, content, and community connections."
+        }
+      }
+    ]
+  },
+  {
     "slug": "vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh",
     "slug_en": "vietnam-gaming-market-overview-opportunities-publishers",
     "title": {
