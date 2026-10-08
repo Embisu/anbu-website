@@ -42,13 +42,18 @@ export async function generateMetadata({
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const post = getPost(params.slug);
   if (!post || isCorruptedPost(post)) {
-    return buildMetadata({
-      locale,
-      path: `/blog/${params.slug}`,
-      title: "Bài viết Marketing Game | ANBU",
-      description: "Phân tích và chiến lược chuyên sâu về Game Marketing từ ANBU.",
-      type: "article",
-    });
+    // Unknown slugs fall through to the client-side viewer (admin preview from
+    // localStorage) which answers HTTP 200, so keep them out of the index.
+    return {
+      ...buildMetadata({
+        locale,
+        path: `/blog/${params.slug}`,
+        title: "Bài viết Marketing Game",
+        description: "Phân tích và chiến lược chuyên sâu về Game Marketing từ ANBU.",
+        type: "article",
+      }),
+      robots: { index: false, follow: false },
+    };
   }
 
   const viSlug = post.slug;
