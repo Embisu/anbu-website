@@ -16,7 +16,7 @@
     },
     "date": "2026-10-09",
     "readingTime": 8,
-    "cover": "/blog-covers/thailand-game-expo.jpg",
+    "cover": "/blog-media/1791540795559-thai-01.jpg",
     "focal": "center",
     "author": "ANBU Team",
     "color": "from-orange-600 to-navy-900",
@@ -74,10 +74,34 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1791540795559-thai-01.jpg",
+        "alt": {
+          "vi": "Game Audience Research Thailand: hiểu game thủ Thái Lan để tăng hiệu quả marketing",
+          "en": "Game Audience Research Thailand: understanding Thai gamers to boost marketing effectiveness"
+        },
+        "caption": {
+          "vi": "Game Audience Research Thailand: hiểu game thủ Thái Lan để tăng hiệu quả marketing.",
+          "en": "Game Audience Research Thailand: understanding Thai gamers to boost marketing effectiveness."
+        }
+      },
+      {
         "type": "h2",
         "text": {
           "vi": "Thị trường game Thái Lan có gì đáng chú ý?",
           "en": "What's Notable About the Thai Gaming Market?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791540795559-thai-02.jpg",
+        "alt": {
+          "vi": "Thị trường game Thái Lan có gì đáng chú ý: Gen Y và Gen Z",
+          "en": "What's notable about the Thai gaming market: Gen Y and Gen Z"
+        },
+        "caption": {
+          "vi": "Gen Y và Gen Z là hai nhóm người chơi với hành vi và mức chi tiêu khác nhau.",
+          "en": "Gen Y and Gen Z are two player groups with different behaviors and spending levels."
         }
       },
       {
@@ -106,6 +130,18 @@
         "text": {
           "vi": "Chân dung game thủ Thái Lan nên gồm những gì?",
           "en": "What Should a Thai Gamer Profile Include?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791540795559-thai-03.jpg",
+        "alt": {
+          "vi": "Chân dung người chơi cần đi xa hơn câu hỏi người chơi bao nhiêu tuổi",
+          "en": "A player profile should go beyond asking how old the player is"
+        },
+        "caption": {
+          "vi": "Nền tảng, thiết bị, thể loại, động cơ và cấp độ chi tiêu cùng tạo nên chân dung người chơi.",
+          "en": "Platform, device, genre, motivation, and spending level together shape a player profile."
         }
       },
       {
@@ -190,6 +226,18 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1791540795559-thai-04.jpg",
+        "alt": {
+          "vi": "Các yếu tố ảnh hưởng đến quyết định chơi và gắn bó: chi tiêu, cộng đồng, văn hóa",
+          "en": "Factors that influence the decision to play and stay: spending, community, culture"
+        },
+        "caption": {
+          "vi": "Chi tiêu trong game, cộng đồng và creator, văn hóa và bản địa hóa.",
+          "en": "In-game spending, community and creators, culture and localization."
+        }
+      },
+      {
         "type": "h3",
         "text": {
           "vi": "Chi tiêu trong game",
@@ -243,6 +291,18 @@
         "text": {
           "vi": "Quy trình Game Audience Research Thailand hiệu quả",
           "en": "An Effective Game Audience Research Thailand Process"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791540795559-thai-05.jpg",
+        "alt": {
+          "vi": "Quy trình Game Audience Research Thailand hiệu quả",
+          "en": "Effective Game Audience Research Thailand process"
+        },
+        "caption": {
+          "vi": "Xác định mục tiêu, khoanh vùng người chơi, khám phá hành trình người chơi và bản địa hóa cho thị trường Thái Lan.",
+          "en": "Define objectives, identify target players, explore the player journey, and localize for the Thai market."
         }
       },
       {
@@ -310,6 +370,18 @@
         "text": {
           "vi": "Game Audience Research Thailand có giá trị khi kết nối dữ liệu thị trường với hành vi, động cơ, chi tiêu, cộng đồng, creator và văn hóa. Mục tiêu cuối cùng không phải là tạo thêm một báo cáo, mà là giúp doanh nghiệp biết nên tiếp cận ai, ở đâu, bằng thông điệp nào và cần thay đổi điều gì để tăng khả năng chuyển đổi và gắn bó.",
           "en": "Game Audience Research Thailand provides valuable insights by linking market data to player behavior, motivations, spending, communities, creators, and culture. The ultimate goal is not simply to produce another report, but to help businesses determine who to target, where to reach them, what message to use, and what changes are needed to increase conversion rates and player retention."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791540795559-thai-06.jpg",
+        "alt": {
+          "vi": "Liên hệ ANBU để xây dựng phạm vi nghiên cứu người chơi tại Thái Lan",
+          "en": "Contact ANBU to develop a tailored research scope for Thailand"
+        },
+        "caption": {
+          "vi": "Cần khảo sát thị trường hoặc nghiên cứu người chơi tại Thái Lan? Liên hệ ANBU.",
+          "en": "Need market or player research in Thailand? Contact ANBU."
         }
       },
       {
