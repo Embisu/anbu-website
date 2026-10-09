@@ -78,12 +78,14 @@ export async function POST(request: Request) {
     const getFileUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${GITHUB_FILE_PATH}?ref=${GITHUB_BRANCH}`;
     const putFileUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${GITHUB_FILE_PATH}`;
     
+    // Note: the Workers runtime throws on fetch's `cache` option, so freshness
+    // is requested via a header instead.
     const getRes = await fetch(getFileUrl, {
-      cache: "no-store",
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/vnd.github.v3+json",
         "User-Agent": "ANBU-Admin-Publisher",
+        "Cache-Control": "no-cache",
       },
     });
 
@@ -166,11 +168,11 @@ export async function POST(request: Request) {
     // Handle 409 Conflict (e.g. SHA changed due to concurrent media upload) by retrying once with fresh SHA
     if (putRes.status === 409) {
       const retryGet = await fetch(getFileUrl, {
-        cache: "no-store",
         headers: {
           Authorization: `Bearer ${token}`,
           Accept: "application/vnd.github.v3+json",
           "User-Agent": "ANBU-Admin-Publisher",
+          "Cache-Control": "no-cache",
         },
       });
       if (retryGet.ok) {
