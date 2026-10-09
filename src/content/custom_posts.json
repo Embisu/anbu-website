@@ -1,5 +1,327 @@
 [
   {
+    "slug": "game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing",
+    "slug_en": "game-audience-research-thailand-understanding-thai-gamers",
+    "title": {
+      "vi": "Game Audience Research Thailand: Hiểu game thủ Thái Lan để tăng hiệu quả marketing",
+      "en": "Game Audience Research Thailand: Understanding Thai Gamers to Boost Marketing Effectiveness"
+    },
+    "excerpt": {
+      "vi": "Game Audience Research Thailand là quá trình nghiên cứu người chơi, hành vi khám phá game, động cơ chi tiêu và các yếu tố tạo nên sự gắn bó tại thị trường Thái Lan. Nghiên cứu đúng đối tượng giúp nhà phát hành giảm phụ thuộc vào phỏng đoán, chọn kênh marketing phù hợp và đưa ra quyết định bản địa hóa dựa trên dữ liệu.",
+      "en": "Game Audience Research Thailand is the process of studying players, their game discovery behavior, spending motivations, and the factors driving engagement in the Thai market. Researching the right audience helps publishers reduce guesswork, choose the right marketing channels, and make data-driven localization decisions."
+    },
+    "category": {
+      "vi": "Thị trường Game",
+      "en": "Gaming Market"
+    },
+    "date": "2026-10-09",
+    "readingTime": 8,
+    "cover": "/blog-covers/thailand-game-expo.jpg",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "depa: Thị trường game Thái Lan 2025",
+          "en": "depa: Thailand Gaming Market 2025"
+        },
+        "href": "https://www.depa.or.th/en/article-view/20260903_01"
+      },
+      {
+        "label": {
+          "vi": "KResearch: Phân tích ngành game online Thái Lan",
+          "en": "KResearch: Thailand Online Game Industry Analysis"
+        },
+        "href": "https://www.kasikornresearch.com/th/analysis/k-social-media/Pages/IAO146-ONLINE-GAME-BIZ-FB-2025-09-15.aspx"
+      },
+      {
+        "label": {
+          "vi": "Sensor Tower: Mobile gaming Đông Nam Á 2025",
+          "en": "Sensor Tower: Southeast Asia Mobile Gaming 2025"
+        },
+        "href": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025"
+      },
+      {
+        "label": {
+          "vi": "DataReportal: Digital 2026 Thailand",
+          "en": "DataReportal: Digital 2026 Thailand"
+        },
+        "href": "https://datareportal.com/reports/digital-2026-thailand"
+      },
+      {
+        "label": {
+          "vi": "Nghiên cứu về game Home Sweet Home (TCI-Thaijo)",
+          "en": "Study on the game Home Sweet Home (TCI-Thaijo)"
+        },
+        "href": "https://so02.tci-thaijo.org/index.php/hasss/article/view/268631"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Game Audience Research Thailand là quá trình nghiên cứu người chơi, hành vi khám phá game, động cơ chi tiêu và các yếu tố tạo nên sự gắn bó tại thị trường Thái Lan. Với nhà phát hành muốn ra mắt hoặc mở rộng sản phẩm tại đây, nghiên cứu đúng đối tượng giúp giảm phụ thuộc vào phỏng đoán, lựa chọn kênh marketing phù hợp và đưa ra quyết định bản địa hóa dựa trên dữ liệu.",
+          "en": "Game Audience Research Thailand is a process of studying players, their game exploration behavior, spending motivations, and the factors driving engagement in the Thai market. For publishers looking to launch or expand their products here, researching the right audience helps reduce reliance on guesswork, select appropriate marketing channels, and make data-driven localization decisions."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [depa](https://www.depa.or.th/en/article-view/20260903_01), thị trường game Thái Lan đạt 37,014 tỷ baht trong năm 2025; 98% giá trị thị trường đến từ nội dung nhập khẩu. Thái Lan vì thế là một thị trường giàu tiềm năng với nhà phát hành quốc tế, nhưng cũng có mức cạnh tranh cao. Muốn thu hút và giữ chân người chơi, doanh nghiệp cần hiểu không chỉ họ chơi gì, mà còn vì sao họ chơi, họ tìm game ở đâu và điều gì khiến họ sẵn sàng chi tiền.",
+          "en": "According to [depa](https://www.depa.or.th/en/article-view/20260903_01), the Thai gaming market reached 37.014 billion baht in 2025; 98% of the market's value comes from imported content. Thailand is therefore a high-potential market for international publishers, but it is also highly competitive. To attract and retain players, businesses need to understand not only what they play, but also why they play, where they discover games, and what makes them willing to spend."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Thị trường game Thái Lan có gì đáng chú ý?",
+          "en": "What's Notable About the Thai Gaming Market?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dữ liệu từ [KResearch](https://www.kasikornresearch.com/th/analysis/k-social-media/Pages/IAO146-ONLINE-GAME-BIZ-FB-2025-09-15.aspx) dự báo Thái Lan có 42,5 triệu tài khoản người chơi game trong năm 2025, tăng 1,2% so với năm 2024 và tăng hơn 14,2 triệu tài khoản so với năm 2020. Tuy nhiên, quy mô lớn không có nghĩa người chơi là một nhóm đồng nhất.",
+          "en": "Data from [KResearch](https://www.kasikornresearch.com/th/analysis/k-social-media/Pages/IAO146-ONLINE-GAME-BIZ-FB-2025-09-15.aspx) projects that Thailand will have 42.5 million gaming accounts in 2025, a 1.2% increase from 2024 and an increase of more than 14.2 million accounts compared to 2020. However, this large size does not mean that gamers are a homogeneous group."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Gen Y hiện là nhóm người chơi chính và có khả năng chi tiêu cao. Trong khi đó, Gen Z tăng trưởng nhanh, quan tâm nhiều hơn đến việc thể hiện bản thân, tùy chỉnh nhân vật và cá nhân hóa trải nghiệm. Ngay trong cùng một thế hệ, hành vi cũng có thể khác biệt rõ rệt tùy theo nền tảng, thể loại game, tần suất chơi và mức chi tiêu.",
+          "en": "Gen Y is currently the primary player demographic and has high spending power. Meanwhile, Gen Z is growing rapidly and is more interested in self-expression, character customization, and personalizing their gaming experience. Even within the same generation, behavior can vary significantly depending on the platform, game genre, frequency of play, and spending levels."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khác biệt giữa các nền tảng cũng rất đáng kể. Theo [depa](https://www.depa.or.th/en/article-view/20260903_01), mobile là phân khúc lớn nhất, đạt 18,071 tỷ baht trong năm 2025. PC tăng 9%, đạt 12,385 tỷ baht, còn console đạt 6,539 tỷ baht sau khi giảm 3%. Vì vậy, một mẫu nghiên cứu dành cho game mobile không nên được áp dụng nguyên vẹn cho PC hoặc console.",
+          "en": "Differences across platforms are also quite significant. According to [depa](https://www.depa.or.th/en/article-view/20260903_01), mobile is the largest segment, reaching 18.071 billion baht in 2025. PC grew by 9%, reaching 12.385 billion baht, while console reached 6.539 billion baht after a 3% decline. Therefore, a research model designed for mobile games should not be applied wholesale to PC or console."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Chân dung game thủ Thái Lan nên gồm những gì?",
+          "en": "What Should a Thai Gamer Profile Include?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một chân dung người chơi hữu ích cần đi xa hơn các biến nhân khẩu học cơ bản. Thay vì chỉ hỏi “người chơi bao nhiêu tuổi?”, nhà phát hành nên xác định:",
+          "en": "A useful player profile needs to go beyond basic demographic variables. Instead of simply asking “How old is the player?”, publishers should identify:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Nền tảng và thiết bị họ sử dụng;",
+            "en": "The platforms and devices they use;"
+          },
+          {
+            "vi": "Thể loại game và tần suất chơi;",
+            "en": "Game genres and frequency of play;"
+          },
+          {
+            "vi": "Động cơ bắt đầu và tiếp tục chơi;",
+            "en": "Motivations for starting and continuing to play;"
+          },
+          {
+            "vi": "Mức chi tiêu, loại vật phẩm và thời điểm mua;",
+            "en": "Spending levels, types of in-game items, and timing of purchases;"
+          },
+          {
+            "vi": "Mức độ tham gia cộng đồng, theo dõi creator và sẵn sàng thử game mới.",
+            "en": "Level of community engagement, following creators, and willingness to try new games."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Cách phân nhóm theo hành vi giúp doanh nghiệp nhìn thấy những khác biệt có giá trị thương mại. Hai người cùng thuộc Gen Z nhưng một người chơi RPG hằng ngày và thường xuyên mua vật phẩm sẽ cần cách tiếp cận khác với một người chủ yếu chơi Casual miễn phí.",
+          "en": "Segmenting by behavior helps businesses identify commercially valuable differences. Two people who are both Gen Z, but one who plays RPGs daily and frequently purchases in-game items, will require a different approach than someone who primarily plays free-to-play casual games."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Game thủ Thái Lan khám phá và chi tiêu cho game ra sao?",
+          "en": "How Do Thai Gamers Discover and Spend on Games?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong quý I/2025, người chơi Thái Lan chi khoảng 162 triệu USD cho mua hàng trong ứng dụng (IAP), tăng khoảng 6% so với cùng kỳ. [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025) ghi nhận Thái Lan đứng đầu Đông Nam Á về doanh thu IAP game mobile trong giai đoạn này.",
+          "en": "In the first quarter of 2025, Thai players spent approximately $162 million on in-app purchases (IAP), an increase of about 6% compared to the same period last year. [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025) reported that Thailand led Southeast Asia in mobile game IAP revenue during this period."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[KResearch](https://www.kasikornresearch.com/th/analysis/k-social-media/Pages/IAO146-ONLINE-GAME-BIZ-FB-2025-09-15.aspx) cũng cho biết Sports và RPG là những nhóm game có mức chi tiêu cao, trong khi Shooting và Casual thu hút nhiều người chơi mới hơn. Điều đó cho thấy lượt tải hoặc tổng số người chơi chưa đủ để đánh giá giá trị của một phân khúc. Nghiên cứu cần xem xét đồng thời ba yếu tố: quy mô, mức độ tương tác và khả năng chi tiêu.",
+          "en": "[KResearch](https://www.kasikornresearch.com/th/analysis/k-social-media/Pages/IAO146-ONLINE-GAME-BIZ-FB-2025-09-15.aspx) also noted that Sports and RPG are the game genres with the highest spending, while Shooting and Casual games attract more new players. This suggests that download numbers or total player counts alone are insufficient to assess the value of a segment. Research must simultaneously consider three factors: scale, engagement, and spending power."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Hành trình khám phá game diễn ra trên nhiều điểm chạm. [DataReportal](https://datareportal.com/reports/digital-2026-thailand) ghi nhận cuối năm 2025, Thái Lan có 67,8 triệu người dùng Internet và 56,6 triệu danh tính người dùng mạng xã hội. LINE có khoảng 56 triệu người dùng hoạt động hằng tháng; phạm vi tiếp cận quảng cáo ước tính của Facebook, YouTube và TikTok cũng ở mức cao.",
+          "en": "The journey of discovering games takes place across multiple touchpoints. [DataReportal](https://datareportal.com/reports/digital-2026-thailand) reports that by the end of 2025, Thailand had 67.8 million Internet users and 56.6 million social media user identities. LINE has approximately 56 million monthly active users; the estimated advertising reach of Facebook, YouTube, and TikTok is also high."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các con số trên không cho biết nền tảng nào có nhiều game thủ nhất, bởi dữ liệu quảng cáo không đồng nghĩa với số người dùng hoạt động duy nhất. Câu hỏi nghiên cứu phù hợp hơn là: người chơi dùng từng nền tảng để làm gì — khám phá game, xem gameplay, tìm đánh giá, theo dõi creator hay tham gia cộng đồng?",
+          "en": "These figures do not indicate which platform has the most gamers, as advertising data does not equate to the number of unique active users. A more appropriate research question is: What do players use each platform for: discovering games, watching gameplay, finding reviews, following creators, or participating in communities?"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Những yếu tố ảnh hưởng đến quyết định chơi và gắn bó",
+          "en": "Factors That Influence the Decision to Play and Stay"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Chi tiêu trong game",
+          "en": "In-game spending"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game có mô hình IAP, nghiên cứu nên làm rõ người chơi sẵn sàng trả tiền cho vật phẩm nào, mức giá nào được xem là hợp lý và thời điểm nào dễ phát sinh giao dịch. Với RPG, động cơ mua có thể liên quan đến nhân vật, tiến trình, gacha, tính cạnh tranh, cộng đồng hoặc cảm giác sở hữu. Đây là những điều dữ liệu thị trường tổng quan không thể tự giải thích.",
+          "en": "For games with an IAP model, research should clarify which items players are willing to pay for, what price points are considered reasonable, and when transactions are most likely to occur. In RPGs, purchase motivations may relate to characters, progression, gacha mechanics, competitiveness, community, or a sense of ownership. These are factors that general market data cannot explain on its own."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Cộng đồng và creator",
+          "en": "Community and creators"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Guild, bạn bè, giải đấu, sự kiện và creator có thể ảnh hưởng mạnh đến mức độ gắn bó, đặc biệt với game nhập vai, cạnh tranh hoặc có yếu tố xã hội. Creator vì vậy không nên chỉ được xem là một kênh quảng cáo. Nhà phát hành cần hiểu họ đang sở hữu nhóm khán giả nào, vì sao người chơi tin tưởng họ và loại nội dung nào có khả năng thúc đẩy nhận biết, cân nhắc hoặc tải game.",
+          "en": "Guilds, friends, tournaments, events, and creators can significantly influence engagement levels, particularly in role-playing, competitive, or socially oriented games. Creators should therefore not be viewed merely as an advertising channel. Publishers need to understand which audience segments they are reaching, why players trust them, and what types of content are likely to drive awareness, consideration, or game downloads."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Văn hóa và bản địa hóa",
+          "en": "Culture and localization"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game sử dụng tín ngưỡng, văn hóa dân gian, nhân vật hoặc địa danh Thái Lan, nghiên cứu bản địa hóa cần đánh giá cả mức độ hấp dẫn lẫn rủi ro phản ứng tiêu cực. Nghiên cứu về [Home Sweet Home](https://so02.tci-thaijo.org/index.php/hasss/article/view/268631) cho thấy các yếu tố như ma quỷ, nghi lễ, hành vi tôn giáo, vật phẩm và địa điểm đều có thể góp phần tạo nên trải nghiệm văn hóa trong game.",
+          "en": "For games that incorporate Thai beliefs, folklore, characters, or landmarks, localization research must assess both the appeal and the risk of negative reactions. Research on [Home Sweet Home](https://so02.tci-thaijo.org/index.php/hasss/article/view/268631) shows that elements such as ghosts, rituals, religious practices, artifacts, and locations can all contribute to the game's cultural experience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chỉ hỏi “người chơi có thích yếu tố Thái Lan không?”, doanh nghiệp nên tìm hiểu chi tiết nào tạo cảm giác gần gũi, chi tiết nào được xem là chính xác và đâu là biểu hiện có thể bị coi là sáo rỗng hoặc thiếu tôn trọng.",
+          "en": "Rather than simply asking “Do players like the Thai elements?”, companies should investigate which details create a sense of familiarity, which are considered accurate, and which depictions might be seen as clichéd or disrespectful."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Quy trình Game Audience Research Thailand hiệu quả",
+          "en": "An Effective Game Audience Research Thailand Process"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một nghiên cứu tốt nên bắt đầu từ quyết định kinh doanh cần được hỗ trợ, sau đó mới chọn phương pháp và dữ liệu. Quy trình có thể gồm năm bước:",
+          "en": "A good research study should begin with the business decision that needs to be supported, followed by the selection of methods and data. The process can consist of five steps:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Xác định mục tiêu: ra mắt game, tăng nhận biết, cải thiện tỷ lệ tải, tăng chi tiêu hay giảm churn;",
+            "en": "Define objectives: game launch, increase awareness, improve download rates, increase spending, or reduce churn;"
+          },
+          {
+            "vi": "Khoanh vùng người chơi theo nền tảng, thể loại, hành vi và giá trị tiềm năng;",
+            "en": "Segment players by platform, genre, behavior, and potential value;"
+          },
+          {
+            "vi": "Kết hợp desk research với khảo sát định lượng, phỏng vấn sâu hoặc thảo luận nhóm;",
+            "en": "Combine desk research with quantitative surveys, in-depth interviews, or focus groups;"
+          },
+          {
+            "vi": "Phân tích hành trình từ khám phá, tải, trải nghiệm, chi tiêu đến gắn bó hoặc rời bỏ;",
+            "en": "Analyze the journey from discovery, download, and experience through spending to retention or churn;"
+          },
+          {
+            "vi": "Chuyển kết quả thành quyết định cụ thể cho sản phẩm, marketing, creator và bản địa hóa.",
+            "en": "Translate the results into specific decisions for product, marketing, creators, and localization."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu game chuẩn bị ra mắt, nghiên cứu nên tập trung vào mức độ nhận biết, kênh khám phá và lý do lựa chọn một game mới. Nếu game đã phát hành nhưng giữ chân kém, trọng tâm cần chuyển sang trải nghiệm sau khi tải, điểm gây khó chịu, nội dung cập nhật, cộng đồng và nguyên nhân rời game. Với game Việt Nam muốn vào Thái Lan, cần kiểm chứng điểm tương đồng và khác biệt giữa hai thị trường thay vì giả định công thức đã hiệu quả ở Việt Nam sẽ tiếp tục hiệu quả.",
+          "en": "If a game is about to launch, research should focus on brand awareness, discovery channels, and the reasons for choosing a new game. If a game has already been released but is struggling to retain players, the focus should shift to the post-download experience, pain points, update content, the community, and the reasons players leave the game. For Vietnamese games looking to enter the Thai market, it's essential to verify the similarities and differences between the two markets rather than assuming that a formula that worked in Vietnam will continue to be effective."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dữ liệu thị trường từ [depa](https://www.depa.or.th/en/article-view/20260903_01), [KResearch](https://www.kasikornresearch.com/th/analysis/k-social-media/Pages/IAO146-ONLINE-GAME-BIZ-FB-2025-09-15.aspx), [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025) và [DataReportal](https://datareportal.com/reports/digital-2026-thailand) cung cấp bức tranh về quy mô, nền tảng, thể loại và chi tiêu. Khảo sát giúp đo lường tỷ lệ và xu hướng; phỏng vấn sâu hoặc thảo luận nhóm giúp giải thích động cơ. Kết hợp định lượng và định tính là cách biến số liệu thành insight có thể hành động.",
+          "en": "Market data from [depa](https://www.depa.or.th/en/article-view/20260903_01), [KResearch](https://www.kasikornresearch.com/th/analysis/k-social-media/Pages/IAO146-ONLINE-GAME-BIZ-FB-2025-09-15.aspx), [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025), and [DataReportal](https://datareportal.com/reports/digital-2026-thailand) provides a picture of market size, platforms, genres, and spending. Surveys help measure rates and trends; in-depth interviews or focus groups help explain motivations. Combining quantitative and qualitative methods is the way to turn data into actionable insights."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Kết luận",
+          "en": "Conclusion"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thái Lan là thị trường game có quy mô đáng kể, mức chi tiêu mobile cao và tỷ trọng nội dung nhập khẩu lớn. Cơ hội đi cùng cạnh tranh: nhà phát hành cần hiểu rõ người chơi trước khi quyết định đầu tư vào sản phẩm và marketing.",
+          "en": "Thailand is a significant gaming market characterized by high mobile spending and a large share of imported content. Opportunities coexist with competition: publishers need to thoroughly understand players before deciding to invest in products and marketing."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Game Audience Research Thailand có giá trị khi kết nối dữ liệu thị trường với hành vi, động cơ, chi tiêu, cộng đồng, creator và văn hóa. Mục tiêu cuối cùng không phải là tạo thêm một báo cáo, mà là giúp doanh nghiệp biết nên tiếp cận ai, ở đâu, bằng thông điệp nào và cần thay đổi điều gì để tăng khả năng chuyển đổi và gắn bó.",
+          "en": "Game Audience Research Thailand provides valuable insights by linking market data to player behavior, motivations, spending, communities, creators, and culture. The ultimate goal is not simply to produce another report, but to help businesses determine who to target, where to reach them, what message to use, and what changes are needed to increase conversion rates and player retention."
+        }
+      },
+      {
+        "type": "quote",
+        "text": {
+          "vi": "Nếu doanh nghiệp của bạn cần khảo sát thị trường, nghiên cứu người chơi hoặc tìm kiếm insight cho kế hoạch phát hành game tại Thái Lan, hãy **liên hệ ANBU** để xây dựng phạm vi nghiên cứu phù hợp.",
+          "en": "If your business needs market research, player research, or insights for a game launch plan in Thailand, **contact ANBU** to develop a tailored research scope."
+        }
+      }
+    ]
+  },
+  {
     "slug": "vi-sao-game-thu-tai-game-nhung-khong-o-lai",
     "slug_en": "why-do-players-download-games-but-not-stay",
     "title": {
