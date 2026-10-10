@@ -17,6 +17,7 @@ import { siteUrl, breadcrumbLd, articleLd } from "@/lib/seo";
 import PostComments from "./PostComments";
 import { renderRichText } from "@/lib/renderRichText";
 
+import { MOJIBAKE } from "@/lib/postIntegrity";
 export default function ClientCustomPostViewer({
   slug,
   locale,
@@ -51,8 +52,8 @@ export default function ClientCustomPostViewer({
         const match = customPosts.find((p) => p.slug === slug);
         if (match) {
           const hasMojibake =
-            /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(match.title?.vi || "") ||
-            /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(match.slug || "");
+            MOJIBAKE.test(match.title?.vi || "") ||
+            MOJIBAKE.test(match.slug || "");
           if (!hasMojibake) {
             setPost(match);
             setLoading(false);

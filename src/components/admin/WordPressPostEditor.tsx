@@ -1131,9 +1131,15 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
         }),
       });
 
-      const resData = await res.json();
-      if (!resData.ok) {
-        throw new Error(resData.error || "Không thể tải ảnh lên kho lưu trữ");
+      const resData = await res.json().catch(() => null);
+      if (!resData?.ok) {
+        const reason =
+          res.status === 401
+            ? "Phiên đăng nhập admin đã hết hạn — hãy đăng xuất rồi đăng nhập lại"
+            : res.status === 413
+            ? "Ảnh quá lớn, hãy chọn ảnh nhỏ hơn"
+            : `Không thể tải ảnh lên kho lưu trữ (mã ${res.status})`;
+        throw new Error(resData?.error || reason);
       }
 
       const publicUrl = resData.publicUrl;

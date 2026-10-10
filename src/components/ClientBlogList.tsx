@@ -8,6 +8,7 @@ import type { Dictionary } from "@/i18n/dictionaries";
 import { PostCard } from "@/components/cards";
 import Reveal from "@/components/Reveal";
 
+import { MOJIBAKE } from "@/lib/postIntegrity";
 export default function ClientBlogList({
   initialPosts,
   locale,
@@ -38,7 +39,7 @@ export default function ClientBlogList({
     const isCorrupted = (p: Post) => {
       const title = p.title?.vi || "";
       const slug = p.slug || "";
-      return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+      return MOJIBAKE.test(title) || MOJIBAKE.test(slug);
     };
 
     const filterPosts = (arr: Post[]) => {

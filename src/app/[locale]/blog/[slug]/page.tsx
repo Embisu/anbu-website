@@ -18,11 +18,12 @@ import PostComments from "@/components/PostComments";
 import { renderRichText } from "@/lib/renderRichText";
 import ResilientImage from "@/components/ResilientImage";
 
+import { MOJIBAKE } from "@/lib/postIntegrity";
 function isCorruptedPost(p?: Post | null): boolean {
   if (!p) return false;
   const title = p.title?.vi || "";
   const slug = p.slug || "";
-  return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+  return MOJIBAKE.test(title) || MOJIBAKE.test(slug);
 }
 
 export function generateStaticParams() {

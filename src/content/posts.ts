@@ -57,7 +57,7 @@ export function categoryForPost(post: Post) {
   return "marketing-game";
 }
 
-const builtinPosts: Post[] = [
+export const builtinPosts: Post[] = [
   {
     slug: "ban-do-nha-phat-hanh-game-viet-nam",
     slug_en: "vietnam-s-game-publisher-landscape-established-leaders-emerging",

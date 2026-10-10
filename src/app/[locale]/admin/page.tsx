@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { posts as defaultPosts, type Post } from "@/content/posts";
+import { posts as defaultPosts, builtinPosts, type Post } from "@/content/posts";
 import AdminLogin from "@/components/admin/AdminLogin";
 import WordPressTopBar from "@/components/admin/WordPressTopBar";
 import WordPressSidebar, { type AdminMenuTab } from "@/components/admin/WordPressSidebar";
@@ -16,6 +16,8 @@ import RankMathSiteAudit from "@/components/admin/RankMathSiteAudit";
 import SiteSettingsManager from "@/components/admin/SiteSettingsManager";
 import { calculatePostSeoScore } from "@/lib/seo-score";
 import { adminFetch } from "@/lib/adminFetch";
+import { publishToGithub, isPostLive } from "@/lib/adminPublish";
+import { isMojibakePost, MOJIBAKE } from "@/lib/postIntegrity";
 
 export default function AdminDashboardPage({ params }: { params: { locale: string } }) {
   const locale = params.locale || "vi";
@@ -33,6 +35,8 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
     commitUrl?: string;
     error?: string;
     loading?: boolean;
+    building?: boolean;
+    live?: boolean;
   } | null>(null);
 
   // Load custom posts from localStorage & API on mount
@@ -67,8 +71,8 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
           const deleted = getDeletedSlugs();
           const cleaned = custom.filter((p) => {
             const hasMojibake =
-              /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(p.title?.vi || "") ||
-              /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(p.slug || "");
+              MOJIBAKE.test(p.title?.vi || "") ||
+              MOJIBAKE.test(p.slug || "");
             return !hasMojibake && !deleted.includes(p.slug);
           });
           if (cleaned.length !== custom.length) {
@@ -136,6 +140,28 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
     setActiveTab("new_post");
   };
 
+  // A slug is "custom" when it only exists in custom_posts.json (so it can be removed/renamed on GitHub).
+  const isCustomSlug = (slug: string) => !builtinPosts.some((bp) => bp.slug === slug);
+
+  // Polls the live site until the rebuilt post is reachable (Cloudflare takes ~1–3 min).
+  const watchRebuild = (slug: string, title: string, commitUrl?: string) => {
+    const started = Date.now();
+    const tick = async () => {
+      if (await isPostLive(locale, slug)) {
+        setPublishNotice((cur) =>
+          cur && cur.slug === slug ? { ...cur, building: false, live: true, commitUrl: cur.commitUrl || commitUrl } : cur
+        );
+        return;
+      }
+      if (Date.now() - started > 8 * 60 * 1000) {
+        setPublishNotice((cur) => (cur && cur.slug === slug ? { ...cur, building: false } : cur));
+        return;
+      }
+      setTimeout(tick, 10000);
+    };
+    setTimeout(tick, 15000);
+  };
+
   const handleSavePost = (savedPost: Post) => {
     const existingIndex = postList.findIndex((p) => p.slug === savedPost.slug);
     let updatedList: Post[];
@@ -169,48 +195,29 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
       body: JSON.stringify({ post: savedPost }),
     }).catch(console.error);
 
-    // 3. Try to Auto-Publish to GitHub
-    const githubToken = localStorage.getItem("anbu_github_token") || "";
-    setPublishNotice({
-      slug: savedPost.slug,
-      title: savedPost.title.vi || savedPost.title.en,
-      loading: true,
-    });
+    // 3. Auto-publish to GitHub (durable source of truth), then wait for the rebuild
+    const title = savedPost.title.vi || savedPost.title.en;
+    const replaceSlug =
+      editingPost && editingPost.slug !== savedPost.slug && isCustomSlug(editingPost.slug)
+        ? editingPost.slug
+        : undefined;
+    setPublishNotice({ slug: savedPost.slug, title, loading: true });
 
-    adminFetch("/api/admin/posts/github-publish", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ post: savedPost, token: githubToken || undefined }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.ok) {
-          setPublishNotice({
-            slug: savedPost.slug,
-            title: savedPost.title.vi || savedPost.title.en,
-            githubSynced: true,
-            commitUrl: data.commitUrl,
-            loading: false,
-          });
-        } else {
-          setPublishNotice({
-            slug: savedPost.slug,
-            title: savedPost.title.vi || savedPost.title.en,
-            githubSynced: false,
-            error: data.error,
-            loading: false,
-          });
-        }
-      })
-      .catch((err) => {
-        setPublishNotice({
-          slug: savedPost.slug,
-          title: savedPost.title.vi || savedPost.title.en,
-          githubSynced: false,
-          error: err.message,
-          loading: false,
-        });
+    publishToGithub({ post: savedPost, replaceSlug }).then((result) => {
+      if (!result.ok) {
+        setPublishNotice({ slug: savedPost.slug, title, githubSynced: false, error: result.error, loading: false });
+        return;
+      }
+      setPublishNotice({
+        slug: savedPost.slug,
+        title,
+        githubSynced: true,
+        commitUrl: result.commitUrl,
+        loading: false,
+        building: true,
       });
+      watchRebuild(savedPost.slug, title, result.commitUrl);
+    });
 
     setActiveTab("posts");
   };
@@ -249,6 +256,13 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
       await adminFetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: "DELETE" });
     } catch (err) {
       console.error("Delete post error:", err);
+    }
+    // Remove from the durable store too, otherwise the post comes back after the next rebuild.
+    if (isCustomSlug(slug)) {
+      const result = await publishToGithub({ slugToDelete: slug });
+      if (!result.ok) {
+        alert(`Bài đã được gỡ trên máy này nhưng chưa gỡ được khỏi website chính thức: ${result.error}`);
+      }
     }
   };
 
@@ -319,10 +333,16 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
                 ) : publishNotice.githubSynced ? (
                   <div>
                     <p className="font-bold text-xs sm:text-sm text-emerald-900">
-                      ✅ Đã tự động xuất bản lên GitHub & kích hoạt Cloudflare Pages!
+                      {publishNotice.live
+                        ? "✅ Bài viết đã LÊN SÓNG trên website!"
+                        : "✅ Đã lưu lên GitHub & kích hoạt Cloudflare Pages!"}
                     </p>
                     <p className="text-xs text-emerald-700 mt-0.5">
-                      Bài viết "{publishNotice.title}" sẽ hiển thị cho 100% người dùng trên toàn cầu sau ~1 phút.
+                      {publishNotice.live
+                        ? `Bài "${publishNotice.title}" đã mở được cho mọi người.`
+                        : publishNotice.building
+                        ? `Đang build website (~1–3 phút). Link "Xem bài viết" sẽ báo 404 cho tới khi build xong — trang này tự kiểm tra và báo khi bài lên sóng.`
+                        : `Bài "${publishNotice.title}" chưa mở được sau 8 phút — kiểm tra tab Deployments của Cloudflare Pages xem build có lỗi không.`}
                     </p>
                   </div>
                 ) : (

@@ -2,9 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import type { Post } from "@/content/posts";
-import { blogCategories } from "@/content/posts";
+import { blogCategories, builtinPosts } from "@/content/posts";
 import { calculatePostSeoScore } from "@/lib/seo-score";
 import { adminFetch } from "@/lib/adminFetch";
+import { publishToGithub } from "@/lib/adminPublish";
+import { isMojibakePost, MOJIBAKE } from "@/lib/postIntegrity";
+
+const isCustomSlug = (slug: string) => !builtinPosts.some((bp) => bp.slug === slug);
 
 type WordPressPostListProps = {
   posts: Post[];
@@ -44,7 +48,6 @@ export default function WordPressPostList({
   }>({ loading: false });
 
   const handleSyncToGithub = async (targetPost?: Post) => {
-    const token = localStorage.getItem("anbu_github_token") || "";
     setSyncState({
       loading: true,
       slug: targetPost?.slug,
@@ -54,7 +57,7 @@ export default function WordPressPostList({
     });
 
     try {
-      const payload: any = { token: token || undefined };
+      const payload: any = {};
       if (targetPost) {
         payload.post = targetPost;
       } else {
@@ -69,29 +72,16 @@ export default function WordPressPostList({
         payload.posts = customPosts;
       }
 
-      const res = await adminFetch("/api/admin/posts/github-publish", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+      const result = await publishToGithub(payload);
+      setSyncState({
+        loading: false,
+        slug: targetPost?.slug,
+        success: result.ok,
+        message: result.ok
+          ? result.message || "Đã đẩy lên GitHub thành công! Cloudflare Pages đang build và website sẽ cập nhật sau ~1–3 phút."
+          : result.error || "Lỗi khi đẩy lên GitHub.",
+        commitUrl: result.commitUrl,
       });
-
-      const data = await res.json();
-      if (data.ok) {
-        setSyncState({
-          loading: false,
-          slug: targetPost?.slug,
-          success: true,
-          message: data.message || "Đã đẩy lên GitHub thành công! Cloudflare Pages đang build và website sẽ cập nhật sau ~1 phút.",
-          commitUrl: data.commitUrl,
-        });
-      } else {
-        setSyncState({
-          loading: false,
-          slug: targetPost?.slug,
-          success: false,
-          message: data.error || "Lỗi khi đẩy lên GitHub.",
-        });
-      }
     } catch (err: any) {
       setSyncState({
         loading: false,
@@ -137,7 +127,7 @@ export default function WordPressPostList({
     const isCorrupted = (p: Post) => {
       const title = p.title?.vi || "";
       const slug = p.slug || "";
-      return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+      return MOJIBAKE.test(title) || MOJIBAKE.test(slug);
     };
 
     const savedDeleted = (() => {
@@ -222,12 +212,20 @@ export default function WordPressPostList({
       }
     } catch (e) {}
 
-    // Re-upsert to in-memory cache
+    // Re-upsert to in-memory cache and to the durable store
     adminFetch("/api/admin/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ post: target }),
     }).catch(console.error);
+    const result = await publishToGithub({ post: target });
+    setSyncState({
+      loading: false,
+      slug,
+      success: result.ok,
+      message: result.ok ? "Đã khôi phục bài và đẩy lại lên website (build ~1–3 phút)." : `Đã khôi phục trên máy nhưng chưa đẩy lên website: ${result.error}`,
+      commitUrl: result.commitUrl,
+    });
   };
 
   const deletePermanently = async (slug: string) => {
@@ -294,6 +292,25 @@ export default function WordPressPostList({
     });
     updateParentAndState(updated);
     setQuickEditSlug(null);
+
+    const edited = updated.find((p) => p.slug === cleanSlug);
+    if (edited) {
+      setSyncState({ loading: true, slug: edited.slug, message: `Đang đẩy chỉnh sửa nhanh "${edited.title.vi}" lên GitHub...` });
+      publishToGithub({
+        post: edited,
+        replaceSlug: slug !== cleanSlug && isCustomSlug(slug) ? slug : undefined,
+      }).then((result) => {
+        setSyncState({
+          loading: false,
+          slug: edited.slug,
+          success: result.ok,
+          message: result.ok
+            ? "Đã đẩy chỉnh sửa lên GitHub (build ~1–3 phút)."
+            : `Đã sửa trên máy nhưng chưa đẩy lên website: ${result.error}`,
+          commitUrl: result.commitUrl,
+        });
+      });
+    }
   };
 
   const copyPostCode = (post: Post) => {
@@ -348,9 +365,6 @@ export default function WordPressPostList({
 
       for (const slug of slugsToDelete) {
         purgeSlugStorage(slug);
-        if (onDeletePost) {
-          onDeletePost(slug);
-        }
       }
 
       adminFetch("/api/admin/posts", {
@@ -358,6 +372,21 @@ export default function WordPressPostList({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ slugs: slugsToDelete }),
       }).catch(console.error);
+
+      // One commit removes every selected custom post from the durable store.
+      const customToRemove = slugsToDelete.filter(isCustomSlug);
+      if (customToRemove.length > 0) {
+        setSyncState({ loading: true, message: `Đang gỡ ${customToRemove.length} bài khỏi website...` });
+        const result = await publishToGithub({ slugsToDelete: customToRemove });
+        setSyncState({
+          loading: false,
+          success: result.ok,
+          message: result.ok
+            ? `Đã gỡ ${customToRemove.length} bài khỏi website (build ~1–3 phút).`
+            : `Đã gỡ trên máy nhưng chưa gỡ khỏi website: ${result.error}`,
+          commitUrl: result.commitUrl,
+        });
+      }
     }
   };
 

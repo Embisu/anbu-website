@@ -69,34 +69,43 @@ export async function POST(request: Request) {
     let githubCommitted = false;
     let commitError = "";
 
-    const githubUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/public/blog-media/${finalFileName}`;
-    try {
-      const ghRes = await fetch(githubUrl, {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: "application/vnd.github.v3+json",
-          "User-Agent": "ANBU-Admin-Media-Uploader",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          message: `feat(media): upload ${finalFileName} via ANBU Admin`,
-          content: cleanBase64,
-          branch: GITHUB_BRANCH,
-        }),
-      });
-
-      if (ghRes.ok) {
-        githubCommitted = true;
-      } else {
-        const errData = await ghRes.json().catch(() => ({}));
-        commitError =
-          errData.message || `Mã lỗi GitHub status ${ghRes.status}`;
-        console.warn("GitHub upload error:", commitError);
+    let uploadedName = finalFileName;
+    // Up to 3 tries: a 422 means a file with this name already exists, so retry under a unique name.
+    for (let attempt = 0; attempt < 3 && !githubCommitted; attempt++) {
+      if (attempt > 0) {
+        const dot = finalFileName.lastIndexOf(".");
+        uploadedName = `${finalFileName.slice(0, dot)}-${Math.random().toString(36).slice(2, 6)}${finalFileName.slice(dot)}`;
       }
-    } catch (err: any) {
-      commitError = err.message || "Không thể kết nối đến GitHub API";
-      console.warn("GitHub fetch error:", commitError);
+      const githubUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/public/blog-media/${uploadedName}`;
+      try {
+        const ghRes = await fetch(githubUrl, {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            Accept: "application/vnd.github.v3+json",
+            "User-Agent": "ANBU-Admin-Media-Uploader",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            message: `feat(media): upload ${uploadedName} via ANBU Admin`,
+            content: cleanBase64,
+            branch: GITHUB_BRANCH,
+          }),
+        });
+
+        if (ghRes.ok) {
+          githubCommitted = true;
+        } else {
+          const errData = await ghRes.json().catch(() => ({}));
+          commitError = errData.message || `Mã lỗi GitHub status ${ghRes.status}`;
+          console.warn("GitHub upload error:", commitError);
+          if (ghRes.status !== 422 && ghRes.status !== 409) break;
+        }
+      } catch (err: any) {
+        commitError = err.message || "Không thể kết nối đến GitHub API";
+        console.warn("GitHub fetch error:", commitError);
+        break;
+      }
     }
 
     if (!githubCommitted) {
@@ -109,14 +118,14 @@ export async function POST(request: Request) {
       );
     }
 
-    const publicUrl = `/blog-media/${finalFileName}`;
-    const rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/${GITHUB_BRANCH}/public/blog-media/${finalFileName}`;
+    const publicUrl = `/blog-media/${uploadedName}`;
+    const rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/${GITHUB_BRANCH}/public/blog-media/${uploadedName}`;
 
     return NextResponse.json({
       ok: true,
       publicUrl,
       rawUrl,
-      fileName: finalFileName,
+      fileName: uploadedName,
       githubCommitted: true,
     });
   } catch (err: any) {

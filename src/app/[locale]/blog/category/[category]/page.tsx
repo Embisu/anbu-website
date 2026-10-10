@@ -26,6 +26,7 @@ import type { Post } from "@/content/posts";
 
 import ClientBlogList from "@/components/ClientBlogList";
 
+import { MOJIBAKE } from "@/lib/postIntegrity";
 export default async function BlogCategoryPage({ params }: { params: { locale: string; category: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const category = blogCategories.find((item) => item.slug === params.category);
@@ -35,7 +36,7 @@ export default async function BlogCategoryPage({ params }: { params: { locale: s
   const isCorrupted = (p: Post) => {
     const title = p.title?.vi || "";
     const slug = p.slug || "";
-    return /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(title) || /[\u00C0-\u00FF]{2,}|ThÃ|trÃ|ViÃ/.test(slug);
+    return MOJIBAKE.test(title) || MOJIBAKE.test(slug);
   };
 
   const allMergedPosts: Post[] = posts.filter((p) => !isCorrupted(p));
