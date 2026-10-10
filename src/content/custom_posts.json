@@ -1,5 +1,484 @@
 [
   {
+    "slug": "liveops-sau-khi-game-ra-mat-lam-the-nao-de-giu-chan-game-thu-thai-lan",
+    "title": {
+      "vi": "LiveOps: Sau khi game ra mắt, làm thế nào để giữ chân game thủ Thái Lan?",
+      "en": "LiveOps: After the game launches, how can we retain Thai players?"
+    },
+    "excerpt": {
+      "vi": "Giữ chân người chơi không chỉ phụ thuộc vào việc liên tục tung ra nội dung mới. Một chiến lược LiveOps hiệu quả cần kết hợp giữa trải nghiệm trong game, sự kiện, cộng đồng, creator và cách bản địa hóa nội dung để duy trì sự quan tâm của người chơi trong thời gian dài.",
+      "en": "Retaining players depends on more than just continuously releasing new content. An effective LiveOps strategy must combine in-game experiences, events, community engagement, creators, and content localization to sustain player interest over the long term."
+    },
+    "category": {
+      "vi": "Vận hành Game",
+      "en": "Game Operations"
+    },
+    "date": "2026-10-10",
+    "readingTime": 10,
+    "cover": "/blog-media/1791628271512-1-30.webp",
+    "author": "ANBU Team",
+    "color": "from-blue-600 to-indigo-600",
+    "variant": "game",
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Game LiveOps Marketing Thailand** là chiến lược duy trì sự quan tâm và mức độ gắn bó của người chơi sau khi game ra mắt thông qua cập nhật nội dung, sự kiện, cộng đồng và các hoạt động tương tác liên tục. Thay vì xem ngày phát hành là điểm kết thúc của marketing, nhà phát hành cần tiếp tục tạo ra những lý do đủ hấp dẫn để người chơi quay lại và gắn bó với sản phẩm.",
+          "en": "**Game LiveOps Marketing in Thailand** is a strategy to maintain player interest and engagement after the game’s launch through continuous content updates, events, community engagement, and interactive activities. Rather than viewing the release date as the end of marketing efforts, publishers need to continue creating compelling reasons for players to return and remain engaged with the product."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "1. Vì sao LiveOps ngày càng quan trọng với game tại Thái Lan?",
+          "en": "1. Why is LiveOps Becoming Increasingly Important for Games in Thailand?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791627789491-2-26.webp",
+        "alt": {
+          "vi": "LiveOps không đơn giản là “có sự kiện mới mỗi tuần”",
+          "en": "LiveOps isn’t simply about “having a new event every week”"
+        },
+        "caption": {
+          "vi": "LiveOps không đơn giản là “có sự kiện mới mỗi tuần”",
+          "en": "LiveOps isn’t simply about “having a new event every week”"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngày launch thường là thời điểm game nhận được nhiều sự chú ý nhất, nhưng cũng chỉ là điểm bắt đầu của hành trình của người chơi. Sau khi tải và trải nghiệm những nội dung đầu tiên, họ có thể nhanh chóng rời đi nếu không còn lý do để quay lại.",
+          "en": "Launch day is usually when a game receives the most attention, but it’s also just the beginning of the player’s journey. After downloading the game and experiencing the initial content, players may quickly leave if they no longer have a reason to return."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "LiveOps giải quyết bài toán này bằng cách biến game thành một sản phẩm được vận hành liên tục. Những hoạt động như sự kiện giới hạn, nội dung mới, nhiệm vụ theo mùa, battle pass, phần thưởng đăng nhập hay cập nhật gameplay đều có thể tạo thêm điểm chạm với người chơi.",
+          "en": "LiveOps addresses this challenge by transforming the game into a continuously operated product. Activities such as limited-time events, new content, seasonal missions, battle passes, login rewards, and gameplay updates can all create additional touchpoints with players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Xu hướng này cũng phản ánh sự thay đổi của thị trường mobile game toàn cầu. Theo  [Sensor Tower](https://sensortower.com/blog/state-of-mobile-gaming-2025), các nhà phát triển đang tập trung nhiều hơn vào những tựa game hiện có trong bối cảnh tăng trưởng lượt tải mới chậm hơn, trong khi doanh thu, thời gian chơi và số phiên chơi vẫn có xu hướng tăng. Game vì thế ngày càng được vận hành giống một dịch vụ cần được cập nhật và duy trì liên tục.",
+          "en": "This trend also reflects shifts in the global mobile gaming market. According to  [Sensor Tower](https://sensortower.com/blog/state-of-mobile-gaming-2025), developers are focusing more on existing titles amid slower growth in new downloads, while revenue, playtime, and the number of sessions continue to rise. Games are thus increasingly operated like a service that requires continuous updates and maintenance."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một báo cáo khác của  [Sensor Tower](https://sensortower.com/blog/top-grossing-mobile-games-live-ops-strategies-2025-report) cho thấy những game có doanh thu cao thường sử dụng hệ thống sự kiện liên kết, nội dung cập nhật thường xuyên và cơ chế phần thưởng để duy trì sự chú ý cũng như mức độ tương tác của người chơi.",
+          "en": "Another report from  [Sensor Tower](https://sensortower.com/blog/top-grossing-mobile-games-live-ops-strategies-2025-report) shows that high-revenue games typically use linked event systems, frequent content updates, and reward mechanisms to maintain player attention and engagement levels."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này cho thấy LiveOps không đơn giản là “có sự kiện mới mỗi tuần”. Quan trọng hơn là các hoạt động phải được kết nối với nhau và phục vụ một mục tiêu rõ ràng trong hành trình của người chơi.",
+          "en": "This shows that LiveOps isn’t simply about “having a new event every week”. More importantly, activities must be interconnected and serve a clear purpose within the player’s journey."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đối với Thái Lan, bài toán này càng đáng chú ý khi thị trường có mức chi tiêu game mobile tương đối cao. Theo  [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025), doanh thu IAP game mobile tại Thái Lan đạt khoảng **162 triệu USD trong quý I/2025**, đứng đầu Đông Nam Á trong giai đoạn này.",
+          "en": "For Thailand, this issue is particularly noteworthy given the market’s relatively high level of mobile gaming spending. According to  [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025), mobile game IAP revenue in Thailand reached approximately **$162 million in Q1 2025**, ranking first in Southeast Asia during this period."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Antom – Thailand Gaming & Payment Trends Report](https://knowledge.antom.com/thailand-gaming-payment-trends-report-unveiling-southeast-asias-second-largest-gaming-market) cũng ghi nhận gần **49% người chơi được khảo sát là người dùng có trả phí**, với mức chi tiêu bình quân khoảng **393 USD/người** theo dữ liệu của báo cáo.",
+          "en": "[The Antom – Thailand Gaming & Payment Trends Report](https://knowledge.antom.com/thailand-gaming-payment-trends-report-unveiling-southeast-asias-second-largest-gaming-market) also noted that nearly **49% of surveyed players were paying users**, with an average spend of about **$393 per person**, according to the report’s data."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, khi chi phí thu hút người chơi ngày càng quan trọng, việc giữ chân nhóm người đã tải và trải nghiệm game trở thành một phần không thể tách rời khỏi bài toán marketing sau launch.",
+          "en": "Therefore, as the cost of acquiring players becomes increasingly important, retaining the group of users who have already downloaded and experienced the game has become an integral part of post-launch marketing strategies."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Người chơi Thái Lan cần gì để tiếp tục quay lại?",
+          "en": "2. What do Thai players need to keep coming back?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791627891868-3-24.webp",
+        "alt": {
+          "vi": "Điều gì thực sự khiến người chơi muốn quay lại?",
+          "en": "What actually makes players want to return?"
+        },
+        "caption": {
+          "vi": "Điều gì thực sự khiến người chơi muốn quay lại?",
+          "en": "What actually makes players want to return?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu LiveOps là cách nhà phát hành duy trì vòng đời sản phẩm, thì câu hỏi tiếp theo là: **điều gì thực sự khiến người chơi muốn quay lại?**",
+          "en": "If LiveOps is how publishers maintain a product’s lifecycle, the next question is: **what actually makes players want to return?**"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Không phải mọi sự kiện hay nội dung mới đều tạo ra cùng một tác động. Hiệu quả phụ thuộc vào việc hoạt động đó có phù hợp với hành vi, sở thích và động lực chơi của từng nhóm người dùng hay không.",
+          "en": "Not every event or piece of new content creates the same impact. Effectiveness depends on whether the activity aligns with the behavior, preferences, and play motivations of each user group."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Nội dung mới phải tạo ra lý do để quay lại",
+          "en": "New content must give players a reason to come back"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một trong những mục tiêu quan trọng nhất của LiveOps là tạo ra lý do đủ rõ ràng để người chơi mở game trở lại. Nếu sản phẩm không có thay đổi đáng kể sau launch, người chơi có thể hoàn thành nội dung chính rồi giảm dần tần suất đăng nhập.",
+          "en": "One of the most important goals of LiveOps is to create a clear enough reason for players to open the game again. If the product doesn’t undergo significant changes after launch, players may complete the main content and gradually log in less frequently."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game nhập vai, nội dung mới có thể là nhân vật, bản đồ, nhiệm vụ hoặc tuyến truyện. Với game cạnh tranh, nhà phát hành có thể sử dụng mùa giải, bảng xếp hạng, giải đấu hoặc phần thưởng theo mùa. Trong khi đó, game casual có thể tận dụng thử thách giới hạn, bộ sưu tập và các sự kiện theo chủ đề.",
+          "en": "For role-playing games, new content can include characters, maps, quests, or storylines. For competitive games, publishers can use seasons, leaderboards, tournaments, or seasonal rewards. Meanwhile, casual games can leverage limited-time challenges, collectibles, and themed events."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điểm quan trọng là mỗi hoạt động cần có mục tiêu cụ thể. Một sự kiện chỉ khiến người chơi đăng nhập một lần sẽ tạo ra kết quả rất khác với một chuỗi nhiệm vụ khiến họ quay lại trong nhiều ngày.",
+          "en": "The key point is that each activity must have a specific goal. An event that only prompts players to log in once will yield very different results than a series of quests that keeps them coming back for several days."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, thay vì liên tục bổ sung sự kiện, nhà phát hành nên đặt câu hỏi: **hoạt động này đang tạo ra hành vi nào và người chơi có lý do gì để tiếp tục tham gia sau lần đầu tiên?**",
+          "en": "Therefore, instead of constantly adding new events, publishers should ask: **What behavior is this activity driving, and what reason do players have to continue participating after their first time?**"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Sự kiện theo mùa cần phù hợp với văn hóa địa phương",
+          "en": "Seasonal events must align with local culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường Thái Lan cũng tạo ra cơ hội để LiveOps kết hợp với những thời điểm văn hóa phù hợp. Songkran là một ví dụ có thể được nghiên cứu khi xây dựng lịch nội dung, đặc biệt với những game đã có hệ thống sự kiện theo mùa, trang phục hoặc vật phẩm giới hạn.",
+          "en": "The Thai market also presents opportunities for LiveOps to integrate with relevant cultural occasions. Songkran is an example worth studying when developing a content calendar, especially for games that already feature seasonal events, costumes, or limited-edition items."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tuy nhiên, không phải game nào cũng cần đưa Songkran hoặc các yếu tố văn hóa Thái Lan vào mọi hoạt động. Điều quan trọng là sự kiện phải phù hợp với thế giới game và mang lại giá trị thực tế cho người chơi.",
+          "en": "However, not every game needs to incorporate Songkran or Thai cultural elements into every activity. What’s important is that the event fits within the game’s world and provides real value to players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trường hợp **Home Sweet Home** cho thấy văn hóa địa phương có thể trở thành một phần của trải nghiệm game thay vì chỉ được sử dụng trong quảng cáo. Theo  [Tourism Authority of Thailand](https://www.tatnews.org/2023/08/tat-backs-the-latest-home-sweet-home-game-to-promote-thailands-deep-culture/), trò chơi khai thác thần thoại, niềm tin, mê tín, văn hóa dân gian và các địa điểm của Thái Lan trong cách kể chuyện.",
+          "en": "The case of **Home Sweet Home** demonstrates how local culture can become an integral part of the gaming experience rather than merely being used in advertising.  [According to the Tourism Authority of Thailand](https://www.tatnews.org/2023/08/tat-backs-the-latest-home-sweet-home-game-to-promote-thailands-deep-culture/), the game incorporates Thai mythology, beliefs, superstitions, folklore, and landmarks into its storytelling."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với LiveOps, cách tiếp cận này có thể được mở rộng thành các nội dung theo mùa hoặc sự kiện giới hạn nếu phù hợp với sản phẩm. Mục tiêu không phải là làm cho sự kiện “trông thật Thái”, mà là tìm cách kết nối yếu tố địa phương với trải nghiệm mà người chơi vốn đã quen thuộc.",
+          "en": "With LiveOps, this approach can be expanded into seasonal content or limited-time events if they align with the product. The goal isn’t to make the event “look Thai,” but rather to find ways to connect local elements with an experience that players are already familiar with."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Cộng đồng và creator có thể kéo dài vòng đời của game như thế nào?",
+          "en": "3. How can the community and creators extend a game’s lifecycle?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791628010210-4-26.webp",
+        "alt": {
+          "vi": "Lý do LiveOps nên được nhìn rộng hơn lịch cập nhật trong game",
+          "en": "LiveOps should be viewed as more than just the in-game update schedule"
+        },
+        "caption": {
+          "vi": "Lý do LiveOps nên được nhìn rộng hơn lịch cập nhật trong game",
+          "en": "LiveOps should be viewed as more than just the in-game update schedule"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nội dung trong game chỉ là một phần của trải nghiệm sau launch. Khi người chơi có nơi để trao đổi, tìm đồng đội, theo dõi cập nhật hoặc chia sẻ thành tích, mối quan hệ của họ với game có thể tiếp tục ngay cả khi không trực tiếp đăng nhập.",
+          "en": "In-game content is only part of the post-launch experience. When players have a place to interact, find teammates, follow updates, or share achievements, their connection to the game can continue even when they aren’t directly logged in."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây cũng là lý do LiveOps nên được nhìn rộng hơn lịch cập nhật trong game. Hoạt động cộng đồng và creator cần được kết nối với những gì đang diễn ra bên trong sản phẩm.",
+          "en": "This is also why LiveOps should be viewed as more than just the in-game update schedule. Community and creator activities need to be connected to what’s happening within the product."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Cộng đồng tạo thêm lý do để ở lại",
+          "en": "The community creates more reasons to stay"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau launch, cộng đồng có thể trở thành một phần của trải nghiệm game thay vì chỉ là kênh hỗ trợ khách hàng. Điều này đặc biệt quan trọng với MMORPG, game chiến thuật và những sản phẩm có tính cạnh tranh hoặc hợp tác.",
+          "en": "After launch, the community can become an integral part of the gaming experience rather than just a customer support channel. This is particularly important for MMORPGs, strategy games, and titles that involve competition or collaboration."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo  [Antom](https://knowledge.antom.com/thailand-gaming-payment-trends-report-unveiling-southeast-asias-second-largest-gaming-market), Facebook giữ vai trò đáng chú ý trong hệ sinh thái gaming tại Thái Lan. Hơn 70% game thủ trong khảo sát của báo cáo cho biết họ khám phá game mới thông qua Facebook. Các fanpage chính thức được sử dụng để cập nhật thông tin, trong khi những nhóm do người chơi vận hành trở thành nơi tuyển guild, chia sẻ mẹo và tổ chức hoạt động cộng đồng.",
+          "en": "According to  [Antom](https://knowledge.antom.com/thailand-gaming-payment-trends-report-unveiling-southeast-asias-second-largest-gaming-market), Facebook plays a significant role in Thailand’s gaming ecosystem. Over 70% of gamers surveyed for the report said they discover new games through Facebook. Official fan pages are used to share updates, while player-run groups serve as hubs for recruiting guild members, sharing tips, and organizing community events."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều này cũng có ý nghĩa với retention. Khi người chơi có nơi để hỏi đáp, tìm đồng đội, tham gia guild hoặc theo dõi thông tin cập nhật, họ có thêm lý do để duy trì kết nối với game ngay cả khi không trực tiếp đăng nhập.",
+          "en": "This also impacts retention. When players have a place to ask questions, find teammates, join guilds, or follow updates, they have more reasons to stay connected to the game even when they aren’t actively logged in."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, lịch LiveOps nên đi cùng lịch nội dung cộng đồng: giải thích tính năng mới, hướng dẫn sự kiện, khuyến khích người chơi chia sẻ thành tích và thu thập phản hồi.",
+          "en": "Therefore, the LiveOps schedule should align with the community content calendar: explaining new features, guiding players through events, encouraging them to share achievements, and gathering feedback."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Creator không chỉ phục vụ giai đoạn launch",
+          "en": "Creators don’t just play a role during the launch phase"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Creator cũng có thể tiếp tục đóng vai trò sau khi game phát hành. Thay vì chỉ thực hiện một video giới thiệu, họ có thể trải nghiệm bản cập nhật, livestream sự kiện, hướng dẫn tính năng mới hoặc tham gia các hoạt động cộng đồng.",
+          "en": "Creators can also continue to play a role after the game is released. Instead of just creating a promotional video, they can try out updates, livestream events, demonstrate new features, or participate in community activities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một  [nghiên cứu năm 2026](https://so03.tci-thaijo.org/index.php/JMSNPRU/article/view/303640) khảo sát ** 400 người theo dõi gaming content creator tại Thái Lan** cho thấy hành trình 5A có ảnh hưởng mạnh đến mức độ tương tác của khán giả trong mô hình nghiên cứu. Nghiên cứu cũng ghi nhận chiến lược nội dung số có cả tác động trực tiếp và gián tiếp đến engagement.",
+          "en": "[A 2026 study](https://so03.tci-thaijo.org/index.php/JMSNPRU/article/view/303640) surveying **400 followers of gaming content creators in Thailand** showed that the 5A journey had a strong influence on audience engagement within the study’s model. The study also noted that digital content strategies have both direct and indirect effects on engagement."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Từ góc độ LiveOps, điều này cho thấy creator có thể được đưa vào kế hoạch duy trì tương tác thay vì chỉ xuất hiện trong giai đoạn quảng bá trước và sau launch.",
+          "en": "From a LiveOps perspective, this suggests that creators can be incorporated into plans to sustain engagement rather than appearing only during the pre- and post-launch promotional phases."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi có bản cập nhật lớn, creator có thể giúp người chơi hiểu nội dung mới. Khi có sự kiện cộng đồng, họ có thể tạo thêm lý do để tham gia. Còn khi xuất hiện nhiều phản hồi từ người chơi, nội dung của creator có thể giúp giải thích hoặc truyền tải lại những thay đổi của game.",
+          "en": "When major updates are released, creators can help players understand the new content. During community events, they can provide additional reasons for players to participate. And when there is a surge in player feedback, creators’ content can help explain or convey the game’s changes."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "4. Làm thế nào để xây dựng một chiến lược LiveOps phù hợp?",
+          "en": "4. How to Build an Effective LiveOps Strategy?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791628068092-5-31.webp",
+        "alt": {
+          "vi": "Biến chúng thành một quy trình vận hành có thể đo lường và điều chỉnh",
+          "en": "To turn them into a measurable and adjustable operational process"
+        },
+        "caption": {
+          "vi": "Biến chúng thành một quy trình vận hành có thể đo lường và điều chỉnh",
+          "en": "To turn them into a measurable and adjustable operational process"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi đã xác định được những yếu tố khiến người chơi quay lại, bước tiếp theo là biến chúng thành một quy trình vận hành có thể đo lường và điều chỉnh.",
+          "en": "Once you’ve identified the factors that keep players coming back, the next step is to turn them into a measurable and adjustable operational process."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một chiến lược LiveOps hiệu quả không nên bắt đầu bằng việc lập sẵn một lịch sự kiện cố định cho cả năm. Thay vào đó, nhà phát hành cần bắt đầu từ dữ liệu người chơi và liên tục điều chỉnh dựa trên kết quả thực tế.",
+          "en": "An effective LiveOps strategy shouldn’t start with a pre-set, fixed event calendar for the entire year. Instead, publishers should start with player data and continuously adjust based on actual results."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Theo dõi hành vi thay vì chỉ nhìn lượt tải",
+          "en": "Track behavior rather than just looking at download numbers"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Quy trình có thể bắt đầu với năm bước:",
+          "en": "The process can begin with five steps:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "**Theo dõi hành vi:** Xác định thời điểm người chơi rời game, nội dung nào có tỷ lệ tham gia cao và nhóm người chơi nào có giá trị lớn.",
+            "en": "**Track behavior:** Identify when players leave the game, which content has high engagement rates, and which player groups are most valuable."
+          },
+          {
+            "vi": "**Xác định mục tiêu:** Tăng đăng nhập, cải thiện retention, thúc đẩy tham gia cộng đồng hay tăng doanh thu.",
+            "en": "**Set goals:** Increase logins, improve retention, drive community engagement, or boost revenue."
+          },
+          {
+            "vi": "**Xây dựng lịch LiveOps:** Kết hợp cập nhật gameplay, sự kiện, nội dung cộng đồng và hoạt động creator.",
+            "en": "**Create a LiveOps schedule:** Combine gameplay updates, events, community content, and creator activities."
+          },
+          {
+            "vi": "**Bản địa hóa:** Điều chỉnh nội dung, thời điểm và chủ đề theo hành vi cũng như văn hóa của người chơi Thái Lan.",
+            "en": "**Localization:** Tailor content, timing, and themes to the behavior and culture of Thai players."
+          },
+          {
+            "vi": "**Đo lường và tối ưu:** Đánh giá kết quả sau mỗi hoạt động để điều chỉnh các sự kiện tiếp theo.",
+            "en": "**Measure and optimize:** Evaluate results after each activity to adjust future events."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Lượt tải cho biết chiến dịch launch có thu hút được người chơi hay không, nhưng không cho biết họ có tiếp tục chơi hay không. Với LiveOps, những chỉ số như **DAU, WAU, tỷ lệ retention, thời gian chơi, số phiên đăng nhập, tỷ lệ tham gia sự kiện và doanh thu trên mỗi người chơi** sẽ giúp nhà phát hành hiểu rõ hơn chất lượng của tệp người dùng sau launch.",
+          "en": "Download numbers indicate whether a launch campaign has attracted players, but they do not reveal whether players will continue playing. With LiveOps, metrics such as **DAU, WAU, retention rates, playtime, login sessions, event participation rates, and revenue per player** will help publishers better understand the quality of their user base after launch."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đặc biệt, dữ liệu nên được phân tích theo từng nhóm. Người chơi mới có thể phản ứng khác với người chơi lâu ngày, trong khi người chơi miễn phí cũng có hành vi khác với nhóm thường xuyên chi tiêu.",
+          "en": "In particular, data should be analyzed by segment. New players may react differently from long-time players, while free-to-play players also exhibit different behavior from the group that spends regularly."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Từ đó, nhà phát hành có thể thiết kế những hoạt động phù hợp với từng nhóm thay vì sử dụng một phần thưởng hoặc một sự kiện cho toàn bộ người chơi.",
+          "en": "From there, publishers can design activities tailored to each segment rather than using a single reward or event for the entire player base."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "LiveOps và monetization cần được nhìn cùng nhau",
+          "en": "LiveOps and monetization should be viewed together"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "LiveOps cũng tạo ra cơ hội monetization, nhưng sự kiện không nên được thiết kế chỉ để bán vật phẩm. Người chơi cần cảm thấy nội dung mới mang lại giá trị trước khi quyết định chi tiền.",
+          "en": "LiveOps also creates monetization opportunities, but events should not be designed solely to sell in-game items. Players need to feel that new content provides value before they decide to spend money."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo  [Sensor Tower](https://sensortower.com/blog/top-grossing-mobile-games-live-ops-strategies-2025-report), battle pass, hệ thống sưu tầm và các sự kiện nhiều lớp là những cơ chế được các game doanh thu cao sử dụng để kết hợp engagement với monetization. Một số game còn liên kết nhiều sự kiện theo cùng một chủ đề để tạo thành trải nghiệm liên tục thay vì một hoạt động đơn lẻ.",
+          "en": "According to  [Sensor Tower](https://sensortower.com/blog/top-grossing-mobile-games-live-ops-strategies-2025-report), battle passes, collection systems, and multi-tiered events are mechanisms used by high-revenue games to combine engagement with monetization. Some games even link multiple events under a single theme to create a continuous experience rather than a single, isolated activity."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với thị trường Thái Lan, trải nghiệm thanh toán cũng nên được tính vào chiến lược LiveOps. Theo  [Antom](https://knowledge.antom.com/thailand-gaming-payment-trends-report-unveiling-southeast-asias-second-largest-gaming-market), người chơi tại Thái Lan sử dụng nhiều phương thức thanh toán như chuyển khoản ngân hàng và ví điện tử, trong đó TrueMoney là một lựa chọn phổ biến. Báo cáo cũng chỉ ra rằng lỗi thanh toán và quy trình phức tạp có thể ảnh hưởng đến trải nghiệm mua hàng.",
+          "en": "For the Thai market, the payment experience should also be factored into the LiveOps strategy. According to  [Antom](https://knowledge.antom.com/thailand-gaming-payment-trends-report-unveiling-southeast-asias-second-largest-gaming-market), players in Thailand use various payment methods such as bank transfers and e-wallets, with TrueMoney being a popular choice. The report also points out that payment errors and complex processes can negatively impact the purchasing experience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Do đó, một sự kiện có nội dung hấp dẫn nhưng quy trình thanh toán nhiều bước vẫn có thể làm giảm khả năng chuyển đổi. LiveOps cần được nhìn như một chuỗi trải nghiệm hoàn chỉnh:",
+          "en": "Therefore, an event with compelling content but a multi-step payment process can still reduce conversion rates. LiveOps should be viewed as a complete chain of experiences:"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Nhìn thấy sự kiện → tham gia → nhận phần thưởng → quay lại → quyết định chi tiêu.**",
+          "en": "**Discover the event → participate → receive rewards → return → decide to spend.**"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "LiveOps không chỉ là việc liên tục tung ra sự kiện mới sau ngày phát hành. Mục tiêu quan trọng hơn là tạo ra một vòng lặp khiến người chơi có lý do để quay lại, tham gia cộng đồng, trải nghiệm nội dung mới và tiếp tục gắn bó với game.",
+          "en": "LiveOps isn’t just about continuously rolling out new events after launch. The more important goal is to create a loop that gives players a reason to come back, engage with the community, experience new content, and remain committed to the game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tại Thái Lan, chiến lược này có thể kết hợp **nội dung cập nhật, sự kiện theo mùa, creator, Facebook, cộng đồng và bản địa hóa văn hóa** để xây dựng hành trình dài hạn sau launch. Khi kết hợp với dữ liệu retention, hành vi chi tiêu và phản hồi của người chơi, nhà phát hành có thể điều chỉnh hoạt động theo từng nhóm thay vì áp dụng một công thức chung.",
+          "en": "In Thailand, this strategy can combine **content updates, seasonal events, creators, Facebook, community engagement, and cultural localization** to build a long-term post-launch journey. When combined with retention data, spending behavior, and player feedback, publishers can tailor their activities to specific groups rather than applying a one-size-fits-all approach."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1791628114254-6-20.webp",
+        "alt": {
+          "vi": "Liên hệ ANBU để tìm kiếm insight và phát triển kế hoạch phù hợp với từng sản phẩm",
+          "en": "Contact ANBU to gain insights and develop a plan tailored to each product"
+        },
+        "caption": {
+          "vi": "Liên hệ ANBU để tìm kiếm insight và phát triển kế hoạch phù hợp với từng sản phẩm",
+          "en": "Contact ANBU to gain insights and develop a plan tailored to each product"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các nhà phát hành có nhu cầu khảo sát thị trường, nghiên cứu hành vi người chơi hoặc xây dựng chiến lược LiveOps tại Thái Lan có thể liên hệ **ANBU** để tìm kiếm insight và phát triển kế hoạch phù hợp với từng sản phẩm.",
+          "en": "Publishers looking to conduct market research, study player behavior, or develop a LiveOps strategy in Thailand can contact **ANBU** to gain insights and develop a plan tailored to each product."
+        }
+      }
+    ]
+  },
+  {
     "slug": "game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing",
     "slug_en": "game-audience-research-thailand-understanding-thai-gamers",
     "title": {
