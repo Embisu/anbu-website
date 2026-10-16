@@ -1,99 +1,147 @@
-type Item = { href: string; label: string; note?: string };
+import Icon from "./Icon";
+import Reveal from "./Reveal";
+import SectionHeading from "./SectionHeading";
+
+type Item = { href: string; label: string; tag: string; note?: string };
 
 const content = {
   vi: {
+    eyebrow: "Hệ sinh thái ANBU",
     title: "Tin và phân tích từ OtaHub",
     intro: "OtaHub là trang tin game, anime và manga do ANBU vận hành. Một số bài đáng đọc gần đây:",
     items: [
       {
         href: "https://otahub.asia/cktg-2026-boc-tham-khi-nao-lich-thi-dau-theo-gio-viet-nam",
         label: "Lịch thi đấu Chung kết thế giới LMHT 2026 theo giờ Việt Nam",
-        note: ": Play-In, vòng Thụy Sĩ, tứ kết, bán kết và chung kết.",
+        tag: "Esports",
+        note: "Play-In, vòng Thụy Sĩ, tứ kết, bán kết và chung kết.",
       },
       {
         href: "https://otahub.asia/choi-gi",
         label: "Gợi ý chơi gì, xem gì, đọc gì hôm nay",
-        note: ": chọn tâm trạng để nhận gợi ý kèm review và điểm số.",
+        tag: "Gợi ý",
+        note: "Chọn tâm trạng để nhận gợi ý kèm review và điểm số.",
       },
       {
         href: "https://otahub.asia/dem-nguoc-gta-6",
         label: "Đếm ngược GTA 6 và những điều cần biết trước ngày ra mắt 19/11",
-        note: ".",
+        tag: "Game mới",
       },
       {
         href: "https://otahub.asia/giftcode",
         label: "Tổng hợp giftcode game mới nhất, cập nhật mỗi thứ Hai",
-        note: ".",
+        tag: "Giftcode",
       },
       {
         href: "https://otahub.asia/death-stranding-2-review",
         label: "Review Death Stranding 2: chiến đấu tốt hơn, vẫn kén người chơi",
-        note: ".",
+        tag: "Review",
       },
     ] as Item[],
     allHref: "https://otahub.asia/",
     allLabel: "Xem toàn bộ tin và bài đánh giá tại OtaHub",
+    allHint: "Game · Anime · Manga",
   },
   en: {
+    eyebrow: "ANBU ecosystem",
     title: "News and analysis from OtaHub",
     intro: "OtaHub is a gaming, anime and manga news site run by ANBU. Recent articles worth reading:",
     items: [
       {
         href: "https://otahub.asia/en/worlds-2026-draw-when-schedule-vietnam-time",
         label: "Worlds 2026 schedule in Vietnam time",
-        note: ": Play-In, Swiss Stage, quarterfinals, semifinals and the final.",
+        tag: "Esports",
+        note: "Play-In, Swiss Stage, quarterfinals, semifinals and the final.",
       },
       {
         href: "https://otahub.asia/en/choi-gi",
         label: "What to play, watch or read today",
-        note: ": pick a mood and get a recommendation with a review and score.",
+        tag: "Picks",
+        note: "Pick a mood and get a recommendation with a review and score.",
       },
       {
         href: "https://otahub.asia/en/gta-6-countdown",
         label: "GTA 6 countdown and what to know before November 19",
-        note: ".",
+        tag: "New release",
       },
       {
         href: "https://otahub.asia/en/game-codes",
         label: "Latest game gift codes, updated every Monday",
-        note: ".",
+        tag: "Gift codes",
       },
       {
         href: "https://otahub.asia/en/death-stranding-2-review",
         label: "Death Stranding 2 review: better combat, still not for everyone",
-        note: ".",
+        tag: "Review",
       },
     ] as Item[],
     allHref: "https://otahub.asia/en/",
     allLabel: "Browse all news and reviews at OtaHub",
+    allHint: "Games · Anime · Manga",
   },
 };
 
-// Homepage-only editorial links to OtaHub (same ecosystem). Plain followed links.
+// Homepage-only editorial links to OtaHub (same ecosystem). Plain followed links:
+// each card's title is the anchor, stretched over the whole card so it is fully clickable.
 export default function OtaHubLinks({ locale }: { locale: string }) {
   const c = locale === "vi" ? content.vi : content.en;
   return (
-    <section className="otahub-links container-x py-10 sm:py-16">
-      <div className="mx-auto max-w-3xl">
-        <h2 className="font-display text-xl font-extrabold text-navy-800 sm:text-2xl">{c.title}</h2>
-        <p className="mt-3 text-sm leading-relaxed text-navy-500 sm:text-base">{c.intro}</p>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-navy-500 sm:text-base">
-          {c.items.map((item) => (
-            <li key={item.href}>
-              <a href={item.href} className="link-underline font-semibold text-navy-700">
-                {item.label}
-              </a>
-              {item.note}
-            </li>
-          ))}
-        </ul>
-        <p className="mt-4 text-sm sm:text-base">
-          <a href={c.allHref} className="link-underline font-semibold text-navy-700">
-            {c.allLabel}
-          </a>
-          .
-        </p>
-      </div>
+    <section className="otahub-links container-x py-10 sm:py-20 lg:py-24">
+      <SectionHeading eyebrow={c.eyebrow} title={c.title} subtitle={c.intro} />
+
+      <ul className="mt-8 grid list-none gap-5 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+        {c.items.map((item, i) => (
+          <li key={item.href}>
+            <Reveal delay={i * 60} className="h-full">
+              <article className="group relative flex h-full flex-col rounded-2xl border border-navy-100/70 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-[0_28px_70px_-24px_rgba(1,47,135,0.3)] sm:p-6">
+                <div className="flex items-center justify-between">
+                  <span className="inline-flex rounded-full bg-orange-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-orange-600">
+                    {item.tag}
+                  </span>
+                  <span className="font-display text-sm font-extrabold text-navy-200">{String(i + 1).padStart(2, "0")}</span>
+                </div>
+                <h3 className="mt-4 font-display text-lg font-extrabold leading-snug text-navy-800 sm:text-xl">
+                  <a
+                    href={item.href}
+                    className="after:absolute after:inset-0 after:content-[''] transition-colors group-hover:text-orange-600"
+                  >
+                    {item.label}
+                  </a>
+                </h3>
+                {item.note && <p className="mt-2.5 text-sm leading-relaxed text-navy-500">{item.note}</p>}
+                <span
+                  aria-hidden="true"
+                  className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-navy-700 transition-colors group-hover:text-orange-600"
+                >
+                  OtaHub
+                  <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </article>
+            </Reveal>
+          </li>
+        ))}
+
+        <li>
+          <Reveal delay={c.items.length * 60} className="h-full">
+            <article className="group relative flex h-full min-h-[11rem] flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br from-navy-800 to-navy-950 p-5 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_-24px_rgba(1,47,135,0.5)] sm:p-6">
+              <span className="text-xs font-bold uppercase tracking-wide text-orange-400">{c.allHint}</span>
+              <div>
+                <h3 className="mt-6 font-display text-lg font-extrabold leading-snug sm:text-xl">
+                  <a href={c.allHref} className="after:absolute after:inset-0 after:content-['']">
+                    {c.allLabel}
+                  </a>
+                </h3>
+                <span
+                  aria-hidden="true"
+                  className="mt-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-orange-500 text-white transition-transform group-hover:translate-x-1"
+                >
+                  <Icon name="arrow" className="h-4 w-4" />
+                </span>
+              </div>
+            </article>
+          </Reveal>
+        </li>
+      </ul>
     </section>
   );
 }
