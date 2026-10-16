@@ -1,5 +1,375 @@
 [
   {
+    "slug": "game-publishing-in-vietnam-nhung-bai-toan-can-giai-truoc-khi-dau-tu-marketing",
+    "title": {
+      "vi": "Game Publishing in Vietnam: Những bài toán cần giải trước khi đầu tư marketing",
+      "en": "Game Publishing in Vietnam: Challenges to Address Before Investing in Marketing"
+    },
+    "excerpt": {
+      "vi": "Game Publishing in Vietnam: Trước khi đầu tư ngân sách quảng bá, nhà phát hành cần xác định game có phù hợp với người chơi Việt Nam hay không, cần đáp ứng những điều kiện nào để phát hành và làm thế nào để biến lượt cài đặt thành giá trị lâu dài. Đây là những quyết định ảnh hưởng trực tiếp đến khả năng tăng trưởng của một tựa game tại thị trường Việt Nam.",
+      "en": "Game Publishing in Vietnam: Before investing in a promotional budget, publishers need to determine whether the game is suitable for Vietnamese players, identify the conditions required for release, and figure out how to turn downloads into long-term value."
+    },
+    "category": {
+      "vi": "Thị trường Game",
+      "en": "Gaming Market"
+    },
+    "date": "2026-10-16",
+    "readingTime": 18,
+    "cover": "/blog-media/1792119990618-1-31.webp",
+    "author": "ANBU Team",
+    "color": "from-blue-600 to-indigo-600",
+    "variant": "game",
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đưa một tựa game vào thị trường Việt Nam không chỉ là bản địa hóa ngôn ngữ, mở trang mạng xã hội và chạy quảng cáo để thu hút lượt tải. Nhà phát hành còn phải đánh giá mức độ phù hợp của sản phẩm, chuẩn bị thủ tục phát hành, lựa chọn mô hình doanh thu và xây dựng kế hoạch vận hành sau khi ra mắt. Nếu những yếu tố này chưa được giải quyết từ đầu, ngân sách marketing có thể tăng nhanh nhưng vẫn không tạo ra kết quả kinh doanh như kỳ vọng.",
+          "en": "Bringing a game to the Vietnam market involves more than just language localization, launching social media pages, and running ads to drive downloads. Publishers must also assess the product’s suitability, prepare for the launch process, select a revenue model, and develop a post-launch operations plan. If these factors aren’t addressed from the outset, the marketing budget may skyrocket without delivering the expected business results."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "1. Thị trường game Việt Nam có cơ hội, nhưng không phải sản phẩm nào cũng phù hợp",
+          "en": "1. The Vietnam gaming market offers opportunities, but not every product is a good fit"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1792120016330-2-27.webp",
+        "alt": {
+          "vi": "Thị trường game Việt Nam có cơ hội, nhưng không phải sản phẩm nào cũng phù hợp",
+          "en": "The Vietnam gaming market offers opportunities, but not every product is a good fit"
+        },
+        "caption": {
+          "vi": "Thị trường game Việt Nam có cơ hội, nhưng không phải sản phẩm nào cũng phù hợp",
+          "en": "The Vietnam gaming market offers opportunities, but not every product is a good fit"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việt Nam là một thị trường đáng chú ý đối với các nhà phát hành game nhờ lượng người dùng di động lớn và mức độ tương tác ngày càng cao. Tuy nhiên, cơ hội thị trường không đồng nghĩa với việc một tựa game có thể thành công chỉ bằng cách tăng ngân sách quảng cáo. Nhà phát hành cần xác định sản phẩm có phù hợp với nhu cầu người chơi, khả năng cạnh tranh và mô hình doanh thu dự kiến hay không trước khi quyết định quy mô đầu tư.",
+          "en": "Vietnam is a notable market for game publishers thanks to its large mobile user base and increasingly high engagement levels. However, market opportunities do not mean that a game can succeed simply by increasing its advertising budget. Publishers need to determine whether a product aligns with player needs, competitive landscape, and projected revenue model before deciding on the scale of investment."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo  [Báo cáo Xu hướng Marketing Game Mobile Đông Nam Á 2026 của SocialPeta và Gamota](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), Việt Nam ghi nhận 76,5 triệu lượt tải game di động trong nửa đầu năm 2026, giảm 9,7% so với cùng kỳ năm trước. Trong khi đó, doanh thu đạt khoảng 177 triệu USD, tăng 7,5%. Việt Nam đóng góp 18,3% tổng lượt tải game mobile ở Đông Nam Á nhưng chỉ chiếm 10,6% doanh thu mua hàng trong ứng dụng (IAP), theo phạm vi thống kê của báo cáo. Những con số này cho thấy quy mô lượt tải và khả năng tạo doanh thu không nhất thiết tăng cùng chiều. Nhà phát hành cần đánh giá chất lượng người dùng và tiềm năng thương mại, thay vì chỉ dựa vào lượng cài đặt để xác định cơ hội.",
+          "en": "According to the  [2026 Southeast Asia Mobile Game Marketing Trends Report by SocialPeta and Gamota](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), Vietnam recorded 76.5 million mobile game downloads in the first half of 2026, a 9.7% decrease compared to the same period the previous year. Meanwhile, revenue reached approximately $177 million, a 7.5% increase. Vietnam accounted for 18.3% of total mobile game downloads in Southeast Asia but represented only 10.6% of in-app purchase (IAP) revenue, according to the report’s scope of analysis. These figures indicate that download volume and revenue-generating potential do not necessarily grow in tandem. Publishers need to evaluate user quality and commercial potential, rather than relying solely on installation volume to identify opportunities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sự khác biệt giữa các thể loại game cũng đáng được quan tâm. Báo cáo trên ghi nhận lượt tải game mô phỏng thể thao tại Việt Nam tăng 242,2% so với cùng kỳ trong nửa đầu năm 2026, game bắn súng tăng 181% và idle RPG tăng 21,4%. Ở chiều doanh thu, game bắn súng cũng có mức tăng đáng kể trong phạm vi phân tích của báo cáo. Đây là những tín hiệu giúp nhà phát hành xác định các phân khúc cần nghiên cứu sâu hơn, nhưng không nên xem mức tăng của một nhóm game là bảo đảm cho sản phẩm mới cùng thể loại. Kết quả còn phụ thuộc vào chất lượng game, đối thủ trực tiếp, thời điểm ra mắt và khả năng tiếp cận đúng nhóm người chơi.",
+          "en": "The differences among game genres are also worth noting. The report noted that downloads of sports simulation games in Vietnam increased by 242.2% year-over-year in the first half of 2026, while shooter games rose by 181% and idle RPGs increased by 21.4%. In terms of revenue, first-person shooters also saw a significant increase within the report’s analysis. These trends help publishers identify segments that warrant further research, but the growth of one game category should not be taken as a guarantee of success for new products in the same genre. Results also depend on game quality, direct competitors, launch timing, and the ability to reach the right audience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, bước đầu tiên không phải là xác định sẽ chi bao nhiêu cho quảng cáo, mà là trả lời ba câu hỏi: game hướng đến ai, có điểm khác biệt gì so với những sản phẩm người chơi đang có và mô hình kinh doanh nào có thể phù hợp với nhóm đối tượng đó? Khi chưa có câu trả lời đủ rõ, việc mở rộng ngân sách marketing sẽ khiến nhà phát hành khó phân biệt vấn đề nằm ở sản phẩm hay ở hoạt động quảng bá.",
+          "en": "Therefore, the first step is not to determine how much to spend on advertising, but to answer three questions: Who is the game targeting? What sets it apart from the games players already own? And which business model might be suitable for that target audience? Without clear answers to these questions, expanding the marketing budget will make it difficult for publishers to distinguish whether the problem lies with the product or with the promotional efforts."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Những bài toán cần giải trước khi đưa game ra thị trường",
+          "en": "2. Challenges to Address Before Launching a Game"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1792120110621-3-25.webp",
+        "alt": {
+          "vi": "Những bài toán cần giải trước khi đưa game ra thị trường",
+          "en": "Challenges to Address Before Launching a Game"
+        },
+        "caption": {
+          "vi": "Những bài toán cần giải trước khi đưa game ra thị trường",
+          "en": "Challenges to Address Before Launching a Game"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Xác định đúng nhóm người chơi và đối thủ cạnh tranh",
+          "en": "Identifying the Right Player Base and Competitors"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một tựa game có thể tiếp cận nhiều nhóm người dùng, nhưng không phải nhóm nào cũng có cùng động lực cài đặt và tiếp tục chơi. Người yêu thích game nhập vai có thể quan tâm đến cốt truyện, nhân vật và hệ thống phát triển dài hạn; người chơi game bắn súng có thể chú trọng cảm giác điều khiển, tính cạnh tranh và khả năng phối hợp đồng đội. Với game casual, khả năng tiếp cận nhanh và vòng lặp gameplay dễ hiểu có thể là lợi thế quan trọng hơn chiều sâu nội dung.",
+          "en": "A game can appeal to many different user groups, but not every group has the same motivation to download and continue playing. Role-playing game enthusiasts may be interested in the storyline, characters, and long-term progression systems; first-person shooter players may prioritize control feel, competitiveness, and teamwork. For casual games, quick accessibility and an easy-to-understand gameplay loop may be more important than content depth."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nhà phát hành cần xác định nhóm người chơi cốt lõi trước khi lựa chọn thông điệp marketing. Công việc này nên bao gồm nghiên cứu đối thủ, phân tích đánh giá trên cửa hàng ứng dụng, theo dõi phản hồi trong cộng đồng và kiểm tra những lý do khiến người chơi lựa chọn hoặc rời bỏ các sản phẩm tương tự. Dữ liệu từ những nguồn này có thể giúp nhận diện các nhu cầu chưa được đáp ứng, nhưng cần phân biệt phản hồi cá nhân với xu hướng phổ biến của thị trường.",
+          "en": "Publishers need to identify their core player base before selecting marketing messages. This process should include competitor research, analysis of app store reviews, monitoring community feedback, and examining the reasons why players choose or abandon similar products. Data from these sources can help identify unmet needs, but it is important to distinguish between individual feedback and broader market trends."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau khi xác định được nhóm mục tiêu, nhà phát hành nên kiểm tra xem điểm hấp dẫn của game có đủ khác biệt để tạo lý do lựa chọn hay không. Nếu sản phẩm cạnh tranh trong một thể loại đã có nhiều tựa game lâu năm, quảng cáo đơn thuần giới thiệu đồ họa đẹp hoặc gameplay quen thuộc có thể chưa đủ thuyết phục. Khi đó, chiến lược định vị cần làm rõ giá trị riêng của sản phẩm, chẳng hạn như cơ chế chơi đặc biệt, phong cách nghệ thuật, trải nghiệm cộng đồng hoặc hướng phát triển nội dung.",
+          "en": "After identifying the target audience, the publisher should assess whether the game’s unique selling points are distinctive enough to provide a compelling reason to choose it. If the product is competing in a genre with many established titles, advertising that simply highlights beautiful graphics or familiar gameplay may not be persuasive enough. In such cases, the positioning strategy must clearly highlight the product’s unique value, such as special gameplay mechanics, artistic style, community experience, or content development direction."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Hoàn thiện thủ tục pháp lý trước khi lên lịch ra mắt",
+          "en": "Complete legal procedures before scheduling the launch"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây là một trong những công việc cần được ưu tiên sớm, đặc biệt với nhà phát hành nước ngoài muốn đưa game vào Việt Nam. Theo  [Nghị định 147/2024/NĐ-CP về quản lý, cung cấp và sử dụng dịch vụ Internet, thông tin trên mạng](https://vanban.chinhphu.vn/?docid=211654&pageid=27160), hoạt động cung cấp game online được phân loại theo các nhóm G1, G2, G3 và G4. Điều kiện và thủ tục phát hành phụ thuộc vào nhóm game tương ứng, vì vậy doanh nghiệp cần xác định đúng loại hình trước khi chuẩn bị hồ sơ.",
+          "en": "This is one of the tasks that should be prioritized early on, especially for foreign publishers looking to bring games into Vietnam. [According to Decree 147/2024/NĐ-CP on the management](https://vanban.chinhphu.vn/?docid=211654&pageid=27160), provision, and use of Internet services and online information, online game services are classified into Groups G1, G2, G3, and G4. The conditions and procedures for release depend on the corresponding game group, so businesses must correctly identify the category before preparing their application documents."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đối với game G1, tức trò chơi có sự tương tác giữa nhiều người chơi thông qua hệ thống máy chủ, doanh nghiệp cần đáp ứng các điều kiện cung cấp dịch vụ và có quyết định phát hành theo quy định. Với game G2, G3 và G4, doanh nghiệp cũng phải đáp ứng các điều kiện tương ứng và hoàn tất thủ tục thông báo phát hành trước khi cung cấp dịch vụ. Việc phân loại không nên chỉ dựa vào cách game được giới thiệu trên cửa hàng ứng dụng, mà cần xem xét cơ chế tương tác và cách thức vận hành thực tế của sản phẩm.",
+          "en": "For G1 games—that is, games involving interaction among multiple players via a server system—businesses must meet the conditions for providing the service and obtain a release approval in accordance with regulations. For G2, G3, and G4 games, businesses must also meet the corresponding conditions and complete the release notification procedures before providing the service. Classification should not be based solely on how the game is presented in the app store, but must take into account the game’s interaction mechanisms and actual operational features."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một điểm quan trọng khác là tư cách của đơn vị phát hành. Theo  [hướng dẫn về điều kiện cung cấp dịch vụ trò chơi điện tử trên mạng của Báo Điện tử Chính phủ](https://baochinhphu.vn/dieu-kien-cung-cap-dich-vu-tro-choi-dien-tu-tren-mang-102260928095040248.htm), doanh nghiệp cung cấp dịch vụ game online tại Việt Nam phải được thành lập theo pháp luật Việt Nam và đáp ứng những điều kiện liên quan đến ngành nghề kinh doanh, năng lực tổ chức, kỹ thuật và thủ tục phát hành. Do đó, nhà phát hành nước ngoài cần xác định mô hình triển khai phù hợp, bao gồm việc hợp tác với một doanh nghiệp phát hành trong nước khi cần thiết.",
+          "en": "Another important point is the status of the publisher. According to  [the Government’s Online Newspaper’s guidelines on conditions for providing online video game services](https://baochinhphu.vn/dieu-kien-cung-cap-dich-vu-tro-choi-dien-tu-tren-mang-102260928095040248.htm), businesses providing online game services in Vietnam must be established under Vietnamese law and meet conditions related to business sector, organizational capacity, technical capabilities, and publication procedures. Therefore, foreign publishers need to determine an appropriate implementation model, including partnering with a domestic publisher when necessary."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngoài thủ tục ban đầu, doanh nghiệp còn phải xem xét các yêu cầu về phân loại độ tuổi, quản lý tài khoản người chơi, thanh toán, bảo vệ thông tin và trách nhiệm đối với người dùng.  [Nghị định 147/2024/NĐ-CP](https://baochinhphu.vn/dieu-kien-cung-cap-dich-vu-tro-choi-dien-tu-tren-mang-102260928095040248.htm) đã được sửa đổi một phần bởi  [Nghị định 116/2026/NĐ-CP](https://vanban.chinhphu.vn/?classid=1&docid=217549&pageid=27160), vì vậy không nên chỉ dựa vào một bản tóm tắt quy định cũ để xây dựng kế hoạch phát hành.",
+          "en": "In addition to the initial procedures, businesses must also consider requirements regarding age classification, player account management, payments, data protection, and user liability.  [Decree 147/2024/NĐ-CP](https://baochinhphu.vn/dieu-kien-cung-cap-dich-vu-tro-choi-dien-tu-tren-mang-102260928095040248.htm) has been partially amended by [Decree 116/2026/NĐ-CP](https://vanban.chinhphu.vn/?classid=1&docid=217549&pageid=27160); therefore, one should not rely solely on a summary of the old regulations when developing a launch plan."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đối với hoạt động marketing, nhà phát hành cần đặc biệt chú ý đến thời điểm được phép quảng bá game theo thủ tục áp dụng cho sản phẩm của mình. Quảng cáo trước khi hoàn tất các điều kiện cần thiết có thể tạo ra rủi ro pháp lý và khiến kế hoạch ra mắt phải thay đổi. Vì thế, hồ sơ pháp lý, lịch phát hành và kế hoạch truyền thông cần được xây dựng đồng bộ, thay vì để đội marketing triển khai độc lập rồi mới xử lý các yêu cầu còn thiếu.",
+          "en": "Regarding marketing activities, publishers must pay special attention to the timing of permitted game promotions in accordance with the procedures applicable to their products. Advertising before all necessary conditions are met may create legal risks and necessitate changes to the launch plan. Therefore, legal documentation, the release schedule, and the communications plan must be developed in tandem, rather than allowing the marketing team to proceed independently and then address any missing requirements later."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các nội dung trên là định hướng rà soát ban đầu, không thay thế việc đối chiếu văn bản pháp luật hiện hành và tư vấn pháp lý cho từng trường hợp cụ thể. Đặc biệt với game có yếu tố thanh toán phức tạp, phát hành xuyên biên giới hoặc thay đổi lớn về nội dung, doanh nghiệp nên kiểm tra các điều kiện áp dụng trước khi chốt ngày ra mắt.",
+          "en": "The information above serves as an initial review guideline and does not replace a comparison with current legal texts or legal consultation for specific cases. Particularly for games with complex payment systems, cross-border distribution, or major content changes, companies should verify the applicable conditions before finalizing a launch date."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bản địa hóa sản phẩm thay vì chỉ dịch sang tiếng Việt",
+          "en": "Product Localization Rather Than Simply Translating into Vietnamese"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một tựa game có thể đã được phát hành thành công ở nước ngoài nhưng vẫn cần điều chỉnh khi tiếp cận người chơi Việt Nam. Bản địa hóa không chỉ là dịch giao diện và hội thoại. Quá trình này còn bao gồm cách diễn đạt trong nhiệm vụ, nội dung hướng dẫn, thông báo sự kiện, hỗ trợ khách hàng, cách trình bày giá và những yếu tố văn hóa xuất hiện trong game.",
+          "en": "A game may have been successfully released overseas but still requires adjustments when targeting Vietnamese players. Localization is not just about translating the interface and dialogue. The process also includes the wording in quests, tutorial content, event notifications, customer support, pricing presentation, and cultural elements featured in the game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những chi tiết nhỏ có thể ảnh hưởng đến cảm nhận về chất lượng sản phẩm. Bản dịch khó hiểu khiến người chơi không nắm được nhiệm vụ; thuật ngữ thiếu nhất quán gây khó khăn khi trao đổi trong cộng đồng; thông báo sự kiện không rõ điều kiện tham gia có thể làm giảm niềm tin. Với game có hệ thống phát triển nhân vật hoặc nhiều tính năng phức tạp, việc bản địa hóa cần được kiểm thử trong ngữ cảnh thực tế thay vì chỉ kiểm tra từng câu riêng lẻ.",
+          "en": "Even small details can affect perceptions of product quality. Confusing translations prevent players from understanding missions; inconsistent terminology makes communication within the community difficult; and event announcements that don’t clearly state participation requirements can erode trust. For games with character progression systems or complex features, localization must be tested in real-world contexts rather than simply checking individual sentences."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nhà phát hành cũng cần điều chỉnh nội dung quảng cáo theo cách người chơi mục tiêu hiểu và đánh giá sản phẩm. Một thông điệp hiệu quả ở thị trường khác chưa chắc tạo ra cùng phản ứng tại Việt Nam. Vì vậy, thay vì dịch nguyên văn creative quốc tế, đội ngũ nên thử nghiệm những cách tiếp cận khác nhau, đồng thời bảo đảm quảng cáo phản ánh đúng gameplay và lợi ích thực tế của game.",
+          "en": "Publishers also need to tailor ad content to how their target audience understands and perceives the product. A message that is effective in another market may not necessarily elicit the same response in Vietnam. Therefore, rather than translating international creative verbatim, the team should experiment with different approaches while ensuring that the ads accurately reflect the gameplay and the game’s actual benefits."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa hiệu quả cần sự phối hợp giữa đội ngũ sản phẩm, marketing, vận hành và hỗ trợ khách hàng. Khi các bộ phận sử dụng cùng hệ thống thuật ngữ, thông điệp nhất quán và lịch nội dung được chuẩn bị trước, trải nghiệm người chơi sẽ liền mạch hơn từ quảng cáo đến lúc bắt đầu chơi.",
+          "en": "Effective localization requires collaboration among the product, marketing, operations, and customer support teams. When these departments use a common terminology system, consistent messaging, and a pre-planned content calendar, the player experience will be more seamless—from the advertisement to the moment they start playing."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Xây dựng mô hình kinh doanh và kế hoạch marketing có thể đo lường",
+          "en": "3. Developing a measurable business model and marketing plan"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1792120169269-4-30.webp",
+        "alt": {
+          "vi": "Xây dựng mô hình kinh doanh và kế hoạch marketing có thể đo lường",
+          "en": "Developing a measurable business model and marketing plan"
+        },
+        "caption": {
+          "vi": "Xây dựng mô hình kinh doanh và kế hoạch marketing có thể đo lường",
+          "en": "Developing a measurable business model and marketing plan"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Xác định cách tạo doanh thu trước khi mở rộng ngân sách",
+          "en": "Determine how to generate revenue before expanding your budget"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Không phải game nào cũng nên theo đuổi cùng một mô hình doanh thu. Tùy thuộc vào thể loại và hành vi người chơi, nhà phát hành có thể cân nhắc mua hàng trong ứng dụng, quảng cáo trong game, battle pass, nội dung trả phí hoặc kết hợp nhiều hình thức. Điều quan trọng là mô hình được chọn phải phù hợp với nhịp chơi và giá trị cốt lõi của sản phẩm, thay vì chỉ dựa vào cách kiếm tiền của một game đang thành công.",
+          "en": "Not every game should follow the same revenue model. Depending on the genre and player behavior, publishers may consider in-app purchases, in-game ads, battle passes, paid content, or a combination of these. It’s crucial that the chosen model aligns with the game’s pace and core value proposition, rather than simply copying the monetization strategy of a successful game"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trước khi ra mắt, đội ngũ nên xác định những chỉ số cơ bản như tỷ lệ giữ chân, tỷ lệ người chơi trả phí, doanh thu bình quân trên người dùng và chi phí thu hút người dùng. Các chỉ số này không cần được xem như những mục tiêu độc lập. Một chiến dịch có CPI thấp nhưng người chơi rời game sớm vẫn có thể kém hiệu quả hơn chiến dịch có CPI cao hơn nhưng tạo ra nhóm người dùng gắn bó và chi tiêu lâu dài.",
+          "en": "Before launch, the team should define key metrics such as retention rate, percentage of paying players, average revenue per user, and user acquisition cost. These metrics should not be viewed as standalone goals. A campaign with a low CPI but high player churn may still be less effective than a campaign with a higher CPI that builds a loyal, long-term user base that spends consistently."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Báo cáo  [Mobile App Trends Spotlight Edition: Vietnam 2026 của Adjust](https://www.adjust.com/blog/vietnam-app-trends-2026/) cho biết số phiên chơi game tại Việt Nam trong quý I/2026 tăng 15% so với cùng kỳ năm trước, vượt mức tăng trưởng của các chỉ số tham chiếu toàn cầu và khu vực châu Á – Thái Bình Dương được báo cáo. Dữ liệu này phản ánh hoạt động tương tác trên thị trường ứng dụng game, nhưng không có nghĩa là mọi game mới đều có thể đạt mức tăng tương tự. Đối với nhà phát hành, giá trị của báo cáo nằm ở việc cung cấp bối cảnh tham khảo để đánh giá hiệu suất sản phẩm và đặt mục tiêu dựa trên dữ liệu phù hợp.",
+          "en": "[Adjust’s “Mobile App Trends Spotlight Edition: Vietnam 2026”](https://www.adjust.com/blog/vietnam-app-trends-2026/) report indicates that the number of gaming sessions in Vietnam during the first quarter of 2026 increased by 15% compared to the same period last year, surpassing the growth rates of the reported global and Asia-Pacific benchmarks. This data reflects engagement activity in the gaming app market, but it does not mean that every new game can achieve a similar level of growth. For publishers, the value of the report lies in providing a reference framework for evaluating product performance and setting goals based on relevant data."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Từ đó, kế hoạch kinh doanh nên xác định rõ ngưỡng hiệu quả cần đạt trước khi mở rộng ngân sách. Nếu retention thấp hơn kỳ vọng, đội ngũ cần kiểm tra onboarding và vòng lặp gameplay. Nếu người chơi gắn bó nhưng tỷ lệ chi trả thấp, cần xem lại mô hình kiếm tiền và giá trị của ưu đãi. Nếu các chỉ số sản phẩm ổn định nhưng chi phí thu hút quá cao, vấn đề có thể nằm ở kênh quảng cáo, creative hoặc cách nhắm mục tiêu.",
+          "en": "Consequently, business plans should clearly define the performance thresholds that must be met before expanding the budget. If retention is lower than expected, the team needs to review the onboarding process and gameplay loop. If players are engaged but the monetization rate is low, the monetization model and the value of incentives should be reevaluated. If product metrics are stable but user acquisition costs are too high, the issue may lie with the advertising channel, creative assets, or targeting strategy."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Chia kế hoạch ra mắt thành các giai đoạn có mục tiêu riêng",
+          "en": "Break the launch plan down into phases with specific goals"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một kế hoạch phát hành hiệu quả không nhất thiết phải bắt đầu bằng chiến dịch quảng cáo quy mô lớn. Trước khi ra mắt rộng rãi, nhà phát hành có thể tiến hành nghiên cứu thị trường, kiểm thử bản địa hóa, thử nghiệm sản phẩm với nhóm người chơi phù hợp và đánh giá khả năng vận hành. Những giai đoạn này giúp phát hiện vấn đề khi chi phí điều chỉnh còn thấp hơn so với thời điểm đã đầu tư lớn cho truyền thông.",
+          "en": "An effective launch plan doesn’t necessarily have to start with a large-scale advertising campaign. Before a wide-scale launch, publishers can conduct market research, test localization, pilot the product with a relevant player group, and evaluate operational capabilities. These phases help identify issues when the cost of making adjustments is still lower than it would be after significant investment in marketing."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở giai đoạn chuẩn bị, trọng tâm nên là xác nhận mức độ phù hợp giữa sản phẩm và nhóm người chơi mục tiêu, hoàn thiện thủ tục phát hành và chuẩn bị hệ thống hỗ trợ. Khi bắt đầu thử nghiệm, đội ngũ cần thu thập phản hồi về trải nghiệm ban đầu, độ ổn định, mức độ dễ hiểu của hướng dẫn và những lý do khiến người chơi ngừng chơi. Dữ liệu từ giai đoạn này giúp quyết định sản phẩm đã sẵn sàng để mở rộng hay cần điều chỉnh thêm.",
+          "en": "During the preparation phase, the focus should be on confirming the product’s fit with the target player base, finalizing release procedures, and preparing support systems. When testing begins, the team needs to gather feedback on the initial experience, stability, the clarity of instructions, and the reasons players stop playing. Data from this phase helps determine whether the product is ready for expansion or requires further adjustments."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau khi các chỉ số ban đầu đạt ngưỡng kỳ vọng, chiến dịch marketing mới nên tăng dần quy mô theo khả năng tiếp nhận của sản phẩm. Nội dung quảng cáo, trang cửa hàng ứng dụng, hoạt động cộng đồng và sự kiện trong game cần được phối hợp để tạo trải nghiệm nhất quán. Đồng thời, nhà phát hành cần chuẩn bị kế hoạch vận hành sau ra mắt, bởi việc giữ chân người chơi phụ thuộc vào cập nhật, xử lý phản hồi và khả năng duy trì nội dung chứ không chỉ vào chiến dịch quảng bá ban đầu.",
+          "en": "Once initial metrics meet expectations, the marketing campaign should gradually scale up in line with the product’s capacity to absorb new users. Advertising content, app store listings, community activities, and in-game events must be coordinated to create a consistent experience. At the same time, the publisher must prepare a post-launch operations plan, as player retention depends on updates, handling feedback, and the ability to maintain content—not just on the initial promotional campaign."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đánh giá hiệu quả bằng dữ liệu sau cài đặt",
+          "en": "Evaluating Effectiveness with Post-Launch Data"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi chiến dịch bắt đầu chạy, lượt tải chỉ nên được xem là một trong những chỉ số đầu vào. Để biết hoạt động marketing có tạo ra giá trị hay không, đội ngũ cần kết nối dữ liệu quảng cáo với hành vi trong game. Những chỉ số như D1, D7, D30 retention, tỷ lệ hoàn thành hướng dẫn, số phiên chơi, tỷ lệ mua hàng, LTV và ROAS có thể giúp đánh giá hiệu quả theo từng nhóm người dùng và từng nguồn quảng cáo.",
+          "en": "Once a campaign begins running, downloads should be viewed as just one of several input metrics. To determine whether marketing efforts are creating value, the team needs to link advertising data with in-game behavior. Metrics such as D1, D7, and D30 retention rates, tutorial completion rates, number of play sessions, purchase rates, LTV, and ROAS can help evaluate performance by user segment and ad source."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Việc theo dõi theo nhóm rất quan trọng vì người dùng đến từ các creative hoặc kênh khác nhau có thể có hành vi khác nhau sau khi cài đặt. Một quảng cáo thu hút nhiều lượt tải chưa chắc đem lại nhóm người chơi phù hợp với gameplay; ngược lại, một creative có ít lượt tải hơn nhưng thu hút đúng đối tượng có thể tạo ra giá trị lâu dài tốt hơn. Vì vậy, nhà phát hành nên so sánh chất lượng người dùng theo thời gian thay vì ra quyết định chỉ dựa trên kết quả trong vài ngày đầu.",
+          "en": "Segment-based tracking is crucial because users coming from different creatives or channels may exhibit different behaviors after installation. An ad that attracts many downloads may not necessarily bring in a player base that’s a good fit for the gameplay; conversely, a creative with fewer downloads but that attracts the right audience may generate better long-term value. Therefore, publishers should compare user quality over time rather than making decisions based solely on results from the first few days."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bên cạnh đó, cần có kế hoạch ứng phó khi chỉ số không đạt kỳ vọng. Nếu lượng cài đặt thấp, đội ngũ có thể kiểm tra thông điệp, creative, khả năng hiển thị trên cửa hàng và mức độ phù hợp của kênh. Nếu lượng cài đặt tốt nhưng retention thấp, nên ưu tiên điều tra trải nghiệm sản phẩm trước khi tăng thêm ngân sách. Nếu người chơi quay lại ổn định nhưng doanh thu thấp, cần đánh giá lại mô hình kiếm tiền và mức độ hấp dẫn của nội dung trả phí. Cách tiếp cận này giúp marketing trở thành một phần của quá trình phát triển sản phẩm, thay vì chỉ là hoạt động mua lượt tải.",
+          "en": "In addition, it’s important to have a contingency plan in place in case metrics fall short of expectations. If installs are low, the team should review the messaging, creative assets, visibility in the app store, and channel relevance. If installs are strong but retention is low, the team should prioritize investigating the product experience before increasing the budget. If player retention is stable but revenue is low, it is necessary to reassess the monetization model and the appeal of paid content. This approach helps integrate marketing into the product development process, rather than treating it merely as a means to drive downloads."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "4. Nghiên cứu thị trường là nền tảng cho chiến lược phát hành game bền vững ",
+          "en": "4. Market research is the foundation for a sustainable game launch strategy"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1792120237011-5-35.webp",
+        "alt": {
+          "vi": "Nghiên cứu thị trường là nền tảng cho chiến lược phát hành game bền vững ",
+          "en": "Market research is the foundation for a sustainable game launch strategy"
+        },
+        "caption": {
+          "vi": "Nghiên cứu thị trường là nền tảng cho chiến lược phát hành game bền vững ",
+          "en": "Market research is the foundation for a sustainable game launch strategy"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Phát hành game tại Việt Nam đòi hỏi nhà phát hành giải quyết đồng thời nhiều bài toán: lựa chọn đúng phân khúc, hoàn thiện thủ tục pháp lý, bản địa hóa trải nghiệm, xây dựng mô hình doanh thu và chuẩn bị hệ thống đo lường trước khi mở rộng marketing. Nếu chỉ tập trung vào quảng cáo mà chưa xử lý những nền tảng này, doanh nghiệp có thể thu hút được người chơi nhưng khó chuyển lượng người dùng đó thành tăng trưởng bền vững.",
+          "en": "Launching a game in Vietnam requires publishers to simultaneously address multiple challenges: selecting the right market segment, completing legal procedures, localizing the experience, building a revenue model, and preparing a measurement system before scaling up marketing efforts. If a company focuses solely on advertising without addressing these foundational elements, it may attract players but will struggle to convert that user base into sustainable growth."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với thị trường đang có sự khác biệt rõ rệt giữa lượt tải và doanh thu, cơ hội không chỉ dành cho những sản phẩm có ngân sách lớn. Nhà phát hành cần hiểu đúng người chơi, kiểm chứng giả thuyết bằng dữ liệu và phân bổ nguồn lực theo từng giai đoạn phát triển. Một kế hoạch ra mắt tốt không phải là kế hoạch tạo ra nhiều lượt tải nhất trong thời gian ngắn, mà là kế hoạch giúp sản phẩm tiếp cận đúng đối tượng, vận hành phù hợp và xây dựng được giá trị dài hạn.",
+          "en": "With a market where there is a clear disparity between downloads and revenue, opportunities aren’t limited to products with large budgets. Publishers need to truly understand their players, validate hypotheses with data, and allocate resources according to each stage of development. A good launch plan isn’t one that generates the most downloads in the shortest time, but rather one that helps the product reach the right audience, operate effectively, and build long-term value."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1792120275258-6-21.webp",
+        "alt": {
+          "vi": "Contact ANBU",
+          "en": "Contact ANBU"
+        },
+        "caption": {
+          "vi": "Contact ANBU",
+          "en": "Contact ANBU"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "ANBU hỗ trợ nhà phát hành nghiên cứu thị trường, phân tích hành vi người chơi và xác định cơ hội tăng trưởng phù hợp với sản phẩm trước khi đầu tư vào các hoạt động marketing. Các nhà phát hành có nhu cầu khảo sát thị trường có thể liên hệ ANBU.",
+          "en": "ANBU supports publishers in conducting market research, analyzing player behavior, and identifying growth opportunities tailored to their product before investing in marketing activities. Publishers interested in market research can contact ANBU."
+        }
+      }
+    ]
+  },
+  {
     "slug": "liveops-sau-khi-game-ra-mat-lam-the-nao-de-giu-chan-game-thu-thai-lan",
     "title": {
       "vi": "LiveOps: Sau khi game ra mắt, làm thế nào để giữ chân game thủ Thái Lan?",
