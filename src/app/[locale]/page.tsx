@@ -1,3 +1,4 @@
+import OtaHubLinks from "@/components/OtaHubLinks";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { isLocale, defaultLocale, type Locale } from "@/i18n/config";
@@ -316,6 +317,9 @@ export default async function HomePage({ params }: { params: { locale: string } 
 
       {/* 6. CONVERSION CTA */}
       <CTASection locale={locale} dict={dict} />
+
+      {/* 7. OTAHUB, ecosystem news links (homepage only, above the footer) */}
+      <OtaHubLinks locale={locale} />
     </>
   );
 }
