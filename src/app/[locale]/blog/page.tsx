@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbLd, siteUrl } from "@/lib/seo";
 
+import { blogSlugForLocale } from "@/content/blogSlugRedirects";
 export default async function BlogPage({ params }: { params: { locale: string } }) {
   const locale = (isLocale(params.locale) ? params.locale : defaultLocale) as Locale;
   const dict = await getDictionary(locale);
@@ -73,7 +74,7 @@ export default async function BlogPage({ params }: { params: { locale: string } 
       {sorted[0] && (
         <section className="container-x pt-16 sm:pt-20">
           <Reveal>
-            <Link href={localePath(locale, `/blog/${sorted[0].slug}`)} className="group grid overflow-hidden rounded-3xl bg-navy-900 lg:grid-cols-2">
+            <Link href={localePath(locale, `/blog/${blogSlugForLocale(sorted[0], locale)}`)} className="group grid overflow-hidden rounded-3xl bg-navy-900 lg:grid-cols-2">
               <div className="relative min-h-72 overflow-hidden">
                 <EditorialMedia src={editorialImageForPostData(sorted[0])} alt={t(sorted[0].title, locale)} focal={sorted[0].focal} className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.03]" priority />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-navy-900/20" />

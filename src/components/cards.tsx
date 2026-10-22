@@ -10,6 +10,7 @@ import { variantForProject, gradientForServiceIcon } from "./Scene";
 import ProjectMedia from "./ProjectMedia";
 import EditorialMedia, { editorialImageForPostData, editorialImageForService } from "./EditorialMedia";
 
+import { blogSlugForLocale } from "@/content/blogSlugRedirects";
 export function ServiceCard({
   service,
   locale,
@@ -107,7 +108,7 @@ export function PostCard({
 }) {
   return (
     <Link
-      href={localePath(locale, `/blog/${post.slug}`)}
+      href={localePath(locale, `/blog/${blogSlugForLocale(post, locale)}`)}
       className="group flex flex-col overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/70 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_-20px_rgba(1,47,135,0.22)]"
     >
       <div className={`relative aspect-[16/9] overflow-hidden bg-gradient-to-br ${post.color}`}>
@@ -154,7 +155,7 @@ export function FeaturedPost({
 }) {
   return (
     <Link
-      href={localePath(locale, `/blog/${post.slug}`)}
+      href={localePath(locale, `/blog/${blogSlugForLocale(post, locale)}`)}
       className="group block overflow-hidden rounded-2xl border border-white/10 bg-navy-950 text-white shadow-[0_24px_70px_-28px_rgba(1,23,70,0.6)] transition-all duration-300 hover:shadow-[0_32px_90px_-20px_rgba(1,23,70,0.85)] sm:rounded-[2rem]"
     >
       {/* 16:9 Cover Image centered on top */}

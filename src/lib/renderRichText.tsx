@@ -65,7 +65,7 @@ export function renderRichText(
           rel={isInternal ? undefined : "noopener noreferrer"}
           className={linkClass}
         >
-          {label}
+          {renderRichText(label, options)}
         </a>
       );
     }

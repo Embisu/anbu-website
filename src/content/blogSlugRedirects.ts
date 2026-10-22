@@ -60,6 +60,12 @@ export const blogViToEnSlug: Record<string, string> = {
   "aso-localization-vietnam-mobile-game": "mobile-game-aso-localization-vietnam-keyword-slang-metadata",
   "esports-sponsorship-vietnam-roi": "measuring-esports-sponsorship-roi-vietnam-practical-guide-brands",
   "game-content-marketing-thailand-chien-luoc-noi-dung-tiep-can-game-thu-thai-lan": "game-content-marketing-thailand-engaging-thai-gamers",
+  "liveops-sau-khi-game-ra-mat-lam-the-nao-de-giu-chan-game-thu-thai-lan": "liveops-post-launch-how-to-retain-thai-gamers",
+  "gaming-brand-partnership-thailand-chien-luoc-hop-tac-thuong-hieu-trong-thi-truong-game-thai-lan": "gaming-brand-partnership-thailand-strategic-collaboration",
+  "nghien-cuu-xa-hoi-hoc-co-y-nghia-gi-trong-marketing-game": "sociological-research-in-game-marketing",
+  "game-mobile-promotion-cach-quang-ba-game-mobile-hieu-qua-tai-viet-nam": "mobile-game-promotion-how-to-promote-games-in-vietnam",
+  "kol-trong-nganh-game-vai-tro-va-cach-xay-dung-chien-luoc-hieu-qua": "kols-in-gaming-industry-strategic-playbook",
+  "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi": "vietnam-gaming-market-evolving-player-acquisition",
 };
 
 
@@ -85,3 +91,8 @@ export const mergedPostRedirects: Record<string, string> = {
   "quang-cao-game-mobile-viet-nam-ke-hoach-ngan-sach": "marketing-game-app-toi-uu-cpi-roas",
   "mobile-game-advertising-vietnam-3-phase-budget-allocation-strategy": "mobile-game-app-marketing-practical-cpi-roas-ltv",
 };
+
+/** The canonical slug of a post in a given locale (EN falls back to the redirect map, then the VI slug). */
+export function blogSlugForLocale(post: { slug: string; slug_en?: string }, locale: string): string {
+  return locale === "en" ? post.slug_en || blogViToEnSlug[post.slug] || post.slug : post.slug;
+}
