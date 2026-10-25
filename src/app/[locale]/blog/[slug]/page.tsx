@@ -368,7 +368,7 @@ export default async function BlogPostPage({
     "Vận hành Game": "game-app-marketing",
   };
   const relatedService = serviceByCategory[post.category.vi] ?? "game-app-marketing";
-  const linkedService = post.slug === "game-launch-marketing-thailand" ? "esports-gaming-marketing-sea" : relatedService;
+  const linkedService = post.slug === "chien-luoc-phat-hanh-game-mobile-tai-thai-lan" ? "esports-gaming-marketing-sea" : relatedService;
   const serviceAnchor = locale === "vi"
     ? linkedService === "influencer-marketing" ? "Xem dịch vụ booking KOL KOC và creator"
       : linkedService === "performance-marketing" ? "Xem dịch vụ performance marketing cho game"

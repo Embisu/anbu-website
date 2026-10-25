@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { locales, defaultLocale } from "@/i18n/config";
-import { blogViToEnSlug, blogEnToViSlug, mergedPostRedirects } from "@/content/blogSlugRedirects";
+import { blogViToEnSlug, blogEnToViSlug, mergedPostRedirects, resolveRedirectTarget } from "@/content/blogSlugRedirects";
 
 function getLocale(request: NextRequest): string {
   const accept = request.headers.get("accept-language");
@@ -41,7 +41,7 @@ export function middleware(request: NextRequest) {
       const mergedTarget = mergedPostRedirects[mergedBlogMatch[2]];
       if (mergedTarget) {
         const url = request.nextUrl.clone();
-        url.pathname = `/${mergedBlogMatch[1]}/blog/${mergedTarget}`;
+        url.pathname = `/${mergedBlogMatch[1]}/blog/${resolveRedirectTarget(mergedTarget, mergedBlogMatch[1])}`;
         return NextResponse.redirect(url, 308);
       }
     }
