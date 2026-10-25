@@ -367,7 +367,8 @@
           "en": "ANBU supports publishers in conducting market research, analyzing player behavior, and identifying growth opportunities tailored to their product before investing in marketing activities. Publishers interested in market research can contact ANBU."
         }
       }
-    ]
+    ],
+    "slug_en": "game-publishing-in-vietnam-challenges-before-investing-in-marketing"
   },
   {
     "slug": "liveops-sau-khi-game-ra-mat-lam-the-nao-de-giu-chan-game-thu-thai-lan",
@@ -846,7 +847,8 @@
           "en": "Publishers looking to conduct market research, study player behavior, or develop a LiveOps strategy in Thailand can contact **ANBU** to gain insights and develop a plan tailored to each product."
         }
       }
-    ]
+    ],
+    "slug_en": "liveops-post-launch-how-to-retain-thai-gamers"
   },
   {
     "slug": "game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing",
@@ -3378,7 +3380,8 @@
           "en": "Game publishers and commercial brands seeking comprehensive market intelligence, Thai player insight analysis, or looking to forge high-impact Gaming Brand Partnerships can connect directly with ANBU Agency for dedicated strategic consultation."
         }
       }
-    ]
+    ],
+    "slug_en": "gaming-brand-partnership-thailand-strategic-collaboration"
   },
   {
     "slug": "nghien-cuu-xa-hoi-hoc-co-y-nghia-gi-trong-marketing-game",
@@ -4071,7 +4074,8 @@
           "en": "ANBU combines player research, market analysis, and real-world implementation experience to help publishers better understand their players. From insights to strategy, ANBU partners with brands to develop approaches tailored to each market and gaming community. Contact ANBU to get started on player research for your game."
         }
       }
-    ]
+    ],
+    "slug_en": "sociological-research-in-game-marketing"
   },
   {
     "slug": "game-mobile-promotion-cach-quang-ba-game-mobile-hieu-qua-tai-viet-nam",
@@ -4676,7 +4680,8 @@
           "en": "Are you preparing to launch a game or looking to reach the right players in Vietnam? Contact ANBU to work together on developing a tailored and effective marketing strategy for your game."
         }
       }
-    ]
+    ],
+    "slug_en": "mobile-game-promotion-how-to-promote-games-in-vietnam"
   },
   {
     "slug": "kol-trong-nganh-game-vai-tro-va-cach-xay-dung-chien-luoc-hieu-qua",
@@ -5153,7 +5158,8 @@
         },
         "type": "p"
       }
-    ]
+    ],
+    "slug_en": "kols-in-gaming-industry-strategic-playbook"
   },
   {
     "slug": "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi",
@@ -5540,6 +5546,7 @@
         },
         "type": "p"
       }
-    ]
+    ],
+    "slug_en": "vietnam-gaming-market-evolving-player-acquisition"
   }
 ]
