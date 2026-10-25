@@ -90,6 +90,17 @@ export function articleLd({
   };
 }
 
+/** Keep meta descriptions within what Google shows (~160 chars): prefer a sentence end, else a word end. */
+export function trimDescription(text: string, max = 160): string {
+  const t = (text || "").replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max - 1);
+  const sentence = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (sentence >= 90) return cut.slice(0, sentence + 1);
+  const space = cut.lastIndexOf(" ");
+  return `${cut.slice(0, space > 90 ? space : cut.length).replace(/[,;:\-–]+$/, "")}…`;
+}
+
 type BuildMetaArgs = {
   locale: Locale;
   path?: string; // without locale, starts with "/"
@@ -109,18 +120,19 @@ export function buildMetadata({
   type = "website",
   alternatesLanguages,
 }: BuildMetaArgs): Metadata {
-  // Never hard-truncate with a literal "..." in the <title> tag: Google computes
-  // its own pixel-width truncation for the SERP snippet at render time, so a
-  // source-level ellipsis only destroys keywords (and trailing context like a
-  // year or country name) without preventing Google's own display truncation.
-  const compactTitle = title;
+  description = trimDescription(description);
+  const isHome = path === "" || path === "/";
+  // Strip duplicate trailing brand suffix if page title already ends with | ANBU or | ANBU Agency
+  const cleanTitle = title.replace(/\s*[|\-–]\s*ANBU(?:\s+Agency)?\s*$/i, "").trim();
+  const metaTitle = isHome ? { absolute: title } : cleanTitle;
+  const fullTitle = isHome ? title : `${cleanTitle} | ${site.name}`;
   const url = `${siteUrl}/${locale}${path === "/" ? "" : path}`;
   const absoluteImage = image.startsWith("http")
     ? image
     : `${siteUrl}${image.startsWith("/") ? "" : "/"}${image}`;
 
   return {
-    title: compactTitle,
+    title: metaTitle,
     description,
     alternates: {
       canonical: url,
@@ -129,15 +141,15 @@ export function buildMetadata({
     openGraph: {
       type,
       url,
-      title: compactTitle,
+      title: fullTitle,
       description,
       siteName: site.name,
       locale: locale === "vi" ? "vi_VN" : "en_US",
-      images: [{ url: absoluteImage, width: 1200, height: 630, alt: compactTitle }],
+      images: [{ url: absoluteImage, width: 1200, height: 630, alt: fullTitle }],
     },
     twitter: {
       card: "summary_large_image",
-      title: compactTitle,
+      title: fullTitle,
       description,
       images: [absoluteImage],
     },
