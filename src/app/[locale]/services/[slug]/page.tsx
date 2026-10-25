@@ -1,3 +1,4 @@
+import { localizeBlogPath } from "@/content/blogSlugRedirects";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -218,7 +219,7 @@ export default async function ServiceDetailPage({
               <Icon name="arrow" className="h-4 w-4" />
             </Link>
             {service.slug === "esports-gaming-marketing-sea" && (
-              <Link href={localePath(locale, "/blog/chien-luoc-phat-hanh-game-mobile-tai-thai-lan")} className="mt-4 inline-flex text-sm font-semibold text-navy-700 hover:text-orange-600">
+              <Link href={localizeBlogPath(localePath(locale, "/blog/chien-luoc-phat-hanh-game-mobile-tai-thai-lan"))} className="mt-4 inline-flex text-sm font-semibold text-navy-700 hover:text-orange-600">
                 {locale === "vi" ? "Đọc playbook ra mắt game tại Thái Lan →" : "Read the Thailand game launch playbook →"}
               </Link>
             )}

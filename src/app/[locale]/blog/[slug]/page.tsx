@@ -4,6 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import { isLocale, defaultLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { posts, getPost, type Post, type Block, type L10n } from "@/content/posts";
+import { blogViToEnSlug } from "@/content/blogSlugRedirects";
 import { postDeepDiveBySlug } from "@/content/postDeepDive";
 import { t } from "@/content/site";
 import { buildMetadata, siteUrl, breadcrumbLd } from "@/lib/seo";
@@ -19,6 +20,7 @@ import { renderRichText } from "@/lib/renderRichText";
 import ResilientImage from "@/components/ResilientImage";
 
 import { MOJIBAKE } from "@/lib/postIntegrity";
+import { blogSlugForLocale } from "@/content/blogSlugRedirects";
 function isCorruptedPost(p?: Post | null): boolean {
   if (!p) return false;
   const title = p.title?.vi || "";
@@ -29,7 +31,8 @@ function isCorruptedPost(p?: Post | null): boolean {
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
     posts.map((p) => {
-      const activeSlug = locale === "en" && p.slug_en ? p.slug_en : p.slug;
+      const enSlug = p.slug_en || blogViToEnSlug[p.slug];
+      const activeSlug = locale === "en" && enSlug ? enSlug : p.slug;
       return { locale, slug: activeSlug };
     })
   );
@@ -58,7 +61,7 @@ export async function generateMetadata({
   }
 
   const viSlug = post.slug;
-  const enSlug = post.slug_en || post.slug;
+  const enSlug = post.slug_en || blogViToEnSlug[post.slug] || post.slug;
   const activeSlug = locale === "en" ? enSlug : viSlug;
   const postCover = editorialImageForPostData(post);
 
@@ -342,15 +345,17 @@ export default async function BlogPostPage({
     return <ClientCustomPostViewer slug={params.slug} locale={locale} dict={dict} />;
   }
 
+  const enSlug = post.slug_en || blogViToEnSlug[post.slug] || post.slug;
+
   // Smart Bilingual Slug Canonical Redirection
-  if (locale === "en" && post.slug_en && params.slug !== post.slug_en) {
-    redirect(`/en/blog/${post.slug_en}`);
+  if (locale === "en" && enSlug && params.slug !== enSlug) {
+    redirect(`/en/blog/${enSlug}`);
   }
   if (locale === "vi" && params.slug !== post.slug) {
     redirect(`/vi/blog/${post.slug}`);
   }
 
-  const activeSlug = locale === "en" && post.slug_en ? post.slug_en : post.slug;
+  const activeSlug = locale === "en" ? enSlug : post.slug;
   const postCover = editorialImageForPostData(post);
 
   const related = [
@@ -436,7 +441,7 @@ export default async function BlogPostPage({
             [
               { name: "ANBU", path: "" },
               { name: dict.nav.blog, path: "/blog" },
-              { name: t(post.title, locale), path: `/blog/${post.slug}` },
+              { name: t(post.title, locale), path: `/blog/${blogSlugForLocale(post, locale)}` },
             ],
             locale
           ),
@@ -536,7 +541,7 @@ export default async function BlogPostPage({
                 </p>
                 <div className="mt-3 grid gap-2">
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${siteUrl}/${locale}/blog/${post.slug}`)}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${siteUrl}/${locale}/blog/${blogSlugForLocale(post, locale)}`)}`}
                     target="_blank"
                     rel="noreferrer"
                     className="rounded-xl bg-white px-3 py-2 text-sm font-semibold text-navy-700 transition hover:text-orange-600"
@@ -544,7 +549,7 @@ export default async function BlogPostPage({
                     Facebook ↗
                   </a>
                   <a
-                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${siteUrl}/${locale}/blog/${post.slug}`)}`}
+                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${siteUrl}/${locale}/blog/${blogSlugForLocale(post, locale)}`)}`}
                     target="_blank"
                     rel="noreferrer"
                     className="rounded-xl bg-white px-3 py-2 text-sm font-semibold text-navy-700 transition hover:text-orange-600"
@@ -559,7 +564,7 @@ export default async function BlogPostPage({
                 </p>
                 <div className="mt-4 space-y-4">
                   {related.slice(0, 2).map((item, index) => (
-                    <Link key={item.slug} href={localePath(locale, `/blog/${item.slug}`)} className="group block border-b border-navy-100 pb-4 last:border-0 last:pb-0">
+                    <Link key={item.slug} href={localePath(locale, `/blog/${blogSlugForLocale(item, locale)}`)} className="group block border-b border-navy-100 pb-4 last:border-0 last:pb-0">
                       <span className="text-[11px] font-bold text-orange-500">0{index + 1}</span>
                       <h3 className="mt-1 text-sm font-bold leading-snug text-navy-800 transition group-hover:text-orange-600">
                         {t(item.title, locale)}
@@ -699,7 +704,7 @@ export default async function BlogPostPage({
                 </p>
                 <div className="mt-4 space-y-4">
                   {related.slice(2, 3).map((item) => (
-                    <Link key={item.slug} href={localePath(locale, `/blog/${item.slug}`)} className="group block">
+                    <Link key={item.slug} href={localePath(locale, `/blog/${blogSlugForLocale(item, locale)}`)} className="group block">
                       <div className="overflow-hidden rounded-2xl bg-navy-50">
                         <EditorialMedia src={editorialImageForPostData(item)} alt={t(item.title, locale)} focal={item.focal} className="aspect-[16/10] transition duration-300 group-hover:scale-105" />
                       </div>
