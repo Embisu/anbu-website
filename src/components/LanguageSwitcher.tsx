@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/i18n/config";
+import { localizeBlogPath } from "@/content/blogSlugRedirects";
 
 export default function LanguageSwitcher({ current }: { current: Locale }) {
   const pathname = usePathname() || "/";
@@ -15,7 +16,9 @@ export default function LanguageSwitcher({ current }: { current: Locale }) {
     } else {
       return `/${locale}`;
     }
-    return parts.join("/") || `/${locale}`;
+    const swapped = parts.join("/") || `/${locale}`;
+    // Blog posts have a different slug per language: jump straight to the right one.
+    return localizeBlogPath(swapped);
   }
 
   return (

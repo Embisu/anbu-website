@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const isVi = locale === "vi";
   return buildMetadata({
     locale,
+    path: "/contact",
     title: isVi
       ? "Liên hệ ANBU Agency | Tư vấn Chiến dịch Game Marketing"
       : "Contact ANBU Agency | Game Marketing Consultation",

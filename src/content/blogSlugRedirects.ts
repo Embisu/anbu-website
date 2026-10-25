@@ -66,6 +66,11 @@ export const blogViToEnSlug: Record<string, string> = {
   "game-mobile-promotion-cach-quang-ba-game-mobile-hieu-qua-tai-viet-nam": "mobile-game-promotion-how-to-promote-games-in-vietnam",
   "kol-trong-nganh-game-vai-tro-va-cach-xay-dung-chien-luoc-hieu-qua": "kols-in-gaming-industry-strategic-playbook",
   "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi": "vietnam-gaming-market-evolving-player-acquisition",
+  "game-publishing-in-vietnam-nhung-bai-toan-can-giai-truoc-khi-dau-tu-marketing": "game-publishing-in-vietnam-challenges-before-investing-in-marketing",
+  "game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing": "game-audience-research-thailand-understanding-thai-gamers",
+  "vi-sao-game-thu-tai-game-nhung-khong-o-lai": "why-do-players-download-games-but-not-stay",
+  "esports-tai-viet-nam-dang-mo-ra-co-hoi-gi-cho-thuong-hieu": "what-opportunities-does-esports-in-vietnam-offer-brands",
+  "vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh": "vietnam-gaming-market-overview-opportunities-publishers",
 };
 
 
@@ -140,4 +145,16 @@ export function resolveRedirectTarget(target: string, locale: string): string {
   if (blogViToEnSlug[target]) return locale === "en" ? blogViToEnSlug[target] : target;
   if (blogEnToViSlug[target]) return locale === "vi" ? blogEnToViSlug[target] : target;
   return target;
+}
+
+/**
+ * Rewrites an internal blog URL (e.g. "/en/blog/<vi-slug>") to the canonical slug of
+ * the locale in the URL, so links written with the "wrong" slug skip the 308 hop.
+ */
+export function localizeBlogPath(url: string): string {
+  const m = url.match(/^\/(vi|en)\/blog\/([^/?#]+)(.*)$/);
+  if (!m) return url;
+  const [, locale, slug, rest] = m;
+  const target = resolveRedirectTarget(mergedPostRedirects[slug] ?? slug, locale);
+  return `/${locale}/blog/${target}${rest}`;
 }

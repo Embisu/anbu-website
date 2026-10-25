@@ -1,4 +1,5 @@
 ﻿import React from "react";
+import { localizeBlogPath } from "@/content/blogSlugRedirects";
 
 /**
  * Parses lightweight inline markdown formatting:
@@ -55,7 +56,8 @@ export function renderRichText(
     // Link: [label](url)
     const linkMatch = part.match(/^\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]*)\)$/);
     if (linkMatch) {
-      const [, label, url] = linkMatch;
+      const [, label, rawUrl] = linkMatch;
+      const url = localizeBlogPath(rawUrl);
       const isInternal = url.startsWith("/");
       return (
         <a

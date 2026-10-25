@@ -1312,7 +1312,13 @@ export default function WordPressPostEditor({ initialPost, locale, onSave, onCan
       return block;
     });
 
-    const cleanSlugEn = post.slug_en ? generateEnglishSlug(post.slug_en) : undefined;
+    // Always give an English page its own English slug: from the typed slug_en, else from the
+    // English title when one was provided (otherwise /en/ would show the Vietnamese slug).
+    const cleanSlugEn = post.slug_en
+      ? generateEnglishSlug(post.slug_en)
+      : titleEn !== post.title.vi
+      ? generateEnglishSlug(titleEn)
+      : undefined;
 
     const finalPost: Post = {
       ...post,
