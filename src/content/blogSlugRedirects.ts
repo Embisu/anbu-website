@@ -71,6 +71,7 @@ export const blogViToEnSlug: Record<string, string> = {
   "vi-sao-game-thu-tai-game-nhung-khong-o-lai": "why-do-players-download-games-but-not-stay",
   "esports-tai-viet-nam-dang-mo-ra-co-hoi-gi-cho-thuong-hieu": "what-opportunities-does-esports-in-vietnam-offer-brands",
   "vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh": "vietnam-gaming-market-overview-opportunities-publishers",
+  "thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau": "vietnam-gaming-market-2026-where-are-the-growth-opportunities",
 };
 
 

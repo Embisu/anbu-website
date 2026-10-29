@@ -1,5 +1,270 @@
 [
   {
+    "slug": "thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau",
+    "slug_en": "vietnam-gaming-market-2026-where-are-the-growth-opportunities",
+    "title": {
+      "vi": "Thị trường game Việt Nam 2026: Cơ hội tăng trưởng ở đâu?",
+      "en": "Vietnam's Gaming Market in 2026: Where Are the Growth Opportunities?"
+    },
+    "excerpt": {
+      "vi": "Tăng trưởng không còn phụ thuộc hoàn toàn vào việc thu hút thêm người chơi mới. Khi lượt tải biến động nhưng doanh thu vẫn đi lên, nhà phát hành cần nhìn sâu hơn vào thể loại, khả năng chuyển đổi người chơi trả phí và chiến lược vận hành dài hạn.",
+      "en": "Growth no longer depends entirely on attracting new players. As downloads fluctuate while revenue keeps rising, publishers need to look more closely at genres, paid conversion and long-term operating strategy to find the right growth opportunities."
+    },
+    "category": {
+      "vi": "Thị trường Game",
+      "en": "Gaming Market"
+    },
+    "date": "2026-10-29",
+    "readingTime": 9,
+    "cover": "/blog-covers/game-gtm-war-room.jpg",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "SocialPeta & Gamota: Báo cáo thị trường game mobile Đông Nam Á 2026",
+          "en": "SocialPeta & Gamota: Southeast Asia Mobile Game Market Report 2026"
+        },
+        "href": "https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report"
+      },
+      {
+        "label": {
+          "vi": "Adjust: Tiêu điểm thị trường ứng dụng di động Việt Nam 2026",
+          "en": "Adjust: Vietnam Mobile App Trends Report 2026"
+        },
+        "href": "https://www.adjust.com/vi/blog/vietnam-app-trends-2026/"
+      },
+      {
+        "label": {
+          "vi": "VNG: Kết quả kinh doanh nửa đầu năm 2026",
+          "en": "VNG: H1 2026 financial results"
+        },
+        "href": "https://vng.com.vn/news/press-release/vng-fs-h1-2026.html"
+      },
+      {
+        "label": {
+          "vi": "Nghị định 147/2024/NĐ-CP về quản lý dịch vụ Internet và thông tin trên mạng",
+          "en": "Decree No. 147/2024/ND-CP on Internet services and online information"
+        },
+        "href": "https://vanban.chinhphu.vn/?docid=211654&pageid=27160"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game Việt Nam năm 2026 đang cho thấy một chuyển biến đáng chú ý: tăng trưởng không còn phụ thuộc hoàn toàn vào việc thu hút thêm người chơi mới. Khi lượt tải game biến động nhưng doanh thu vẫn đi lên, nhà phát hành cần nhìn sâu hơn vào thể loại game, khả năng chuyển đổi người chơi trả phí và chiến lược vận hành dài hạn để tìm ra cơ hội tăng trưởng phù hợp.",
+          "en": "Vietnam’s gaming market in 2026 is showing a notable shift: growth no longer depends entirely on attracting more new players. As game downloads fluctuate while revenue continues to rise, publishers need to look more closely at game genres, player conversion to paying users, and long-term operational strategies to identify suitable growth opportunities."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Lượt tải giảm nhưng doanh thu vẫn tăng",
+          "en": "Downloads Decline While Revenue Continues to Grow"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [Báo cáo thị trường game mobile Đông Nam Á 2026 của SocialPeta và Gamota](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), trong nửa đầu năm 2026, game mobile tại Việt Nam ghi nhận **76,5 triệu lượt tải, giảm 9,7% so với cùng kỳ**, trong khi **doanh thu đạt 177 triệu USD, tăng 7,5%**. Việt Nam đóng góp khoảng **18,3% tổng lượt tải game mobile của Đông Nam Á**, nhưng chỉ chiếm **10,6% doanh thu mua hàng trong ứng dụng (IAP)** của khu vực. Lượt tải đạt 14,0 triệu trong tháng 6, mức cao nhất nửa đầu năm, và theo báo cáo thị trường bắt đầu phục hồi từ tháng 5 và tháng 6.",
+          "en": "According to [SocialPeta and Gamota’s Southeast Asia Mobile Game Market Report 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), in the first half of 2026, mobile games in Vietnam recorded **76.5 million downloads, down 9.7% year-on-year**, while **revenue reached USD 177 million, up 7.5%**. Vietnam accounted for approximately **18.3% of total mobile game downloads in Southeast Asia**, but only **10.6% of the region’s in-app purchase (IAP) revenue**. Downloads reached 14.0 million in June, the highest level in the first half of the year, and according to the report, the market began to recover in May and June."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sự chênh lệch giữa tỷ trọng lượt tải và doanh thu cho thấy quy mô người dùng lớn chưa đồng nghĩa với khả năng tạo doanh thu tương ứng. Đây là điểm nhà phát hành cần lưu ý khi đánh giá thị trường: một sản phẩm có thể thu hút lượng người chơi đáng kể nhưng vẫn cần cải thiện khả năng chuyển đổi sang nhóm người dùng trả phí, thiết kế gói mua phù hợp và duy trì động lực chi tiêu sau giai đoạn đầu.",
+          "en": "The gap between download share and revenue share shows that a large user base does not necessarily translate into proportional revenue generation. This is an important point for publishers to consider when evaluating the market: a product may attract a substantial number of players but still need to improve conversion to paying users, design suitable purchase packages, and sustain spending incentives beyond the initial stage."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Xu hướng này cũng xuất hiện trong dữ liệu vận hành ứng dụng. Theo [báo cáo Tiêu điểm thị trường ứng dụng di động Việt Nam 2026 của Adjust](https://www.adjust.com/vi/blog/vietnam-app-trends-2026/), số phiên truy cập ứng dụng game tại Việt Nam trong quý I/2026 **tăng 15% so với cùng kỳ năm trước**, vượt mức chuẩn của toàn cầu và khu vực châu Á - Thái Bình Dương theo báo cáo này. Tuy nhiên, số phiên truy cập tăng không tự động đồng nghĩa với doanh thu tăng tương ứng. Nhà phát hành vẫn cần theo dõi các chỉ số như tỷ lệ giữ chân người chơi, tỷ lệ chuyển đổi trả phí và doanh thu trung bình trên người dùng để đánh giá chất lượng tăng trưởng.",
+          "en": "This trend is also reflected in app performance data. According to [Adjust’s Vietnam Mobile App Trends Report 2026](https://www.adjust.com/vi/blog/vietnam-app-trends-2026/), gaming app sessions in Vietnam in Q1 2026 **increased by 15% year-on-year**, exceeding the global and Asia-Pacific benchmarks cited in the report. However, an increase in sessions does not automatically translate into a corresponding increase in revenue. Publishers still need to monitor metrics such as player retention, paid conversion rates, and average revenue per user to assess the quality of growth."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở góc độ doanh nghiệp, kết quả kinh doanh của VNG cung cấp thêm một tham chiếu về sức chi tiêu của thị trường. Theo [công bố kết quả kinh doanh nửa đầu năm 2026 của VNG](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html), tổng bookings của mảng game đạt **4.819 tỷ đồng, tăng 34% so với cùng kỳ**. Số người dùng hoạt động hàng quý đạt **61,3 triệu**, trong khi tỷ lệ người chơi trả phí tăng từ **4,0% lên 4,6%**. Đây là số liệu của riêng VNG, đã bao gồm cả doanh thu từ thị trường quốc tế và không đại diện cho toàn bộ thị trường Việt Nam, nhưng cho thấy việc cải thiện khả năng chuyển đổi người chơi thành khách hàng trả phí có thể song hành với tăng trưởng doanh thu.",
+          "en": "From a business perspective, VNG’s financial results provide another reference point for the market’s spending potential. According to [VNG’s H1 2026 financial results announcement](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html), total bookings in its gaming segment reached **VND 4,819 billion, up 34% year-on-year**. Quarterly active users reached **61.3 million**, while the paying player ratio increased from **4.0% to 4.6%**. These figures are specific to VNG, include revenue from international markets, and do not represent the entire Vietnamese market. However, they show that improving player conversion into paying customers can go hand in hand with revenue growth."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Những thể loại game có tín hiệu tăng trưởng tại Việt Nam năm 2026",
+          "en": "Game Genres Showing Growth Potential in Vietnam in 2026"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dữ liệu theo thể loại trong [báo cáo SocialPeta và Gamota](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report) cho thấy cơ hội không phân bổ đồng đều giữa các dòng game. Trong nửa đầu năm 2026, lượt tải game mô phỏng thể thao tăng **242,2%**, game bắn súng tăng **181%** và idle RPG tăng **21,4%** so với cùng kỳ. Xét về doanh thu, game bắn súng tăng **579,4%**, còn idle RPG tăng **40,2%**.",
+          "en": "Genre-level data in the [SocialPeta and Gamota report](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report) shows that growth opportunities are not evenly distributed across game categories. In the first half of 2026, downloads of sports simulation games increased by **242.2%**, shooter games by **181%**, and idle RPGs by **21.4%** year-on-year. In terms of revenue, shooter games grew by **579.4%**, while idle RPGs increased by **40.2%**."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các con số này phản ánh diễn biến của những phân khúc được báo cáo theo dõi, không có nghĩa mọi game thuộc các thể loại trên đều đạt kết quả tương tự. Tuy vậy, chúng cung cấp cơ sở để nhà phát hành xác định những nhóm sản phẩm đáng nghiên cứu sâu hơn trước khi quyết định đầu tư.",
+          "en": "These figures reflect developments in the segments tracked by the report and do not mean that every game in these genres achieved similar results. Nevertheless, they provide a basis for publishers to identify product categories worth investigating further before making investment decisions."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Game bắn súng: Doanh thu tăng nhanh hơn lượt tải",
+          "en": "Shooter Games: Revenue Grows Faster Than Downloads"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Game bắn súng nổi bật khi vừa ghi nhận tăng trưởng lượt tải vừa tăng trưởng doanh thu. Theo báo cáo trên, **Free Fire MAX đạt 8,08 triệu lượt tải và 16,7 triệu USD doanh thu**, đứng đầu hai bảng xếp hạng được báo cáo công bố cho thị trường Việt Nam trong nửa đầu năm 2026.",
+          "en": "Shooter games stand out for recording growth in both downloads and revenue. According to the report, **Free Fire MAX recorded 8.08 million downloads and USD 16.7 million in revenue**, ranking first in both rankings published for the Vietnamese market in the first half of 2026."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Kết quả này cho thấy sức hút của một tựa game không chỉ nằm ở khả năng tiếp cận người chơi mới. Với những sản phẩm có yếu tố cạnh tranh và cộng đồng hoạt động thường xuyên, nhà phát hành còn cần nghiên cứu động lực quay lại chơi, nhu cầu thể hiện cá tính trong game và giá trị mà người chơi cảm nhận từ các vật phẩm trả phí. Đây là những yếu tố có thể ảnh hưởng đến khả năng duy trì doanh thu, nhưng cần được kiểm chứng bằng dữ liệu hành vi của từng sản phẩm thay vì suy rộng từ thứ hạng thị trường.",
+          "en": "This result shows that a game’s appeal is not limited to its ability to attract new players. For products with competitive elements and active communities, publishers also need to investigate the motivations that bring players back, their desire to express their personalities in-game, and the value they perceive in paid items. These factors may influence a game’s ability to sustain revenue, but they need to be validated using product-specific behavioral data rather than generalized from market rankings."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Game mô phỏng thể thao: Lượt tải tăng mạnh nhất, chưa có số liệu doanh thu",
+          "en": "Sports Simulation Games: The Fastest Download Growth, but No Revenue Data Available"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Lượt tải game mô phỏng thể thao tăng **242,2% so với cùng kỳ trong nửa đầu năm 2026**, theo [báo cáo SocialPeta và Gamota](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). Đây là mức tăng nổi bật trong nhóm thể loại được thống kê, tạo cơ sở để nhà phát hành tìm hiểu sâu hơn về nhu cầu đối với các sản phẩm thể thao trên nền tảng di động. Báo cáo không công bố mức tăng doanh thu của thể loại này, nên chưa thể đánh giá khả năng kiếm tiền từ dữ liệu này.",
+          "en": "Downloads of sports simulation games increased by **242.2% year-on-year in the first half of 2026**, according to the [SocialPeta and Gamota report](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). This was a notable increase among the genres tracked, providing a basis for publishers to investigate demand for sports-related products on mobile platforms. The report does not disclose the revenue growth rate for this genre, so its monetization potential cannot yet be assessed from these figures."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dù vậy, mức tăng trưởng cao không tự động bảo đảm cơ hội kinh doanh dài hạn. Trước khi gia nhập phân khúc, doanh nghiệp cần đánh giá đối thủ đang chiếm ưu thế, chi phí tiếp cận người chơi, mức độ cạnh tranh của nội dung và khả năng duy trì tương tác sau khi người dùng cài đặt. Những dữ liệu này giúp phân biệt giữa một xu hướng đang tăng nhanh và một phân khúc có thể tạo doanh thu bền vững cho sản phẩm mới.",
+          "en": "Nevertheless, a high growth rate does not automatically guarantee long-term business opportunities. Before entering this segment, companies need to evaluate established competitors, player acquisition costs, the level of competition among content offerings, and the ability to sustain engagement after users install the game. These data help distinguish between a rapidly growing trend and a segment capable of generating sustainable revenue for a new product."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Idle RPG: Doanh thu tăng nhanh hơn lượt tải",
+          "en": "Idle RPGs: Revenue Grows Faster Than Downloads"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [báo cáo thị trường game mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), idle RPG ghi nhận **lượt tải tăng 21,4% và doanh thu tăng 40,2%** tại Việt Nam trong nửa đầu năm 2026. Việc doanh thu tăng nhanh hơn lượt tải là một tín hiệu đáng theo dõi, dù chỉ riêng dữ liệu tổng hợp chưa đủ để xác định nguyên nhân cụ thể.",
+          "en": "According to the [Southeast Asia Mobile Game Market Report 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), idle RPGs recorded **21.4% download growth and 40.2% revenue growth** in Vietnam in the first half of 2026. Revenue growing faster than downloads is a signal worth monitoring, although aggregate data alone is insufficient to determine the specific reasons behind this trend."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đối với nhà phát hành đang cân nhắc thể loại này, các câu hỏi cần nghiên cứu gồm: người chơi kỳ vọng tiến trình phát triển nhân vật diễn ra như thế nào, nội dung nào khiến họ quay lại mỗi ngày, và đâu là điểm khiến họ sẵn sàng chi tiền. Câu trả lời có thể khác nhau tùy nhóm người chơi và từng sản phẩm, vì vậy việc kiểm tra nhu cầu trước khi triển khai chiến lược kiếm tiền sẽ hữu ích hơn việc sao chép nguyên mẫu từ một game thành công.",
+          "en": "For publishers considering this genre, key research questions include: How do players expect character progression to work? What content motivates them to return every day? And what makes them willing to spend money? The answers may vary across player groups and individual products. Therefore, validating demand before implementing a monetization strategy is more useful than simply copying the blueprint of a successful game."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Những mô hình tăng trưởng từ các game đang hoạt động tại Việt Nam",
+          "en": "Growth Models From Games Already Operating in Vietnam"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngoài xu hướng thể loại, các tựa game đã phát hành cung cấp góc nhìn thực tế về hai hướng phát triển: tạo doanh thu sớm từ nhóm người chơi có mức độ quan tâm cao và duy trì sức hút trong thời gian dài.",
+          "en": "Beyond genre trends, released games offer practical insights into two growth approaches: generating early revenue from highly engaged players and sustaining appeal over the long term."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [báo cáo SocialPeta và Gamota](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), **Crossfire: Legends đạt 2,39 triệu lượt tải và 3,58 triệu USD doanh thu trong hai tháng đầu sau khi ra mắt**. Trong cùng báo cáo, sản phẩm được ghi nhận có doanh thu ban đầu cao hơn một số game bắn súng chiến thuật được so sánh, dù quy mô lượt tải thấp hơn. Kết quả này cho thấy lượt tải không phải chỉ số duy nhất để đánh giá hiệu quả ra mắt; doanh thu ban đầu và chất lượng nhóm người chơi tiếp cận được cũng cần được xem xét.",
+          "en": "According to the [SocialPeta and Gamota report](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), **Crossfire: Legends recorded 2.39 million downloads and USD 3.58 million in revenue during its first two months after launch**. The same report noted that the game generated higher initial revenue than some tactical shooter games used for comparison, despite having fewer downloads. This result shows that downloads are not the only metric for evaluating launch performance; initial revenue and the quality of the player segments reached also need to be considered."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở hướng khác, **Play Together VNG vẫn nằm trong nhóm dẫn đầu về lượt tải và doanh thu tại Việt Nam gần bốn năm sau khi ra mắt**, theo bảng xếp hạng trong [báo cáo thị trường game mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). Trường hợp này gợi mở vai trò của việc duy trì hoạt động cộng đồng và làm mới trải nghiệm theo thời gian. Tuy nhiên, thứ hạng là kết quả quan sát tại giai đoạn báo cáo, không phải bảo đảm rằng mọi game có mô hình tương tự đều duy trì được hiệu suất lâu dài.",
+          "en": "In a different direction, **Play Together VNG remained among the leading games in Vietnam in both downloads and revenue nearly four years after its launch**, according to the rankings in the [Southeast Asia Mobile Game Market Report 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). This case highlights the potential role of maintaining community activity and refreshing the player experience over time. However, rankings reflect performance during the reporting period and do not guarantee that every game using a similar model can sustain long-term performance."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Hai trường hợp trên không đại diện cho toàn bộ thị trường, nhưng cho thấy nhà phát hành nên xác định rõ mục tiêu tăng trưởng ngay từ đầu. Với sản phẩm mới, trọng tâm có thể là tìm đúng nhóm người chơi và đánh giá khả năng chuyển đổi sau khi ra mắt. Với sản phẩm đã hoạt động lâu năm, bài toán có thể chuyển sang duy trì người chơi, tạo lý do quay lại và phát triển các nội dung mới mà không làm mất đi giá trị cốt lõi của game.",
+          "en": "These two cases do not represent the entire market, but they show why publishers should clearly define their growth objectives from the outset. For a new product, the focus may be on reaching the right player segments and evaluating conversion after launch. For a game that has been operating for years, the challenge may shift toward retaining players, giving them reasons to return, and developing new content without compromising the game’s core value."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Nhà phát hành cần chuẩn bị gì để khai thác cơ hội tại Việt Nam?",
+          "en": "What Should Publishers Prepare to Capitalize on Opportunities in Vietnam?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dữ liệu thị trường chỉ cho biết những phân khúc đang có tín hiệu tăng trưởng; quyết định đầu tư vẫn cần dựa trên mức độ phù hợp giữa sản phẩm và người chơi. Trước khi phát hành hoặc mở rộng hoạt động tại Việt Nam, doanh nghiệp nên nghiên cứu đối thủ trực tiếp, cách họ tiếp cận cộng đồng, thông điệp quảng cáo được sử dụng và những yếu tố có thể tạo khác biệt cho sản phẩm. Với các thể loại đang tăng trưởng nhanh, việc xác định đúng nhóm người chơi mục tiêu đặc biệt quan trọng để tránh cạnh tranh chỉ bằng ngân sách quảng cáo.",
+          "en": "Market data only indicates which segments are showing growth signals; investment decisions still need to be based on how well a product fits its players. Before launching or expanding operations in Vietnam, companies should research direct competitors, how they engage with communities, the advertising messages they use, and the factors that could differentiate their products. For fast-growing genres, identifying the right target audience is particularly important to avoid competing solely through advertising budgets."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bên cạnh đó, nhà phát hành cần xây dựng hệ thống đo lường xuyên suốt hành trình người chơi. Lượt tải và số phiên truy cập hữu ích khi đánh giá khả năng tiếp cận, nhưng cần được đặt cạnh tỷ lệ giữ chân, mức độ hoạt động, tỷ lệ trả phí và doanh thu theo từng nhóm người dùng. Các chỉ số này giúp xác định liệu vấn đề nằm ở chất lượng người chơi thu hút được, trải nghiệm trong game hay cách thiết kế hoạt động kiếm tiền.",
+          "en": "In addition, publishers need to establish a measurement framework that covers the entire player journey. Downloads and session counts are useful for assessing reach, but they should be evaluated alongside retention rates, activity levels, paid conversion rates, and revenue across different user segments. These metrics help determine whether the problem lies in the quality of the players acquired, the in-game experience, or the design of monetization activities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Cuối cùng, kế hoạch gia nhập thị trường cần tính đến yêu cầu pháp lý và năng lực vận hành tại địa phương. Nhà phát hành có thể tham khảo [Nghị định 147/2024/NĐ-CP về quản lý, cung cấp, sử dụng dịch vụ Internet và thông tin trên mạng](https://vanban.chinhphu.vn/?docid=211654&pageid=27160) để rà soát những quy định liên quan đến dịch vụ game trực tuyến. Việc xác định đúng loại hình sản phẩm và nghĩa vụ áp dụng cần được thực hiện trước khi triển khai, thay vì chờ đến giai đoạn ra mắt mới xử lý.",
+          "en": "Finally, market entry plans need to account for legal requirements and local operational capabilities. Publishers can refer to [Decree No. 147/2024/ND-CP on the management, provision, and use of Internet services and online information](https://vanban.chinhphu.vn/?docid=211654&pageid=27160) to review regulations relevant to online gaming services. The applicable product classification and legal obligations should be identified before implementation rather than addressed only when the game is about to launch."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Nghiên cứu thị trường để xác định cơ hội tăng trưởng phù hợp",
+          "en": "Conduct Market Research to Identify the Right Growth Opportunities"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game Việt Nam năm 2026 vẫn có những phân khúc tăng trưởng, nhưng cơ hội không chỉ nằm ở việc chọn đúng thể loại đang thịnh hành. Nhà phát hành cần hiểu người chơi mục tiêu, đánh giá khả năng kiếm tiền của sản phẩm, xác định đối thủ và xây dựng kế hoạch vận hành phù hợp với đặc điểm thị trường địa phương.",
+          "en": "Vietnam’s gaming market in 2026 still has growing segments, but opportunities do not lie solely in choosing the right trending genre. Publishers need to understand their target players, assess their products’ monetization potential, identify competitors, and develop operational plans suited to the characteristics of the local market."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với những doanh nghiệp đang chuẩn bị phát hành game hoặc tìm hướng mở rộng tại Việt Nam, nghiên cứu thị trường có thể giúp kiểm chứng giả định trước khi phân bổ ngân sách, nhận diện nhu cầu chưa được đáp ứng và xác định những yếu tố cần ưu tiên trong chiến lược tiếp cận người chơi. **Các nhà phát hành đang chuẩn bị ra mắt hoặc mở rộng tại Việt Nam có thể liên hệ ANBU** để xây dựng kế hoạch tiếp cận người chơi thông qua KOL game, quản trị cộng đồng và nghiên cứu hành vi người chơi, phù hợp với từng thể loại và giai đoạn của sản phẩm.",
+          "en": "For companies preparing to launch games or explore expansion opportunities in Vietnam, market research can help validate assumptions before budgets are allocated, identify unmet needs, and determine which factors should be prioritized in player acquisition strategies. **Publishers preparing to launch or expand in Vietnam can contact ANBU** to develop player acquisition strategies through gaming KOLs, community management, and player behavior research tailored to each game genre and product lifecycle stage."
+        }
+      }
+    ]
+  },
+  {
     "slug": "game-publishing-in-vietnam-nhung-bai-toan-can-giai-truoc-khi-dau-tu-marketing",
     "title": {
       "vi": "Game Publishing in Vietnam: Những bài toán cần giải trước khi đầu tư marketing",
