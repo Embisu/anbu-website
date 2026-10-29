@@ -131,7 +131,7 @@ export default function ClientCustomPostViewer({
     description: t(post.excerpt, locale),
     date: post.date,
     author: post.author,
-    image: `${siteUrl}${editorialImageForPostData(post)}`,
+    image: `${siteUrl}${editorialImageForPostData(post, locale)}`,
     url: `${siteUrl}/${locale}/blog/${post.slug}`,
   });
 
@@ -182,7 +182,7 @@ export default function ClientCustomPostViewer({
 
       <header className={`relative overflow-hidden bg-gradient-to-br ${post.color || "from-navy-900 to-orange-600"} text-white`}>
         <EditorialMedia
-          src={editorialImageForPostData(post)}
+          src={editorialImageForPostData(post, locale)}
           alt={t(post.title, locale)}
           focal={post.focal}
           className="pointer-events-none absolute inset-0 opacity-45"
@@ -298,11 +298,12 @@ export default function ClientCustomPostViewer({
                   );
                 }
                 if (block.type === "image") {
+                  if (locale === "en" && block.hide_en) return null;
                   return (
                     <figure key={i} className="my-6 sm:my-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
                       <div className="flex w-full items-center justify-center bg-slate-50/80 p-1 sm:p-3">
                         <ResilientImage
-                          src={block.src}
+                          src={locale === "en" && block.src_en ? block.src_en : block.src}
                           alt={t(block.alt, locale)}
                           className="h-auto max-h-[500px] sm:max-h-[640px] w-full rounded-xl sm:rounded-2xl object-contain md:max-h-[720px]"
                           loading="lazy"

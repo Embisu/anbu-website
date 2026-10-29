@@ -113,7 +113,7 @@ export function PostCard({
     >
       <div className={`relative aspect-[16/9] overflow-hidden bg-gradient-to-br ${post.color}`}>
         <EditorialMedia
-          src={editorialImageForPostData(post)}
+          src={editorialImageForPostData(post, locale)}
           alt={t(post.title, locale)}
           className="absolute inset-0 transition-transform duration-500 [@media(hover:hover)]:group-hover:scale-[1.04]"
           focal={post.focal}
@@ -161,7 +161,7 @@ export function FeaturedPost({
       {/* 16:9 Cover Image centered on top */}
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-navy-900">
         <EditorialMedia
-          src={editorialImageForPostData(post)}
+          src={editorialImageForPostData(post, locale)}
           alt={t(post.title, locale)}
           focal={post.focal}
           className="absolute inset-0 transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-[1.02]"

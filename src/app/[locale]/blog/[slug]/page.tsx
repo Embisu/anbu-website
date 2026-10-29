@@ -63,7 +63,7 @@ export async function generateMetadata({
   const viSlug = post.slug;
   const enSlug = post.slug_en || blogViToEnSlug[post.slug] || post.slug;
   const activeSlug = locale === "en" ? enSlug : viSlug;
-  const postCover = editorialImageForPostData(post);
+  const postCover = editorialImageForPostData(post, locale);
 
   return buildMetadata({
     locale,
@@ -113,11 +113,12 @@ function BlockRenderer({ block, locale, headingId }: { block: Block; locale: Loc
         </ul>
       );
     case "image":
+      if (locale === "en" && block.hide_en) return null;
       return (
         <figure className="my-6 sm:my-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-navy-100/80 bg-slate-900/[0.02] shadow-sm">
           <div className="flex w-full items-center justify-center bg-slate-50/80 p-1 sm:p-3">
             <ResilientImage
-              src={block.src}
+              src={locale === "en" && block.src_en ? block.src_en : block.src}
               alt={t(block.alt, locale)}
               className="h-auto max-h-[500px] sm:max-h-[640px] w-full rounded-xl sm:rounded-2xl object-contain md:max-h-[720px]"
               loading="lazy"
@@ -356,7 +357,7 @@ export default async function BlogPostPage({
   }
 
   const activeSlug = locale === "en" ? enSlug : post.slug;
-  const postCover = editorialImageForPostData(post);
+  const postCover = editorialImageForPostData(post, locale);
 
   const related = [
     ...posts.filter((p) => p.slug !== post.slug && p.category.vi === post.category.vi),
@@ -398,7 +399,7 @@ export default async function BlogPostPage({
     description: t(post.excerpt, locale),
     datePublished: safeDate,
     dateModified: safeDate,
-    image: `${siteUrl}${editorialImageForPostData(post)}`,
+    image: `${siteUrl}${editorialImageForPostData(post, locale)}`,
     author: { "@type": "Organization", name: post.author },
     publisher: {
       "@type": "Organization",
@@ -706,7 +707,7 @@ export default async function BlogPostPage({
                   {related.slice(2, 3).map((item) => (
                     <Link key={item.slug} href={localePath(locale, `/blog/${blogSlugForLocale(item, locale)}`)} className="group block">
                       <div className="overflow-hidden rounded-2xl bg-navy-50">
-                        <EditorialMedia src={editorialImageForPostData(item)} alt={t(item.title, locale)} focal={item.focal} className="aspect-[16/10] transition duration-300 group-hover:scale-105" />
+                        <EditorialMedia src={editorialImageForPostData(item, locale)} alt={t(item.title, locale)} focal={item.focal} className="aspect-[16/10] transition duration-300 group-hover:scale-105" />
                       </div>
                       <h3 className="mt-3 text-sm font-bold leading-snug text-navy-800 transition group-hover:text-orange-600">
                         {t(item.title, locale)}

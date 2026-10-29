@@ -13,7 +13,7 @@ export type Block =
   | { type: "ol"; items: L10n[] }
   | { type: "divider" }
   | { type: "faq"; items: { question: L10n; answer: L10n }[] }
-  | { type: "image"; src: string; alt: L10n; caption?: L10n };
+  | { type: "image"; src: string; src_en?: string; hide_en?: boolean; alt: L10n; caption?: L10n };
 
 export type Post = {
   slug: string;
@@ -27,6 +27,7 @@ export type Post = {
   color: string;
   variant: SceneVariant;
   cover?: string;
+  cover_en?: string; // optional English-language cover (e.g. infographic with English text)
   focal?: string;
   sources?: { label: L10n; href: string }[];
   body: Block[];

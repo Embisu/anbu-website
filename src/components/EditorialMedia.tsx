@@ -172,7 +172,8 @@ function coverForSlug(slug: string) {
   return `/blog-covers/${topicCovers[hash % topicCovers.length]}`;
 }
 
-export function editorialImageForPostData(post: { slug?: string; variant: SceneVariant; cover?: string }) {
+export function editorialImageForPostData(post: { slug?: string; variant: SceneVariant; cover?: string; cover_en?: string }, locale?: string) {
+  if (locale === "en" && post.cover_en) return post.cover_en;
   // Always prioritize the explicit cover defined in the post, but filter out broken remote storage URLs
   if (post.cover && !post.cover.includes("supabase.co/storage")) return post.cover;
   return post.slug ? realCoverForSlug(post.slug) : editorialImageForPost(post.variant);

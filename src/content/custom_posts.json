@@ -16,8 +16,8 @@
     },
     "date": "2026-10-29",
     "readingTime": 9,
-    "cover": "/blog-covers/game-gtm-war-room.jpg",
-    "focal": "center",
+    "cover": "/blog-media/1793200000000-vn2026-vi-01.jpg",
+    "focal": "50% 10%",
     "author": "ANBU Team",
     "color": "from-orange-600 to-navy-900",
     "variant": "game",
@@ -60,10 +60,36 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1793200000000-vn2026-vi-01.jpg",
+        "src_en": "/blog-media/1793200000000-vn2026-en-01.jpg",
+        "alt": {
+          "vi": "Thị trường game Việt Nam 2026: Cơ hội tăng trưởng ở đâu?",
+          "en": "Vietnam's gaming market in 2026: where are the growth opportunities?"
+        },
+        "caption": {
+          "vi": "Thị trường game Việt Nam 2026: Cơ hội tăng trưởng ở đâu?",
+          "en": "Vietnam's gaming market in 2026: where are the growth opportunities?"
+        }
+      },
+      {
         "type": "h2",
         "text": {
           "vi": "Lượt tải giảm nhưng doanh thu vẫn tăng",
           "en": "Downloads Decline While Revenue Continues to Grow"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1793200000000-vn2026-vi-02.jpg",
+        "src_en": "/blog-media/1793200000000-vn2026-en-02.jpg",
+        "alt": {
+          "vi": "Lượt tải giảm nhưng doanh thu vẫn tăng",
+          "en": "Downloads decline while revenue continues to grow"
+        },
+        "caption": {
+          "vi": "Lượt tải giảm nhưng doanh thu vẫn tăng.",
+          "en": "Downloads decline while revenue continues to grow."
         }
       },
       {
@@ -99,6 +125,19 @@
         "text": {
           "vi": "Những thể loại game có tín hiệu tăng trưởng tại Việt Nam năm 2026",
           "en": "Game Genres Showing Growth Potential in Vietnam in 2026"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1793200000000-vn2026-vi-03.jpg",
+        "src_en": "/blog-media/1793200000000-vn2026-en-03.jpg",
+        "alt": {
+          "vi": "Những thể loại game có tín hiệu tăng trưởng tại Việt Nam năm 2026",
+          "en": "Game genres showing growth potential in Vietnam in 2026"
+        },
+        "caption": {
+          "vi": "Những thể loại game có tín hiệu tăng trưởng tại Việt Nam năm 2026.",
+          "en": "Game genres showing growth potential in Vietnam in 2026."
         }
       },
       {
@@ -186,6 +225,19 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1793200000000-vn2026-vi-04.jpg",
+        "src_en": "/blog-media/1793200000000-vn2026-en-04.jpg",
+        "alt": {
+          "vi": "Những mô hình tăng trưởng từ các game đang hoạt động tại Việt Nam",
+          "en": "Growth models from games already operating in Vietnam"
+        },
+        "caption": {
+          "vi": "Những mô hình tăng trưởng từ các game đang hoạt động tại Việt Nam.",
+          "en": "Growth models from games already operating in Vietnam."
+        }
+      },
+      {
         "type": "p",
         "text": {
           "vi": "Ngoài xu hướng thể loại, các tựa game đã phát hành cung cấp góc nhìn thực tế về hai hướng phát triển: tạo doanh thu sớm từ nhóm người chơi có mức độ quan tâm cao và duy trì sức hút trong thời gian dài.",
@@ -221,6 +273,20 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1793200000000-vn2026-vi-05.jpg",
+        "src_en": "/blog-media/1793200000000-vn2026-en-05.jpg",
+        "alt": {
+          "vi": "Nhà phát hành cần chuẩn bị gì để khai thác cơ hội tại Việt Nam?",
+          "en": "What should publishers prepare to capitalize on opportunities in Vietnam?"
+        },
+        "caption": {
+          "vi": "Nhà phát hành cần chuẩn bị gì để khai thác cơ hội tại Việt Nam?",
+          "en": "What should publishers prepare to capitalize on opportunities in Vietnam?"
+        },
+        "hide_en": true
+      },
+      {
         "type": "p",
         "text": {
           "vi": "Dữ liệu thị trường chỉ cho biết những phân khúc đang có tín hiệu tăng trưởng; quyết định đầu tư vẫn cần dựa trên mức độ phù hợp giữa sản phẩm và người chơi. Trước khi phát hành hoặc mở rộng hoạt động tại Việt Nam, doanh nghiệp nên nghiên cứu đối thủ trực tiếp, cách họ tiếp cận cộng đồng, thông điệp quảng cáo được sử dụng và những yếu tố có thể tạo khác biệt cho sản phẩm. Với các thể loại đang tăng trưởng nhanh, việc xác định đúng nhóm người chơi mục tiêu đặc biệt quan trọng để tránh cạnh tranh chỉ bằng ngân sách quảng cáo.",
@@ -249,10 +315,36 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1793200000000-vn2026-vi-06.jpg",
+        "src_en": "/blog-media/1793200000000-vn2026-en-06.jpg",
+        "alt": {
+          "vi": "Nghiên cứu thị trường để xác định cơ hội tăng trưởng phù hợp",
+          "en": "Conduct market research to identify the right growth opportunities"
+        },
+        "caption": {
+          "vi": "Nghiên cứu thị trường để xác định cơ hội tăng trưởng phù hợp.",
+          "en": "Conduct market research to identify the right growth opportunities."
+        }
+      },
+      {
         "type": "p",
         "text": {
           "vi": "Thị trường game Việt Nam năm 2026 vẫn có những phân khúc tăng trưởng, nhưng cơ hội không chỉ nằm ở việc chọn đúng thể loại đang thịnh hành. Nhà phát hành cần hiểu người chơi mục tiêu, đánh giá khả năng kiếm tiền của sản phẩm, xác định đối thủ và xây dựng kế hoạch vận hành phù hợp với đặc điểm thị trường địa phương.",
           "en": "Vietnam’s gaming market in 2026 still has growing segments, but opportunities do not lie solely in choosing the right trending genre. Publishers need to understand their target players, assess their products’ monetization potential, identify competitors, and develop operational plans suited to the characteristics of the local market."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1793200000000-vn2026-vi-07.jpg",
+        "src_en": "/blog-media/1793200000000-vn2026-en-07.jpg",
+        "alt": {
+          "vi": "Liên hệ ANBU nếu bạn chuẩn bị ra mắt hoặc mở rộng game tại Việt Nam",
+          "en": "Contact ANBU if you are preparing to launch or expand a game in Vietnam"
+        },
+        "caption": {
+          "vi": "Các nhà phát hành đang chuẩn bị ra mắt hoặc mở rộng tại Việt Nam có thể liên hệ ANBU.",
+          "en": "Publishers preparing to launch or expand in Vietnam can contact ANBU."
         }
       },
       {
@@ -262,7 +354,8 @@
           "en": "For companies preparing to launch games or explore expansion opportunities in Vietnam, market research can help validate assumptions before budgets are allocated, identify unmet needs, and determine which factors should be prioritized in player acquisition strategies. **Publishers preparing to launch or expand in Vietnam can contact ANBU** to develop player acquisition strategies through gaming KOLs, community management, and player behavior research tailored to each game genre and product lifecycle stage."
         }
       }
-    ]
+    ],
+    "cover_en": "/blog-media/1793200000000-vn2026-en-01.jpg"
   },
   {
     "slug": "game-publishing-in-vietnam-nhung-bai-toan-can-giai-truoc-khi-dau-tu-marketing",
