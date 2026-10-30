@@ -353,6 +353,34 @@
           "vi": "Với những doanh nghiệp đang chuẩn bị phát hành game hoặc tìm hướng mở rộng tại Việt Nam, nghiên cứu thị trường có thể giúp kiểm chứng giả định trước khi phân bổ ngân sách, nhận diện nhu cầu chưa được đáp ứng và xác định những yếu tố cần ưu tiên trong chiến lược tiếp cận người chơi. **Các nhà phát hành đang chuẩn bị ra mắt hoặc mở rộng tại Việt Nam có thể liên hệ ANBU** để xây dựng kế hoạch tiếp cận người chơi thông qua KOL game, quản trị cộng đồng và nghiên cứu hành vi người chơi, phù hợp với từng thể loại và giai đoạn của sản phẩm.",
           "en": "For companies preparing to launch games or explore expansion opportunities in Vietnam, market research can help validate assumptions before budgets are allocated, identify unmet needs, and determine which factors should be prioritized in player acquisition strategies. **Publishers preparing to launch or expand in Vietnam can contact ANBU** to develop player acquisition strategies through gaming KOLs, community management, and player behavior research tailored to each game genre and product lifecycle stage."
         }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đọc thêm",
+          "en": "Further reading"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "[Thị trường game Việt Nam và những thay đổi trong cách tiếp cận người chơi](/vi/blog/thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi)",
+            "en": "[The Vietnamese Gaming Market and Changes in How Players Are Engaged](/en/blog/vietnam-gaming-market-evolving-player-acquisition)"
+          },
+          {
+            "vi": "[Vietnam Gaming Market: Tổng quan thị trường game Việt Nam và cơ hội cho nhà phát hành](/vi/blog/vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh)",
+            "en": "[Vietnam Gaming Market: An Overview of Vietnam's Gaming Market and Opportunities for Publishers](/en/blog/vietnam-gaming-market-overview-opportunities-publishers)"
+          },
+          {
+            "vi": "[Game Publishing in Vietnam: Những bài toán cần giải trước khi đầu tư marketing](/vi/blog/game-publishing-in-vietnam-nhung-bai-toan-can-giai-truoc-khi-dau-tu-marketing)",
+            "en": "[Game Publishing in Vietnam: Challenges to Address Before Investing in Marketing](/en/blog/game-publishing-in-vietnam-challenges-before-investing-in-marketing)"
+          },
+          {
+            "vi": "[Vì sao game thủ tải game nhưng không ở lại?](/vi/blog/vi-sao-game-thu-tai-game-nhung-khong-o-lai)",
+            "en": "[Why Do Players Download Games but Not Stay?](/en/blog/why-do-players-download-games-but-not-stay)"
+          }
+        ]
       }
     ],
     "cover_en": "/blog-media/1793200000000-vn2026-en-01.jpg"
@@ -716,6 +744,13 @@
         "caption": {
           "vi": "Contact ANBU",
           "en": "Contact ANBU"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Đọc thêm về cơ hội theo thể loại và số liệu thị trường 2026:** [Thị trường game Việt Nam 2026: Cơ hội tăng trưởng ở đâu?](/vi/blog/thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau).",
+          "en": "**More on genre opportunities and 2026 market data:** [Vietnam's Gaming Market in 2026: Where Are the Growth Opportunities?](/en/blog/vietnam-gaming-market-2026-where-are-the-growth-opportunities)."
         }
       },
       {
@@ -3325,6 +3360,13 @@
         }
       },
       {
+        "type": "p",
+        "text": {
+          "vi": "**Cập nhật số liệu nửa đầu 2026:** xem thêm [Thị trường game Việt Nam 2026: Cơ hội tăng trưởng ở đâu?](/vi/blog/thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau).",
+          "en": "**H1 2026 data update:** see also [Vietnam's Gaming Market in 2026: Where Are the Growth Opportunities?](/en/blog/vietnam-gaming-market-2026-where-are-the-growth-opportunities)."
+        }
+      },
+      {
         "type": "quote",
         "text": {
           "vi": "Cần nghiên cứu thị trường game? **Liên hệ ANBU** để có insight người chơi và xây dựng chiến lược phù hợp.",
@@ -5896,6 +5938,13 @@
           "en": "In an ever-changing market, the ability to listen to players and adapt to new behaviors will be a key factor in helping game brands carve out their own niche and build a sustainable community."
         },
         "type": "p"
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Số liệu mới nhất về lượt tải, doanh thu và thể loại tăng trưởng:** [Thị trường game Việt Nam 2026: Cơ hội tăng trưởng ở đâu?](/vi/blog/thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau).",
+          "en": "**The latest data on downloads, revenue and growing genres:** [Vietnam's Gaming Market in 2026: Where Are the Growth Opportunities?](/en/blog/vietnam-gaming-market-2026-where-are-the-growth-opportunities)."
+        }
       },
       {
         "text": {
