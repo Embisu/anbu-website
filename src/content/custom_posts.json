@@ -1,5 +1,1463 @@
 [
   {
+    "slug": "esports-marketing-thailand-game-moi-co-nen-to-chuc-giai-dau-rieng",
+    "slug_en": "esports-marketing-thailand-should-a-new-game-run-its-own-tournament",
+    "title": {
+      "vi": "Esports Marketing Thailand: Game mới có nên tổ chức giải đấu riêng?",
+      "en": "Esports Marketing Thailand: Should a New Game Run Its Own Tournament?"
+    },
+    "excerpt": {
+      "vi": "Giải đấu riêng có thể tăng nhận biết và thúc đẩy cộng đồng, nhưng cũng là khoản đầu tư lớn. Bài viết giúp nhà phát hành đánh giá thị trường esports Thái Lan, mức độ sẵn sàng của game và chọn mô hình giải đấu phù hợp từng giai đoạn.",
+      "en": "A dedicated tournament can raise awareness and energize a community, but it is also a major investment. This article helps publishers assess Thailand’s esports market, their game’s readiness, and the right tournament model for each stage."
+    },
+    "category": {
+      "vi": "Marketing Game",
+      "en": "Game Marketing"
+    },
+    "date": "2026-11-05",
+    "readingTime": 11,
+    "cover": "/blog-covers/esports-stadium-arena.jpg",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "depa - Digital Content Industry Thailand 2025",
+          "en": "depa - Digital Content Industry Thailand 2025"
+        },
+        "href": "https://www.depa.or.th/en/article-view/20260903_01"
+      },
+      {
+        "label": {
+          "vi": "MOONTON - MLBB Thailand strategy in 2026",
+          "en": "MOONTON - MLBB Thailand strategy in 2026"
+        },
+        "href": "https://en.moonton.com/news/295.html"
+      },
+      {
+        "label": {
+          "vi": "MOONTON - MSL Thailand and esports roadmap",
+          "en": "MOONTON - MSL Thailand and esports roadmap"
+        },
+        "href": "https://en.moonton.com/news/316.html"
+      },
+      {
+        "label": {
+          "vi": "Deloitte - The Southeast Asian Esports Market: Let’s Play! 2024",
+          "en": "Deloitte - The Southeast Asian Esports Market: Let’s Play! 2024"
+        },
+        "href": "https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html"
+      },
+      {
+        "label": {
+          "vi": "Nghiên cứu về hành vi xem livestream MOBA tại Thái Lan",
+          "en": "Study on MOBA livestream viewing behavior in Thailand"
+        },
+        "href": "https://www.researchgate.net/publication/349968018_Major_Factors_Influencing_Watching_Game_Streaming_in_Thailand_A_Case_Study_of_Multiplayers_Online_Battle_Arena_MOBA_Game_and_What_Motivates_People_Spectating_Their_Play"
+      },
+      {
+        "label": {
+          "vi": "Nghiên cứu về động lực theo dõi esports tại Thái Lan",
+          "en": "Study on motivations for watching esports in Thailand"
+        },
+        "href": "https://publication.npru.ac.th/handle/123456789/1338"
+      },
+      {
+        "label": {
+          "vi": "Nghiên cứu về marketing mix và tương tác khán giả esports tại Thái Lan",
+          "en": "Study on marketing mix and esports audience engagement in Thailand"
+        },
+        "href": "https://so02.tci-thaijo.org/index.php/jam/article/view/281565"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với một tựa game mới gia nhập thị trường Thái Lan, tổ chức giải đấu riêng có thể giúp tăng độ nhận biết, giới thiệu gameplay và thúc đẩy cộng đồng cạnh tranh. Tuy nhiên, đây cũng là khoản đầu tư đòi hỏi ngân sách, nguồn lực vận hành và một nền tảng người chơi đủ lớn để duy trì sức hút.",
+          "en": "For a new game entering the Thai market, running its own tournament can raise awareness, showcase gameplay, and energize a competitive community. However, it is also an investment that demands budget, operational resources, and a player base large enough to sustain its appeal."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một giải đấu có thể thu hút hàng nghìn lượt xem nhưng chưa chắc tạo ra người chơi mới. Ngược lại, một giải cộng đồng quy mô nhỏ có thể mang lại giá trị lớn hơn nếu giúp người chơi trải nghiệm game, tìm đồng đội và quay lại thi đấu.",
+          "en": "A tournament can attract thousands of views without necessarily creating new players. Conversely, a small community tournament may deliver more value if it helps players experience the game, find teammates, and come back to compete."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, câu hỏi không chỉ là Thái Lan có tiềm năng esports hay không, mà là một tựa game mới đã sẵn sàng đầu tư vào giải đấu riêng hay chưa, và nên bắt đầu ở quy mô nào?",
+          "en": "The question is therefore not only whether Thailand has esports potential, but whether a new game is ready to invest in its own tournament, and at what scale it should start."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Để đưa ra quyết định, nhà phát hành cần đánh giá đặc điểm thị trường esports Thái Lan, mức độ sẵn sàng của game và khả năng biến hoạt động thi đấu thành động lực tăng trưởng.",
+          "en": "To make the decision, publishers need to assess the characteristics of Thailand’s esports market, the game’s readiness, and its ability to turn competitive activity into a growth driver."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Esports Thái Lan tăng trưởng, nhưng cơ hội không đồng đều",
+          "en": "Thailand’s esports is growing, but opportunities are uneven"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo báo cáo ngành [Digital Content Thailand 2025 được depa công bố năm 2026](https://www.depa.or.th/en/article-view/20260903_01), thị trường esports Thái Lan đạt giá trị khoảng 614 triệu baht trong năm 2025, tăng 16% so với năm trước. Trong đó, nhóm nhà phát triển và nhà cung cấp game ghi nhận khoảng 384 triệu baht, chiếm 62% tổng giá trị, nhóm đội tuyển và câu lạc bộ đạt khoảng 230 triệu baht, tăng 6%.",
+          "en": "According to the [Digital Content Thailand 2025 industry report published by depa in 2026](https://www.depa.or.th/en/article-view/20260903_01), Thailand’s esports market reached about 614 million baht in 2025, up 16% from the previous year. Developers and game providers recorded about 384 million baht, or 62% of total value, while teams and clubs reached about 230 million baht, up 6%."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Cơ cấu này cho thấy giá trị kinh tế của esports vẫn tập trung đáng kể ở phía chủ sở hữu game và các hoạt động gắn trực tiếp với trò chơi. Với nhà phát hành, giải đấu vì thế cần được xem là một phần trong chiến lược phát triển game, thay vì chỉ là hoạt động truyền thông hoặc tài trợ esports.",
+          "en": "This structure shows that the economic value of esports remains concentrated on the game owners’ side and in activities directly tied to the game. For publishers, a tournament should therefore be seen as part of the game’s development strategy, rather than just a communication or sponsorship activity."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Mobile và tablet chiếm khoảng 72% giá trị esports Thái Lan năm 2025, tương đương 443 triệu baht. Các tựa game như RoV, Free Fire và PUBG Mobile tiếp tục góp phần định hình hệ sinh thái thi đấu trên nền tảng di động.",
+          "en": "Mobile and tablet accounted for about 72% of Thailand’s esports value in 2025, equal to 443 million baht. Titles such as RoV, Free Fire, and PUBG Mobile continue to shape the mobile competitive ecosystem."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây là cơ hội cho game mobile mới nhờ khả năng tiếp cận người chơi rộng. Tuy nhiên, thị trường cũng đã có những tựa game sở hữu cộng đồng, creator, đội tuyển và thói quen theo dõi giải đấu lâu năm. Game mới không chỉ cần thuyết phục người chơi tải game, mà còn phải tạo lý do để họ dành thời gian tham gia hoặc theo dõi một hệ sinh thái cạnh tranh khác.",
+          "en": "This is an opportunity for new mobile games thanks to their broad reach. However, the market already has titles with long-standing communities, creators, teams, and tournament-watching habits. A new game must not only persuade players to download it, but also give them a reason to spend time joining or following another competitive ecosystem."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường esports tăng trưởng không đồng nghĩa với việc mọi game mới đều có đủ nhu cầu để xây dựng giải đấu riêng. Cơ hội thực tế phụ thuộc vào khả năng tạo ra trải nghiệm thi đấu khác biệt, dễ tiếp cận và có sức duy trì cộng đồng.",
+          "en": "A growing esports market does not mean every new game has enough demand to build its own tournament. The real opportunity depends on the ability to create a competitive experience that is distinctive, accessible, and able to sustain a community."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Khi nào game mới tại Thái Lan nên tổ chức giải đấu riêng?",
+          "en": "When should a new game in Thailand run its own tournament?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trước khi đầu tư, nhà phát hành cần đánh giá ba điều kiện: gameplay có phù hợp với thi đấu, người chơi có nhu cầu cạnh tranh và giải đấu có phục vụ mục tiêu tăng trưởng cụ thể hay không.",
+          "en": "Before investing, publishers need to assess three conditions: whether the gameplay suits competition, whether players want to compete, and whether the tournament serves a specific growth goal."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Gameplay có đủ hấp dẫn để thi đấu và theo dõi?",
+          "en": "Is the gameplay compelling enough to compete in and watch?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tại một thị trường có nhiều nội dung game cạnh tranh sự chú ý như Thái Lan, gameplay cần tạo ra những tình huống đủ hấp dẫn để người xem hiểu diễn biến trận đấu và muốn theo dõi kết quả. Điều này thường đến từ sự khác biệt về kỹ năng, chiến thuật, phối hợp đội hình hoặc khả năng xử lý tình huống.",
+          "en": "In a market like Thailand, where many games compete for attention, gameplay needs to create moments compelling enough for viewers to follow the match and want to see the result. This usually comes from differences in skill, tactics, team coordination, or the ability to handle situations."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Một nghiên cứu về hành vi xem livestream game MOBA tại Thái Lan](https://www.researchgate.net/publication/349968018_Major_Factors_Influencing_Watching_Game_Streaming_in_Thailand_A_Case_Study_of_Multiplayers_Online_Battle_Arena_MOBA_Game_and_What_Motivates_People_Spectating_Their_Play) đề cập đến vai trò của kỹ năng người chơi, tính tương tác và yếu tố giải trí trong trải nghiệm theo dõi. Điều này cho thấy tiềm năng esports không chỉ nằm ở chiều sâu gameplay, mà còn ở khả năng chuyển trải nghiệm thi đấu thành nội dung hấp dẫn đối với khán giả.",
+          "en": "[A study of MOBA game livestream viewing behavior in Thailand](https://www.researchgate.net/publication/349968018_Major_Factors_Influencing_Watching_Game_Streaming_in_Thailand_A_Case_Study_of_Multiplayers_Online_Battle_Arena_MOBA_Game_and_What_Motivates_People_Spectating_Their_Play) points to the role of player skill, interactivity, and entertainment value in the viewing experience. This suggests that esports potential lies not only in gameplay depth, but also in the ability to turn the competitive experience into content that appeals to audiences."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với những game phụ thuộc nhiều vào may rủi, nâng cấp hoặc chênh lệch sức mạnh nhân vật, giải đấu chuyên nghiệp có thể chưa phải lựa chọn phù hợp. Nhà phát hành có thể thử các hình thức cạnh tranh nhẹ nhàng hơn như thử thách theo luật riêng, thi đấu giữa creator hoặc sự kiện cộng đồng để kiểm chứng sức hút.",
+          "en": "For games that depend heavily on luck, upgrades, or character power gaps, a professional tournament may not be the right choice. Publishers can test lighter forms of competition such as challenges with custom rules, creator matches, or community events to verify appeal."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Người chơi có thực sự muốn cạnh tranh?",
+          "en": "Do players actually want to compete?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Lượng người chơi lớn chưa chắc đồng nghĩa với nhu cầu esports. Nhà phát hành cần quan sát liệu người chơi có tự tổ chức hoạt động cạnh tranh khi không được thúc đẩy bởi chiến dịch quảng bá hay không.",
+          "en": "A large player base does not necessarily mean demand for esports. Publishers should observe whether players organize competitive activities on their own when not prompted by promotional campaigns."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những dấu hiệu đáng chú ý gồm việc người chơi chủ động lập đội, tổ chức đấu tập, chia sẻ chiến thuật, tìm đối thủ hoặc tạo nội dung về kỹ năng và kết quả thi đấu. Đây là cơ sở để đánh giá liệu cạnh tranh có đang trở thành một phần tự nhiên trong trải nghiệm game. Ngược lại, nếu hoạt động thi đấu chỉ diễn ra khi có phần thưởng lớn hoặc quảng bá từ nhà phát hành, nhu cầu tự nhiên có thể chưa đủ mạnh để duy trì giải đấu dài hạn.",
+          "en": "Notable signs include players forming teams on their own, organizing practice matches, sharing tactics, looking for opponents, or creating content about skills and match results. These are the basis for judging whether competition is becoming a natural part of the game experience. Conversely, if competitive activity only happens when there are big rewards or promotion from the publisher, natural demand may not be strong enough to sustain a long-term tournament."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game mới tại Thái Lan, một hướng tiếp cận phù hợp là thử nghiệm giải đấu cộng đồng hoặc hoạt động thi đấu kết hợp với creator địa phương. Nhà phát hành cần theo dõi không chỉ số người đăng ký, mà còn mức độ tương tác sau sự kiện, nội dung do người chơi tạo ra và khả năng họ quay lại tham gia.",
+          "en": "For a new game in Thailand, a sensible approach is to test community tournaments or competitive activities combined with local creators. Publishers should track not only the number of registrations, but also post-event engagement, player-created content, and the likelihood that players return to take part."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Esports có giải quyết đúng bài toán tăng trưởng không?",
+          "en": "Does esports solve the right growth problem?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngay cả khi game có tiềm năng cạnh tranh và cộng đồng sẵn sàng tham gia, esports vẫn cần được triển khai dựa trên mục tiêu rõ ràng.",
+          "en": "Even when a game has competitive potential and a community ready to participate, esports still needs to be run against a clear goal."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game mới, esports có thể hỗ trợ thu hút người chơi mới bằng cách giới thiệu gameplay thông qua creator và các trận đấu. Tuy nhiên, chiến dịch cần có bước tiếp theo cụ thể như hoạt động dành cho người mới, lời mời trải nghiệm hoặc cơ chế tham gia đơn giản.",
+          "en": "For a new game, esports can help attract new players by showcasing gameplay through creators and matches. However, the campaign needs a concrete next step, such as activities for newcomers, an invitation to try the game, or a simple way to join."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game đã có lượng người chơi nhất định, giải đấu có thể tập trung vào giữ chân người chơi, tạo lý do để họ quay lại, cải thiện kỹ năng và theo dõi các mùa giải tiếp theo. Nếu mục tiêu là xây dựng cộng đồng, giải đấu cần mở rộng cơ hội tham gia cho người chơi phổ thông thay vì chỉ tập trung vào tuyển thủ chuyên nghiệp.",
+          "en": "For a game with an established player base, a tournament can focus on retaining players, giving them reasons to return, improve their skills, and follow future seasons. If the goal is community building, the tournament should open participation to everyday players instead of focusing only on professional players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Một nghiên cứu về khán giả esports tại Thái Lan](https://so02.tci-thaijo.org/index.php/jam/article/view/281565) cũng xem xét mối liên hệ giữa marketing mix và mức độ tương tác của người xem. Điều này gợi ý rằng giá trị của giải đấu không chỉ nằm ở trận đấu, mà còn ở cách khán giả được tham gia vào trải nghiệm.",
+          "en": "[A study of esports audiences in Thailand](https://so02.tci-thaijo.org/index.php/jam/article/view/281565) also examines the relationship between the marketing mix and viewer engagement. This suggests that a tournament’s value lies not only in the matches themselves, but also in how audiences are invited into the experience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nhà phát hành nên xác định rõ giải đấu sẽ hỗ trợ thu hút người chơi mới, giữ chân người chơi hiện tại hay phát triển cộng đồng. Từ đó mới lựa chọn quy mô, hình thức tổ chức, creator và chỉ số đánh giá.",
+          "en": "Publishers should clearly define whether the tournament will help attract new players, retain current players, or grow the community. Only then should they choose the scale, format, creators, and evaluation metrics."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một sự kiện có nhiều lượt xem nhưng không tạo ra người chơi mới, hoạt động trong game hoặc sự gắn bó với cộng đồng vẫn khó được xem là một chiến dịch esports hiệu quả.",
+          "en": "An event with many views that creates no new players, in-game activity, or community attachment is hard to call an effective esports campaign."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Ba mô hình esports phù hợp với từng giai đoạn phát triển game",
+          "en": "Three esports models for different stages of a game’s development"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Không có một mô hình esports phù hợp với mọi tựa game. Với game mới tại Thái Lan, nhà phát hành có thể cân nhắc ba hướng triển khai tùy theo mức độ nhận biết, nhu cầu thi đấu và sự phát triển của cộng đồng.",
+          "en": "There is no single esports model that suits every game. For a new game in Thailand, publishers can consider three approaches depending on awareness, competitive demand, and community development."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Creator-led tournament (Giải đấu cùng nhà sáng tạo nội dung): Tạo nhận biết và giới thiệu gameplay",
+          "en": "Creator-led tournament: Building awareness and showcasing gameplay"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở giai đoạn launch, giải đấu có sự tham gia của nhà sáng tạo nội dung có thể phù hợp hơn giải đấu chuyên nghiệp. Họ vừa giới thiệu cách chơi, vừa tạo nội dung giải trí thông qua thử thách, đối đầu hoặc thi đấu theo đội.",
+          "en": "At launch, a tournament featuring content creators may suit better than a professional one. They both introduce how to play and create entertaining content through challenges, head-to-head matches, or team competitions."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Mô hình này giúp game tiếp cận người xem bằng những tình huống dễ hiểu và gần gũi, đặc biệt khi cộng đồng thi đấu chưa đủ lớn. Nhà phát hành có thể tổ chức trận đấu giữa các nhà sáng tạo nội dung, mời người xem tham gia vòng mở hoặc tạo thử thách mà người chơi có thể trải nghiệm ngay trong game.",
+          "en": "This model helps the game reach viewers through easy-to-follow, relatable moments, especially when the competitive community is not yet large. Publishers can organize matches between creators, invite viewers to join open rounds, or create challenges players can try immediately in the game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tại Thái Lan, creator đang được các nhà phát hành lớn xem là một thành phần quan trọng trong chiến lược phát triển cộng đồng. Trong [chiến lược MLBB tại thị trường này năm 2026, MOONTON](https://en.moonton.com/news/295.html) công bố hợp tác dài hạn với GuyNgid và đầu tư hơn **20 triệu baht** cho các chương trình creator, cuộc thi nội dung và hợp tác KOL.",
+          "en": "In Thailand, creators are seen by major publishers as an important component of community development strategy. In its [2026 MLBB strategy for this market, MOONTON](https://en.moonton.com/news/295.html) announced a long-term partnership with GuyNgid and an investment of more than **20 million baht** in creator programs, content contests, and KOL partnerships."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây không phải bằng chứng rằng chiến dịch nhà sáng tạo nội dung luôn hiệu quả hơn giải đấu, nhưng cho thấy creator và cộng đồng có thể được phát triển song song với hệ sinh thái esports.",
+          "en": "This is not evidence that creator campaigns are always more effective than tournaments, but it shows that creators and communities can be developed alongside the esports ecosystem."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Community tournament (Giải đấu cộng đồng): Kiểm chứng nhu cầu thi đấu",
+          "en": "Community tournament: Validating competitive demand"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi người chơi bắt đầu chủ động tìm đối thủ, lập đội hoặc tổ chức các trận đấu, nhà phát hành có thể phát triển giải đấu cộng đồng. Mô hình này giúp kiểm chứng nhu cầu cạnh tranh thực tế với chi phí thấp hơn giải chuyên nghiệp.",
+          "en": "When players start looking for opponents, forming teams, or organizing matches on their own, publishers can develop community tournaments. This model helps validate real competitive demand at a lower cost than a professional tournament."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các giải có thể được tổ chức theo cộng đồng creator, trường đại học, khu vực hoặc nhóm người chơi. Để mở rộng khả năng tham gia, luật thi đấu cần đơn giản, đăng ký thuận tiện và có hạng mục dành cho người mới hoặc bán chuyên.",
+          "en": "Tournaments can be organized by creator communities, universities, regions, or player groups. To widen participation, the rules need to be simple, registration convenient, and there should be categories for newcomers or semi-pro players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở giai đoạn này, nhà phát hành nên theo dõi số đội đăng ký, tỷ lệ hoàn thành giải, số người quay lại thi đấu và mức độ tự tổ chức của cộng đồng. Nếu giải đấu chỉ thu hút người tham gia khi có phần thưởng lớn, nhu cầu cạnh tranh tự nhiên có thể chưa đủ mạnh để phát triển thành hệ thống esports dài hạn.",
+          "en": "At this stage, publishers should track the number of registered teams, tournament completion rate, the number of players who return to compete, and how much the community organizes itself. If a tournament only attracts participants with large prizes, natural competitive demand may not be strong enough to grow into a long-term esports system."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Official league (Giải đấu chính thức): Phát triển khi cộng đồng đã vững",
+          "en": "Official league: Scaling up once the community is solid"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Giải đấu chính thức phù hợp hơn khi game đã có nền tảng người chơi, đội tuyển, creator và khán giả ổn định. Khi đó, league có thể tạo lịch thi đấu định kỳ, xây dựng câu chuyện giữa các đội và phát triển hệ sinh thái cạnh tranh dài hạn.",
+          "en": "An official league suits better when the game already has a stable base of players, teams, creators, and audiences. At that point, a league can set a regular match calendar, build storylines between teams, and develop a long-term competitive ecosystem."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "MLBB là ví dụ về một tựa game không xây dựng esports từ con số không tại Thái Lan. Năm 2026, [MOONTON công bố MSL Thailand](https://en.moonton.com/news/295.html) với tám đội được mời tham dự, bao gồm những tổ chức đã có tên tuổi trong hệ sinh thái esports địa phương. Giải đấu được định vị như một phần của lộ trình đưa Thái Lan trở lại hệ thống cạnh tranh quốc tế của MLBB.",
+          "en": "MLBB is an example of a title that did not build esports in Thailand from scratch. In 2026, [MOONTON announced MSL Thailand](https://en.moonton.com/news/295.html) with eight invited teams, including organizations already well known in the local esports ecosystem. The tournament is positioned as part of a roadmap to bring Thailand back into MLBB’s international competitive system."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trường hợp này cho thấy giải đấu chuyên nghiệp có thể phát huy vai trò khi đã có nền tảng đội tuyển, lịch sử thi đấu và cộng đồng sẵn có. Tuy nhiên, không nên áp dụng nguyên trạng mô hình của một game đã có hệ sinh thái cho tựa game mới chưa chứng minh được nhu cầu cạnh tranh.",
+          "en": "This case shows that a professional tournament can play its role once there is an existing base of teams, competitive history, and community. However, the model of a game with an established ecosystem should not be applied as-is to a new title that has not yet proven competitive demand."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Nên đầu tư vào giải đấu riêng ở mức nào?",
+          "en": "How much should you invest in a dedicated tournament?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Game mới ra mắt, chưa có cộng đồng thi đấu:** Chưa nên đầu tư ngay vào giải đấu chuyên nghiệp. Nên ưu tiên các chiến dịch thi đấu cùng nhà sáng tạo nội dung, trận đấu biểu diễn hoặc thử thách trong game để giới thiệu lối chơi và kiểm chứng nhu cầu cạnh tranh.",
+          "en": "**A newly launched game with no competitive community:** Do not invest in a professional tournament right away. Prioritize creator competition campaigns, exhibition matches, or in-game challenges to introduce the gameplay and test competitive demand."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Game đã có người chơi nhưng nhu cầu thi đấu chưa rõ:** Thử nghiệm các giải đấu cộng đồng quy mô nhỏ, theo dõi mức độ tham gia và khả năng người chơi quay lại. Chỉ mở rộng khi xuất hiện những dấu hiệu cho thấy cộng đồng thực sự muốn thi đấu.",
+          "en": "**A game with players but unclear competitive demand:** Test small community tournaments and track participation and the likelihood that players return. Only expand when there are signs that the community genuinely wants to compete."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Game có cộng đồng chủ động thi đấu và nhu cầu ổn định:** Có thể phát triển giải đấu định kỳ, hệ thống vòng loại hoặc giải đấu chuyên nghiệp chính thức, nếu nhà phát hành có đủ nguồn lực để vận hành và duy trì hoạt động giữa các mùa giải.",
+          "en": "**A game with a proactive competitive community and stable demand:** You can develop regular tournaments, a qualifier system, or an official professional tournament, provided the publisher has the resources to operate and sustain activity between seasons."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Game chưa giữ chân được người chơi hoặc lối chơi chưa phù hợp với thi đấu:** Chưa nên ưu tiên tổ chức giải đấu riêng. Nguồn lực nên tập trung vào cải thiện trải nghiệm game, phát triển cộng đồng và các hoạt động marketing có khả năng thu hút, chuyển đổi người chơi hiệu quả hơn.",
+          "en": "**A game that cannot yet retain players, or whose gameplay does not suit competition:** Do not prioritize running its own tournament. Focus resources on improving the game experience, growing the community, and marketing activities that attract and convert players more effectively."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dù lựa chọn hình thức nào, giải đấu cũng cần gắn với những hoạt động cụ thể trong game, chẳng hạn nhiệm vụ dành cho người mới, thử thách thi đấu hoặc hoạt động tìm đồng đội, nhằm tạo cơ hội để người xem trở thành người chơi thực tế.",
+          "en": "Whichever format you choose, a tournament should be tied to specific in-game activities, such as quests for newcomers, competitive challenges, or team-finding activities, to give viewers a chance to become actual players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Hiệu quả không nên chỉ được đánh giá qua lượt xem và tương tác. Nhà phát hành cần theo dõi số lượt cài đặt đến từ chiến dịch, tỷ lệ người chơi hoàn thành hướng dẫn ban đầu, mức độ tham gia các hoạt động thi đấu và tỷ lệ quay lại sau 1, 7 hoặc 30 ngày.",
+          "en": "Effectiveness should not be judged by views and engagement alone. Publishers need to track installs coming from the campaign, the rate of players who complete the initial tutorial, participation in competitive activities, and the return rate after 1, 7, or 30 days."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu giải đấu tạo ra nhiều lượt cài đặt nhưng người chơi nhanh chóng rời đi, nhà phát hành cần xem xét liệu trải nghiệm thực tế của game có đáp ứng được kỳ vọng mà nội dung thi đấu đã tạo ra hay không.",
+          "en": "If a tournament generates many installs but players quickly leave, publishers should examine whether the game’s actual experience meets the expectations created by the competitive content."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Kết luận",
+          "en": "Conclusion"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Game mới tại Thái Lan có thể xây dựng giải đấu riêng, nhưng không nên xem đây là bước khởi đầu mặc định của Esports Marketing.",
+          "en": "A new game in Thailand can build its own tournament, but this should not be seen as the default starting point of Esports Marketing."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường esports Thái Lan đang tăng trưởng, đặc biệt trên nền tảng di động, nhưng quy mô thị trường không tự động tạo ra nhu cầu thi đấu cho từng tựa game. Nhà phát hành cần chứng minh game có chiều sâu cạnh tranh, người chơi muốn thi đấu và giải đấu có thể thúc đẩy hành động cụ thể trong game.",
+          "en": "Thailand’s esports market is growing, especially on mobile, but market size does not automatically create competitive demand for each title. Publishers need to show that the game has competitive depth, that players want to compete, and that the tournament can drive concrete in-game actions."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một hướng tiếp cận phù hợp là chọn mô hình theo mục tiêu: giải đấu cùng nhà sáng tạo nội dung để tạo nhận biết, giải đấu cộng đồng để kiểm chứng nhu cầu, rồi giải đấu chính thức khi cộng đồng đủ vững. Đây là những lựa chọn có thể kết hợp hoặc điều chỉnh, không phải lộ trình bắt buộc cho mọi game.",
+          "en": "A sensible approach is to choose the model by goal: creator-led tournaments to build awareness, community tournaments to validate demand, and then an official league once the community is solid. These options can be combined or adjusted and are not a mandatory path for every game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game mới, thành công không nằm ở việc tổ chức giải đấu lớn nhất, mà ở khả năng biến sự chú ý thành người chơi, biến người chơi thành cộng đồng và biến cộng đồng thành nền tảng phát triển lâu dài.",
+          "en": "For a new game, success is not about running the biggest tournament, but about turning attention into players, players into a community, and the community into a foundation for long-term growth."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "ANBU đồng hành cùng nhà phát hành game tại Thái Lan",
+          "en": "ANBU supports game publishers in Thailand"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một chiến lược esports hiệu quả cần bắt đầu từ việc hiểu thị trường, hành vi người chơi và mục tiêu tăng trưởng của tựa game. Từ nghiên cứu thị trường, xây dựng chiến lược Game Marketing đến triển khai creator-led campaigns và phát triển cộng đồng, ANBU đồng hành cùng nhà phát hành trong việc lựa chọn hướng tiếp cận phù hợp tại Thái Lan và Đông Nam Á.",
+          "en": "An effective esports strategy starts with understanding the market, player behavior, and the game’s growth goals. From market research and Game Marketing strategy to creator-led campaigns and community development, ANBU supports publishers in choosing the right approach in Thailand and Southeast Asia."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu bạn đang tìm kiếm chiến lược Esports Marketing tại Thái Lan cho một tựa game mới, hãy kết nối với ANBU để cùng đánh giá cơ hội thị trường và xây dựng kế hoạch tăng trưởng phù hợp.",
+          "en": "If you are looking for an Esports Marketing strategy in Thailand for a new game, connect with ANBU to assess the market opportunity together and build a suitable growth plan."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đọc thêm",
+          "en": "Further reading"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "[Esports tại Việt Nam đang mở ra cơ hội gì cho thương hiệu?](/vi/blog/esports-tai-viet-nam-dang-mo-ra-co-hoi-gi-cho-thuong-hieu)",
+            "en": "[What Opportunities Does Esports in Vietnam Offer Brands?](/en/blog/what-opportunities-does-esports-in-vietnam-offer-brands)"
+          },
+          {
+            "vi": "[Đo ROI tài trợ Esports tại Việt Nam: Bài toán thực chiến cho nhãn hàng](/vi/blog/do-roi-tai-tro-esports-tai-viet-nam)",
+            "en": "[Measuring Esports Sponsorship ROI in Vietnam: A Practical Guide for Brands](/en/blog/measuring-esports-sponsorship-roi-vietnam-practical-guide-brands)"
+          },
+          {
+            "vi": "[Game Audience Research Thailand: Hiểu game thủ Thái Lan để tăng hiệu quả marketing](/vi/blog/game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing)",
+            "en": "[Game Audience Research Thailand: Understanding Thai Gamers to Boost Marketing Effectiveness](/en/blog/game-audience-research-thailand-understanding-thai-gamers)"
+          },
+          {
+            "vi": "[Tiếp thị nội dung game tại Thái Lan: Vì sao bản địa hóa không thể chỉ dừng ở việc dịch thuật?](/vi/blog/tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat)",
+            "en": "[Game Content Marketing in Thailand: Why Localization Goes Beyond Translation](/en/blog/game-content-marketing-thailand-localization-beyond-translation)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "toi-uu-kenh-game-tai-thai-lan-chien-luoc-always-on",
+    "slug_en": "game-channel-optimization-thailand-always-on-strategy",
+    "title": {
+      "vi": "Tối ưu kênh game tại Thái Lan: Chiến lược Always-on",
+      "en": "Game Channel Optimization in Thailand: The Always-on Strategy"
+    },
+    "excerpt": {
+      "vi": "Sau launch, mục tiêu marketing game chuyển sang duy trì sự quan tâm và khuyến khích người chơi quay lại. Always-on Channel Strategy giúp xây dựng hệ thống kênh có vai trò rõ ràng, gắn với LiveOps và tối ưu theo dữ liệu thực tế tại Thái Lan.",
+      "en": "After launch, game marketing shifts from driving installs to sustaining interest and encouraging players to return. An Always-on Channel Strategy builds a channel system with clear roles, tied to LiveOps and optimized with real data in Thailand."
+    },
+    "category": {
+      "vi": "Vận hành Game",
+      "en": "Game Operations"
+    },
+    "date": "2026-11-05",
+    "readingTime": 9,
+    "cover": "/blog-media/1794100000000-alwayson-vi-cover.jpg",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "Thailand.go.th - Thailand Emerges as Southeast Asia’s High-Potential Gaming Powerhouse",
+          "en": "Thailand.go.th - Thailand Emerges as Southeast Asia’s High-Potential Gaming Powerhouse"
+        },
+        "href": "https://thailand.go.th/public/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse"
+      },
+      {
+        "label": {
+          "vi": "DataReportal - Digital 2025: Thailand",
+          "en": "DataReportal - Digital 2025: Thailand"
+        },
+        "href": "https://datareportal.com/reports/digital-2025-thailand"
+      },
+      {
+        "label": {
+          "vi": "DataReportal - Digital 2026: Thailand",
+          "en": "DataReportal - Digital 2026: Thailand"
+        },
+        "href": "https://datareportal.com/reports/digital-2026-thailand"
+      },
+      {
+        "label": {
+          "vi": "Dataxet - Thailand Media Landscape 2026",
+          "en": "Dataxet - Thailand Media Landscape 2026"
+        },
+        "href": "https://www.dataxet.co/media-landscape/2026-th"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau launch, mục tiêu marketing game không còn dừng ở việc thu hút lượt tải mà chuyển sang duy trì sự quan tâm, hỗ trợ trải nghiệm và khuyến khích người chơi quay lại. **Tối ưu kênh game tại Thái Lan là** quá trình xác định vai trò của từng kênh, từ LINE, Facebook, TikTok, YouTube, nhà sáng tạo nội dung đến quảng cáo trả phí, kết nối hoạt động truyền thông với lịch LiveOps và liên tục điều chỉnh dựa trên dữ liệu thực tế.",
+          "en": "After launch, game marketing goals shift from driving installs to sustaining interest, supporting the player experience, and encouraging players to return. **Game channel optimization in Thailand is** the process of defining the role of each channel, from LINE, Facebook, TikTok, YouTube, and content creators to paid advertising, connecting communication activities with the LiveOps calendar, and continuously adjusting based on real data."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì triển khai các kênh riêng lẻ, nhà phát hành cần xây dựng một hệ thống phối hợp, trong đó mỗi kênh đảm nhiệm mục tiêu cụ thể trong hành trình người chơi. Vậy làm thế nào để xây dựng chiến lược Always-on phù hợp với thị trường Thái Lan và tối ưu nguồn lực sau ra mắt?",
+          "en": "Instead of running channels in isolation, publishers need to build a coordinated system in which each channel takes on a specific goal in the player journey. So how do you build an Always-on strategy that suits the Thai market and optimizes resources after launch?"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Always-on Channel Strategy là gì?",
+          "en": "What is an Always-on Channel Strategy?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794100000000-alwayson-vi-what.jpg",
+        "src_en": "/blog-media/1794100000000-alwayson-en-what.jpg",
+        "alt": {
+          "vi": "Always-on Channel Strategy là gì?",
+          "en": "What is an Always-on Channel Strategy?"
+        },
+        "caption": {
+          "vi": "Always-on không phải đăng bài liên tục, mà là vận hành hệ thống kênh có chiến lược.",
+          "en": "Always-on isn’t about posting constantly, it’s about strategically managing an integrated channel ecosystem."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Always-on Channel Strategy** là chiến lược duy trì sự hiện diện marketing liên tục trên những kênh phù hợp với người chơi mục tiêu, thay vì chỉ tập trung truyền thông trong các đợt campaign lớn.",
+          "en": "**An Always-on Channel Strategy** is a strategy of maintaining a continuous marketing presence on the channels that suit target players, rather than focusing communication only on large campaign bursts."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game đã ra mắt, Always-on không có nghĩa là liên tục chạy quảng cáo hoặc đăng bài mỗi ngày trên mọi nền tảng. Thay vào đó, nhà phát hành cần xây dựng hệ thống kênh có vai trò rõ ràng, vận hành theo lịch nội dung và được tối ưu dựa trên dữ liệu thực tế.",
+          "en": "For a game that has already launched, Always-on does not mean constantly running ads or posting every day on every platform. Instead, publishers need to build a channel system with clear roles, run on a content calendar, and optimized based on real data."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Có thể chia chiến lược Always-on Channel thành ba lớp hoạt động:",
+          "en": "An Always-on Channel strategy can be divided into three layers of activity:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "**Always-on Core (Hoạt động duy trì thường xuyên):** Nội dung cộng đồng, cập nhật thông tin, hướng dẫn gameplay và các hoạt động giúp game giữ kết nối với người chơi.",
+            "en": "**Always-on Core (regular maintenance activities):** Community content, information updates, gameplay guides, and activities that keep the game connected with players."
+          },
+          {
+            "vi": "**Campaign Burst (Chiến dịch tăng cường):** Tăng cường nội dung, creator và quảng cáo quanh bản cập nhật lớn, sự kiện trong game hoặc các thời điểm quan trọng.",
+            "en": "**Campaign Burst (intensified campaigns):** Stepping up content, creators, and ads around major updates, in-game events, or other key moments."
+          },
+          {
+            "vi": "**Optimization Loop (Vòng lặp tối ưu):** Theo dõi hiệu quả, thử nghiệm nội dung, điều chỉnh vai trò kênh và phân bổ lại nguồn lực dựa trên dữ liệu.",
+            "en": "**Optimization Loop:** Monitoring performance, testing content, adjusting channel roles, and reallocating resources based on data."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ba lớp này cần vận hành liên kết với nhau. Hoạt động thường xuyên giúp duy trì sự hiện diện; các đợt tăng cường tạo điểm nhấn; dữ liệu từ cả hai giúp nhà phát hành cải thiện kế hoạch tiếp theo.",
+          "en": "These three layers need to work together. Regular activities maintain presence; bursts create highlights; data from both helps the publisher improve the next plan."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Vì sao cần tối ưu kênh sau ra mắt tại Thái Lan?",
+          "en": "Why optimize channels after launch in Thailand?"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794100000000-alwayson-vi-why.jpg",
+        "src_en": "/blog-media/1794100000000-alwayson-en-why.jpg",
+        "alt": {
+          "vi": "Vì sao cần tối ưu kênh sau ra mắt tại Thái Lan: thị trường game và digital tiềm năng",
+          "en": "Why optimize channels in Thailand: a high-potential gaming and digital market"
+        },
+        "caption": {
+          "vi": "Thị trường game và digital tiềm năng tại Thái Lan: 58M+ game thủ, 77,9% người dùng internet chơi video game, 56,6M tài khoản mạng xã hội, 56M người dùng LINE.",
+          "en": "A high-potential gaming and digital market: 58M+ gamers, 77.9% of internet users play video games, 56.6M social media accounts, 56M LINE users."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau launch, game cần nhiều hơn những thông báo về lượt tải hoặc chiến dịch ra mắt. Người chơi cần được cập nhật nội dung mới, hỗ trợ trong quá trình trải nghiệm và có lý do để tiếp tục tham gia hoặc quay lại.",
+          "en": "After launch, a game needs more than announcements about downloads or the launch campaign. Players need updates on new content, support during their experience, and a reason to keep playing or come back."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thái Lan là thị trường game có quy mô đáng chú ý tại Đông Nam Á. Theo thông tin từ báo cáo Ampverse được [Thailand.go.th](https://thailand.go.th/public/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse) dẫn lại, thị trường có hơn 58 triệu game thủ trên dân số khoảng 72 triệu người. Báo cáo cũng đề cập vai trò của creator và cộng đồng trong cách người chơi khám phá, theo dõi và tương tác với game.",
+          "en": "Thailand is a notable gaming market in Southeast Asia. According to the Ampverse report as cited by [Thailand.go.th](https://thailand.go.th/public/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse), the market has more than 58 million gamers out of a population of about 72 million. The report also mentions the role of creators and communities in how players discover, follow, and interact with games."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bên cạnh đó, bài phân tích Thailand Media Landscape 2026 của [Dataxet cho biết 77,9%](https://www.dataxet.co/media-landscape/2026-th) người dùng internet tại Thái Lan chơi video game, với thời gian chơi trung bình 8 giờ 53 phút mỗi tuần. Đây là dấu hiệu cho thấy game chiếm một phần đáng kể trong thời gian sử dụng internet của người Thái.",
+          "en": "In addition, the Thailand Media Landscape 2026 analysis by [Dataxet reports that 77.9%](https://www.dataxet.co/media-landscape/2026-th) of internet users in Thailand play video games, with an average playing time of 8 hours 53 minutes per week. This suggests that games take up a significant share of Thai people’s internet time."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Về nền tảng số, [Digital 2026](https://datareportal.com/reports/digital-2026-thailand) ghi nhận Thái Lan có 56,6 triệu tài khoản người dùng mạng xã hội, tương đương 79,1% dân số. Theo [Digital 2025](https://datareportal.com/reports/digital-2025-thailand), LINE có khoảng 56 triệu người dùng hoạt động hàng tháng, trong khi quảng cáo Facebook tiếp cận khoảng 51,0 triệu người, tương đương 71,1% dân số. Vì vậy, LINE là kênh đáng cân nhắc cho hoạt động kết nối trực tiếp, bên cạnh các nền tảng nội dung và cộng đồng như Facebook.",
+          "en": "On digital platforms, [Digital 2026](https://datareportal.com/reports/digital-2026-thailand) records 56.6 million social media user accounts in Thailand, equal to 79.1% of the population. According to [Digital 2025](https://datareportal.com/reports/digital-2025-thailand), LINE has about 56 million monthly active users, while Facebook ads reach about 51.0 million people, equal to 71.1% of the population. LINE is therefore worth considering for direct engagement, alongside content and community platforms such as Facebook."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, tối ưu kênh tại Thái Lan cần bắt đầu từ ba câu hỏi: người chơi mục tiêu đang tương tác ở đâu, họ cần loại nội dung nào sau ra mắt, và kênh nào có thể hỗ trợ mục tiêu giữ chân hoặc đưa người chơi quay lại hiệu quả nhất?",
+          "en": "Channel optimization in Thailand should therefore start with three questions: where are target players engaging, what type of content do they need after launch, and which channel can best support the goal of retaining players or bringing them back?"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Những yếu tố cần cân nhắc khi xây dựng chiến lược kênh tại Thái Lan",
+          "en": "Key factors to consider when building a channel strategy in Thailand"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794100000000-alwayson-vi-factors.jpg",
+        "src_en": "/blog-media/1794100000000-alwayson-en-factors.jpg",
+        "alt": {
+          "vi": "3 yếu tố cần cân nhắc khi xây dựng chiến lược kênh tại Thái Lan",
+          "en": "3 key factors to consider when building a channel strategy in Thailand"
+        },
+        "caption": {
+          "vi": "Hiểu hành vi trên từng nền tảng, bản địa hóa nội dung theo ngữ cảnh, kết nối marketing với LiveOps.",
+          "en": "Understand platform behaviors, localize for context, integrate marketing with LiveOps."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Hiểu cách người chơi sử dụng từng nền tảng",
+          "en": "Understand how players use each platform"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các nền tảng có thể cùng phục vụ một nhóm người chơi nhưng không nhất thiết đảm nhiệm cùng một vai trò. Facebook có thể hỗ trợ hoạt động cộng đồng và thảo luận; TikTok phù hợp với nội dung ngắn, dễ khám phá; YouTube có thể phục vụ nội dung dài hơn như hướng dẫn, cập nhật hoặc video từ creator; LINE có thể hỗ trợ kết nối trực tiếp với nhóm người đã theo dõi tài khoản chính thức.",
+          "en": "Platforms may serve the same group of players but do not necessarily play the same role. Facebook can support community activity and discussion; TikTok suits short, easily discoverable content; YouTube can serve longer content such as guides, updates, or creator videos; LINE can support direct contact with people who follow the official account."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bản địa hóa nội dung theo ngữ cảnh",
+          "en": "Localize content to the context"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa không chỉ là dịch nội dung sang tiếng Thái. Nhà phát hành cần điều chỉnh cách diễn đạt, chủ đề, định dạng và lời kêu gọi hành động để phù hợp với cộng đồng địa phương.",
+          "en": "Localization is not just translating content into Thai. Publishers need to adjust wording, topics, formats, and calls to action to suit the local community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ví dụ, một thông báo cập nhật có thể được chuyển thành video ngắn giới thiệu điểm mới, bài giải thích chi tiết trên fanpage, nội dung thảo luận trong cộng đồng hoặc video hướng dẫn từ creator. Thông điệp chính vẫn nhất quán, nhưng cách thể hiện cần phù hợp với từng nền tảng.",
+          "en": "For example, an update announcement can become a short video introducing what’s new, a detailed explainer on the fan page, a discussion post in the community, or a guide video from a creator. The core message stays consistent, but the way it is presented should suit each platform."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Kết nối marketing với LiveOps",
+          "en": "Connect marketing with LiveOps"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "LiveOps tạo ra lý do để người chơi quay lại thông qua sự kiện, cập nhật, phần thưởng hoặc nội dung mới. Hệ thống kênh giúp truyền tải những lý do đó đến đúng nhóm người chơi, đúng thời điểm.",
+          "en": "LiveOps creates reasons for players to come back through events, updates, rewards, or new content. The channel system helps deliver those reasons to the right group of players at the right time."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu lịch LiveOps thiếu hoạt động đáng quan tâm, truyền thông khó duy trì tương tác lâu dài. Ngược lại, nếu có sự kiện nhưng thông tin không đến được nhóm người chơi phù hợp, cơ hội tham gia có thể bị bỏ lỡ.",
+          "en": "If the LiveOps calendar lacks interesting activities, communication struggles to sustain long-term engagement. Conversely, if there are events but the information does not reach the right players, the chance to participate may be missed."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, kế hoạch Always-on nên được xây dựng dựa trên lịch hoạt động trong game, thay vì lập lịch đăng bài độc lập cho từng nền tảng.",
+          "en": "An Always-on plan should therefore be built on the in-game activity calendar, rather than creating an independent posting schedule for each platform."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Cách tối ưu hệ thống kênh Always-on cho game sau ra mắt",
+          "en": "How to optimize an Always-on channel system for a game after launch"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794100000000-alwayson-vi-steps.jpg",
+        "src_en": "/blog-media/1794100000000-alwayson-en-steps.jpg",
+        "alt": {
+          "vi": "5 bước tối ưu hệ thống kênh Always-on cho game sau ra mắt",
+          "en": "5 steps to optimize Always-on channels for games post-launch"
+        },
+        "caption": {
+          "vi": "5 bước tối ưu hệ thống kênh Always-on cho game sau ra mắt.",
+          "en": "5 steps to optimize Always-on channels for games post-launch."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tối ưu kênh không đơn giản là tăng tần suất đăng bài hay mở rộng ngân sách quảng cáo. Nhà phát hành cần xác định kênh nào đang hỗ trợ tốt nhất cho từng mục tiêu, sau đó điều chỉnh nội dung, thời điểm và nguồn lực theo kết quả.",
+          "en": "Channel optimization is not simply posting more often or expanding the ad budget. Publishers need to identify which channel best supports each goal, then adjust content, timing, and resources based on results."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bước 1: Xác định nhóm người chơi cần tiếp cận",
+          "en": "Step 1: Identify the player groups to reach"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Phân nhóm người chơi theo trạng thái và hành vi, chẳng hạn người mới, người đang hoạt động, người giảm tương tác, người đã ngừng chơi và nhóm trung thành. Từ đó xác định mục tiêu phù hợp: hỗ trợ onboarding, tăng tham gia sự kiện, duy trì cộng đồng hoặc tái kích hoạt.",
+          "en": "Segment players by status and behavior, such as new players, active players, players with declining engagement, lapsed players, and loyal players. From there, define suitable goals: supporting onboarding, increasing event participation, sustaining the community, or reactivation."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nội dung nên giải quyết nhu cầu của từng nhóm thay vì dùng một thông điệp chung cho toàn bộ người chơi.",
+          "en": "Content should address the needs of each group instead of using one generic message for all players."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bước 2: Phân vai kênh theo mục tiêu",
+          "en": "Step 2: Assign channel roles by goal"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "TikTok, YouTube và creator có thể hỗ trợ khám phá game hoặc giới thiệu nội dung mới. Facebook phù hợp với cập nhật và thảo luận cộng đồng. LINE có thể được sử dụng để gửi thông tin đến người theo dõi tài khoản chính thức. Quảng cáo trả phí hỗ trợ mở rộng độ phủ hoặc tái tiếp cận nhóm người chơi đã xác định.",
+          "en": "TikTok, YouTube, and creators can support game discovery or introduce new content. Facebook suits updates and community discussion. LINE can be used to send information to followers of the official account. Paid advertising supports expanding reach or re-reaching defined player groups."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Không nên phân bổ ngân sách đồng đều cho mọi kênh. Nguồn lực cần ưu tiên những nền tảng có khả năng đóng góp rõ ràng vào mục tiêu và có thể đo lường hiệu quả.",
+          "en": "Budget should not be spread evenly across all channels. Resources should go first to the platforms that can clearly contribute to the goal and whose performance can be measured."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bước 3: Lập kế hoạch nội dung theo LiveOps",
+          "en": "Step 3: Plan content around LiveOps"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nội dung Always-on cần bám sát lịch cập nhật và sự kiện trong game. Trong giai đoạn giữa các sự kiện, kênh có thể duy trì nội dung hướng dẫn, thảo luận và giải trí. Trước bản cập nhật, nên tăng nội dung teaser và giới thiệu tính năng; trong sự kiện, tập trung vào hướng dẫn tham gia, livestream và nội dung cộng đồng; sau sự kiện, chia sẻ điểm nổi bật hoặc nội dung giúp người chơi tiếp tục trải nghiệm.",
+          "en": "Always-on content needs to follow the update and event calendar in the game. Between events, channels can maintain guides, discussion, and entertainment content. Before an update, increase teaser content and feature introductions; during an event, focus on participation guides, livestreams, and community content; after an event, share highlights or content that helps players keep playing."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ví dụ, khi ra mắt nhân vật mới, game có thể đăng teaser trên TikTok, mở thảo luận trên Facebook, gửi thông báo qua LINE và phối hợp creator làm livestream hoặc hướng dẫn xây dựng đội hình. Paid media có thể được bổ sung để tiếp cận người chơi phù hợp nếu dữ liệu cho thấy tiềm năng.",
+          "en": "For example, when launching a new character, the game can post a teaser on TikTok, open a discussion on Facebook, send a notification through LINE, and work with creators on livestreams or team-building guides. Paid media can be added to reach suitable players if data shows potential."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bước 4: Đo lường theo mục tiêu",
+          "en": "Step 4: Measure by goal"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Không nên đánh giá tất cả kênh bằng cùng một chỉ số. Độ phủ và lượt xem phù hợp để theo dõi nhận biết; tỷ lệ xem, lượt nhấp và tương tác giúp đánh giá mức độ quan tâm; hoạt động cộng đồng phản ánh chất lượng thảo luận.",
+          "en": "Not all channels should be judged by the same metric. Reach and views suit tracking awareness; view rate, clicks, and engagement help assess interest; community activity reflects the quality of discussion."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu mục tiêu là retention hoặc re-engagement, cần kết hợp dữ liệu marketing với dữ liệu trong game như lượt tham gia sự kiện, người chơi quay lại và hành vi sau khi tiếp xúc với nội dung. Lượt tương tác cao không đủ để khẳng định kênh đã cải thiện khả năng giữ chân.",
+          "en": "If the goal is retention or re-engagement, marketing data needs to be combined with in-game data such as event participation, returning players, and behavior after exposure to content. High engagement alone is not enough to confirm that a channel has improved retention."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bước 5: Điều chỉnh nguồn lực theo kết quả",
+          "en": "Step 5: Adjust resources based on results"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Duy trì các hoạt động cốt lõi trong suốt vòng đời game, đồng thời tăng cường truyền thông vào những thời điểm có giá trị như bản cập nhật lớn hoặc sự kiện quan trọng.",
+          "en": "Maintain core activities throughout the game’s lifecycle, while stepping up communication at valuable moments such as major updates or important events."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau mỗi đợt, cần đánh giá nội dung nào tạo phản hồi tốt, nhóm người chơi nào có chuyển biến và kênh nào sử dụng nguồn lực hiệu quả. Kết quả này sẽ định hướng cho lịch nội dung và phân bổ ngân sách tiếp theo.",
+          "en": "After each wave, evaluate which content generated good responses, which player groups changed, and which channels used resources efficiently. These results guide the next content calendar and budget allocation."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Những sai lầm cần tránh",
+          "en": "Common mistakes to avoid"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794100000000-alwayson-vi-mistakes.jpg",
+        "src_en": "/blog-media/1794100000000-alwayson-en-mistakes.jpg",
+        "alt": {
+          "vi": "6 sai lầm phổ biến cần tránh khi tối ưu kênh game",
+          "en": "6 common mistakes to avoid in game channel optimization"
+        },
+        "caption": {
+          "vi": "6 sai lầm phổ biến cần tránh.",
+          "en": "6 common mistakes to avoid."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Dàn trải nguồn lực trên mọi nền tảng:** Nền tảng phổ biến chưa chắc phù hợp với mục tiêu của từng game. Ưu tiên kênh dựa trên hành vi người chơi và hiệu quả thực tế.",
+          "en": "**Spreading resources across every platform:** A popular platform is not necessarily right for each game’s goals. Prioritize channels based on player behavior and real performance."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chỉ đăng thông báo chính thức:** Nội dung cập nhật cần đi cùng hướng dẫn, giải trí và hoạt động cộng đồng để tạo thêm lý do tương tác.",
+          "en": "**Posting only official announcements:** Update content should come with guides, entertainment, and community activities to give players more reasons to engage."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Sao chép cùng một nội dung trên mọi kênh:** Giữ thông điệp nhất quán nhưng điều chỉnh định dạng và cách thể hiện theo từng nền tảng.",
+          "en": "**Copying the same content across every channel:** Keep the message consistent but adjust the format and presentation for each platform."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Bản địa hóa chỉ ở mức dịch thuật:** Nội dung cần phù hợp với ngữ cảnh và cách giao tiếp của cộng đồng Thái Lan.",
+          "en": "**Localizing only at the translation level:** Content must fit the context and communication style of the Thai community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Đánh giá bằng chỉ số bề mặt:** Lượt xem và tương tác nên được đặt cạnh hành động tiếp theo, đặc biệt khi mục tiêu là giữ chân hoặc đưa người chơi quay lại.",
+          "en": "**Judging by surface metrics:** Views and engagement should be viewed alongside the follow-up action, especially when the goal is retention or bringing players back."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Tách rời marketing khỏi LiveOps:** Truyền thông cần gắn với hoạt động thực tế trong game để người chơi có lý do cụ thể tham gia.",
+          "en": "**Separating marketing from LiveOps:** Communication should be tied to real in-game activity so players have a concrete reason to take part."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Kết luận",
+          "en": "Conclusion"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tối ưu kênh game tại Thái Lan là quá trình xây dựng hệ thống kênh phù hợp với hành vi người chơi, thay vì chỉ lựa chọn nền tảng có độ phủ lớn. Chiến lược hiệu quả cần kết hợp phân nhóm người chơi, phân vai kênh, bản địa hóa nội dung, đồng bộ với LiveOps và đo lường theo mục tiêu sau launch.",
+          "en": "Game channel optimization in Thailand is the process of building a channel system that fits player behavior, rather than simply choosing the platforms with the largest reach. An effective strategy combines player segmentation, channel role assignment, content localization, synchronization with LiveOps, and goal-based measurement after launch."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với thị trường Thái Lan, nhà phát hành nên xem dữ liệu địa phương là cơ sở để lựa chọn nền tảng và cách tiếp cận cộng đồng, đồng thời liên tục kiểm chứng hiệu quả trong quá trình vận hành.",
+          "en": "In the Thai market, publishers should treat local data as the basis for choosing platforms and approaches to the community, while continuously verifying effectiveness during operations."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794100000000-alwayson-vi-contact.jpg",
+        "src_en": "/blog-media/1794100000000-alwayson-en-contact.jpg",
+        "alt": {
+          "vi": "Liên hệ ANBU để nghiên cứu thị trường và tối ưu Game Marketing & LiveOps tại Đông Nam Á",
+          "en": "Get in touch with ANBU for market insights and Game Marketing & LiveOps support in Southeast Asia"
+        },
+        "caption": {
+          "vi": "Cần nghiên cứu thị trường, phân tích người chơi và tối ưu Game Marketing & LiveOps tại Đông Nam Á? Liên hệ ANBU.",
+          "en": "Need local market insights, player behavior analysis, and data-driven game marketing & LiveOps support in Southeast Asia? Contact ANBU."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "ANBU đồng hành cùng nhà phát hành trong nghiên cứu thị trường, phân tích hành vi người chơi và tối ưu chiến lược Game Marketing & LiveOps tại Đông Nam Á, từ xây dựng hệ thống kênh sau launch đến đánh giá và điều chỉnh hoạt động dựa trên dữ liệu thực tế.",
+          "en": "ANBU supports publishers with market research, player behavior analysis, and optimizing Game Marketing & LiveOps strategy in Southeast Asia, from building a post-launch channel system to evaluating and adjusting activities based on real data."
+        }
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": {
+              "vi": "Always-on Channel Strategy khác chiến dịch thông thường thế nào?",
+              "en": "How is an Always-on Channel Strategy different from a regular campaign?"
+            },
+            "answer": {
+              "vi": "Chiến dịch thông thường tập trung vào một giai đoạn cụ thể, còn Always-on duy trì sự hiện diện liên tục trên các kênh phù hợp, kết hợp hoạt động thường xuyên, các đợt tăng cường quanh bản cập nhật lớn và vòng lặp tối ưu dựa trên dữ liệu.",
+              "en": "A regular campaign focuses on a specific period, while Always-on maintains a continuous presence on the right channels, combining regular activities, intensified bursts around major updates, and an optimization loop based on data."
+            }
+          },
+          {
+            "question": {
+              "vi": "Nên bắt đầu tối ưu kênh game tại Thái Lan từ đâu?",
+              "en": "Where should you start optimizing game channels in Thailand?"
+            },
+            "answer": {
+              "vi": "Nên bắt đầu từ ba câu hỏi: người chơi mục tiêu đang tương tác ở đâu, họ cần loại nội dung nào sau ra mắt, và kênh nào hỗ trợ tốt nhất cho mục tiêu giữ chân hoặc đưa người chơi quay lại.",
+              "en": "Start with three questions: where are target players engaging, what type of content do they need after launch, and which channel best supports the goal of retaining players or bringing them back."
+            }
+          },
+          {
+            "question": {
+              "vi": "Nên đo hiệu quả kênh Always-on bằng chỉ số nào?",
+              "en": "Which metrics should you use to measure Always-on channels?"
+            },
+            "answer": {
+              "vi": "Tùy theo mục tiêu của từng kênh: độ phủ và lượt xem cho nhận biết, tỷ lệ xem, lượt nhấp và tương tác cho mức độ quan tâm. Với mục tiêu retention hoặc re-engagement, cần kết hợp dữ liệu trong game như lượt tham gia sự kiện và người chơi quay lại.",
+              "en": "It depends on each channel’s goal: reach and views for awareness, view rate, clicks, and engagement for interest. For retention or re-engagement goals, combine in-game data such as event participation and returning players."
+            }
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đọc thêm",
+          "en": "Further reading"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "[LiveOps: Sau khi game ra mắt, làm thế nào để giữ chân game thủ Thái Lan?](/vi/blog/liveops-sau-khi-game-ra-mat-lam-the-nao-de-giu-chan-game-thu-thai-lan)",
+            "en": "[LiveOps: After the game launches, how can we retain Thai players?](/en/blog/liveops-post-launch-how-to-retain-thai-gamers)"
+          },
+          {
+            "vi": "[Vì sao game thủ tải game nhưng không ở lại?](/vi/blog/vi-sao-game-thu-tai-game-nhung-khong-o-lai)",
+            "en": "[Why Do Players Download Games but Not Stay?](/en/blog/why-do-players-download-games-but-not-stay)"
+          },
+          {
+            "vi": "[LiveOps Game Mobile: Thiết kế nhịp sự kiện giữ lửa người chơi quanh năm](/vi/blog/liveops-game-mobile-lich-su-kien-giu-nguoi-choi)",
+            "en": "[Mobile Game LiveOps: Designing Year-Round Event Calendars That Retain Players](/en/blog/mobile-game-liveops-year-round-event-calendars-retain-players)"
+          },
+          {
+            "vi": "[Tiếp thị nội dung game tại Thái Lan: Vì sao bản địa hóa không thể chỉ dừng ở việc dịch thuật?](/vi/blog/tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat)",
+            "en": "[Game Content Marketing in Thailand: Why Localization Goes Beyond Translation](/en/blog/game-content-marketing-thailand-localization-beyond-translation)"
+          }
+        ]
+      }
+    ],
+    "cover_en": "/blog-media/1794100000000-alwayson-en-cover.jpg"
+  },
+  {
+    "slug": "tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat",
+    "slug_en": "game-content-marketing-thailand-localization-beyond-translation",
+    "title": {
+      "vi": "Tiếp thị nội dung game tại Thái Lan: Vì sao bản địa hóa không thể chỉ dừng ở việc dịch thuật?",
+      "en": "Game Content Marketing in Thailand: Why Localization Goes Beyond Translation"
+    },
+    "excerpt": {
+      "vi": "Dịch nội dung quảng bá sang tiếng Thái mới chỉ là bước đầu. Bản địa hóa hiệu quả còn là cách kể chuyện, góc khai thác, creator địa phương và quá trình điều chỉnh liên tục sau launch.",
+      "en": "Translating promotional content into Thai is only the first step. Effective localization also covers storytelling, creative angles, local creators, and continuous adjustment after launch."
+    },
+    "category": {
+      "vi": "Marketing Game",
+      "en": "Game Marketing"
+    },
+    "date": "2026-11-05",
+    "readingTime": 7,
+    "cover": "/blog-covers/thailand-game-expo.jpg",
+    "focal": "center",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "Mahidol University - Games Beyond Borders: Game Localization Networks and Industry in Thailand",
+          "en": "Mahidol University - Games Beyond Borders: Game Localization Networks and Industry in Thailand"
+        },
+        "href": "https://lc.mahidol.ac.th/en/research-focus/games-beyond-borders-game-localization-networks-and-industry-in-thailand/"
+      },
+      {
+        "label": {
+          "vi": "Permpoon et al. - Transcending Cultural Barriers in Thai Mythology: The Translation of Home Sweet Home",
+          "en": "Permpoon et al. - Transcending Cultural Barriers in Thai Mythology: The Translation of Home Sweet Home"
+        },
+        "href": "https://so02.tci-thaijo.org/index.php/hasss/article/view/268631"
+      },
+      {
+        "label": {
+          "vi": "Tourism Authority of Thailand - Home Sweet Home and Thailand’s Deep Culture",
+          "en": "Tourism Authority of Thailand - Home Sweet Home and Thailand’s Deep Culture"
+        },
+        "href": "https://www.tatnews.org/2023/08/tat-backs-the-latest-home-sweet-home-game-to-promote-thailands-deep-culture/"
+      },
+      {
+        "label": {
+          "vi": "TikTok for Business - VNG Revelation",
+          "en": "TikTok for Business - VNG Revelation"
+        },
+        "href": "https://ads.tiktok.com/business/en/inspiration/vng-revelation"
+      },
+      {
+        "label": {
+          "vi": "MOONTON Games - MLBB’s 2026 Strategy in Thailand",
+          "en": "MOONTON Games - MLBB’s 2026 Strategy in Thailand"
+        },
+        "href": "https://en.moonton.com/news/295.html"
+      },
+      {
+        "label": {
+          "vi": "Techawongstien - Network of Passion: Actor-Network in the Domain of Video Game Localization in Thailand",
+          "en": "Techawongstien - Network of Passion: Actor-Network in the Domain of Video Game Localization in Thailand"
+        },
+        "href": "https://benjamins.com/catalog/ts.25023.tec"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với các nhà phát hành muốn gia nhập thị trường Thái Lan, dịch nội dung quảng bá sang tiếng Thái mới chỉ là bước đầu. Một thông điệp được chuyển ngữ chính xác vẫn có thể chưa đủ sức thu hút người chơi nếu cách kể chuyện, góc khai thác và hình thức thể hiện chưa phù hợp với bối cảnh địa phương.",
+          "en": "For publishers looking to enter the Thai market, translating promotional content into Thai is only the first step. An accurately translated message may still fail to attract players if the storytelling, creative angle, and format do not fit the local context."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong **tiếp thị nội dung game tại Thái Lan**, bản địa hóa không chỉ là điều chỉnh ngôn ngữ, mà còn là quá trình đảm bảo nội dung được hiểu đúng, tạo được sự quan tâm và phù hợp với cách người chơi tiếp nhận game.",
+          "en": "In **game content marketing in Thailand**, localization is not just about adjusting language. It is the process of ensuring that content is understood correctly, generates interest, and fits the way players engage with games."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nghiên cứu của [Mahidol University](https://lc.mahidol.ac.th/en/research-focus/games-beyond-borders-game-localization-networks-and-industry-in-thailand/) về bản địa hóa game tại Thái Lan cho thấy quá trình này cần cân nhắc đồng thời yếu tố ngôn ngữ, văn hóa và kỹ thuật, thay vì chỉ chuyển đổi câu chữ giữa các ngôn ngữ.",
+          "en": "Research by [Mahidol University](https://lc.mahidol.ac.th/en/research-focus/games-beyond-borders-game-localization-networks-and-industry-in-thailand/) on game localization in Thailand shows that the process must consider language, culture, and technical factors at the same time, rather than simply converting words between languages."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Dịch đúng chưa chắc đã truyền tải đúng sức hút của game",
+          "en": "An accurate translation does not necessarily convey a game’s appeal"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một bản dịch có thể giữ nguyên ý nghĩa nhưng chưa chắc giữ được sức hấp dẫn ban đầu. Điều này đặc biệt quan trọng với khẩu hiệu, quảng cáo ngắn và nội dung mạng xã hội, nơi người xem cần nhanh chóng hiểu game có gì đáng chú ý.",
+          "en": "A translation can preserve the meaning but not necessarily the original appeal. This matters especially for slogans, short ads, and social media content, where viewers need to quickly understand what makes a game worth their attention."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu nhà phát hành chỉ dịch nguyên văn thông điệp từ thị trường gốc, nội dung có thể đúng về ngôn ngữ nhưng chưa làm nổi bật được giá trị mà người chơi Thái Lan quan tâm.",
+          "en": "If a publisher only translates the original message word for word, the content may be linguistically correct but fail to highlight the value that Thai players care about."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, bản địa hóa cần bắt đầu từ câu hỏi: Điểm hấp dẫn nào của game nên được nhấn mạnh với người chơi Thái Lan, và cách truyền tải nào giúp họ nhận ra điều đó?",
+          "en": "Localization should therefore start with a question: Which appeal of the game should be emphasized to Thai players, and which way of communicating it helps them recognize it?"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Yếu tố văn hóa cần được chuyển tải đúng ngữ cảnh",
+          "en": "Cultural elements need to be conveyed in the right context"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Truyền thuyết, tín ngưỡng, hình tượng nhân vật hay sự hài hước có thể mang ý nghĩa khác nhau giữa các thị trường. Dịch đúng tên gọi hoặc lời thoại chưa chắc đã truyền tải được sắc thái mà nội dung muốn thể hiện.",
+          "en": "Legends, beliefs, character imagery, and humor can carry different meanings across markets. Translating names or dialogue correctly does not necessarily convey the nuance the content intends to express."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Nghiên cứu về game kinh dị Home Sweet Home](https://so02.tci-thaijo.org/index.php/hasss/article/view/268631) của Thái Lan cho thấy việc chuyển tải các yếu tố liên quan đến tín ngưỡng, ma quỷ và văn hóa dân gian đòi hỏi nhiều lựa chọn dịch thuật và diễn giải khác nhau.",
+          "en": "[Research on the Thai horror game Home Sweet Home](https://so02.tci-thaijo.org/index.php/hasss/article/view/268631) shows that conveying elements related to belief, ghosts, and folklore requires many different translation and interpretation choices."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với nội dung quảng bá, nhà phát hành cần cân nhắc cách sử dụng yếu tố văn hóa trong thông điệp, hình ảnh và cách kể chuyện để tránh sai lệch hoặc gượng ép.",
+          "en": "For promotional content, publishers need to consider how cultural elements are used in the message, visuals, and storytelling to avoid distortion or awkwardness."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa không phải đưa càng nhiều chi tiết địa phương vào nội dung càng tốt, mà là sử dụng chúng đúng ngữ cảnh và phù hợp với bản sắc game.",
+          "en": "Localization does not mean adding as many local details as possible. It means using them in the right context and in line with the game’s identity."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bản địa hóa có thể thay đổi cách xây dựng ý tưởng nội dung",
+          "en": "Localization can change how content ideas are built"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một ý tưởng hiệu quả ở thị trường gốc chưa chắc là cách tiếp cận phù hợp nhất tại Thái Lan. Thay vì chỉ dịch một concept có sẵn, nhà phát hành có thể khai thác những dịp văn hóa, trải nghiệm đời sống hoặc chủ đề gần gũi với người chơi địa phương để phát triển ý tưởng mới.",
+          "en": "An idea that works in the home market is not necessarily the best approach in Thailand. Instead of simply translating an existing concept, publishers can draw on cultural occasions, everyday experiences, or topics familiar to local players to develop new ideas."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều quan trọng là yếu tố địa phương cần gắn với bản sắc game và mục tiêu truyền thông, thay vì chỉ xuất hiện như một lớp hình ảnh trang trí.",
+          "en": "What matters is that local elements are tied to the game’s identity and communication goals, rather than appearing as a decorative visual layer."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Câu hỏi cần đặt ra không chỉ là “Làm thế nào để dịch ý tưởng hiện có?”, mà còn là “Có góc khai thác nào phù hợp hơn với người chơi Thái Lan mà vẫn giữ đúng giá trị cốt lõi của game?”",
+          "en": "The question to ask is not only “How do we translate the existing idea?” but also “Is there an angle that fits Thai players better while keeping the game’s core value intact?”"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Creator địa phương giúp nội dung kết nối với cộng đồng",
+          "en": "Local creators help content connect with the community"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Creator địa phương có thể đóng góp nhiều hơn việc đăng tải nội dung theo yêu cầu. Họ hiểu cách cộng đồng tiếp nhận game, những chủ đề dễ tạo thảo luận và cách thể hiện phù hợp với khán giả của mình.",
+          "en": "Local creators can contribute more than posting content on request. They understand how the community receives games, which topics spark discussion, and what style suits their audience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chỉ cung cấp kịch bản đã dịch, nhà phát hành có thể hợp tác với creator từ khâu phát triển ý tưởng, lựa chọn format đến cách thể hiện trải nghiệm game.",
+          "en": "Instead of only providing a translated script, publishers can collaborate with creators from idea development and format selection to how the gaming experience is presented."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Creator không chỉ là kênh phân phối thông điệp, mà còn là cầu nối giúp thương hiệu hiểu và kết nối với cộng đồng địa phương.",
+          "en": "Creators are not only a channel for distributing messages. They are also a bridge that helps a brand understand and connect with the local community."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bản địa hóa là quá trình liên tục sau launch",
+          "en": "Localization is a continuous process after launch"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu bản địa hóa chỉ tập trung vào trailer, quảng cáo và bài đăng trước ngày phát hành, nhà phát hành có thể tạo được sự chú ý ban đầu nhưng khó duy trì kết nối với người chơi.",
+          "en": "If localization focuses only on trailers, ads, and posts before the release date, a publisher may generate initial attention but struggle to maintain a connection with players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau launch, nội dung cần tiếp tục được điều chỉnh thông qua cập nhật game, sự kiện, phản hồi người chơi và hoạt động cộng đồng.",
+          "en": "After launch, content needs to keep being adjusted through game updates, events, player feedback, and community activities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa vì vậy không nên được xem là bước hoàn thành trước khi chiến dịch bắt đầu, mà là quá trình liên tục gắn với hoạt động marketing và vận hành game tại thị trường địa phương.",
+          "en": "Localization should therefore not be seen as a step completed before a campaign begins, but as a continuous process tied to marketing and game operations in the local market."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Một số case study minh họa",
+          "en": "Case studies"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Revelation: Điều chỉnh cách truyền tải nội dung theo nền tảng và thị trường",
+          "en": "Revelation: Adapting how content is delivered to the platform and the market"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Năm 2023, VNG triển khai chiến dịch ra mắt MMORPG *Revelation* tại sáu thị trường Đông Nam Á, trong đó có Thái Lan. TikTok được lựa chọn làm kênh truyền thông trọng tâm, với các nội dung quảng bá được thiết kế theo định dạng TikTok, kết hợp nhân vật game, gameplay và creator địa phương tại từng thị trường. (Nguồn: [TikTok for Business](https://ads.tiktok.com/business/en/inspiration/vng-revelation))",
+          "en": "In 2023, VNG ran the launch campaign for the MMORPG *Revelation* across six Southeast Asian markets, including Thailand. TikTok was chosen as the core channel, with promotional content designed in TikTok formats that combined game characters, gameplay, and local creators in each market. (Source: [TikTok for Business](https://ads.tiktok.com/business/en/inspiration/vng-revelation))"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chỉ chuyển đổi tài liệu quảng cáo sang ngôn ngữ địa phương, chiến dịch phát triển các creative phù hợp với nền tảng video ngắn, nơi hình ảnh gameplay và cách thể hiện trực quan giúp giới thiệu trải nghiệm game. Việc sử dụng creator tại từng thị trường cũng mở rộng cách trò chơi được truyền tải đến người dùng địa phương.",
+          "en": "Instead of only converting advertising materials into local languages, the campaign developed creatives suited to the short-video platform, where gameplay footage and visual presentation help introduce the game experience. Using creators in each market also broadened how the game was communicated to local users."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Chiến dịch này đạt số lượt cài đặt cao gấp 1,8 lần KPI tại Thái Lan, Philippines, Indonesia và Việt Nam. Đây là kết quả tổng hợp của bốn thị trường, không phải số liệu riêng của Thái Lan.",
+          "en": "The campaign achieved installs 1.8 times the KPI across Thailand, the Philippines, Indonesia, and Vietnam. This is a combined result for four markets, not a figure for Thailand alone."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trường hợp *Revelation* cho thấy bản địa hóa nội dung không chỉ nằm ở chuyển ngữ, mà còn ở việc điều chỉnh cách thể hiện thông điệp theo nền tảng phân phối và sử dụng những gương mặt phù hợp với từng thị trường.",
+          "en": "The *Revelation* case shows that content localization is not only about translation. It also involves adapting how the message is expressed to the distribution platform and using faces that suit each market."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Mobile Legends: Bang Bang Thailand: Xây dựng kết nối nội dung dài hạn",
+          "en": "Mobile Legends: Bang Bang Thailand: Building long-term content connections"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tháng 1/2026, [MOONTON công bố chiến lược phát triển *Mobile Legends: Bang Bang* tại Thái Lan](https://en.moonton.com/news/295.html), với trọng tâm là bản địa hóa, hỗ trợ creator và phát triển esports. Một phần quan trọng của kế hoạch là hợp tác dài hạn với gaming creator GuyNgid, người sẽ đồng hành cùng thương hiệu trong hoạt động quảng bá game và phát triển nội dung.",
+          "en": "In January 2026, [MOONTON announced its development strategy for *Mobile Legends: Bang Bang* in Thailand](https://en.moonton.com/news/295.html), focusing on localization, creator support, and esports development. An important part of the plan is a long-term partnership with gaming creator GuyNgid, who will accompany the brand in game promotion and content development."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "MOONTON cho biết GuyNgid mang đến hiểu biết về hành vi, sở thích và văn hóa của cộng đồng game thủ Thái Lan. Cùng với đó, MLBB và GuyNgid dự kiến đầu tư hơn 20 triệu baht dưới dạng tiền thưởng và các hỗ trợ dành cho creator community, thông qua cuộc thi sáng tạo, chương trình tập trung vào TikTok và hợp tác KOL dài hạn.",
+          "en": "MOONTON said GuyNgid brings understanding of the behavior, preferences, and culture of the Thai gamer community. Together, MLBB and GuyNgid plan to invest more than 20 million baht in prizes and support for the creator community through creative contests, TikTok-focused programs, and long-term KOL partnerships."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở mảng esports, việc công bố MSL Thailand đánh dấu bước đưa Thái Lan trở lại hệ sinh thái thi đấu toàn cầu của MLBB. Hoạt động này mở rộng sự hiện diện của trò chơi từ nội dung quảng bá sang các sự kiện và hoạt động cạnh tranh gắn với cộng đồng trong nước.",
+          "en": "In esports, the announcement of MSL Thailand marks Thailand’s return to MLBB’s global competitive ecosystem. This extends the game’s presence from promotional content to events and competitive activities tied to the domestic community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trường hợp MLBB cho thấy bản địa hóa có thể được triển khai như một định hướng dài hạn: thay vì chỉ sử dụng creator trong từng đợt truyền thông, nhà phát hành đầu tư vào quan hệ hợp tác và các hoạt động cộng đồng để duy trì sự hiện diện của game tại thị trường.",
+          "en": "The MLBB case shows that localization can be pursued as a long-term direction: instead of using creators only for individual communication waves, the publisher invests in partnerships and community activities to maintain the game’s presence in the market."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Hai trường hợp cho thấy bản địa hóa nội dung game tại Thái Lan không chỉ nằm ở ngôn ngữ, mà còn ở cách truyền tải trên từng nền tảng và xây dựng kết nối với cộng đồng. Từ điều chỉnh creative đến hợp tác creator dài hạn, mục tiêu là giúp trò chơi trở nên gần gũi hơn với người chơi địa phương mà vẫn giữ được bản sắc riêng.",
+          "en": "These two cases show that game content localization in Thailand is not only about language, but also about how content is delivered on each platform and how connections with the community are built. From adjusting creatives to long-term creator partnerships, the goal is to make the game feel closer to local players while keeping its own identity."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Kết luận",
+          "en": "Conclusion"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tiếp thị nội dung game tại Thái Lan đòi hỏi nhiều hơn việc dịch tài liệu chiến dịch sang tiếng Thái. Nhà phát hành cần hiểu người chơi địa phương để lựa chọn thông điệp, hình thức thể hiện và cách kết nối phù hợp.",
+          "en": "Game content marketing in Thailand requires more than translating campaign materials into Thai. Publishers need to understand local players in order to choose the right message, format, and way of connecting."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa hiệu quả không chỉ giúp người chơi hiểu game, mà còn tạo lý do để họ quan tâm và tương tác với game.",
+          "en": "Effective localization does not only help players understand the game. It also gives them a reason to care about it and engage with it."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "ANBU đồng hành cùng nhà phát hành trong nghiên cứu thị trường, phân tích hành vi người chơi và xây dựng chiến lược tiếp thị game tại Đông Nam Á, kết nối insight, sáng tạo nội dung và hoạt động tăng trưởng.",
+          "en": "ANBU supports publishers with market research, player behavior analysis, and game marketing strategy in Southeast Asia, connecting insight, content creation, and growth activities."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đọc thêm",
+          "en": "Further reading"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "[Game Content Marketing Thailand: Chiến Lược Nội Dung Tiếp Cận Game Thủ Thái Lan](/vi/blog/game-content-marketing-thailand-chien-luoc-noi-dung-tiep-can-game-thu-thai-lan)",
+            "en": "[Game Content Marketing Thailand: Strategic Content Approaches to Engage Thai Gamers](/en/blog/game-content-marketing-thailand-engaging-thai-gamers)"
+          },
+          {
+            "vi": "[Game Audience Research Thailand: Hiểu game thủ Thái Lan để tăng hiệu quả marketing](/vi/blog/game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing)",
+            "en": "[Game Audience Research Thailand: Understanding Thai Gamers to Boost Marketing Effectiveness](/en/blog/game-audience-research-thailand-understanding-thai-gamers)"
+          },
+          {
+            "vi": "[Tối ưu kênh game tại Thái Lan: Chiến lược Always-on](/vi/blog/toi-uu-kenh-game-tai-thai-lan-chien-luoc-always-on)",
+            "en": "[Game Channel Optimization in Thailand: The Always-on Strategy](/en/blog/game-channel-optimization-thailand-always-on-strategy)"
+          },
+          {
+            "vi": "[Bản địa hóa Từ khóa & Tiếng lóng Game tại Việt Nam: Từ 'Rush B', 'Lưu Tày' đến 'T-Doll Vợ Yêu' (2026)](/vi/blog/ban-dia-hoa-tu-khoa-va-tieng-long-game-tai-viet-nam)",
+            "en": "[Game Keyword & Slang Localization in Vietnam: Decoding Gamer Vernacular & Search Intent (2026)](/en/blog/game-keyword-slang-localization-vietnam-decoding-gamer-vernacular)"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "influencer-marketing-game-viet-nam-revelation-gunny-origin",
     "slug_en": "influencer-marketing-vietnam-gaming-revelation-gunny-origin",
     "title": {
