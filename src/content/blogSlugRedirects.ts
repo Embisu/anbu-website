@@ -72,6 +72,7 @@ export const blogViToEnSlug: Record<string, string> = {
   "esports-tai-viet-nam-dang-mo-ra-co-hoi-gi-cho-thuong-hieu": "what-opportunities-does-esports-in-vietnam-offer-brands",
   "vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh": "vietnam-gaming-market-overview-opportunities-publishers",
   "thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau": "vietnam-gaming-market-2026-where-are-the-growth-opportunities",
+  "influencer-marketing-game-viet-nam-revelation-gunny-origin": "influencer-marketing-vietnam-gaming-revelation-gunny-origin",
 };
 
 
