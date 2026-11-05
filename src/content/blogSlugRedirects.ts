@@ -73,9 +73,7 @@ export const blogViToEnSlug: Record<string, string> = {
   "vietnam-gaming-market-toan-canh-co-hoi-nha-phat-hanh": "vietnam-gaming-market-overview-opportunities-publishers",
   "thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau": "vietnam-gaming-market-2026-where-are-the-growth-opportunities",
   "influencer-marketing-game-viet-nam-revelation-gunny-origin": "influencer-marketing-vietnam-gaming-revelation-gunny-origin",
-  "tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat": "game-content-marketing-thailand-localization-beyond-translation",
   "toi-uu-kenh-game-tai-thai-lan-chien-luoc-always-on": "game-channel-optimization-thailand-always-on-strategy",
-  "esports-marketing-thailand-game-moi-co-nen-to-chuc-giai-dau-rieng": "esports-marketing-thailand-should-a-new-game-run-its-own-tournament",
 };
 
 
