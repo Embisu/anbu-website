@@ -16,7 +16,7 @@
     },
     "date": "2026-11-05",
     "readingTime": 7,
-    "cover": "/blog-covers/creator-tiktok-studio.jpg",
+    "cover": "/blog-media/1794000000000-influencer-sq-01.jpg",
     "focal": "center",
     "author": "ANBU Team",
     "color": "from-orange-600 to-navy-900",
@@ -60,10 +60,36 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1794000000000-influencer-sq-01.jpg",
+        "src_en": "/blog-media/1794000000000-influencer-wide-01.jpg",
+        "alt": {
+          "vi": "Influencer Marketing game Việt Nam: Revelation, Gunny Origin",
+          "en": "Influencer marketing in Vietnam's gaming industry: Revelation, Gunny Origin"
+        },
+        "caption": {
+          "vi": "Influencer Marketing game Việt Nam: hai case study của VNG, Revelation và Gunny Origin.",
+          "en": "Influencer marketing in Vietnam's gaming industry: two VNG case studies, Revelation and Gunny Origin."
+        }
+      },
+      {
         "type": "h2",
         "text": {
           "vi": "Revelation: Biến tính năng game thành nội dung có khả năng lan truyền",
           "en": "Revelation: Turning game features into viral content"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794000000000-influencer-sq-02.jpg",
+        "src_en": "/blog-media/1794000000000-influencer-wide-02.jpg",
+        "alt": {
+          "vi": "Revelation: biến tính năng game thành nội dung có khả năng lan truyền",
+          "en": "Revelation: turning game features into viral content"
+        },
+        "caption": {
+          "vi": "Revelation: biến tính năng game thành nội dung có khả năng lan truyền.",
+          "en": "Revelation: turning game features into viral content."
         }
       },
       {
@@ -137,6 +163,19 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1794000000000-influencer-sq-03.jpg",
+        "src_en": "/blog-media/1794000000000-influencer-wide-03.jpg",
+        "alt": {
+          "vi": "Gunny Origin: khai thác hoài niệm để kết nối cộng đồng",
+          "en": "Gunny Origin: leveraging nostalgia to reconnect with the community"
+        },
+        "caption": {
+          "vi": "Gunny Origin: khai thác hoài niệm để kết nối cộng đồng.",
+          "en": "Gunny Origin: leveraging nostalgia to reconnect with the community."
+        }
+      },
+      {
         "type": "p",
         "text": {
           "vi": "Nếu Revelation tập trung tạo xu hướng từ tính năng sản phẩm, Gunny Origin lại lựa chọn một hướng tiếp cận khác: khai thác giá trị cảm xúc và ký ức thương hiệu.",
@@ -204,6 +243,19 @@
         "text": {
           "vi": "Bài học triển khai Influencer Marketing cho game tại Việt Nam",
           "en": "Key lessons for implementing Influencer Marketing in Vietnam's Gaming Industry"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794000000000-influencer-sq-04.jpg",
+        "src_en": "/blog-media/1794000000000-influencer-wide-04.jpg",
+        "alt": {
+          "vi": "Ba bài học triển khai Influencer Marketing cho game tại Việt Nam",
+          "en": "Key lessons for implementing influencer marketing in Vietnam's gaming industry"
+        },
+        "caption": {
+          "vi": "Ba nguyên tắc: chọn influencer theo mức độ phù hợp, đặt trải nghiệm game làm trọng tâm, đo lường theo chất lượng người chơi.",
+          "en": "Three principles: choose influencers by relevance, make the gaming experience the centerpiece, measure by player quality."
         }
       },
       {
@@ -284,6 +336,19 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1794000000000-influencer-sq-05.jpg",
+        "src_en": "/blog-media/1794000000000-influencer-wide-05.jpg",
+        "alt": {
+          "vi": "Triển khai Influencer Marketing game cùng ANBU",
+          "en": "Execute your gaming influencer marketing strategy with ANBU"
+        },
+        "caption": {
+          "vi": "Liên hệ ANBU để triển khai chiến dịch Influencer Marketing cho game.",
+          "en": "Contact ANBU to run your gaming influencer marketing campaign."
+        }
+      },
+      {
         "type": "p",
         "text": {
           "vi": "ANBU là agency chuyên KOL marketing và community management cho game tại Việt Nam và Đông Nam Á. Liên hệ ANBU để chọn KOL theo đúng tệp người chơi, xây dựng nội dung từ điểm khác biệt của sản phẩm và đo lường hiệu quả theo CPI, retention và ROAS.",
@@ -318,7 +383,8 @@
           }
         ]
       }
-    ]
+    ],
+    "cover_en": "/blog-media/1794000000000-influencer-wide-01.jpg"
   },
   {
     "slug": "thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau",
