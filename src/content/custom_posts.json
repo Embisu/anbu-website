@@ -18,7 +18,7 @@
     "readingTime": 8,
     "cover": "/blog-media/1794300000000-tiktok-sq-cover.jpg",
     "cover_en": "/blog-media/1794300000000-tiktok-wide-cover.jpg",
-    "focal": "50% 35%",
+    "focal": "50% 15%",
     "author": "ANBU Team",
     "color": "from-orange-600 to-navy-900",
     "variant": "game",
@@ -43,13 +43,6 @@
           "en": "Sensor Tower: State of Gaming 2025"
         },
         "href": "https://sensortower.com/state-of-gaming-2025"
-      },
-      {
-        "label": {
-          "vi": "Brands Vietnam: TikTok mở vàng cho các thương hiệu game tiếp cận số lượng người chơi mới khổng lồ",
-          "en": "Brands Vietnam: TikTok opens a goldmine for game brands to reach huge numbers of new players"
-        },
-        "href": "https://www.brandsvietnam.com/22857-tiktok-mo-vang-de-cac-thuong-hieu-game-tiep-can-so-luong-nguoi-choi-moi-khong-lo"
       },
       {
         "label": {
@@ -125,15 +118,15 @@
       {
         "type": "p",
         "text": {
-          "vi": "Tuy nhiên, số liệu nửa đầu năm 2026 theo [Bộ văn hóa, thể thao và du lịch](https://bvhttdl.gov.vn/game-viet-nam-tang-truong-tu-gia-tri-san-pham.htm), cho thấy một xu hướng đáng chú ý: thị trường Việt Nam ghi nhận 76,5 triệu lượt tải game mobile, giảm 9,7% so với cùng kỳ năm trước, nhưng doanh thu vẫn đạt 177 triệu USD, tăng 7,5%. Điều này cho thấy dù lượng người tải game giảm, khả năng chuyển đổi người chơi thành doanh thu đang được cải thiện.",
-          "en": "However, H1 2026 figures from the [Ministry of Culture, Sports and Tourism](https://bvhttdl.gov.vn/game-viet-nam-tang-truong-tu-gia-tri-san-pham.htm) show a notable trend: Vietnam recorded 76.5 million mobile game downloads, down 9.7% year-on-year, yet revenue reached USD 177 million, up 7.5%. This suggests that even as the number of people downloading games falls, the ability to convert players into revenue is improving."
+          "vi": "Tuy nhiên, số liệu nửa đầu năm 2026 theo [Bộ văn hóa, thể thao và du lịch](https://bvhttdl.gov.vn/game-viet-nam-tang-truong-tu-gia-tri-san-pham.htm), trích báo cáo của SocialPeta và Gamota, cho thấy một xu hướng đáng chú ý: thị trường Việt Nam ghi nhận 76,5 triệu lượt tải game mobile, giảm 9,7% so với cùng kỳ năm trước, nhưng doanh thu vẫn đạt 177 triệu USD, tăng 7,5%. Điều này cho thấy dù lượng người tải game giảm, khả năng chuyển đổi người chơi thành doanh thu đang được cải thiện.",
+          "en": "However, H1 2026 figures from the [Ministry of Culture, Sports and Tourism](https://bvhttdl.gov.vn/game-viet-nam-tang-truong-tu-gia-tri-san-pham.htm), citing the SocialPeta and Gamota report, show a notable trend: Vietnam recorded 76.5 million mobile game downloads, down 9.7% year-on-year, yet revenue reached USD 177 million, up 7.5%. This suggests that even as the number of people downloading games falls, the ability to convert players into revenue is improving."
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Trong khi đó, theo [Sensor Tower](https://sensortower.com/state-of-gaming-2025), thị phần hiển thị quảng cáo game mobile trên TikTok tăng 67% trong năm 2024 so với năm trước, cho thấy mức độ cạnh tranh và đầu tư quảng cáo trên nền tảng ngày càng lớn.",
-          "en": "Meanwhile, according to [Sensor Tower](https://sensortower.com/state-of-gaming-2025), TikTok’s share of mobile game ad impressions grew 67% in 2024 compared with the year before, showing that competition and advertising investment on the platform keep increasing."
+          "vi": "Trong khi đó, theo [Sensor Tower](https://sensortower.com/state-of-gaming-2025), thị phần hiển thị game mobile của TikTok trong nhóm các mạng xã hội đã tăng 67%, cho thấy mức độ cạnh tranh và đầu tư quảng cáo trên nền tảng ngày càng lớn.",
+          "en": "Meanwhile, according to [Sensor Tower](https://sensortower.com/state-of-gaming-2025), TikTok’s mobile game impression share among social networks increased 67%, showing that competition and advertising investment on the platform keep increasing."
         }
       },
       {
@@ -180,8 +173,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Game thủ Việt Nam có sự gắn kết đặc biệt mạnh mẽ với ký ức tuổi thơ (văn hóa võ lâm kiếm hiệp, bắn súng tọa độ, Audition...). Các chiến dịch gợi lại thanh xuân kết hợp với bài hát kinh điển được phối lại luôn tạo ra lượng thảo luận khổng lồ và lượt chia sẻ tự nhiên trên TikTok. Theo [Brands Vietnam](https://www.brandsvietnam.com/22857-tiktok-mo-vang-de-cac-thuong-hieu-game-tiep-can-so-luong-nguoi-choi-moi-khong-lo), hashtag #gunnyorigin từng đạt 290 triệu lượt xem trong chiến dịch.",
-          "en": "Vietnamese gamers have an especially strong attachment to childhood memories (wuxia culture, coordinate-based shooters, Audition...). Campaigns that bring back the “golden youth” feeling, combined with remixed classic songs, consistently generate huge discussion and organic shares on TikTok. According to [Brands Vietnam](https://www.brandsvietnam.com/22857-tiktok-mo-vang-de-cac-thuong-hieu-game-tiep-can-so-luong-nguoi-choi-moi-khong-lo), the hashtag #gunnyorigin reached 290 million views during the campaign."
+          "vi": "Game thủ Việt Nam có sự gắn kết đặc biệt mạnh mẽ với ký ức tuổi thơ (văn hóa võ lâm kiếm hiệp, bắn súng tọa độ, Audition...). Các chiến dịch gợi lại thanh xuân kết hợp với bài hát kinh điển được phối lại luôn tạo ra lượng thảo luận khổng lồ và lượt chia sẻ tự nhiên trên TikTok. Chiến dịch Gunny Origin được phân tích chi tiết trong bài [Influencer Marketing game Việt Nam: Revelation, Gunny Origin](/vi/blog/influencer-marketing-game-viet-nam-revelation-gunny-origin).",
+          "en": "Vietnamese gamers have an especially strong attachment to childhood memories (wuxia culture, coordinate-based shooters, Audition...). Campaigns that bring back the “golden youth” feeling, combined with remixed classic songs, consistently generate huge discussion and organic shares on TikTok. The Gunny Origin campaign is analyzed in detail in [Influencer Marketing in Vietnam Gaming: Revelation and Gunny Origin](/en/blog/influencer-marketing-vietnam-gaming-revelation-gunny-origin)."
         }
       },
       {
@@ -208,8 +201,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Creator và streamer giúp game xuất hiện tự nhiên hơn trong những cộng đồng vốn đã có sẵn sự quan tâm đến gaming. Thay vì chỉ phụ thuộc vào một vài gương mặt nổi tiếng, studio có thể kết hợp nhiều creator quy mô khác nhau, từ streamer chuyên game đến Micro-KOC có cộng đồng nhỏ nhưng tương tác tốt, tùy theo tệp người chơi mục tiêu.",
-          "en": "Creators and streamers help a game appear more naturally in communities that already care about gaming. Instead of depending on a few famous faces, studios can combine creators of different sizes, from dedicated gaming streamers to Micro-KOCs with small but highly engaged communities, depending on the target player segment."
+          "vi": "Creator và streamer giúp game xuất hiện tự nhiên hơn trong những cộng đồng vốn đã có sẵn sự quan tâm đến gaming. Thay vì chỉ phụ thuộc vào một vài gương mặt nổi tiếng, studio có thể kết hợp nhiều creator quy mô khác nhau, từ streamer chuyên game đến Micro-KOC (Key Opinion Consumer) có cộng đồng nhỏ nhưng tương tác tốt, tùy theo tệp người chơi mục tiêu.",
+          "en": "Creators and streamers help a game appear more naturally in communities that already care about gaming. Instead of depending on a few famous faces, studios can combine creators of different sizes, from dedicated gaming streamers to Micro-KOCs (Key Opinion Consumers) with small but highly engaged communities, depending on the target player segment."
         }
       },
       {
@@ -277,15 +270,15 @@
       {
         "type": "p",
         "text": {
-          "vi": "Đứng trước bài toán vừa gợi nhắc hoài niệm cho tệp 8x–9x, vừa lôi cuốn Gen Z, VNGGames lựa chọn chiến lược toàn phễu (Full-Funnel) thay vì chạy quảng cáo cài đặt phân mảnh. Ở tầng nhận diện, NPH sử dụng định dạng TopView chiếm trọn màn hình ngày ra mắt để tạo độ phủ tối đa. Ở tầng chuyển đổi, VNGGames ứng dụng Smart Performance Campaign (SPC) kết hợp AEO, đồng thời tận dụng các video gameplay chân thực từ KOC để chạy Spark Ads nhằm triệt tiêu tâm lý kháng quảng cáo của game thủ.",
-          "en": "Facing the challenge of both evoking nostalgia for the 8x–9x generation and appealing to Gen Z, VNGGames chose a full-funnel strategy instead of running fragmented install ads. At the awareness layer, the publisher used the TopView format to take over the entire screen on launch day for maximum reach. At the conversion layer, VNGGames applied Smart Performance Campaign (SPC) combined with AEO, while using authentic gameplay videos from KOCs to run Spark Ads to counter gamers’ resistance to advertising."
+          "vi": "Đứng trước bài toán vừa gợi nhắc hoài niệm cho tệp 8x–9x, vừa lôi cuốn Gen Z, VNGGames lựa chọn chiến lược toàn phễu (Full-Funnel) thay vì chạy quảng cáo cài đặt phân mảnh. Ở tầng nhận diện, nhà phát hành dùng định dạng TopView để tạo độ phủ lớn. Ở tầng chuyển đổi, VNGGames chạy chiến dịch App Install và App Event Optimization (AEO), đồng thời dùng Smart Performance Campaign (SPC) kết hợp Spark Ads để có thêm lượt cài đặt với CPI thấp hơn, và tái tiếp cận nhóm đã xem TopView nhưng chưa mua hàng bằng tệp lookalike và tệp tùy chỉnh.",
+          "en": "Facing the challenge of both evoking nostalgia for the 8x–9x generation and appealing to Gen Z, VNGGames chose a full-funnel strategy instead of running fragmented install ads. At the awareness layer, the publisher used the TopView format for broad reach. At the conversion layer, VNGGames ran App Install and App Event Optimization (AEO) campaigns, and used Smart Performance Campaign (SPC) with Spark Ads to get more installs at a lower CPI, while retargeting people who had viewed TopView but not yet purchased through lookalike and custom audiences."
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Theo [TikTok for Business - VNGGames Kiếm Thế Origin Case Study](https://ads.tiktok.com/business/en-SG/inspiration/vng-kiemtheorigin), sự kết hợp này giúp chi phí trên mỗi lượt cài đặt (**CPI**) thực tế giảm sâu **53%** so với mục tiêu dự toán, đồng thời đưa tổng sản lượng cài đặt trong tuần đầu vượt mốc **KPI tới 184,98%**.",
-          "en": "According to the [TikTok for Business - VNGGames Kiếm Thế Origin Case Study](https://ads.tiktok.com/business/en-SG/inspiration/vng-kiemtheorigin), this combination reduced actual cost per install (**CPI**) by **53%** against the budgeted target, while pushing total first-week installs past the **KPI by up to 184.98%**."
+          "vi": "Theo [TikTok for Business - VNGGames Kiếm Thế Origin Case Study](https://ads.tiktok.com/business/en-SG/inspiration/vng-kiemtheorigin), chiến dịch SPC kết hợp Spark Ads giúp chi phí trên mỗi lượt cài đặt (**CPI**) thấp hơn **53%** so với mục tiêu dự kiến, còn tổng lượt cài đặt trong tuần đầu đạt mức vượt chỉ tiêu **184,98%** theo công bố của TikTok.",
+          "en": "According to the [TikTok for Business - VNGGames Kiếm Thế Origin Case Study](https://ads.tiktok.com/business/en-SG/inspiration/vng-kiemtheorigin), the SPC campaign with Spark Ads delivered a cost per install (**CPI**) **53%** lower than the planned target, while first-week installs overachieved the target by **184.98%**, as reported by TikTok."
         }
       },
       {
@@ -298,15 +291,15 @@
       {
         "type": "p",
         "text": {
-          "vi": "Thay vì chạy theo lượt tải rỗng, Funtap tập trung tối ưu doanh thu nạp thẻ (In-App Purchase - IAP) cho Thiên Kiếm Chi Vân bằng công nghệ Multi-Conversion AEO kết hợp CBO của TikTok. Thuật toán tự động học sâu vào hành vi nạp tiền, chủ động dồn ngân sách vào các nhóm quảng cáo kích hoạt giao dịch mua hàng nhanh nhất.",
-          "en": "Instead of chasing empty downloads, Funtap focused on optimizing in-app purchase (IAP) revenue for Thiên Kiếm Chi Vân using TikTok’s Multi-Conversion AEO combined with CBO. The algorithm automatically learns deeply from spending behavior and proactively shifts budget to the ad groups that trigger purchases fastest."
+          "vi": "Thay vì chạy theo lượt tải rỗng, Funtap tập trung tối ưu doanh thu nạp thẻ (In-App Purchase - IAP) cho Thiên Kiếm Chi Vân bằng Multi-Conversion App Event Optimization (AEO), kết hợp Campaign Budget Optimization (CBO) và Lowest Cost Bidding của TikTok. Hệ thống nhắm tới game thủ Việt có khả năng mua hàng trong game cao hơn và theo dõi giao dịch mua trong một khoảng thời gian xác định.",
+          "en": "Instead of chasing empty downloads, Funtap focused on optimizing in-app purchase (IAP) revenue for Thiên Kiếm Chi Vân using TikTok’s Multi-Conversion App Event Optimization (AEO), combined with Campaign Budget Optimization (CBO) and Lowest Cost Bidding. The setup targeted Vietnamese mobile gamers more likely to make in-app purchases and tracked purchases within a defined time window."
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Theo ghi nhận từ [TikTok for Business Case Study](http://ads.tiktok.com/business/en/inspiration/funtap-ThienKiemChiVan), giải pháp này giúp Funtap giảm tới 93% chi phí cho mỗi lượt mua hàng (CPA) và nâng tỷ suất hoàn vốn quảng cáo (Purchase ROAS) lên mức kỷ lục 58 lần, triệt tiêu tình trạng lãng phí ngân sách vào tệp người chơi không chi tiêu.",
-          "en": "According to the [TikTok for Business Case Study](http://ads.tiktok.com/business/en/inspiration/funtap-ThienKiemChiVan), this solution helped Funtap cut cost per purchase (CPA) by up to 93% and raise Purchase ROAS to a record 58x, eliminating budget wasted on players who do not spend."
+          "vi": "Theo [TikTok for Business Case Study](http://ads.tiktok.com/business/en/inspiration/funtap-ThienKiemChiVan), so với một chiến dịch AEO tối ưu Purchase khác chạy cùng thời kỳ với ngân sách ngày tương đương, giải pháp này giúp Funtap giảm 93% chi phí cho mỗi lượt mua hàng (CPA) và đạt Purchase ROAS cao gấp 58 lần.",
+          "en": "According to the [TikTok for Business Case Study](http://ads.tiktok.com/business/en/inspiration/funtap-ThienKiemChiVan), compared with another AEO Purchase campaign run in the same period with a similar daily budget, this setup helped Funtap cut cost per purchase (CPA) by 93% and achieve a Purchase ROAS 58 times higher."
         }
       },
       {
@@ -319,15 +312,108 @@
       {
         "type": "p",
         "text": {
-          "vi": "Để săn tìm tệp \"người chơi cá voi\" (VIP) cho tựa game kiếm hiệp *Giang Hồ Ngũ Tuyệt*, VTC Mobile ứng dụng tính năng High Spending Power (HSP) trên Android kết hợp cùng AEO. Bộ lọc máy học này tự động đối chiếu lịch sử thanh toán số để phân phối các video kịch bản tranh đoạt lực chiến đến thẳng nhóm game thủ có thói quen nạp tiền thường xuyên.",
-          "en": "To find the “whale” (VIP) segment for the wuxia game *Giang Hồ Ngũ Tuyệt*, VTC Mobile applied the High Spending Power (HSP) feature on Android combined with AEO. This machine-learning filter automatically matches digital payment history to deliver combat-power contest scripted videos straight to gamers who top up regularly."
+          "vi": "Để tiếp cận game thủ có sức chi tiêu cao cho tựa game nhập vai *Giang Hồ Ngũ Tuyệt*, VTC Mobile chạy chiến dịch Android tối ưu theo sự kiện Purchase (AEO) kết hợp High Spending Power (HSP), nhắm tới người dùng có lịch sử mua hàng liên quan đến game. Chiến dịch được triển khai vào tháng 5/2023, nên đây là bài học về cách làm hơn là số liệu thị trường hiện tại.",
+          "en": "To reach high-spending gamers for the RPG *Giang Hồ Ngũ Tuyệt*, VTC Mobile ran an Android campaign optimizing for the Purchase event (AEO) combined with High Spending Power (HSP) targeting, reaching users with a history of gaming-related purchases. The campaign ran in May 2023, so treat it as a lesson in method rather than a picture of today’s market."
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Số liệu từ [TikTok for Business - VTC Mobile Case Study](http://ads.tiktok.com/business/en-US/inspiration/vtcmobile-GiangHoNguTuyet) chỉ ra rằng việc nhắm trúng tệp HSP đã giúp VTC Mobile cắt giảm 60% chi phí chuyển đổi mua hàng và tăng Purchase ROAS lên 14,3 lần so với cách nhắm mục tiêu thông thường, bảo chứng nguồn thu bền vững cho game hardcore.",
-          "en": "Data from the [TikTok for Business - VTC Mobile Case Study](http://ads.tiktok.com/business/en-US/inspiration/vtcmobile-GiangHoNguTuyet) shows that targeting the HSP segment helped VTC Mobile cut purchase conversion cost by 60% and raise Purchase ROAS to 14.3x compared with conventional targeting, underpinning a sustainable revenue stream for hardcore games."
+          "vi": "Theo [TikTok for Business - VTC Mobile Case Study](http://ads.tiktok.com/business/en-US/inspiration/vtcmobile-GiangHoNguTuyet), so với nhóm quảng cáo không dùng HSP, nhóm nhắm HSP có chi phí cho mỗi lượt mua hàng thấp hơn 60% và ROAS cao gấp 14,3 lần.",
+          "en": "According to the [TikTok for Business - VTC Mobile Case Study](http://ads.tiktok.com/business/en-US/inspiration/vtcmobile-GiangHoNguTuyet), compared with the ad group that did not use HSP, the HSP group had a 60% lower cost per purchase and a ROAS 14.3 times higher."
+        }
+      },
+      {
+        "type": "table",
+        "caption": {
+          "vi": "Tóm tắt ba chiến dịch theo số liệu TikTok công bố.",
+          "en": "Summary of the three campaigns, based on figures published by TikTok."
+        },
+        "headers": [
+          {
+            "vi": "Chiến dịch",
+            "en": "Campaign"
+          },
+          {
+            "vi": "Chiến thuật chính",
+            "en": "Key tactics"
+          },
+          {
+            "vi": "Kết quả",
+            "en": "Result"
+          },
+          {
+            "vi": "So với",
+            "en": "Compared with"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "vi": "VNGGames – Kiếm Thế Origin",
+              "en": "VNGGames – Kiếm Thế Origin"
+            },
+            {
+              "vi": "TopView; SPC kết hợp Spark Ads; AEO",
+              "en": "TopView; SPC with Spark Ads; AEO"
+            },
+            {
+              "vi": "CPI thấp hơn 53%; cài đặt tuần đầu vượt chỉ tiêu 184,98%",
+              "en": "CPI 53% lower; first-week installs +184.98% vs. target"
+            },
+            {
+              "vi": "Mục tiêu dự kiến",
+              "en": "Planned target"
+            }
+          ],
+          [
+            {
+              "vi": "Funtap – Thiên Kiếm Chi Vân",
+              "en": "Funtap – Thiên Kiếm Chi Vân"
+            },
+            {
+              "vi": "Multi-Conversion AEO; CBO",
+              "en": "Multi-Conversion AEO; CBO"
+            },
+            {
+              "vi": "CPA mua hàng thấp hơn 93%; Purchase ROAS cao gấp 58 lần",
+              "en": "Purchase CPA 93% lower; Purchase ROAS 58x higher"
+            },
+            {
+              "vi": "Chiến dịch AEO Purchase khác cùng kỳ",
+              "en": "Another AEO Purchase campaign, same period"
+            }
+          ],
+          [
+            {
+              "vi": "VTC Mobile – Giang Hồ Ngũ Tuyệt (5/2023)",
+              "en": "VTC Mobile – Giang Hồ Ngũ Tuyệt (May 2023)"
+            },
+            {
+              "vi": "AEO Purchase trên Android; High Spending Power",
+              "en": "Android AEO Purchase; High Spending Power"
+            },
+            {
+              "vi": "Chi phí mỗi lượt mua thấp hơn 60%; ROAS cao gấp 14,3 lần",
+              "en": "Cost per purchase 60% lower; ROAS 14.3x higher"
+            },
+            {
+              "vi": "Nhóm quảng cáo không dùng HSP",
+              "en": "Ad group without HSP"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "callout",
+        "variant": "info",
+        "title": {
+          "vi": "Lưu ý khi đọc số liệu",
+          "en": "How to read these numbers"
+        },
+        "text": {
+          "vi": "Đây là các case study do TikTok công bố. Mức cải thiện được tính so với mốc riêng của từng chiến dịch (mục tiêu dự kiến, chiến dịch khác hoặc nhóm không dùng HSP), không phải mức trung bình của thị trường. Kết quả thực tế còn phụ thuộc vào sản phẩm, nội dung và cách tối ưu của từng game.",
+          "en": "These are case studies published by TikTok. Improvements are measured against each campaign’s own baseline (planned target, another campaign, or a group without HSP), not a market average. Actual results also depend on the product, the content, and how each game is optimized."
         }
       },
       {
@@ -374,8 +460,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "**Gom phễu sớm từ giai đoạn Pre-launch:** Không chờ đến ngày mở server mới chạy media. Tích lũy tệp đăng ký trước (App Pre-Registration) từ 1–2 tháng thông qua các trào lưu hoài niệm hoặc tính năng cá nhân hóa (nặn mặt, thời trang) sẽ tạo lực đẩy tự nhiên khổng lồ, đưa tựa game leo thẳng đỉnh bảng xếp hạng (Top 1 Store) ngay ngày đầu ra mắt.",
-          "en": "**Build the funnel early from the pre-launch stage:** Don’t wait until the server opens to start running media. Accumulating a pre-registration base (App Pre-Registration) over 1–2 months through nostalgia trends or personalization features (character face creation, fashion) creates a huge organic push that can take a game straight to the top of the store charts (Top 1 Store) on launch day."
+          "vi": "**Gom phễu sớm từ giai đoạn Pre-launch:** Không chờ đến ngày mở server mới chạy media. Tích lũy tệp đăng ký trước (App Pre-Registration) từ 1–2 tháng thông qua các trào lưu hoài niệm hoặc tính năng cá nhân hóa (nặn mặt, thời trang) có thể tạo lực đẩy tự nhiên đáng kể, góp phần đưa tựa game lên cao trong bảng xếp hạng cửa hàng ngay những ngày đầu ra mắt.",
+          "en": "**Build the funnel early from the pre-launch stage:** Don’t wait until the server opens to start running media. Accumulating a pre-registration base (App Pre-Registration) over 1–2 months through nostalgia trends or personalization features (character face creation, fashion) can create a significant organic push and help a game climb the store charts in its first days."
         }
       },
       {
