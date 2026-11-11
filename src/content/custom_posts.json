@@ -526,13 +526,6 @@
       },
       {
         "label": {
-          "vi": "DataReportal - Digital 2025: Thailand",
-          "en": "DataReportal - Digital 2025: Thailand"
-        },
-        "href": "https://datareportal.com/reports/digital-2025-thailand"
-      },
-      {
-        "label": {
           "vi": "DataReportal - Digital 2026: Thailand",
           "en": "DataReportal - Digital 2026: Thailand"
         },
@@ -656,22 +649,22 @@
       {
         "type": "p",
         "text": {
-          "vi": "Thái Lan là thị trường game có quy mô đáng chú ý tại Đông Nam Á. Theo thông tin từ báo cáo Ampverse được [Thailand.go.th](https://thailand.go.th/public/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse) dẫn lại, thị trường có hơn 58 triệu game thủ trên dân số khoảng 72 triệu người. Báo cáo cũng đề cập vai trò của creator và cộng đồng trong cách người chơi khám phá, theo dõi và tương tác với game.",
-          "en": "Thailand is a notable gaming market in Southeast Asia. According to the Ampverse report as cited by [Thailand.go.th](https://thailand.go.th/public/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse), the market has more than 58 million gamers out of a population of about 72 million. The report also mentions the role of creators and communities in how players discover, follow, and interact with games."
+          "vi": "Thái Lan là thị trường game có quy mô đáng chú ý tại Đông Nam Á. Theo thông tin từ báo cáo Ampverse được [Thailand.go.th](https://thailand.go.th/public/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse) dẫn lại, thị trường có hơn 58 triệu game thủ trên dân số khoảng 72 triệu người (theo cách tính của Ampverse; các nguồn khác ước tính thấp hơn). Báo cáo cũng đề cập vai trò của creator và cộng đồng trong cách người chơi khám phá, theo dõi và tương tác với game.",
+          "en": "Thailand is a notable gaming market in Southeast Asia. According to the Ampverse report as cited by [Thailand.go.th](https://thailand.go.th/public/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse), the market has more than 58 million gamers out of a population of about 72 million (by Ampverse’s definition; other sources estimate lower). The report also mentions the role of creators and communities in how players discover, follow, and interact with games."
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Bên cạnh đó, bài phân tích Thailand Media Landscape 2026 của [Dataxet cho biết 77,9%](https://www.dataxet.co/media-landscape/2026-th) người dùng internet tại Thái Lan chơi video game, với thời gian chơi trung bình 8 giờ 53 phút mỗi tuần. Đây là dấu hiệu cho thấy game chiếm một phần đáng kể trong thời gian sử dụng internet của người Thái.",
-          "en": "In addition, the Thailand Media Landscape 2026 analysis by [Dataxet reports that 77.9%](https://www.dataxet.co/media-landscape/2026-th) of internet users in Thailand play video games, with an average playing time of 8 hours 53 minutes per week. This suggests that games take up a significant share of Thai people’s internet time."
+          "vi": "Bên cạnh đó, bài tổng hợp Thailand Media Landscape 2026 của [Dataxet](https://www.dataxet.co/media-landscape/2026-th) (dẫn số liệu Digital 2026 của We Are Social và Meltwater) cho biết 77,9% người dùng internet tại Thái Lan chơi video game, với thời gian chơi trung bình 8 giờ 53 phút mỗi tuần. Đây là dấu hiệu cho thấy game là hoạt động phổ biến với người dùng internet Thái Lan.",
+          "en": "In addition, the Thailand Media Landscape 2026 roundup by [Dataxet](https://www.dataxet.co/media-landscape/2026-th) (citing Digital 2026 from We Are Social and Meltwater) reports that 77.9% of internet users in Thailand play video games, with an average playing time of 8 hours 53 minutes per week. This suggests that gaming is a widespread activity among Thai internet users."
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Về nền tảng số, [Digital 2026](https://datareportal.com/reports/digital-2026-thailand) ghi nhận Thái Lan có 56,6 triệu tài khoản người dùng mạng xã hội, tương đương 79,1% dân số. Theo [Digital 2025](https://datareportal.com/reports/digital-2025-thailand), LINE có khoảng 56 triệu người dùng hoạt động hàng tháng, trong khi quảng cáo Facebook tiếp cận khoảng 51,0 triệu người, tương đương 71,1% dân số. Vì vậy, LINE là kênh đáng cân nhắc cho hoạt động kết nối trực tiếp, bên cạnh các nền tảng nội dung và cộng đồng như Facebook.",
-          "en": "On digital platforms, [Digital 2026](https://datareportal.com/reports/digital-2026-thailand) records 56.6 million social media user accounts in Thailand, equal to 79.1% of the population. According to [Digital 2025](https://datareportal.com/reports/digital-2025-thailand), LINE has about 56 million monthly active users, while Facebook ads reach about 51.0 million people, equal to 71.1% of the population. LINE is therefore worth considering for direct engagement, alongside content and community platforms such as Facebook."
+          "vi": "Về nền tảng số, [Digital 2026](https://datareportal.com/reports/digital-2026-thailand) ghi nhận Thái Lan có 56,6 triệu danh tính người dùng mạng xã hội vào tháng 10/2025, tương đương 79,1% dân số (con số này có thể không phải 56,6 triệu người riêng biệt). Cũng theo báo cáo này, LINE có khoảng 56 triệu người dùng hoạt động hàng tháng, trong khi quảng cáo Facebook tiếp cận khoảng 51,5 triệu người, tương đương 71,9% dân số (cuối năm 2025). Vì vậy, LINE là kênh đáng cân nhắc cho hoạt động kết nối trực tiếp, bên cạnh các nền tảng nội dung và cộng đồng như Facebook.",
+          "en": "On digital platforms, [Digital 2026](https://datareportal.com/reports/digital-2026-thailand) records 56.6 million social media user identities in Thailand in October 2025, equal to 79.1% of the population (this may not be 56.6 million unique people). The same report puts LINE at about 56 million monthly active users, while Facebook ads reach about 51.5 million people, equal to 71.9% of the population (late 2025). LINE is therefore worth considering for direct engagement, alongside content and community platforms such as Facebook."
         }
       },
       {
@@ -1171,8 +1164,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Revelation hợp tác với các TikToker và nhà sáng tạo nội dung có thế mạnh về thời trang, làm đẹp và giải trí như CiiN, Mina Young, Trà Đặng. Nội dung tập trung vào việc tái hiện diện mạo ngoài đời thành nhân vật trong game, tạo ra sự kết nối trực quan giữa hình ảnh của Influencer và tính năng tùy chỉnh nhân vật.",
-          "en": "Revelation collaborated with TikTok creators and content influencers specializing in fashion, beauty, and entertainment, including CiiN, Mina Young, and Trà Đặng. Their content focused on recreating their real-life appearances as in-game characters, creating a visual connection between the influencers' personal images and the game's character customization features."
+          "vi": "Revelation hợp tác với các TikToker và nhà sáng tạo nội dung đình đám như CiiN, Mina Young, Trà Đặng. Nội dung tập trung vào việc tái hiện diện mạo ngoài đời thành nhân vật trong game, tạo ra sự kết nối trực quan giữa hình ảnh của Influencer và tính năng tùy chỉnh nhân vật.",
+          "en": "Revelation collaborated with TikTok creators and content influencers including CiiN, Mina Young, and Trà Đặng. Their content focused on recreating their real-life appearances as in-game characters, creating a visual connection between the influencers' personal images and the game's character customization features."
         }
       },
       {
@@ -1185,8 +1178,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Theo các số liệu được công bố trong chiến dịch, video của CiiN đạt hơn [13 triệu lượt xem trong 24 giờ](https://genz.com.vn/revelation-thien-du-chinh-thuc-ra-mat/). Hashtag #MyDienChanMay cũng ghi nhận hơn 14 triệu lượt xem. Ở cấp độ tổng thể, chiến dịch TikTok tại Việt Nam đạt số lượt cài đặt cao hơn [313% so với KPI và CPI thấp hơn 54%](https://ads.tiktok.com/business/en-US/inspiration/vng-revelation) so với mục tiêu đề ra.",
-          "en": "According to campaign figures, CiiN's video generated more than [13 million views within 24 hours](https://genz.com.vn/revelation-thien-du-chinh-thuc-ra-mat/). The hashtag #MyDienChanMay also recorded over 14 million views. At the overall campaign level, TikTok activities in Vietnam achieved an install volume [313% above the target KPI and a CPI 54% lower](https://ads.tiktok.com/business/en-US/inspiration/vng-revelation) than the original target."
+          "vi": "Theo GenZ.com.vn, video của CiiN đạt hơn [13 triệu lượt xem trong 24 giờ](https://genz.com.vn/revelation-thien-du-chinh-thuc-ra-mat/). Ở cấp độ tổng thể, chiến dịch TikTok tại Việt Nam đạt lượt cài đặt vượt KPI 313% (tức khoảng 4,1 lần mục tiêu) và CPI thấp hơn 54% so với mục tiêu đề ra, theo [số liệu do TikTok for Business công bố](https://ads.tiktok.com/business/en/inspiration/vng-revelation).",
+          "en": "According to GenZ.com.vn, CiiN's video generated more than [13 million views within 24 hours](https://genz.com.vn/revelation-thien-du-chinh-thuc-ra-mat/). At the overall campaign level, the TikTok campaign in Vietnam delivered installs 313% above the KPI (about 4.1x the target) and a CPI 54% lower than the original target, according to [figures published by TikTok for Business](https://ads.tiktok.com/business/en/inspiration/vng-revelation)."
         }
       },
       {
@@ -1247,8 +1240,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "[Ra mắt vào tháng 4/2022](https://gunnyorigin.vnggames.com/tin-tuc/tin-tuc/gioi-thieu.html), Gunny Origin kế thừa thương hiệu Gunny từng gắn bó với nhiều thế hệ game thủ Việt từ năm 2009. Vì vậy, thách thức của chiến dịch không chỉ là giới thiệu một phiên bản game mới, mà còn phải khơi gợi sự quan tâm từ cộng đồng người chơi cũ và mở rộng độ nhận diện đến nhóm người chơi mới.",
-          "en": "[Launched in April 2022](https://gunnyorigin.vnggames.com/tin-tuc/tin-tuc/gioi-thieu.html), Gunny Origin builds on the legacy of the Gunny franchise, which has been part of Vietnamese gaming culture since 2009. Therefore, the campaign's challenge was not only to introduce a new version of the game but also to reignite interest among former players while expanding brand awareness among new audiences."
+          "vi": "[Ra mắt vào tháng 4/2022](https://gunnyorigin.vnggames.com/tin-tuc/tin-tuc/gioi-thieu.html), Gunny Origin kế thừa thương hiệu Gunny từng gắn bó với nhiều thế hệ game thủ Việt từ khoảng năm 2009. Vì vậy, thách thức của chiến dịch không chỉ là giới thiệu một phiên bản game mới, mà còn phải khơi gợi sự quan tâm từ cộng đồng người chơi cũ và mở rộng độ nhận diện đến nhóm người chơi mới.",
+          "en": "[Launched in April 2022](https://gunnyorigin.vnggames.com/tin-tuc/tin-tuc/gioi-thieu.html), Gunny Origin builds on the legacy of the Gunny franchise, which has been part of Vietnamese gaming culture since around 2009. Therefore, the campaign's challenge was not only to introduce a new version of the game but also to reignite interest among former players while expanding brand awareness among new audiences."
         }
       },
       {
@@ -1275,8 +1268,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Theo các số liệu chiến dịch được công bố, hoạt động truyền thông sử dụng hình ảnh Đen Vâu ghi nhận hơn [100 triệu lượt hiển thị và 200.000 lượt tương tác](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet). Hashtag [#gunnyorigin đạt khoảng 290 triệu lượt xem](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet). Chiến dịch cũng ghi nhận hơn [1,2 triệu lượt đăng ký trước](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet), vượt mục tiêu 1 triệu lượt; DAU (Daily Active Users) trung bình đạt hơn 100.000 trong hai tuần đầu. [TikTok đóng góp khoảng 28% lượt cài đặt của toàn chiến dịch.](https://www.tiktok.com/business/en-SG/inspiration/vng-gunny-origin)",
-          "en": "According to published campaign figures, communications activities featuring Đen Vâu generated more than [100 million impressions and 200,000 engagements](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet). The hashtag [#gunnyorigin reached approximately 290 million views](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet). The campaign also recorded more than [1.2 million pre-registrations](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet), exceeding its target of 1 million. Average DAU (Daily Active Users) surpassed 100,000 during the first two weeks. [TikTok contributed approximately 28% of the campaign's total installs.](https://www.tiktok.com/business/en-SG/inspiration/vng-gunny-origin)"
+          "vi": "Theo các số liệu chiến dịch được công bố, hoạt động truyền thông sử dụng hình ảnh Đen Vâu ghi nhận hơn [100 triệu lượt hiển thị và 200.000 lượt tương tác](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet). Chiến dịch cũng ghi nhận hơn [1,2 triệu lượt đăng ký trước](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet), vượt mục tiêu 1 triệu lượt; DAU (Daily Active Users) trung bình đạt hơn 100.000 trong hai tuần đầu. Theo [TikTok for Business](https://ads.tiktok.com/business/en-SG/inspiration/vng-gunny-origin), nhóm người dùng được tiếp cận qua TikTok ghi nhận mức tăng lượt cài đặt khoảng 4 lần trên Android và 2 lần trên iOS, còn trang TikTok của game thu hút hơn 40.000 người theo dõi sau 3 tuần.",
+          "en": "According to published campaign figures, communications activities featuring Đen Vâu generated more than [100 million impressions and 200,000 engagements](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet). The campaign also recorded more than [1.2 million pre-registrations](https://www.brandsvietnam.com/campaign/754-gunny-origin-song-lai-cam-giac-ga-viet-tiep-cau-chuyen-thanh-xuan-cua-game-thu-viet), exceeding its target of 1 million. Average DAU (Daily Active Users) surpassed 100,000 during the first two weeks. According to [TikTok for Business](https://ads.tiktok.com/business/en-SG/inspiration/vng-gunny-origin), users reached through TikTok showed an install uplift of about 4x on Android and 2x on iOS, and the game’s TikTok account attracted more than 40,000 followers within 3 weeks."
         }
       },
       {
@@ -1565,15 +1558,15 @@
       {
         "type": "p",
         "text": {
-          "vi": "Xu hướng này cũng xuất hiện trong dữ liệu vận hành ứng dụng. Theo [báo cáo Tiêu điểm thị trường ứng dụng di động Việt Nam 2026 của Adjust](https://www.adjust.com/vi/blog/vietnam-app-trends-2026/), số phiên truy cập ứng dụng game tại Việt Nam trong quý I/2026 **tăng 15% so với cùng kỳ năm trước**, vượt mức chuẩn của toàn cầu và khu vực châu Á - Thái Bình Dương theo báo cáo này. Tuy nhiên, số phiên truy cập tăng không tự động đồng nghĩa với doanh thu tăng tương ứng. Nhà phát hành vẫn cần theo dõi các chỉ số như tỷ lệ giữ chân người chơi, tỷ lệ chuyển đổi trả phí và doanh thu trung bình trên người dùng để đánh giá chất lượng tăng trưởng.",
-          "en": "This trend is also reflected in app performance data. According to [Adjust’s Vietnam Mobile App Trends Report 2026](https://www.adjust.com/vi/blog/vietnam-app-trends-2026/), gaming app sessions in Vietnam in Q1 2026 **increased by 15% year-on-year**, exceeding the global and Asia-Pacific benchmarks cited in the report. However, an increase in sessions does not automatically translate into a corresponding increase in revenue. Publishers still need to monitor metrics such as player retention, paid conversion rates, and average revenue per user to assess the quality of growth."
+          "vi": "Xu hướng này cũng xuất hiện trong dữ liệu vận hành ứng dụng. Theo [báo cáo Tiêu điểm thị trường ứng dụng di động Việt Nam 2026 của Adjust](https://www.adjust.com/vi/blog/vietnam-app-trends-2026/), số phiên truy cập ứng dụng game tại Việt Nam trong quý I/2026 **tăng 15% so với cùng kỳ năm trước**, cao hơn mức tăng của toàn cầu (+4%) và khu vực châu Á - Thái Bình Dương (+5%) theo báo cáo này. Tuy nhiên, số phiên truy cập tăng không tự động đồng nghĩa với doanh thu tăng tương ứng. Nhà phát hành vẫn cần theo dõi các chỉ số như tỷ lệ giữ chân người chơi, tỷ lệ chuyển đổi trả phí và doanh thu trung bình trên người dùng để đánh giá chất lượng tăng trưởng.",
+          "en": "This trend is also reflected in app performance data. According to [Adjust’s Vietnam Mobile App Trends Report 2026](https://www.adjust.com/vi/blog/vietnam-app-trends-2026/), gaming app sessions in Vietnam in Q1 2026 **increased by 15% year-on-year**, ahead of the global (+4%) and Asia-Pacific (+5%) growth cited in the report. However, an increase in sessions does not automatically translate into a corresponding increase in revenue. Publishers still need to monitor metrics such as player retention, paid conversion rates, and average revenue per user to assess the quality of growth."
         }
       },
       {
         "type": "p",
         "text": {
-          "vi": "Ở góc độ doanh nghiệp, kết quả kinh doanh của VNG cung cấp thêm một tham chiếu về sức chi tiêu của thị trường. Theo [công bố kết quả kinh doanh nửa đầu năm 2026 của VNG](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html), tổng bookings của mảng game đạt **4.819 tỷ đồng, tăng 34% so với cùng kỳ**. Số người dùng hoạt động hàng quý đạt **61,3 triệu**, trong khi tỷ lệ người chơi trả phí tăng từ **4,0% lên 4,6%**. Đây là số liệu của riêng VNG, đã bao gồm cả doanh thu từ thị trường quốc tế và không đại diện cho toàn bộ thị trường Việt Nam, nhưng cho thấy việc cải thiện khả năng chuyển đổi người chơi thành khách hàng trả phí có thể song hành với tăng trưởng doanh thu.",
-          "en": "From a business perspective, VNG’s financial results provide another reference point for the market’s spending potential. According to [VNG’s H1 2026 financial results announcement](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html), total bookings in its gaming segment reached **VND 4,819 billion, up 34% year-on-year**. Quarterly active users reached **61.3 million**, while the paying player ratio increased from **4.0% to 4.6%**. These figures are specific to VNG, include revenue from international markets, and do not represent the entire Vietnamese market. However, they show that improving player conversion into paying customers can go hand in hand with revenue growth."
+          "vi": "Ở góc độ doanh nghiệp, kết quả kinh doanh của VNG cung cấp thêm một tham chiếu về sức chi tiêu của thị trường. Theo [công bố kết quả kinh doanh nửa đầu năm 2026 của VNG](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html), tổng bookings của mảng Trò chơi & Giải trí đạt **4.819 tỷ đồng, tăng 34% so với cùng kỳ**. Số người dùng hoạt động hàng quý đạt **61,3 triệu**, trong khi tỷ lệ người chơi trả phí tăng từ **4,0% lên 4,6%**. Đây là số liệu của riêng VNG, có bao gồm bookings từ thị trường quốc tế và không đại diện cho toàn bộ thị trường Việt Nam, nhưng cho thấy việc cải thiện khả năng chuyển đổi người chơi thành khách hàng trả phí có thể song hành với tăng trưởng doanh thu.",
+          "en": "From a business perspective, VNG’s financial results provide another reference point for the market’s spending potential. According to [VNG’s H1 2026 financial results announcement](https://vng.com.vn/news/press-release/vng-fs-h1-2026.html), total bookings in its Games & Entertainment segment reached **VND 4,819 billion, up 34% year-on-year**. Quarterly active users reached **61.3 million**, while the paying player ratio increased from **4.0% to 4.6%**. These figures are specific to VNG, include bookings from international markets, and do not represent the entire Vietnamese market. However, they show that improving player conversion into paying customers can go hand in hand with revenue growth."
         }
       },
       {
@@ -1710,8 +1703,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Ở hướng khác, **Play Together VNG vẫn nằm trong nhóm dẫn đầu về lượt tải và doanh thu tại Việt Nam gần bốn năm sau khi ra mắt**, theo bảng xếp hạng trong [báo cáo thị trường game mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). Trường hợp này gợi mở vai trò của việc duy trì hoạt động cộng đồng và làm mới trải nghiệm theo thời gian. Tuy nhiên, thứ hạng là kết quả quan sát tại giai đoạn báo cáo, không phải bảo đảm rằng mọi game có mô hình tương tự đều duy trì được hiệu suất lâu dài.",
-          "en": "In a different direction, **Play Together VNG remained among the leading games in Vietnam in both downloads and revenue nearly four years after its launch**, according to the rankings in the [Southeast Asia Mobile Game Market Report 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). This case highlights the potential role of maintaining community activity and refreshing the player experience over time. However, rankings reflect performance during the reporting period and do not guarantee that every game using a similar model can sustain long-term performance."
+          "vi": "Ở hướng khác, **Play Together VNG đứng thứ 5 về lượt tải và thứ 2 về doanh thu tại Việt Nam gần bốn năm sau khi ra mắt**, theo bảng xếp hạng trong [báo cáo thị trường game mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). Trường hợp này gợi mở vai trò của việc duy trì hoạt động cộng đồng và làm mới trải nghiệm theo thời gian. Tuy nhiên, thứ hạng là kết quả quan sát tại giai đoạn báo cáo, không phải bảo đảm rằng mọi game có mô hình tương tự đều duy trì được hiệu suất lâu dài.",
+          "en": "In a different direction, **Play Together VNG ranked 5th in downloads and 2nd in revenue in Vietnam nearly four years after its launch**, according to the rankings in the [Southeast Asia Mobile Game Market Report 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report). This case highlights the potential role of maintaining community activity and refreshing the player experience over time. However, rankings reflect performance during the reporting period and do not guarantee that every game using a similar model can sustain long-term performance."
         }
       },
       {
