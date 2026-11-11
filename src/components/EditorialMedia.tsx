@@ -9,6 +9,7 @@ const serviceImages: Record<string, string> = {
   "seo-content": "seo-content",
   "web-development": "web-development",
   "social-media": "social-media",
+  "publisher-search": "game-app-marketing",
 };
 
 const postImages: Partial<Record<SceneVariant, string>> = {

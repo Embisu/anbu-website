@@ -458,7 +458,7 @@ export default function ClientCustomPostViewer({
                   : "Explore verified partner data, channels and publishing capabilities."}
               </p>
               <Link
-                href={localePath(locale, "/contact")}
+                href={localePath(locale, "/services/publisher-search")}
                 className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 hover:text-orange-300"
               >
                 {locale === "vi" ? "Kết nối đối tác" : "Connect with partners"} →

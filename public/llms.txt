@@ -1,18 +1,37 @@
 # ANBU
 
-ANBU is a Vietnam-based marketing agency helping game publishers, mobile apps and technology brands enter Vietnam, Thailand and Southeast Asia.
+ANBU is a Vietnam-based marketing agency helping game publishers, mobile apps and technology brands enter Vietnam, Thailand and Southeast Asia. Site languages: Vietnamese (/vi) and English (/en).
 
 ## Core services
 - Esports and gaming influencer marketing: https://anbu.asia/en/services/esports-gaming-marketing-sea
 - Game and app marketing: https://anbu.asia/en/services/game-app-marketing
 - Influencer and KOL/KOC marketing: https://anbu.asia/en/services/influencer-marketing
+- Publisher search and launch partner matching in Vietnam: https://anbu.asia/en/services/publisher-search
 - Performance marketing: https://anbu.asia/en/services/performance-marketing
 - SEO and content: https://anbu.asia/en/services/seo-content
+- Brand strategy: https://anbu.asia/en/services/brand-strategy
+- Creative and design: https://anbu.asia/en/services/creative-design
+- Social media management: https://anbu.asia/en/services/social-media
+- Web and app development: https://anbu.asia/en/services/web-development
+
+## How ANBU works
+- Process, engagement models and FAQ: https://anbu.asia/en/how-we-work
+- Game marketing glossary (CPI, ROAS, KOL, KOC, LiveOps, G1 license and more): https://anbu.asia/en/glossary
+- Case studies and portfolio: https://anbu.asia/en/work
 
 ## Useful insights
-- Mobile game launch in Thailand: https://anbu.asia/en/blog/chien-luoc-phat-hanh-game-mobile-tai-thai-lan
-- Mobile game launch in Vietnam: https://anbu.asia/en/blog/launching-a-game-in-vietnam-legal-and-operations-checklist
-- Gaming influencer marketing in Southeast Asia: https://anbu.asia/en/blog/influencer-marketing-chon-kol-koc-dung-cach
+- Vietnam gaming market in 2026, growth opportunities: https://anbu.asia/en/blog/vietnam-gaming-market-2026-where-are-the-growth-opportunities
+- Game publishing in Vietnam, challenges before investing in marketing: https://anbu.asia/en/blog/game-publishing-in-vietnam-challenges-before-investing-in-marketing
+- Vietnam gaming market overview and opportunities for publishers: https://anbu.asia/en/blog/vietnam-gaming-market-overview-opportunities-publishers
+- TikTok marketing trends for mobile games in Vietnam: https://anbu.asia/en/blog/tiktok-marketing-trends-mobile-games-vietnam-viral-content-cpi-organic-installs
+- Influencer marketing in Vietnam gaming (Revelation, Gunny Origin): https://anbu.asia/en/blog/influencer-marketing-vietnam-gaming-revelation-gunny-origin
+- Gaming influencer marketing, choosing KOLs and KOCs: https://anbu.asia/en/blog/influencer-marketing-choosing-gaming-kols-kocs-without-vanity-metrics
+- Mobile game launch in Thailand: https://anbu.asia/en/blog/mobile-game-launch-thailand-southeast-asian-market-entry
+- Game channel optimization in Thailand, Always-on strategy: https://anbu.asia/en/blog/game-channel-optimization-thailand-always-on-strategy
+- LiveOps after launch, retaining Thai players: https://anbu.asia/en/blog/liveops-post-launch-how-to-retain-thai-gamers
+
+## Editorial note
+Figures on this site are public numbers with a source, or are confirmed by ANBU. Video views are whole-video counts and are rounded down. Game-level figures describe the product, not ANBU's own results.
 
 ## Contact
 https://anbu.asia/en/contact

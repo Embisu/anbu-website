@@ -10,6 +10,24 @@ export type ServiceNarrative = {
 const l = (vi: string, en: string): L10n => ({ vi, en });
 
 export const serviceNarrativeBySlug: Record<string, ServiceNarrative> = {
+  "publisher-search": {
+    fitFor: [
+      l("Studio quốc tế muốn vào Việt Nam nhưng chưa có đối tác phát hành", "International studios entering Vietnam without a publishing partner"),
+      l("Studio đã có đối tác nhưng muốn kiểm tra mức phù hợp trước khi ký", "Studios with a candidate partner who want a fit check before signing"),
+      l("Đội ngũ cần hiểu yêu cầu vận hành và giấy phép trước khi lên kế hoạch marketing", "Teams who need to understand operating and licensing requirements before planning marketing"),
+    ],
+    problems: [
+      l("Giấy phép và vận hành làm chậm lịch ra mắt vì được xem xét quá muộn", "Licensing and operations slow the launch because they are considered too late"),
+      l("Chọn đối tác theo danh tiếng thay vì theo thể loại và cộng đồng người chơi", "Choosing a partner by reputation instead of genre and player community"),
+      l("Chi ngân sách marketing trước khi sản phẩm sẵn sàng cho thị trường", "Spending marketing budget before the product is ready for the market"),
+    ],
+    method: [
+      { title: l("Đánh giá sản phẩm", "Assess the product"), description: l("Đọc sản phẩm qua lăng kính người chơi Việt Nam: thể loại, mô hình thu phí, điểm hấp dẫn và rủi ro bản địa hóa.", "Read the product through Vietnamese players' eyes: genre, monetization, appeal and localization risks.") },
+      { title: l("Lập shortlist đối tác", "Build the partner shortlist"), description: l("Lọc đối tác theo thể loại, năng lực vận hành, kênh cộng đồng và tình trạng giấy phép, kèm tiêu chí để studio tự đánh giá.", "Filter partners by genre, operating capability, community channels and license status, with criteria studios can apply themselves.") },
+      { title: l("Điều phối ra mắt", "Coordinate the launch"), description: l("Nối kế hoạch đối tác với kế hoạch marketing: đăng ký trước, thử nghiệm, creator, PR và cộng đồng theo từng mốc.", "Link the partner plan to the marketing plan: pre-registration, beta, creators, PR and community by milestone.") },
+    ],
+    promise: l("Chọn đúng đối tác trước khi chi ngân sách marketing sẽ tiết kiệm nhiều hơn bất kỳ tối ưu quảng cáo nào về sau.", "Choosing the right partner before spending on marketing saves more than any later ad optimization."),
+  },
   "esports-gaming-marketing-sea": {
     fitFor: [l("Studio quốc tế chuẩn bị vào Việt Nam hoặc Đông Nam Á", "International studios entering Vietnam or Southeast Asia"), l("Game cần creator và cộng đồng phù hợp theo từng thị trường", "Games needing market-specific creators and communities"), l("Đội ngũ muốn một đối tác kết nối influencer, PR và UA", "Teams needing one partner across influencer, PR and UA")],
     problems: [l("Một thông điệp quốc tế không tạo được sự liên quan ở từng nước", "One international message lacks relevance in each market"), l("Danh sách influencer lớn nhưng không đúng thể loại hoặc tệp người chơi", "Large influencer lists without genre or audience fit"), l("Launch tạo lượt xem nhưng thiếu activation và retention", "Launches generate views but not activation or retention")],

@@ -221,6 +221,28 @@ export const services: Service[] = [
       { vi: "Dashboard campaign và báo cáo học hỏi", en: "Campaign dashboard and learning report" },
     ],
   },
+  {
+    slug: "publisher-search",
+    icon: "compass",
+    title: { vi: "Tìm nhà phát hành & đối tác ra mắt tại Việt Nam", en: "Publisher Search & Launch Partner Matching in Vietnam" },
+    tagline: { vi: "Từ sản phẩm đến đúng đối tác phát hành, trước khi đổ ngân sách marketing.", en: "From product to the right publishing partner, before you spend on marketing." },
+    description: {
+      vi: "ANBU hỗ trợ studio quốc tế đánh giá mức độ phù hợp của sản phẩm với thị trường Việt Nam, lập shortlist nhà phát hành và đối tác, rồi điều phối kế hoạch ra mắt cùng đội marketing.",
+      en: "ANBU helps international studios assess how well a title fits the Vietnam market, shortlist publishers and partners, then coordinate the launch plan with the marketing team.",
+    },
+    features: [
+      { vi: "Đánh giá sản phẩm: thể loại, mô hình thu phí và mức phù hợp với người chơi Việt Nam", en: "Product assessment: genre, monetization and fit with Vietnamese players" },
+      { vi: "Shortlist nhà phát hành và đối tác theo thể loại, năng lực vận hành và kênh cộng đồng", en: "Publisher and partner shortlist by genre, operating capability and community channels" },
+      { vi: "Rà soát yêu cầu vận hành và giấy phép để studio hỏi đúng câu hỏi với đối tác", en: "A review of operating and licensing requirements so studios ask partners the right questions" },
+      { vi: "Hỗ trợ kết nối, chuẩn bị tài liệu giới thiệu và điều phối lộ trình ra mắt", en: "Introductions, pitch materials and launch-roadmap coordination" },
+    ],
+    deliverables: [
+      { vi: "Bản đánh giá mức phù hợp thị trường", en: "Market-fit brief" },
+      { vi: "Shortlist đối tác kèm tiêu chí lựa chọn", en: "Partner shortlist with selection criteria" },
+      { vi: "Checklist vận hành và giấy phép cho bên pháp lý xác nhận", en: "Operations and licensing checklist for legal review" },
+      { vi: "Lộ trình ra mắt sơ bộ và các mốc marketing", en: "Preliminary launch roadmap and marketing milestones" },
+    ],
+  },
 ];
 
 export function getService(slug: string): Service | undefined {

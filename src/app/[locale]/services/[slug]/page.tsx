@@ -18,6 +18,16 @@ import EditorialMedia, { editorialImageForService } from "@/components/Editorial
 import { ProjectCard } from "@/components/cards";
 
 const serviceSeoMeta: Record<string, Partial<Record<Locale, { title: string; description: string }>>> = {
+  "publisher-search": {
+    vi: {
+      title: "Tìm Nhà Phát Hành Game Tại Việt Nam & Kết Nối Đối Tác",
+      description: "ANBU đánh giá mức phù hợp sản phẩm với thị trường Việt Nam, lập shortlist nhà phát hành và điều phối kế hoạch ra mắt cho studio quốc tế.",
+    },
+    en: {
+      title: "Find a Game Publisher in Vietnam & Partner Matching",
+      description: "ANBU assesses market fit, shortlists publishers and coordinates the launch plan for international studios entering Vietnam.",
+    },
+  },
   "game-app-marketing": {
     vi: {
       title: "Agency Game Marketing & Launch Game Chuyên Nghiệp",
@@ -215,9 +225,16 @@ export default async function ServiceDetailPage({
             <Link href={localePath(locale, "/contact")} className="btn-primary mt-8">
               {service.slug === "game-app-marketing"
                 ? (locale === "vi" ? "Nhận tư vấn launch plan" : "Discuss your launch plan")
+                : service.slug === "publisher-search"
+                ? (locale === "vi" ? "Trao đổi về tìm đối tác" : "Discuss partner search")
                 : dict.nav.cta}
               <Icon name="arrow" className="h-4 w-4" />
             </Link>
+            {service.slug === "publisher-search" && (
+              <Link href={localizeBlogPath(localePath(locale, "/blog/game-publishing-in-vietnam-nhung-bai-toan-can-giai-truoc-khi-dau-tu-marketing"))} className="mt-4 inline-flex text-sm font-semibold text-navy-700 hover:text-orange-600">
+                {locale === "vi" ? "Đọc: những bài toán cần giải trước khi đầu tư marketing →" : "Read: challenges to address before investing in marketing →"}
+              </Link>
+            )}
             {service.slug === "esports-gaming-marketing-sea" && (
               <Link href={localizeBlogPath(localePath(locale, "/blog/chien-luoc-phat-hanh-game-mobile-tai-thai-lan"))} className="mt-4 inline-flex text-sm font-semibold text-navy-700 hover:text-orange-600">
                 {locale === "vi" ? "Đọc playbook ra mắt game tại Thái Lan →" : "Read the Thailand game launch playbook →"}

@@ -694,7 +694,7 @@ export default async function BlogPostPage({
                     ? "ANBU hỗ trợ đánh giá sản phẩm, lập shortlist, kết nối đối tác và điều phối kế hoạch ra mắt."
                     : "ANBU helps assess the title, build a shortlist, connect partners and coordinate market launch."}
                 </p>
-                <Link href={localePath(locale, "/contact")} className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-300 hover:text-white">
+                <Link href={localePath(locale, "/services/publisher-search")} className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-300 hover:text-white">
                   {locale === "vi" ? "Trao đổi với ANBU" : "Talk to ANBU"} <span aria-hidden="true">→</span>
                 </Link>
               </div>

@@ -28,6 +28,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
       });
     }
+    for (const path of ["/how-we-work", "/glossary"]) {
+      entries.push({
+        url: `${siteUrl}/${locale}${path}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])),
+            "x-default": `${siteUrl}/vi${path}`,
+          },
+        },
+      });
+    }
     for (const s of services) {
       const path = `/services/${s.slug}`;
       entries.push({
