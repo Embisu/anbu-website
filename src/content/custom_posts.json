@@ -1,5 +1,414 @@
 [
   {
+    "slug": "tiktok-marketing-trends-game-mobile-viet-nam-noi-dung-viral-toi-uu-cpi",
+    "slug_en": "tiktok-marketing-trends-mobile-games-vietnam-viral-content-cpi-organic-installs",
+    "title": {
+      "vi": "TikTok Marketing Trends cho Game Mobile tại Việt Nam: Tận dụng nội dung viral để tối ưu CPI và bứt phá lượt tải tự nhiên",
+      "en": "TikTok Marketing Trends for Mobile Games in Vietnam: Using Viral Content to Optimize CPI and Skyrocket Organic Installs"
+    },
+    "excerpt": {
+      "vi": "Khi lượt tải game mobile tại Việt Nam giảm nhưng doanh thu vẫn tăng, TikTok trở thành kênh để tối ưu chi phí và chất lượng người chơi. Bài viết tổng hợp bốn xu hướng nội dung, ba case study của VNGGames, Funtap, VTC Mobile và ba trụ cột chiến lược cho nhà phát hành.",
+      "en": "As mobile game downloads in Vietnam fall while revenue keeps rising, TikTok has become a channel for optimizing cost and player quality. This article covers four content trends, three case studies from VNGGames, Funtap and VTC Mobile, and three strategic pillars for publishers."
+    },
+    "category": {
+      "vi": "Marketing Game",
+      "en": "Game Marketing"
+    },
+    "date": "2026-11-11",
+    "readingTime": 8,
+    "cover": "/blog-media/1794300000000-tiktok-sq-cover.jpg",
+    "cover_en": "/blog-media/1794300000000-tiktok-wide-cover.jpg",
+    "focal": "50% 35%",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Mobile Gaming Industry Report Q3 2026",
+          "en": "Gamota: Vietnam Mobile Gaming Industry Report Q3 2026"
+        },
+        "href": "https://gamota.com/en_GB/gamota-lab/reports/gamota-launches-vietnam-mobile-gaming-industry-report-q3-2026/"
+      },
+      {
+        "label": {
+          "vi": "Bộ Văn hóa, Thể thao và Du lịch: Game Việt Nam tăng trưởng từ giá trị sản phẩm",
+          "en": "Ministry of Culture, Sports and Tourism: Vietnamese games grow from product value"
+        },
+        "href": "https://bvhttdl.gov.vn/game-viet-nam-tang-truong-tu-gia-tri-san-pham.htm"
+      },
+      {
+        "label": {
+          "vi": "Sensor Tower: State of Gaming 2025",
+          "en": "Sensor Tower: State of Gaming 2025"
+        },
+        "href": "https://sensortower.com/state-of-gaming-2025"
+      },
+      {
+        "label": {
+          "vi": "Brands Vietnam: TikTok mở vàng cho các thương hiệu game tiếp cận số lượng người chơi mới khổng lồ",
+          "en": "Brands Vietnam: TikTok opens a goldmine for game brands to reach huge numbers of new players"
+        },
+        "href": "https://www.brandsvietnam.com/22857-tiktok-mo-vang-de-cac-thuong-hieu-game-tiep-can-so-luong-nguoi-choi-moi-khong-lo"
+      },
+      {
+        "label": {
+          "vi": "TikTok for Business: Gaming marketer's ultimate guide to TikTok content",
+          "en": "TikTok for Business: Gaming marketer's ultimate guide to TikTok content"
+        },
+        "href": "https://ads.tiktok.com/business/en-US/blog/gaming-marketers-ultimate-guide-tiktok-content"
+      },
+      {
+        "label": {
+          "vi": "TikTok for Business: Missions for the Modern Marketer (case study One Punch Man)",
+          "en": "TikTok for Business: Missions for the Modern Marketer (One Punch Man case study)"
+        },
+        "href": "https://ads.tiktok.com/business/library/Missions_for_the_Modern_Marketer_tiktok.pdf"
+      },
+      {
+        "label": {
+          "vi": "TikTok for Business: VNGGames Kiếm Thế Origin Case Study",
+          "en": "TikTok for Business: VNGGames Kiếm Thế Origin Case Study"
+        },
+        "href": "https://ads.tiktok.com/business/en-SG/inspiration/vng-kiemtheorigin"
+      },
+      {
+        "label": {
+          "vi": "TikTok for Business: Funtap Thiên Kiếm Chi Vân Case Study",
+          "en": "TikTok for Business: Funtap Thiên Kiếm Chi Vân Case Study"
+        },
+        "href": "http://ads.tiktok.com/business/en/inspiration/funtap-ThienKiemChiVan"
+      },
+      {
+        "label": {
+          "vi": "TikTok for Business: VTC Mobile Giang Hồ Ngũ Tuyệt Case Study",
+          "en": "TikTok for Business: VTC Mobile Giang Hồ Ngũ Tuyệt Case Study"
+        },
+        "href": "http://ads.tiktok.com/business/en-US/inspiration/vtcmobile-GiangHoNguTuyet"
+      }
+    ],
+    "body": [
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bối cảnh thị trường game mobile Việt Nam và vai trò của TikTok",
+          "en": "Vietnam’s mobile game market and the role of TikTok"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794300000000-tiktok-sq-market.jpg",
+        "src_en": "/blog-media/1794300000000-tiktok-wide-market.jpg",
+        "alt": {
+          "vi": "Decoding Vietnam mobile gaming: bối cảnh thị trường game mobile Việt Nam",
+          "en": "Decoding Vietnam mobile gaming: the market context"
+        },
+        "caption": {
+          "vi": "Bối cảnh thị trường game mobile Việt Nam và vai trò của TikTok.",
+          "en": "Vietnam’s mobile game market and the role of TikTok."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thị trường game mobile Việt Nam đang bước vào giai đoạn cạnh tranh mạnh hơn, khi số lượt tải không còn là yếu tố duy nhất quyết định hiệu quả kinh doanh.",
+          "en": "Vietnam’s mobile game market is entering a more competitive phase, where the number of downloads is no longer the only factor that determines business performance."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [Vietnam Mobile Gaming Industry Report Q3 2026 của Gamota](https://gamota.com/en_GB/gamota-lab/reports/gamota-launches-vietnam-mobile-gaming-industry-report-q3-2026/), công bố ngày 30/10/2026, doanh thu và lượt tải game mobile tại Việt Nam trong quý III lần lượt giảm 7,9% và 8,1% so với quý trước.",
+          "en": "According to [Gamota’s Vietnam Mobile Gaming Industry Report Q3 2026](https://gamota.com/en_GB/gamota-lab/reports/gamota-launches-vietnam-mobile-gaming-industry-report-q3-2026/), published on October 30, 2026, mobile game revenue and downloads in Vietnam in Q3 fell by 7.9% and 8.1% respectively compared with the previous quarter."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tuy nhiên, số liệu nửa đầu năm 2026 theo [Bộ văn hóa, thể thao và du lịch](https://bvhttdl.gov.vn/game-viet-nam-tang-truong-tu-gia-tri-san-pham.htm), cho thấy một xu hướng đáng chú ý: thị trường Việt Nam ghi nhận 76,5 triệu lượt tải game mobile, giảm 9,7% so với cùng kỳ năm trước, nhưng doanh thu vẫn đạt 177 triệu USD, tăng 7,5%. Điều này cho thấy dù lượng người tải game giảm, khả năng chuyển đổi người chơi thành doanh thu đang được cải thiện.",
+          "en": "However, H1 2026 figures from the [Ministry of Culture, Sports and Tourism](https://bvhttdl.gov.vn/game-viet-nam-tang-truong-tu-gia-tri-san-pham.htm) show a notable trend: Vietnam recorded 76.5 million mobile game downloads, down 9.7% year-on-year, yet revenue reached USD 177 million, up 7.5%. This suggests that even as the number of people downloading games falls, the ability to convert players into revenue is improving."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong khi đó, theo [Sensor Tower](https://sensortower.com/state-of-gaming-2025), thị phần hiển thị quảng cáo game mobile trên TikTok tăng 67% trong năm 2024 so với năm trước, cho thấy mức độ cạnh tranh và đầu tư quảng cáo trên nền tảng ngày càng lớn.",
+          "en": "Meanwhile, according to [Sensor Tower](https://sensortower.com/state-of-gaming-2025), TikTok’s share of mobile game ad impressions grew 67% in 2024 compared with the year before, showing that competition and advertising investment on the platform keep increasing."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Những dữ liệu này cho thấy các studio không chỉ cần tìm kiếm người chơi mới mà còn phải tối ưu chi phí thu hút và chất lượng người dùng. TikTok trở thành một kênh đáng chú ý nhờ khả năng kết hợp nội dung giải trí, Creator và quảng cáo để đưa game đến gần người chơi hơn.",
+          "en": "These data points show that studios need not only to find new players but also to optimize acquisition cost and user quality. TikTok has become a channel worth watching thanks to its ability to combine entertaining content, creators, and advertising to bring games closer to players."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bốn xu hướng nội dung TikTok Marketing \"đo ni đóng giày\" cho game thủ Việt",
+          "en": "Four TikTok marketing content trends tailored for Vietnamese gamers"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Để kích hoạt hiệu ứng lan truyền tự nhiên (viral), các studio phát hành game tại Việt Nam đang tập trung vào 4 xu hướng nội dung phù hợp với thị hiếu bản địa.",
+          "en": "To trigger organic viral effects, game publishers in Vietnam are focusing on four content trends that fit local tastes."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794300000000-tiktok-sq-trends.jpg",
+        "src_en": "/blog-media/1794300000000-tiktok-wide-trends.jpg",
+        "alt": {
+          "vi": "4 xu hướng nội dung TikTok cho game thủ Việt: hoài niệm, gameplay drama và meme, creator và trending sound, organic seeding và Spark Ads",
+          "en": "4 TikTok content trends for Vietnamese gamers: nostalgia, gameplay drama and memes, creators and trending sound, organic seeding and Spark Ads"
+        },
+        "caption": {
+          "vi": "Bốn xu hướng nội dung TikTok cho game thủ Việt.",
+          "en": "Four TikTok content trends for Vietnamese gamers."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đánh trúng yếu tố hoài niệm (Nostalgia) và cảm xúc cộng đồng",
+          "en": "Tapping into nostalgia and community emotion"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Game thủ Việt Nam có sự gắn kết đặc biệt mạnh mẽ với ký ức tuổi thơ (văn hóa võ lâm kiếm hiệp, bắn súng tọa độ, Audition...). Các chiến dịch gợi lại thanh xuân kết hợp với bài hát kinh điển được phối lại luôn tạo ra lượng thảo luận khổng lồ và lượt chia sẻ tự nhiên trên TikTok. Theo [Brands Vietnam](https://www.brandsvietnam.com/22857-tiktok-mo-vang-de-cac-thuong-hieu-game-tiep-can-so-luong-nguoi-choi-moi-khong-lo), hashtag #gunnyorigin từng đạt 290 triệu lượt xem trong chiến dịch.",
+          "en": "Vietnamese gamers have an especially strong attachment to childhood memories (wuxia culture, coordinate-based shooters, Audition...). Campaigns that bring back the “golden youth” feeling, combined with remixed classic songs, consistently generate huge discussion and organic shares on TikTok. According to [Brands Vietnam](https://www.brandsvietnam.com/22857-tiktok-mo-vang-de-cac-thuong-hieu-game-tiep-can-so-luong-nguoi-choi-moi-khong-lo), the hashtag #gunnyorigin reached 290 million views during the campaign."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Biến Gameplay thành Drama ngắn và Meme hài hước",
+          "en": "Turning gameplay into short dramas and funny memes"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chỉ đăng video giới thiệu tính năng hay đồ họa, studio có thể biến những tình huống trong game thành nội dung giải trí ngắn, dễ hiểu ngay cả với người chưa chơi. Những màn tranh boss, drama bang hội, pha lật kèo phút chót, mở rương trúng vật phẩm hiếm hay cảnh nâng cấp trang bị thất bại đều có thể trở thành chất liệu cho video hài hước. Các định dạng POV như “Khi bạn nói chỉ chơi thêm 5 phút” hoặc “Đứa bạn luôn nhận mình gánh team” cũng dễ tạo sự đồng cảm và kéo người xem vào phần bình luận.",
+          "en": "Instead of only posting videos that introduce features or graphics, studios can turn in-game situations into short entertainment content that is easy to understand even for people who have never played. Boss fights, guild drama, last-minute comebacks, opening a chest to find a rare item, or a failed gear upgrade can all become material for funny videos. POV formats such as “When you say you’ll play just 5 more minutes” or “The friend who always claims they’re carrying the team” also create empathy easily and pull viewers into the comments."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đòn bẩy Creator bản địa và \"Âm thanh bắt tai\" (Trending Sound)",
+          "en": "Local creators and “catchy sounds” (Trending Sound) as a lever"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Creator và streamer giúp game xuất hiện tự nhiên hơn trong những cộng đồng vốn đã có sẵn sự quan tâm đến gaming. Thay vì chỉ phụ thuộc vào một vài gương mặt nổi tiếng, studio có thể kết hợp nhiều creator quy mô khác nhau, từ streamer chuyên game đến Micro-KOC có cộng đồng nhỏ nhưng tương tác tốt, tùy theo tệp người chơi mục tiêu.",
+          "en": "Creators and streamers help a game appear more naturally in communities that already care about gaming. Instead of depending on a few famous faces, studios can combine creators of different sizes, from dedicated gaming streamers to Micro-KOCs with small but highly engaged communities, depending on the target player segment."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nội dung có thể là trải nghiệm lần đầu, thử thách trong game, reaction khi mở gacha hoặc những màn phối hợp cùng bạn bè. Bên cạnh đó, việc lựa chọn âm thanh, hiệu ứng và nhạc nền phù hợp cũng giúp video bắt nhịp với xu hướng trên TikTok. Theo [TikTok For Business](https://ads.tiktok.com/business/en-US/blog/gaming-marketers-ultimate-guide-tiktok-content), âm thanh, hiệu ứng và các trào lưu cộng đồng là những yếu tố nhà phát hành có thể kết hợp để phát triển nội dung gaming.",
+          "en": "Content can be a first-time experience, an in-game challenge, a reaction to opening a gacha, or teamwork with friends. In addition, choosing suitable sounds, effects, and background music helps videos stay in step with TikTok trends. According to [TikTok For Business](https://ads.tiktok.com/business/en-US/blog/gaming-marketers-ultimate-guide-tiktok-content), sounds, effects, and community trends are elements publishers can combine to develop gaming content."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Công thức \"Organic Seeding kết hợp Spark Ads\" để ghìm CPI",
+          "en": "The “Organic Seeding + Spark Ads” formula to hold CPI down"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì đầu tư ngân sách quảng cáo lớn ngay từ đầu, studio có thể thử nghiệm nhiều nội dung trên kênh chính thức và kênh creator, sau đó chọn những video có tín hiệu tương tác tốt để tiếp tục phân phối bằng Spark Ads. Hình thức này cho phép quảng cáo trực tiếp từ bài đăng TikTok có sẵn, đồng thời giữ lại lượt xem, lượt thích, bình luận và chia sẻ trên bài đăng gốc.",
+          "en": "Instead of investing a large ad budget from the start, studios can test many pieces of content on official and creator channels, then pick the videos with good engagement signals to keep distributing with Spark Ads. This format lets you advertise directly from an existing TikTok post while keeping the views, likes, comments, and shares on the original post."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây cũng là cách VNG từng áp dụng trong chiến dịch One Punch Man: sử dụng Spark Ads để khuếch đại video tự nhiên và nội dung từ creator, qua đó ghi nhận tỷ lệ chuyển đổi tăng 16% và chi phí mỗi lượt cài đặt giảm 24% theo [case study của TikTok](https://ads.tiktok.com/business/library/Missions_for_the_Modern_Marketer_tiktok.pdf). Tuy nhiên, hiệu quả CPI còn phụ thuộc vào chất lượng nội dung, tệp người xem và cách tối ưu chiến dịch; Spark Ads không đồng nghĩa với việc chi phí quảng cáo chắc chắn sẽ giảm.",
+          "en": "This is also the approach VNG used in its One Punch Man campaign: using Spark Ads to amplify organic videos and creator content, which recorded a 16% increase in conversion rate and a 24% decrease in cost per install, according to a [TikTok case study](https://ads.tiktok.com/business/library/Missions_for_the_Modern_Marketer_tiktok.pdf). However, CPI performance still depends on content quality, the audience, and how the campaign is optimized; Spark Ads do not mean advertising costs will necessarily fall."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bài học thực chiến từ các chiến dịch của VNG, Funtap và VTC Mobile",
+          "en": "Practical lessons from VNG, Funtap, and VTC Mobile campaigns"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vượt qua định kiến chỉ mang lại lượt tải vãng lai, TikTok tại Việt Nam đã trở thành kênh tăng trưởng doanh thu thực chiến cho game di động. Ba chiến dịch từ VNGGames, Funtap và VTC Mobile dưới đây là minh chứng rõ nhất cho công thức: dùng nội dung chân thực để ghìm chi phí cài đặt và ứng dụng thuật toán phễu sâu để săn tìm tệp game thủ chịu chi.",
+          "en": "Beyond the stereotype of only bringing casual installs, TikTok in Vietnam has become a practical revenue growth channel for mobile games. The three campaigns below from VNGGames, Funtap, and VTC Mobile are the clearest proof of the formula: use authentic content to hold down install costs and apply deep-funnel algorithms to find players willing to spend."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794300000000-tiktok-sq-cases.jpg",
+        "src_en": "/blog-media/1794300000000-tiktok-sq-cases.jpg",
+        "alt": {
+          "vi": "Các case study đã được chứng minh: VNG, Funtap và VTC Mobile",
+          "en": "Proven case studies: VNG, Funtap, and VTC Mobile"
+        },
+        "caption": {
+          "vi": "Ba case study trên TikTok: VNGGames (Kiếm Thế Origin), Funtap (Thiên Kiếm Chi Vân), VTC Mobile (Giang Hồ Ngũ Tuyệt).",
+          "en": "Three TikTok case studies: VNGGames (Kiếm Thế Origin), Funtap (Thiên Kiếm Chi Vân), and VTC Mobile (Giang Hồ Ngũ Tuyệt)."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "VNGGames với Kiếm Thế Origin: Chiến lược Full-Funnel và Spark Ads ghìm 53% CPI",
+          "en": "VNGGames with Kiếm Thế Origin: A Full-Funnel strategy and Spark Ads holding CPI 53% down"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đứng trước bài toán vừa gợi nhắc hoài niệm cho tệp 8x–9x, vừa lôi cuốn Gen Z, VNGGames lựa chọn chiến lược toàn phễu (Full-Funnel) thay vì chạy quảng cáo cài đặt phân mảnh. Ở tầng nhận diện, NPH sử dụng định dạng TopView chiếm trọn màn hình ngày ra mắt để tạo độ phủ tối đa. Ở tầng chuyển đổi, VNGGames ứng dụng Smart Performance Campaign (SPC) kết hợp AEO, đồng thời tận dụng các video gameplay chân thực từ KOC để chạy Spark Ads nhằm triệt tiêu tâm lý kháng quảng cáo của game thủ.",
+          "en": "Facing the challenge of both evoking nostalgia for the 8x–9x generation and appealing to Gen Z, VNGGames chose a full-funnel strategy instead of running fragmented install ads. At the awareness layer, the publisher used the TopView format to take over the entire screen on launch day for maximum reach. At the conversion layer, VNGGames applied Smart Performance Campaign (SPC) combined with AEO, while using authentic gameplay videos from KOCs to run Spark Ads to counter gamers’ resistance to advertising."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [TikTok for Business - VNGGames Kiếm Thế Origin Case Study](https://ads.tiktok.com/business/en-SG/inspiration/vng-kiemtheorigin), sự kết hợp này giúp chi phí trên mỗi lượt cài đặt (**CPI**) thực tế giảm sâu **53%** so với mục tiêu dự toán, đồng thời đưa tổng sản lượng cài đặt trong tuần đầu vượt mốc **KPI tới 184,98%**.",
+          "en": "According to the [TikTok for Business - VNGGames Kiếm Thế Origin Case Study](https://ads.tiktok.com/business/en-SG/inspiration/vng-kiemtheorigin), this combination reduced actual cost per install (**CPI**) by **53%** against the budgeted target, while pushing total first-week installs past the **KPI by up to 184.98%**."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Funtap với Thiên Kiếm Chi Vân: Đột phá IAP nhờ Multi-Conversion AEO",
+          "en": "Funtap with Thiên Kiếm Chi Vân: An IAP breakthrough with Multi-Conversion AEO"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chạy theo lượt tải rỗng, Funtap tập trung tối ưu doanh thu nạp thẻ (In-App Purchase - IAP) cho Thiên Kiếm Chi Vân bằng công nghệ Multi-Conversion AEO kết hợp CBO của TikTok. Thuật toán tự động học sâu vào hành vi nạp tiền, chủ động dồn ngân sách vào các nhóm quảng cáo kích hoạt giao dịch mua hàng nhanh nhất.",
+          "en": "Instead of chasing empty downloads, Funtap focused on optimizing in-app purchase (IAP) revenue for Thiên Kiếm Chi Vân using TikTok’s Multi-Conversion AEO combined with CBO. The algorithm automatically learns deeply from spending behavior and proactively shifts budget to the ad groups that trigger purchases fastest."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo ghi nhận từ [TikTok for Business Case Study](http://ads.tiktok.com/business/en/inspiration/funtap-ThienKiemChiVan), giải pháp này giúp Funtap giảm tới 93% chi phí cho mỗi lượt mua hàng (CPA) và nâng tỷ suất hoàn vốn quảng cáo (Purchase ROAS) lên mức kỷ lục 58 lần, triệt tiêu tình trạng lãng phí ngân sách vào tệp người chơi không chi tiêu.",
+          "en": "According to the [TikTok for Business Case Study](http://ads.tiktok.com/business/en/inspiration/funtap-ThienKiemChiVan), this solution helped Funtap cut cost per purchase (CPA) by up to 93% and raise Purchase ROAS to a record 58x, eliminating budget wasted on players who do not spend."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "VTC Mobile với Giang Hồ Ngũ Tuyệt: Lọc game thủ VIP bằng High Spending Power",
+          "en": "VTC Mobile with Giang Hồ Ngũ Tuyệt: Filtering VIP gamers with High Spending Power"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Để săn tìm tệp \"người chơi cá voi\" (VIP) cho tựa game kiếm hiệp *Giang Hồ Ngũ Tuyệt*, VTC Mobile ứng dụng tính năng High Spending Power (HSP) trên Android kết hợp cùng AEO. Bộ lọc máy học này tự động đối chiếu lịch sử thanh toán số để phân phối các video kịch bản tranh đoạt lực chiến đến thẳng nhóm game thủ có thói quen nạp tiền thường xuyên.",
+          "en": "To find the “whale” (VIP) segment for the wuxia game *Giang Hồ Ngũ Tuyệt*, VTC Mobile applied the High Spending Power (HSP) feature on Android combined with AEO. This machine-learning filter automatically matches digital payment history to deliver combat-power contest scripted videos straight to gamers who top up regularly."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Số liệu từ [TikTok for Business - VTC Mobile Case Study](http://ads.tiktok.com/business/en-US/inspiration/vtcmobile-GiangHoNguTuyet) chỉ ra rằng việc nhắm trúng tệp HSP đã giúp VTC Mobile cắt giảm 60% chi phí chuyển đổi mua hàng và tăng Purchase ROAS lên 14,3 lần so với cách nhắm mục tiêu thông thường, bảo chứng nguồn thu bền vững cho game hardcore.",
+          "en": "Data from the [TikTok for Business - VTC Mobile Case Study](http://ads.tiktok.com/business/en-US/inspiration/vtcmobile-GiangHoNguTuyet) shows that targeting the HSP segment helped VTC Mobile cut purchase conversion cost by 60% and raise Purchase ROAS to 14.3x compared with conventional targeting, underpinning a sustainable revenue stream for hardcore games."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bài học cốt lõi cho thị trường phát hành game mobile Việt Nam",
+          "en": "Core lessons for mobile game publishers in Vietnam"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nhìn lại các chiến dịch của VNGGames, Funtap và VTC Mobile, thành công trên TikTok không đến từ những trào lưu ngẫu nhiên mà là kết quả của việc kết hợp chuẩn xác giữa nội dung chạm cảm xúc và thuật toán tối ưu chuyển đổi sâu. Để tăng trưởng bền vững tại thị trường Việt Nam, các nhà phát hành cần nắm vững 3 trụ cột chiến lược:",
+          "en": "Looking back at the VNGGames, Funtap, and VTC Mobile campaigns, success on TikTok does not come from random trends but from the precise combination of emotionally resonant content and deep conversion-optimization algorithms. For sustainable growth in the Vietnamese market, publishers need to master three strategic pillars:"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794300000000-tiktok-sq-formula.jpg",
+        "src_en": "/blog-media/1794300000000-tiktok-wide-formula.jpg",
+        "alt": {
+          "vi": "Công thức chiến thắng: nội dung KOC và gameplay kết hợp Spark Ads, AEO và High Spending Power",
+          "en": "The winning formula: KOC and gameplay content with Spark Ads, plus AEO and High Spending Power"
+        },
+        "caption": {
+          "vi": "Công thức chiến thắng: nội dung KOC chân thực kết hợp Spark Ads, cùng tối ưu phễu sâu bằng AEO và High Spending Power.",
+          "en": "The winning formula: authentic KOC content with Spark Ads, plus deep-funnel optimization with AEO and High Spending Power."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Tối ưu phễu sâu (AEO & High Spending Power):** Doanh thu game MMORPG và thẻ tướng phụ thuộc lớn vào nhóm \"người chơi cá voi\" (VIP). Thay vì lãng phí ngân sách chạy đua chỉ số CPI lượt tải ảo, việc cấu hình máy học nhắm thẳng vào sự kiện thanh toán (Purchase) và tệp có sức chi tiêu cao (HSP) là chìa khóa cốt lõi để bảo chứng tỷ suất lợi nhuận (ROAS).",
+          "en": "**Deep-funnel optimization (AEO & High Spending Power):** Revenue from MMORPG and card-battler games depends heavily on the “whale” (VIP) segment. Instead of wasting budget racing for vanity install CPI, configuring machine learning to target the payment event (Purchase) and high-spending-power (HSP) audiences is the key to protecting return on ad spend (ROAS)."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Nội dung KOC chân thực kết hợp Spark Ads:** Game thủ Việt có xu hướng kháng cự mạnh với các video quảng cáo 3D bóng bẩy nhưng xa rời thực tế. Khai thác góc nhìn trải nghiệm tự nhiên từ KOC rồi khuếch đại bằng Spark Ads là giải pháp tối ưu giúp giảm chi phí tiếp cận và gia tăng độ tin cậy khi chuyển đổi.",
+          "en": "**Authentic KOC content combined with Spark Ads:** Vietnamese gamers tend to strongly resist polished 3D ad videos that feel detached from reality. Drawing on the natural experience of KOCs and amplifying it with Spark Ads is an optimal way to reduce reach costs and increase trust at conversion."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Gom phễu sớm từ giai đoạn Pre-launch:** Không chờ đến ngày mở server mới chạy media. Tích lũy tệp đăng ký trước (App Pre-Registration) từ 1–2 tháng thông qua các trào lưu hoài niệm hoặc tính năng cá nhân hóa (nặn mặt, thời trang) sẽ tạo lực đẩy tự nhiên khổng lồ, đưa tựa game leo thẳng đỉnh bảng xếp hạng (Top 1 Store) ngay ngày đầu ra mắt.",
+          "en": "**Build the funnel early from the pre-launch stage:** Don’t wait until the server opens to start running media. Accumulating a pre-registration base (App Pre-Registration) over 1–2 months through nostalgia trends or personalization features (character face creation, fashion) creates a huge organic push that can take a game straight to the top of the store charts (Top 1 Store) on launch day."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đọc thêm",
+          "en": "Further reading"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "[TikTok marketing game mobile: Công thức sản xuất Creative giữ chân game thủ trong 2 giây đầu](/vi/blog/tiktok-marketing-cho-game-mobile-viet-nam)",
+            "en": "[Mobile Game TikTok Marketing: 2-Second Hook Frameworks for Viral Conversion](/en/blog/mobile-game-tiktok-marketing-2-second-hook-frameworks-viral)"
+          },
+          {
+            "vi": "[Chiến lược nội dung TikTok cho Game và Thương hiệu: Giữ chân 3 giây đầu](/vi/blog/chien-luoc-noi-dung-tiktok-cho-thuong-hieu)",
+            "en": "[TikTok Content Strategy for Gaming & Brands: Mastering the First 3 Seconds](/en/blog/tiktok-content-strategy-gaming-brands-first-3-seconds)"
+          },
+          {
+            "vi": "[Influencer Marketing game Việt Nam: Revelation, Gunny Origin](/vi/blog/influencer-marketing-game-viet-nam-revelation-gunny-origin)",
+            "en": "[Influencer Marketing in Vietnam’s Gaming Industry: Revelation, Gunny Origin](/en/blog/influencer-marketing-vietnam-gaming-revelation-gunny-origin)"
+          },
+          {
+            "vi": "[Thị trường game Việt Nam 2026: Cơ hội tăng trưởng ở đâu?](/vi/blog/thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau)",
+            "en": "[Vietnam's Gaming Market in 2026: Where Are the Growth Opportunities?](/en/blog/vietnam-gaming-market-2026-where-are-the-growth-opportunities)"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "toi-uu-kenh-game-tai-thai-lan-chien-luoc-always-on",
     "slug_en": "game-channel-optimization-thailand-always-on-strategy",
     "title": {
@@ -918,6 +1327,13 @@
       {
         "type": "p",
         "text": {
+          "vi": "**Xem thêm xu hướng nội dung và case study TikTok cho game mobile:** [TikTok Marketing Trends cho Game Mobile tại Việt Nam: Tận dụng nội dung viral để tối ưu CPI và bứt phá lượt tải tự nhiên](/vi/blog/tiktok-marketing-trends-game-mobile-viet-nam-noi-dung-viral-toi-uu-cpi).",
+          "en": "**See also TikTok content trends and case studies for mobile games:** [TikTok Marketing Trends for Mobile Games in Vietnam: Using Viral Content to Optimize CPI and Skyrocket Organic Installs](/en/blog/tiktok-marketing-trends-mobile-games-vietnam-viral-content-cpi-organic-installs)."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
           "vi": "ANBU là agency chuyên KOL marketing và community management cho game tại Việt Nam và Đông Nam Á. Liên hệ ANBU để chọn KOL theo đúng tệp người chơi, xây dựng nội dung từ điểm khác biệt của sản phẩm và đo lường hiệu quả theo CPI, retention và ROAS.",
           "en": "ANBU is an agency specializing in KOL Marketing and Community Management for the gaming industry in Vietnam and Southeast Asia. Contact ANBU to identify influencers who align with your target player segments, develop creative content around your product's unique selling points, and measure campaign performance through CPI, retention, and ROAS."
         }
@@ -1299,6 +1715,13 @@
         "caption": {
           "vi": "Các nhà phát hành đang chuẩn bị ra mắt hoặc mở rộng tại Việt Nam có thể liên hệ ANBU.",
           "en": "Publishers preparing to launch or expand in Vietnam can contact ANBU."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Xem thêm xu hướng nội dung và case study TikTok cho game mobile:** [TikTok Marketing Trends cho Game Mobile tại Việt Nam: Tận dụng nội dung viral để tối ưu CPI và bứt phá lượt tải tự nhiên](/vi/blog/tiktok-marketing-trends-game-mobile-viet-nam-noi-dung-viral-toi-uu-cpi).",
+          "en": "**See also TikTok content trends and case studies for mobile games:** [TikTok Marketing Trends for Mobile Games in Vietnam: Using Viral Content to Optimize CPI and Skyrocket Organic Installs](/en/blog/tiktok-marketing-trends-mobile-games-vietnam-viral-content-cpi-organic-installs)."
         }
       },
       {
