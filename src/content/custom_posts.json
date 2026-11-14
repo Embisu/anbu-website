@@ -296,6 +296,19 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1794500000000-esports-vi-model.jpg",
+        "src_en": "/blog-media/1794500000000-esports-en-model.jpg",
+        "alt": {
+          "vi": "3 mô hình esports cho từng giai đoạn phát triển game: Creator-led Tournament, Community Tournament, Official League",
+          "en": "3 esports models for each stage of game development: Creator-led Tournament, Community Tournament, Official League"
+        },
+        "caption": {
+          "vi": "Ba mô hình esports: giải đấu cùng creator, giải đấu cộng đồng và giải đấu chính thức.",
+          "en": "Three esports models: creator-led tournament, community tournament and official league."
+        }
+      },
+      {
         "type": "p",
         "text": {
           "vi": "Không có một mô hình esports phù hợp với mọi tựa game. Với game mới tại Thái Lan, nhà phát hành có thể cân nhắc ba hướng triển khai tùy theo mức độ nhận biết, nhu cầu thi đấu và sự phát triển của cộng đồng.",
