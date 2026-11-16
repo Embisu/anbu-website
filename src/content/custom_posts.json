@@ -8004,5 +8004,468 @@
       }
     ],
     "slug_en": "vietnam-gaming-market-evolving-player-acquisition"
+  },
+  {
+    "slug": "localization-vs-culturalization-nha-phat-hanh-game-quoc-te-tai-viet-nam",
+    "slug_en": "localization-vs-culturalization-what-international-game-publishers-miss-in-vietnam",
+    "title": {
+      "vi": "Localization vs. Culturalization: Những điều nhà phát hành game quốc tế thường bỏ lỡ khi quảng bá tại Việt Nam",
+      "en": "Localization vs. Culturalization: What International Game Publishers Often Miss When Marketing in Vietnam"
+    },
+    "excerpt": {
+      "vi": "Dịch đúng tiếng Việt chưa đủ để một tựa game kết nối với người chơi. Bài viết phân biệt Localization và Culturalization, chỉ ra 4 điểm mù nhà phát hành quốc tế hay gặp và cách thích ứng văn hóa trong chiến dịch marketing game.",
+      "en": "A correct Vietnamese translation is not enough for a game to connect with players. This article separates Localization from Culturalization, points out 4 blind spots international publishers often hit, and shows how to build cultural adaptation into a game marketing campaign."
+    },
+    "category": {
+      "en": "Game Marketing",
+      "vi": "Marketing Game"
+    },
+    "date": "2026-11-16",
+    "readingTime": 8,
+    "author": "Lê Như Ngọc",
+    "color": "from-blue-600 to-indigo-600",
+    "variant": "game",
+    "cover": "/blog-covers/localization-translation-team.jpg",
+    "sources": [
+      {
+        "label": {
+          "vi": "DataReportal - Digital 2026: Vietnam",
+          "en": "DataReportal - Digital 2026: Vietnam"
+        },
+        "href": "https://datareportal.com/reports/digital-2026-vietnam"
+      },
+      {
+        "label": {
+          "vi": "Aung Pyae (2018) - Understanding the role of culture and cultural attributes in digital game localization, Entertainment Computing 26",
+          "en": "Aung Pyae (2018) - Understanding the role of culture and cultural attributes in digital game localization, Entertainment Computing 26"
+        },
+        "href": "https://www.sciencedirect.com/science/article/abs/pii/S1875952117300496"
+      },
+      {
+        "label": {
+          "vi": "CSA Research - Can't Read, Won't Buy - B2C (2020)",
+          "en": "CSA Research - Can't Read, Won't Buy - B2C (2020)"
+        },
+        "href": "https://csa-research.com/l/media/Consumers-Prefer-their-Own-Language"
+      },
+      {
+        "label": {
+          "vi": "VnExpress - Purrfect Tale bị tẩy chay vì đường lưỡi bò",
+          "en": "VnExpress - Purrfect Tale boycotted over the nine-dash line"
+        },
+        "href": "https://vnexpress.net/game-vua-phat-hanh-da-bi-tay-chay-vi-duong-luoi-bo-4346709.html"
+      },
+      {
+        "label": {
+          "vi": "Bộ Thông tin và Truyền thông - Apple và Google đã gỡ 384 game không phép, game cờ bạc",
+          "en": "Ministry of Information and Communications - Apple and Google removed 384 unlicensed and gambling games"
+        },
+        "href": "https://abei.gov.vn/thong-tin-dien-tu/apple-va-google-da-go-384-game-khong-phep-game-co-bac-phat-hanh-vao-viet-nam/118631"
+      },
+      {
+        "label": {
+          "vi": "Báo Pháp luật - Nghị định 147/2024/NĐ-CP",
+          "en": "Phap Luat Newspaper - Decree 147/2024/ND-CP"
+        },
+        "href": "https://doanhnhan.baophapluat.vn/nghi-dinh-1472024nd-cp-khong-mua-ban-vat-pham-ao-giua-nhung-nguoi-choi-tro-choi-dien-tu-voi-nhau-79021.html"
+      },
+      {
+        "label": {
+          "vi": "Gamota - Vietnam Mobile Gaming Year-in-Review 2025",
+          "en": "Gamota - Vietnam Mobile Gaming Year-in-Review 2025"
+        },
+        "href": "https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/"
+      },
+      {
+        "label": {
+          "vi": "PocketGamer.biz - Vietnam's mobile games market reached $825m in revenue in 2025",
+          "en": "PocketGamer.biz - Vietnam's mobile games market reached $825m in revenue in 2025"
+        },
+        "href": "https://www.pocketgamer.biz/vietnams-mobile-games-market-reached-825m-in-revenue-in-2025/"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một tựa game có thể được dịch chuẩn xác sang tiếng Việt, có giao diện thân thiện và đội ngũ hỗ trợ bản địa chu đáo, nhưng vẫn khó tạo được kết nối với cộng đồng. Nguyên nhân thường không nằm ở chất lượng sản phẩm. Nó nằm ở khoảng cách giữa **Localization (bản địa hóa ngôn ngữ)** và **Culturalization (thích ứng văn hóa)**. Người chơi Việt cần hiểu chữ trong game, và họ cũng để ý cách nhân vật giao tiếp, mức độ gần gũi về văn hóa và cách thương hiệu tương tác với cộng đồng.",
+          "en": "A game can be translated accurately into Vietnamese, with a friendly interface and a thoughtful local support team, and still struggle to connect with its community. The cause is usually not product quality. It is the gap between **Localization (language adaptation)** and **Culturalization (cultural adaptation)**. Vietnamese players need to understand the text in a game, and they also notice how characters talk, how close the game feels to their culture, and how the brand engages with the community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo báo cáo [Digital 2026: Vietnam của DataReportal](https://datareportal.com/reports/digital-2026-vietnam), Việt Nam có khoảng 85,6 triệu người dùng Internet và 79 triệu danh tính người dùng mạng xã hội vào cuối năm 2025. Lượng người tiếp cận lớn như vậy là cơ hội, nhưng cũng đòi hỏi nhà phát hành hiểu rõ người dùng địa phương. Vậy nhà phát hành game quốc tế cần điều chỉnh những gì để game không chỉ có mặt tại Việt Nam mà còn thực sự đến được với người chơi?",
+          "en": "According to [DataReportal's Digital 2026: Vietnam](https://datareportal.com/reports/digital-2026-vietnam), Vietnam had about 85.6 million Internet users and 79 million social media user identities at the end of 2025. Reach on this scale is an opportunity, but it also requires publishers to understand local users well. So what should international game publishers adjust so that their game is not only available in Vietnam but actually reaches players?"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "1. Localization và Culturalization: Hai khái niệm không thể đánh đồng",
+          "en": "1. Localization and Culturalization: Two Concepts That Should Not Be Confused"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong quá trình phát hành game quốc tế, Localization và Culturalization thường được nhắc đến cùng nhau. Tuy nhiên, hai khái niệm này giải quyết những vấn đề khác nhau.",
+          "en": "In international game publishing, Localization and Culturalization are often mentioned together. They solve different problems, however."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Localization:** Điều chỉnh ngôn ngữ và các yếu tố kỹ thuật để trò chơi phù hợp với thị trường mục tiêu. Ví dụ: dịch hội thoại, phụ đề, giao diện, mô tả vật phẩm, định dạng ngày tháng và tiền tệ.",
+          "en": "**Localization:** Adapting language and technical elements so the game fits the target market. Examples include translating dialogue, subtitles, the interface and item descriptions, and formatting dates and currency."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Culturalization:** Điều chỉnh nội dung, hình ảnh, thông điệp và trải nghiệm để phù hợp với bối cảnh văn hóa, lịch sử, tín ngưỡng và quan niệm xã hội của người chơi địa phương.",
+          "en": "**Culturalization:** Adapting content, imagery, messaging and experience to the cultural, historical, religious and social context of local players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Có thể hiểu đơn giản: *Localization giúp người chơi hiểu game, còn Culturalization giúp họ cảm thấy game gần gũi và phù hợp với mình hơn.*",
+          "en": "Put simply: *Localization helps players understand the game, while Culturalization helps them feel the game is close to them and made for them.*"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vai trò của yếu tố văn hóa trong bản địa hóa game đã được bàn đến trong nghiên cứu [Understanding the role of culture and cultural attributes in digital game localization](https://www.sciencedirect.com/science/article/abs/pii/S1875952117300496) của Aung Pyae, đăng trên tạp chí *Entertainment Computing* (tập 26, năm 2018, trang 105-116). Khi nội dung game không phù hợp với phong tục, truyền thống và niềm tin của thị trường mục tiêu, hiệu quả của hoạt động bản địa hóa và quảng bá có thể bị ảnh hưởng.",
+          "en": "The role of cultural factors in game localization is discussed in the study [Understanding the role of culture and cultural attributes in digital game localization](https://www.sciencedirect.com/science/article/abs/pii/S1875952117300496) by Aung Pyae, published in *Entertainment Computing* (volume 26, 2018, pages 105-116). When game content does not fit the customs, traditions and beliefs of the target market, the results of localization and marketing can suffer."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Ví dụ:** Một game quốc tế có thể dịch toàn bộ nhiệm vụ sang tiếng Việt nhưng vẫn dùng những câu đùa, cách xưng hô hoặc hình ảnh không hợp với văn hóa giao tiếp trong nước. Về ngôn ngữ, game đã được bản địa hóa. Về trải nghiệm văn hóa, vẫn còn khoảng cách.",
+          "en": "**Example:** An international game may translate every quest into Vietnamese yet keep jokes, forms of address or imagery that do not suit local communication culture. In terms of language, the game is localized. In terms of cultural experience, a gap remains."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Những điều nhà phát hành game quốc tế thường bỏ lỡ tại Việt Nam",
+          "en": "2. What International Game Publishers Often Miss in Vietnam"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Khi vào Việt Nam, không ít nhà phát hành quốc tế áp dụng một công thức tiếp thị chung cho cả khu vực Đông Nam Á. Nếu chỉ dựa vào dịch thuật kỹ thuật mà bỏ qua thích ứng văn hóa, chiến dịch dễ trở nên xa lạ và thiếu sức hút. Hệ quả là lãng phí ngân sách, chi phí thu hút người dùng bị đẩy lên, và thương hiệu rơi vào 4 \"điểm mù\" phổ biến.",
+          "en": "When entering Vietnam, quite a few international publishers apply one marketing formula across all of Southeast Asia. Relying only on technical translation while skipping cultural adaptation makes a campaign feel foreign and less appealing. The result is wasted budget, higher user acquisition costs, and a brand caught in 4 common \"blind spots.\""
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Dịch đúng chưa chắc đã nói đúng ngôn ngữ của game thủ",
+          "en": "A correct translation does not always speak the gamers' language"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo báo cáo [Can't Read, Won't Buy – B2C của CSA Research (2020)](https://csa-research.com/l/media/Consumers-Prefer-their-Own-Language), khảo sát 8.709 người tiêu dùng tại 29 quốc gia cho thấy:",
+          "en": "According to CSA Research's report [Can't Read, Won't Buy – B2C (2020)](https://csa-research.com/l/media/Consumers-Prefer-their-Own-Language), a survey of 8,709 consumers in 29 countries found that:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "76% người được hỏi thích mua sản phẩm có thông tin bằng ngôn ngữ mẹ đẻ.",
+            "en": "76% of respondents prefer to buy products with information in their native language."
+          },
+          {
+            "vi": "40% cho biết họ sẽ không mua hàng từ những website dùng ngôn ngữ khác.",
+            "en": "40% said they will not buy from websites in other languages."
+          },
+          {
+            "vi": "75% có xu hướng mua lại từ thương hiệu nếu dịch vụ chăm sóc khách hàng dùng ngôn ngữ của họ.",
+            "en": "75% are more likely to buy again from a brand if customer care is in their own language."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây là khảo sát về hành vi mua sắm trực tuyến nói chung, không phải nghiên cứu riêng về game. Dù vậy, kết quả cho thấy ngôn ngữ địa phương có vai trò đáng kể trong việc tạo sự tin tưởng và giữ mối quan hệ với khách hàng.",
+          "en": "This is a survey of online shopping behavior in general, not research specific to games. Even so, the results show that local language plays a notable role in building trust and keeping customer relationships."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game, dịch chính xác chưa đủ, câu chữ còn phải tự nhiên theo ngữ cảnh. Game thủ Việt có hệ thống thuật ngữ, tiếng lóng, meme và cách gọi nhân vật rất riêng. Một bản dịch bám sát nghĩa đen hoặc quá hàn lâm dễ làm mất cảm xúc gốc của trò chơi. Chẳng hạn, thông điệp quảng cáo dịch nguyên văn từ tiếng Anh rồi đăng lên TikTok hay Facebook thường nghe ngô nghê, còn cách nói gần với ngôn ngữ cộng đồng dễ được đón nhận hơn.",
+          "en": "For games, an accurate translation is not enough; the wording also has to sound natural in context. Vietnamese gamers have their own terminology, slang, memes and ways of naming characters. A translation that sticks too close to the literal meaning, or sounds too formal, easily loses the original feeling of the game. For example, ad copy translated word for word from English and posted on TikTok or Facebook usually sounds awkward, while wording close to the community's own language is more readily accepted."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Văn hóa Việt Nam không chỉ gói gọn trong áo dài và ngày Tết",
+          "en": "Vietnamese culture is more than áo dài and Tết"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nhiều nhà phát hành đồng nhất văn hóa Việt Nam với những biểu tượng quen thuộc như áo dài, nón lá, hoa sen hay bánh chưng ngày Tết. Những hình ảnh này dễ nhận ra, nhưng chiều sâu văn hóa Việt còn nằm ở nhịp sống thường ngày, thói quen giao tiếp, ẩm thực, âm nhạc, giải trí và các xu hướng thảo luận trực tuyến.",
+          "en": "Many publishers equate Vietnamese culture with familiar symbols such as the áo dài, the conical hat, the lotus or bánh chưng at Tết. These images are easy to recognize, but the depth of Vietnamese culture also lies in daily rhythms, communication habits, food, music, entertainment and online conversations."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngay cả khi khai thác chủ đề Tết, chiến dịch có thể làm nhiều hơn việc thêm hình ảnh trang trí. Một số hướng cụ thể: sự kiện lì xì đầu năm, nhiệm vụ chúc Tết bạn bè hoặc thành viên bang hội, ngoại trang lấy cảm hứng truyền thống, thông điệp truyền thông hóm hỉnh mang không khí sum vầy.",
+          "en": "Even when using a Tết theme, a campaign can do more than add decorative visuals. Some concrete directions: a New Year lucky-money event, quests to send Tết greetings to friends or guild members, cosmetics inspired by tradition, and playful messaging with a family-reunion mood."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa không phải là nhồi thật nhiều biểu tượng dân tộc. Việc cần làm là chọn vài chi tiết tinh tế, hợp với trải nghiệm người chơi và định vị thương hiệu.",
+          "en": "Localization does not mean packing in as many national symbols as possible. The task is to pick a few subtle details that fit the player experience and the brand's positioning."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Bỏ qua sự nhạy cảm về lịch sử và tín ngưỡng",
+          "en": "Overlooking sensitivities around history and belief"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Đây là ranh giới cả về pháp lý lẫn cảm xúc khi phát hành game tại Việt Nam. Những chi tiết liên quan đến lịch sử, nhân vật có thật, tín ngưỡng, biểu tượng tôn giáo hay chủ quyền lãnh thổ đều cần được xử lý rất cẩn trọng. Một chi tiết đồ họa bình thường trong thiết kế giả tưởng toàn cầu có thể gây khủng hoảng truyền thông hoặc vi phạm quy định pháp luật khi xuất hiện tại thị trường bản địa.",
+          "en": "This is a legal and emotional boundary when publishing games in Vietnam. Details involving history, real people, beliefs, religious symbols or territorial sovereignty all call for great care. A graphic detail that is unremarkable in global fantasy design can trigger a PR crisis or break the law when it appears in the local market."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một ví dụ điển hình là [Purrfect Tale](https://vnexpress.net/game-vua-phat-hanh-da-bi-tay-chay-vi-duong-luoi-bo-4346709.html), game nuôi mèo ảo do BadMouse phát triển. Game ra mắt ngày 25/8/2021. Ngay sau đó, người chơi Việt tẩy chay và để lại nhiều đánh giá 1 sao trên Google Play vì hình quả địa cầu trong game có đường lưỡi bò, vi phạm chủ quyền biển đảo. Ngày 26/8, nhà phát hành thông báo gỡ vĩnh viễn game khỏi App Store và Google Play tại Việt Nam.",
+          "en": "One telling example is [Purrfect Tale](https://vnexpress.net/game-vua-phat-hanh-da-bi-tay-chay-vi-duong-luoi-bo-4346709.html), a virtual cat-raising game developed by BadMouse. The game launched on August 25, 2021. Soon after, Vietnamese players boycotted it and left many 1-star reviews on Google Play because a globe image in the game showed the nine-dash line, which violates Vietnam's sovereignty over its seas and islands. On August 26, the publisher announced the game would be permanently removed from the App Store and Google Play in Vietnam."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo tổng kết năm 2024 của [Bộ Thông tin và Truyền thông](https://abei.gov.vn/thong-tin-dien-tu/apple-va-google-da-go-384-game-khong-phep-game-co-bac-phat-hanh-vao-viet-nam/118631), cơ quan quản lý đã rà quét và yêu cầu Apple và Google gỡ **384 tựa game vi phạm** (Google gỡ 294 game, Apple gỡ 90 game), chủ yếu là game phát hành không phép hoặc game cờ bạc phát hành từ nước ngoài vào Việt Nam. Về khung pháp lý, [Nghị định 147/2024/NĐ-CP](https://doanhnhan.baophapluat.vn/nghi-dinh-1472024nd-cp-khong-mua-ban-vat-pham-ao-giua-nhung-nguoi-choi-tro-choi-dien-tu-voi-nhau-79021.html), có hiệu lực từ ngày 25/12/2024, yêu cầu người chơi game trực tuyến cung cấp họ tên, ngày sinh và số điện thoại di động tại Việt Nam, đồng thời cấm người chơi mua bán vật phẩm ảo với nhau.",
+          "en": "According to the 2024 summary from the [Ministry of Information and Communications](https://abei.gov.vn/thong-tin-dien-tu/apple-va-google-da-go-384-game-khong-phep-game-co-bac-phat-hanh-vao-viet-nam/118631), the regulator scanned for and asked Apple and Google to remove **384 violating games** (294 removed by Google, 90 by Apple), mostly games published without a license or gambling games published into Vietnam from abroad. On the legal framework, [Decree 147/2024/ND-CP](https://doanhnhan.baophapluat.vn/nghi-dinh-1472024nd-cp-khong-mua-ban-vat-pham-ao-giua-nhung-nguoi-choi-tro-choi-dien-tu-voi-nhau-79021.html), effective from December 25, 2024, requires online game players to provide their full name, date of birth and a Vietnamese mobile phone number, and bans players from buying and selling virtual items among themselves."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, nhà phát hành quốc tế nên có quy trình rà soát nội dung với sự tham gia của người am hiểu văn hóa, lịch sử và pháp lý Việt Nam, thay vì giao hết cho đội dịch thuật kỹ thuật.",
+          "en": "International publishers should therefore have a content review process that involves people who understand Vietnamese culture, history and law, rather than leaving everything to a technical translation team."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Không hiểu cộng đồng game thủ Việt và cách họ tương tác",
+          "en": "Not understanding Vietnamese gamer communities and how they interact"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo [DataReportal](https://datareportal.com/reports/digital-2026-vietnam), Việt Nam có 79 triệu danh tính tài khoản mạng xã hội vào cuối năm 2025 (số liệu tháng 10/2025), chiếm 77,6% dân số và tăng 5,3 triệu danh tính (7,2%) so với cuối năm 2024. Đây là số danh tính tài khoản, nên một người có thể được tính nhiều lần. Mạng xã hội là kênh tiếp cận chính, nhưng cộng đồng game thủ không đồng nhất, và mỗi dòng game có sở thích, cách tương tác khác nhau:",
+          "en": "According to [DataReportal](https://datareportal.com/reports/digital-2026-vietnam), Vietnam had 79 million social media account identities at the end of 2025 (October 2025 data), equal to 77.6% of the population and up 5.3 million identities (7.2%) from the end of 2024. These are account identities, so one person may be counted more than once. Social media is the main way to reach players, but gamer communities are not uniform, and each game genre has its own interests and ways of interacting:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "**Game MOBA:** người chơi thường quan tâm đến giải đấu, tuyển thủ, meta và những khoảnh khắc thi đấu đáng nhớ.",
+            "en": "**MOBA games:** players tend to care about tournaments, pro players, the meta and memorable competitive moments."
+          },
+          {
+            "vi": "**Game gacha:** cộng đồng thường thảo luận về nhân vật, cốt truyện, banner và chiến thuật xây dựng đội hình.",
+            "en": "**Gacha games:** communities tend to discuss characters, story, banners and team-building strategy."
+          },
+          {
+            "vi": "**Game MMORPG:** người chơi thường chú trọng bang hội, hoạt động cộng đồng, PvP và sự kiện trong game.",
+            "en": "**MMORPGs:** players tend to value guilds, community activities, PvP and in-game events."
+          },
+          {
+            "vi": "**Game casual:** nội dung giải trí, thử thách vui nhộn và hoạt động tương tác dễ tham gia thường hợp với nhóm này.",
+            "en": "**Casual games:** entertaining content, fun challenges and easy-to-join interactive activities tend to suit this group."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Dùng chung một thông điệp quảng cáo cho tất cả các nhóm này dễ khiến chiến dịch lệch nhịp với từng cộng đồng.",
+          "en": "Using the same ad message for all of these groups can easily leave a campaign out of step with each community."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Thị trường game Việt Nam: Vì sao bản địa hóa cần đi xa hơn dịch thuật?",
+          "en": "3. The Vietnamese Game Market: Why Localization Has to Go Beyond Translation"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Quy mô thị trường là một lý do để nhà phát hành quốc tế đầu tư nghiêm túc vào chiến lược bản địa hóa. Theo báo cáo [Vietnam Mobile Gaming Year-in-Review 2025 của Gamota](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), thị trường mobile game Việt Nam có khoảng 54 triệu người chơi, doanh thu ước tính đạt 825 triệu USD trong năm 2025, tăng 9,16% so với năm trước.",
+          "en": "Market size is one reason for international publishers to invest seriously in localization strategy. According to Gamota's [Vietnam Mobile Gaming Year-in-Review 2025](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), the Vietnamese mobile game market has about 54 million players, with revenue estimated at USD 825 million in 2025, up 9.16% from the previous year."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tuy nhiên, theo bài phân tích của [PocketGamer.biz](https://www.pocketgamer.biz/vietnams-mobile-games-market-reached-825m-in-revenue-in-2025/), chỉ khoảng 7 đến 10% người chơi có chi tiêu trong game, và 2 đến 3% thuộc nhóm chi tiêu cao (whales). Nói cách khác, một tệp người chơi đông không tự động thành doanh thu.",
+          "en": "However, according to an analysis by [PocketGamer.biz](https://www.pocketgamer.biz/vietnams-mobile-games-market-reached-825m-in-revenue-in-2025/), only about 7 to 10% of players spend money in games, and 2 to 3% are high spenders (whales). In other words, a large player base does not automatically turn into revenue."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Từ các số liệu trên, nhà phát hành quốc tế cần nhìn lại ba vấn đề marketing:",
+          "en": "From these figures, international publishers need to take another look at three marketing issues:"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Thứ nhất, tiếp cận được người chơi chưa đồng nghĩa với chuyển đổi.** Một chiến dịch có thể kéo nhiều lượt tải, nhưng nếu nội dung, trải nghiệm và thông điệp không hợp, người chơi vẫn rời đi sớm.",
+          "en": "**First, reaching players does not mean converting them.** A campaign can drive many downloads, but if the content, experience and message do not fit, players still leave early."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Thứ hai, cộng đồng địa phương góp phần giữ chân người chơi.** Ngôn ngữ tự nhiên, sự kiện phù hợp và khả năng tương tác bằng tiếng Việt giúp người chơi dễ hòa nhập hơn.",
+          "en": "**Second, the local community helps retain players.** Natural language, fitting events and the ability to interact in Vietnamese make it easier for players to settle in."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Thứ ba, bản địa hóa cần được duy trì suốt vòng đời game.** Giao diện và nội dung ngày ra mắt chỉ là một phần. Sự kiện, bản cập nhật, hoạt động cộng đồng và chăm sóc khách hàng cũng cần điều chỉnh theo thị trường.",
+          "en": "**Third, localization has to be sustained across the game's lifecycle.** The interface and launch-day content are only one part. Events, updates, community activities and customer care also need to be adapted to the market."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "4. Culturalization cần được thể hiện như thế nào trong chiến dịch Marketing Game?",
+          "en": "4. How Should Culturalization Show Up in a Game Marketing Campaign?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thích ứng văn hóa không nhất thiết phải can thiệp sâu vào mã nguồn game. Nhà phát hành có thể bắt đầu từ các điểm tiếp xúc tiếp thị gần với người chơi nhất, theo 4 hướng sau.",
+          "en": "Cultural adaptation does not necessarily mean deep changes to the game's source code. Publishers can start at the marketing touchpoints closest to players, in the following 4 directions."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Điều chỉnh nội dung theo các dịp văn hóa địa phương",
+          "en": "Adapt content to local cultural occasions"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tết Nguyên đán, Tết Trung thu và các dịp nghỉ lễ lớn là thời điểm thương hiệu có thể gắn hoạt động của mình với thói quen và cảm xúc của người Việt. Thay vì dịch máy móc tên sự kiện từ bản quốc tế, nhà phát hành có thể làm chuỗi nhiệm vụ, hệ thống phần thưởng và nội dung truyền thông mang bản sắc địa phương, để sự kiện trong game trở thành một không gian lễ hội quen thuộc với người chơi.",
+          "en": "Lunar New Year, the Mid-Autumn Festival and other major holidays are moments when a brand can tie its activities to Vietnamese habits and feelings. Instead of mechanically translating event names from the international version, publishers can build quest chains, reward systems and communication content with a local identity, so that an in-game event becomes a festive space players recognize."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Hợp tác hiệu quả với KOL và nhà sáng tạo nội dung Việt Nam",
+          "en": "Work effectively with Vietnamese KOLs and content creators"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngoài vai trò kênh phân phối, KOL và streamer bản địa còn giúp thương hiệu hiểu cách cộng đồng đón nhận sản phẩm. Một nhà sáng tạo nội dung am hiểu thị trường biết cách truyền tải tinh thần của game bằng lối nói tự nhiên, những câu đùa quen thuộc hay các thử thách gameplay gần gũi với người xem. Khi chọn đối tác, nên ưu tiên sự phù hợp về phong cách và tệp khán giả với thể loại game, thay vì chỉ nhìn vào số người theo dõi.",
+          "en": "Beyond serving as a distribution channel, local KOLs and streamers help a brand understand how the community receives a product. A creator who knows the market can convey the spirit of a game through natural speech, familiar jokes or gameplay challenges that feel close to viewers. When choosing partners, prioritize fit in style and audience for the game genre rather than looking only at follower counts."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Xây dựng cộng đồng tương tác thay vì chỉ chạy quảng cáo",
+          "en": "Build an interactive community instead of only running ads"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bên cạnh quảng cáo trả phí ngắn hạn, việc duy trì tương tác lâu dài trên Facebook Group, TikTok, YouTube và Discord góp phần lớn vào sức sống của một tựa game. Các hoạt động như chia sẻ meme, vinh danh fan art, bình chọn nhân vật, thi đấu nội bộ hay livestream giao lưu định kỳ giúp game thủ thấy mình là một phần của cộng đồng. Đây cũng là kênh phản hồi trực tiếp để đội vận hành nghe kỳ vọng của thị trường.",
+          "en": "Alongside short-term paid ads, sustained interaction on Facebook Groups, TikTok, YouTube and Discord contributes a great deal to a game's vitality. Activities such as sharing memes, featuring fan art, character polls, in-house tournaments or regular community livestreams help gamers feel they are part of the community. It is also a direct feedback channel for the operations team to hear what the market expects."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đo lường hiệu quả bản địa hóa bằng dữ liệu thực tế",
+          "en": "Measure localization results with real data"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Hiệu quả của Culturalization không nên dựa vào cảm nhận của đội marketing mà cần được đo bằng chỉ số cụ thể:",
+          "en": "The results of Culturalization should not rest on the marketing team's impressions; they need to be measured with specific metrics:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "CTR để đo sức hút ban đầu của nội dung.",
+            "en": "CTR to measure the initial pull of the content."
+          },
+          {
+            "vi": "Conversion Rate sang lượt cài đặt hoặc đăng ký trước.",
+            "en": "Conversion Rate to installs or pre-registrations."
+          },
+          {
+            "vi": "Retention sau 1, 7 và 30 ngày (D1, D7, D30) để đo mức độ gắn bó với sản phẩm.",
+            "en": "Retention after 1, 7 and 30 days (D1, D7, D30) to measure attachment to the product."
+          },
+          {
+            "vi": "Engagement Rate và Sentiment Analysis để sớm phát hiện những điểm lệch pha về văn hóa.",
+            "en": "Engagement Rate and Sentiment Analysis to spot cultural mismatches early."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ngoài ra, A/B Testing giữa nội dung dịch sát nghĩa và nội dung được chỉnh theo văn hóa bản địa cho dữ liệu thực tế để so sánh hai cách làm và chọn hướng truyền thông phù hợp hơn.",
+          "en": "In addition, A/B testing between a literal translation and content adapted to the local culture gives real data for comparing the two approaches and choosing the better communication direction."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với thị trường Việt Nam, dịch tốt mới là bước đầu. Nhà phát hành cần hiểu cách game thủ Việt suy nghĩ, trò chuyện, giải trí và xây dựng cộng đồng, để người chơi cảm thấy trò chơi được làm cho chính họ.",
+          "en": "For the Vietnamese market, a good translation is only the first step. Publishers need to understand how Vietnamese gamers think, talk, play and build community, so that players feel the game was made for them."
+        }
+      }
+    ]
   }
 ]

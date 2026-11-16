@@ -76,6 +76,7 @@ export const blogViToEnSlug: Record<string, string> = {
   "toi-uu-kenh-game-tai-thai-lan-chien-luoc-always-on": "game-channel-optimization-thailand-always-on-strategy",
   "tiktok-marketing-trends-game-mobile-viet-nam-noi-dung-viral-toi-uu-cpi": "tiktok-marketing-trends-mobile-games-vietnam-viral-content-cpi-organic-installs",
   "esports-marketing-thailand-game-moi-co-nen-to-chuc-giai-dau-rieng": "esports-marketing-thailand-should-a-new-game-run-its-own-tournament",
+  "localization-vs-culturalization-nha-phat-hanh-game-quoc-te-tai-viet-nam": "localization-vs-culturalization-what-international-game-publishers-miss-in-vietnam",
 };
 
 
