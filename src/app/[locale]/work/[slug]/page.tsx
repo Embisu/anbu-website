@@ -33,7 +33,10 @@ export async function generateMetadata({
   return buildMetadata({
     locale,
     path: `/work/${project.slug}`,
-    title: `${project.client} | ${t(project.title, locale)}`,
+    title:
+      locale === "vi"
+        ? `${project.client} | Case study ${t(project.category, locale)}`
+        : `${project.client} | ${t(project.category, locale)} case study`,
     description: t(project.cover, locale),
     type: "article",
   });
