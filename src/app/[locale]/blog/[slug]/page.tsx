@@ -488,7 +488,7 @@ export default async function BlogPostPage({
                 <span>·</span>
                 <span className="text-white/80">{locale === "vi" ? "Biên soạn bởi" : "Written by"} {post.author}</span>
               </div>
-              <h1 className="text-balance mt-4 sm:mt-5 font-display text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] font-black leading-[1.25] tracking-tight text-white">
+              <h1 className="text-balance mt-4 sm:mt-5 font-display text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] font-black leading-[1.25] sm:leading-[1.25] md:leading-[1.25] lg:leading-[1.25] tracking-tight text-white">
                 {t(post.title, locale)}
               </h1>
               <p className="mt-3.5 sm:mt-5 text-base sm:text-lg leading-relaxed text-slate-300/95 font-normal">
