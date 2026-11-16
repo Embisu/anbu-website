@@ -449,9 +449,9 @@ export default function ClientCustomPostViewer({
               <span className="inline-flex rounded-full bg-orange-500/20 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-orange-300">
                 Publisher Search
               </span>
-              <h3 className="mt-3 font-display text-base font-bold leading-snug">
+              <p className="mt-3 font-display text-base font-bold leading-snug">
                 {locale === "vi" ? "Tra cứu nhà phát hành & thị trường" : "Find game publishers in Vietnam"}
-              </h3>
+              </p>
               <p className="mt-2 text-xs leading-relaxed text-white/75">
                 {locale === "vi"
                   ? "Xem dữ liệu đối tác, kênh marketing và năng lực phát hành tại Việt Nam."

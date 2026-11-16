@@ -101,6 +101,41 @@ export function trimDescription(text: string, max = 160): string {
   return `${cut.slice(0, space > 90 ? space : cut.length).replace(/[,;:\-–]+$/, "")}…`;
 }
 
+/**
+ * Fits a page title into ~60 characters (Google truncates around that length).
+ * "Brand | tagline" titles keep the brand; other titles are cut at a natural separator
+ * (colon, dash, question mark) when that keeps most of the title, otherwise at a word boundary.
+ */
+export function shortenTitle(title: string, max = 60): string {
+  const t = title.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const pipe = t.indexOf(" | ");
+  if (pipe >= 3 && pipe <= 40) return t.slice(0, pipe).trim();
+  let best = -1;
+  for (const sep of [": ", " – ", " — ", " - ", "? "]) {
+    let i = t.indexOf(sep);
+    while (i !== -1) {
+      const end = sep === "? " ? i + 1 : i;
+      if (end >= 28 && end <= max && end > best) best = end;
+      i = t.indexOf(sep, i + 1);
+    }
+  }
+  if (best > 0) return t.slice(0, best).trim();
+  const cut = t.slice(0, max + 1);
+  const space = cut.lastIndexOf(" ");
+  const out = (space > 25 ? cut.slice(0, space) : t.slice(0, max)).trim();
+  return out
+    .replace(/(?:\s+(?:và|của|cho|với|tại|trong|để|the|and|to|of|in|for|with|a|an|&|before|after))+$/i, "")
+    .replace(/[,;:\-–|]+$/, "")
+    .trim();
+}
+
+/** <title> value: brand suffix (" | ANBU") when it fits within 60 characters, otherwise the title alone. */
+function pageTitle(cleanTitle: string): string | { absolute: string } {
+  const short = shortenTitle(cleanTitle, 60);
+  return short.length + 7 <= 60 ? short : { absolute: short };
+}
+
 type BuildMetaArgs = {
   locale: Locale;
   path?: string; // without locale, starts with "/"
@@ -124,7 +159,7 @@ export function buildMetadata({
   const isHome = path === "" || path === "/";
   // Strip duplicate trailing brand suffix if page title already ends with | ANBU or | ANBU Agency
   const cleanTitle = title.replace(/\s*[|\-–]\s*ANBU(?:\s+Agency)?\s*$/i, "").trim();
-  const metaTitle = isHome ? { absolute: title } : cleanTitle;
+  const metaTitle = isHome ? { absolute: title } : pageTitle(cleanTitle);
   const fullTitle = isHome ? title : `${cleanTitle} | ${site.name}`;
   const url = `${siteUrl}/${locale}${path === "/" ? "" : path}`;
   const absoluteImage = image.startsWith("http")

@@ -265,12 +265,12 @@ function inlineEditorialImage(slug: string, index: number) {
       { vi: "Creator và cộng đồng game trong chiến dịch bản địa hóa nội dung tại Thái Lan.", en: "Creators and gaming communities supporting localized content in Thailand." },
       { vi: "Nội dung bản địa hóa giúp game quốc tế tiếp cận đúng người chơi Thái Lan.", en: "Localized content helping an international game reach Thai players." },
     ] },
-    { match: ["analytics", "cpi", "roas", "arppu"], images: ["/blog-covers/analytics-dashboard.jpg", "/blog-covers/analytics-3d.png", "/blog-covers/growth-analytics-chart.jpg"], alt: { vi: "Bảng dữ liệu phân tích người chơi và hiệu quả marketing game", en: "Player analytics and game marketing performance dashboard" }, captions: [
+    { match: ["analytics", "cpi", "roas", "arppu"], images: ["/blog-covers/analytics-dashboard.jpg", "/blog-covers/analytics-3d.jpg", "/blog-covers/growth-analytics-chart.jpg"], alt: { vi: "Bảng dữ liệu phân tích người chơi và hiệu quả marketing game", en: "Player analytics and game marketing performance dashboard" }, captions: [
       { vi: "Bảng phân tích funnel người chơi dùng để theo dõi CPI, ROAS và doanh thu game.", en: "A player-funnel dashboard tracking CPI, ROAS and game revenue." },
       { vi: "Dữ liệu chiến dịch giúp đội ngũ marketing game đọc đúng hành vi người chơi.", en: "Campaign data helping game marketers understand player behavior." },
       { vi: "Thiết bị di động và dữ liệu hành vi trong quá trình đo lường tăng trưởng game.", en: "Mobile devices and behavioral data used to measure game growth." },
     ] },
-    { match: ["community", "discord", "moderation"], images: ["/blog-covers/discord-community.jpg", "/blog-covers/community-3d.png", "/blog-covers/community-launch.jpg"], alt: { vi: "Hoạt động cộng đồng, creator và tương tác của người chơi game", en: "Gaming community, creator activity and player engagement" }, captions: [
+    { match: ["community", "discord", "moderation"], images: ["/blog-covers/discord-community.jpg", "/blog-covers/community-3d.jpg", "/blog-covers/community-launch.jpg"], alt: { vi: "Hoạt động cộng đồng, creator và tương tác của người chơi game", en: "Gaming community, creator activity and player engagement" }, captions: [
       { vi: "Đội ngũ vận hành và cộng đồng game phối hợp để chăm sóc trải nghiệm người chơi.", en: "Operations teams and gaming communities working together for player experience." },
       { vi: "Tương tác social và creator giúp xây dựng cộng đồng game bền vững.", en: "Social and creator engagement supporting a sustainable game community." },
       { vi: "Sự kiện game kết nối người chơi, creator và thương hiệu trong cùng một trải nghiệm.", en: "A game event connecting players, creators and brands in one experience." },
@@ -300,7 +300,7 @@ function inlineEditorialImage(slug: string, index: number) {
         "/blog-covers/publishers/vng-cookierun.jpg",
         "/blog-covers/publishers/funtap-logo.jpg",
         "/blog-covers/publishers/funtap-game.jpg",
-        "/blog-covers/publishers/joygames-game.png",
+        "/blog-covers/publishers/joygames-game.jpg",
         "/blog-covers/publishers/gosu-event.jpg",
         "/blog-covers/publishers/vplay-game.jpg",
       ],
@@ -322,7 +322,7 @@ function inlineEditorialImage(slug: string, index: number) {
     return { src: exactPool.images[imageIndex], alt: exactPool.alt, caption: exactPool.captions[imageIndex] ?? generic };
   }
   const pool = pools.find((item) => item.match.some((term) => lower.includes(term))) ?? {
-    images: ["/blog-covers/game-app.jpg", "/blog-covers/user-acquisition-3d.png", "/blog-covers/launch-checklist.jpg"],
+    images: ["/blog-covers/game-app.jpg", "/blog-covers/user-acquisition-3d.jpg", "/blog-covers/launch-checklist.jpg"],
     alt: { vi: "Minh họa hoạt động marketing và vận hành sản phẩm game", en: "Illustration of game marketing and product operations" },
     captions: [
       { vi: "Hình ảnh minh họa hoạt động marketing và vận hành sản phẩm game.", en: "Editorial image showing game marketing and product operations." },
@@ -398,7 +398,7 @@ export default async function BlogPostPage({
     headline: t(post.title, locale),
     description: t(post.excerpt, locale),
     datePublished: safeDate,
-    dateModified: safeDate,
+    dateModified: post.updated && !isNaN(new Date(post.updated).getTime()) && new Date(post.updated) <= now ? post.updated : safeDate,
     image: `${siteUrl}${editorialImageForPostData(post, locale)}`,
     author: { "@type": /^anbu\b/i.test(post.author) ? "Organization" : "Person", name: post.author },
     publisher: {
@@ -567,9 +567,9 @@ export default async function BlogPostPage({
                   {related.slice(0, 2).map((item, index) => (
                     <Link key={item.slug} href={localePath(locale, `/blog/${blogSlugForLocale(item, locale)}`)} className="group block border-b border-navy-100 pb-4 last:border-0 last:pb-0">
                       <span className="text-[11px] font-bold text-orange-500">0{index + 1}</span>
-                      <h3 className="mt-1 text-sm font-bold leading-snug text-navy-800 transition group-hover:text-orange-600">
+                      <p className="mt-1 text-sm font-bold leading-snug text-navy-800 transition group-hover:text-orange-600">
                         {t(item.title, locale)}
-                      </h3>
+                      </p>
                       <span className="mt-2 inline-flex text-xs font-semibold text-navy-400 group-hover:text-orange-500">
                         {item.readingTime} {dict.blogSection.readTime} →
                       </span>
@@ -709,9 +709,9 @@ export default async function BlogPostPage({
                       <div className="overflow-hidden rounded-2xl bg-navy-50">
                         <EditorialMedia src={editorialImageForPostData(item, locale)} alt={t(item.title, locale)} focal={item.focal} className="aspect-[16/10] transition duration-300 group-hover:scale-105" />
                       </div>
-                      <h3 className="mt-3 text-sm font-bold leading-snug text-navy-800 transition group-hover:text-orange-600">
+                      <p className="mt-3 text-sm font-bold leading-snug text-navy-800 transition group-hover:text-orange-600">
                         {t(item.title, locale)}
-                      </h3>
+                      </p>
                       <span className="mt-2 inline-flex text-xs font-semibold text-navy-400 group-hover:text-orange-500">
                         {locale === "vi" ? "Đọc bài" : "Read article"} →
                       </span>

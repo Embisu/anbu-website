@@ -20,10 +20,10 @@ export const defaultMediaAssets = [
   { src: "/blog-covers/creator-program.jpg", title: "Creator & Influencer Program", tags: ["creator", "influencer", "ugc"], size: "215 KB", dimensions: "1600 × 1000" },
   { src: "/blog-covers/creator-tiktok-studio.jpg", title: "TikTok Creator Studio & Vertical Ads", tags: ["tiktok", "creator", "ugc"], size: "305 KB", dimensions: "1920 × 1080" },
   { src: "/blog-covers/discord-community.jpg", title: "Discord Community Hub", tags: ["discord", "community", "moderation"], size: "240 KB", dimensions: "1600 × 1000" },
-  { src: "/blog-covers/discord-community-game-night.png", title: "Discord Community Game Night Live", tags: ["discord", "events", "voice"], size: "410 KB", dimensions: "1920 × 1080" },
-  { src: "/blog-covers/discord-game-hub-activity.png", title: "Discord Game Hub Activity Screen", tags: ["discord", "activity", "channels"], size: "390 KB", dimensions: "1920 × 1080" },
-  { src: "/blog-covers/discord-voice-channel-gameplay.png", title: "Discord Voice Channel & Gameplay Scrim", tags: ["discord", "voice", "gameplay"], size: "450 KB", dimensions: "1920 × 1080" },
-  { src: "/blog-covers/esports-team-flash-sponsorship.png", title: "Esports Team Flash Sponsorship & ROI", tags: ["esports", "roi", "sponsorship"], size: "520 KB", dimensions: "1920 × 1080" },
+  { src: "/blog-covers/discord-community-game-night.jpg", title: "Discord Community Game Night Live", tags: ["discord", "events", "voice"], size: "410 KB", dimensions: "1920 × 1080" },
+  { src: "/blog-covers/discord-game-hub-activity.jpg", title: "Discord Game Hub Activity Screen", tags: ["discord", "activity", "channels"], size: "390 KB", dimensions: "1920 × 1080" },
+  { src: "/blog-covers/discord-voice-channel-gameplay.jpg", title: "Discord Voice Channel & Gameplay Scrim", tags: ["discord", "voice", "gameplay"], size: "450 KB", dimensions: "1920 × 1080" },
+  { src: "/blog-covers/esports-team-flash-sponsorship.jpg", title: "Esports Team Flash Sponsorship & ROI", tags: ["esports", "roi", "sponsorship"], size: "520 KB", dimensions: "1920 × 1080" },
   { src: "/blog-covers/esports-vietnam-asiad.jpg", title: "Esports Vietnam National Team ASIAD", tags: ["esports", "tournament", "stage"], size: "380 KB", dimensions: "1920 × 1080" },
   { src: "/blog-covers/esports-vietnam-sea-games.jpg", title: "Esports Vietnam Gold Medal SEA Games", tags: ["esports", "tournament", "sea games"], size: "360 KB", dimensions: "1920 × 1080" },
   { src: "/blog-covers/esports-vietnam-stage.jpg", title: "Arena of Valor & VCS Stage Stadium", tags: ["esports", "stadium", "tournament"], size: "490 KB", dimensions: "1920 × 1080" },
@@ -47,7 +47,7 @@ export const defaultMediaAssets = [
   { src: "/blog-covers/thailand-game-expo.jpg", title: "Thailand Game Show (TGS) Live Arena", tags: ["thailand", "expo", "sea"], size: "440 KB", dimensions: "1920 × 1080" },
   { src: "/blog-covers/tiktok-social.jpg", title: "TikTok Viral Trends & Social Growth", tags: ["tiktok", "viral", "social"], size: "285 KB", dimensions: "1920 × 1080" },
   { src: "/blog-covers/ugc-creator-community.jpg", title: "UGC Creator Community Campaign", tags: ["ugc", "creator", "community"], size: "275 KB", dimensions: "1920 × 1080" },
-  { src: "/blog-covers/vietnam-game-publishers-map.png", title: "Vietnam Game Publisher Landscape Infographic", tags: ["publishers", "infographic", "map"], size: "620 KB", dimensions: "1920 × 1080" },
+  { src: "/blog-covers/vietnam-game-publishers-map.jpg", title: "Vietnam Game Publisher Landscape Infographic", tags: ["publishers", "infographic", "map"], size: "620 KB", dimensions: "1920 × 1080" },
 ];
 
 type MediaItem = (typeof defaultMediaAssets)[0];

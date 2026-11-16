@@ -150,8 +150,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     locale,
     path: "/how-we-work",
     title: vi
-      ? "Cách ANBU làm việc: Quy trình & hình thức hợp tác cho game | ANBU"
-      : "How ANBU Works: Process & Engagement Models for Games | ANBU",
+      ? "Cách ANBU làm việc: Quy trình & hợp tác cho game"
+      : "How ANBU Works: Process & Engagement Models",
     description: vi
       ? "Quy trình 4 bước, ba hình thức hợp tác, ví dụ lịch triển khai một chiến dịch thật và các câu hỏi thường gặp khi hợp tác với ANBU để ra mắt game tại Việt Nam."
       : "A 4-step process, three engagement models, a real campaign timeline and answers to common questions about working with ANBU to launch a game in Vietnam.",

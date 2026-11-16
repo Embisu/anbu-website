@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: { locale: string; c
   const category = blogCategories.find((item) => item.slug === params.category);
   if (!category) return {};
   const name = locale === "vi" ? category.vi : category.en;
-  return buildMetadata({ locale, path: `/blog/category/${category.slug}`, title: `${name} | ANBU`, description: locale === "vi" ? `Các bài viết chuyên sâu về ${name.toLowerCase()} từ ANBU.` : `In-depth ${name.toLowerCase()} insights from ANBU.` });
+  return buildMetadata({ locale, path: `/blog/category/${category.slug}`, title: locale === "vi" ? `${name}: Phân tích & bài viết chuyên sâu` : `${name}: Insights & Playbooks`, description: locale === "vi" ? `Tuyển tập bài viết về ${name.toLowerCase()} từ ANBU: phân tích, hướng dẫn và kinh nghiệm thực chiến cho nhà phát hành game tại Việt Nam và Đông Nam Á.` : `${name} articles from ANBU: analysis, how-tos and field experience for game publishers in Vietnam and Southeast Asia.` });
 }
 
 import JsonLd from "@/components/JsonLd";

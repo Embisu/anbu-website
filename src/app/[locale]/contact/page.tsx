@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     locale,
     path: "/contact",
     title: isVi
-      ? "Liên hệ ANBU Agency | Tư vấn Chiến dịch Game Marketing"
-      : "Contact ANBU Agency | Game Marketing Consultation",
+      ? "Liên hệ ANBU: Tư vấn chiến dịch Game Marketing"
+      : "Contact ANBU: Game Marketing Consultation",
     description: isVi
       ? "Liên hệ ANBU Agency để trao đổi về chiến dịch Game Marketing, Booking KOL hoặc mở rộng thị trường game tại Việt Nam. Phản hồi trong 24h."
       : "Contact ANBU Agency to discuss your game marketing, creator campaigns or Vietnam game market launch. Quick 24h response.",

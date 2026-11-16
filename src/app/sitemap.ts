@@ -7,7 +7,6 @@ import { siteUrl } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPaths = ["", "/services", "/work", "/about", "/blog", "/contact", "/privacy", "/terms"];
-  const now = new Date();
 
   const allPosts = posts;
 
@@ -17,7 +16,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const p of staticPaths) {
       entries.push({
         url: `${siteUrl}/${locale}${p}`,
-        lastModified: now,
         changeFrequency: p === "" || p === "/blog" ? "weekly" : "monthly",
         priority: p === "" ? 1 : 0.7,
         alternates: {
@@ -31,7 +29,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const path of ["/how-we-work", "/glossary"]) {
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
-        lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
         alternates: {
@@ -46,7 +43,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const path = `/services/${s.slug}`;
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
-        lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
         alternates: {
@@ -61,7 +57,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const path = `/work/${pr.slug}`;
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
-        lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
         alternates: {
@@ -95,7 +90,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const path = `/blog/category/${category.slug}`;
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
-        lastModified: now,
         changeFrequency: "weekly",
         priority: 0.7,
         alternates: {

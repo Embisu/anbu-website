@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     locale,
     path: "/privacy",
     title: locale === "vi" ? "Chính sách bảo mật" : "Privacy Policy",
-    description: locale === "vi" ? "Chính sách bảo mật của ANBU." : "ANBU privacy policy.",
+    description: locale === "vi" ? "Chính sách bảo mật của ANBU: thông tin chúng tôi thu thập, mục đích xử lý, cách bảo mật dữ liệu và quyền của bạn khi truy cập website hoặc liên hệ với ANBU." : "ANBU privacy policy: the information we collect, why we process it, how we protect your data and your rights when you visit our website or contact ANBU.",
   });
 }
 

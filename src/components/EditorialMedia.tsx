@@ -13,13 +13,13 @@ const serviceImages: Record<string, string> = {
 };
 
 const postImages: Partial<Record<SceneVariant, string>> = {
-  influencer: "community-3d.png",
+  influencer: "community-3d.jpg",
   game: "game-app",
   branding: "branding",
-  performance: "performance-3d.png",
-  seo: "analytics-3d.png",
-  web: "analytics-3d.png",
-  social: "community-3d.png",
+  performance: "performance-3d.jpg",
+  seo: "analytics-3d.jpg",
+  web: "analytics-3d.jpg",
+  social: "community-3d.jpg",
 };
 
 export function editorialImageForService(slug: string) {
@@ -28,7 +28,7 @@ export function editorialImageForService(slug: string) {
 
 export function editorialImageForPost(variant: SceneVariant) {
   const image = postImages[variant] ?? "social";
-  return `/blog-covers/${image}${image.endsWith(".png") ? "" : ".jpg"}`;
+  return `/blog-covers/${image}${/\.(png|jpe?g|webp)$/i.test(image) ? "" : ".jpg"}`;
 }
 
 const topicCovers = [
@@ -38,14 +38,14 @@ const topicCovers = [
   "game-seo-cluster.jpg", "influencer-measurement.jpg", "launch-checklist.jpg",
   "monetization-trust.jpg", "onboarding-activation.jpg", "retention-return.jpg",
   "seo-strategy.jpg", "soft-launch-measurement.jpg", "store-conversion.jpg",
-  "tiktok-social.jpg", "vietnam-game-publishers-map.png", "vietnam-game-saturation.png",
-  "analytics-3d.png", "community-3d.png", "performance-3d.png",
+  "tiktok-social.jpg", "vietnam-game-publishers-map.jpg", "vietnam-game-saturation.jpg",
+  "analytics-3d.jpg", "community-3d.jpg", "performance-3d.jpg",
 ];
 
 const editorialCoverPool = [
-  "game-app.jpg", "user-acquisition-3d.png", "aso-store-optimization.jpg", "creator-influencer.jpg",
-  "analytics-dashboard.jpg", "creative-testing-lab.jpg", "launch-checklist.jpg", "vietnam-game-saturation.png",
-  "community-3d.png", "retention-3d.png", "monetization-3d.png", "livestream-creator-setup.jpg",
+  "game-app.jpg", "user-acquisition-3d.jpg", "aso-store-optimization.jpg", "creator-influencer.jpg",
+  "analytics-dashboard.jpg", "creative-testing-lab.jpg", "launch-checklist.jpg", "vietnam-game-saturation.jpg",
+  "community-3d.jpg", "retention-3d.jpg", "monetization-3d.jpg", "livestream-creator-setup.jpg",
 ];
 
 function stableIndex(slug: string, size: number) {
@@ -61,9 +61,9 @@ function realCoverForSlug(slug: string) {
   const slugCovers: Record<string, string> = {
     "kol-trong-nganh-game-vai-tro-va-cach-xay-dung-chien-luoc-hieu-qua": "creator-influencer.jpg",
     "game-mobile-promotion-cach-quang-ba-game-mobile-hieu-qua-tai-viet-nam": "game-app.jpg",
-    "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi": "vietnam-game-saturation.png",
+    "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi": "vietnam-game-saturation.jpg",
     "ban-do-nha-phat-hanh-game-viet-nam": "publishers/vng-cookierun.jpg",
-    "thi-truong-game-viet-nam-bao-hoa-chien-luoc-tang-truong": "vietnam-game-saturation.png",
+    "thi-truong-game-viet-nam-bao-hoa-chien-luoc-tang-truong": "vietnam-game-saturation.jpg",
     "marketing-game-app-toi-uu-cpi-roas": "analytics-dashboard.jpg",
     "influencer-marketing-chon-kol-koc-dung-cach": "creator-influencer.jpg",
     "chien-luoc-noi-dung-tiktok-cho-thuong-hieu": "tiktok-social.jpg",
@@ -77,15 +77,15 @@ function realCoverForSlug(slug: string) {
     "retention-game-mobile-tang-d1-d7-d30": "retention-return.jpg",
     "liveops-game-mobile-lich-su-kien-giu-nguoi-choi": "game-liveops-monitoring.jpg",
     "ban-dia-hoa-game-mobile-tai-viet-nam": "localization-translation-team.jpg",
-    "user-acquisition-game-mobile-kenh-quang-cao": "user-acquisition-3d.png",
+    "user-acquisition-game-mobile-kenh-quang-cao": "user-acquisition-3d.jpg",
     "chien-luoc-monetization-game-mobile-iap-battle-pass": "monetization-trust.jpg",
-    "do-luong-game-mobile-cpi-ltv-roas": "analytics-3d.png",
+    "do-luong-game-mobile-cpi-ltv-roas": "analytics-3d.jpg",
     "ra-mat-game-mobile-viet-nam-checklist": "launch-checklist.jpg",
     "creative-testing-game-mobile-quang-cao": "creative-testing-lab.jpg",
     "pr-game-mobile-viet-nam-ra-mat": "game-pr-vietnam.jpg",
     "influencer-game-mobile-do-luong-hieu-qua": "influencer-measurement.jpg",
     "tang-ty-le-chuyen-doi-trang-app-store-google-play": "store-conversion.jpg",
-    "community-launch-game-mobile-90-ngay": "community-3d.png",
+    "community-launch-game-mobile-90-ngay": "community-3d.jpg",
     "soft-launch-game-mobile-do-gi-truoc-global-launch": "soft-launch-measurement.jpg",
     "chuong-trinh-creator-ugc-game-mobile": "creator-influencer.jpg",
     "seo-game-mobile-xay-dung-topic-cluster": "game-seo-cluster.jpg",
@@ -93,28 +93,28 @@ function realCoverForSlug(slug: string) {
     "battle-pass-game-mobile-thiet-ke-gia-tri": "battle-pass-value.jpg",
     "quang-cao-game-mobile-viet-nam-ke-hoach-ngan-sach": "performance-ad-campaigns.jpg",
     "tiktok-marketing-cho-game-mobile-viet-nam": "tiktok-social.jpg",
-    "pheu-marketing-game-mobile-tu-nhan-biet-den-retention": "performance-3d.png",
+    "pheu-marketing-game-mobile-tu-nhan-biet-den-retention": "performance-3d.jpg",
     "thanh-toan-game-mobile-viet-nam-tang-conversion": "game-app.jpg",
     "bo-kpi-cho-community-manager-game-mobile": "community-launch.jpg",
-    "ban-dia-hoa-game-mobile-chi-phi-va-quy-trinh": "girls-frontline-2-localization-slang.png",
+    "ban-dia-hoa-game-mobile-chi-phi-va-quy-trinh": "girls-frontline-2-localization-slang.jpg",
     "creative-strategy-game-mobile-test-hook": "creative-testing.jpg",
     "game-marketing-b2b-case-study-viet-nam": "game-pr-vietnam.jpg",
-    "bo-benchmark-user-acquisition-game-mobile-tai-viet-nam-2026": "user-acquisition-3d.png",
+    "bo-benchmark-user-acquisition-game-mobile-tai-viet-nam-2026": "user-acquisition-3d.jpg",
     "aso-game-mobile-title-description-screenshot": "aso-store-optimization.jpg",
-    "toi-uu-push-notification-game-mobile": "retention-3d.png",
+    "toi-uu-push-notification-game-mobile": "retention-3d.jpg",
     "game-mobile-influencer-brief-mau": "creator-program.jpg",
-    "phan-tich-arpu-va-arppu-game-mobile": "monetization-3d.png",
+    "phan-tich-arpu-va-arppu-game-mobile": "monetization-3d.jpg",
     "game-mobile-analytics-dashboard-can-co": "analytics-dashboard.jpg",
     "game-mobile-community-discord-viet-nam": "discord-community.jpg",
     "marketing-game-mobile-mua-tet-viet-nam": "game-pr-vietnam.jpg",
     "seo-game-marketing-viet-nam-internal-link": "seo.jpg",
     "ab-test-store-listing-game-mobile-nen-thu-gi": "creative-testing-lab.jpg",
-    "ban-dia-hoa-tu-khoa-va-tieng-long-game-tai-viet-nam": "girls-frontline-2-localization-slang.png",
-    "xu-ly-creative-fatigue-quang-cao-game-mobile": "creative-fatigue-3d.png",
-    "kiem-duyet-va-quan-tri-cong-dong-game-tai-viet-nam": "moderation-3d.png",
-    "seo-game-marketing-trong-ky-nguyen-ai-search": "ai-search-3d.png",
+    "ban-dia-hoa-tu-khoa-va-tieng-long-game-tai-viet-nam": "girls-frontline-2-localization-slang.jpg",
+    "xu-ly-creative-fatigue-quang-cao-game-mobile": "creative-fatigue-3d.jpg",
+    "kiem-duyet-va-quan-tri-cong-dong-game-tai-viet-nam": "moderation-3d.jpg",
+    "seo-game-marketing-trong-ky-nguyen-ai-search": "ai-search-3d.jpg",
     "chien-luoc-phat-hanh-game-mobile-tai-thai-lan": "thailand-game-show-level-infinite-booth.jpg",
-    "quan-ly-review-app-game-tai-viet-nam": "app-reviews-3d.png",
+    "quan-ly-review-app-game-tai-viet-nam": "app-reviews-3d.jpg",
     "chien-dich-micro-influencer-cho-game-mobile": "nguyet-mong-micro-influencer-strategy.jpg",
     "aso-ban-dia-hoa-game-mobile-tai-viet-nam": "ragnarok-huyen-thoai-mmo-vietnam-aso.jpg",
     "do-roi-tai-tro-esports-tai-viet-nam": "esports-vietnam-stage.jpg",
@@ -123,47 +123,47 @@ function realCoverForSlug(slug: string) {
   if (slugCovers[slug]) return `/blog-covers/${slugCovers[slug]}`;
   if (s.includes("esports")) return choose(["esports-vietnam-sea-games.jpg", "esports-vietnam-asiad.jpg", "esports-vietnam-stage.jpg"]);
   if (s.includes("thailand")) return choose(["thailand-game-show-level-infinite-booth.jpg", "thailand-gaming-streamer-creator.jpg", "thailand-game-show-legend-arena-esports.jpg"]);
-  if (s.includes("analytics") || s.includes("cpi") || s.includes("roas") || s.includes("arppu")) return choose(["analytics-dashboard.jpg", "analytics-3d.png", "growth-analytics-chart.jpg", "user-acquisition-3d.png"]);
+  if (s.includes("analytics") || s.includes("cpi") || s.includes("roas") || s.includes("arppu")) return choose(["analytics-dashboard.jpg", "analytics-3d.jpg", "growth-analytics-chart.jpg", "user-acquisition-3d.jpg"]);
   if (s.includes("tiktok") || s.includes("social") || s.includes("influencer") || s.includes("ugc")) return choose(["creator-influencer.jpg", "tiktok-social.jpg", "creator-program.jpg", "livestream-creator-setup.jpg"]);
   if (s.includes("brand") || s.includes("localization")) return choose(["brand-foundation.jpg", "brand-strategy-board.jpg", "brand-identity-design.jpg"]);
-  if (s.includes("seo") || s.includes("keyword") || s.includes("internal-link")) return choose(["seo-strategy.jpg", "seo-organic-ranking.jpg", "game-seo-cluster.jpg", "ai-search-3d.png"]);
-  if (s.includes("community") || s.includes("discord") || s.includes("moderation")) return choose(["discord-community.jpg", "community-3d.png", "community-launch.jpg", "moderation-3d.png"]);
+  if (s.includes("seo") || s.includes("keyword") || s.includes("internal-link")) return choose(["seo-strategy.jpg", "seo-organic-ranking.jpg", "game-seo-cluster.jpg", "ai-search-3d.jpg"]);
+  if (s.includes("community") || s.includes("discord") || s.includes("moderation")) return choose(["discord-community.jpg", "community-3d.jpg", "community-launch.jpg", "moderation-3d.jpg"]);
   if (s.includes("phone") || s.includes("app") || s.includes("aso") || s.includes("store")) return choose(["aso-store-optimization.jpg", "app-store-conversion-funnel.jpg", "store-conversion.jpg", "game-app.jpg"]);
-  if (s.includes("thị-trường") || s.includes("thi-truong") || s.includes("vietnam") || s.includes("viet-nam")) return choose(["vietnam-game-publishers-map.png", "vietnam-game-saturation.png", "game-pr-vietnam.jpg"]);
+  if (s.includes("thị-trường") || s.includes("thi-truong") || s.includes("vietnam") || s.includes("viet-nam")) return choose(["vietnam-game-publishers-map.jpg", "vietnam-game-saturation.jpg", "game-pr-vietnam.jpg"]);
   return choose(editorialCoverPool);
 }
 
 function coverForSlug(slug: string) {
   const s = slug.toLowerCase();
   const exact: Array<[string, string]> = [
-    ["quan-ly-review-app-game-tai-viet-nam", "app-reviews-3d.png"], ["xu-ly-creative-fatigue-quang-cao-game-mobile", "creative-fatigue-3d.png"], ["seo-game-marketing-trong-ky-nguyen-ai-search", "ai-search-3d.png"], ["kiem-duyet-va-quan-tri-cong-dong-game-tai-viet-nam", "moderation-3d.png"],
-    ["user-acquisition-game-mobile-kenh", "user-acquisition-3d.png"], ["bo-benchmark-user-acquisition-game-mobile-tai-viet-nam-2026", "performance.jpg"], ["xu-ly-creative-fatigue-quang-cao-game-mobile", "creative-testing.jpg"],
+    ["quan-ly-review-app-game-tai-viet-nam", "app-reviews-3d.jpg"], ["xu-ly-creative-fatigue-quang-cao-game-mobile", "creative-fatigue-3d.jpg"], ["seo-game-marketing-trong-ky-nguyen-ai-search", "ai-search-3d.jpg"], ["kiem-duyet-va-quan-tri-cong-dong-game-tai-viet-nam", "moderation-3d.jpg"],
+    ["user-acquisition-game-mobile-kenh", "user-acquisition-3d.jpg"], ["bo-benchmark-user-acquisition-game-mobile-tai-viet-nam-2026", "performance.jpg"], ["xu-ly-creative-fatigue-quang-cao-game-mobile", "creative-testing.jpg"],
     ["quan-ly-review-app-game-tai-viet-nam", "game-pr-vietnam.jpg"], ["bo-kpi-cho-community-manager-game-mobile", "community-launch.jpg"],
     ["chien-luoc-aso-game-mobile-tang-tai", "store-conversion.jpg"], ["aso-game-mobile-title-description", "aso-store-optimization.jpg"],
-    ["community-launch-game-mobile-90", "community-3d.png"], ["liveops-game-mobile", "retention-3d.png"],
+    ["community-launch-game-mobile-90", "community-3d.jpg"], ["liveops-game-mobile", "retention-3d.jpg"],
     ["creative-strategy-game-mobile", "creative-testing.jpg"], ["creative-testing-game-mobile", "creative-testing-lab.jpg"],
     ["chuong-trinh-creator-ugc-game-mobile", "creator-influencer.jpg"], ["ugc-game-mobile-cach", "creator-program.jpg"],
-    ["bo-kpi-cho-community-manager-game-mobile", "community-launch.jpg"], ["kiem-duyet-va-quan-tri-cong-dong-game-tai-viet-nam", "community-3d.png"],
-    ["ban-dia-hoa-tu-khoa-va-tieng-long-game-tai-viet-nam", "vietnam-game-saturation.png"], ["seo-game-mobile-xay-dung-topic-cluster", "game-seo-cluster.jpg"],
-    ["game-launch-viet-nam-checklist-30", "launch-3d.png"], ["game-mobile-soft-launch-thi-truong", "soft-launch-measurement.jpg"], ["soft-launch-game-mobile-viet-nam", "launch-checklist.jpg"],
-    ["marketing-game-app-toi-uu-cpi-roas", "performance.jpg"], ["do-luong-game-mobile-cpi-ltv-roas", "analytics-3d.png"],
-    ["pheu-marketing-game-mobile", "performance-3d.png"], ["game-mobile-retention-push", "retention-return.jpg"],
+    ["bo-kpi-cho-community-manager-game-mobile", "community-launch.jpg"], ["kiem-duyet-va-quan-tri-cong-dong-game-tai-viet-nam", "community-3d.jpg"],
+    ["ban-dia-hoa-tu-khoa-va-tieng-long-game-tai-viet-nam", "vietnam-game-saturation.jpg"], ["seo-game-mobile-xay-dung-topic-cluster", "game-seo-cluster.jpg"],
+    ["game-launch-viet-nam-checklist-30", "launch-3d.jpg"], ["game-mobile-soft-launch-thi-truong", "soft-launch-measurement.jpg"], ["soft-launch-game-mobile-viet-nam", "launch-checklist.jpg"],
+    ["marketing-game-app-toi-uu-cpi-roas", "performance.jpg"], ["do-luong-game-mobile-cpi-ltv-roas", "analytics-3d.jpg"],
+    ["pheu-marketing-game-mobile", "performance-3d.jpg"], ["game-mobile-retention-push", "retention-return.jpg"],
     ["seo-game-marketing-viet-nam-internal", "seo-strategy.jpg"], ["seo-game-marketing-trong-ky-nguyen-ai-search", "game-seo-cluster.jpg"], ["seo-2026-huong-dan", "seo.jpg"],
     ["ab-test-store-listing", "creative-testing.jpg"], ["app-store-conversion-rate", "store-conversion.jpg"],
     ["tiktok-marketing-cho", "social.jpg"], ["chien-luoc-noi-dung-tiktok", "tiktok-social.jpg"],
-    ["ban-dia-hoa-game-mobile-tai-viet-nam", "vietnam-game-publishers-map.png"], ["localization-game-mobile-chi-phi", "branding.jpg"],
-    ["marketing-game-mobile-mua-tet", "tiktok-social.jpg"], ["thi-truong-game-viet-nam-bao-hoa", "vietnam-game-saturation.png"],
-    ["retention", "retention-3d.png"], ["liveops", "community-launch.jpg"], ["push-notification", "retention-return.jpg"],
-    ["influencer", "influencer-3d.png"], ["creator", "creator-influencer.jpg"], ["ugc", "creator-program.jpg"], ["tiktok", "tiktok-social.jpg"],
+    ["ban-dia-hoa-game-mobile-tai-viet-nam", "vietnam-game-publishers-map.jpg"], ["localization-game-mobile-chi-phi", "branding.jpg"],
+    ["marketing-game-mobile-mua-tet", "tiktok-social.jpg"], ["thi-truong-game-viet-nam-bao-hoa", "vietnam-game-saturation.jpg"],
+    ["retention", "retention-3d.jpg"], ["liveops", "community-launch.jpg"], ["push-notification", "retention-return.jpg"],
+    ["influencer", "influencer-3d.jpg"], ["creator", "creator-influencer.jpg"], ["ugc", "creator-program.jpg"], ["tiktok", "tiktok-social.jpg"],
     ["community", "discord-community.jpg"], ["discord", "discord-community.jpg"], ["moderation", "community-launch.jpg"],
     ["aso", "aso-store-optimization.jpg"], ["store-listing", "store-conversion.jpg"], ["conversion-rate", "store-conversion.jpg"],
     ["onboarding", "onboarding-activation.jpg"], ["activation", "onboarding-activation.jpg"], ["battle-pass", "battle-pass-value.jpg"],
-    ["monetization", "monetization-3d.png"], ["arppu", "monetization-trust.jpg"], ["payment", "monetization-trust.jpg"],
-    ["launch", "launch-3d.png"], ["soft-launch", "soft-launch-measurement.jpg"], ["pr-game", "game-pr-vietnam.jpg"],
-    ["analytics", "analytics-dashboard.jpg"], ["dashboard", "analytics-dashboard.jpg"], ["cpi", "performance-3d.png"], ["roas", "performance-3d.png"],
+    ["monetization", "monetization-3d.jpg"], ["arppu", "monetization-trust.jpg"], ["payment", "monetization-trust.jpg"],
+    ["launch", "launch-3d.jpg"], ["soft-launch", "soft-launch-measurement.jpg"], ["pr-game", "game-pr-vietnam.jpg"],
+    ["analytics", "analytics-dashboard.jpg"], ["dashboard", "analytics-dashboard.jpg"], ["cpi", "performance-3d.jpg"], ["roas", "performance-3d.jpg"],
     ["user-acquisition", "analytics-dashboard.jpg"], ["creative-fatigue", "creative-testing.jpg"], ["marketing-b2b", "game-pr-vietnam.jpg"],
     ["seo", "seo-strategy.jpg"], ["search", "game-seo-cluster.jpg"], ["keyword", "game-seo-cluster.jpg"], ["internal-link", "game-seo-cluster.jpg"],
-    ["branding", "brand-foundation.jpg"], ["brand", "brand-foundation.jpg"], ["localization", "vietnam-game-publishers-map.png"], ["tet", "vietnam-game-saturation.png"],
+    ["branding", "brand-foundation.jpg"], ["brand", "brand-foundation.jpg"], ["localization", "vietnam-game-publishers-map.jpg"], ["tet", "vietnam-game-saturation.jpg"],
     ["creative", "creative-testing-lab.jpg"], ["ab-test", "creative-testing.jpg"], ["testing", "creative-testing-lab.jpg"],
   ];
   const matched = exact.find(([key]) => s.includes(key));

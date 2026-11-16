@@ -44,9 +44,9 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
           </div>
 
           <div className="lg:col-span-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <p className="text-xs font-bold uppercase tracking-wider text-orange-400">
               {locale === "vi" ? "Dịch vụ" : "Services"}
-            </h4>
+            </p>
             <ul className="mt-4 space-y-2 text-sm text-navy-300">
               {services.map((s) => (
                 <li key={s.slug}>
@@ -59,9 +59,9 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <p className="text-xs font-bold uppercase tracking-wider text-orange-400">
               {locale === "vi" ? "Về ANBU" : "About"}
-            </h4>
+            </p>
             <ul className="mt-4 space-y-2 text-sm text-navy-300">
               <li>
                 <Link href={localePath(locale, "/about")} className="hover:text-white transition-colors">
@@ -107,9 +107,9 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
           </div>
 
           <div className="lg:col-span-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <p className="text-xs font-bold uppercase tracking-wider text-orange-400">
               {locale === "vi" ? "Liên hệ & Trụ sở" : "Contact & Office"}
-            </h4>
+            </p>
             <div className="mt-4 space-y-2.5 text-sm text-navy-300">
               <p className="font-medium text-white">{t(site.legalName, locale)}</p>
               <p className="text-xs text-navy-300">MST: {site.taxId}</p>

@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     locale,
     path: "/glossary",
     title: vi
-      ? "Từ điển thuật ngữ Game Marketing: CPI, ROAS, KOL, KOC, LiveOps | ANBU"
-      : "Game Marketing Glossary: CPI, ROAS, KOL, KOC, LiveOps | ANBU",
+      ? "Từ điển thuật ngữ Game Marketing: CPI, ROAS, KOL"
+      : "Game Marketing Glossary: CPI, ROAS, KOL, KOC",
     description: vi
       ? `${glossaryTermCount} thuật ngữ game marketing giải thích ngắn gọn, từ chỉ số CPI, ROAS, retention đến KOL, KOC, seeding, LiveOps và giấy phép G1 tại Việt Nam.`
       : `${glossaryTermCount} game marketing terms in plain language, from CPI, ROAS and retention to KOL, KOC, seeding, LiveOps and Vietnam's G1 license.`,

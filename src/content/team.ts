@@ -13,5 +13,5 @@ export const team: Member[] = [
   { name: "Mambu", realName: "Đức Anh", role: "Community Manager", initials: "M", slug: "manbu" },
   { name: "Lin", realName: "Khánh Linh", role: "Account Executive", initials: "L", slug: "lin" },
   { name: "Anna", realName: "Vân Anh", role: "Account Executive", initials: "A", slug: "anna" },
-  { name: "Quinn", realName: "Quinn", role: "Designer", initials: "Q", slug: "quinn", imageExtension: "png" },
+  { name: "Quinn", realName: "Quinn", role: "Designer", initials: "Q", slug: "quinn", imageExtension: "jpg" },
 ];

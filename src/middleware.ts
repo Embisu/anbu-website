@@ -25,6 +25,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Upper/mixed-case locale segment (/VI/blog) -> canonical lowercase (/vi/blog).
+  const firstSeg = pathname.split("/")[1] || "";
+  if (firstSeg && firstSeg !== firstSeg.toLowerCase() && (locales as readonly string[]).includes(firstSeg.toLowerCase())) {
+    const fixed = request.nextUrl.clone();
+    fixed.pathname = "/" + firstSeg.toLowerCase() + pathname.slice(firstSeg.length + 1);
+    return NextResponse.redirect(fixed, 308);
+  }
+
   const hasLocale = locales.some(
     (loc) => pathname === `/${loc}` || pathname.startsWith(`/${loc}/`)
   );

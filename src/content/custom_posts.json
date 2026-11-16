@@ -1624,7 +1624,8 @@
         ]
       }
     ],
-    "cover_en": "/blog-media/1794100000000-alwayson-en-cover.jpg"
+    "cover_en": "/blog-media/1794100000000-alwayson-en-cover.jpg",
+    "updated": "2026-11-11"
   },
   {
     "slug": "influencer-marketing-game-viet-nam-revelation-gunny-origin",
@@ -2018,7 +2019,8 @@
         ]
       }
     ],
-    "cover_en": "/blog-media/1794000000000-influencer-wide-01.jpg"
+    "cover_en": "/blog-media/1794000000000-influencer-wide-01.jpg",
+    "updated": "2026-11-11"
   },
   {
     "slug": "thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau",
@@ -2411,7 +2413,8 @@
         ]
       }
     ],
-    "cover_en": "/blog-media/1793200000000-vn2026-en-01.jpg"
+    "cover_en": "/blog-media/1793200000000-vn2026-en-01.jpg",
+    "updated": "2026-11-11"
   },
   {
     "slug": "game-publishing-in-vietnam-nhung-bai-toan-can-giai-truoc-khi-dau-tu-marketing",
@@ -6598,7 +6601,7 @@
       },
       {
         "type": "image",
-        "src": "/blog-covers/user-acquisition-3d.png",
+        "src": "/blog-covers/user-acquisition-3d.jpg",
         "alt": {
           "vi": "Hệ thống phễu User Acquisition và điểm chạm tiếp cận người chơi game mobile",
           "en": "Mobile game User Acquisition funnel and player touchpoints"
@@ -7629,7 +7632,7 @@
     "author": "ANBU Team",
     "color": "from-blue-600 to-indigo-600",
     "variant": "game",
-    "cover": "/blog-covers/vietnam-game-saturation.png",
+    "cover": "/blog-covers/vietnam-game-saturation.jpg",
     "body": [
       {
         "text": {
@@ -7654,7 +7657,7 @@
       },
       {
         "type": "image",
-        "src": "/blog-covers/vietnam-game-publishers-map.png",
+        "src": "/blog-covers/vietnam-game-publishers-map.jpg",
         "alt": {
           "vi": "Bản đồ hệ sinh thái thị trường game và hạ tầng phát hành tại Việt Nam",
           "en": "Vietnam gaming ecosystem and publishing infrastructure map"
@@ -7791,7 +7794,7 @@
       },
       {
         "type": "image",
-        "src": "/blog-covers/community-3d.png",
+        "src": "/blog-covers/community-3d.jpg",
         "alt": {
           "vi": "Cộng đồng game thủ và sự gắn kết người chơi quanh trải nghiệm thực tế",
           "en": "Gaming community engagement around real player experiences"
@@ -8209,7 +8212,7 @@
       },
       {
         "type": "image",
-        "src": "/blog-covers/girls-frontline-2-localization-slang.png",
+        "src": "/blog-covers/girls-frontline-2-localization-slang.jpg",
         "alt": {
           "vi": "Giao diện tiếng Việt của Girls' Frontline 2: Exilium trong màn hình tương tác với nhân vật",
           "en": "Vietnamese-language interface of Girls' Frontline 2: Exilium on the character interaction screen"
@@ -8431,7 +8434,7 @@
       },
       {
         "type": "image",
-        "src": "/blog-covers/discord-community-game-night.png",
+        "src": "/blog-covers/discord-community-game-night.jpg",
         "alt": {
           "vi": "Buổi game night của cộng đồng trên phòng Voice Discord",
           "en": "A community game night in a Discord voice room"

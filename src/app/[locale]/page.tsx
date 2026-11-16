@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     locale,
     path: "",
     title: isVi
-      ? "ANBU Agency | Biệt đội Community & Game Marketing tại Việt Nam"
-      : "ANBU Agency | Community & Game Marketing Agency in Vietnam",
+      ? "ANBU Agency | Community & Game Marketing tại Việt Nam"
+      : "ANBU Agency | Community & Game Marketing in Vietnam",
     description: isVi
       ? "ANBU Agency chuyên cung cấp giải pháp Marketing game, Community, KOL KOC và phát hành game tại Việt Nam và Đông Nam Á cho các đối tác quốc tế."
       : "ANBU Agency is a specialized game marketing and community agency helping global game publishers and brands launch in Vietnam and Southeast Asia.",

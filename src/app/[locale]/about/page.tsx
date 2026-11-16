@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     locale,
     path: "/about",
     title: isVi
-      ? "Giới thiệu ANBU Agency | Biệt đội Game Marketing & Growth"
-      : "About ANBU Agency | Game Marketing & Growth Squad",
+      ? "Giới thiệu ANBU: Biệt đội Game Marketing & Growth"
+      : "About ANBU: Game Marketing & Growth Squad",
     description: isVi
       ? "Tìm hiểu về ANBU Agency - đội đặc nhiệm Game Marketing, Community và KOL KOC thực chiến hàng đầu tại Việt Nam và Đông Nam Á."
       : "Discover ANBU Agency - a dedicated game marketing, community and creator squad driving growth for top games in Vietnam and SEA.",
@@ -99,7 +99,7 @@ export default async function AboutPage({ params }: { params: { locale: string }
           </div>
         </Reveal>
         <Reveal delay={100}>
-          <Image src="/about-anbu-squad.png" alt={locale === "vi" ? "Minh họa đội ngũ ANBU đưa game vào thị trường Việt Nam" : "ANBU squad helping game brands enter Vietnam"} width={1536} height={1024} className="w-full rounded-3xl" />
+          <Image src="/about-anbu-squad.jpg" alt={locale === "vi" ? "Minh họa đội ngũ ANBU đưa game vào thị trường Việt Nam" : "ANBU squad helping game brands enter Vietnam"} width={1536} height={1024} className="w-full rounded-3xl" />
         </Reveal>
       </section>
 

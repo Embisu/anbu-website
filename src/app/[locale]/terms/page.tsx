@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     locale,
     path: "/terms",
     title: locale === "vi" ? "Điều khoản sử dụng" : "Terms of Service",
-    description: locale === "vi" ? "Điều khoản sử dụng website ANBU." : "ANBU website terms of service.",
+    description: locale === "vi" ? "Điều khoản sử dụng website ANBU: quyền sở hữu trí tuệ, quy định sử dụng thông tin và dịch vụ, giới hạn trách nhiệm và luật áp dụng." : "ANBU website terms of service: intellectual property, rules for using our information and services, limits of liability and governing law.",
   });
 }
 

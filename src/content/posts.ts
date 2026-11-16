@@ -30,6 +30,7 @@ export type Post = {
   cover_en?: string; // optional English-language cover (e.g. infographic with English text)
   focal?: string;
   sources?: { label: L10n; href: string }[];
+  updated?: string; // ISO date of the last substantive edit (used for JSON-LD dateModified)
   body: Block[];
 };
 
@@ -76,7 +77,7 @@ export const builtinPosts: Post[] = [
     author: "ANBU Team",
     color: "from-navy-900 to-orange-600",
     variant: "game",
-    cover: "/blog-covers/vietnam-game-publishers-map.png",
+    cover: "/blog-covers/vietnam-game-publishers-map.jpg",
     sources: [
       { label: { vi: "VNGGames: hệ sinh thái trò chơi của VNG", en: "VNGGames: VNG's gaming ecosystem" }, href: "https://vng.com.vn/news/product/vnggames.html" },
       { label: { vi: "Garena: hoạt động phát triển game và esports tại Việt Nam", en: "Garena: game development and esports activity in Vietnam" }, href: "https://gamejam.garena.vn/vi" },
@@ -160,7 +161,7 @@ export const builtinPosts: Post[] = [
       { type: "h2", text: { vi: "JoyGames: một lựa chọn đang mở rộng ở phân khúc game mobile", en: "JoyGames: a growing option in mobile publishing" } },
       {
         type: "image",
-        src: "/blog-covers/publishers/joygames-game.png",
+        src: "/blog-covers/publishers/joygames-game.jpg",
         alt: { vi: "Danh mục sản phẩm trò chơi điện tử G1 trên cổng phát hành JoyGames", en: "Licensed G1 mobile game catalogue on JoyGames publishing portal" },
         caption: { vi: "JoyGames công khai giấy phép dịch vụ G1 và tập trung chuyên sâu vào các dòng game mobile chiến thuật thế hệ mới.", en: "JoyGames operates licensed G1 mobile services with a sharp focus on next-gen tactical mobile titles." },
       },
@@ -319,7 +320,7 @@ export const builtinPosts: Post[] = [
       },
       {
         type: "image",
-        src: "/blog-covers/girls-frontline-luu-day-2-anime.png",
+        src: "/blog-covers/girls-frontline-luu-day-2-anime.jpg",
         alt: { vi: "Tựa game Anime 3D Chiến thuật Girls Frontline Lưu Đày 2 khai phá tệp người chơi Gen Z", en: "Girls' Frontline: Exilium (Luu Day 2) anime 3D tactical RPG capturing Gen Z fandom loyalty" },
         caption: { vi: "Lưu Đày 2 (Girls' Frontline 2: Exilium) là minh chứng cho sức mạnh của văn hóa Anime ACGN kết hợp đồ họa 3D cel-shading tinh xảo và lối chơi chiến thuật chuyên sâu.", en: "Girls' Frontline 2: Exilium demonstrates the explosive power of ACGN anime culture coupled with cel-shaded visual mastery and deep tactical depth." },
       },
@@ -1918,7 +1919,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Cổng thanh toán game mobile tại Việt Nam: Tối ưu ma sát & Tăng tỷ lệ hoàn tất giao dịch", en: "Mobile Game Payment Gateways in Vietnam: Minimizing Friction & Lifting Transaction Conversion" },
     excerpt: { vi: "Hơn 30% doanh thu game bị thất thoát không phải vì giá đắt, mà vì người chơi bị đứt gãy luồng thanh toán ví điện tử hoặc ngân hàng. Hướng dẫn thiết kế cổng nạp đa kênh và Webshop.", en: "Over 30% of potential game revenue is lost due to payment drop-offs across e-wallets or banking gateways. Architecture guidelines for multi-channel in-app and Webshop payment systems." },
     category: { vi: "Kinh doanh Game", en: "Game Business" }, date: "2026-08-19", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
-    cover: "/blog-covers/monetization-3d.png",
+    cover: "/blog-covers/monetization-3d.jpg",
     sources: [
       { label: { vi: "Google Play Billing System Policies", en: "Google Play Billing System Policies" }, href: "https://support.google.com/googleplay/android-developer/answer/10281818" },
       { label: { vi: "Apple In-App Purchase & External Purchase Link Entitlement", en: "Apple In-App Purchase & External Purchase Link Entitlement" }, href: "https://developer.apple.com/in-app-purchase/" },
@@ -1960,7 +1961,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Bộ chỉ số KPI cho Community Manager Game Mobile: Đo lường sức khỏe cộng đồng và tác động Retention", en: "Mobile Game Community Manager KPIs: Health Telemetry & Long-Term Retention Metrics" },
     excerpt: { vi: "Số lượng thành viên trong Group chỉ là chỉ số phù phiếm nếu không chuyển hóa thành tương tác thật. Bộ KPI 4 nhóm lượng hóa sức khỏe cộng đồng Discord, Facebook Group và chỉ số gắn kết game thủ.", en: "Group member counts are vanity metrics without active participation. A 4-pillar KPI telemetry measuring Discord/Facebook community vitality, sentiment health, and in-game retention lift." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-19", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "social",
-    cover: "/blog-covers/community-3d.png",
+    cover: "/blog-covers/community-3d.jpg",
     sources: [
       { label: { vi: "Discord: Community Best Practices", en: "Discord: Community Best Practices" }, href: "https://discord.com/guidelines" },
       { label: { vi: "GDC: Community Management Telemetry", en: "GDC: Community Management Telemetry" }, href: "https://gdconf.com/" },
@@ -2128,7 +2129,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Tối ưu Push Notification Game Mobile: Nghệ thuật kéo người chơi quay lại mà không gây ức chế", en: "Mobile Game Push Notifications: Re-Engaging Lapsed Players Without Spam Fatigue" },
     excerpt: { vi: "Rất nhiều người chơi tắt hoàn toàn thông báo nếu bị làm phiền bởi các tin nhắn quảng cáo nạp tiền vô nghĩa. Hướng dẫn thiết lập ma trận thông báo cá nhân hóa theo tiến độ và thời gian thực.", en: "Many players permanently disable notifications after receiving spammy monetization push alerts. A personalized notification matrix triggered by real-time in-game events and milestones." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "social",
-    cover: "/blog-covers/retention-3d.png",
+    cover: "/blog-covers/retention-3d.jpg",
     sources: [
       { label: { vi: "Firebase Cloud Messaging Documentation", en: "Firebase Cloud Messaging Documentation" }, href: "https://firebase.google.com/docs/cloud-messaging" },
       { label: { vi: "OneSignal: State of Gaming Push Notifications", en: "OneSignal: State of Gaming Push Notifications" }, href: "https://onesignal.com/" },
@@ -2259,7 +2260,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Dashboard analytics game mobile: 10 chỉ số vàng cho đội ngũ tăng trưởng", en: "Mobile Game Analytics Dashboard: 10 Core Metrics for Growth Teams" },
     excerpt: { vi: "Nhiều dashboard chứa hàng chục biểu đồ rối rắm nhưng không trả lời được câu hỏi cốt lõi: người chơi rời đi vì đâu và doanh thu sụt giảm do nguyên nhân nào. 10 chỉ số cốt lõi và ngưỡng cảnh báo cần thiết.", en: "Many dashboards hold dozens of convoluted charts without answering the fundamental questions: why are players churning and where is revenue dropping? 10 actionable metrics and alert thresholds." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 6, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "seo",
-    cover: "/blog-covers/analytics-3d.png",
+    cover: "/blog-covers/analytics-3d.jpg",
     sources: [
       { label: { vi: "Firebase Analytics for Mobile Apps", en: "Firebase Analytics for Mobile Apps" }, href: "https://firebase.google.com/docs/analytics" },
       { label: { vi: "AppsFlyer Mobile Analytics Benchmarks", en: "AppsFlyer Mobile Analytics Benchmarks" }, href: "https://www.appsflyer.com/benchmarks/" },
@@ -2312,7 +2313,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Xây dựng và vận hành Discord cho cộng đồng game tại Việt Nam: Hướng dẫn thực chiến", en: "Building and Running a Gaming Discord Community in Vietnam: A Practical Playbook" },
     excerpt: { vi: "Một server Discord không tự nhiên đông vui chỉ vì tạo nhiều kênh. Đây là kiến trúc phân quyền 4 tầng, bộ bot vận hành không thể thiếu và kịch bản 30 ngày đầu giúp giữ chân game thủ Việt.", en: "A gaming Discord server doesn't thrive just by creating dozens of channels. Here is the 4-tier permission architecture, essential bot stack, and 30-day onboarding playbook to retain Vietnamese gamers." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-21", readingTime: 6, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
-    cover: "/blog-covers/discord-community-game-night.png",
+    cover: "/blog-covers/discord-community-game-night.jpg",
     sources: [
       { label: { vi: "Discord Community Best Practices & Guidelines", en: "Discord Community Best Practices & Guidelines" }, href: "https://discord.com/guidelines" },
       { label: { vi: "Discord Developer Portal: Bot & Webhook Documentation", en: "Discord Developer Portal: Bot & Webhook Documentation" }, href: "https://discord.com/developers/docs/intro" },
@@ -2324,7 +2325,7 @@ export const builtinPosts: Post[] = [
       } },
       {
         type: "image",
-        src: "/blog-covers/discord-voice-channel-gameplay.png",
+        src: "/blog-covers/discord-voice-channel-gameplay.jpg",
         alt: { vi: "Giao diện cấu trúc kênh Discord phân tầng và tính năng phát trực tiếp livestream gameplay trên kênh Voice", en: "Discord server channel hierarchy interface and live gameplay streaming feature in voice channel" },
         caption: { vi: "Cấu trúc kênh Discord thực tế: Phân tách rõ ràng giữa kênh văn bản (#welcome, #faq, #memes) và phòng đàm thoại Voice kèm tính năng Go Live livestream trận đấu.", en: "Real Discord server structure: Clear separation of text channels (#welcome, #faq, #memes) and voice channels with live gameplay broadcasting." },
       },
@@ -2352,7 +2353,7 @@ export const builtinPosts: Post[] = [
       ] },
       {
         type: "image",
-        src: "/blog-covers/discord-game-hub-activity.png",
+        src: "/blog-covers/discord-game-hub-activity.jpg",
         alt: { vi: "Giao diện trung tâm hoạt động game trên Discord kết nối nhà phát triển với cộng đồng người chơi", en: "Discord game activity hub connecting developers with player communities" },
         caption: { vi: "Trung tâm hoạt động Discord cho phép NPH cập nhật tin tức Dev Watercooler, theo dõi bạn bè đang chơi (Now Playing) và đồng bộ danh sách game.", en: "Discord Game Hub enables publishers to publish developer updates, display friend activity feeds, and coordinate game squads." },
       },
@@ -2369,7 +2370,7 @@ export const builtinPosts: Post[] = [
       ] },
       {
         type: "image",
-        src: "/blog-covers/discord-community-game-night.png",
+        src: "/blog-covers/discord-community-game-night.jpg",
         alt: { vi: "Tổ chức sự kiện Community Game Night và giải đấu giao hữu trực tiếp trên phòng Voice Discord", en: "Hosting community game nights and live interactive sessions in Discord voice rooms" },
         caption: { vi: "Tổ chức các buổi Community Game Night định kỳ giúp gắn kết các thành viên, biến server từ nơi nhận tin thụ động thành điểm hẹn sinh hoạt hàng tuần.", en: "Hosting regular Community Game Nights transforms the server from a passive notification feed into an active weekly hangout." },
       },
@@ -2396,7 +2397,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Marketing game mobile mùa Tết tại Việt Nam: Chiến lược LiveOps & Chiến dịch Văn hóa", en: "Tet Gaming Marketing in Vietnam: Cultural LiveOps & Revenue Acceleration Playbook" },
     excerpt: { vi: "Tết Nguyên Đán là 'cửa sổ vàng' khi thời gian rảnh và mức sẵn sàng chi tiêu (Lì xì) của game thủ Việt cùng đạt đỉnh. Kế hoạch LiveOps 3 giai đoạn kết hợp phong tục truyền thống và sự kiện Bang Hội.", en: "Lunar New Year is the prime window when player free time and disposable income (Lucky Money) surge simultaneously. A 3-phase LiveOps and cultural event roadmap." },
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "branding",
-    cover: "/blog-covers/launch-3d.png",
+    cover: "/blog-covers/launch-3d.jpg",
     sources: [
       { label: { vi: "Google Search Central: Helpful Content Guidelines", en: "Google Search Central: Helpful Content Guidelines" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
       { label: { vi: "TikTok for Business: Lunar New Year Campaign Insights", en: "TikTok for Business: Lunar New Year Campaign Insights" }, href: "https://www.tiktok.com/business/en/solutions" },
@@ -2512,7 +2513,7 @@ export const builtinPosts: Post[] = [
     author: "ANBU Team",
     color: "from-navy-900 to-orange-600",
     variant: "branding",
-    cover: "/blog-covers/girls-frontline-2-localization-slang.png",
+    cover: "/blog-covers/girls-frontline-2-localization-slang.jpg",
     sources: [
       { label: { vi: "Google Search Central: Nguyên tắc tối ưu nội dung hữu ích và bản địa hóa", en: "Google Search Central: Helpful Content & Localization Guidelines" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
       { label: { vi: "Báo cáo Hành vi & Thuật ngữ Cộng đồng Game thủ Việt Nam (ANBU Research)", en: "Vietnam Gaming Subculture & Colloquial Slang Report (ANBU Research)" }, href: "https://anbu.asia/" },
@@ -2527,7 +2528,7 @@ export const builtinPosts: Post[] = [
       },
       {
         type: "image",
-        src: "/blog-covers/girls-frontline-2-localization-slang.png",
+        src: "/blog-covers/girls-frontline-2-localization-slang.jpg",
         alt: { vi: "Giao diện tương tác nhân vật T-Doll trong Girls' Frontline 2 Exilium (Lưu Đày 2) minh chứng cho văn hóa tiếng lóng Waifu và Gacha", en: "Interactive T-Doll character interface in Girls' Frontline 2: Exilium demonstrating ACGN waifu and gacha slang localization" },
         caption: { vi: "Girls' Frontline 2: Exilium là minh chứng kinh điển cho hệ sinh thái tiếng lóng ACGN: Từ cách gọi thân mật 'game Lưu Tày' (chơi chữ từ Lưu Đày) cho đến các khái niệm 'T-Doll', 'Vợ yêu', 'Nổ vàng', 'Lệch rate'.", en: "Girls' Frontline 2: Exilium exemplifies ACGN subculture localization: from community nicknames like 'Luu Tay' (pun on Exilium/Luu Day) to core vernacular like 'T-Doll', 'Waifu', 'Golden Sparkles', and 'Rate-off 50/50'." },
       },
@@ -2558,7 +2559,7 @@ export const builtinPosts: Post[] = [
       },
       {
         type: "image",
-        src: "/blog-covers/csgo-rush-b-gamer-slang.png",
+        src: "/blog-covers/csgo-rush-b-gamer-slang.jpg",
         alt: { vi: "Meme huyền thoại Hướng dẫn Rush B chuẩn thế giới map Inferno minh chứng cho tiếng lóng dòng game bắn súng FPS", en: "Iconic Rush B Inferno tactical meme demonstrating competitive FPS shooter slang in Vietnam" },
         caption: { vi: "Khẩu hiệu huyền thoại 'Rush B' trong CS:GO/CS2 cùng các thuật ngữ 'Gank tem', 'Combat tổng', 'Check góc', 'Sấy' là ngôn ngữ bất hủ kết nối hàng triệu game thủ bắn súng và Esports.", en: "The iconic 'Rush B' battle cry in CS:GO/CS2 alongside terms like 'Gank', 'Combat', 'Angle Check', and 'Spray' form the universal vernacular uniting millions of shooter and Esports fans." },
       },
@@ -2639,7 +2640,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Xử lý Creative Fatigue trong Quảng cáo Game Mobile: 3 Dấu hiệu cảnh báo sớm và Kế hoạch làm mới góc tiếp cận", en: "Overcoming Creative Fatigue in Mobile Game UA: 3 Early Warning Signals & Angle Refresh" },
     excerpt: { vi: "Khi chi phí CPI bất ngờ tăng vọt sau 3 tuần chạy quảng cáo, nguyên nhân 90% đến từ việc Creative bị bào mòn (Fatigue). Phương pháp xoay chuyển Angle thay vì chỉ đổi màu nền.", en: "When CPI suddenly spikes after 3 weeks of scaling, creative fatigue is almost always the culprit. How to execute structural angle pivots rather than cosmetic tweaks." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "performance",
-    cover: "/blog-covers/creative-fatigue-3d.png",
+    cover: "/blog-covers/creative-fatigue-3d.jpg",
     sources: [
       { label: { vi: "Meta for Business: Creative Diversification Guide", en: "Meta for Business: Creative Diversification Guide" }, href: "https://www.facebook.com/business/m/creative-diversification" },
       { label: { vi: "TikTok for Business: Combating Creative Fatigue", en: "TikTok for Business: Combating Creative Fatigue" }, href: "https://ads.tiktok.com/business/creativecenter/" },
@@ -2691,7 +2692,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Kiểm duyệt & Quản trị Cộng đồng Game tại Việt Nam: Xây dựng môi trường an toàn và Xử lý khủng hoảng truyền thông", en: "Game Community Moderation in Vietnam: Safe Discussion Spaces & Crisis De-escalation" },
     excerpt: { vi: "Một đợt khủng hoảng tẩy chay hoặc tràn ngập bài đăng toxic có thể phá hủy hàng năm trời xây dựng thương hiệu game. Hướng dẫn thiết lập quy chế kiểm duyệt 4 cấp và đội ngũ Mod tinh nhuệ.", en: "Unchecked toxic spam or community boycotts can destroy years of brand equity overnight. A 4-tier escalating moderation playbook and crisis de-escalation protocols." },
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "social",
-    cover: "/blog-covers/moderation-3d.png",
+    cover: "/blog-covers/moderation-3d.jpg",
     sources: [
       { label: { vi: "Discord Community Guidelines & Moderation Safety", en: "Discord Community Guidelines & Moderation Safety" }, href: "https://discord.com/guidelines" },
       { label: { vi: "GDC: Community Crisis Management Playbook", en: "GDC: Community Crisis Management Playbook" }, href: "https://gdconf.com/" },
@@ -2733,7 +2734,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "SEO Game Marketing trong Kỷ nguyên AI Search: Chiến lược để trở thành nguồn trích dẫn ưu tiên", en: "Game Marketing SEO for AI Search: How to Win Citations on ChatGPT & AI Overviews" },
     excerpt: { vi: "Các mô hình AI như ChatGPT Search, Perplexity và Google AI Overviews ưu tiên trích dẫn các bài viết có cấu trúc dữ liệu rõ ràng và số liệu thực chứng. Hướng dẫn tối ưu hóa Answer-First.", en: "Generative search engines prioritize structured data, definitive direct answers, and empirical case benchmarks. A blueprint for dominating AI search summaries." },
     category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-22", readingTime: 5, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
-    cover: "/blog-covers/ai-search-3d.png",
+    cover: "/blog-covers/ai-search-3d.jpg",
     sources: [
       { label: { vi: "Google Search Central: Generative AI Features", en: "Google Search Central: Generative AI Features" }, href: "https://developers.google.com/search/docs/appearance/ai-features" },
       { label: { vi: "OpenAI Search & Perplexity Publisher Guidelines", en: "OpenAI Search & Perplexity Publisher Guidelines" }, href: "https://openai.com/" },
@@ -2832,7 +2833,7 @@ export const builtinPosts: Post[] = [
     title: { vi: "Quản lý review app game tại Việt Nam: biến phản hồi thành tăng trưởng", en: "Managing mobile game app reviews in Vietnam for growth" },
     excerpt: { vi: "Một review một sao về lỗi crash quan trọng hơn nhiều một review một sao vì thua trận, dù cả hai kéo rating trung bình xuống như nhau. Cách quản lý review để sửa đúng vấn đề.", en: "A one-star review about a crash matters far more than one from a player who just lost a match, even though both hurt the average equally. How to manage reviews and fix the right problem." },
     category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-22", readingTime: 4, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "game",
-    cover: "/blog-covers/app-reviews-3d.png",
+    cover: "/blog-covers/app-reviews-3d.jpg",
     sources: [{ label: { vi: "Google Play: ratings and reviews", en: "Google Play: ratings and reviews" }, href: "https://support.google.com/googleplay/android-developer/answer/138230" }],
     body: [
       { type: "p", text: {
@@ -2891,7 +2892,7 @@ export const builtinPosts: Post[] = [
       },
       {
         type: "image",
-        src: "/blog-covers/tho-go-rin-micro-influencer-game.png",
+        src: "/blog-covers/tho-go-rin-micro-influencer-game.jpg",
         alt: { vi: "Một Micro Creator gaming tiêu biểu mang lại hiệu quả chuyển đổi cao cho các nhãn hàng game", en: "A representative gaming micro-influencer delivering strong conversion for game brands" },
         caption: { vi: "Micro Creator về game thường mang lại hiệu quả cao cho các nhãn hàng nhờ phong cách chơi game dí dỏm, chân thực và tệp người xem trung thành.", en: "Gaming micro-creators often deliver strong brand conversion through witty, authentic gameplay and a loyal fan base." },
       },
@@ -2936,7 +2937,7 @@ export const builtinPosts: Post[] = [
       },
       {
         type: "image",
-        src: "/blog-covers/lily-phan-streamer-game-vietnam.png",
+        src: "/blog-covers/lily-phan-streamer-game-vietnam.jpg",
         alt: { vi: "Một gương mặt Livestreamer có sức ảnh hưởng, đại diện cho nhóm Influencer bảo chứng chuyển đổi cho game phát hành tại Việt Nam", en: "A representative gaming livestreamer recognized as a conversion benchmark for game launches in Vietnam" },
         caption: { vi: "Những gương mặt Livestreamer có sức ảnh hưởng lớn thường trở thành cái tên bảo chứng cho nhiều tựa game phát hành ở Việt Nam nhờ khả năng tương tác livestream cuốn hút.", en: "High-influence livestreamers often become a conversion guarantee for game releases in Vietnam through charismatic live interaction." },
       },
@@ -3004,7 +3005,7 @@ export const builtinPosts: Post[] = [
       },
       {
         type: "image",
-        src: "/blog-covers/google-play-top-charts-vietnam-aso.png",
+        src: "/blog-covers/google-play-top-charts-vietnam-aso.jpg",
         alt: { vi: "Bảng xếp hạng Google Play Top Charts dòng Role Playing tại Việt Nam minh chứng cho nghệ thuật bản địa hóa tên game", en: "Google Play Top Charts Role Playing rankings in Vietnam demonstrating localized title and icon strategies" },
         caption: { vi: "Bảng xếp hạng Google Play Top Charts tại Việt Nam minh chứng rõ nét: Các tựa game đặt tên tiếng Việt bắt tai ('Đội Tướng Nhí Nhố', 'Giang Hồ Trong Tay', 'Khế Ước Rồng') kết hợp gắn cờ Việt Nam trên App Icon luôn chiếm ưu thế áp đảo về lượng tải tự nhiên.", en: "Google Play Top Charts in Vietnam clearly demonstrate that catchy localized titles ('Đội Tướng Nhí Nhố', 'Giang Hồ Trong Tay', 'Khế Ước Rồng') paired with Vietnamese flag icon badges dominate organic installs." },
       },
@@ -3137,7 +3138,7 @@ export const builtinPosts: Post[] = [
     author: "ANBU Team",
     color: "from-blue-950 to-orange-700",
     variant: "performance",
-    cover: "/blog-covers/esports-team-flash-sponsorship.png",
+    cover: "/blog-covers/esports-team-flash-sponsorship.jpg",
     sources: [
       { label: { vi: "Nielsen Sports: Esports Sponsorship QI Valuation", en: "Nielsen Sports: Esports Sponsorship QI Valuation" }, href: "https://www.nielsen.com/insights/2022/esports-sponsorships/" },
       { label: { vi: "VIRESA: Báo cáo Thể thao điện tử Việt Nam", en: "VIRESA: Vietnam Esports Whitepaper" }, href: "https://viresa.org.vn/" },
@@ -3154,7 +3155,7 @@ export const builtinPosts: Post[] = [
       } },
       {
         type: "image",
-        src: "/blog-covers/esports-team-flash-sponsorship.png",
+        src: "/blog-covers/esports-team-flash-sponsorship.jpg",
         alt: { vi: "Đội tuyển Team Flash với các vị trí in logo nhà tài trợ chính thức trên áo đấu thi đấu đỉnh cao", en: "Team Flash professional lineup showcasing sponsor branding across competitive match jerseys" },
         caption: { vi: "Tài trợ đội tuyển hàng đầu như Team Flash: Logo trên ngực áo, vai áo và trang bị đồng hành tạo ra giá trị hiển thị vô giá trong từng khoảnh khắc nâng cúp vô địch.", en: "Top-tier team sponsorship on Team Flash jerseys: Prime chest, sleeve, and gear placements deliver immense media value during championship-winning moments." },
       },
