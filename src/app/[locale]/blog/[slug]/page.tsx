@@ -400,7 +400,7 @@ export default async function BlogPostPage({
     datePublished: safeDate,
     dateModified: safeDate,
     image: `${siteUrl}${editorialImageForPostData(post, locale)}`,
-    author: { "@type": "Organization", name: post.author },
+    author: { "@type": /^anbu\b/i.test(post.author) ? "Organization" : "Person", name: post.author },
     publisher: {
       "@type": "Organization",
       name: "ANBU",
