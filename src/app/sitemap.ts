@@ -26,7 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
       });
     }
-    for (const path of ["/how-we-work", "/glossary"]) {
+    for (const path of ["/how-we-work", "/glossary", "/editorial-policy"]) {
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
         changeFrequency: "monthly",

@@ -109,6 +109,7 @@ export default async function LocaleLayout({
     email: site.email,
     telephone: site.phone,
     foundingDate: site.legalFoundingDate,
+    publishingPrinciples: `${siteUrl}/${locale}/editorial-policy`,
     areaServed: ["VN", "TH", "PH", "ID", "MY", "SG"],
     hasMap: site.mapUrl,
     sameAs: [

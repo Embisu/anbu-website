@@ -89,6 +89,11 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
                 </Link>
               </li>
               <li>
+                <Link href={localePath(locale, "/editorial-policy")} className="hover:text-white transition-colors">
+                  {locale === "vi" ? "Nguyên tắc biên tập" : "Editorial policy"}
+                </Link>
+              </li>
+              <li>
                 <Link href={localePath(locale, "/contact")} className="hover:text-white transition-colors">
                   {dict.nav.contact}
                 </Link>

@@ -483,6 +483,14 @@ export default async function BlogPostPage({
                   {t(post.category, locale)}
                 </span>
                 <time dateTime={post.date}>{formatDate(post.date, locale)}</time>
+                {post.updated && post.updated !== post.date && (
+                  <>
+                    <span>·</span>
+                    <span>
+                      {locale === "vi" ? "Cập nhật" : "Updated"} <time dateTime={post.updated}>{formatDate(post.updated, locale)}</time>
+                    </span>
+                  </>
+                )}
                 <span>·</span>
                 <span>{post.readingTime} {dict.blogSection.readTime}</span>
                 <span>·</span>
@@ -532,9 +540,12 @@ export default async function BlogPostPage({
                   </div>
                   <div className="flex items-center justify-between gap-3">
                     <dt className="text-navy-400">{locale === "vi" ? "Biên soạn" : "Author"}</dt>
-                    <dd className="font-semibold text-navy-700">ANBU</dd>
+                    <dd className="font-semibold text-navy-700">{post.author || "ANBU"}</dd>
                   </div>
                 </dl>
+                <Link href={localePath(locale, "/editorial-policy")} className="mt-4 inline-flex text-xs font-semibold text-orange-600 hover:underline">
+                  {locale === "vi" ? "Nguyên tắc biên tập của ANBU" : "ANBU's editorial policy"} →
+                </Link>
               </div>
               <div className="mt-4 rounded-3xl bg-cloud p-5">
                 <p className="text-xs font-bold uppercase tracking-[0.16em] text-navy-500">
