@@ -81,8 +81,6 @@ export const builtinPosts: Post[] = [
     sources: [
       { label: { vi: "VNGGames: hệ sinh thái trò chơi của VNG", en: "VNGGames: VNG's gaming ecosystem" }, href: "https://vng.com.vn/news/product/vnggames.html" },
       { label: { vi: "Garena: hoạt động phát triển game và esports tại Việt Nam", en: "Garena: game development and esports activity in Vietnam" }, href: "https://gamejam.garena.vn/vi" },
-      { label: { vi: "JoyGames: cổng game và thông tin giấy phép G1", en: "JoyGames: game portal and G1 license information" }, href: "https://joygames.vn/" },
-      { label: { vi: "VPlay: hệ sinh thái game và giải trí trực tuyến", en: "VPlay: online gaming and entertainment ecosystem" }, href: "https://vplay.onlive.vn/" },
       { label: { vi: "Cổng thông tin game online: thông tin Công ty Cổ phần VGP", en: "Official Online Games Portal: VGP company information" }, href: "https://game.gov.vn/nha-dau-tu/cong-ty-co-phan-vgp-2cf4" },
       { label: { vi: "Bộ Thông tin và Truyền thông: Nghị định 147/2024/NĐ-CP", en: "Ministry of Information and Communications: Decree 147/2024/ND-CP" }, href: "https://mic.gov.vn/nghi-dinh-147-2024-nd-cp-quan-ly-chat-che-dich-vu-tro-choi-dien-tu-tren-mang-va-thong-tin-tren-internet-197241227124622733.htm" },
     ],
@@ -294,7 +292,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/nghich-thuy-han-aaa-mmo-open-world.jpg",
     sources: [
       { label: { vi: "Google Play & Newzoo: Báo cáo thị trường Game Đông Nam Á", en: "Google Play & Newzoo: Southeast Asia Gaming Report" }, href: "https://newzoo.com/resources/trend-reports" },
-      { label: { vi: "Bộ Thông tin và Truyền thông: Toàn cảnh ngành Game Việt Nam", en: "Vietnam MIC: Game Industry Landscape Report" }, href: "https://mic.gov.vn/" },
     ],
     body: [
       {
@@ -420,7 +417,6 @@ export const builtinPosts: Post[] = [
     variant: "game",
     cover: "/blog-covers/analytics-dashboard.jpg",
     sources: [
-      { label: { vi: "Google Ads: Hướng dẫn đo lường và tối ưu chiến dịch ứng dụng di động", en: "Google Ads: Mobile App Campaign Optimization Best Practices" }, href: "https://support.google.com/google-ads/topic/6169030" },
       { label: { vi: "AppsFlyer: Báo cáo Benchmark Game Mobile Toàn cầu & Đo lường Attribution", en: "AppsFlyer: Global Mobile Gaming Benchmarks & Attribution" }, href: "https://www.appsflyer.com/glossary/mobile-attribution/" },
       { label: { vi: "Adjust: Báo cáo xu hướng tăng trưởng ứng dụng di động", en: "Adjust: Mobile App Growth & Retention Trends" }, href: "https://www.adjust.com/resources/reports/" },
     ],
@@ -450,16 +446,16 @@ export const builtinPosts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Effective CPI (eCPI): Chi phí thực tế trên mỗi lượt cài đặt sau khi đã tính cả lượng tải tự nhiên (Organic Lift từ K-factor). Công thức: eCPI = Tổng chi phí quảng cáo / (Paid Installs + Organic Installs). Một chiến dịch viral tốt có thể kéo eCPI giảm 35% so với CPI báo cáo trên trình quản lý quảng cáo.",
-            en: "Effective CPI (eCPI): True cost per install factoring in organic lift (K-factor virality). Formula: eCPI = Total Ad Spend / (Paid + Organic Installs). Strong viral loops can depress eCPI by 35% below dashboard figures."
+            vi: "Effective CPI (eCPI): Chi phí thực tế trên mỗi lượt cài đặt sau khi đã tính cả lượng tải tự nhiên (Organic Lift từ K-factor). Công thức: eCPI = Tổng chi phí quảng cáo / (Paid Installs + Organic Installs). Khi có lượng tải tự nhiên đi kèm, eCPI thường thấp hơn CPI báo cáo trên trình quản lý quảng cáo.",
+            en: "Effective CPI (eCPI): True cost per install factoring in organic lift (K-factor virality). Formula: eCPI = Total Ad Spend / (Paid + Organic Installs). When organic installs come along with paid ones, eCPI is usually lower than the CPI shown in the ad dashboard."
           },
           {
-            vi: "Điểm hòa vốn (Break-Even ROAS): Tỷ suất sinh lời tối thiểu trên chi phí quảng cáo để chiến dịch không bị lỗ ròng sau khi trừ 30% phí nền tảng (Apple App Store / Google Play) và thuế. Công thức: Break-Even ROAS = 1 / (1 - 0.30 - 0.05) ≈ 153.8%.",
-            en: "Break-Even ROAS Threshold: Minimum ad return needed to achieve net profitability after deducting 30% store commission (Apple/Google) and local taxes. Formula: Break-Even ROAS = 1 / (1 - 0.30 - 0.05) ≈ 153.8%."
+            vi: "Điểm hòa vốn (Break-Even ROAS): Tỷ suất sinh lời tối thiểu trên chi phí quảng cáo để chiến dịch không bị lỗ ròng sau khi trừ phí nền tảng (Apple App Store / Google Play) và thuế. Công thức: Break-Even ROAS = 1 / (1 - phí nền tảng - thuế). Ví dụ minh họa với phí 30% và thuế 5%: 1 / 0.65 ≈ 153.8%; mức phí và thuế thực tế khác nhau tùy chương trình, thị trường và quy định thuế.",
+            en: "Break-Even ROAS Threshold: Minimum ad return needed to achieve net profitability after deducting store commission (Apple/Google) and local taxes. Formula: Break-Even ROAS = 1 / (1 - store fee - tax). Illustrative example with a 30% fee and 5% tax: 1 / 0.65 ≈ 153.8%; actual fees and taxes vary by program, market and tax rules."
           },
           {
-            vi: "Đường cong hoàn vốn (Payback Curve) theo thể loại: Thể loại Game Casual/AFK yêu cầu hoàn vốn nhanh ở mốc D14 - D30; trong khi dòng Game MMORPG Kiếm hiệp/Tiên hiệp và SLG Chiến thuật có thể chấp nhận hòa vốn ở D60 - D90 nhờ giá trị chi tiêu khổng lồ của nhóm người chơi nạp lớn (Whales/VIPs).",
-            en: "Genre-Specific Payback Curves: Casual/AFK titles necessitate rapid payback within D14 - D30; whereas hardcore MMORPG and 4X SLG titles tolerate D60 - D90 payback horizons fueled by high-spending whale lifecycles."
+            vi: "Đường cong hoàn vốn (Payback Curve) theo thể loại: Game Casual/AFK thường cần hoàn vốn nhanh hơn; trong khi dòng Game MMORPG Kiếm hiệp/Tiên hiệp và SLG Chiến thuật thường chấp nhận chu kỳ hoàn vốn dài hơn nhờ giá trị chi tiêu của nhóm người chơi nạp lớn (Whales/VIPs). Mốc cụ thể tùy từng game và nên đặt dựa trên dữ liệu cohort của chính bạn.",
+            en: "Genre-Specific Payback Curves: Casual/AFK titles usually need faster payback, whereas hardcore MMORPG and 4X SLG titles often tolerate longer payback horizons thanks to high-spending whale lifecycles. The exact horizon depends on the game and should be set from your own cohort data."
           },
         ],
       },
@@ -473,32 +469,32 @@ export const builtinPosts: Post[] = [
       {
         type: "p",
         text: {
-          vi: "Doanh thu bền vững đến từ việc bịt kín các 'lỗ rò rỉ' trên hành trình trải nghiệm của người chơi. Hãy đối chiếu các mốc Benchmark chuẩn ngành sau:",
-          en: "Sustainable revenue stems from eliminating leakages across the player onboarding journey. Calibrate against these industry benchmarks:"
+          vi: "Doanh thu bền vững đến từ việc bịt kín các 'lỗ rò rỉ' trên hành trình trải nghiệm của người chơi. Hãy đối chiếu từng tầng với dữ liệu thực tế của chính game, thay vì áp một mốc chung:",
+          en: "Sustainable revenue stems from eliminating leakages across the player onboarding journey. Track each stage against your own data rather than a fixed industry number:"
         },
       },
       {
         type: "ul",
         items: [
           {
-            vi: "Tầng 1: Click-to-Install (IPM > 25), Tối ưu trang Store Listing, icon và 3 screenshot đầu tiên để đảm bảo cứ 1.000 lượt hiển thị quảng cáo thì tạo ra ít nhất 25 lượt cài đặt thực tế.",
-            en: "Tier 1: Click-to-Install (IPM > 25), Store listing and screenshot optimization ensuring at least 25 installs per 1,000 ad impressions."
+            vi: "Tầng 1: Click-to-Install (IPM), Tối ưu trang Store Listing, icon và các screenshot đầu tiên để mỗi 1.000 lượt hiển thị quảng cáo tạo ra nhiều lượt cài đặt thực tế hơn.",
+            en: "Tier 1: Click-to-Install (IPM), Store listing and screenshot optimization to raise installs per 1,000 ad impressions."
           },
           {
-            vi: "Tầng 2: Install-to-Tutorial Complete (> 75%), Tinh giản màn mở đầu, rút ngắn thời gian hướng dẫn tân thủ xuống dưới 3 phút để người chơi nhanh chóng tiếp cận tính năng chiến đấu hoặc quay tướng gacha.",
-            en: "Tier 2: Tutorial Completion (> 75%), Streamlining early game flow so new players access core combat and gacha mechanics within 3 minutes."
+            vi: "Tầng 2: Install-to-Tutorial Complete, Tinh giản màn mở đầu, rút ngắn thời gian hướng dẫn tân thủ để người chơi nhanh chóng tiếp cận tính năng chiến đấu hoặc quay tướng gacha.",
+            en: "Tier 2: Tutorial Completion, Streamlining early game flow so new players reach core combat and gacha mechanics quickly."
           },
           {
-            vi: "Tầng 3: Day 1 Retention (> 40%), Trải nghiệm ngày đầu tiên phải mượt mà, không gặp lỗi crash hay nghẽn mạng, kết hợp hệ thống phần thưởng tân thủ 7 ngày để giữ chân người chơi.",
-            en: "Tier 3: Day 1 Retention (> 40%), Flawless first-day server stability paired with generous 7-day login bonus tracks to cement retention habits."
+            vi: "Tầng 3: Day 1 Retention, Trải nghiệm ngày đầu tiên phải mượt mà, không gặp lỗi crash hay nghẽn mạng, kết hợp hệ thống phần thưởng tân thủ 7 ngày để giữ chân người chơi.",
+            en: "Tier 3: Day 1 Retention, Flawless first-day server stability paired with generous 7-day login bonus tracks to cement retention habits."
           },
           {
-            vi: "Tầng 4: First-Time Buyer Conversion (Payer Rate 3.5% - 7.0%), Thiết kế gói quà nạp đầu 0.99 USD với giá trị quy đổi gấp 10 lần (x10 Value Pack) để phá vỡ rào cản chi tiêu tâm lý ban đầu của game thủ.",
-            en: "Tier 4: First-Time Buyer Conversion (3.5% - 7.0%), Designing high-value $0.99 starter packs offering 10x perceived value to eliminate initial payer friction."
+            vi: "Tầng 4: First-Time Buyer Conversion (Payer Rate), Thiết kế gói quà nạp đầu giá thấp với giá trị quy đổi cao (value pack) để phá vỡ rào cản chi tiêu tâm lý ban đầu của game thủ.",
+            en: "Tier 4: First-Time Buyer Conversion (Payer Rate), Designing low-priced, high-value starter packs to eliminate initial payer friction."
           },
           {
-            vi: "Tầng 5: Repeat Purchase Rate (> 45%), Giữ chân tệp người chơi nạp tiền bằng Thẻ Tháng (Monthly Card), Battle Pass mùa giải và các chuỗi sự kiện tích lũy nạp mở rộng.",
-            en: "Tier 5: Repeat Purchase Rate (> 45%), Securing payer loyalty through Monthly Privilege Cards, Season Battle Passes, and cumulative top-up events."
+            vi: "Tầng 5: Repeat Purchase Rate, Giữ chân tệp người chơi nạp tiền bằng Thẻ Tháng (Monthly Card), Battle Pass mùa giải và các chuỗi sự kiện tích lũy nạp mở rộng.",
+            en: "Tier 5: Repeat Purchase Rate, Securing payer loyalty through Monthly Privilege Cards, Season Battle Passes, and cumulative top-up events."
           },
         ],
       },
@@ -528,8 +524,8 @@ export const builtinPosts: Post[] = [
             en: "Meta Ads (Facebook/Instagram Reels): Best for narrative-driven video assets, ray-traced graphics showcases, and deep affinity audience targeting."
           },
           {
-            vi: "TikTok Spark Ads: Kênh bùng nổ tệp người chơi trẻ Gen Z với định dạng video ngắn dạng UGC do các Micro Creator sản xuất, mang lại tỷ lệ nhấp chuột (CTR > 4.5%) và chi phí CPM rất cạnh tranh.",
-            en: "TikTok Spark Ads: Dominates Gen Z volume by boosting authentic short-form UGC videos created by gaming creators, driving CTRs over 4.5% at competitive CPMs."
+            vi: "TikTok Spark Ads: Kênh bùng nổ tệp người chơi trẻ Gen Z với định dạng video ngắn dạng UGC do các Micro Creator sản xuất, thường có chi phí CPM cạnh tranh, tùy thị trường và ngành hàng.",
+            en: "TikTok Spark Ads: Dominates Gen Z volume by boosting authentic short-form UGC videos created by gaming creators, often at competitive CPMs, depending on market and vertical."
           },
           {
             vi: "Ad Networks & DSPs (Mintegral, Unity Ads, ironSource): Kênh đẩy volume quy mô lớn trong tuần đầu Open Beta thông qua định dạng Playable Ads tương tác và Video tặng thưởng (Rewarded Video).",
@@ -541,8 +537,8 @@ export const builtinPosts: Post[] = [
       {
         type: "p",
         text: {
-          vi: "Mỗi thể loại game sở hữu tệp người chơi và hành vi ra quyết định hoàn toàn khác nhau. Phân bổ ngân sách sai kênh là nguyên nhân hàng đầu khiến CPI tăng vọt:",
-          en: "Each game genre exhibits unique audience behavior and discovery triggers. Misaligned channel allocation is the primary cause of skyrocketing acquisition costs:",
+          vi: "Mỗi thể loại game sở hữu tệp người chơi và hành vi ra quyết định hoàn toàn khác nhau. Phân bổ ngân sách sai kênh có thể khiến CPI tăng vọt:",
+          en: "Each game genre exhibits unique audience behavior and discovery triggers. Misaligned channel allocation can send acquisition costs skyrocketing:",
         },
       },
       {
@@ -567,16 +563,16 @@ export const builtinPosts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Giai đoạn 1: Soft Launch & Test CVR (15% ngân sách), Chạy thử nghiệm kỹ thuật trên 2.000 - 5.000 người chơi để kiểm tra tải máy chủ, tỷ lệ crash, tối ưu phễu tân thủ và đo lường chỉ số giữ chân D1/D7 thực tế.",
-            en: "Phase 1: Soft Launch & CVR Testing (15% budget), Stress-testing servers with 2k-5k players, optimizing FTUE onboarding, and validating real D1/D7 retention benchmarks."
+            vi: "Giai đoạn 1: Soft Launch & Test CVR (tỷ trọng ngân sách nhỏ), Chạy thử nghiệm kỹ thuật trên một nhóm người chơi giới hạn để kiểm tra tải máy chủ, tỷ lệ crash, tối ưu phễu tân thủ và đo lường chỉ số giữ chân D1/D7 thực tế.",
+            en: "Phase 1: Soft Launch & CVR Testing (smaller share of budget), Stress-testing servers with a limited group of players, optimizing FTUE onboarding, and validating real D1/D7 retention benchmarks."
           },
           {
-            vi: "Giai đoạn 2: Launch Spike D0 - D14 (60% ngân sách), Dồn lực đẩy max công suất trên tất cả các kênh quảng cáo kết hợp dàn Influencer để chiếm lĩnh Top 1 Bảng xếp hạng, kích hoạt hiệu ứng tải tự nhiên khổng lồ.",
-            en: "Phase 2: Launch Spike D0 - D14 (60% budget), Concentrating ad spend and influencer blitz across all channels to seize Top 1 Store Charts and trigger massive organic download velocity."
+            vi: "Giai đoạn 2: Launch Spike D0 - D14 (phần lớn ngân sách), Dồn lực trên các kênh quảng cáo kết hợp dàn Influencer để leo bảng xếp hạng cửa hàng và có thể kéo thêm lượt tải tự nhiên.",
+            en: "Phase 2: Launch Spike D0 - D14 (largest share of budget), Concentrating ad spend and influencer activity across channels to climb the store charts and potentially lift organic downloads."
           },
           {
-            vi: "Giai đoạn 3: Evergreen & LiveOps Retargeting (25% ngân sách), Duy trì dòng chảy người chơi mới ổn định, chạy chiến dịch Retargeting kêu gọi người chơi cũ quay lại qua các bản cập nhật tướng mới và sự kiện Bang hội.",
-            en: "Phase 3: Evergreen & LiveOps Retargeting (25% budget), Sustaining steady baseline acquisition while retargeting churned players around major content patches and guild championship updates."
+            vi: "Giai đoạn 3: Evergreen & LiveOps Retargeting (phần ngân sách còn lại), Duy trì dòng chảy người chơi mới ổn định, chạy chiến dịch Retargeting kêu gọi người chơi cũ quay lại qua các bản cập nhật tướng mới và sự kiện Bang hội.",
+            en: "Phase 3: Evergreen & LiveOps Retargeting (remaining budget), Sustaining steady baseline acquisition while retargeting churned players around major content patches and guild championship updates."
           },
         ],
       },
@@ -601,7 +597,6 @@ export const builtinPosts: Post[] = [
     variant: "influencer",
     cover: "/blog-covers/creator-influencer.jpg",
     sources: [
-      { label: { vi: "TikTok for Business: Creator Marketplace", en: "TikTok for Business: Creator Marketplace" }, href: "https://creatormarketplace.tiktok.com/" },
       { label: { vi: "YouTube Culture & Trends Report", en: "YouTube Culture & Trends Report" }, href: "https://www.youtube.com/trends/" },
     ],
     body: [
@@ -663,12 +658,11 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/tiktok-social.jpg",
     sources: [
       { label: { vi: "TikTok for Business: Creative Center", en: "TikTok for Business: Creative Center" }, href: "https://ads.tiktok.com/business/creativecenter/" },
-      { label: { vi: "TikTok Algorithm & Video Retention Best Practices", en: "TikTok Algorithm & Video Retention Best Practices" }, href: "https://newsroom.tiktok.com/" },
     ],
     body: [
       { type: "p", text: {
-        vi: "Trên nền tảng TikTok, sự chú ý của người dùng được đo bằng mili-giây. Một video được đầu tư kỹ xảo hàng chục triệu đồng vẫn có thể bị người xem lướt qua không thương tiếc nếu 3 giây đầu tiên mở màn bằng một logo tĩnh hoặc lời chào nhàm chán. Ngược lại, một đoạn clip ghi hình gameplay ngắn với cú 'twist' bất ngờ hoặc tình huống hài hước có thể dễ dàng chạm mốc hàng triệu lượt xem tự nhiên mà không tốn một đồng chi phí quảng cáo.",
-        en: "On TikTok, user attention is measured in milliseconds. An ad featuring expensive CGI can be swiped past mercilessly if the opening three seconds start with a static corporate logo or a generic greeting. Conversely, a raw gameplay clip featuring a sharp comedic twist can effortlessly pull millions of organic views without a single dollar of media spend.",
+        vi: "Trên nền tảng TikTok, sự chú ý của người dùng được đo bằng mili-giây. Một video được đầu tư kỹ xảo hàng chục triệu đồng vẫn có thể bị người xem lướt qua không thương tiếc nếu 3 giây đầu tiên mở màn bằng một logo tĩnh hoặc lời chào nhàm chán. Ngược lại, một đoạn clip ghi hình gameplay ngắn với cú 'twist' bất ngờ hoặc tình huống hài hước có thể đạt lượng xem tự nhiên lớn mà không tốn chi phí quảng cáo.",
+        en: "On TikTok, user attention is measured in milliseconds. An ad featuring expensive CGI can be swiped past mercilessly if the opening three seconds start with a static corporate logo or a generic greeting. Conversely, a raw gameplay clip featuring a sharp comedic twist can pull large organic reach without any media spend.",
       } },
       {
         type: "image",
@@ -678,14 +672,14 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Ma trận 4 tuyến nội dung trụ cột cho Game Mobile", en: "1. The 4-Pillar Content Matrix for Mobile Games" } },
       { type: "p", text: {
-        vi: "Để kênh TikTok phát triển bền vững và không bị cạn kiệt ý tưởng, thương hiệu cần phân bổ nội dung theo 4 tuyến trụ cột:",
-        en: "To build sustainable TikTok channel momentum without creative burnout, structure content across 4 core pillars:",
+        vi: "Để kênh TikTok phát triển bền vững và không bị cạn kiệt ý tưởng, thương hiệu nên phân bổ nội dung theo 4 tuyến trụ cột, điều chỉnh tỷ trọng theo mục tiêu và dữ liệu của từng kênh:",
+        en: "To build sustainable TikTok channel momentum without creative burnout, structure content across 4 core pillars, adjusting the mix to each channel's goals and data:",
       } },
       { type: "ul", items: [
-        { vi: "Tuyến Giải trí & Meme (40%): Các tình huống dở khóc dở cười khi chơi game, pha xử lý lỗi ngớ ngẩn (fail moment), hoặc ghép trend âm thanh đang thịnh hành vào nhân vật trong game.", en: "Entertainment & Memes (40%): Relatable gaming fails, clutch comebacks, and trending audio memes adapted to in-game characters." },
-        { vi: "Tuyến Hướng dẫn & Bí kíp (30%): Mẹo tối ưu trang bị, cách build đội hình tân thủ, vị trí nhặt đồ bí mật, tuyến nội dung có tỷ lệ lưu video (Save) và chia sẻ (Share) cao nhất.", en: "Guides & Pro Tips (30%): Character progression guides, meta build tips, and hidden map secrets, delivering peak Save and Share rates." },
-        { vi: "Tuyến Cốt truyện & Nhân vật (20%): Khai thác thế giới quan (lore) của game, câu chuyện tình cảm hoặc thù địch giữa các tướng, tạo sự gắn kết cảm xúc sâu sắc.", en: "Lore & Character Stories (20%): Exploring character backstories, rivalries, and rich worldbuilding to foster deep emotional connection." },
-        { vi: "Tuyến Cập nhật & Sự kiện (10%): Giới thiệu sự kiện mới, trang phục giới hạn và giftcode đặc quyền cho cộng đồng người theo dõi.", en: "Updates & Events (10%): Teasing seasonal battle passes, limited skins, and exclusive community giftcodes." },
+        { vi: "Tuyến Giải trí & Meme: Các tình huống dở khóc dở cười khi chơi game, pha xử lý lỗi ngớ ngẩn (fail moment), hoặc ghép trend âm thanh đang thịnh hành vào nhân vật trong game.", en: "Entertainment & Memes: Relatable gaming fails, clutch comebacks, and trending audio memes adapted to in-game characters." },
+        { vi: "Tuyến Hướng dẫn & Bí kíp: Mẹo tối ưu trang bị, cách build đội hình tân thủ, vị trí nhặt đồ bí mật, tuyến nội dung thường phù hợp để thúc đẩy lượt lưu (Save) và chia sẻ (Share).", en: "Guides & Pro Tips: Character progression guides, meta build tips, and hidden map secrets, a pillar well suited to driving Saves and Shares." },
+        { vi: "Tuyến Cốt truyện & Nhân vật: Khai thác thế giới quan (lore) của game, câu chuyện tình cảm hoặc thù địch giữa các tướng, tạo sự gắn kết cảm xúc sâu sắc.", en: "Lore & Character Stories: Exploring character backstories, rivalries, and rich worldbuilding to foster deep emotional connection." },
+        { vi: "Tuyến Cập nhật & Sự kiện: Giới thiệu sự kiện mới, trang phục giới hạn và giftcode đặc quyền cho cộng đồng người theo dõi.", en: "Updates & Events: Teasing seasonal battle passes, limited skins, and exclusive community giftcodes." },
       ] },
       {
         type: "image",
@@ -695,8 +689,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "2. Công thức Hook 3 giây đầu không thể lướt qua", en: "2. The Irresistible 3-Second Hook Formula" } },
       { type: "p", text: {
-        vi: "Thuật toán TikTok chấm điểm video dựa trên Tỷ lệ xem hết (Completion Rate) và Thời gian xem trung bình. Để giữ chân người xem, hãy áp dụng các kỹ thuật Hook đã được kiểm chứng: Đặt câu hỏi kích thích tranh cãi ('Đừng bao giờ nâng vị tướng này nếu bạn không muốn thua liên tục!'), Bắt đầu ngay giữa tình huống cao trào (In Medias Res), hoặc sử dụng hiệu ứng gián đoạn thị giác (Pattern Interrupt) với âm thanh bất ngờ.",
-        en: "TikTok's algorithm prioritizes Completion Rate and Average Watch Time. To stop the scroll, apply proven hook techniques: provocative controversy ('Never level up this hero unless you want to lose every match!'), jumping straight into high-stakes climax (In Medias Res), or visual pattern interrupts paired with unexpected audio cues.",
+        vi: "Hệ thống đề xuất của TikTok xem xét nhiều tín hiệu tương tác của người xem, trong đó có thời gian xem và việc xem hết video (Completion Rate). Để giữ chân người xem, hãy áp dụng các kỹ thuật Hook thường dùng: Đặt câu hỏi kích thích tranh cãi ('Đừng bao giờ nâng vị tướng này nếu bạn không muốn thua liên tục!'), Bắt đầu ngay giữa tình huống cao trào (In Medias Res), hoặc sử dụng hiệu ứng gián đoạn thị giác (Pattern Interrupt) với âm thanh bất ngờ.",
+        en: "TikTok's recommendation system weighs many viewer-interaction signals, including watch time and whether a video is watched to the end (completion). To stop the scroll, try commonly used hook techniques: provocative controversy ('Never level up this hero unless you want to lose every match!'), jumping straight into high-stakes climax (In Medias Res), or visual pattern interrupts paired with unexpected audio cues.",
       } },
       { type: "quote", text: {
         vi: "Đừng cố làm một video hoàn hảo cho tất cả mọi người. Hãy làm một video mà nhóm game thủ mục tiêu của bạn không thể không bình luận và gửi cho đồng đội.",
@@ -846,8 +840,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Bắt đầu với chỉ số kinh tế đơn vị (Unit Economics)", en: "1. Start with unit economics" } },
       { type: "p", text: {
-        vi: "Trước khi tăng ngân sách, hãy hiểu rõ chi phí thu hút khách hàng (CAC) và giá trị vòng đời (LTV) của họ. Một chiến dịch có CAC thấp vẫn có thể lỗ nếu LTV thấp hơn nữa; ngược lại, một kênh CAC cao vẫn đáng đầu tư nếu LTV đủ tốt. Chỉ mở rộng ngân sách khi tỷ lệ LTV/CAC đã chứng minh lành mạnh (tối thiểu 3:1) ở quy mô nhỏ.",
-        en: "Before scaling budget, understand your customer acquisition cost (CAC) and their lifetime value (LTV). A campaign with low CAC can still lose money if LTV is even lower; conversely, a high-CAC channel can be worth the investment if LTV is strong enough. Only scale budget once the LTV/CAC ratio has proven healthy (at least 3:1) at small scale.",
+        vi: "Trước khi tăng ngân sách, hãy hiểu rõ chi phí thu hút khách hàng (CAC) và giá trị vòng đời (LTV) của họ. Một chiến dịch có CAC thấp vẫn có thể lỗ nếu LTV thấp hơn nữa; ngược lại, một kênh CAC cao vẫn đáng đầu tư nếu LTV đủ tốt. Chỉ mở rộng ngân sách khi tỷ lệ LTV/CAC đã chứng minh lành mạnh ở quy mô nhỏ; ngưỡng cụ thể tùy biên lợi nhuận, ngành và thời gian hoàn vốn của từng doanh nghiệp.",
+        en: "Before scaling budget, understand your customer acquisition cost (CAC) and their lifetime value (LTV). A campaign with low CAC can still lose money if LTV is even lower; conversely, a high-CAC channel can be worth the investment if LTV is strong enough. Only scale budget once the LTV/CAC ratio has proven healthy at small scale; the right threshold depends on your margins, industry and payback period.",
       } },
       {
         type: "image",
@@ -862,8 +856,8 @@ export const builtinPosts: Post[] = [
       { type: "h2", text: { vi: "2. Kiểm thử có kỷ luật và vòng lặp phân bổ ngân sách", en: "2. Test with discipline and dynamic budget loops" } },
       { type: "ul", items: [
         { vi: "Kiểm thử từng biến số một cách rõ ràng: tách riêng nhóm thử nghiệm Creative Hook, nội dung Offer và tệp đối tượng Target.", en: "Test one variable at a time: isolate Creative Hooks, Offer messaging, and Audience Targeting cohorts." },
-        { vi: "Cho mỗi thử nghiệm đủ dữ liệu để kết luận (tối thiểu 100 chuyển đổi), không dừng vội chỉ vì 2 ngày đầu biến động.", en: "Give each test sufficient data volume (minimum 100 conversions) before drawing conclusions." },
-        { vi: "Dồn 70% ngân sách cho các cụm quảng cáo chiến thắng đã chứng minh hiệu quả, 20% cho việc thử nghiệm các concept mới, và 10% cho retargeting chuyển đổi sâu.", en: "Allocate 70% budget to proven winning sets, 20% for continuous concept discovery, and 10% for deep retargeting." },
+        { vi: "Cho mỗi thử nghiệm đủ dữ liệu để kết luận, không dừng vội chỉ vì vài ngày đầu biến động.", en: "Give each test sufficient data volume before drawing conclusions, and do not stop it just because the first few days fluctuate." },
+        { vi: "Dồn phần lớn ngân sách cho các cụm quảng cáo chiến thắng đã chứng minh hiệu quả, một phần nhỏ cho việc thử nghiệm các concept mới và một phần cho retargeting chuyển đổi sâu; tỷ lệ chia tùy mục tiêu và mức chấp nhận rủi ro.", en: "Allocate most of the budget to proven winning sets, a smaller share to continuous concept discovery and some to deep retargeting; the exact split depends on your goals and risk appetite." },
       ] },
     ],
   },
@@ -947,8 +941,8 @@ export const builtinPosts: Post[] = [
     variant: "game",
     cover: "/blog-covers/creative-testing-lab.jpg",
     sources: [
-      { label: { vi: "Google Play Console: Quản lý đường ray thử nghiệm (Testing Tracks)", en: "Google Play Console: Testing Tracks & Release Management" }, href: "https://developer.android.com/distribute/best-practices/launch" },
       { label: { vi: "Apple App Store: Quy trình Pre-orders và Phased Release", en: "Apple App Store: Pre-orders & Phased Release Guidelines" }, href: "https://developer.apple.com/help/app-store-connect/manage-releases/overview-of-pre-orders/" },
+      { label: { vi: "Android vitals: ngưỡng hành vi xấu (crash, ANR)", en: "Android vitals: bad behavior thresholds (crash, ANR)" }, href: "https://developer.android.com/topic/performance/vitals" },
     ],
     body: [
       { type: "p", text: {
@@ -963,10 +957,10 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Bốn chỉ số quyết định Go / No-Go trước khi Hard Launch", en: "1. Four Go/No-Go Decision Gate Metrics" } },
       { type: "ul", items: [
-        { vi: "Chỉ số Độ ổn định Kỹ thuật (Crash Rate < 0.8%): Tỷ lệ phiên chơi bị sập hoặc nghẽn mạng phải được giải quyết triệt để trước khi chạy quảng cáo quy mô lớn.", en: "Technical Stability (Crash Rate < 0.8%): Session crash rates and network ANRs must be resolved before scaling ad traffic." },
-        { vi: "Tỷ lệ hoàn thành Tutorial (FTUE Completion > 70%): Tối thiểu 7 trên 10 người cài đặt phải vượt qua màn tập dượt đầu tiên mà không thoát game giữa chừng.", en: "FTUE Tutorial Completion (> 70%): At least 7 out of 10 installers must complete the initial tutorial without dropping out." },
-        { vi: "Tỷ lệ giữ chân Day 1 Retention (> 38%): Chứng minh lối chơi cốt lõi (Core Loop) có đủ sức hấp dẫn để thôi thúc người chơi mở lại game vào ngày hôm sau.", en: "Day 1 Retention (> 38%): Proves the core loop possesses enough intrinsic appeal to drive day-two app opens." },
-        { vi: "Tỷ lệ chuyển đổi nạp tiền Payer Conversion (> 2.5%): Tối thiểu 2.5% người chơi thực hiện ít nhất một giao dịch In-App Purchase trong vòng 7 ngày đầu.", en: "Payer Conversion (> 2.5%): Validates commercial viability with at least 2.5% of players making an IAP purchase within 7 days." },
+        { vi: "Chỉ số Độ ổn định Kỹ thuật (Crash Rate, nên thấp hơn ngưỡng hành vi xấu của Android vitals trên Google Play): Tỷ lệ phiên chơi bị sập hoặc nghẽn mạng phải được giải quyết triệt để trước khi chạy quảng cáo quy mô lớn.", en: "Technical Stability (Crash Rate, ideally below Google Play's Android vitals bad behavior threshold): Session crash rates and network ANRs must be resolved before scaling ad traffic." },
+        { vi: "Tỷ lệ hoàn thành Tutorial (FTUE Completion): Phần lớn người cài đặt cần vượt qua màn tập dượt đầu tiên mà không thoát game giữa chừng; ngưỡng cụ thể nên đặt theo thể loại và dữ liệu thử nghiệm.", en: "FTUE Tutorial Completion: Most installers should complete the initial tutorial without dropping out; set the exact threshold from your genre and test data." },
+        { vi: "Tỷ lệ giữ chân Day 1 Retention: Chứng minh lối chơi cốt lõi (Core Loop) có đủ sức hấp dẫn để thôi thúc người chơi mở lại game vào ngày hôm sau.", en: "Day 1 Retention: Proves the core loop possesses enough intrinsic appeal to drive day-two app opens." },
+        { vi: "Tỷ lệ chuyển đổi nạp tiền Payer Conversion: Tỷ lệ người chơi thực hiện ít nhất một giao dịch In-App Purchase trong 7 ngày đầu cần đủ để mô hình doanh thu khả thi; ngưỡng cụ thể tùy thể loại và mô hình kinh doanh.", en: "Payer Conversion: Validates commercial viability through the share of players making an IAP purchase within 7 days; the threshold depends on genre and business model." },
       ] },
       {
         type: "image",
@@ -976,8 +970,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "2. Phân bổ lưu lượng người chơi trong giai đoạn Soft Launch", en: "2. Structuring Traffic Inflow During Soft Launch" } },
       { type: "p", text: {
-        vi: "Hãy chia Soft Launch thành 2 đợt: Đợt 1 (Alpha Test - 1.000 đến 2.000 user) tập trung kiểm tra bug, cân bằng tướng và độ trễ server. Đợt 2 (Beta Test - 5.000 đến 10.000 user từ nguồn Paid UA có trả phí) tập trung đo lường CPI thực tế, CVR trang Store và tỷ lệ hoàn vốn Payback Period. Chỉ khi các chỉ số đạt ngưỡng cam kết, nhà phát hành mới nên bấm nút mở chiến dịch truyền thông diện rộng (Hard Launch).",
-        en: "Divide your Soft Launch into two distinct phases: Phase 1 (Alpha Test: 1,000 - 2,000 users) focused purely on bugs, balance, and server stress. Phase 2 (Beta Test: 5,000 - 10,000 users from targeted Paid UA) to measure real CPIs, store CVR, and cohort payback curves. Scale broadly only after passing these validation gates.",
+        vi: "Hãy chia Soft Launch thành 2 đợt: Đợt 1 (Alpha Test - nhóm người chơi nhỏ) tập trung kiểm tra bug, cân bằng tướng và độ trễ server. Đợt 2 (Beta Test - nhóm lớn hơn từ nguồn Paid UA có trả phí, đủ lớn để các chỉ số có ý nghĩa) tập trung đo lường CPI thực tế, CVR trang Store và tỷ lệ hoàn vốn Payback Period. Chỉ khi các chỉ số đạt ngưỡng cam kết, nhà phát hành mới nên bấm nút mở chiến dịch truyền thông diện rộng (Hard Launch).",
+        en: "Divide your Soft Launch into two distinct phases: Phase 1 (Alpha Test: a small group of players) focused purely on bugs, balance, and server stress. Phase 2 (Beta Test: a larger group from targeted Paid UA, big enough for the metrics to be meaningful) to measure real CPIs, store CVR, and cohort payback curves. Scale broadly only after passing these validation gates.",
       } },
     ],
   },
@@ -1092,12 +1086,12 @@ export const builtinPosts: Post[] = [
     slug: "retention-game-mobile-tang-d1-d7-d30",
     slug_en: "optimizing-mobile-game-retention-9-formulas-d1-d7-d30",
     title: {
-      vi: "Tối ưu Retention Game Mobile: 9 công thức vàng giữ chân D1, D7 và D30",
-      en: "Optimizing Mobile Game Retention: 9 Proven Formulas for D1, D7, and D30",
+      vi: "Tối ưu Retention Game Mobile: ý nghĩa D1, D7, D30 và 3 nguyên tắc FTUE",
+      en: "Optimizing Mobile Game Retention: What D1, D7 and D30 Mean and 3 FTUE Principles",
     },
     excerpt: {
-      vi: "Tỷ lệ giữ chân D7 dưới 15% đồng nghĩa với việc bạn đang đổ tiền vào một 'chiếc thùng rỗng'. Bóc tách 9 giải pháp thực chiến giúp cải thiện trải nghiệm First-Time User Experience (FTUE), cơ chế nhiệm vụ chuỗi và hệ thống thông báo đẩy thông minh.",
-      en: "A Day 7 retention below 15% means pouring ad spend into a leaky bucket. Nine actionable strategies to refine FTUE, chained quest systems, and smart behavioral push notifications.",
+      vi: "Giữ chân người chơi quyết định việc tiền quảng cáo có được hoàn lại hay không. Bài viết giải thích ý nghĩa của D1, D7, D30 và ba nguyên tắc tối ưu First-Time User Experience (FTUE) để cải thiện chỉ số giữ chân.",
+      en: "Retention decides whether ad spend pays back. This article explains what D1, D7 and D30 mean and three principles for improving the First-Time User Experience (FTUE).",
     },
     category: { vi: "Vận hành Game", en: "Game Operations" },
     date: "2026-08-15",
@@ -1107,13 +1101,13 @@ export const builtinPosts: Post[] = [
     variant: "game",
     cover: "/blog-covers/retention-return.jpg",
     sources: [
-      { label: { vi: "GameAnalytics: Báo cáo Retention Benchmark", en: "GameAnalytics: Global Mobile Retention Benchmarks" }, href: "https://www.gameanalytics.com/blog/retention" },
       { label: { vi: "Firebase Analytics: Theo dõi Cohort Retention", en: "Firebase Analytics: Cohort Retention Tracking" }, href: "https://firebase.google.com/docs/analytics" },
+      { label: { vi: "GameAnalytics: Mobile retention benchmarks 2026 (bản tóm tắt trên InvestGame)", en: "GameAnalytics: Mobile retention benchmarks 2026 (summary on InvestGame)" }, href: "https://investgame.net/news/pdf/2026-01-20-mobile_retention_benchmarks_2026/" },
     ],
     body: [
       { type: "p", text: {
-        vi: "Trong kinh doanh game di động, Retention (Tỷ lệ giữ chân) chính là 'nhịp tim' phản ánh sức khỏe của sản phẩm. Bạn có thể có một đội ngũ marketing xuất sắc mang về hàng triệu lượt tải, nhưng nếu người chơi rời đi sau 3 ngày đầu tiên, bạn sẽ không bao giờ có thể thu hồi vốn đầu tư.",
-        en: "In mobile game business, Retention is the vital heartbeat of product viability. You may possess a brilliant marketing team driving millions of installs, but if players churn within their first three days, achieving positive ROAS is mathematically impossible.",
+        vi: "Trong kinh doanh game di động, Retention (Tỷ lệ giữ chân) chính là 'nhịp tim' phản ánh sức khỏe của sản phẩm. Bạn có thể có một đội ngũ marketing xuất sắc mang về hàng triệu lượt tải, nhưng nếu phần lớn người chơi rời đi ngay trong những ngày đầu, việc thu hồi vốn đầu tư sẽ rất khó.",
+        en: "In mobile game business, Retention is the vital heartbeat of product viability. You may possess a brilliant marketing team driving millions of installs, but if most players churn within the first few days, achieving positive ROAS becomes very difficult.",
       } },
       {
         type: "image",
@@ -1123,9 +1117,9 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Ý nghĩa cốt lõi của D1, D7 và D30", en: "1. The True Meaning of D1, D7, and D30" } },
       { type: "ul", items: [
-        { vi: "Day 1 Retention (Chuẩn thị trường: > 35 - 40%): Đánh giá trải nghiệm 15 phút đầu (FTUE). Người chơi có hiểu cách chơi không? Đồ họa có mượt mà không? Game có bị crash trên các dòng máy phổ thông không?", en: "Day 1 Retention (Benchmark: > 35 - 40%): Evaluates the First-Time User Experience (FTUE). Was onboarding smooth? Did the game run without frame drops on mid-tier phones?" },
-        { vi: "Day 7 Retention (Chuẩn thị trường: > 15 - 20%): Đánh giá vòng lặp cốt lõi (Core Gameplay Loop). Người chơi có tìm thấy mục tiêu phấn đấu ngắn hạn (mở khóa nhân vật, vượt phó bản, nâng cấp trang bị) hay không?", en: "Day 7 Retention (Benchmark: > 15 - 20%): Tests the core gameplay loop. Did players establish clear short-term progression goals (character unlocks, raid clears)?" },
-        { vi: "Day 30 Retention (Chuẩn thị trường: > 8 - 10%): Đánh giá chiều sâu của tính năng xã hội (Bang hội, PvP, Bạn bè) và nhịp vận hành LiveOps.", en: "Day 30 Retention (Benchmark: > 8 - 10%): Measures social depth (Guilds, PvP ladders, co-op raids) and LiveOps event sustainability." },
+        { vi: "Day 1 Retention (mốc tham chiếu tùy thể loại, thị trường và kênh): Đánh giá trải nghiệm 15 phút đầu (FTUE). Người chơi có hiểu cách chơi không? Đồ họa có mượt mà không? Game có bị crash trên các dòng máy phổ thông không?", en: "Day 1 Retention (benchmarks vary by genre, market and channel): Evaluates the First-Time User Experience (FTUE). Was onboarding smooth? Did the game run without frame drops on mid-tier phones?" },
+        { vi: "Day 7 Retention (mốc tham chiếu tùy thể loại, thị trường và kênh): Đánh giá vòng lặp cốt lõi (Core Gameplay Loop). Người chơi có tìm thấy mục tiêu phấn đấu ngắn hạn (mở khóa nhân vật, vượt phó bản, nâng cấp trang bị) hay không?", en: "Day 7 Retention (benchmarks vary by genre, market and channel): Tests the core gameplay loop. Did players establish clear short-term progression goals (character unlocks, raid clears)?" },
+        { vi: "Day 30 Retention (mốc tham chiếu tùy thể loại, thị trường và kênh): Đánh giá chiều sâu của tính năng xã hội (Bang hội, PvP, Bạn bè) và nhịp vận hành LiveOps.", en: "Day 30 Retention (benchmarks vary by genre, market and channel): Measures social depth (Guilds, PvP ladders, co-op raids) and LiveOps event sustainability." },
       ] },
       {
         type: "image",
@@ -1160,7 +1154,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/game-liveops-monitoring.jpg",
     sources: [
       { label: { vi: "Unity Gaming Services: LiveOps Whitepaper", en: "Unity Gaming Services: LiveOps Whitepaper" }, href: "https://unity.com/solutions/gaming-services" },
-      { label: { vi: "Deconstructor of Fun: LiveOps Architecture", en: "Deconstructor of Fun: LiveOps Architecture" }, href: "https://www.deconstructoroffun.com/" },
     ],
     body: [
       { type: "p", text: {
@@ -1319,7 +1312,6 @@ export const builtinPosts: Post[] = [
     variant: "performance",
     cover: "/blog-covers/growth-analytics-chart.jpg",
     sources: [
-      { label: { vi: "AppsFlyer: Báo cáo Mobile Measurement Benchmarks", en: "AppsFlyer: Mobile Measurement Benchmarks" }, href: "https://www.appsflyer.com/" },
       { label: { vi: "Adjust: Hướng dẫn phân tích LTV và ROAS", en: "Adjust: LTV & ROAS Analytics Guide" }, href: "https://www.adjust.com/glossary/" },
       { label: { vi: "Firebase Analytics: Kiến trúc dữ liệu BigQuery", en: "Firebase Analytics: BigQuery Data Architecture" }, href: "https://firebase.google.com/docs/analytics" },
     ],
@@ -1354,14 +1346,14 @@ export const builtinPosts: Post[] = [
       } },
       { type: "h2", text: { vi: "3. Khung phân tích Cohort Analysis theo ngày cài đặt D1-D90", en: "3. Cohort Analysis Framework Across Install Cohorts D1-D90" } },
       { type: "p", text: {
-        vi: "Đo lường doanh thu trung bình không thể cho bạn biết chiến dịch marketing ngày hôm nay có thực sự sinh lời hay không. Đội ngũ Data Analytics phải theo dõi doanh thu tích lũy theo từng Cohort ngày cài đặt để vẽ đường cong LTV thực tế:",
-        en: "Blended average revenue metrics conceal whether today's ad campaigns are genuinely profitable. Data analytics teams must track cumulative cohort revenue by install date to plot authentic LTV curves:",
+        vi: "Đo lường doanh thu trung bình không thể cho bạn biết chiến dịch marketing ngày hôm nay có thực sự sinh lời hay không. Đội ngũ Data Analytics phải theo dõi doanh thu tích lũy theo từng Cohort ngày cài đặt để vẽ đường cong LTV thực tế. Các mốc ROAS dưới đây là cách đọc từng giai đoạn; ngưỡng mục tiêu cần đặt theo thể loại, thị trường, kênh và mô hình kinh doanh của từng game:",
+        en: "Blended average revenue metrics conceal whether today's ad campaigns are genuinely profitable. Data analytics teams must track cumulative cohort revenue by install date to plot authentic LTV curves. The ROAS checkpoints below show how to read each stage; target thresholds should be set per genre, market, channel, and business model:",
       } },
       { type: "ul", items: [
-        { vi: "ROAS Day 1 (15 - 25%): Đánh giá khả năng kích hoạt người chơi nạp gói tân thủ $0.99 - $4.99 ngay trong 24 giờ đầu tiên.", en: "Day 1 ROAS (15-25%): Measures conversion speed for starter packs ($0.99-$4.99) within the first 24 hours." },
-        { vi: "ROAS Day 7 (35 - 50%): Phản ánh tỷ lệ mua Vé Tháng (Monthly Card) và Battle Pass đầu tiên.", en: "Day 7 ROAS (35-50%): Reflects adoption of Monthly Cards and the inaugural Battle Pass season." },
-        { vi: "ROAS Day 30 (75 - 100%): Điểm hòa vốn lý tưởng cho các tựa game MMORPG và Thẻ Tướng tại thị trường Việt Nam.", en: "Day 30 ROAS (75-100%): The target break-even milestone for leading MMORPG and Card Battler titles in Vietnam." },
-        { vi: "ROAS Day 90 (150 - 250%+): Giai đoạn sinh lời bền vững nhờ các bản cập nhật sự kiện LiveOps định kỳ.", en: "Day 90 ROAS (150-250%+): The pure profit generation phase driven by recurring LiveOps event schedules." },
+        { vi: "ROAS Day 1: Đánh giá khả năng kích hoạt người chơi nạp gói tân thủ ngay trong 24 giờ đầu tiên.", en: "Day 1 ROAS: Measures conversion speed for starter packs within the first 24 hours." },
+        { vi: "ROAS Day 7: Phản ánh tỷ lệ mua Vé Tháng (Monthly Card) và Battle Pass đầu tiên.", en: "Day 7 ROAS: Reflects adoption of Monthly Cards and the inaugural Battle Pass season." },
+        { vi: "ROAS Day 30: Một mốc quan trọng để đánh giá tiến độ hoàn vốn; mức kỳ vọng tùy thể loại (ví dụ MMORPG, Thẻ Tướng), thị trường và kênh.", en: "Day 30 ROAS: An important checkpoint for payback progress; the target depends on genre (for example MMORPG or Card Battler), market, and channel." },
+        { vi: "ROAS Day 90: Giai đoạn sinh lời bền vững nhờ các bản cập nhật sự kiện LiveOps định kỳ.", en: "Day 90 ROAS: The pure profit generation phase driven by recurring LiveOps event schedules." },
       ] },
     ],
   },
@@ -1493,8 +1485,8 @@ export const builtinPosts: Post[] = [
       ] },
       { type: "h2", text: { vi: "2. Quy trình thử nghiệm Module 3 bước", en: "2. The 3-Step Modular Testing Framework" } },
       { type: "p", text: {
-        vi: "Hãy chia video quảng cáo thành 3 phần: Hook (0 - 3s), Body (3 - 15s) và CTA (15 - 20s). Khi đã tìm được 1 Hook có tỷ lệ giữ chân 3s (3-second Hook Rate) vượt trội > 35%, hãy giữ nguyên Hook đó và ghép nối với 3 biến thể Gameplay khác nhau. Quy trình mô-đun hóa này giúp nhân rộng số lượng creative với chi phí sản xuất thấp nhất.",
-        en: "Break every video ad into 3 modules: Hook (0 - 3s), Body (3 - 15s), and CTA (15 - 20s). Once a hook achieves a 3-second retention rate above 35%, lock that hook and test it against 3 different gameplay bodies. This modular workflow multiplies creative output while minimizing production overhead.",
+        vi: "Hãy chia video quảng cáo thành 3 phần: Hook (0 - 3s), Body (3 - 15s) và CTA (15 - 20s). Khi đã tìm được 1 Hook có tỷ lệ giữ chân 3s (3-second Hook Rate) vượt trội so với các hook còn lại trong cùng tài khoản và kênh, hãy giữ nguyên Hook đó và ghép nối với 3 biến thể Gameplay khác nhau. Quy trình mô-đun hóa này giúp nhân rộng số lượng creative với chi phí sản xuất thấp nhất.",
+        en: "Break every video ad into 3 modules: Hook (0 - 3s), Body (3 - 15s), and CTA (15 - 20s). Once a hook achieves a 3-second retention rate clearly higher than your other hooks on the same account and channel, lock that hook and test it against 3 different gameplay bodies. This modular workflow multiplies creative output while minimizing production overhead.",
       } },
       { type: "h2", text: { vi: "3. Ba nhóm Hook mở đầu có tỷ lệ giữ chân cao nhất", en: "3. Three High-Performing Hook Archetypes" } },
       { type: "ul", items: [
@@ -1503,13 +1495,13 @@ export const builtinPosts: Post[] = [
         { vi: "Hook Phản ứng Thực tế (Social Proof Reaction): Video Creator mở gói thẻ hiếm hoặc phản ứng ngỡ ngàng trước đồ họa Unreal Engine 5 của game.", en: "Social Proof Reaction Hook: Real creator reacting with authentic surprise to an ultra-rare pull or Unreal Engine 5 visual spectacle." },
       ] },
       { type: "p", text: {
-        vi: "Một biến thể video được xem là Winner khi thỏa mãn đồng thời 3 điều kiện: 3-Second Hook Rate > 35%, Video Average Watch Time > 6 giây, và Tỷ lệ chuyển đổi cài đặt eCPI thấp hơn 20% so với mức trung bình của tài khoản. Chỉ bơm thêm ngân sách khi cả 3 chỉ số đều xanh.",
-        en: "A variant qualifies as a Winner only when meeting 3 criteria simultaneously: 3-Second Hook Rate > 35%, Average Watch Time > 6 seconds, and eCPI at least 20% below account benchmark. Scale acquisition spend only when all 3 metrics pass.",
+        vi: "Một biến thể video được xem là Winner khi thỏa mãn đồng thời 3 điều kiện: 3-Second Hook Rate cao hơn mặt bằng chung của tài khoản, Video Average Watch Time đủ dài để người xem thấy được gameplay, và eCPI thấp hơn mức trung bình của tài khoản. Ngưỡng cụ thể nên được đội ngũ đặt dựa trên dữ liệu lịch sử của từng game, thị trường và kênh. Chỉ bơm thêm ngân sách khi cả 3 chỉ số đều xanh.",
+        en: "A variant qualifies as a Winner only when meeting 3 criteria simultaneously: 3-Second Hook Rate above your account norm, Average Watch Time long enough for viewers to see the gameplay, and eCPI below your account benchmark. Set the exact thresholds from each game's own historical data, market, and channel. Scale acquisition spend only when all 3 metrics pass.",
       } },
-      { type: "h2", text: { vi: "4. Nguyên tắc phân bổ ngân sách 80/20", en: "4. The 80/20 Ad Spend Rule" } },
+      { type: "h2", text: { vi: "4. Nguyên tắc phân bổ ngân sách: ưu tiên creative thắng, giữ quỹ thử nghiệm", en: "4. The Ad Spend Rule: Back Winners, Ring-Fence a Testing Budget" } },
       { type: "p", text: {
-        vi: "Dành 80% ngân sách quảng cáo cho các Creative Winner đã được chứng minh hiệu quả ROAS và D7 Retention. 20% ngân sách còn lại luôn được phân bổ cố định cho 'Phòng thí nghiệm Creative' để liên tục thử nghiệm các góc tiếp cận mới, ngăn chặn hiện tượng kiệt sức quảng cáo (Creative Fatigue) trước khi hiệu suất sụt giảm.",
-        en: "Allocate 80% of acquisition budget to proven Winning Creatives that drive stable ROAS and D7 retention. The remaining 20% must be reserved for the 'Creative Testing Lab' to explore new angles, preventing creative fatigue before campaign performance deteriorates.",
+        vi: "Dành phần lớn ngân sách quảng cáo cho các Creative Winner đã được chứng minh hiệu quả ROAS và D7 Retention. Một phần ngân sách còn lại (tỷ lệ tùy từng game) luôn được phân bổ cố định cho 'Phòng thí nghiệm Creative' để liên tục thử nghiệm các góc tiếp cận mới, ngăn chặn hiện tượng kiệt sức quảng cáo (Creative Fatigue) trước khi hiệu suất sụt giảm.",
+        en: "Allocate most of the acquisition budget to proven Winning Creatives that drive stable ROAS and D7 retention. A fixed share of the remaining budget, sized to each game, must be reserved for the 'Creative Testing Lab' to explore new angles, preventing creative fatigue before campaign performance deteriorates.",
       } },
     ],
   },
@@ -1686,10 +1678,11 @@ export const builtinPosts: Post[] = [
     sources: [
       { label: { vi: "Google Play Console: Testing Tracks Guide", en: "Google Play Console: Testing Tracks Guide" }, href: "https://support.google.com/googleplay/android-developer/answer/9845334" },
       { label: { vi: "Unity Gaming Services: Soft Launch Best Practices", en: "Unity Gaming Services: Soft Launch Best Practices" }, href: "https://unity.com/solutions/gaming-services" },
+      { label: { vi: "Google Play Console: Ngưỡng 'bad behavior' của Android vitals", en: "Google Play Console: Android vitals bad behavior thresholds" }, href: "https://support.google.com/googleplay/android-developer/answer/9844486" },
     ],
     body: [
       { type: "p", text: {
-        vi: "Soft launch game mobile là giai đoạn thử nghiệm có kiểm soát nhằm kiểm chứng các giả thuyết quan trọng nhất của sản phẩm: người chơi có hiểu giá trị game không, thiết bị tầm trung có vận hành mượt mà không, onboarding có kích hoạt hành vi đúng không và đội ngũ LiveOps có đủ sức giải quyết sự cố hay không. Mọi sai sót được phát hiện và sửa chữa ở giai đoạn này có chi phí chỉ bằng 1/10 so với khi đã đổ toàn lực ngân sách vào chiến dịch phát hành toàn cầu (Global Launch).",
+        vi: "Soft launch game mobile là giai đoạn thử nghiệm có kiểm soát nhằm kiểm chứng các giả thuyết quan trọng nhất của sản phẩm: người chơi có hiểu giá trị game không, thiết bị tầm trung có vận hành mượt mà không, onboarding có kích hoạt hành vi đúng không và đội ngũ LiveOps có đủ sức giải quyết sự cố hay không. Sai sót được phát hiện và sửa ở giai đoạn này thường tốn ít chi phí hơn nhiều so với khi đã đổ toàn lực ngân sách vào chiến dịch phát hành toàn cầu (Global Launch).",
         en: "A mobile game soft launch is a controlled testing window engineered to validate critical product hypotheses: do players grasp the core gameplay fantasy, does the client run smoothly on mid-tier hardware, does onboarding trigger the right progression loop, and can live operations sustain player support? Identifying and resolving flaws here costs a fraction of fixing them post-global launch.",
       } },
       {
@@ -1700,10 +1693,10 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Bốn nhóm chỉ số vàng cần kiểm chứng", en: "1. The Four Golden Metric Clusters" } },
       { type: "ul", items: [
-        { vi: "Chất lượng Kỹ thuật & Độ tương thích thiết bị: Crash Rate (<0.3%), Tỷ lệ ứng dụng không phản hồi ANR (<0.4%), Thời gian tải game lần đầu và mức độ ngốn pin trên các dòng máy Android phổ biến.", en: "Technical Stability & Device Compatibility: Crash rates (<0.3%), ANR rates (<0.4%), initial asset load times, and thermal battery draw across benchmark Android devices." },
-        { vi: "Hiệu quả Onboarding & Giữ chân: Tỷ lệ hoàn thành ải hướng dẫn (Tutorial Completion > 70%), D1 Retention (>38%), D7 Retention (>15%) và thời lượng chơi trung bình mỗi phiên (Session Length).", en: "Onboarding & Retention Telemetry: Tutorial completion rates (>70%), Day 1 retention (>38%), Day 7 retention (>15%), and average daily session duration." },
-        { vi: "Kinh tế In-App & Chuyển đổi nạp tiền: First-Time Payer Conversion (>2.5%), ARPDAU sơ bộ và hành vi tiêu dùng tiền tệ không trả phí (Free Currency Sink).", en: "In-App Economy & Monetization: First-time payer conversion (>2.5%), preliminary ARPDAU, and free-to-play currency sink mechanics." },
-        { vi: "Năng lực Vận hành & Chăm sóc khách hàng: Thời gian phản hồi Ticket khiếu nại (<15 phút), tỷ lệ lỗi giao dịch thanh toán và đo lường cảm xúc cộng đồng (Community Sentiment).", en: "Operational SLAs & LiveOps Readiness: Ticket resolution times (<15 mins), payment gateway failure rates, and community sentiment scoring." },
+        { vi: "Chất lượng Kỹ thuật & Độ tương thích thiết bị: Crash Rate và tỷ lệ ứng dụng không phản hồi ANR (nằm dưới ngưỡng 'bad behavior' của Android vitals trên Google Play), Thời gian tải game lần đầu và mức độ ngốn pin trên các dòng máy Android phổ biến.", en: "Technical Stability & Device Compatibility: Crash and ANR rates (kept below Google Play's Android vitals bad-behavior thresholds), initial asset load times, and thermal battery draw across benchmark Android devices." },
+        { vi: "Hiệu quả Onboarding & Giữ chân: Tỷ lệ hoàn thành ải hướng dẫn (Tutorial Completion), D1 Retention và D7 Retention (đối chiếu với mốc tham chiếu theo thể loại và thị trường mục tiêu) và thời lượng chơi trung bình mỗi phiên (Session Length).", en: "Onboarding & Retention Telemetry: Tutorial completion rates, Day 1 and Day 7 retention (against reference points for your genre and target market), and average daily session duration." },
+        { vi: "Kinh tế In-App & Chuyển đổi nạp tiền: First-Time Payer Conversion, ARPDAU sơ bộ và hành vi tiêu dùng tiền tệ không trả phí (Free Currency Sink).", en: "In-App Economy & Monetization: First-time payer conversion, preliminary ARPDAU, and free-to-play currency sink mechanics." },
+        { vi: "Năng lực Vận hành & Chăm sóc khách hàng: Thời gian phản hồi Ticket khiếu nại (theo SLA nội bộ đã đặt ra), tỷ lệ lỗi giao dịch thanh toán và đo lường cảm xúc cộng đồng (Community Sentiment).", en: "Operational SLAs & LiveOps Readiness: Ticket resolution times (against your own SLA), payment gateway failure rates, and community sentiment scoring." },
       ] },
       { type: "h2", text: { vi: "2. Nguyên tắc phân bổ thị trường Soft Launch thông minh", en: "2. Strategic Market Selection for Soft Launch" } },
       { type: "p", text: {
@@ -1720,7 +1713,6 @@ export const builtinPosts: Post[] = [
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "social",
     cover: "/blog-covers/creator-program.jpg",
     sources: [
-      { label: { vi: "YouTube Gaming Creator Hub & Guidelines", en: "YouTube Gaming Creator Hub & Guidelines" }, href: "https://creatoracademy.youtube.com/" },
       { label: { vi: "TikTok for Business: Creator Incentive Programs", en: "TikTok for Business: Creator Incentive Programs" }, href: "https://www.tiktok.com/business/en/solutions/creator-marketplace" },
     ],
     body: [
@@ -1880,7 +1872,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/growth-analytics-chart.jpg",
     sources: [
       { label: { vi: "Google Analytics: Journey & Funnel Measurement", en: "Google Analytics: Journey & Funnel Measurement" }, href: "https://support.google.com/analytics/answer/9304153" },
-      { label: { vi: "AppsFlyer: Mobile Game Retention Benchmarks", en: "AppsFlyer: Mobile Game Retention Benchmarks" }, href: "https://www.appsflyer.com/resources/reports/gaming-benchmarks/" },
     ],
     body: [
       { type: "p", text: {
@@ -1923,11 +1914,14 @@ export const builtinPosts: Post[] = [
     sources: [
       { label: { vi: "Google Play Billing System Policies", en: "Google Play Billing System Policies" }, href: "https://support.google.com/googleplay/android-developer/answer/10281818" },
       { label: { vi: "Apple In-App Purchase & External Purchase Link Entitlement", en: "Apple In-App Purchase & External Purchase Link Entitlement" }, href: "https://developer.apple.com/in-app-purchase/" },
+      { label: { vi: "Antom: Báo cáo xu hướng thanh toán game tại Việt Nam", en: "Antom: Vietnam gaming payment trends report" }, href: "https://knowledge.antom.com/vietnam-gaming-payment-trends-report-unlocking-growth-in-a-young-dynamic-mobile-first-gaming-market" },
+      { label: { vi: "Google Play: Phí dịch vụ", en: "Google Play: Service fees" }, href: "https://support.google.com/googleplay/android-developer/answer/112622" },
+      { label: { vi: "Apple: App Store Small Business Program", en: "Apple: App Store Small Business Program" }, href: "https://developer.apple.com/app-store/small-business-program/" },
     ],
     body: [
       { type: "p", text: {
-        vi: "Tại thị trường Việt Nam, thanh toán in-app không chỉ là thao tác bấm nút mua hàng mà là một phần cốt lõi của trải nghiệm người chơi. Rất nhiều nhà phát hành quốc tế ngạc nhiên khi thấy tỷ lệ người chơi mở bảng giá (Paywall Open) rất cao nhưng tỷ lệ hoàn tất giao dịch thành công (Payment Completion Rate) lại rơi rụng nghiêm trọng. Nguyên nhân chủ yếu xuất phát từ thói quen thanh toán đặc thù của game thủ Việt: ưa chuộng ví điện tử nội địa (MoMo, ZaloPay, Viettel Money), quét mã VietQR và các cổng nạp Webshop chính thống.",
-        en: "In the Vietnamese market, in-app payments are a defining pillar of player experience. International publishers are often baffled by high paywall open rates paired with severe checkout abandonment. The root cause lies in local payment habits: Vietnamese gamers overwhelmingly favor local e-wallets (MoMo, ZaloPay, Viettel Money), instant VietQR transfers, and official publisher Webshops offering localized bundles.",
+        vi: "Tại thị trường Việt Nam, thanh toán in-app không chỉ là thao tác bấm nút mua hàng mà là một phần cốt lõi của trải nghiệm người chơi. Rất nhiều nhà phát hành quốc tế ngạc nhiên khi thấy tỷ lệ người chơi mở bảng giá (Paywall Open) rất cao nhưng tỷ lệ hoàn tất giao dịch thành công (Payment Completion Rate) lại rơi rụng nghiêm trọng. Một nguyên nhân thường gặp xuất phát từ thói quen thanh toán đặc thù của game thủ Việt: ưa chuộng ví điện tử nội địa (MoMo, ZaloPay, Viettel Money), quét mã VietQR và các cổng nạp Webshop chính thống.",
+        en: "In the Vietnamese market, in-app payments are a defining pillar of player experience. International publishers are often baffled by high paywall open rates paired with severe checkout abandonment. A common cause lies in local payment habits: Vietnamese gamers favor local e-wallets (MoMo, ZaloPay, Viettel Money), instant VietQR transfers, and official publisher Webshops offering localized bundles.",
       } },
       {
         type: "image",
@@ -1937,9 +1931,9 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Bản đồ phương thức thanh toán game tại Việt Nam", en: "1. The Vietnam Gaming Payment Landscape" } },
       { type: "ul", items: [
-        { vi: "Ví điện tử & QR Code (MoMo, ZaloPay, VietQR): Chiếm hơn 55% tổng lượng giao dịch micro-transaction nhờ thao tác quét mã 1 chạm không cần nhập số thẻ tín dụng.", en: "E-Wallets & VietQR (MoMo, ZaloPay, Banking QR): Captures over 55% of micro-transactions due to instant 1-tap QR scanning eliminating credit card friction." },
-        { vi: "In-App Billing (Apple App Store & Google Play): Kênh nạp mặc định có tính bảo mật cao nhất, phù hợp với các gói nạp nhanh trong trận đấu nhưng chịu phí 15% - 30%.", en: "Direct Store Billing (Apple & Google Play): High-trust default channel ideal for impulsive mid-match buys, carrying standard 15% - 30% platform service fees." },
-        { vi: "Cổng Nạp Trực Tuyến Webshop (Publisher Direct Portal): Nơi các game thủ VIP (Whales) thực hiện các gói giao dịch lớn để nhận thêm % ưu đãi kim cương độc quyền.", en: "Official Direct Webshop Portals: Where VIP whales execute large transactions incentivized by 5% - 15% bonus premium currency rebate promotions." },
+        { vi: "Ví điện tử & QR Code (MoMo, ZaloPay, VietQR): Theo báo cáo của Antom, ví điện tử chiếm khoảng 41% giao dịch game trực tuyến tại Việt Nam; thao tác quét mã 1 chạm giúp người chơi không cần nhập số thẻ tín dụng.", en: "E-Wallets & VietQR (MoMo, ZaloPay, Banking QR): According to Antom's report, digital wallets account for about 41% of online gaming transactions in Vietnam; instant 1-tap QR scanning removes credit card friction." },
+        { vi: "In-App Billing (Apple App Store & Google Play): Kênh nạp mặc định có tính bảo mật cao nhất, phù hợp với các gói nạp nhanh trong trận đấu nhưng chịu phí nền tảng (thường 15% - 30%, tùy chương trình và thị trường).", en: "Direct Store Billing (Apple & Google Play): High-trust default channel ideal for impulsive mid-match buys, carrying platform service fees (commonly 15% - 30%, depending on program and market)." },
+        { vi: "Cổng Nạp Trực Tuyến Webshop (Publisher Direct Portal): Nơi các game thủ VIP (Whales) thực hiện các gói giao dịch lớn để nhận thêm ưu đãi kim cương độc quyền.", en: "Official Direct Webshop Portals: Where VIP whales execute large transactions incentivized by bonus premium currency promotions." },
       ] },
       {
         type: "image",
@@ -1951,7 +1945,7 @@ export const builtinPosts: Post[] = [
       { type: "ul", items: [
         { vi: "Tự động kích hoạt luồng khôi phục vật phẩm (Auto-Restore & Pending Retry): Nếu mạng bị rớt khi người chơi vừa trừ tiền, hệ thống phải tự động kiểm tra biên lai và chuyển kim cương vào túi đồ ngay khi kết nối lại.", en: "Automated Receipt Verification & Pending Retries: If connectivity drops post-charge, the backend must verify the webhook and deliver gems instantly upon reconnect." },
         { vi: "Hiển thị giá VNĐ minh bạch (Bao gồm thuế phí): Người chơi Việt rất nhạy cảm với việc bị trừ thêm phí ẩn tại bước xác nhận cuối cùng.", en: "Transparent Local Currency Display (VND All-Inclusive): Vietnamese gamers abandon carts if unannounced taxes or hidden processing fees appear at the final confirmation modal." },
-        { vi: "Hệ thống hỗ trợ nạp tiền 1:1 trong 5 phút: Cung cấp nút 'Báo lỗi nạp' trực tiếp tại màn hình Paywall để người chơi gửi ticket kèm mã giao dịch trong 1 click.", en: "5-Minute Direct Payment Support SLA: Embed a dedicated 'Report Payment Issue' button inside the in-game shop for 1-click ticket generation." },
+        { vi: "Hệ thống hỗ trợ nạp tiền 1:1, phản hồi nhanh: Cung cấp nút 'Báo lỗi nạp' trực tiếp tại màn hình Paywall để người chơi gửi ticket kèm mã giao dịch trong 1 click.", en: "Fast Direct Payment Support: Embed a dedicated 'Report Payment Issue' button inside the in-game shop for 1-click ticket generation." },
       ] },
     ],
   },
@@ -1964,7 +1958,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/community-3d.jpg",
     sources: [
       { label: { vi: "Discord: Community Best Practices", en: "Discord: Community Best Practices" }, href: "https://discord.com/guidelines" },
-      { label: { vi: "GDC: Community Management Telemetry", en: "GDC: Community Management Telemetry" }, href: "https://gdconf.com/" },
     ],
     body: [
       { type: "p", text: {
@@ -1979,10 +1972,10 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Bốn nhóm chỉ số KPI cốt lõi đo lường Community", en: "1. The 4 Core Community Health KPI Groups" } },
       { type: "ul", items: [
-        { vi: "Nhóm 1, Mức độ Gắn kết Thực (Vitality & Engagement Rate): Tỷ lệ Thành viên Hoạt động Hằng ngày (DAU/MAU trong Discord > 22%), số lượng thảo luận tự nhiên không qua minigame 'xin code'.", en: "Vitality & Engagement: Community DAU/MAU ratio (>22% on Discord) and volume of organic discussions unprompted by gift code giveaways." },
-        { vi: "Nhóm 2, Tốc độ & Hiệu quả Hỗ trợ (SLA & Issue Resolution): Thời gian phản hồi thắc mắc kỹ thuật trung bình (<10 phút trong giờ cao điểm) và tỷ lệ giải quyết khiếu nại nạp tiền/báo lỗi thành công.", en: "Support SLA & Resolution: Average first response time (<10 mins during peak hours) and verified payment/bug ticket resolution rate." },
+        { vi: "Nhóm 1, Mức độ Gắn kết Thực (Vitality & Engagement Rate): Tỷ lệ Thành viên Hoạt động Hằng ngày (tỷ lệ DAU/MAU của cộng đồng, theo dõi theo xu hướng), số lượng thảo luận tự nhiên không qua minigame 'xin code'.", en: "Vitality & Engagement: Community DAU/MAU ratio (tracked as a trend) and volume of organic discussions unprompted by gift code giveaways." },
+        { vi: "Nhóm 2, Tốc độ & Hiệu quả Hỗ trợ (SLA & Issue Resolution): Thời gian phản hồi thắc mắc kỹ thuật trung bình (theo mục tiêu SLA đã đặt ra, đặc biệt trong giờ cao điểm) và tỷ lệ giải quyết khiếu nại nạp tiền/báo lỗi thành công.", en: "Support SLA & Resolution: Average first response time (against your own SLA target, especially during peak hours) and verified payment/bug ticket resolution rate." },
         { vi: "Nhóm 3, Chỉ số Sức khỏe Tâm lý & Cảm xúc (Sentiment Score): Tỷ lệ phản hồi tích cực/tiêu cực sau mỗi bản vá (Patch Notes) và phát hiện sớm mầm mống khủng hoảng tẩy chay.", en: "Sentiment Health Score: Positive-to-negative sentiment ratio following patch releases and early detection of community boycott risks." },
-        { vi: "Nhóm 4, Đóng góp Doanh thu & Tỷ lệ Giữ chân (Retention Impact): Tỷ lệ D30 Retention của người chơi tham gia Discord/Group thường cao hơn rõ rệt so với tệp người chơi không vào cộng đồng.", en: "Product & Retention Impact: D30 Retention of community-active players typically and clearly outperforms non-community cohorts." },
+        { vi: "Nhóm 4, Đóng góp Doanh thu & Tỷ lệ Giữ chân (Retention Impact): So sánh D30 Retention của người chơi tham gia Discord/Group với nhóm không vào cộng đồng để xem cộng đồng có thực sự hỗ trợ giữ chân hay không (lưu ý đây là tương quan, chưa chắc là quan hệ nhân quả).", en: "Product & Retention Impact: Compare D30 retention of community-active players against non-community cohorts to see whether community actually supports retention (note this is correlation, not necessarily causation)." },
       ] },
       {
         type: "image",
@@ -1992,8 +1985,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "2. Quy tắc báo cáo xu hướng thay vì con số tĩnh", en: "2. Reporting Sentiment Trends Over Static Snapshot Metrics" } },
       { type: "p", text: {
-        vi: "Một tuần có lượng bình luận tăng đột biến 300% không hẳn là tín hiệu vui nếu 80% trong số đó là phản ánh game bị giật lag sau bản update. Bản báo cáo CM có giá trị nhất phải trả lời được câu hỏi: Sự thay đổi tính năng nào trong game tuần qua đã tác động trực tiếp đến chỉ số gắn kết của cộng đồng?",
-        en: "A 300% comment spike is not a win if 80% are complaints about post-patch latency. The highest-value CM report directly attributes how specific in-game updates or balance changes impacted player morale and retention curves.",
+        vi: "Một tuần có lượng bình luận tăng đột biến không hẳn là tín hiệu vui nếu phần lớn trong số đó là phản ánh game bị giật lag sau bản update. Bản báo cáo CM có giá trị nhất phải trả lời được câu hỏi: Sự thay đổi tính năng nào trong game tuần qua đã tác động trực tiếp đến chỉ số gắn kết của cộng đồng?",
+        en: "A comment spike is not a win if most of the comments are complaints about post-patch latency. The highest-value CM report directly attributes how specific in-game updates or balance changes impacted player morale and retention curves.",
       } },
     ],
   },
@@ -2005,7 +1998,6 @@ export const builtinPosts: Post[] = [
     category: { vi: "Thị trường Game", en: "Gaming Market" }, date: "2026-08-20", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-orange-600", variant: "branding",
     cover: "/blog-covers/team-strategy-meeting.jpg",
     sources: [
-      { label: { vi: "Apple: App Store Localization Guidelines", en: "Apple: App Store Localization Guidelines" }, href: "https://developer.apple.com/app-store/localization/" },
       { label: { vi: "IGDA: Game Localization Special Interest Group", en: "IGDA: Game Localization Special Interest Group" }, href: "https://igda.org/" },
     ],
     body: [
@@ -2048,7 +2040,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/brand-strategy-board.jpg",
     sources: [
       { label: { vi: "Google Search Central: Helpful Content Framework", en: "Google Search Central: Helpful Content Framework" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
-      { label: { vi: "Harvard Business Review: Writing High-Impact Case Studies", en: "Harvard Business Review: Writing High-Impact Case Studies" }, href: "https://hbr.org/" },
     ],
     body: [
       { type: "p", text: {
@@ -2076,26 +2067,25 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "2. Quy tắc nói không với số liệu ảo", en: "2. Eliminating Vanity Numbers & Speculative Hype" } },
       { type: "p", text: {
-        vi: "Tuyệt đối không sử dụng các con số ước tính chung chung như 'tiếp cận hàng triệu game thủ' mà không đi kèm tỷ lệ chuyển đổi cài đặt và chi phí thực tế. Một con số trung thực về 15.000 lượt tải chất lượng cao có D7 Retention 28% có giá trị thuyết phục gấp 10 lần một con số 1 triệu lượt hiển thị vô nghĩa.",
-        en: "Avoid empty metrics like 'millions of gamers reached' without disclosing install conversion rates or cost efficiencies. A verified case study demonstrating 15,000 high-intent installs with 28% D7 retention is 10x more persuasive than 1 million passive impressions.",
+        vi: "Tuyệt đối không sử dụng các con số ước tính chung chung như 'tiếp cận hàng triệu game thủ' mà không đi kèm tỷ lệ chuyển đổi cài đặt và chi phí thực tế. Một con số trung thực về lượt tải chất lượng cao kèm D7 Retention rõ ràng có giá trị thuyết phục hơn nhiều so với một con số hàng triệu lượt hiển thị vô nghĩa.",
+        en: "Avoid empty metrics like 'millions of gamers reached' without disclosing install conversion rates or cost efficiencies. A verified case study demonstrating high-intent installs with a clearly stated D7 retention is far more persuasive than a million passive impressions.",
       } },
     ],
   },
   {
     slug: "bo-benchmark-user-acquisition-game-mobile-tai-viet-nam-2026",
     slug_en: "vietnam-mobile-game-user-acquisition-benchmarks-2026-cpi",
-    title: { vi: "Bộ Benchmark User Acquisition Game Mobile tại Việt Nam (2026): Chỉ số CPI, CVR và Retention theo thể loại", en: "Vietnam Mobile Game User Acquisition Benchmarks (2026): CPI, CVR & Retention by Genre" },
-    excerpt: { vi: "So sánh CPI giữa game Casual và MMORPG là một sai lầm phổ biến. Bảng tham khảo chung ngành (không phải số liệu độc quyền của một thị trường cụ thể) về chi phí cài đặt (CPI), Tỷ lệ chuyển đổi trang Store (CVR) và Giữ chân D1/D7/D30 theo thể loại.", en: "Comparing Casual and Hardcore RPG CPIs is a common analytical error. A general industry reference range (not proprietary market-specific data) for CPI, Store CVR, and D1/D7/D30 retention across 4 key genres." },
+    title: { vi: "Cách đọc benchmark User Acquisition game mobile tại Việt Nam (2026): CPI, CVR và Retention theo thể loại", en: "How to Read Mobile Game User Acquisition Benchmarks in Vietnam (2026): CPI, CVR & Retention by Genre" },
+    excerpt: { vi: "So sánh CPI giữa game Casual và MMORPG là một sai lầm phổ biến. Bài viết chỉ ra những chỉ số cần theo dõi theo từng thể loại (CPI, tỷ lệ chuyển đổi trang Store, giữ chân D1/D7/D30) và vì sao ngưỡng phải xác định bằng dữ liệu thật của chính game.", en: "Comparing Casual and Hardcore RPG CPIs is a common analytical error. This article shows which metrics to track for each genre (CPI, store conversion, D1/D7/D30 retention) and why thresholds must come from your own game's data." },
     category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-navy-900 to-teal-600", variant: "performance",
     cover: "/blog-covers/analytics-dashboard.jpg",
     sources: [
       { label: { vi: "Firebase & Google Play Console Benchmarks", en: "Firebase & Google Play Console Benchmarks" }, href: "https://firebase.google.com/docs/analytics" },
-      { label: { vi: "AppsFlyer State of Gaming Report Southeast Asia", en: "AppsFlyer State of Gaming Report Southeast Asia" }, href: "https://www.appsflyer.com/" },
     ],
     body: [
       { type: "p", text: {
-        vi: "Không có một con số CPI 'chuẩn' duy nhất cho toàn bộ thị trường game mobile. Một tựa game Hyper-Casual thường có CPI rất thấp nhưng D7 retention cũng thấp tương ứng, trong khi một tựa game Chiến thuật 4X / SLG có CPI cao hơn hẳn nhưng bù lại giá trị vòng đời người chơi (LTV) cũng lớn hơn nhiều. Các con số dưới đây là khoảng tham khảo chung của ngành, tổng hợp từ nhiều báo cáo UA quốc tế, dùng để hiệu chỉnh kỳ vọng ban đầu — không phải số liệu đo lường riêng cho thị trường Việt Nam, và nên được đối chiếu lại với dữ liệu thực tế của từng chiến dịch.",
-        en: "There is no single universal CPI benchmark across mobile gaming. A Hyper-Casual game typically has a very low CPI but correspondingly low D7 retention, whereas a 4X Strategy / SLG title commands a much higher CPI offset by a much larger player lifetime value (LTV). The ranges below are general industry reference points compiled from international UA reports, meant to calibrate initial expectations — not measured data specific to the Vietnamese market, and should be validated against your own campaign data.",
+        vi: "Không có một con số CPI 'chuẩn' duy nhất cho toàn bộ thị trường game mobile. Một tựa game Hyper-Casual thường có CPI rất thấp nhưng D7 retention cũng thấp tương ứng, trong khi một tựa game Chiến thuật 4X / SLG có CPI cao hơn hẳn nhưng bù lại giá trị vòng đời người chơi (LTV) cũng lớn hơn nhiều. Các nhận định dưới đây mang tính định hướng chung để hiệu chỉnh kỳ vọng ban đầu, không phải số liệu đo lường cho thị trường Việt Nam, và cần được đối chiếu với dữ liệu thực tế của từng chiến dịch cũng như các báo cáo công khai mới nhất.",
+        en: "There is no single universal CPI benchmark across mobile gaming. A Hyper-Casual game typically has a very low CPI but correspondingly low D7 retention, whereas a 4X Strategy / SLG title commands a much higher CPI offset by a much larger player lifetime value (LTV). The notes below are general orientation to calibrate initial expectations, not measured data for the Vietnamese market, and should be validated against your own campaign data and the latest public reports.",
       } },
       {
         type: "image",
@@ -2103,12 +2093,12 @@ export const builtinPosts: Post[] = [
         alt: { vi: "Bảng phân tích chỉ số User Acquisition và điểm hòa vốn LTV/CAC", en: "User acquisition dashboard analyzing cohort LTV and payback period" },
         caption: { vi: "Theo dõi chỉ số User Acquisition theo từng kênh giúp tối ưu chi phí CPI và nâng cao chất lượng người chơi.", en: "Tracking acquisition metrics by channel optimizes CPI and player lifetime value." },
       },
-      { type: "h2", text: { vi: "1. Bảng tham khảo chỉ số chính theo thể loại (khoảng phổ biến trong ngành)", en: "1. Reference Ranges by Genre (Common Industry Ballpark)" } },
+      { type: "h2", text: { vi: "1. Chỉ số chính cần theo dõi theo thể loại", en: "1. Key Metrics to Track by Genre" } },
       { type: "ul", items: [
-        { vi: "Game Casual / Puzzle / Idle: CPI trung bình 0.20$ - 0.50$ | Store CVR: 32% - 40% | D1: 35% - 42% | D7: 12% - 18% | Điểm hòa vốn ROAS: Ngày 14 - 30.", en: "Casual / Puzzle / Idle: CPI $0.20 - $0.50 | Store CVR: 32% - 40% | D1: 35% - 42% | D7: 12% - 18% | ROAS Payback: Days 14 - 30." },
-        { vi: "Game MMORPG / Tiên hiệp / Kiếm hiệp: CPI trung bình 1.20$ - 2.50$ | Store CVR: 24% - 30% | D1: 38% - 45% | D7: 16% - 22% | D30: 8% - 12% | Điểm hòa vốn ROAS: Ngày 45 - 90.", en: "MMORPG / Martial Arts: CPI $1.20 - $2.50 | Store CVR: 24% - 30% | D1: 38% - 45% | D7: 16% - 22% | D30: 8% - 12% | ROAS Payback: Days 45 - 90." },
-        { vi: "Game Thẻ bài Gacha / Anime RPG: CPI trung bình 0.80$ - 1.80$ | Store CVR: 28% - 35% | D1: 40% - 50% | D7: 18% - 25% | D30: 10% - 15% | Điểm hòa vốn ROAS: Ngày 30 - 60.", en: "Anime Gacha / Card Battler: CPI $0.80 - $1.80 | Store CVR: 28% - 35% | D1: 40% - 50% | D7: 18% - 25% | D30: 10% - 15% | ROAS Payback: Days 30 - 60." },
-        { vi: "Game Chiến thuật 4X / SLG Hardcore: CPI trung bình 2.50$ - 4.50$ | Store CVR: 18% - 25% | D1: 32% - 38% | D7: 15% - 20% | D30: 7% - 11% | Điểm hòa vốn ROAS: Ngày 90 - 180.", en: "4X Strategy / Hardcore SLG: CPI $2.50 - $4.50 | Store CVR: 18% - 25% | D1: 32% - 38% | D7: 15% - 20% | D30: 7% - 11% | ROAS Payback: Days 90 - 180." },
+        { vi: "Game Casual / Puzzle / Idle: gần với nhóm Hyper-Casual, CPI thường thấp nhưng retention và giá trị mỗi người chơi cũng thấp tương ứng. Cần theo dõi: CPI, Store CVR, D1, D7 và điểm hòa vốn ROAS theo dữ liệu thực tế.", en: "Casual / Puzzle / Idle: close to Hyper-Casual, CPI is typically low but retention and value per player are correspondingly low. Track: CPI, Store CVR, D1, D7 and the ROAS payback point from your own data." },
+        { vi: "Game MMORPG / Tiên hiệp / Kiếm hiệp: CPI, retention và điểm hòa vốn ROAS khác nhau đáng kể theo thị trường, kênh và creative. Cần theo dõi: CPI, Store CVR, D1, D7, D30 và điểm hòa vốn ROAS, xác định bằng dữ liệu soft launch.", en: "MMORPG / Martial Arts: CPI, retention and the ROAS payback point vary widely by market, channel and creative. Track: CPI, Store CVR, D1, D7, D30 and the ROAS payback point, set from soft-launch data." },
+        { vi: "Game Thẻ bài Gacha / Anime RPG: CPI, retention và điểm hòa vốn ROAS khác nhau đáng kể theo thị trường, kênh và creative. Cần theo dõi: CPI, Store CVR, D1, D7, D30 và điểm hòa vốn ROAS, xác định bằng dữ liệu soft launch.", en: "Anime Gacha / Card Battler: CPI, retention and the ROAS payback point vary widely by market, channel and creative. Track: CPI, Store CVR, D1, D7, D30 and the ROAS payback point, set from soft-launch data." },
+        { vi: "Game Chiến thuật 4X / SLG Hardcore: CPI thường cao hơn hẳn, bù lại LTV lớn hơn nên thời gian hoàn vốn thường dài hơn. Cần theo dõi: CPI, Store CVR, D1, D7, D30 và điểm hòa vốn ROAS theo dữ liệu thực tế.", en: "4X Strategy / Hardcore SLG: CPI is typically much higher, offset by a larger LTV, so payback usually takes longer. Track: CPI, Store CVR, D1, D7, D30 and the ROAS payback point from your own data." },
       ] },
       {
         type: "image",
@@ -2118,8 +2108,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "2. Cách ứng dụng Benchmark vào tối ưu hóa chi phí", en: "2. Operationalizing Benchmarks to Cut Wasted Spend" } },
       { type: "p", text: {
-        vi: "Nếu game của bạn có D1 Retention thấp hơn 30% so với benchmark cùng thể loại, hãy ngừng ngay việc mở rộng ngân sách quảng cáo. Vấn đề lúc này nằm ở trải nghiệm tân thủ (FTUE) hoặc dung lượng tải game quá nặng, không phải do quảng cáo chưa đủ hay.",
-        en: "If your title's D1 retention sits 30% below genre benchmark, immediately freeze ad scaling. The core issue resides in onboarding friction (FTUE) or oversized background asset downloads, not ad creative quality.",
+        vi: "Nếu D1 Retention của game thấp rõ rệt so với các game cùng thể loại mà bạn có thể đối chiếu, hãy tạm dừng việc mở rộng ngân sách quảng cáo. Vấn đề lúc này nằm ở trải nghiệm tân thủ (FTUE) hoặc dung lượng tải game quá nặng, không phải do quảng cáo chưa đủ hay.",
+        en: "If your title's D1 retention sits clearly below comparable titles in its genre, pause ad scaling. The core issue resides in onboarding friction (FTUE) or oversized background asset downloads, not ad creative quality.",
       } },
     ],
   },
@@ -2132,7 +2122,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/retention-3d.jpg",
     sources: [
       { label: { vi: "Firebase Cloud Messaging Documentation", en: "Firebase Cloud Messaging Documentation" }, href: "https://firebase.google.com/docs/cloud-messaging" },
-      { label: { vi: "OneSignal: State of Gaming Push Notifications", en: "OneSignal: State of Gaming Push Notifications" }, href: "https://onesignal.com/" },
     ],
     body: [
       { type: "p", text: {
@@ -2173,7 +2162,6 @@ export const builtinPosts: Post[] = [
     category: { vi: "Cộng đồng Game", en: "Gaming Community" }, date: "2026-08-21", readingTime: 5, author: "ANBU Team", color: "from-orange-600 to-navy-900", variant: "influencer",
     cover: "/blog-covers/creator-influencer.jpg",
     sources: [
-      { label: { vi: "TikTok Creator Marketplace Best Practices", en: "TikTok Creator Marketplace Best Practices" }, href: "https://creatormarketplace.tiktok.com/" },
       { label: { vi: "YouTube Gaming Creator Guidelines", en: "YouTube Gaming Creator Guidelines" }, href: "https://www.youtube.com/creators/" },
     ],
     body: [
@@ -2217,7 +2205,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/monetization-trust.jpg",
     sources: [
       { label: { vi: "Unity: Gaming Services Monetization Analytics", en: "Unity: Gaming Services Monetization Analytics" }, href: "https://unity.com/solutions/gaming-services" },
-      { label: { vi: "Deconstructor of Fun: Mobile Game Monetization Teardowns", en: "Deconstructor of Fun: Mobile Game Monetization Teardowns" }, href: "https://www.deconstructoroffun.com/" },
     ],
     body: [
       { type: "p", text: {
@@ -2237,9 +2224,9 @@ export const builtinPosts: Post[] = [
       } },
       { type: "h2", text: { vi: "2. Phân tầng 3 nhóm người chơi nạp tiền trong game", en: "2. The 3-Tier Spender Segmentation Matrix" } },
       { type: "ul", items: [
-        { vi: "Nhóm Cá con (Minnows, Chi từ 0.99$ đến 4.99$): Cần các gói nạp đầu (First Purchase Bundle) giảm giá 80% - 90% để phá vỡ rào cản tâm lý nạp tiền lần đầu tiên.", en: "Minnows ($0.99 - $4.99): Require high-value first-time buyer packs (80% - 90% value discount) to break the initial psychological spending barrier." },
-        { vi: "Nhóm Cá heo (Dolphins, Chi từ 10$ đến 99$/tháng): Đối tượng chủ lực mua Battle Pass theo mùa và Thẻ Tháng (Monthly Card) để nhận tài nguyên tích lũy hằng ngày.", en: "Dolphins ($10 - $99/month): The backbone buying seasonal Battle Passes and 30-day Monthly Cards for disciplined daily resource accrual." },
-        { vi: "Nhóm Cá voi (Whales, Chi từ 500$ đến hàng chục nghìn $): Động lực chi tiêu xuất phát từ sự khẳng định vị thế độc tôn, hiệu ứng hào quang bang hội và đua Top liên server.", en: "Whales ($500+ to $10,000+): Driven by server dominance, prestige status cosmetics, and high-stakes cross-server guild warfare." },
+        { vi: "Nhóm Cá con (Minnows, nhóm chi tiêu thấp): Cần các gói nạp đầu (First Purchase Bundle) có ưu đãi đủ hấp dẫn để phá vỡ rào cản tâm lý nạp tiền lần đầu tiên.", en: "Minnows (low spenders): Require high-value first-time buyer packs to break the initial psychological spending barrier." },
+        { vi: "Nhóm Cá heo (Dolphins, nhóm chi tiêu trung bình): Đối tượng chủ lực mua Battle Pass theo mùa và Thẻ Tháng (Monthly Card) để nhận tài nguyên tích lũy hằng ngày.", en: "Dolphins (mid-level spenders): The backbone buying seasonal Battle Passes and 30-day Monthly Cards for disciplined daily resource accrual." },
+        { vi: "Nhóm Cá voi (Whales, nhóm chi tiêu rất cao): Động lực chi tiêu xuất phát từ sự khẳng định vị thế độc tôn, hiệu ứng hào quang bang hội và đua Top liên server.", en: "Whales (very high spenders): Driven by server dominance, prestige status cosmetics, and high-stakes cross-server guild warfare." },
       ] },
       {
         type: "image",
@@ -2264,6 +2251,7 @@ export const builtinPosts: Post[] = [
     sources: [
       { label: { vi: "Firebase Analytics for Mobile Apps", en: "Firebase Analytics for Mobile Apps" }, href: "https://firebase.google.com/docs/analytics" },
       { label: { vi: "AppsFlyer Mobile Analytics Benchmarks", en: "AppsFlyer Mobile Analytics Benchmarks" }, href: "https://www.appsflyer.com/benchmarks/" },
+      { label: { vi: "Android vitals: ngưỡng hành vi xấu (crash, ANR)", en: "Android vitals: bad behavior thresholds (crash, ANR)" }, href: "https://developer.android.com/topic/performance/vitals" },
     ],
     body: [
       { type: "p", text: {
@@ -2279,14 +2267,14 @@ export const builtinPosts: Post[] = [
       { type: "h2", text: { vi: "Trụ cột 1: Thu nạp & Chất lượng phễu đầu (Acquisition)", en: "Pillar 1: Acquisition & Top-Funnel Quality" } },
       { type: "ul", items: [
         { vi: "1. Blended eCPI (Effective CPI): Chi phí trung bình để có 1 lượt cài đặt (tính gộp cả Paid Ads và Organic Uplift kéo theo).", en: "1. Blended eCPI (Effective CPI): The actual blended cost per install factoring in both paid campaigns and downstream organic lift." },
-        { vi: "2. Tutorial Completion Rate (Activation): Tỷ lệ người chơi vượt qua ải tân thủ đầu tiên. Nếu chỉ số này dưới 65%, lỗi nằm ở phần mở đầu của game chứ không phải do kênh quảng cáo.", en: "2. Tutorial Completion Rate (Activation): Percentage of installers completing the opening tutorial. If this drops below 65%, onboarding friction is the culprit rather than ad targeting." },
-        { vi: "3. Day 1 Retention (D1): Thước đo trải nghiệm ban đầu. Benchmark game casual thường yêu cầu D1 > 35%, game mid-core/hardcore cần D1 > 40%.", en: "3. Day 1 Retention (D1): The initial user satisfaction proxy. Casual benchmarks target D1 > 35%, while mid-core/hardcore games require D1 > 40%." },
+        { vi: "2. Tutorial Completion Rate (Activation): Tỷ lệ người chơi vượt qua ải tân thủ đầu tiên. Nếu chỉ số này thấp bất thường so với các game cùng thể loại của bạn, nhiều khả năng vấn đề nằm ở phần mở đầu của game chứ không hẳn do kênh quảng cáo.", en: "2. Tutorial Completion Rate (Activation): Percentage of installers completing the opening tutorial. If this is unusually low compared with your comparable titles, onboarding friction is the more likely culprit than ad targeting." },
+        { vi: "3. Day 1 Retention (D1): Thước đo trải nghiệm ban đầu. Mức D1 kỳ vọng khác nhau theo thể loại, thị trường và kênh; nên đặt ngưỡng dựa trên dữ liệu của chính game và các game cùng thể loại.", en: "3. Day 1 Retention (D1): The initial user satisfaction proxy. Expected D1 varies by genre, market and channel, so set thresholds from your own data and comparable titles." },
       ] },
       { type: "h2", text: { vi: "Trụ cột 2: Độ gắn kết & Hành vi trong game (Product Health)", en: "Pillar 2: In-Game Engagement & Product Health" } },
       { type: "ul", items: [
         { vi: "4. Day 7 & Day 30 Retention (D7/D30): Đo lường vòng lặp gameplay cốt lõi (Core Loop) và hệ thống bang hội/nội dung sự kiện.", en: "4. Day 7 & Day 30 Retention (D7/D30): Measures core loop resonance, guild dynamics, and liveops event sustainability." },
-        { vi: "5. DAU/MAU Stickiness Ratio: Tỷ lệ thể hiện mức độ nghiện game. Mức trên 20% cho thấy game thủ xem việc mở app là một thói quen hàng ngày.", en: "5. DAU/MAU Stickiness Ratio: The definitive game habit metric. A ratio above 20% indicates players treat logging in as a daily routine." },
-        { vi: "6. Crash Rate & ANR (App Not Responding): Tỷ lệ sự cố kỹ thuật trên 1.000 phiên chơi. Ngưỡng báo động đỏ của Google Play là > 0.47% (dễ bị bóp hiển thị ASO).", en: "6. Crash & ANR Rate: Technical error rate per 1,000 sessions. Google Play's bad behavior threshold is > 0.47% (risking algorithmic ASO deranking)." },
+        { vi: "5. DAU/MAU Stickiness Ratio: Tỷ lệ thể hiện mức độ nghiện game. Tỷ lệ càng cao cho thấy người chơi càng xem việc mở app là một thói quen hàng ngày.", en: "5. DAU/MAU Stickiness Ratio: The definitive game habit metric. The higher the ratio, the more players treat logging in as a daily routine." },
+        { vi: "6. Crash Rate & ANR (App Not Responding): Tỷ lệ sự cố kỹ thuật tính trên người dùng hoạt động hằng ngày. Theo tài liệu Android vitals của Google Play, ngưỡng hành vi xấu tổng thể là 1,09% với user-perceived crash rate và 0,47% với user-perceived ANR rate; vượt ngưỡng có thể làm giảm khả năng hiển thị của game trên Google Play.", en: "6. Crash & ANR Rate: Technical error rate measured per daily active user. Per Google Play's Android vitals documentation, the overall bad behavior threshold is 1.09% for the user-perceived crash rate and 0.47% for the user-perceived ANR rate; exceeding them may reduce the game's visibility on Google Play." },
       ] },
       {
         type: "image",
@@ -2299,7 +2287,7 @@ export const builtinPosts: Post[] = [
         { vi: "7. First-Time Payer Conversion (%): Tỷ lệ người chơi phát sinh giao dịch đầu tiên. Các gói ưu đãi '1 USD/20.000 VNĐ tân thủ' được thiết kế để đẩy mạnh chỉ số này.", en: "7. First-Time Payer Conversion (%): The share of players converting into spenders. Starter packs ($0.99) are specifically engineered to optimize this metric." },
         { vi: "8. ARPPU (Average Revenue Per Paying User): Mức chi tiêu trung bình của nhóm game thủ nạp tiền, chỉ số then chốt để phân loại nhóm cá voi (Whales) và cá heo (Dolphins).", en: "8. ARPPU (Average Revenue Per Paying User): Average spend among paying players, crucial for segmenting VIP whales and core dolphins." },
         { vi: "9. Cumulative ROAS D7 / D30 / D90: Tỷ lệ hoàn vốn đầu tư quảng cáo lũy kế theo ngày kể từ khi cài đặt.", en: "9. Cumulative ROAS D7 / D30 / D90: Cumulative return on ad spend tracked over 7, 30, and 90-day intervals post-install." },
-        { vi: "10. LTV Realization vs. CAC: Tỷ lệ Giá trị trọn đời trên Chi phí thu nạp (LTV/CAC). Tỷ lệ lý tưởng duy trì trên mức 3.0x để đảm bảo lợi nhuận bền vững.", en: "10. LTV Realization vs. CAC: Lifetime Value to Customer Acquisition Cost ratio. Maintaining a benchmark above 3.0x ensures healthy unit economics." },
+        { vi: "10. LTV Realization vs. CAC: Tỷ lệ Giá trị trọn đời trên Chi phí thu nạp (LTV/CAC). LTV cần vượt CAC với biên đủ rộng để bù chi phí vận hành và rủi ro; mức mục tiêu cụ thể tùy thể loại và mô hình kinh doanh.", en: "10. LTV Realization vs. CAC: Lifetime Value to Customer Acquisition Cost ratio. LTV must exceed CAC by a margin wide enough to cover operating costs and risk; the target depends on genre and business model." },
       ] },
       { type: "quote", text: {
         vi: "Dữ liệu không tự đưa ra quyết định. Một dashboard xuất sắc là chiếc la bàn cảnh báo ngay khi một chỉ số trượt khỏi ngưỡng an toàn để đội ngũ can thiệp kịp thời.",
@@ -2331,8 +2319,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Kiến trúc Server 4 tầng: Tối giản và chống ngợp", en: "1. The 4-Tier Server Architecture: Clean and Overwhelm-Free" } },
       { type: "p", text: {
-        vi: "Sai lầm phổ biến nhất của các Admin mới là tạo ra hơn 30 kênh văn bản ngay từ ngày đầu tiên. Người chơi mới khi bước vào sẽ bị 'choáng ngợp thị giác' và thoát ngay lập tức. ANBU khuyến nghị cấu trúc 4 tầng phân quyền rõ ràng:",
-        en: "The most common rookie mistake is publishing 30+ text channels on day one. New arrivals experience cognitive overload and immediately bounce. ANBU recommends a battle-tested 4-tier permission architecture:",
+        vi: "Sai lầm phổ biến nhất của các Admin mới là tạo ra quá nhiều kênh văn bản ngay từ ngày đầu tiên. Người chơi mới khi bước vào sẽ bị 'choáng ngợp thị giác' và thoát ngay lập tức. ANBU khuyến nghị cấu trúc 4 tầng phân quyền rõ ràng:",
+        en: "The most common rookie mistake is publishing too many text channels on day one. New arrivals experience cognitive overload and immediately bounce. ANBU recommends a battle-tested 4-tier permission architecture:",
       } },
       { type: "ul", items: [
         { vi: "Khu vực Chào mừng (Chỉ đọc): Gồm #quy-tac, #huong-dan-tan-thu, #nhan-role-he-may (tự chọn vai trò Android/iOS/PC qua reaction icon để lọc thông báo phù hợp).", en: "Onboarding Zone (Read-Only): #rules, #starter-guide, #claim-roles (self-assign Android/iOS/PC roles via emoji reactions to avoid notification spam)." },
@@ -2340,7 +2328,7 @@ export const builtinPosts: Post[] = [
         { vi: "Không gian Giao lưu Cộng đồng: #chat-tong, #khoe-do-gacha, #tim-doi-leo-rank, #gop-y-phat-trien, nơi người chơi tự do thảo luận dưới sự điều phối của Mod.", en: "Community Hangout: #general-chat, #gacha-showcase, #lfg-squad-finder, #feedback-suggestions, open discussion actively moderated by designated community champions." },
         { vi: "Phòng Đàm thoại & Bang hội (Voice Channels): Phòng Voice 5 người có giới hạn số lượng (tránh ồn ào khi leo rank), Phòng Tác chiến Bang Hội chỉ hiển thị cho thành viên đã xác thực Guild ID.", en: "Voice & Guild Comms: User-capped 5-player tactical rooms (eliminating lobby noise) and hidden Guild War voice channels exclusive to verified guild rosters." },
       ] },
-      { type: "h2", text: { vi: "2. Bộ Bot thiết yếu để tự động hóa 80% công việc vận hành", en: "2. Essential Bot Stack to Automate 80% of Operations" } },
+      { type: "h2", text: { vi: "2. Bộ Bot thiết yếu để tự động hóa phần lớn công việc vận hành thường ngày", en: "2. Essential Bot Stack to Automate Most Routine Operations" } },
       { type: "p", text: {
         vi: "Đội ngũ Community Manager không thể trực tin nhắn 24/7. Việc cấu hình đúng bộ công cụ bot giúp bảo vệ server khỏi phá hoại và nâng cao tính chuyên nghiệp:",
         en: "Community teams cannot monitor chats around the clock. Configuring the right bot ecosystem safeguards the server against raids and elevates operational quality:",
@@ -2359,8 +2347,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "3. Kịch bản Onboarding 30 ngày: Giữ lửa cho cộng đồng", en: "3. The 30-Day Onboarding Roadmap: Sustaining Community Momentum" } },
       { type: "p", text: {
-        vi: "Một server Discord sống hay chết phụ thuộc hoàn toàn vào 30 ngày đầu tiên sau khi phát hành game. Hãy áp dụng lộ trình 4 tuần đã được ANBU kiểm chứng:",
-        en: "A gaming Discord succeeds or dies within its first 30 days post-launch. Deploy this 4-week structured engagement roadmap proven by ANBU campaigns:",
+        vi: "Một server Discord sống hay chết phụ thuộc rất nhiều vào 30 ngày đầu tiên sau khi phát hành game. Hãy tham khảo lộ trình 4 tuần do ANBU gợi ý:",
+        en: "A gaming Discord depends heavily on its first 30 days post-launch. Consider this 4-week structured engagement roadmap suggested by ANBU:",
       } },
       { type: "ul", items: [
         { vi: "Tuần 1 (Kích hoạt tức thì): Tặng ngay Giftcode Tân Thủ độc quyền Discord khi thành viên hoàn tất chọn vai trò và liên kết UID game.", en: "Week 1 (Instant Activation): Deliver exclusive Discord-only starter giftcodes upon role selection and in-game UID binding." },
@@ -2380,9 +2368,9 @@ export const builtinPosts: Post[] = [
         en: "Never evaluate Discord performance by total member headcount alone. Track these 4 indicators reflecting authentic community retention:",
       } },
       { type: "ul", items: [
-        { vi: "Daily Active Voice (DAV): Số lượng thành viên tham gia đàm thoại mỗi ngày, đây là thước đo độ trung thành cao nhất của game thủ.", en: "Daily Active Voice (DAV): Daily active voice participants, the strongest proxy for hardcore player loyalty and clan cohesion." },
-        { vi: "First-Day Message Conversion: Tỷ lệ người mới vào server gửi ít nhất 1 tin nhắn trong 24 giờ đầu tiên (chuẩn ngành tốt đạt từ 30% - 45%).", en: "First-Day Message Conversion: Percentage of new members posting at least one message within their first 24 hours (healthy benchmark: 30% - 45%)." },
-        { vi: "Support Resolution Time: Thời gian trung bình giải quyết xong 1 ticket báo lỗi hoặc nạp thẻ (mục tiêu dưới 15 phút trong giờ cao điểm).", en: "Support Resolution Time: Average turnaround time for ticket-based bug and payment inquiries (target: under 15 minutes during peak hours)." },
+        { vi: "Daily Active Voice (DAV): Số lượng thành viên tham gia đàm thoại mỗi ngày, đây là một thước đo tốt cho độ trung thành của game thủ.", en: "Daily Active Voice (DAV): Daily active voice participants, a strong proxy for hardcore player loyalty and clan cohesion." },
+        { vi: "First-Day Message Conversion: Tỷ lệ người mới vào server gửi ít nhất 1 tin nhắn trong 24 giờ đầu tiên (nên đặt mốc dựa trên dữ liệu của chính server và theo dõi theo thời gian).", en: "First-Day Message Conversion: Percentage of new members posting at least one message within their first 24 hours (set a baseline from your own server data and track it over time)." },
+        { vi: "Support Resolution Time: Thời gian trung bình giải quyết xong 1 ticket báo lỗi hoặc nạp thẻ (đặt mục tiêu theo năng lực đội hỗ trợ và theo dõi riêng giờ cao điểm).", en: "Support Resolution Time: Average turnaround time for ticket-based bug and payment inquiries (set a target to match your support team's capacity and track peak hours separately)." },
         { vi: "Discord-to-Game Retention Uplift: So sánh chỉ số D30 Retention giữa nhóm game thủ tham gia Discord với nhóm người chơi thông thường ngoài store.", en: "Discord-to-Game Retention Uplift: Delta in D30 player retention between Discord-verified players versus non-community store installs." },
       ] },
       { type: "quote", text: {
@@ -2401,11 +2389,12 @@ export const builtinPosts: Post[] = [
     sources: [
       { label: { vi: "Google Search Central: Helpful Content Guidelines", en: "Google Search Central: Helpful Content Guidelines" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
       { label: { vi: "TikTok for Business: Lunar New Year Campaign Insights", en: "TikTok for Business: Lunar New Year Campaign Insights" }, href: "https://www.tiktok.com/business/en/solutions" },
+      { label: { vi: "Gamota: Mobile Game Insights for Tet 2023 (dữ liệu AppsFlyer)", en: "Gamota: Mobile Game Insights for Tet 2023 (AppsFlyer data)" }, href: "https://gamota.com/en_GB/?p=179%2F" },
     ],
     body: [
       { type: "p", text: {
-        vi: "Tết Nguyên Đán là thời điểm có một không hai trong năm tại Việt Nam: học sinh, sinh viên và người đi làm được nghỉ dài ngày (từ 7 đến 10 ngày), đồng thời sở hữu nguồn tiền nhàn rỗi dồi dào từ tiền thưởng Tết và tiền lì xì. Lượng thời gian chơi game (Time Spent) và doanh thu in-app có thể tăng đột biến từ 200% đến 400%. Tuy nhiên, marketing mùa Tết không đơn giản là đổi giao diện sang màu đỏ hay chèn câu chúc sáo rỗng; nó đòi hỏi sự am hiểu sâu sắc về phong tục văn hóa và tâm lý sum họp của người Việt.",
-        en: "Lunar New Year (Tet) is Vietnam's pinnacle annual gaming window: players enjoy a 7-to-10-day holiday alongside surplus disposable income from year-end bonuses and traditional Lucky Money (Lì xì). In-game session length and IAP revenue frequently spike by 200% to 400%. Yet Tet marketing is far more than slapping red banners onto UI; it demands nuanced cultural alignment with Vietnamese values of reunion, prosperity, and fresh beginnings.",
+        vi: "Tết Nguyên Đán là thời điểm có một không hai trong năm tại Việt Nam: học sinh, sinh viên và người đi làm được nghỉ dài ngày, đồng thời sở hữu nguồn tiền nhàn rỗi dồi dào từ tiền thưởng Tết và tiền lì xì. Thời gian chơi game (Time Spent) và doanh thu in-app có thể tăng rõ rệt, mức tăng tùy thể loại, thị trường và kênh. Tuy nhiên, marketing mùa Tết không đơn giản là đổi giao diện sang màu đỏ hay chèn câu chúc sáo rỗng; nó đòi hỏi sự am hiểu sâu sắc về phong tục văn hóa và tâm lý sum họp của người Việt.",
+        en: "Lunar New Year (Tet) is Vietnam's pinnacle annual gaming window: players enjoy an extended holiday alongside surplus disposable income from year-end bonuses and traditional Lucky Money (Lì xì). In-game session length and IAP revenue can rise noticeably, depending on genre, market and channel. Yet Tet marketing is far more than slapping red banners onto UI; it demands nuanced cultural alignment with Vietnamese values of reunion, prosperity, and fresh beginnings.",
       } },
       {
         type: "image",
@@ -2427,8 +2416,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "2. Đo lường giá trị sau Tết: Tránh cái bẫy 'Tăng ảo - Rơi thật'", en: "2. Post-Holiday Retention: Preventing the 'Spike & Drop' Trap" } },
       { type: "p", text: {
-        vi: "Nhiều tựa game đạt kỷ lục doanh thu trong 5 ngày Tết nhưng sụt giảm 70% DAU ngay sau khi kỳ nghỉ kết thúc. Để giữ chân dòng người chơi mới thu nạp được trong dịp Tết, NPH cần chuẩn bị sẵn một bản cập nhật lớn (Major Update) vào tuần thứ 2 sau Tết, mở khóa tính năng liên server mới hoặc chương trình tri ân bang hội để chuyển hóa người chơi giải trí ngắn hạn thành game thủ trung thành gắn bó cả năm.",
-        en: "Many titles register record revenue over Tet only to suffer a 70% DAU collapse immediately afterward. To retain new cohort influxes, publishers must schedule a Major Update in the second week post-Tet, unlocking new cross-server mechanics or guild loyalty milestones to transition festive holiday players into year-round dedicated advocates.",
+        vi: "Một số tựa game đạt doanh thu cao trong dịp Tết nhưng lượng người chơi hoạt động sụt giảm mạnh ngay sau kỳ nghỉ. Để giữ chân dòng người chơi mới thu nạp được trong dịp Tết, NPH cần chuẩn bị sẵn một bản cập nhật lớn (Major Update) vào tuần thứ 2 sau Tết, mở khóa tính năng liên server mới hoặc chương trình tri ân bang hội để chuyển hóa người chơi giải trí ngắn hạn thành game thủ trung thành gắn bó cả năm.",
+        en: "Some titles register strong revenue over Tet only to see active players drop sharply once the holiday ends. To retain new cohort influxes, publishers must schedule a Major Update in the second week post-Tet, unlocking new cross-server mechanics or guild loyalty milestones to transition festive holiday players into year-round dedicated advocates.",
       } },
     ],
   },
@@ -2516,7 +2505,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/girls-frontline-2-localization-slang.jpg",
     sources: [
       { label: { vi: "Google Search Central: Nguyên tắc tối ưu nội dung hữu ích và bản địa hóa", en: "Google Search Central: Helpful Content & Localization Guidelines" }, href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
-      { label: { vi: "Báo cáo Hành vi & Thuật ngữ Cộng đồng Game thủ Việt Nam (ANBU Research)", en: "Vietnam Gaming Subculture & Colloquial Slang Report (ANBU Research)" }, href: "https://anbu.asia/" },
     ],
     body: [
       {
@@ -2658,8 +2646,8 @@ export const builtinPosts: Post[] = [
       },
       { type: "h2", text: { vi: "1. Ba dấu hiệu cảnh báo sớm Creative Fatigue", en: "1. Three Early Warning Signals of Creative Fatigue" } },
       { type: "ul", items: [
-        { vi: "Tần suất hiển thị tăng cao (Frequency > 2.8 lần/người): Tệp đối tượng đã xem đi xem lại cùng một video.", en: "Elevated Ad Frequency (>2.8x): The same player cohort has been repeatedly exposed to identical footage." },
-        { vi: "Tỷ lệ dừng xem 3 giây đầu (Thumbstop Rate) giảm trên 25%: Người dùng lướt qua quảng cáo nhanh hơn bình thường.", en: "Thumbstop Rate Collapse (>25% drop): Audiences scroll past the ad opening significantly faster." },
+        { vi: "Tần suất hiển thị tăng cao (Frequency tăng dần so với mức ban đầu của chiến dịch): Tệp đối tượng đã xem đi xem lại cùng một video.", en: "Elevated Ad Frequency (rising versus the campaign baseline): The same player cohort has been repeatedly exposed to identical footage." },
+        { vi: "Tỷ lệ dừng xem 3 giây đầu (Thumbstop Rate) giảm rõ rệt so với những ngày đầu: Người dùng lướt qua quảng cáo nhanh hơn bình thường.", en: "Thumbstop Rate Collapse (a clear drop versus the first days): Audiences scroll past the ad opening significantly faster." },
         { vi: "Chi phí cài đặt eCPI tăng vọt trong khi CVR trên Store không đổi: Điểm nghẽn nằm ở mẫu quảng cáo chứ không phải do trang sản phẩm.", en: "Surging eCPI while Store CVR remains stable: Confirms the friction lies entirely in ad fatigue, not store conversion." },
       ] },
       {
@@ -2675,14 +2663,14 @@ export const builtinPosts: Post[] = [
       } },
       { type: "h2", text: { vi: "3. Kế hoạch làm mới Creative (Creative Refresh Cadence) 14 ngày", en: "3. The 14-Day Systematic Creative Refresh Protocol" } },
       { type: "p", text: {
-        vi: "Để duy trì hiệu suất quảng cáo ổn định mà không bị bão hòa, đội ngũ Design & UA phải vận hành quy trình sản xuất Creative liên tục theo chu kỳ 14 ngày:",
-        en: "To maintain stable ROAS without creative exhaustion, design and performance UA teams must operate a continuous 14-day production rhythm:",
+        vi: "Để duy trì hiệu suất quảng cáo ổn định mà không bị bão hòa, đội ngũ Design & UA nên vận hành quy trình sản xuất Creative liên tục theo một chu kỳ cố định, ví dụ 14 ngày (điều chỉnh theo quy mô và kênh):",
+        en: "To maintain stable ROAS without creative exhaustion, design and performance UA teams should operate a continuous production rhythm on a fixed cycle, for example 14 days (adjusted to scale and channel):",
       } },
       { type: "ul", items: [
-        { vi: "Ngày 1 - 3: Phân tích báo cáo tuần, xác định top 20% Creative chiến thắng (Winning Ads) và 80% Creative đã bị suy giảm CTR.", en: "Days 1-3: Analyze weekly performance, identify the top 20% winning assets and retire underperforming variations." },
-        { vi: "Ngày 4 - 7: Sản xuất 5 - 10 biến thể Modular Hooks mới (thay đổi 3 giây đầu, đổi nhạc nền trending, đổi giọng lồng tiếng Voiceover) cho các Winning Ads hiện có.", en: "Days 4-7: Produce 5-10 modular hook variations (altering opening 3 seconds, trending audio, new VO styles) for proven concepts." },
-        { vi: "Ngày 8 - 10: Thử nghiệm A/B Testing trong nhóm chiến dịch Sandbox với ngân sách kiểm soát $50 - $100/creative.", en: "Days 8-10: Launch sandbox A/B tests with controlled test budgets of $50-$100 per asset." },
-        { vi: "Ngày 11 - 14: Scale ngân sách gấp 3 - 5 lần cho các Creative mới vượt qua bài kiểm tra để thay thế các quảng cáo cũ mệt mỏi.", en: "Days 11-14: Scale winning new creatives by 3-5x to seamlessly replace fatigued ads." },
+        { vi: "Ngày 1 - 3: Phân tích báo cáo tuần, xác định nhóm Creative chiến thắng (Winning Ads) và nhóm Creative đã bị suy giảm CTR.", en: "Days 1-3: Analyze weekly performance, identify the winning assets and retire underperforming variations." },
+        { vi: "Ngày 4 - 7: Sản xuất một số biến thể Modular Hooks mới (thay đổi 3 giây đầu, đổi nhạc nền trending, đổi giọng lồng tiếng Voiceover) cho các Winning Ads hiện có.", en: "Days 4-7: Produce several modular hook variations (altering opening 3 seconds, trending audio, new VO styles) for proven concepts." },
+        { vi: "Ngày 8 - 10: Thử nghiệm A/B Testing trong nhóm chiến dịch Sandbox với ngân sách kiểm soát, đủ để đọc được tín hiệu cho từng creative.", en: "Days 8-10: Launch sandbox A/B tests with controlled test budgets, large enough to read a signal per asset." },
+        { vi: "Ngày 11 - 14: Tăng dần ngân sách cho các Creative mới vượt qua bài kiểm tra để thay thế các quảng cáo cũ mệt mỏi.", en: "Days 11-14: Scale winning new creatives gradually to replace fatigued ads." },
       ] },
     ],
   },
@@ -2695,7 +2683,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/moderation-3d.jpg",
     sources: [
       { label: { vi: "Discord Community Guidelines & Moderation Safety", en: "Discord Community Guidelines & Moderation Safety" }, href: "https://discord.com/guidelines" },
-      { label: { vi: "GDC: Community Crisis Management Playbook", en: "GDC: Community Crisis Management Playbook" }, href: "https://gdconf.com/" },
     ],
     body: [
       { type: "p", text: {
@@ -2737,7 +2724,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/ai-search-3d.jpg",
     sources: [
       { label: { vi: "Google Search Central: Generative AI Features", en: "Google Search Central: Generative AI Features" }, href: "https://developers.google.com/search/docs/appearance/ai-features" },
-      { label: { vi: "OpenAI Search & Perplexity Publisher Guidelines", en: "OpenAI Search & Perplexity Publisher Guidelines" }, href: "https://openai.com/" },
     ],
     body: [
       { type: "p", text: {
@@ -2788,7 +2774,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/thailand-game-show-level-infinite-booth.jpg",
     sources: [
       { label: { vi: "Google Play Store Southeast Asia Insights", en: "Google Play Store Southeast Asia Insights" }, href: "https://support.google.com/googleplay/android-developer/answer/6223646" },
-      { label: { vi: "Thailand Game Show Official Portal", en: "Thailand Game Show Official Portal" }, href: "https://www.thailandgameshow.com/" },
     ],
     body: [
       { type: "p", text: {
@@ -2879,7 +2864,6 @@ export const builtinPosts: Post[] = [
     variant: "social",
     cover: "/blog-covers/nguyet-mong-micro-influencer-strategy.jpg",
     sources: [
-      { label: { vi: "TikTok Creator Marketplace: Báo cáo Influencer Gaming Đông Nam Á", en: "TikTok Creator Marketplace: Southeast Asia Gaming Influencer Insights" }, href: "https://creatormarketplace.tiktok.com/" },
       { label: { vi: "YouTube Gaming: Nguyên tắc xây dựng cộng đồng nhà sáng tạo nội dung", en: "YouTube Gaming Creator Community Guidelines" }, href: "https://www.youtube.com/creators/" },
     ],
     body: [
@@ -2993,14 +2977,14 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/ragnarok-huyen-thoai-mmo-vietnam-aso.jpg",
     sources: [
       { label: { vi: "Google Play Console: Hướng dẫn tối ưu Store Listing bản địa hóa", en: "Google Play Console Store Listing Best Practices" }, href: "https://support.google.com/googleplay/android-developer/answer/9859152" },
-      { label: { vi: "Apple App Store: Nguyên tắc bản địa hóa trang sản phẩm", en: "Apple App Store Product Page Localization" }, href: "https://developer.apple.com/app-store/localization/" },
+      { label: { vi: "Apple App Store Connect: Thông tin phiên bản nền tảng (trường Keywords tối đa 100 byte)", en: "Apple App Store Connect: Platform version information (Keywords field, 100 bytes)" }, href: "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information/" },
     ],
     body: [
       {
         type: "p",
         text: {
-          vi: "Rất nhiều nhà phát triển quốc tế khi đưa game vào Việt Nam thường mắc chung một sai lầm: Dùng Google Dịch để chuyển toàn bộ tiêu đề, mô tả và từ khóa từ tiếng Anh sang tiếng Việt. Kết quả là tựa game hoàn toàn vô hình trước mắt người chơi. Game thủ Việt Nam không tìm kiếm như sách giáo khoa. Họ không gõ 'trò chơi nhập vai hành động chiến lược', mà họ gõ 'game thẻ bài', 'game kiếm hiệp võ lâm', 'đấu tướng afk', 'cày cuốc nhận vip'. Tối ưu ASO (App Store Optimization) bản địa hóa không chỉ là câu chuyện dịch thuật ngôn ngữ, mà là nghệ thuật chiếm lĩnh tâm trí và thói quen tìm kiếm của người chơi bản xứ.",
-          en: "Many international studios entering Vietnam make a critical misstep: using automated translation for titles, descriptions, and metadata. As a result, the title remains virtually invisible on app store searches. Vietnamese gamers never search using textbook phrases like 'strategic role-playing action game.' Instead, they search with colloquial shorthand: 'game thẻ bài' (card battler), 'game kiếm hiệp' (martial arts MMO), 'đấu tướng afk' (idle hero collector), and 'cày chay nhận vip' (F2P VIP progression). Localized ASO is not mere language translation; it is the art of mastering cultural search intent.",
+          vi: "Rất nhiều nhà phát triển quốc tế khi đưa game vào Việt Nam thường mắc chung một sai lầm: Dùng Google Dịch để chuyển toàn bộ tiêu đề, mô tả và từ khóa từ tiếng Anh sang tiếng Việt. Kết quả là tựa game dễ bị chìm trong kết quả tìm kiếm. Game thủ Việt Nam không tìm kiếm như sách giáo khoa. Họ không gõ 'trò chơi nhập vai hành động chiến lược', mà họ gõ 'game thẻ bài', 'game kiếm hiệp võ lâm', 'đấu tướng afk', 'cày cuốc nhận vip'. Tối ưu ASO (App Store Optimization) bản địa hóa không chỉ là câu chuyện dịch thuật ngôn ngữ, mà là nghệ thuật chiếm lĩnh tâm trí và thói quen tìm kiếm của người chơi bản xứ.",
+          en: "Many international studios entering Vietnam make a critical misstep: using automated translation for titles, descriptions, and metadata. As a result, the title can easily get buried in app store search results. Vietnamese gamers never search using textbook phrases like 'strategic role-playing action game.' Instead, they search with colloquial shorthand: 'game thẻ bài' (card battler), 'game kiếm hiệp' (martial arts MMO), 'đấu tướng afk' (idle hero collector), and 'cày chay nhận vip' (F2P VIP progression). Localized ASO is not mere language translation; it is the art of mastering cultural search intent.",
         },
       },
       {
@@ -3021,16 +3005,16 @@ export const builtinPosts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Tên game thuần Việt, ngắn gọn và giàu tính gợi hình: Những cái tên như 'Đội Tướng Nhí Nhố', 'Giang Hồ Trong Tay' hay 'Khế Ước Rồng' lập tức truyền tải đúng thể loại và cảm xúc người chơi sẽ nhận được, dễ nhớ hơn gấp nhiều lần so với các tiêu đề tiếng Anh dài dòng khó đọc.",
-            en: "Memorable Colloquial Titles: Short, vivid Vietnamese titles immediately communicate gameplay style and emotional tone, proving vastly more memorable than long English strings."
+            vi: "Tên game thuần Việt, ngắn gọn và giàu tính gợi hình: Những cái tên như 'Đội Tướng Nhí Nhố', 'Giang Hồ Trong Tay' hay 'Khế Ước Rồng' lập tức truyền tải đúng thể loại và cảm xúc người chơi sẽ nhận được, dễ nhớ hơn so với các tiêu đề tiếng Anh dài dòng khó đọc.",
+            en: "Memorable Colloquial Titles: Short, vivid Vietnamese titles immediately communicate gameplay style and emotional tone, tending to be more memorable than long English strings."
           },
           {
-            vi: "Nghệ thuật gắn Cờ Việt Nam / Badge 'Việt Hóa' trên Icon: Đa số các tựa game đứng đầu bảng xếp hạng đều chèn một lá cờ Việt Nam nhỏ ở góc trên icon. Đây là tín hiệu tâm lý cực mạnh (Trust Badge), khẳng định với game thủ đây là game có server nội địa mượt mà, hỗ trợ tiếng Việt 100% và có NPH chính quy bảo trợ.",
-            en: "Vietnamese Flag Icon Badges: Top chart titles frequently feature a subtle Vietnamese flag corner badge. This acts as a powerful trust signal, assuring players of dedicated local servers, zero ping lag, and full official support."
+            vi: "Nghệ thuật gắn Cờ Việt Nam / Badge 'Việt Hóa' trên Icon: Một số tựa game trong bảng xếp hạng chèn lá cờ Việt Nam nhỏ ở góc icon. Đây có thể là tín hiệu tin cậy (Trust Badge), gợi ý với game thủ rằng game có hỗ trợ tiếng Việt và có nhà phát hành chính thức tại Việt Nam; hiệu quả thực tế nên được kiểm chứng bằng A/B test.",
+            en: "Vietnamese Flag Icon Badges: Some top chart titles feature a subtle Vietnamese flag corner badge. This may work as a trust signal, suggesting Vietnamese-language support and an official local publisher; its real effect should be validated with A/B testing."
           },
           {
-            vi: "Dung lượng gói cài đặt ban đầu tối ưu (Dưới 600MB): Người dùng di động tại Việt Nam có thói quen tải game nhanh qua mạng 4G. Giữ dung lượng file cài đặt ban đầu từ 300MB đến 600MB (tải ngầm phần dữ liệu còn lại sau khi vào game) giúp tăng đáng kể tỷ lệ hoàn tất cài đặt (Install Completion Rate).",
-            en: "Optimized Initial Package Size (Under 600MB): Mobile users in Vietnam often download on cellular 4G. Keeping initial download sizes between 300MB and 600MB meaningfully boosts install completion rates."
+            vi: "Dung lượng gói cài đặt ban đầu gọn nhẹ: Giữ dung lượng cài đặt ban đầu vừa phải và tải phần dữ liệu còn lại sau khi vào game có thể giúp tăng tỷ lệ hoàn tất cài đặt (Install Completion Rate), nhất là với người chơi dùng dữ liệu di động hoặc máy ít bộ nhớ; nên đo trên chính game của bạn.",
+            en: "Lean Initial Package Size: Keeping the initial download modest and fetching the remaining data after first launch can improve install completion rates, especially for players on mobile data or low-storage devices; measure it on your own game."
           },
         ],
       },
@@ -3052,15 +3036,15 @@ export const builtinPosts: Post[] = [
         type: "ul",
         items: [
           {
-            vi: "Khơi gợi ký ức hoài niệm (Nostalgia Hook): Thông điệp 'Cùng trở lại thế giới Midgard!' kết hợp hình tượng quái vật Poring biểu tượng chạm thẳng vào ký ức tuổi thơ của hàng triệu game thủ thế hệ 8x, 9x, biến sự tò mò thành hành động tải game ngay tức khắc.",
-            en: "Nostalgia Hooks: Taglines inviting players back to beloved virtual realms paired with iconic mascot art connect emotionally with veteran gamers, turning nostalgia into immediate downloads."
+            vi: "Khơi gợi ký ức hoài niệm (Nostalgia Hook): Thông điệp 'Cùng trở lại thế giới Midgard!' kết hợp hình tượng quái vật Poring biểu tượng chạm vào ký ức của những game thủ thế hệ 8x, 9x từng chơi Ragnarok, biến sự tò mò thành hành động tải game.",
+            en: "Nostalgia Hooks: Taglines inviting players back to beloved virtual realms paired with iconic mascot art connect emotionally with veteran gamers, turning nostalgia into downloads."
           },
           {
             vi: "Typography Việt hóa to, rõ và tương phản cao: Sử dụng font chữ uốn lượn mang phong cách phiêu lưu thần thoại, viền vàng dạ quang nổi bật trên nền trời xanh giúp thông điệp đọc rõ mồn một ngay cả trên màn hình smartphone kích thước nhỏ.",
             en: "Bold, High-Contrast Typography: Glowing golden stylized lettering on dynamic backgrounds ensures readability across compact smartphone viewports."
           },
           {
-            vi: "Trưng bày 3 tính năng then chốt game thủ Việt quan tâm nhất: Hệ thống chuyển nghề đa dạng (Class Evolution), Tính năng giao dịch tự do (Free Market Trading) và Đấu trường Bang hội săn Boss liên server (Guild Wars).",
+            vi: "Trưng bày 3 tính năng then chốt phù hợp với người chơi mục tiêu: Hệ thống chuyển nghề đa dạng (Class Evolution), Tính năng giao dịch tự do (Free Market Trading) và Đấu trường Bang hội săn Boss liên server (Guild Wars).",
             en: "Highlighting Key Gameplay Pillars: Showcasing class progressions, free player trading, and large-scale cross-server guild boss raids."
           },
         ],
@@ -3071,7 +3055,7 @@ export const builtinPosts: Post[] = [
         alt: { vi: "Cấu trúc thiết kế bộ 3 Screenshot đầu tiên tối ưu tỷ lệ chuyển đổi cho game mobile", en: "Designing high-converting localized screenshot sets for mobile games" },
         caption: { vi: "Thiết kế bộ 3 Screenshot đầu tiên với Call-To-Action tiếng Việt nổi bật về phúc lợi tân thủ ('Tặng 1000 lượt quay', 'Đăng nhập nhận VIP') giúp tăng đáng kể tỷ lệ chuyển đổi (CVR).", en: "Crafting the first 3 screenshots with high-impact Vietnamese bounty CTAs ('1000 Free Pulls', 'Login for VIP Status') can meaningfully boost store conversion rate." },
       },
-      { type: "h2", text: { vi: "3. Ma trận 4 nhóm từ khóa ASO có lượng tìm kiếm cao nhất tại Việt Nam", en: "3. Four High-Converting ASO Keyword Clusters in Vietnam" } },
+      { type: "h2", text: { vi: "3. Ma trận 4 nhóm từ khóa ASO nên nghiên cứu tại Việt Nam", en: "3. Four ASO Keyword Clusters Worth Researching in Vietnam" } },
       {
         type: "ul",
         items: [
@@ -3110,12 +3094,12 @@ export const builtinPosts: Post[] = [
             en: "First 3 Screenshots showcase graphics, beginner bounties, and core PvP/trading mechanics."
           },
           {
-            vi: "Tối ưu hóa trường 100 ký tự Keyword bí mật trên iOS với tổ hợp từ khóa có dấu và không dấu.",
-            en: "iOS 100-character keyword field fully populated with accented and unaccented terms."
+            vi: "Tối ưu hóa trường Keywords trên iOS (tối đa 100 byte; ký tự có dấu tốn nhiều byte hơn) và kiểm tra xem có cần cả từ khóa có dấu lẫn không dấu hay không.",
+            en: "iOS keyword field (100 bytes maximum) fully used; accented characters take more bytes, so check whether both accented and unaccented terms are worth including."
           },
           {
-            vi: "Chạy A/B Testing Store Listing trên Google Play trước 14 ngày để chọn ra bộ Screenshot có CVR cao nhất.",
-            en: "Run Google Play Store Listing Experiments 14 days prior to launch to lock in the highest CVR screenshot set."
+            vi: "Chạy A/B Testing Store Listing (Store Listing Experiments) trên Google Play trước ngày ra mắt, đủ lâu để Play Console cho kết quả có ý nghĩa thống kê, rồi chọn bộ Screenshot có CVR cao nhất.",
+            en: "Run Google Play Store Listing Experiments before launch, long enough for Play Console to report a statistically meaningful result, to lock in the highest CVR screenshot set."
           },
         ],
       },
@@ -3141,8 +3125,6 @@ export const builtinPosts: Post[] = [
     cover: "/blog-covers/esports-team-flash-sponsorship.jpg",
     sources: [
       { label: { vi: "Nielsen Sports: Esports Sponsorship QI Valuation", en: "Nielsen Sports: Esports Sponsorship QI Valuation" }, href: "https://www.nielsen.com/insights/2022/esports-sponsorships/" },
-      { label: { vi: "VIRESA: Báo cáo Thể thao điện tử Việt Nam", en: "VIRESA: Vietnam Esports Whitepaper" }, href: "https://viresa.org.vn/" },
-      { label: { vi: "Garena Liên Quân Mobile & Riot Games VCS Tournament Data", en: "Garena Arena of Valor & Riot Games VCS Tournament Data" }, href: "https://lienquan.garena.vn/" },
     ],
     body: [
       { type: "p", text: {

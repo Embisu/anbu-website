@@ -2065,13 +2065,6 @@
           "en": "VNG: H1 2026 financial results"
         },
         "href": "https://vng.com.vn/news/press-release/vng-fs-h1-2026.html"
-      },
-      {
-        "label": {
-          "vi": "Nghị định 147/2024/NĐ-CP về quản lý dịch vụ Internet và thông tin trên mạng",
-          "en": "Decree No. 147/2024/ND-CP on Internet services and online information"
-        },
-        "href": "https://vanban.chinhphu.vn/?docid=211654&pageid=27160"
       }
     ],
     "body": [
@@ -2792,7 +2785,23 @@
         }
       }
     ],
-    "slug_en": "game-publishing-in-vietnam-challenges-before-investing-in-marketing"
+    "slug_en": "game-publishing-in-vietnam-challenges-before-investing-in-marketing",
+    "sources": [
+      {
+        "label": {
+          "vi": "SocialPeta và Gamota: Báo cáo Marketing Game Mobile Đông Nam Á 2026",
+          "en": "SocialPeta and Gamota: 2026 Southeast Asia Mobile Game Marketing Report"
+        },
+        "href": "https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report"
+      },
+      {
+        "label": {
+          "vi": "Báo Điện tử Chính phủ: Điều kiện cung cấp dịch vụ trò chơi điện tử trên mạng (Nghị định 147/2024/NĐ-CP)",
+          "en": "Government Online Newspaper: Conditions for providing online video game services (Decree 147/2024/NĐ-CP)"
+        },
+        "href": "https://baochinhphu.vn/dieu-kien-cung-cap-dich-vu-tro-choi-dien-tu-tren-mang-102260928095040248.htm"
+      }
+    ]
   },
   {
     "slug": "liveops-sau-khi-game-ra-mat-lam-the-nao-de-giu-chan-game-thu-thai-lan",
@@ -3272,7 +3281,51 @@
         }
       }
     ],
-    "slug_en": "liveops-post-launch-how-to-retain-thai-gamers"
+    "slug_en": "liveops-post-launch-how-to-retain-thai-gamers",
+    "sources": [
+      {
+        "label": {
+          "vi": "Sensor Tower: State of Mobile Gaming 2025",
+          "en": "Sensor Tower: State of Mobile Gaming 2025"
+        },
+        "href": "https://sensortower.com/blog/state-of-mobile-gaming-2025"
+      },
+      {
+        "label": {
+          "vi": "Sensor Tower: Chiến lược LiveOps của game doanh thu cao 2025",
+          "en": "Sensor Tower: Top-grossing mobile games LiveOps strategies 2025"
+        },
+        "href": "https://sensortower.com/blog/top-grossing-mobile-games-live-ops-strategies-2025-report"
+      },
+      {
+        "label": {
+          "vi": "Sensor Tower: Mobile gaming Đông Nam Á 2025",
+          "en": "Sensor Tower: Southeast Asia mobile gaming 2025"
+        },
+        "href": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025"
+      },
+      {
+        "label": {
+          "vi": "Antom: Thailand Gaming & Payment Trends Report",
+          "en": "Antom: Thailand Gaming & Payment Trends Report"
+        },
+        "href": "https://knowledge.antom.com/thailand-gaming-payment-trends-report-unveiling-southeast-asias-second-largest-gaming-market"
+      },
+      {
+        "label": {
+          "vi": "Tourism Authority of Thailand: Home Sweet Home",
+          "en": "Tourism Authority of Thailand: Home Sweet Home"
+        },
+        "href": "https://www.tatnews.org/2023/08/tat-backs-the-latest-home-sweet-home-game-to-promote-thailands-deep-culture/"
+      },
+      {
+        "label": {
+          "vi": "Nghiên cứu 2026 về người theo dõi gaming content creator tại Thái Lan (JMSNPRU)",
+          "en": "2026 study on followers of gaming content creators in Thailand (JMSNPRU)"
+        },
+        "href": "https://so03.tci-thaijo.org/index.php/JMSNPRU/article/view/303640"
+      }
+    ]
   },
   {
     "slug": "game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing",
@@ -3468,8 +3521,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Trong quý I/2025, người chơi Thái Lan chi khoảng 162 triệu USD cho mua hàng trong ứng dụng (IAP), tăng khoảng 6% so với cùng kỳ. [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025) ghi nhận Thái Lan đứng đầu Đông Nam Á về doanh thu IAP game mobile trong giai đoạn này.",
-          "en": "In the first quarter of 2025, Thai players spent approximately $162 million on in-app purchases (IAP), an increase of about 6% compared to the same period last year. [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025) reported that Thailand led Southeast Asia in mobile game IAP revenue during this period."
+          "vi": "Trong quý I/2025, người chơi Thái Lan chi khoảng 162 triệu USD cho mua hàng trong ứng dụng (IAP). [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025) ghi nhận Thái Lan đứng đầu Đông Nam Á về doanh thu IAP game mobile trong giai đoạn này.",
+          "en": "In the first quarter of 2025, Thai players spent approximately $162 million on in-app purchases (IAP). [Sensor Tower](https://sensortower.com/blog/southeast-asia-mobile-gaming-2025) reported that Thailand led Southeast Asia in mobile game IAP revenue during this period."
         }
       },
       {
@@ -3732,6 +3785,13 @@
           "en": "Gamota: Vietnam Game Industry Monthly Report, May 2026"
         },
         "href": "https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/"
+      },
+      {
+        "label": {
+          "vi": "WN Hub: thị trường mobile game Việt Nam 2025 (dẫn số liệu Gamota)",
+          "en": "WN Hub: Vietnam mobile games market 2025 (citing Gamota)"
+        },
+        "href": "https://wnhub.io/news/other/item-50335"
       }
     ],
     "body": [
@@ -3949,8 +4009,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Báo cáo [Vietnam Game Industry Monthly Report – May 2026 của Gamota](https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/) cho thấy **lượt tải Midcore giảm nhưng doanh thu Midcore vẫn tăng**. Gamota liên hệ kết quả này với khả năng vận hành LiveOps, cộng đồng người chơi ổn định và các vòng lặp monetization hiệu quả.",
-          "en": "[Gamota's Vietnam Game Industry Monthly Report – May 2026](https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/) shows that while midcore **game downloads have declined, midcore revenue continues to rise**. Gamota attributes this result to effective LiveOps management, a stable player community, and efficient monetization loops."
+          "vi": "Báo cáo [Vietnam Game Industry Monthly Report – May 2026 của Gamota](https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/) cho thấy **lượt tải Midcore giảm nhưng doanh thu Midcore vẫn tăng**. Trong cùng báo cáo, Gamota cũng nhấn mạnh vai trò của khả năng vận hành LiveOps, cộng đồng người chơi ổn định và các vòng lặp monetization hiệu quả đối với giá trị thị trường.",
+          "en": "[Gamota's Vietnam Game Industry Monthly Report – May 2026](https://gamota.com/gamota-lab/reports/gamota-launches-vietnam-game-industry-monthly-report-may-2026/) shows that while midcore **game downloads have declined, midcore revenue continues to rise**. In the same report, Gamota also highlights the role of effective LiveOps management, a stable player community, and efficient monetization loops in market value."
         }
       },
       {
@@ -4080,8 +4140,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Trong [Báo cáo Marketing Game Mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), SocialPeta và Gamota cũng nhấn mạnh vai trò của localization khi thị trường chuyển sang cạnh tranh về chất lượng. Đáng chú ý, tỷ lệ creative hiệu quả ở sáu thị trường khác nhau của Việt Nam chỉ đạt **31% với RPG và 34% với strategy**, cho thấy việc dùng nguyên một creative cho nhiều thị trường không phải lúc nào cũng hiệu quả.",
-          "en": "In [the 2026 Southeast Asia Mobile Game Marketing Report](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), SocialPeta and Gamota also emphasized the role of localization as the market shifts toward competition based on quality. Notably, the rate of effective creatives across six different markets in Vietnam **was only 31% for RPGs and 34% for strategy games**, indicating that using the same creative across multiple markets is not always effective."
+          "vi": "Trong [Báo cáo Marketing Game Mobile Đông Nam Á 2026](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), SocialPeta và Gamota cũng nhấn mạnh vai trò của localization khi thị trường chuyển sang cạnh tranh về chất lượng. Đáng chú ý, trong phép so sánh 'hit rate' của creative top-performing giữa sáu thị trường, Việt Nam chỉ đạt **31% với RPG và 34% với strategy**, thấp hơn đáng kể, cho thấy việc dùng nguyên một creative cho nhiều thị trường có hiệu quả hạn chế.",
+          "en": "In [the 2026 Southeast Asia Mobile Game Marketing Report](https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report), SocialPeta and Gamota also emphasized the role of localization as the market shifts toward competition based on quality. Notably, in the report's six-market comparison of the hit rate of top-performing creatives, Vietnam reached **only 31% for RPGs and 34% for strategy games**, significantly lower, indicating that reusing the same creative across multiple markets has limited effectiveness."
         }
       },
       {
@@ -4162,8 +4222,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Theo [Gamota Vietnam Mobile Gaming Year-in-Review 2025](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), khoảng **7–10% người chơi game mobile tại Việt Nam có chi tiêu**, trong khi nhóm chi tiêu cao chỉ chiếm khoảng **2–3%**.",
-          "en": "According to [Gamota Vietnam's Mobile Gaming Year-in-Review 2025](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), approximately **7–10% of mobile gamers in Vietnam make in-game purchases**, while the high-spending segment accounts for only about **2–3%**."
+          "vi": "Theo [Gamota Vietnam Mobile Gaming Year-in-Review 2025](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), khoảng **7–10% người chơi game mobile tại Việt Nam có chi tiêu**, trong khi nhóm chi tiêu cao chỉ chiếm khoảng **2–3%** (số liệu của báo cáo, được [WN Hub](https://wnhub.io/news/other/item-50335) dẫn lại).",
+          "en": "According to [Gamota Vietnam's Mobile Gaming Year-in-Review 2025](https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/), approximately **7–10% of mobile gamers in Vietnam make in-game purchases**, while the high-spending segment accounts for only about **2–3%** (figures from the report, as relayed by [WN Hub](https://wnhub.io/news/other/item-50335))."
         }
       },
       {
@@ -4337,8 +4397,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Theo nghiên cứu của [Deloitte về thị trường esports Đông Nam Á](https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html), Việt Nam là một trong những thị trường nổi bật trong khu vực với **94% mức độ nhận biết về esports và 59% người thường xuyên theo dõi**. Deloitte cũng ghi nhận mức độ quan tâm đến esports tại Việt Nam vượt qua bóng đá trong nhóm khảo sát.",
-          "en": "According to a [Deloitte study on the Southeast Asian esports market](https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html), Vietnam is one of the region's standout markets, with a **94% awareness rate for esports and 59% of people regularly following the scene**. Deloitte also noted that interest in esports in Vietnam surpassed that of soccer among the survey respondents."
+          "vi": "Theo nghiên cứu của [Deloitte về thị trường esports Đông Nam Á](https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html), Việt Nam là một trong những thị trường nổi bật trong khu vực với **94% mức độ nhận biết về esports và 59% người thường xuyên theo dõi**. Deloitte cũng ghi nhận lượng người xem esports tại Việt Nam đã vượt qua bóng đá (khảo sát thực hiện vào mùa hè 2024).",
+          "en": "According to a [Deloitte study on the Southeast Asian esports market](https://www.deloitte.com/southeast-asia/en/services/sports-business-group/perspectives/the-southeast-asian-esports-market-lets-play-2024.html), Vietnam is one of the region's standout markets, with a **94% awareness rate for esports and 59% of people regularly following the scene**. Deloitte also noted that esports viewership in Vietnam has surpassed soccer (survey conducted in summer 2024)."
         }
       },
       {
@@ -4351,8 +4411,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Năm 2026, hệ sinh thái esports trong nước tiếp tục được thúc đẩy khi [Cục Thể dục Thể thao Việt Nam và VTC ký kết chiến lược phát triển esports giai đoạn **2026–2030**](https://viresa.org.vn/le-ky-ket-chien-luoc-phat-trien-esports-quoc-gia-va-cong-bo-chuoi-su-kien-giai-dau-the-grand-esports-2026). Định hướng này cho thấy esports đang được nhìn nhận ở quy mô rộng hơn, gắn với kinh tế thể thao và công nghiệp văn hóa.",
-          "en": "In 2026, the domestic esports ecosystem continued to gain momentum when the [Vietnam Sports Department and VTC signed a strategic plan for esports development for the **2026–2030** period](https://viresa.org.vn/le-ky-ket-chien-luoc-phat-trien-esports-quoc-gia-va-cong-bo-chuoi-su-kien-giai-dau-the-grand-esports-2026). This direction indicates that esports is being viewed on a broader scale, linked to the sports economy and the cultural industry."
+          "vi": "Năm 2026, hệ sinh thái esports trong nước tiếp tục được thúc đẩy khi [Cục Thể dục Thể thao Việt Nam và VTC ký kết biên bản hợp tác phát triển esports giai đoạn **2026–2030**](https://viresa.org.vn/le-ky-ket-chien-luoc-phat-trien-esports-quoc-gia-va-cong-bo-chuoi-su-kien-giai-dau-the-grand-esports-2026). Định hướng này cho thấy esports đang được nhìn nhận ở quy mô rộng hơn, gắn với kinh tế thể thao và công nghiệp văn hóa.",
+          "en": "In 2026, the domestic esports ecosystem continued to gain momentum when the [Vietnam Sports Department and VTC signed a cooperation memorandum on esports development for the **2026–2030** period](https://viresa.org.vn/le-ky-ket-chien-luoc-phat-trien-esports-quoc-gia-va-cong-bo-chuoi-su-kien-giai-dau-the-grand-esports-2026). This direction indicates that esports is being viewed on a broader scale, linked to the sports economy and the cultural industry."
         }
       },
       {
@@ -4448,8 +4508,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Trong khi đó, [Esports Charts ghi nhận giải đấu đạt **553.883 người xem cao nhất** ở trận chung kết](https://escharts.com/news/vct-pacific-2026-stage-1-record-viewership). Hai nguồn sử dụng cách đo khác nhau, vì vậy, khi đánh giá hiệu quả một chiến dịch, doanh nghiệp cần thống nhất rõ chỉ số, cách đo và nguồn dữ liệu ngay từ đầu.",
-          "en": "Meanwhile, [Esports Charts reported that the tournament reached a **peak of 553,883 viewers** during the finals](https://escharts.com/news/vct-pacific-2026-stage-1-record-viewership). The two sources use different measurement methods; therefore, when evaluating the effectiveness of a campaign, businesses need to clearly define metrics, measurement methods, and data sources from the very beginning."
+          "vi": "Trong khi đó, [Esports Charts ghi nhận giải đấu đạt **553.883 người xem cao nhất** ở trận chung kết](https://escharts.com/news/vct-pacific-2026-stage-1-record-viewership). Hai nguồn công bố hai con số khác nhau (có thể do cách đo khác nhau), vì vậy, khi đánh giá hiệu quả một chiến dịch, doanh nghiệp cần thống nhất rõ chỉ số, cách đo và nguồn dữ liệu ngay từ đầu.",
+          "en": "Meanwhile, [Esports Charts reported that the tournament reached a **peak of 553,883 viewers** during the finals](https://escharts.com/news/vct-pacific-2026-stage-1-record-viewership). The two sources report different figures (possibly due to different measurement methods); therefore, when evaluating the effectiveness of a campaign, businesses need to clearly define metrics, measurement methods, and data sources from the very beginning."
         }
       },
       {
@@ -4962,8 +5022,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "VNG cũng cho biết QAU của mảng Games giảm từ [65,8 triệu xuống 57,3 triệu](https://ar2025.vng.com.vn/en/business-report/), nhưng mức độ tương tác và thời gian chơi của nhóm người dùng được giữ lại được cải thiện. Doanh nghiệp chuyển trọng tâm từ quy mô người dùng sang giá trị dài hạn của người chơi và mô hình Games-as-a-Service.",
-          "en": "VNG also reported that QAU for its Games segment decreased from [65.8 million to 57.3 million](https://ar2025.vng.com.vn/en/business-report/), while engagement and playtime among retained users improved. The company shifted its focus from user scale toward long-term player value and the Games-as-a-Service model."
+          "vi": "VNG cũng cho biết QAU của mảng Games giảm xuống [57,3 triệu](https://ar2025.vng.com.vn/en/business-report/), trong khi tỷ lệ người dùng trả phí tăng như đã nêu ở trên. Doanh nghiệp chuyển trọng tâm từ quy mô người dùng sang giá trị dài hạn của người chơi và mô hình Games-as-a-Service.",
+          "en": "VNG also reported that QAU for its Games segment decreased to [57.3 million](https://ar2025.vng.com.vn/en/business-report/), while the paying-user rate rose, as noted above. The company shifted its focus from user scale toward long-term player value and the Games-as-a-Service model."
         }
       },
       {
@@ -5224,8 +5284,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Đáng chú ý, Vietnam GameVerse 2026 còn có [87 vận động viên đến từ 11 quốc gia](https://daibieunhandan.vn/vietnam-gameverse-2026-cu-hich-ty-do-va-giac-mo-dinh-danh-ban-sac-viet-10416656.html) tham dự SEA Esports Nations Cup, cho thấy gaming tại Việt Nam đang mở rộng thêm kết nối với hệ sinh thái esports khu vực.",
-          "en": "Notably, Vietnam GameVerse 2026 also featured [87 athletes from 11 countries](https://daibieunhandan.vn/vietnam-gameverse-2026-cu-hich-ty-do-va-giac-mo-dinh-danh-ban-sac-viet-10416656.html) participating in the SEA Esports Nations Cup, demonstrating how gaming in Vietnam is developing stronger connections with the regional esports ecosystem."
+          "vi": "Đáng chú ý, Vietnam GameVerse 2026 còn có [87 vận động viên đến từ 11 quốc gia](https://vsn.com.vn/?p=10337) tham dự SEA Esports Nations Cup, cho thấy gaming tại Việt Nam đang mở rộng thêm kết nối với hệ sinh thái esports khu vực.",
+          "en": "Notably, Vietnam GameVerse 2026 also featured [87 athletes from 11 countries](https://vsn.com.vn/?p=10337) participating in the SEA Esports Nations Cup, demonstrating how gaming in Vietnam is developing stronger connections with the regional esports ecosystem."
         }
       },
       {
@@ -5472,8 +5532,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Với hơn 58 triệu người chơi hoạt động sôi nổi, Thái Lan là một trong những thị trường có độ tương tác kỹ thuật số cao nhất khu vực. Hành vi tiêu thụ nội dung của game thủ Thái phân hóa rõ nét qua các kênh:",
-          "en": "With more than 58 million active players, Thailand represents one of the most engaged digital audiences in Southeast Asia. Content habits are distinctly distributed across key channels:"
+          "vi": "Với lượng người chơi lớn, Thái Lan là một thị trường có độ tương tác kỹ thuật số đáng chú ý trong khu vực. Hành vi tiêu thụ nội dung của game thủ Thái phân hóa rõ nét qua các kênh:",
+          "en": "With a large player base, Thailand is a notably engaged digital market in Southeast Asia. Content habits are distinctly distributed across key channels:"
         }
       },
       {
@@ -5484,8 +5544,8 @@
             "en": "TikTok & YouTube Shorts (Short-form Video): The go-to destination for quick entertainment, funny memes, gacha pull reactions, and creator banter."
           },
           {
-            "vi": "YouTube Gaming (Long-form & Livestream): Kênh quan trọng nhất chi phối quyết định tải game, nơi người chơi theo dõi hướng dẫn build đồ, phân tích cốt truyện và chiến thuật giải đấu.",
-            "en": "YouTube Gaming (Long-form & Livestreams): The most influential channel for game discovery, deep-dive build guides, lore breakdowns, and tournament replays."
+            "vi": "YouTube Gaming (Long-form & Livestream): Kênh có ảnh hưởng lớn tới quyết định tải game, nơi người chơi theo dõi hướng dẫn build đồ, phân tích cốt truyện và chiến thuật giải đấu.",
+            "en": "YouTube Gaming (Long-form & Livestreams): A highly influential channel for game discovery, deep-dive build guides, lore breakdowns, and tournament replays."
           },
           {
             "vi": "Facebook Groups & X (Twitter): Không gian thảo luận sôi nổi của cộng đồng game thủ về drama, trao đổi tài khoản, phản hồi sự kiện và cập nhật giftcode.",
@@ -5515,8 +5575,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Tại Thái Lan, creator không chỉ là người quảng bá đơn thuần mà là một phần không thể tách rời của trải nghiệm game. Nền kinh tế sáng tạo (Creator Economy) Thái Lan ước tính đạt 45 tỷ THB vào năm 2025, phản ánh sức ảnh hưởng khổng lồ của các nhà sáng tạo nội dung đối với quyết định chơi và chi tiêu của người dùng.",
-          "en": "In Thailand, content creators are not merely ad channels; they are an integral extension of the gaming experience. With Thailand's creator economy projected to reach 45 billion THB by 2025, influencers strongly steer consumer behavior and in-game spending."
+          "vi": "Tại Thái Lan, creator không chỉ là người quảng bá đơn thuần mà là một phần không thể tách rời của trải nghiệm game. Theo Tellscore, thị trường nhà sáng tạo nội dung (creator) tại Thái Lan ước tính khoảng 45 tỷ THB trong năm 2024, cho thấy quy mô đáng kể của lĩnh vực này; ảnh hưởng thực tế tới quyết định chơi và chi tiêu cần được đo riêng cho từng game.",
+          "en": "In Thailand, content creators are not merely ad channels; they are an integral extension of the gaming experience. With Thailand's creator market valued by Tellscore at about 45 billion THB in 2024, the sector is substantial; its real influence on play and spending should be measured for each game."
         }
       },
       {
@@ -5541,8 +5601,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Nhiều tựa game quốc tế thất bại tại Thái Lan vì xem nhẹ khâu bản địa hóa, chỉ sử dụng dịch thuật máy móc (literal translation). Game thủ Thái có phong cách hài hước và hệ thống tiếng lóng phong phú; chỉ khi nội dung sử dụng đúng nhịp điệu ngôn ngữ, tích hợp văn hóa ẩm thực, lễ hội (như Songkran, Loy Krathong) hay các meme đương đại, người chơi mới thực sự đón nhận tựa game như một phần của cộng đồng họ.",
-          "en": "Many global titles struggle in Thailand because they rely on literal translation. Thai gamers possess a sophisticated sense of humor and vibrant slang; only when marketing captures authentic vernacular, cultural nuances (such as Songkran or Loy Krathong), and trending local memes do players genuinely embrace the game as part of their community."
+          "vi": "Một số tựa game quốc tế có thể gặp khó khăn tại Thái Lan nếu xem nhẹ khâu bản địa hóa và chỉ dùng dịch thuật máy móc (literal translation). Game thủ Thái có phong cách hài hước và hệ thống tiếng lóng phong phú; chỉ khi nội dung sử dụng đúng nhịp điệu ngôn ngữ, tích hợp văn hóa ẩm thực, lễ hội (như Songkran, Loy Krathong) hay các meme đương đại, người chơi mới thực sự đón nhận tựa game như một phần của cộng đồng họ.",
+          "en": "Global titles can struggle in Thailand when they rely on literal translation. Thai gamers possess a sophisticated sense of humor and vibrant slang; only when marketing captures authentic vernacular, cultural nuances (such as Songkran or Loy Krathong), and trending local memes do players genuinely embrace the game as part of their community."
         }
       },
       {
@@ -5601,6 +5661,15 @@
           "vi": "Các nhà phát hành đang tìm kiếm cơ hội thâm nhập hoặc mở rộng tại Thái Lan có thể liên hệ ngay với ANBU Studio để nhận tư vấn chuyên sâu về nghiên cứu người chơi, bản địa hóa văn hóa nội dung và mạng lưới hợp tác gaming creator hàng đầu.",
           "en": "Publishers looking to conduct market research, player insight analysis, and content strategy development tailored to the Thai Gaming Market can contact ANBU Studio today for comprehensive strategic consultation."
         }
+      }
+    ],
+    "sources": [
+      {
+        "label": {
+          "vi": "The Thaiger: Thị trường creator Thái Lan 45 tỷ baht (Tellscore, 2024)",
+          "en": "The Thaiger: Thai content creator market valued at 45 billion baht (Tellscore, 2024)"
+        },
+        "href": "https://thethaiger.com/news/business/thai-content-creator-market-valued-at-45-billion-baht-in-2024"
       }
     ]
   },
@@ -5826,7 +5895,23 @@
         }
       }
     ],
-    "slug_en": "gaming-brand-partnership-thailand-strategic-collaboration"
+    "slug_en": "gaming-brand-partnership-thailand-strategic-collaboration",
+    "sources": [
+      {
+        "label": {
+          "vi": "Chính phủ Thái Lan: Thái Lan nổi lên là cường quốc gaming tiềm năng của Đông Nam Á",
+          "en": "Royal Thai Government: Thailand emerges as Southeast Asia's high-potential gaming powerhouse"
+        },
+        "href": "https://thailand.go.th/issue-focus-detail/thailand-emerges-as-southeast-asias-high-potential-gaming-powerhouse"
+      },
+      {
+        "label": {
+          "vi": "Nation Thailand: Thái Lan trở thành thị trường game hàng đầu Đông Nam Á (số liệu Ampverse)",
+          "en": "Nation Thailand: Thailand emerges as a top gaming market in Southeast Asia (Ampverse data)"
+        },
+        "href": "https://www.nationthailand.com/business/tech/40065046"
+      }
+    ]
   },
   {
     "slug": "nghien-cuu-xa-hoi-hoc-co-y-nghia-gi-trong-marketing-game",
@@ -6136,8 +6221,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Một nghiên cứu năm 2026 về gaming content creators tại Thái Lan khảo sát 400 người theo dõi trên các nền tảng trực tuyến. Kết quả cho thấy chiến lược nội dung số, tính chân thực của influencer và hành trình khách hàng đều có mối quan hệ đáng kể với mức độ tương tác của khán giả; trong mô hình nghiên cứu, hành trình khách hàng có ảnh hưởng mạnh đến engagement.",
-          "en": "A 2026 study on gaming content creators in Thailand surveyed 400 followers across online platforms. The results showed that digital content strategy, influencer authenticity, and the customer journey all had a significant relationship with audience engagement; in the research model, the customer journey had a strong influence on engagement."
+          "vi": "Mức độ tương tác của khán giả với một creator thường gắn với tính chân thực của creator và mức độ phù hợp của nội dung với hành trình của người xem.",
+          "en": "Audience engagement with a creator tends to be tied to the creator's authenticity and to how well the content fits the viewer's journey."
         }
       },
       {
@@ -6520,7 +6605,23 @@
         }
       }
     ],
-    "slug_en": "sociological-research-in-game-marketing"
+    "slug_en": "sociological-research-in-game-marketing",
+    "sources": [
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025",
+          "en": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025"
+        },
+        "href": "https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/"
+      },
+      {
+        "label": {
+          "vi": "Leveraging online gaming communities to increase game use (International Journal of Information Management, 2026)",
+          "en": "Leveraging online gaming communities to increase game use (International Journal of Information Management, 2026)"
+        },
+        "href": "https://pure.lib.cgu.edu.tw/en/publications/leveraging-online-gaming-communities-to-increase-game-use/"
+      }
+    ]
   },
   {
     "slug": "game-mobile-promotion-cach-quang-ba-game-mobile-hieu-qua-tai-viet-nam",
@@ -6759,8 +6860,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Theo AppsFlyer, các nhà phát hành game có mức chi tiêu quảng cáo trên 7 triệu USD mỗi quý tạo trung bình 2.743 biến thể nội dung trên mỗi quý. Con số này cho thấy các nhà phát hành lớn đang dành nhiều nguồn lực cho việc thử nghiệm nội dung thay vì phụ thuộc vào một mẫu quảng cáo duy nhất.",
-          "en": "According to AppsFlyer, game publishers with advertising spend exceeding $7 million per quarter create an average of 2,743 content variations per quarter. This figure indicates that major publishers are dedicating significant resources to content experimentation rather than relying on a single ad template."
+          "vi": "Theo báo cáo State of Creative Optimization 2025 của AppsFlyer (dữ liệu từ quý I/2024 đến quý I/2025), các ứng dụng game chi trên 7 triệu USD mỗi quý tạo trung bình 2.743 video quảng cáo mỗi quý. Con số này cho thấy các nhà phát hành lớn đang dành nhiều nguồn lực cho việc thử nghiệm nội dung thay vì phụ thuộc vào một mẫu quảng cáo duy nhất.",
+          "en": "According to AppsFlyer's State of Creative Optimization 2025 report (data from Q1 2024 to Q1 2025), gaming apps spending over $7 million per quarter create an average of 2,743 video creatives per quarter. This figure indicates that major publishers are dedicating significant resources to content experimentation rather than relying on a single ad template."
         }
       },
       {
@@ -6822,8 +6923,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "AppsFlyer cho biết 2% nhóm nội dung quảng cáo hiệu quả nhất trong game chiếm 53% tổng ngân sách quảng cáo trong dữ liệu nghiên cứu. Điều đó cho thấy việc tìm ra nội dung phù hợp có ảnh hưởng rất lớn đến cách ngân sách được phân bổ.",
-          "en": "AppsFlyer reports that the top 2% of the most effective in-game ad content accounts for 53% of the total ad budget in their research data. This shows that finding the right content has a significant impact on how the budget is allocated."
+          "vi": "Theo báo cáo State of Creative Optimization 2025 của AppsFlyer, 2% mẫu video quảng cáo game được chi nhiều nhất chiếm 53% tổng ngân sách quảng cáo game trong dữ liệu quý I/2025. Điều đó cho thấy việc tìm ra nội dung phù hợp có ảnh hưởng rất lớn đến cách ngân sách được phân bổ.",
+          "en": "According to AppsFlyer's State of Creative Optimization 2025 report, the top 2% of gaming video creatives by spend accounted for 53% of total gaming ad spend in its Q1 2025 data. This shows that finding the right content has a significant impact on how the budget is allocated."
         }
       },
       {
@@ -7044,8 +7145,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Lượt tải game thể thao mô phỏng tăng tới 242,2%, game bắn súng tăng 181% và game nhập vai nhàn rỗi tăng 21,4% so với cùng kỳ năm trước. Đây là ba thể loại duy nhất trong nhóm 10 thể loại được phân tích ghi nhận tăng trưởng lượt tải. Đáng chú ý, doanh thu của game bắn súng tăng tới 579,4%.",
-          "en": "Downloads of sports simulation games surged by 242.2%, shooter games by 181%, and casual role-playing games by 21.4% compared to the same period last year. These are the only three genres among the top 10 analyzed that recorded growth in downloads. Notably, revenue from shooter games soared by 579.4%."
+          "vi": "Lượt tải game thể thao mô phỏng tăng tới 242,2%, game bắn súng tăng 181% và game nhập vai nhàn rỗi (idle RPG) tăng 21,4% so với cùng kỳ năm trước. Đây là ba thể loại duy nhất trong nhóm 10 thể loại được phân tích ghi nhận tăng trưởng lượt tải. Đáng chú ý, doanh thu của game bắn súng tăng tới 579,4%.",
+          "en": "Downloads of sports simulation games surged by 242.2%, shooter games by 181%, and idle RPG games by 21.4% compared to the same period last year. These are the only three genres among the top 10 analyzed that recorded growth in downloads. Notably, revenue from shooter games soared by 579.4%."
         }
       },
       {
@@ -7086,8 +7187,8 @@
       {
         "type": "p",
         "text": {
-          "vi": "Trong bối cảnh chi tiêu quảng cáo game toàn cầu đạt khoảng 25 tỷ USD trong năm 2025, trong khi lượt hiển thị quảng cáo tăng 20%, việc cạnh tranh chỉ bằng ngân sách ngày càng khó.",
-          "en": "With global gaming ad spending projected to reach approximately $25 billion by 2025, while ad impressions are expected to increase by 20%, competing solely on budget is becoming increasingly difficult."
+          "vi": "Trong bối cảnh chi tiêu thu hút người chơi (UA) game toàn cầu đạt khoảng 25 tỷ USD trong năm 2025, trong khi lượt hiển thị quảng cáo tăng 20%, việc cạnh tranh chỉ bằng ngân sách ngày càng khó.",
+          "en": "With global gaming user acquisition spending reaching approximately $25 billion in 2025, while ad impressions increased by 20%, competing solely on budget is becoming increasingly difficult."
         }
       },
       {
@@ -7126,7 +7227,37 @@
         }
       }
     ],
-    "slug_en": "mobile-game-promotion-how-to-promote-games-in-vietnam"
+    "slug_en": "mobile-game-promotion-how-to-promote-games-in-vietnam",
+    "sources": [
+      {
+        "label": {
+          "vi": "AppsFlyer: State of Gaming for Marketers 2026 (thông cáo)",
+          "en": "AppsFlyer: State of Gaming for Marketers 2026 (press release)"
+        },
+        "href": "https://www.appsflyer.com/company/newsroom/pr/gaming-marketing/"
+      },
+      {
+        "label": {
+          "vi": "SocialPeta: Báo cáo marketing game mobile Đông Nam Á 2026",
+          "en": "SocialPeta: 2026 Southeast Asia Mobile Game Marketing Report"
+        },
+        "href": "https://socialpeta.com/en/blog/2026-southeast-asia-mobile-game-marketing-report"
+      },
+      {
+        "label": {
+          "vi": "AppsFlyer: The State of App Monetization 2026",
+          "en": "AppsFlyer: The State of App Monetization 2026"
+        },
+        "href": "https://www.appsflyer.com/resources/reports/app-marketing-monetization-report/"
+      },
+      {
+        "label": {
+          "vi": "AppsFlyer: State of Creative Optimization 2025",
+          "en": "AppsFlyer: State of Creative Optimization 2025"
+        },
+        "href": "https://www.appsflyer.com/company/newsroom/pr/ai-emotion-creative-trends/"
+      }
+    ]
   },
   {
     "slug": "kol-trong-nganh-game-vai-tro-va-cach-xay-dung-chien-luoc-hieu-qua",
@@ -7158,8 +7289,8 @@
       },
       {
         "text": {
-          "vi": "Tại Việt Nam, đây không phải một thị trường nhỏ. Bộ Thông tin và Truyền thông ước tính doanh thu ngành game năm 2024 đạt khoảng 12.500 tỷ đồng, với khoảng 4.100 lao động, tăng 31% so với năm trước. Sang năm 2025, một báo cáo do Gamota công bố ước tính riêng thị trường game di động có khoảng 54 triệu người chơi và doanh thu khoảng 825 triệu USD, tăng 9,16% so với năm 2024. Từ đó có thể thấy quy mô đáng kể của thị trường game Việt Nam.",
-          "en": "In Vietnam, this is not a small market. The Ministry of Information and Communications estimates that the gaming industry’s revenue in 2024 will reach approximately 12,500 billion VND, employing about 4,100 workers—a 31% increase from the previous year. Looking ahead to 2025, a report released by Gamota estimates that the mobile gaming market alone will have about 54 million players and generate approximately 825 million USD in revenue, a 9.16% increase compared to 2024. This highlights the significant scale of Vietnam’s gaming market."
+          "vi": "Tại Việt Nam, đây không phải một thị trường nhỏ. Bộ Thông tin và Truyền thông ước tính doanh thu ngành game năm 2024 đạt khoảng 12.500 tỷ đồng, giảm nhẹ so với 12.552 tỷ đồng của năm 2023, trong khi số lao động ước khoảng 4.100 người, tăng 31% so với năm trước. Sang năm 2025, một báo cáo do Gamota công bố ước tính riêng thị trường game di động có khoảng 54 triệu người chơi và doanh thu khoảng 825 triệu USD, tăng 9,16% so với năm 2024. Từ đó có thể thấy quy mô đáng kể của thị trường game Việt Nam.",
+          "en": "In Vietnam, this is not a small market. The Ministry of Information and Communications estimates that the gaming industry’s revenue in 2024 was approximately 12,500 billion VND, a slight decrease from 12,552 billion VND in 2023, while the workforce stands at about 4,100 people, up 31% from the previous year. Looking ahead to 2025, a report released by Gamota estimates that the mobile gaming market alone will have about 54 million players and generate approximately 825 million USD in revenue, a 9.16% increase compared to 2024. This highlights the significant scale of Vietnam’s gaming market."
         },
         "type": "p"
       },
@@ -7350,8 +7481,8 @@
       },
       {
         "text": {
-          "vi": "Một khảo sát của Vero và Decision Lab về cộng đồng Esports tại Việt Nam cho thấy 65% người được khảo sát cho biết đã mua một sản phẩm được gamer KOL giới thiệu. Nghiên cứu này cũng cho thấy ảnh hưởng của các KOL game không chỉ giới hạn trong nội dung gaming mà còn có thể mở rộng sang những lĩnh vực khác.",
-          "en": "A survey by Vero and Decision Lab on the esports community in Vietnam found that 65% of respondents said they had purchased a product recommended by a gaming KOL. The study also showed that the influence of gaming KOLs is not limited to gaming content but can extend to other areas as well."
+          "vi": "Một khảo sát của Vero và Decision Lab về cộng đồng Esports tại Việt Nam (năm 2021) cho thấy 65% khán giả esports được hỏi cho biết đã mua một sản phẩm được gamer KOL quảng bá trong vòng một tháng gần nhất. Nghiên cứu này cũng cho thấy ảnh hưởng của các KOL game không chỉ giới hạn trong nội dung gaming mà còn có thể mở rộng sang những lĩnh vực khác.",
+          "en": "A survey by Vero and Decision Lab on the esports community in Vietnam (2021) found that 65% of esports watchers said they had purchased a product advertised by a gamer KOL in the past month. The study also showed that the influence of gaming KOLs is not limited to gaming content but can extend to other areas as well."
         },
         "type": "p"
       },
@@ -7558,8 +7689,8 @@
       },
       {
         "text": {
-          "vi": "Đặc biệt, thị trường game Việt Nam đang có quy mô lớn nhưng cũng không thiếu cạnh tranh. Bộ Thông tin và Truyền thông cho biết doanh thu ngành game năm 2024 ước khoảng 12.500 tỷ đồng, giảm nhẹ so với mức 12.552 tỷ đồng của năm 2023, trong khi số lao động lại tăng lên khoảng 4.100 người.",
-          "en": "In particular, the Vietnamese gaming market is large but highly competitive. The Ministry of Information and Communications reports that the gaming industry’s revenue in 2024 is estimated at approximately 12,500 billion VND, a slight decrease from the 12,552 billion VND recorded in 2023, while the number of employees has increased by about 4,100 people."
+          "vi": "Đặc biệt, thị trường game Việt Nam đang có quy mô lớn nhưng cũng không thiếu cạnh tranh. Bộ Thông tin và Truyền thông cho biết doanh thu ngành game năm 2024 ước khoảng 12.500 tỷ đồng, giảm nhẹ so với mức 12.552 tỷ đồng của năm 2023, trong khi số lao động ước khoảng 4.100 người, tăng 31% so với năm 2023.",
+          "en": "In particular, the Vietnamese gaming market is large but highly competitive. The Ministry of Information and Communications reports that the gaming industry’s revenue in 2024 is estimated at approximately 12,500 billion VND, a slight decrease from the 12,552 billion VND recorded in 2023, while the workforce is estimated at about 4,100 people, up 31% from 2023."
         },
         "type": "p"
       },
@@ -7611,7 +7742,37 @@
         "type": "p"
       }
     ],
-    "slug_en": "kols-in-gaming-industry-strategic-playbook"
+    "slug_en": "kols-in-gaming-industry-strategic-playbook",
+    "sources": [
+      {
+        "label": {
+          "vi": "Báo Đầu tư: Làm sạch ngành game Việt (số liệu Bộ TT&TT 2024)",
+          "en": "Bao Dau tu: Cleaning up Vietnam's game industry (Ministry data, 2024)"
+        },
+        "href": "https://baodautu.vn/lam-sach-nganh-game-viet-d231456.html"
+      },
+      {
+        "label": {
+          "vi": "DataReportal: Digital 2025 Vietnam",
+          "en": "DataReportal: Digital 2025 Vietnam"
+        },
+        "href": "https://datareportal.com/reports/digital-2025-vietnam"
+      },
+      {
+        "label": {
+          "vi": "Vero & Decision Lab: Gaming and Esports in Vietnam (2021)",
+          "en": "Vero & Decision Lab: Gaming and Esports in Vietnam (2021)"
+        },
+        "href": "https://vero-asean.com/whitepaper/gaming-and-esports-in-vietnam-a-new-arena-for-brands/"
+      },
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025",
+          "en": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025"
+        },
+        "href": "https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/"
+      }
+    ]
   },
   {
     "slug": "thi-truong-game-viet-nam-va-nhung-thay-doi-trong-cach-tiep-can-nguoi-choi",
@@ -7650,8 +7811,8 @@
       },
       {
         "text": {
-          "vi": "Ở góc độ rộng hơn, DataReport ghi nhận Việt Nam có 79,8 triệu người sử dụng Internet vào tháng 1/2025, tương đương 78,8% dân số. Điều này tạo ra một môi trường thuận lợi để game tiếp cận người chơi thông qua mạng xã hội, video, cộng đồng trực tuyến và các nền tảng nội dung số.",
-          "en": "From a broader perspective, DataReport reports that Vietnam had 79.8 million Internet users in January 2025, equivalent to 78.8% of the population. This creates a favorable environment for games to reach players through social media, video, online communities, and digital content platforms."
+          "vi": "Ở góc độ rộng hơn, DataReportal ghi nhận Việt Nam có 79,8 triệu người sử dụng Internet vào tháng 1/2025, tương đương 78,8% dân số. Điều này tạo ra một môi trường thuận lợi để game tiếp cận người chơi thông qua mạng xã hội, video, cộng đồng trực tuyến và các nền tảng nội dung số.",
+          "en": "From a broader perspective, DataReportal reports that Vietnam had 79.8 million Internet users in January 2025, equivalent to 78.8% of the population. This creates a favorable environment for games to reach players through social media, video, online communities, and digital content platforms."
         },
         "type": "p"
       },
@@ -8006,7 +8167,23 @@
         "type": "p"
       }
     ],
-    "slug_en": "vietnam-gaming-market-evolving-player-acquisition"
+    "slug_en": "vietnam-gaming-market-evolving-player-acquisition",
+    "sources": [
+      {
+        "label": {
+          "vi": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025",
+          "en": "Gamota: Vietnam Mobile Gaming Year-in-Review 2025"
+        },
+        "href": "https://gamota.com/en_GB/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025-report-revenue-reaches-825-million/"
+      },
+      {
+        "label": {
+          "vi": "DataReportal: Digital 2025 Vietnam",
+          "en": "DataReportal: Digital 2025 Vietnam"
+        },
+        "href": "https://datareportal.com/reports/digital-2025-vietnam"
+      }
+    ]
   },
   {
     "slug": "localization-vs-culturalization-nha-phat-hanh-game-quoc-te-tai-viet-nam",
