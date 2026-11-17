@@ -44,7 +44,6 @@ export const blogViToEnSlug: Record<string, string> = {
   "toi-uu-push-notification-game-mobile": "mobile-game-push-notifications-re-engaging-lapsed-players-spam",
   "game-mobile-influencer-brief-mau": "mobile-game-influencer-brief-template-empowering-authentic-creator",
   "phan-tich-arpu-va-arppu-game-mobile": "mobile-game-arpu-vs-arppu-decoding-monetization-models",
-  "game-mobile-analytics-dashboard-can-co": "mobile-game-analytics-dashboard-10-core-metrics-growth",
   "game-mobile-community-discord-viet-nam": "building-running-gaming-discord-community-vietnam-practical-playbook",
   "marketing-game-mobile-mua-tet-viet-nam": "tet-gaming-marketing-vietnam-cultural-liveops-revenue-acceleration",
   "ab-test-store-listing-game-mobile-nen-thu-gi": "mobile-game-store-listing-ab-tests-what-to-test",
@@ -89,6 +88,8 @@ export const blogEnToViSlug: Record<string, string> = Object.fromEntries(
 // of 404ing. Add both the old vi slug and old slug_en whenever a post is
 // deleted this way.
 export const mergedPostRedirects: Record<string, string> = {
+  "game-mobile-analytics-dashboard-can-co": "do-luong-game-mobile-cpi-ltv-roas",
+  "mobile-game-analytics-dashboard-10-core-metrics-growth": "do-luong-game-mobile-cpi-ltv-roas",
   // Merged posts (same search intent): old slug (vi or en) -> surviving vi slug.
   "soft-launch-game-mobile-do-gi-truoc-global-launch": "soft-launch-game-mobile-viet-nam",
   "mobile-game-soft-launch-4-golden-metric-clusters": "soft-launch-game-mobile-viet-nam",

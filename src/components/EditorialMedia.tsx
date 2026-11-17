@@ -103,7 +103,6 @@ function realCoverForSlug(slug: string) {
     "toi-uu-push-notification-game-mobile": "retention-3d.jpg",
     "game-mobile-influencer-brief-mau": "creator-program.jpg",
     "phan-tich-arpu-va-arppu-game-mobile": "monetization-3d.jpg",
-    "game-mobile-analytics-dashboard-can-co": "analytics-dashboard.jpg",
     "game-mobile-community-discord-viet-nam": "discord-community.jpg",
     "marketing-game-mobile-mua-tet-viet-nam": "game-pr-vietnam.jpg",
     "ab-test-store-listing-game-mobile-nen-thu-gi": "creative-testing-lab.jpg",

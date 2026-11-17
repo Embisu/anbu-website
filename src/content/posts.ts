@@ -1314,6 +1314,7 @@ export const builtinPosts: Post[] = [
     sources: [
       { label: { vi: "Adjust: Hướng dẫn phân tích LTV và ROAS", en: "Adjust: LTV & ROAS Analytics Guide" }, href: "https://www.adjust.com/glossary/" },
       { label: { vi: "Firebase Analytics: Kiến trúc dữ liệu BigQuery", en: "Firebase Analytics: BigQuery Data Architecture" }, href: "https://firebase.google.com/docs/analytics" },
+      { label: { vi: "Android vitals: ngưỡng hành vi xấu (crash, ANR)", en: "Android vitals: bad behavior thresholds (crash, ANR)" }, href: "https://developer.android.com/topic/performance/vitals" },
     ],
     body: [
       { type: "p", text: {
@@ -1355,6 +1356,127 @@ export const builtinPosts: Post[] = [
         { vi: "ROAS Day 30: Một mốc quan trọng để đánh giá tiến độ hoàn vốn; mức kỳ vọng tùy thể loại (ví dụ MMORPG, Thẻ Tướng), thị trường và kênh.", en: "Day 30 ROAS: An important checkpoint for payback progress; the target depends on genre (for example MMORPG or Card Battler), market, and channel." },
         { vi: "ROAS Day 90: Giai đoạn sinh lời bền vững nhờ các bản cập nhật sự kiện LiveOps định kỳ.", en: "Day 90 ROAS: The pure profit generation phase driven by recurring LiveOps event schedules." },
       ] },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "4. Mười chỉ số cho dashboard của đội tăng trưởng, chia theo ba trụ cột",
+          "en": "4. Ten core metrics for a growth team's dashboard, grouped into three pillars"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một dashboard analytics game mobile tốt không phải là nơi nhồi nhét mọi dữ liệu có thể thu thập. Mục tiêu của dashboard vận hành là giúp Product Manager và UA Lead nhận biết trong 60 giây: tuần này traffic, chất lượng người chơi và dòng tiền nạp đang biến động theo chiều hướng nào, và ai là người phải hành động ngay lập tức.",
+          "en": "An effective mobile game analytics dashboard is not a dumping ground for every trackable metric. Its operational goal is to enable Product Managers and UA Leads to assess within 60 seconds: how traffic, player quality, and in-app monetization are shifting this week, and exactly who owns the required action."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-covers/analytics-dashboard.jpg",
+        "alt": {
+          "vi": "Cấu trúc dashboard analytics theo dõi thời gian thực cho game mobile",
+          "en": "Real-time mobile game analytics dashboard architecture"
+        },
+        "caption": {
+          "vi": "Dashboard phân tầng trực quan theo 3 trụ cột: Thu nạp (UA), Giữ chân (Product Retention) và Dòng tiền (Monetization).",
+          "en": "Visual dashboard segmented into three pillars: User Acquisition (UA), Product Retention, and Monetization Telemetry."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Trụ cột 1: Thu nạp & Chất lượng phễu đầu (Acquisition)",
+          "en": "Pillar 1: Acquisition & Top-Funnel Quality"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "1. Blended eCPI (Effective CPI): Chi phí trung bình để có 1 lượt cài đặt (tính gộp cả Paid Ads và Organic Uplift kéo theo).",
+            "en": "1. Blended eCPI (Effective CPI): The actual blended cost per install factoring in both paid campaigns and downstream organic lift."
+          },
+          {
+            "vi": "2. Tutorial Completion Rate (Activation): Tỷ lệ người chơi vượt qua ải tân thủ đầu tiên. Nếu chỉ số này thấp bất thường so với các game cùng thể loại của bạn, nhiều khả năng vấn đề nằm ở phần mở đầu của game chứ không hẳn do kênh quảng cáo.",
+            "en": "2. Tutorial Completion Rate (Activation): Percentage of installers completing the opening tutorial. If this is unusually low compared with your comparable titles, onboarding friction is the more likely culprit than ad targeting."
+          },
+          {
+            "vi": "3. Day 1 Retention (D1): Thước đo trải nghiệm ban đầu. Mức D1 kỳ vọng khác nhau theo thể loại, thị trường và kênh; nên đặt ngưỡng dựa trên dữ liệu của chính game và các game cùng thể loại.",
+            "en": "3. Day 1 Retention (D1): The initial user satisfaction proxy. Expected D1 varies by genre, market and channel, so set thresholds from your own data and comparable titles."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Trụ cột 2: Độ gắn kết & Hành vi trong game (Product Health)",
+          "en": "Pillar 2: In-Game Engagement & Product Health"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "4. Day 7 & Day 30 Retention (D7/D30): Đo lường vòng lặp gameplay cốt lõi (Core Loop) và hệ thống bang hội/nội dung sự kiện.",
+            "en": "4. Day 7 & Day 30 Retention (D7/D30): Measures core loop resonance, guild dynamics, and liveops event sustainability."
+          },
+          {
+            "vi": "5. DAU/MAU Stickiness Ratio: Tỷ lệ thể hiện mức độ nghiện game. Tỷ lệ càng cao cho thấy người chơi càng xem việc mở app là một thói quen hàng ngày.",
+            "en": "5. DAU/MAU Stickiness Ratio: The definitive game habit metric. The higher the ratio, the more players treat logging in as a daily routine."
+          },
+          {
+            "vi": "6. Crash Rate & ANR (App Not Responding): Tỷ lệ sự cố kỹ thuật tính trên người dùng hoạt động hằng ngày. Theo tài liệu Android vitals của Google Play, ngưỡng hành vi xấu tổng thể là 1,09% với user-perceived crash rate và 0,47% với user-perceived ANR rate; vượt ngưỡng có thể làm giảm khả năng hiển thị của game trên Google Play.",
+            "en": "6. Crash & ANR Rate: Technical error rate measured per daily active user. Per Google Play's Android vitals documentation, the overall bad behavior threshold is 1.09% for the user-perceived crash rate and 0.47% for the user-perceived ANR rate; exceeding them may reduce the game's visibility on Google Play."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/blog-covers/growth-analytics-chart.jpg",
+        "alt": {
+          "vi": "Biểu đồ phân tích cohort LTV và tỷ lệ hoàn vốn ROAS theo ngày",
+          "en": "Cohort-based LTV curve and cumulative ROAS progression chart"
+        },
+        "caption": {
+          "vi": "Theo dõi đường cong LTV theo cohort giúp đội ngũ tự tin nâng ngân sách quảng cáo cho các nhóm người chơi sinh lời cao.",
+          "en": "Cohort LTV progression curves empower teams to confidently scale ad spend for high-monetizing player segments."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Trụ cột 3: Hiệu quả kinh doanh & Kiếm tiền (Monetization)",
+          "en": "Pillar 3: Monetization & Revenue Telemetry"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "7. First-Time Payer Conversion (%): Tỷ lệ người chơi phát sinh giao dịch đầu tiên. Các gói ưu đãi '1 USD/20.000 VNĐ tân thủ' được thiết kế để đẩy mạnh chỉ số này.",
+            "en": "7. First-Time Payer Conversion (%): The share of players converting into spenders. Starter packs ($0.99) are specifically engineered to optimize this metric."
+          },
+          {
+            "vi": "8. ARPPU (Average Revenue Per Paying User): Mức chi tiêu trung bình của nhóm game thủ nạp tiền, chỉ số then chốt để phân loại nhóm cá voi (Whales) và cá heo (Dolphins).",
+            "en": "8. ARPPU (Average Revenue Per Paying User): Average spend among paying players, crucial for segmenting VIP whales and core dolphins."
+          },
+          {
+            "vi": "9. Cumulative ROAS D7 / D30 / D90: Tỷ lệ hoàn vốn đầu tư quảng cáo lũy kế theo ngày kể từ khi cài đặt.",
+            "en": "9. Cumulative ROAS D7 / D30 / D90: Cumulative return on ad spend tracked over 7, 30, and 90-day intervals post-install."
+          },
+          {
+            "vi": "10. LTV Realization vs. CAC: Tỷ lệ Giá trị trọn đời trên Chi phí thu nạp (LTV/CAC). LTV cần vượt CAC với biên đủ rộng để bù chi phí vận hành và rủi ro; mức mục tiêu cụ thể tùy thể loại và mô hình kinh doanh.",
+            "en": "10. LTV Realization vs. CAC: Lifetime Value to Customer Acquisition Cost ratio. LTV must exceed CAC by a margin wide enough to cover operating costs and risk; the target depends on genre and business model."
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": {
+          "vi": "Dữ liệu không tự đưa ra quyết định. Một dashboard xuất sắc là chiếc la bàn cảnh báo ngay khi một chỉ số trượt khỏi ngưỡng an toàn để đội ngũ can thiệp kịp thời.",
+          "en": "Data never makes decisions on its own. An exceptional dashboard acts as an early radar, triggering immediate intervention the moment a metric drifts outside safe thresholds."
+        }
+      },
     ],
   },
   {
@@ -2201,60 +2323,6 @@ export const builtinPosts: Post[] = [
       { type: "p", text: {
         vi: "Tuyệt đối không bán thẳng các trang bị 'vô địch' chỉ bằng tiền mặt mà không thể cày cuốc được trong game. Hãy bán thời gian tiện lợi, vật phẩm trang trí làm đẹp độc quyền và các gói tài nguyên gia tốc tiến độ để đảm bảo môi trường cạnh tranh công bằng cho mọi tầng lớp game thủ.",
         en: "Never sell unbeatable pay-to-win items exclusively for cash without in-game grind paths. Monetize convenience, cosmetic prestige, and progression velocity to preserve competitive integrity across all player cohorts.",
-      } },
-    ],
-  },
-  {
-    slug: "game-mobile-analytics-dashboard-can-co",
-    slug_en: "mobile-game-analytics-dashboard-10-core-metrics-growth",
-    title: { vi: "Dashboard analytics game mobile: 10 chỉ số vàng cho đội ngũ tăng trưởng", en: "Mobile Game Analytics Dashboard: 10 Core Metrics for Growth Teams" },
-    excerpt: { vi: "Nhiều dashboard chứa hàng chục biểu đồ rối rắm nhưng không trả lời được câu hỏi cốt lõi: người chơi rời đi vì đâu và doanh thu sụt giảm do nguyên nhân nào. 10 chỉ số cốt lõi và ngưỡng cảnh báo cần thiết.", en: "Many dashboards hold dozens of convoluted charts without answering the fundamental questions: why are players churning and where is revenue dropping? 10 actionable metrics and alert thresholds." },
-    category: { vi: "Analytics Game", en: "Game Analytics" }, date: "2026-08-21", readingTime: 6, author: "ANBU Team", color: "from-blue-700 to-teal-600", variant: "seo",
-    cover: "/blog-covers/analytics-3d.jpg",
-    sources: [
-      { label: { vi: "Firebase Analytics for Mobile Apps", en: "Firebase Analytics for Mobile Apps" }, href: "https://firebase.google.com/docs/analytics" },
-      { label: { vi: "AppsFlyer Mobile Analytics Benchmarks", en: "AppsFlyer Mobile Analytics Benchmarks" }, href: "https://www.appsflyer.com/benchmarks/" },
-      { label: { vi: "Android vitals: ngưỡng hành vi xấu (crash, ANR)", en: "Android vitals: bad behavior thresholds (crash, ANR)" }, href: "https://developer.android.com/topic/performance/vitals" },
-    ],
-    body: [
-      { type: "p", text: {
-        vi: "Một dashboard analytics game mobile tốt không phải là nơi nhồi nhét mọi dữ liệu có thể thu thập. Mục tiêu của dashboard vận hành là giúp Product Manager và UA Lead nhận biết trong 60 giây: tuần này traffic, chất lượng người chơi và dòng tiền nạp đang biến động theo chiều hướng nào, và ai là người phải hành động ngay lập tức.",
-        en: "An effective mobile game analytics dashboard is not a dumping ground for every trackable metric. Its operational goal is to enable Product Managers and UA Leads to assess within 60 seconds: how traffic, player quality, and in-app monetization are shifting this week, and exactly who owns the required action.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/analytics-dashboard.jpg",
-        alt: { vi: "Cấu trúc dashboard analytics theo dõi thời gian thực cho game mobile", en: "Real-time mobile game analytics dashboard architecture" },
-        caption: { vi: "Dashboard phân tầng trực quan theo 3 trụ cột: Thu nạp (UA), Giữ chân (Product Retention) và Dòng tiền (Monetization).", en: "Visual dashboard segmented into three pillars: User Acquisition (UA), Product Retention, and Monetization Telemetry." },
-      },
-      { type: "h2", text: { vi: "Trụ cột 1: Thu nạp & Chất lượng phễu đầu (Acquisition)", en: "Pillar 1: Acquisition & Top-Funnel Quality" } },
-      { type: "ul", items: [
-        { vi: "1. Blended eCPI (Effective CPI): Chi phí trung bình để có 1 lượt cài đặt (tính gộp cả Paid Ads và Organic Uplift kéo theo).", en: "1. Blended eCPI (Effective CPI): The actual blended cost per install factoring in both paid campaigns and downstream organic lift." },
-        { vi: "2. Tutorial Completion Rate (Activation): Tỷ lệ người chơi vượt qua ải tân thủ đầu tiên. Nếu chỉ số này thấp bất thường so với các game cùng thể loại của bạn, nhiều khả năng vấn đề nằm ở phần mở đầu của game chứ không hẳn do kênh quảng cáo.", en: "2. Tutorial Completion Rate (Activation): Percentage of installers completing the opening tutorial. If this is unusually low compared with your comparable titles, onboarding friction is the more likely culprit than ad targeting." },
-        { vi: "3. Day 1 Retention (D1): Thước đo trải nghiệm ban đầu. Mức D1 kỳ vọng khác nhau theo thể loại, thị trường và kênh; nên đặt ngưỡng dựa trên dữ liệu của chính game và các game cùng thể loại.", en: "3. Day 1 Retention (D1): The initial user satisfaction proxy. Expected D1 varies by genre, market and channel, so set thresholds from your own data and comparable titles." },
-      ] },
-      { type: "h2", text: { vi: "Trụ cột 2: Độ gắn kết & Hành vi trong game (Product Health)", en: "Pillar 2: In-Game Engagement & Product Health" } },
-      { type: "ul", items: [
-        { vi: "4. Day 7 & Day 30 Retention (D7/D30): Đo lường vòng lặp gameplay cốt lõi (Core Loop) và hệ thống bang hội/nội dung sự kiện.", en: "4. Day 7 & Day 30 Retention (D7/D30): Measures core loop resonance, guild dynamics, and liveops event sustainability." },
-        { vi: "5. DAU/MAU Stickiness Ratio: Tỷ lệ thể hiện mức độ nghiện game. Tỷ lệ càng cao cho thấy người chơi càng xem việc mở app là một thói quen hàng ngày.", en: "5. DAU/MAU Stickiness Ratio: The definitive game habit metric. The higher the ratio, the more players treat logging in as a daily routine." },
-        { vi: "6. Crash Rate & ANR (App Not Responding): Tỷ lệ sự cố kỹ thuật tính trên người dùng hoạt động hằng ngày. Theo tài liệu Android vitals của Google Play, ngưỡng hành vi xấu tổng thể là 1,09% với user-perceived crash rate và 0,47% với user-perceived ANR rate; vượt ngưỡng có thể làm giảm khả năng hiển thị của game trên Google Play.", en: "6. Crash & ANR Rate: Technical error rate measured per daily active user. Per Google Play's Android vitals documentation, the overall bad behavior threshold is 1.09% for the user-perceived crash rate and 0.47% for the user-perceived ANR rate; exceeding them may reduce the game's visibility on Google Play." },
-      ] },
-      {
-        type: "image",
-        src: "/blog-covers/growth-analytics-chart.jpg",
-        alt: { vi: "Biểu đồ phân tích cohort LTV và tỷ lệ hoàn vốn ROAS theo ngày", en: "Cohort-based LTV curve and cumulative ROAS progression chart" },
-        caption: { vi: "Theo dõi đường cong LTV theo cohort giúp đội ngũ tự tin nâng ngân sách quảng cáo cho các nhóm người chơi sinh lời cao.", en: "Cohort LTV progression curves empower teams to confidently scale ad spend for high-monetizing player segments." },
-      },
-      { type: "h2", text: { vi: "Trụ cột 3: Hiệu quả kinh doanh & Kiếm tiền (Monetization)", en: "Pillar 3: Monetization & Revenue Telemetry" } },
-      { type: "ul", items: [
-        { vi: "7. First-Time Payer Conversion (%): Tỷ lệ người chơi phát sinh giao dịch đầu tiên. Các gói ưu đãi '1 USD/20.000 VNĐ tân thủ' được thiết kế để đẩy mạnh chỉ số này.", en: "7. First-Time Payer Conversion (%): The share of players converting into spenders. Starter packs ($0.99) are specifically engineered to optimize this metric." },
-        { vi: "8. ARPPU (Average Revenue Per Paying User): Mức chi tiêu trung bình của nhóm game thủ nạp tiền, chỉ số then chốt để phân loại nhóm cá voi (Whales) và cá heo (Dolphins).", en: "8. ARPPU (Average Revenue Per Paying User): Average spend among paying players, crucial for segmenting VIP whales and core dolphins." },
-        { vi: "9. Cumulative ROAS D7 / D30 / D90: Tỷ lệ hoàn vốn đầu tư quảng cáo lũy kế theo ngày kể từ khi cài đặt.", en: "9. Cumulative ROAS D7 / D30 / D90: Cumulative return on ad spend tracked over 7, 30, and 90-day intervals post-install." },
-        { vi: "10. LTV Realization vs. CAC: Tỷ lệ Giá trị trọn đời trên Chi phí thu nạp (LTV/CAC). LTV cần vượt CAC với biên đủ rộng để bù chi phí vận hành và rủi ro; mức mục tiêu cụ thể tùy thể loại và mô hình kinh doanh.", en: "10. LTV Realization vs. CAC: Lifetime Value to Customer Acquisition Cost ratio. LTV must exceed CAC by a margin wide enough to cover operating costs and risk; the target depends on genre and business model." },
-      ] },
-      { type: "quote", text: {
-        vi: "Dữ liệu không tự đưa ra quyết định. Một dashboard xuất sắc là chiếc la bàn cảnh báo ngay khi một chỉ số trượt khỏi ngưỡng an toàn để đội ngũ can thiệp kịp thời.",
-        en: "Data never makes decisions on its own. An exceptional dashboard acts as an early radar, triggering immediate intervention the moment a metric drifts outside safe thresholds.",
       } },
     ],
   },
