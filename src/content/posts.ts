@@ -1669,43 +1669,6 @@ export const builtinPosts: Post[] = [
     ],
   },
   {
-    slug: "soft-launch-game-mobile-do-gi-truoc-global-launch",
-    slug_en: "mobile-game-soft-launch-4-golden-metric-clusters",
-    title: { vi: "Soft launch game mobile: 4 nhóm chỉ số vàng cần kiểm chứng trước Global Launch", en: "Mobile Game Soft Launch: 4 Golden Metric Clusters to Validate Before Global Launch" },
-    excerpt: { vi: "Soft launch không phải là một bản phát hành thu nhỏ để kiếm vài lượt cài đặt. Đây là nơi rẻ nhất để phát hiện lỗi kỹ thuật và rò rỉ phễu nạp trước khi bung hàng triệu USD cho ngày mở rộng toàn cầu.", en: "A soft launch is not a miniature release to harvest early installs. It is the most cost-effective stage to catch technical bottlenecks and monetization leaks before scaling global budgets." },
-    category: { vi: "Vận hành Game", en: "Game Operations" }, date: "2026-08-17", readingTime: 5, author: "ANBU Team", color: "from-teal-700 to-navy-900", variant: "game",
-    cover: "/blog-covers/soft-launch-measurement.jpg",
-    sources: [
-      { label: { vi: "Google Play Console: Testing Tracks Guide", en: "Google Play Console: Testing Tracks Guide" }, href: "https://support.google.com/googleplay/android-developer/answer/9845334" },
-      { label: { vi: "Unity Gaming Services: Soft Launch Best Practices", en: "Unity Gaming Services: Soft Launch Best Practices" }, href: "https://unity.com/solutions/gaming-services" },
-      { label: { vi: "Google Play Console: Ngưỡng 'bad behavior' của Android vitals", en: "Google Play Console: Android vitals bad behavior thresholds" }, href: "https://support.google.com/googleplay/android-developer/answer/9844486" },
-    ],
-    body: [
-      { type: "p", text: {
-        vi: "Soft launch game mobile là giai đoạn thử nghiệm có kiểm soát nhằm kiểm chứng các giả thuyết quan trọng nhất của sản phẩm: người chơi có hiểu giá trị game không, thiết bị tầm trung có vận hành mượt mà không, onboarding có kích hoạt hành vi đúng không và đội ngũ LiveOps có đủ sức giải quyết sự cố hay không. Sai sót được phát hiện và sửa ở giai đoạn này thường tốn ít chi phí hơn nhiều so với khi đã đổ toàn lực ngân sách vào chiến dịch phát hành toàn cầu (Global Launch).",
-        en: "A mobile game soft launch is a controlled testing window engineered to validate critical product hypotheses: do players grasp the core gameplay fantasy, does the client run smoothly on mid-tier hardware, does onboarding trigger the right progression loop, and can live operations sustain player support? Identifying and resolving flaws here costs a fraction of fixing them post-global launch.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/soft-launch-measurement.jpg",
-        alt: { vi: "Khung đo lường 4 nhóm chỉ số kỹ thuật và vận hành trong giai đoạn Soft Launch", en: "4-cluster operational telemetry framework during mobile game soft launch" },
-        caption: { vi: "Kiểm chứng 4 nhóm chỉ số kỹ thuật, trải nghiệm sản phẩm, kinh tế in-app và vận hành thực tế trước khi mở rộng quy mô quảng cáo.", en: "Validating technical stability, onboarding funnels, in-app economy, and operational SLAs before scaling acquisition." },
-      },
-      { type: "h2", text: { vi: "1. Bốn nhóm chỉ số vàng cần kiểm chứng", en: "1. The Four Golden Metric Clusters" } },
-      { type: "ul", items: [
-        { vi: "Chất lượng Kỹ thuật & Độ tương thích thiết bị: Crash Rate và tỷ lệ ứng dụng không phản hồi ANR (nằm dưới ngưỡng 'bad behavior' của Android vitals trên Google Play), Thời gian tải game lần đầu và mức độ ngốn pin trên các dòng máy Android phổ biến.", en: "Technical Stability & Device Compatibility: Crash and ANR rates (kept below Google Play's Android vitals bad-behavior thresholds), initial asset load times, and thermal battery draw across benchmark Android devices." },
-        { vi: "Hiệu quả Onboarding & Giữ chân: Tỷ lệ hoàn thành ải hướng dẫn (Tutorial Completion), D1 Retention và D7 Retention (đối chiếu với mốc tham chiếu theo thể loại và thị trường mục tiêu) và thời lượng chơi trung bình mỗi phiên (Session Length).", en: "Onboarding & Retention Telemetry: Tutorial completion rates, Day 1 and Day 7 retention (against reference points for your genre and target market), and average daily session duration." },
-        { vi: "Kinh tế In-App & Chuyển đổi nạp tiền: First-Time Payer Conversion, ARPDAU sơ bộ và hành vi tiêu dùng tiền tệ không trả phí (Free Currency Sink).", en: "In-App Economy & Monetization: First-time payer conversion, preliminary ARPDAU, and free-to-play currency sink mechanics." },
-        { vi: "Năng lực Vận hành & Chăm sóc khách hàng: Thời gian phản hồi Ticket khiếu nại (theo SLA nội bộ đã đặt ra), tỷ lệ lỗi giao dịch thanh toán và đo lường cảm xúc cộng đồng (Community Sentiment).", en: "Operational SLAs & LiveOps Readiness: Ticket resolution times (against your own SLA), payment gateway failure rates, and community sentiment scoring." },
-      ] },
-      { type: "h2", text: { vi: "2. Nguyên tắc phân bổ thị trường Soft Launch thông minh", en: "2. Strategic Market Selection for Soft Launch" } },
-      { type: "p", text: {
-        vi: "Hãy chọn các quốc gia có hành vi người chơi và phân khúc thiết bị tương đồng với thị trường mục tiêu nhưng có chi phí mua người dùng (CPI) rẻ hơn (ví dụ: Philippines, Indonesia hoặc Thái Lan trước khi đánh vào thị trường Đông Nam Á hoặc Global).",
-        en: "Select testing territories that mirror target player demographics and hardware distributions but offer significantly lower acquisition costs (CPI): such as the Philippines or Thailand prior to broader Southeast Asian or global rollouts.",
-      } },
-    ],
-  },
-  {
     slug: "chuong-trinh-creator-ugc-game-mobile",
     slug_en: "mobile-game-creator-programs-engineering-self-sustaining-ugc-ecosystem",
     title: { vi: "Xây dựng Creator Program cho game mobile: Nuôi dưỡng hệ sinh thái nội dung tự sinh (UGC)", en: "Mobile Game Creator Programs: Engineering a Self-Sustaining UGC Ecosystem" },
@@ -2418,38 +2381,6 @@ export const builtinPosts: Post[] = [
       { type: "p", text: {
         vi: "Một số tựa game đạt doanh thu cao trong dịp Tết nhưng lượng người chơi hoạt động sụt giảm mạnh ngay sau kỳ nghỉ. Để giữ chân dòng người chơi mới thu nạp được trong dịp Tết, NPH cần chuẩn bị sẵn một bản cập nhật lớn (Major Update) vào tuần thứ 2 sau Tết, mở khóa tính năng liên server mới hoặc chương trình tri ân bang hội để chuyển hóa người chơi giải trí ngắn hạn thành game thủ trung thành gắn bó cả năm.",
         en: "Some titles register strong revenue over Tet only to see active players drop sharply once the holiday ends. To retain new cohort influxes, publishers must schedule a Major Update in the second week post-Tet, unlocking new cross-server mechanics or guild loyalty milestones to transition festive holiday players into year-round dedicated advocates.",
-      } },
-    ],
-  },
-  {
-    slug: "seo-game-marketing-viet-nam-internal-link",
-    slug_en: "internal-linking-game-websites-building-seo-topic-clusters",
-    title: { vi: "Internal link website game: xây topic cluster cho SEO", en: "Internal linking for game websites: building SEO topic clusters" },
-    excerpt: { vi: "Hàng chục bài viết tốt nhưng không link đến nhau khiến mỗi bài phải tự gánh toàn bộ sức mạnh SEO của mình. Cách xây internal link để cả cụm bài cùng hỗ trợ nhau.", en: "Dozens of good posts that never link to each other force each one to carry its SEO weight alone. How to build internal links so the whole cluster supports itself." },
-    category: { vi: "Marketing Game", en: "Game Marketing" }, date: "2026-08-21", readingTime: 4, author: "ANBU Team", color: "from-blue-700 to-orange-600", variant: "seo",
-    cover: "/blog-covers/seo-strategy.jpg",
-    sources: [{ label: { vi: "Google Search Central: SEO Starter Guide", en: "Google Search Central: SEO Starter Guide" }, href: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" }],
-    body: [
-      { type: "p", text: {
-        vi: "Website game có thể tăng độ phủ tìm kiếm bằng cách liên kết bài viết theo hành trình: thị trường, chiến lược, triển khai, đo lường và case study. Mỗi link cần giúp người đọc trả lời câu hỏi tiếp theo, chứ không chỉ nhét thêm một đường link cho có. Nhiều website game có hàng chục bài viết tốt nhưng chúng nằm cô lập, không link đến nhau, kết quả là mỗi bài phải tự gánh toàn bộ sức mạnh SEO của mình thay vì được cả cụm bài hỗ trợ.",
-        en: "A game website can grow search visibility by linking content along the journey: market, strategy, execution, measurement and case studies. Each link should answer the reader's next question, not just be inserted for the sake of having a link. Many game websites have dozens of solid posts that sit isolated, never linking to each other, the result is that each post has to carry its entire SEO weight alone instead of being supported by a whole content cluster.",
-      } },
-      {
-        type: "image",
-        src: "/blog-covers/seo-strategy.jpg",
-        alt: { vi: "Cấu trúc Topic Cluster và hệ thống Internal Link tối ưu SEO cho website game", en: "Topic cluster architecture and internal linking structure for game SEO" },
-        caption: { vi: "Liên kết nội bộ có chủ đích giúp Googlebot thu thập dữ liệu nhanh và đẩy mạnh sức mạnh cụm bài viết.", en: "Intentional internal links accelerate crawl efficiency and amplify topic cluster authority." },
-      },
-      { type: "h2", text: { vi: "Nguyên tắc liên kết", en: "Linking principles" } },
-      { type: "ul", items: [
-        { vi: "Dẫn từ bài rộng (pillar) đến bài chuyên sâu (cluster) và ngược lại", en: "Link from broad pillar pages to deep cluster pages and back" },
-        { vi: "Dùng anchor text mô tả đúng nội dung trang đích, không dùng \"xem thêm\" hay \"tại đây\"", en: "Use anchor text that accurately describes the destination, not generic \"read more\" or \"here\"" },
-        { vi: "Ưu tiên link đến trang có giá trị chuyển đổi (trang dịch vụ, trang liên hệ) từ các bài viết có traffic cao", en: "Prioritize linking to conversion-relevant pages (service, contact) from high-traffic posts" },
-      ] },
-      { type: "h2", text: { vi: "Kiểm tra link định kỳ", en: "Audit links regularly" } },
-      { type: "p", text: {
-        vi: "Xóa link hỏng, cập nhật bài cũ và kiểm tra các bài mới đã được nối vào cluster đúng chỗ hay chưa. Cấu trúc tốt giúp cả người dùng lẫn crawler khám phá website dễ hơn, và với ANBU, đây thường là hạng mục rẻ nhất trong toàn bộ chiến lược SEO, vì không cần viết nội dung mới, chỉ cần sắp xếp lại những gì đã có.",
-        en: "Remove broken links, refresh older posts and confirm new articles are properly connected into the cluster. A strong structure helps both users and crawlers discover the site more easily, and in ANBU's experience, this is usually the cheapest item in an entire SEO strategy, since it requires no new content, only reorganizing what already exists.",
       } },
     ],
   },

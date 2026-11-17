@@ -31,7 +31,6 @@ export const blogViToEnSlug: Record<string, string> = {
   "influencer-game-mobile-do-luong-hieu-qua": "measuring-influencer-marketing-mobile-games-beyond-vanity-views",
   "tang-ty-le-chuyen-doi-trang-app-store-google-play": "improving-app-store-google-play-conversion-rates-3-second-rule",
   "community-launch-game-mobile-90-ngay": "90-day-community-playbook-launching-sustaining-mobile-game-retention",
-  "soft-launch-game-mobile-do-gi-truoc-global-launch": "mobile-game-soft-launch-4-golden-metric-clusters",
   "chuong-trinh-creator-ugc-game-mobile": "mobile-game-creator-programs-engineering-self-sustaining-ugc-ecosystem",
   "seo-game-mobile-xay-dung-topic-cluster": "mobile-game-seo-building-topic-clusters-dominate-search",
   "game-mobile-onboarding-tang-activation": "mobile-game-onboarding-5-golden-rules-maximize-first-session",
@@ -48,7 +47,6 @@ export const blogViToEnSlug: Record<string, string> = {
   "game-mobile-analytics-dashboard-can-co": "mobile-game-analytics-dashboard-10-core-metrics-growth",
   "game-mobile-community-discord-viet-nam": "building-running-gaming-discord-community-vietnam-practical-playbook",
   "marketing-game-mobile-mua-tet-viet-nam": "tet-gaming-marketing-vietnam-cultural-liveops-revenue-acceleration",
-  "seo-game-marketing-viet-nam-internal-link": "internal-linking-game-websites-building-seo-topic-clusters",
   "ab-test-store-listing-game-mobile-nen-thu-gi": "mobile-game-store-listing-ab-tests-what-to-test",
   "ban-dia-hoa-tu-khoa-va-tieng-long-game-tai-viet-nam": "game-keyword-slang-localization-vietnam-decoding-gamer-vernacular",
   "xu-ly-creative-fatigue-quang-cao-game-mobile": "overcoming-creative-fatigue-mobile-game-ua-early-warning-signals",
@@ -91,6 +89,11 @@ export const blogEnToViSlug: Record<string, string> = Object.fromEntries(
 // of 404ing. Add both the old vi slug and old slug_en whenever a post is
 // deleted this way.
 export const mergedPostRedirects: Record<string, string> = {
+  // Merged posts (same search intent): old slug (vi or en) -> surviving vi slug.
+  "soft-launch-game-mobile-do-gi-truoc-global-launch": "soft-launch-game-mobile-viet-nam",
+  "mobile-game-soft-launch-4-golden-metric-clusters": "soft-launch-game-mobile-viet-nam",
+  "seo-game-marketing-viet-nam-internal-link": "seo-game-mobile-xay-dung-topic-cluster",
+  "internal-linking-game-websites-building-seo-topic-clusters": "seo-game-mobile-xay-dung-topic-cluster",
   // Renamed posts (Vietnamese-slug cleanup / tidied EN slugs): old slug (vi or en) -> current vi slug.
   "game-mobile-ugc-creator-program": "chuong-trinh-creator-ugc-game-mobile",
   "kpi-community-manager-game-mobile": "bo-kpi-cho-community-manager-game-mobile",
