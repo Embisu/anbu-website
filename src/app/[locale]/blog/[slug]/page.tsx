@@ -16,6 +16,7 @@ import EditorialMedia, { editorialImageForPostData } from "@/components/Editoria
 import { PostCard } from "@/components/cards";
 import ClientCustomPostViewer from "@/components/ClientCustomPostViewer";
 import PostComments from "@/components/PostComments";
+import PostServiceLinks from "@/components/PostServiceLinks";
 import { renderRichText } from "@/lib/renderRichText";
 import ResilientImage from "@/components/ResilientImage";
 
@@ -640,6 +641,7 @@ export default async function BlogPostPage({
                 );
               });
             })()}
+            <PostServiceLinks slug={post.slug} locale={locale} />
             {post.sources?.length ? (
               <aside className="mt-10 rounded-3xl border border-navy-100 bg-cloud p-6">
                 <h2 className="font-display text-lg font-bold text-navy-800">

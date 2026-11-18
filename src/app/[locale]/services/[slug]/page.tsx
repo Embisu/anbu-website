@@ -7,6 +7,8 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { services, getService } from "@/content/services";
 import { serviceNarrativeBySlug } from "@/content/serviceNarrative";
 import { projects } from "@/content/projects";
+import { posts } from "@/content/posts";
+import { postsForService } from "@/content/postRelations";
 import { t } from "@/content/site";
 import { buildMetadata, siteUrl, breadcrumbLd } from "@/lib/seo";
 import { localePath } from "@/lib/utils";
@@ -152,6 +154,7 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
+  const relatedPosts = postsForService(posts, service.slug, 4);
   const narrative = serviceNarrativeBySlug[service.slug];
   const relatedProjects = projects
     .filter((project) => project.services.some((item) => {
@@ -336,6 +339,30 @@ export default async function ServiceDetailPage({
             </Reveal>
           </section>
         </>
+      )}
+
+      {relatedPosts.length > 0 && (
+        <section className="container-x py-14 sm:py-16">
+          <Reveal>
+            <span className="eyebrow">{locale === "vi" ? "Kiến thức liên quan" : "Related reading"}</span>
+            <h2 className="mt-3 font-display text-2xl font-bold text-navy-800 sm:text-3xl">
+              {locale === "vi" ? "Bài viết về chủ đề này" : "Articles on this topic"}
+            </h2>
+          </Reveal>
+          <ul className="mt-8 grid gap-4 md:grid-cols-2">
+            {relatedPosts.map((p) => (
+              <li key={p.slug} className="rounded-2xl border border-navy-100 bg-white p-5">
+                <Link
+                  href={localizeBlogPath(localePath(locale, `/blog/${p.slug}`))}
+                  className="font-display text-base font-bold leading-snug text-navy-800 hover:text-orange-600"
+                >
+                  {t(p.title, locale)}
+                </Link>
+                <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-navy-500">{t(p.excerpt, locale)}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {relatedProjects.length > 0 && (
