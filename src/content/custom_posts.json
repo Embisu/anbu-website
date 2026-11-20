@@ -1,5 +1,621 @@
 [
   {
+    "slug": "thi-truong-game-viet-nam-2026-giu-chan-nguoi-choi-cong-dong-creator-esports",
+    "slug_en": "vietnam-gaming-market-2026-revenue-up-downloads-flat-community-creators-esports",
+    "title": {
+      "vi": "Doanh thu game Việt Nam tăng, lượt tải chững lại: vai trò của cộng đồng, creator, esports",
+      "en": "Vietnam Gaming Revenue Up, Downloads Flat: The Role of Community, Creators and Esports"
+    },
+    "excerpt": {
+      "vi": "Doanh thu game mobile Việt Nam tăng nhưng lượt tải đi ngang. Bài xem ba dấu mốc năm 2026 (GameVerse, FFWS, GAM Esports) chứng minh được gì, chưa chứng minh được gì, và năm việc nhà phát hành nên làm để giữ chân người chơi.",
+      "en": "Vietnam's mobile game revenue is growing while downloads are flat. This article reads three 2026 milestones (GameVerse, FFWS, GAM Esports) for what they prove and do not prove, and sets out five things publishers should do to retain players."
+    },
+    "category": {
+      "vi": "Marketing Game",
+      "en": "Game Marketing"
+    },
+    "date": "2026-11-20",
+    "readingTime": 11,
+    "cover": "/blog-media/1794600000000-vn2026-cover.jpg",
+    "cover_en": "/blog-media/1794600000000-vn2026-cover.jpg",
+    "focal": "50% 50%",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "Gamota - Vietnam Mobile Gaming Year in Review 2025",
+          "en": "Gamota - Vietnam Mobile Gaming Year in Review 2025"
+        },
+        "href": "https://gamota.com/gamota-lab/reports/gamota-releases-vietnam-mobile-gaming-year-in-review-2025/"
+      },
+      {
+        "label": {
+          "vi": "AppsFlyer - State of App Marketing in Vietnam 2025 Edition",
+          "en": "AppsFlyer - State of App Marketing in Vietnam 2025 Edition"
+        },
+        "href": "https://www.appsflyer.com/resources/reports/app-marketing-vietnam/"
+      },
+      {
+        "label": {
+          "vi": "Mobidictum - Vietnam Mobile Game Report 2025 (tóm tắt báo cáo GameGeek)",
+          "en": "Mobidictum - Vietnam Mobile Game Report 2025 (summary of the GameGeek report)"
+        },
+        "href": "https://mobidictum.com/vietnam-mobile-game-report-2025/"
+      },
+      {
+        "label": {
+          "vi": "Cổng Thông tin chính thức về Game Online - Vietnam GameVerse 2026 lập kỷ lục 35.000 lượt khách",
+          "en": "Official Online Games portal - Vietnam GameVerse 2026 sets a record with 35,000 visitors"
+        },
+        "href": "https://game.gov.vn/tin-tuc/vietnam-gameverse-2026-lap-ky-luc-35000-luot-khach-ngay-mua-dau-thu-phi-vcge"
+      },
+      {
+        "label": {
+          "vi": "Nhân Dân - Ngày hội Game Việt Nam lần đầu bán vé, hướng tới mục tiêu đưa game Việt ra biển lớn",
+          "en": "Nhân Dân - Vietnam's game festival sells tickets for the first time, aiming to take Vietnamese games abroad"
+        },
+        "href": "https://nhandan.vn/post-940034.html"
+      },
+      {
+        "label": {
+          "vi": "VnExpress - Khai mạc Vietnam GameVerse 2026",
+          "en": "VnExpress - Vietnam GameVerse 2026 opens"
+        },
+        "href": "https://vnexpress.net/khai-mac-vietnam-gameverse-2026-5071387.html"
+      },
+      {
+        "label": {
+          "vi": "VnExpress - Vietnam GameVerse 2026 mở bán vé",
+          "en": "VnExpress - Vietnam GameVerse 2026 opens ticket sales"
+        },
+        "href": "https://vnexpress.net/vietnam-gameverse-2026-mo-ban-ve-5053799.html"
+      },
+      {
+        "label": {
+          "vi": "Vietnam News - Vietnam GameVerse 2026 affirms the importance of the local game industry",
+          "en": "Vietnam News - Vietnam GameVerse 2026 affirms the importance of the local game industry"
+        },
+        "href": "https://vietnamnews.vn/life-style/1780992/vietnam-gameverse-2026-affirms-the-importance-of-local-game-industry.html"
+      },
+      {
+        "label": {
+          "vi": "Cục Thể dục thể thao Việt Nam - SECRET WAG đăng quang vô địch Giải Free Fire Đông Nam Á 2026",
+          "en": "Vietnam Sports Administration - SECRET WAG crowned champions of the Free Fire Southeast Asia 2026 tournament"
+        },
+        "href": "https://tdtt.gov.vn/chuyen-trang/chuong-trinh-cac-mon-the-thao-trong-%C4%91iem/id/95678/secret-wag-dang-quang-vo-dich-giai-free-fire-dong-nam-a-2026"
+      },
+      {
+        "label": {
+          "vi": "Esports Charts - Southeast Asia becomes first FFWS regional event to surpass 500,000 Peak Viewers",
+          "en": "Esports Charts - Southeast Asia becomes first FFWS regional event to surpass 500,000 Peak Viewers"
+        },
+        "href": "https://escharts.com/news/FFWS-sea-2026-spring-viewership"
+      },
+      {
+        "label": {
+          "vi": "GAM Esports - Official Partners",
+          "en": "GAM Esports - Official Partners"
+        },
+        "href": "https://gam.gg/vi/partners"
+      },
+      {
+        "label": {
+          "vi": "Esports Foundation - 2026 Club Partner Program",
+          "en": "Esports Foundation - 2026 Club Partner Program"
+        },
+        "href": "https://www.esportsworldcup.com/clubprogram"
+      },
+      {
+        "label": {
+          "vi": "Vietnam News - Vietnamese esports club to join 2026 Esports Foundation Club Partner Programme",
+          "en": "Vietnam News - Vietnamese esports club to join 2026 Esports Foundation Club Partner Programme"
+        },
+        "href": "https://vietnamnews.vn/sports/1778790/vietnamese-esports-club-to-join-2026-esports-foundation-club-partner-programme.html"
+      },
+      {
+        "label": {
+          "vi": "Tilleke & Gibbins (Conventus Law) - A closer look at Vietnam's Decree 147 on internet services and online information",
+          "en": "Tilleke & Gibbins (Conventus Law) - A closer look at Vietnam's Decree 147 on internet services and online information"
+        },
+        "href": "https://conventuslaw.com/report/a-closer-look-at-vietnams-decree-147-on-internet-services-and-online-information/"
+      },
+      {
+        "label": {
+          "vi": "DataReportal - Digital 2026: Vietnam",
+          "en": "DataReportal - Digital 2026: Vietnam"
+        },
+        "href": "https://datareportal.com/reports/digital-2026-vietnam"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Năm 2025, doanh thu game mobile tại Việt Nam ước đạt 825 triệu USD, tăng 9,16% so với năm trước, với khoảng 54 triệu người chơi (Gamota). Lượt tải không tăng theo: AppsFlyer mô tả lượt cài đặt ứng dụng tại Việt Nam đã đi ngang sau giai đoạn tăng mạnh từ 2018, và báo cáo GameGeek ghi tổng lượt tải giảm nhẹ trong giai đoạn 2024–2025, từ 2% (AppsFlyer) đến 9% (Sensor Tower). Các nguồn này khác phạm vi và cách đo, nên bài xem chúng là tín hiệu chứ chưa phải kết luận. Tín hiệu đó gợi ý rằng thị trường đang lớn lên nhờ người đã chơi nhiều hơn nhờ người mới, nên với nhà phát hành quốc tế, giữ chân người chơi hiện có quan trọng hơn chạy theo lượt tải.",
+          "en": "In 2025, mobile game revenue in Vietnam was estimated at USD 825 million, up 9.16% year on year, with about 54 million players (Gamota). Downloads did not follow: AppsFlyer describes app installs in Vietnam as flat after strong growth from 2018, and the GameGeek report records total downloads slipping over 2024–2025, by 2% (AppsFlyer) to 9% (Sensor Tower). These sources differ in scope and in how they measure, so this article treats them as signals, not conclusions. The signal suggests the market is growing because existing players are spending more, not because new players are arriving, so for international publishers, keeping current players matters more than chasing downloads."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bài này lập luận rằng ở Việt Nam, việc giữ chân đó dựa vào ba thứ: cộng đồng người chơi, creator và esports. Để kiểm tra lập luận, bài xem ba dấu mốc của năm 2026, mỗi dấu mốc đi kèm câu hỏi nó chứng minh được gì và chưa chứng minh được gì:",
+          "en": "This article argues that in Vietnam, that retention rests on three things: the player community, creators and esports. To test the argument, it looks at three milestones of 2026, each with the question of what it proves and what it does not:"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "Vietnam GameVerse 2026 có 35.000 lượt khách trong hai ngày, nhưng thấp hơn mức 50.000–60.000 mà các báo ghi nhận là kỳ vọng.",
+            "en": "Vietnam GameVerse 2026 drew 35,000 visitors over two days, below the 50,000–60,000 that the press reported as the expectation."
+          },
+          {
+            "vi": "SECRET WAG vô địch FFWS SEA 2026 Spring với giải thưởng 2,6 tỷ đồng. Đỉnh số người xem đạt khoảng 599.000 theo Esports Charts.",
+            "en": "SECRET WAG won FFWS SEA 2026 Spring with a prize of VND 2.6 billion. Peak viewership reached about 599,000 according to Esports Charts."
+          },
+          {
+            "vi": "GAM Esports tự giới thiệu là CLB Việt Nam duy nhất trong Club Partner Program 2026 của Esports Foundation.",
+            "en": "GAM Esports describes itself as the only Vietnamese club in the Esports Foundation's 2026 Club Partner Program."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "1. Doanh thu tăng, lượt tải chững lại: vì sao giữ chân người chơi quan trọng hơn",
+          "en": "1. Revenue is up, downloads have stalled: why retention matters more"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794600000000-vn2026-dice.jpg",
+        "src_en": "/blog-media/1794600000000-vn2026-dice.jpg",
+        "alt": {
+          "vi": "Doanh thu tăng, lượt tải chững lại: vì sao giữ chân người chơi quan trọng hơn bao giờ hết",
+          "en": "Revenue grows, downloads stagnate: why player retention matters more than ever"
+        },
+        "caption": {
+          "vi": "Doanh thu tăng, lượt tải chững lại: giữ chân người chơi là bài toán chính.",
+          "en": "Revenue grows, downloads stagnate: retention is the main question."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Các số liệu công khai về thị trường game mobile Việt Nam năm 2025 cho thấy doanh thu tăng trong khi lượt tải không tăng theo.",
+          "en": "Public figures for Vietnam's mobile game market in 2025 show revenue rising while downloads did not follow."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo báo cáo Vietnam Mobile Gaming Year in Review 2025 của Gamota, Việt Nam có khoảng 54 triệu người chơi game mobile. Doanh thu thị trường năm 2025 ước tính đạt 825 triệu USD, tăng 9,16% so với năm trước. Đây là ước tính của một nguồn. Mobidictum, tóm tắt báo cáo GameGeek, nêu doanh thu mua trong ứng dụng ước tính tăng 83% năm 2025, không nêu nguồn dữ liệu hay đơn vị tiền tệ và gắn với các studio Việt Nam. Con số này khác phạm vi với mức tăng 9,16% của toàn thị trường trong báo cáo Gamota nên không so sánh trực tiếp được.",
+          "en": "According to Gamota's Vietnam Mobile Gaming Year in Review 2025, Vietnam has about 54 million mobile players. Market revenue in 2025 is estimated at USD 825 million, up 9.16% year on year. This is one source's estimate. Mobidictum, summarizing the GameGeek report, says in-app purchase revenue grew an estimated 83% in 2025, without naming its data source or currency, and ties the figure to Vietnamese studios. That figure covers a different scope from the 9.16% growth of the whole market in the Gamota report, so the two cannot be compared directly."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với lượt tải, các nguồn chỉ cho tín hiệu chưa rõ. Theo AppsFlyer, lượt cài đặt ứng dụng tại Việt Nam, tính cả các lĩnh vực ngoài game, đã đi ngang sau giai đoạn tăng mạnh từ 2018. Mobidictum, tóm tắt báo cáo GameGeek, ghi tổng lượt tải giảm nhẹ trong giai đoạn 2024–2025, từ 2% (theo AppsFlyer) đến 9% (theo Sensor Tower), nhưng không nêu rõ phạm vi (quốc gia, hệ điều hành, game hay mọi ứng dụng).",
+          "en": "On downloads, the sources give only an unclear signal. According to AppsFlyer, app installs in Vietnam, across all categories and not only games, have flattened after strong growth since 2018. Mobidictum, summarizing the GameGeek report, records total downloads slipping slightly over 2024–2025, by 2% (per AppsFlyer) to 9% (per Sensor Tower), but does not state the scope (country, operating system, games or all apps)."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Doanh thu tăng trong khi lượt tải đi ngang hoặc giảm nhẹ gợi ý rằng mức tăng đến nhiều hơn từ người đã chơi, chứ chưa chắc từ người mới. Đây là suy luận của bài, vì các số liệu đến từ nguồn và phạm vi khác nhau, và mức chi tiêu mỗi người chơi tăng cũng có thể tạo ra kết quả tương tự. Theo quan điểm của bài, với nhóm người đã chơi, nội dung từ creator, thông tin trên mạng xã hội và các cuộc thảo luận về sự kiện trong game là cách nhà phát hành duy trì sự quan tâm sau ra mắt, nên cộng đồng là một phần của trải nghiệm game, không chỉ là kênh truyền thông.",
+          "en": "Revenue rising while downloads stay flat or dip slightly suggests the growth comes more from people who already play than from new players, though not necessarily. This is the article's inference, because the figures come from different sources and scopes, and higher spending per player could produce the same result. In the article's view, for existing players, creator content, social media posts and discussion of in-game events are how publishers keep interest alive after launch, so the community is part of the game experience, not just a communications channel."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "2. Ba dấu mốc năm 2026: chứng minh được gì và chưa chứng minh được gì",
+          "en": "2. Three milestones of 2026: what they prove and what they do not"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bài đặt ba giả thuyết: cộng đồng và sự kiện trực tiếp kết nối người chơi, creator duy trì sự quan tâm sau ra mắt, và esports mở rộng khán giả nhưng chưa chắc mở rộng doanh thu. Ba dấu mốc dưới đây kiểm tra giả thuyết thứ nhất và thứ ba: GameVerse cho sự kiện trực tiếp, FFWS và GAM cho esports. Bài chưa có dấu mốc công khai nào cho creator, nên giả thuyết đó chỉ kiểm tra được bằng dữ liệu theo dõi riêng cho từng creator (xem phần 3). Mỗi dấu mốc được đọc theo hai câu hỏi: số liệu cho thấy điều gì, và chưa đủ để kết luận điều gì.",
+          "en": "The article sets out three hypotheses: community and live events connect players, creators sustain interest after launch, and esports widen the audience but do not necessarily widen revenue. The three milestones below test the first and third: GameVerse for live events, FFWS and GAM for esports. There is no public milestone for creators, so that hypothesis can only be tested with tracking data for each creator (see part 3). Each milestone is read through two questions: what the figures show, and what they are not enough to conclude."
+        }
+      },
+      {
+        "type": "table",
+        "caption": {
+          "vi": "Ba dấu mốc năm 2026: số liệu, điều chứng minh được và điều chưa chứng minh được.",
+          "en": "Three milestones of 2026: the figures, what they prove and what they do not."
+        },
+        "headers": [
+          {
+            "vi": "Dấu mốc",
+            "en": "Milestone"
+          },
+          {
+            "vi": "Số liệu",
+            "en": "Figures"
+          },
+          {
+            "vi": "Chứng minh được",
+            "en": "What it proves"
+          },
+          {
+            "vi": "Chưa chứng minh được",
+            "en": "What it does not prove"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "vi": "Vietnam GameVerse 2026",
+              "en": "Vietnam GameVerse 2026"
+            },
+            {
+              "vi": "35.000 lượt khách (8–9/5), thấp hơn kỳ vọng 50.000–60.000",
+              "en": "35,000 visitors (8–9 May), below the expected 50,000–60,000"
+            },
+            {
+              "vi": "Có tín hiệu về nhu cầu tham dự sự kiện game có thu phí",
+              "en": "A signal of demand for paid game events"
+            },
+            {
+              "vi": "Khách đến vì cộng đồng hay vì cosplay, B2B; tác động tới thời gian chơi và chi tiêu",
+              "en": "Whether visitors came for a game's community or for cosplay and B2B; any effect on playtime and spending"
+            }
+          ],
+          [
+            {
+              "vi": "SECRET WAG vô địch FFWS SEA 2026 Spring",
+              "en": "SECRET WAG wins FFWS SEA 2026 Spring"
+            },
+            {
+              "vi": "Hơn 300 nghìn người theo dõi trực tuyến so với hơn 1.500 khán giả trực tiếp; đỉnh khoảng 599.000 (Esports Charts)",
+              "en": "300,000+ online viewers versus 1,500+ live spectators; peak about 599,000 (Esports Charts)"
+            },
+            {
+              "vi": "Một giải Free Fire thu hút người theo dõi trực tuyến nhiều hơn rất nhiều so với khán giả trực tiếp",
+              "en": "A Free Fire tournament draws far more online followers than live spectators"
+            },
+            {
+              "vi": "Người xem là người mới hay người chơi cũ; có chuyển thành lượt tải hoặc doanh thu không",
+              "en": "Whether viewers are new or existing players; whether this turns into downloads or revenue"
+            }
+          ],
+          [
+            {
+              "vi": "GAM Esports trong Club Partner Program 2026",
+              "en": "GAM Esports in the 2026 Club Partner Program"
+            },
+            {
+              "vi": "40 câu lạc bộ; tối đa 1 triệu USD mỗi câu lạc bộ",
+              "en": "40 clubs; up to USD 1 million per club"
+            },
+            {
+              "vi": "Một tổ chức esports Việt Nam nằm trong 40 câu lạc bộ được chọn",
+              "en": "A Vietnamese esports organization is among the 40 selected clubs"
+            },
+            {
+              "vi": "GAM đóng góp bao nhiêu vào sức hút của một tựa game; hiệu quả giữ chân",
+              "en": "How much GAM adds to a game's appeal; any effect on retention"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Vietnam GameVerse 2026: 35.000 lượt khách, thấp hơn kỳ vọng",
+          "en": "Vietnam GameVerse 2026: 35,000 visitors, below expectations"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vietnam GameVerse 2026 thu hút 35.000 lượt khách trong hai ngày 8–9/5 tại Trung tâm Hội chợ và Triển lãm Sài Gòn (SECC), theo Cổng Thông tin chính thức về Game Online. Đây là năm đầu tiên sự kiện bán vé, giá 50.000 đồng một ngày hoặc 79.000 đồng cho hai ngày. Theo cổng thông tin này, 30.000 vé đã được phát hành trước ngày khai mạc; Vietnam News dẫn lời ban tổ chức cho biết hơn 30.000 vé đã bán trước khi khai mạc. Trước sự kiện, Nhân Dân (29/1/2026) ghi mức dự kiến khoảng 60.000 lượt người, còn VnExpress (8/5/2026) ghi kỳ vọng đón 50.000 lượt khách.",
+          "en": "Vietnam GameVerse 2026 drew 35,000 visitors over the two days of 8–9 May at the Saigon Exhibition and Convention Center (SECC), according to the official Online Games information portal. It was the first year the event sold tickets, at VND 50,000 for one day or VND 79,000 for two days. According to the portal, 30,000 tickets had been issued before the opening; Vietnam News quotes the organizers as saying more than 30,000 tickets had been sold before the opening. Before the event, Nhân Dân (29 Jan 2026) reported an expected figure of about 60,000 visitors, while VnExpress (8 May 2026) reported an expectation of 50,000."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo VnExpress, chương trình gồm hơn 100 gian hàng chia ba khu (Game, Wonderland, B2B), giải SEA Esports Nation Cup với các bộ môn như PUBG Mobile, Crossfire: Legends và Total Football, giao lưu cosplay quốc tế, trải nghiệm game và giao lưu người hâm mộ. Sự kiện mang chủ đề “Do Local - Go Global”; theo Vietnam News, diễn đàn Vietnam Game Forum cùng chủ đề có khoảng 300 đại biểu. Vì có cả khu B2B và các hoạt động dành cho người trong ngành, số khách có thể gồm cả người chơi lẫn người làm trong ngành, và nguồn không tách hai nhóm này.",
+          "en": "According to VnExpress, the program included more than 100 booths across three zones (Game, Wonderland, B2B), the SEA Esports Nation Cup with titles such as PUBG Mobile, Crossfire: Legends and Total Football, international cosplay exchanges, game demos and fan meetups. The event carried the theme “Do Local - Go Global”; according to Vietnam News, the Vietnam Game Forum with the same theme had about 300 delegates. Because there was a B2B zone and activities for industry professionals, the visitor count may include both players and industry staff, and the sources do not separate the two groups."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chứng minh được:** với giá vé 50.000–79.000 đồng, có tín hiệu về nhu cầu tham dự sự kiện game có thu phí: 30.000 vé được phát hành trước khai mạc và ban tổ chức cho biết hơn 30.000 vé đã bán. **Chưa chứng minh được:** người tham dự đến vì cộng đồng của một tựa game hay vì cosplay, creator và hoạt động B2B, và việc tham dự có làm tăng thời gian chơi hoặc chi tiêu trong game hay không. Các tuyên bố “kỷ lục” trong nguồn chưa có nguồn độc lập kiểm chứng.",
+          "en": "**What it proves:** at ticket prices of VND 50,000–79,000, there is a signal of demand for paid game events: 30,000 tickets were issued before the opening and the organizers say more than 30,000 were sold. **What it does not prove:** whether attendees came for a particular game's community or for cosplay, creators and B2B activities, and whether attending raises playtime or in-game spending. The “record” claims in the sources have no independent verification."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "SECRET WAG vô địch FFWS SEA 2026 Spring: số khán giả theo từng cách đo",
+          "en": "SECRET WAG wins FFWS SEA 2026 Spring: audience by each way of measuring"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tại chung kết Free Fire World Series Southeast Asia 2026 Spring diễn ra ở TP.HCM ngày 30–31/5, đội tuyển Việt Nam SECRET WAG giành chức vô địch và nhận 2,6 tỷ đồng tiền thưởng.",
+          "en": "At the Free Fire World Series Southeast Asia 2026 Spring final in Ho Chi Minh City on 30–31 May, the Vietnamese team SECRET WAG won the title and received a VND 2.6 billion prize."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo Cục Thể dục thể thao Việt Nam, vòng chung kết trong hai ngày 30–31/5 thu hút hơn 1.500 khán giả đến cổ vũ trực tiếp tại khán đài và hơn 300 nghìn người theo dõi qua các nền tảng trực tuyến. Esports Charts đo một chỉ số khác: đỉnh số người xem đạt khoảng 599.000 (598.673), và theo Esports Charts đây là lần đầu một sự kiện FFWS khu vực vượt mốc 500.000.",
+          "en": "According to the Vietnam Sports Administration, the final over the two days of 30–31 May drew more than 1,500 spectators cheering live in the stands and more than 300,000 people following on online platforms. Esports Charts measures something different: peak viewership reached about 599,000 (598,673), and according to Esports Charts this was the first regional FFWS event to pass 500,000."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chứng minh được:** một giải đấu Free Fire thu hút lượng người theo dõi trực tuyến lớn hơn rất nhiều so với số khán giả đến trực tiếp, 300 nghìn so với 1.500 theo số liệu của Cục Thể dục thể thao. **Chưa chứng minh được:** người theo dõi là người mới hay người đã chơi Free Fire, và sự quan tâm này có chuyển thành lượt tải hay doanh thu hay không. Các số liệu không tách hai nhóm này.",
+          "en": "**What it proves:** a Free Fire tournament draws far more online followers than live spectators, 300,000 versus 1,500 according to the Vietnam Sports Administration. **What it does not prove:** whether the followers are new or existing Free Fire players, and whether this interest turns into downloads or revenue. The figures do not separate the two groups."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "GAM Esports trong Club Partner Program 2026",
+          "en": "GAM Esports in the 2026 Club Partner Program"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo GAM Esports, đây là câu lạc bộ Việt Nam duy nhất trong Club Partner Program 2026 của Esports Foundation. Chương trình có 40 câu lạc bộ đối tác của Esports World Cup 2026.",
+          "en": "According to GAM Esports, it is the only Vietnamese club in the Esports Foundation's 2026 Club Partner Program. The program has 40 partner clubs for the Esports World Cup 2026."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo Esports Foundation, mỗi câu lạc bộ nhận khoản hỗ trợ cơ bản và khoản theo hiệu suất gắn với mức tăng người hâm mộ và tương tác trước và trong Esports World Cup 2026, tối đa 1 triệu USD mỗi câu lạc bộ. Chương trình không đảm bảo suất thi đấu và không mang lại lợi thế thi đấu: câu lạc bộ vẫn phải vượt qua vòng loại của từng bộ môn.",
+          "en": "According to the Esports Foundation, each club receives base support plus performance-based support tied to growth in fans and engagement before and during the Esports World Cup 2026, up to USD 1 million per club. The program does not guarantee a spot or give a competitive advantage: clubs still have to qualify in each title."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chứng minh được:** một tổ chức esports Việt Nam nằm trong 40 câu lạc bộ được Esports Foundation chọn vào mạng lưới đối tác quốc tế. **Chưa chứng minh được:** GAM đóng góp bao nhiêu vào sức hút của một tựa game cụ thể, hay việc hợp tác với câu lạc bộ có giúp nhà phát hành giữ chân người chơi hay không. Bài cũng chưa tìm được nguồn độc lập cho việc đây là câu lạc bộ Việt Nam duy nhất.",
+          "en": "**What it proves:** a Vietnamese esports organization is among the 40 clubs the Esports Foundation chose for its international partner network. **What it does not prove:** how much GAM adds to a specific game's appeal, or whether working with a club helps a publisher retain players. The article also found no independent source for this being the only Vietnamese club."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "3. Năm việc nhà phát hành quốc tế nên làm để giữ chân người chơi Việt Nam",
+          "en": "3. Five things international publishers should do to retain Vietnamese players"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu giữ chân người chơi hiện có quan trọng hơn kéo lượt tải, kế hoạch tại Việt Nam nên lấy chỉ số giữ chân làm mục tiêu chính: tỷ lệ người chơi quay lại sau 7 ngày và 30 ngày, thời gian chơi và tỷ lệ người chơi trả tiền. Số thành viên nhóm hay lượt xem video chỉ có giá trị khi chúng chuyển thành các chỉ số này. Năm việc dưới đây đi từ chuẩn bị trước ra mắt đến vận hành sau ra mắt, mỗi việc kèm chỉ số cần theo dõi và điều cần kiểm tra.",
+          "en": "If keeping existing players matters more than pulling in downloads, a Vietnam plan should make retention the main target: the share of players who return after 7 and 30 days, playtime and the share of paying players. Group membership or video views only matter when they turn into these metrics. The five actions below run from pre-launch preparation to post-launch operations, each with the metric to track and what to check."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794600000000-vn2026-steps.jpg",
+        "src_en": "/blog-media/1794600000000-vn2026-steps.jpg",
+        "alt": {
+          "vi": "Năm việc nhà phát hành quốc tế nên làm để giữ chân người chơi Việt Nam",
+          "en": "Five things international game publishers should do to retain Vietnamese players"
+        },
+        "caption": {
+          "vi": "Năm việc nhà phát hành quốc tế nên làm để giữ chân người chơi Việt Nam.",
+          "en": "Five things international publishers should do to retain Vietnamese players."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Kiểm tra điều kiện pháp lý và vận hành trước khi chạy chiến dịch",
+          "en": "Check legal and operating conditions before running a campaign"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo bản tóm tắt Nghị định 147/2024 (có hiệu lực từ 25/12/2024) của Tilleke & Gibbins, game có nhiều người chơi tương tác qua máy chủ (nhóm G1) cần giấy phép cung cấp dịch vụ và quyết định phát hành cho từng game. Nhà cung cấp phải đảm bảo chỉ người chơi khai báo đầy đủ, chính xác mới được tham gia, và không được quảng cáo game G1 khi chưa có quyết định phát hành (với game G2, G3, G4 là chưa có xác nhận thông báo phát hành). Đơn vị nước ngoài cung cấp dịch vụ cho người dùng Việt Nam phải thành lập doanh nghiệp tại Việt Nam.",
+          "en": "According to Tilleke & Gibbins' summary of Decree 147/2024 (effective 25 December 2024), games where many players interact through a server (group G1) need a service license and a release decision for each game. The provider must ensure that only players who give complete and accurate information can take part, and must not advertise a G1 game before it has a release decision (for G2, G3 and G4 games, before the release notification is confirmed). Foreign entities serving Vietnamese users must establish a company in Vietnam."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chỉ số theo dõi:** tỷ lệ người chơi hoàn tất bước khai báo thông tin trên tổng số người cài đặt, vì bước này nằm giữa lượt tải và lượt chơi đầu tiên. **Cần kiểm tra:** đây là tóm tắt thứ cấp từ năm 2025, không phải văn bản nghị định, và nghị định đã và đang được sửa đổi, bổ sung sau thời điểm tóm tắt nên cần đối chiếu văn bản hiện hành trên Công báo. Trước khi lên kế hoạch truyền thông và creator, nhà phát hành cần xác nhận với tư vấn pháp lý hoạt động nào được tính là quảng cáo, và phương thức thanh toán nào sẽ được hỗ trợ.",
+          "en": "**Metric to track:** the share of players who complete the information step out of all installs, because this step sits between the download and the first session. **What to check:** this is a secondary summary from 2025, not the decree itself, and the decree has been and is still being amended since the summary, so the current text must be checked in the Official Gazette. Before planning communications and creator work, a publisher should confirm with legal counsel which activities count as advertising and which payment methods will be supported."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Xây dựng cộng đồng trên các nền tảng người chơi đang dùng",
+          "en": "Build the community on the platforms players already use"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "DataReportal ghi nhận 79,0 triệu danh tính người dùng mạng xã hội tại Việt Nam vào tháng 10/2025, tương đương 77,6% dân số (có thể không phải 79,0 triệu người riêng biệt). Facebook, TikTok, YouTube và Zalo có phạm vi tiếp cận từ khoảng 62 đến 79 triệu người, theo số liệu do chính nền tảng báo cáo. Nhà phát hành có thể bắt đầu cộng đồng chính thức tại các hội nhóm Facebook và Discord với nội dung giới thiệu gameplay và phản hồi từ người chơi.",
+          "en": "DataReportal records 79.0 million social media user identities in Vietnam in October 2025, equal to 77.6% of the population (which may not be 79.0 million unique people). Facebook, TikTok, YouTube and Zalo reach roughly 62 to 79 million people, according to figures reported by the platforms themselves. A publisher can start an official community in Facebook groups and on Discord with gameplay content and player feedback."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chỉ số theo dõi:** số thành viên hoạt động hằng tuần, tỷ lệ thành viên đăng ký trước hoặc cài đặt, và tỷ lệ quay lại của nhóm này so với người chơi đến từ quảng cáo. **Cần kiểm tra:** số liệu Facebook, YouTube và TikTok là phạm vi tiếp cận quảng cáo (TikTok chỉ tính người từ 18 tuổi), không phải số người dùng hoạt động; số liệu của Zalo là người dùng hoạt động hằng tháng do VNG công bố. Các số liệu này không cho biết bao nhiêu người trong đó chơi game. Việc quảng bá trước ngày phát hành còn bị giới hạn bởi điều kiện ở mục trên.",
+          "en": "**Metric to track:** weekly active members, the share of members who pre-register or install, and how this group's return rate compares with players who arrive through ads. **What to check:** the Facebook, YouTube and TikTok figures are advertising reach (TikTok counts only people aged 18 and over), not active users; the Zalo figure is monthly active users published by VNG. None of these figures says how many of those people play games. Promotion before release is also limited by the conditions in the section above."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Chọn creator theo khả năng giữ chân, không chỉ theo lượng người theo dõi",
+          "en": "Choose creators by retention, not only by follower count"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Theo quan điểm của bài, mỗi nền tảng phù hợp với một vai trò: streamer cho trải nghiệm trực tiếp, YouTuber cho hướng dẫn chuyên sâu, TikTok creator cho việc tiếp cận nhóm người chơi mới. Lượng người theo dõi chỉ cho biết mức tiếp cận, trong khi mục tiêu của bài là giữ chân, nên cần so sánh người chơi đến từ từng creator.",
+          "en": "In the article's view, each platform suits a role: streamers for live experience, YouTubers for in-depth guides, TikTok creators for reaching new players. Follower count only shows reach, while the article's goal is retention, so players who come from each creator need to be compared."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chỉ số theo dõi:** tỷ lệ cài đặt hoặc đăng ký qua liên kết của từng creator, và tỷ lệ quay lại sau 7 ngày của nhóm người chơi đó. **Cần kiểm tra:** creator lớn mang lại nhiều lượt tiếp cận nhưng chưa chắc có nhóm người chơi ở lại lâu. Chỉ dữ liệu theo dõi riêng cho từng creator mới trả lời được.",
+          "en": "**Metric to track:** the install or sign-up rate through each creator's link, and the 7-day return rate of that group of players. **What to check:** a large creator brings a lot of reach but not necessarily a group of players who stay. Only tracking data for each creator can answer this."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Biến sự kiện theo mùa thành nội dung của người chơi",
+          "en": "Turn seasonal events into player-made content"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản cập nhật và sự kiện theo mùa là lý do để người chơi cũ quay lại. Nhà phát hành có thể gắn chúng với thử thách sáng tạo nội dung, cuộc thi cộng đồng hoặc livestream cùng creator, để người chơi vừa nhận thông tin vừa tạo ra nội dung về game.",
+          "en": "Updates and seasonal events give existing players a reason to return. A publisher can tie them to content-creation challenges, community contests or livestreams with creators, so players both receive information and create content about the game."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chỉ số theo dõi:** số người chơi quay lại trong tuần diễn ra sự kiện, và số nội dung do người chơi tạo ra cho mỗi sự kiện. **Cần kiểm tra:** sự kiện có thể kéo người chơi cũ quay lại trong ngắn hạn nhưng chưa chắc giữ họ sau khi kết thúc, nên cần xem tỷ lệ quay lại sau sự kiện.",
+          "en": "**Metric to track:** the number of players who return during the event week, and the number of player-made pieces of content per event. **What to check:** an event may pull existing players back in the short term but not necessarily keep them after it ends, so the return rate after the event needs to be checked."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Chọn mức đầu tư esports theo loại game",
+          "en": "Match the level of esports investment to the type of game"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với game có yếu tố cạnh tranh, nhà phát hành có thể bắt đầu bằng giải cộng đồng hoặc sự kiện thi đấu cùng creator trước khi làm giải chuyên nghiệp. Game casual và game thiên về trải nghiệm cá nhân nên ưu tiên hoạt động creator, sự kiện trong game và nội dung do người chơi tạo. Trường hợp FFWS ở phần 2 cho thấy giải lớn thu hút nhiều người theo dõi trực tuyến, nhưng chưa cho biết bao nhiêu người trong đó trở thành người chơi.",
+          "en": "For games with a competitive element, a publisher can start with community tournaments or creator match events before running a professional league. Casual games and games built around personal experience should prioritize creator activity, in-game events and player-made content. The FFWS case in part 2 shows a large event draws many online followers, but not how many of them become players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Chỉ số theo dõi:** số người xem hoặc tham gia giải, và tỷ lệ trong nhóm này cài đặt hoặc quay lại chơi sau giải. **Cần kiểm tra:** chi phí giải so với số người chơi thực tế mang lại. Nếu chưa đo được chuyển đổi, nên giữ quy mô nhỏ.",
+          "en": "**Metric to track:** the number of viewers or participants, and the share of this group that installs or returns to play after the tournament. **What to check:** the cost of the tournament against the number of players it actually brings. If conversion cannot be measured yet, keep the scale small."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Kết luận: giữ chân người chơi là bài toán chính, và ba yếu tố cần được đo trước khi mở rộng",
+          "en": "Conclusion: retention is the main question, and three factors must be measured before scaling"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Năm 2025, các nguồn cho thấy thị trường game mobile Việt Nam tăng doanh thu trong khi lượt tải đi ngang hoặc giảm nhẹ. Điều này gợi ý rằng cạnh tranh đang nghiêng về việc giữ chân người chơi hiện có, dù số liệu giữa các nguồn chưa thống nhất. Cộng đồng, creator và esports là ba cách duy trì sự quan tâm sau ra mắt, nhưng các dấu mốc năm 2026 mới cho thấy sức hút, chưa cho thấy hiệu quả giữ chân.",
+          "en": "In 2025, the sources show Vietnam's mobile game market growing revenue while downloads stayed flat or dipped slightly. This suggests competition is tilting toward retaining existing players, even though the figures across sources do not agree. Community, creators and esports are three ways to sustain interest after launch, but the 2026 milestones so far show pull, not retention."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ba dấu mốc gồm 35.000 lượt khách tại GameVerse, hơn 300 nghìn người theo dõi FFWS và việc GAM Esports vào chương trình đối tác của Esports World Cup đều chưa trả lời được câu hỏi người tham gia có chơi lâu hơn hoặc chi tiêu nhiều hơn hay không.",
+          "en": "The three milestones, 35,000 visitors at GameVerse, more than 300,000 FFWS followers and GAM Esports joining the Esports World Cup partner program, do not yet answer whether participants play longer or spend more."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, với nhà phát hành quốc tế, bước đầu tiên là xác nhận điều kiện pháp lý và thiết lập đo lường theo từng kênh, rồi mới mở rộng ngân sách sang kênh có tỷ lệ người chơi quay lại tốt nhất. Phần 3 liệt kê năm việc cụ thể và chỉ số đi kèm.",
+          "en": "So for an international publisher, the first step is to confirm the legal conditions and set up measurement for each channel, and only then expand budget to the channel with the best player return rate. Part 3 lists the five concrete actions and their metrics."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đọc thêm",
+          "en": "Read more"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "[Thị trường game Việt Nam 2026: cơ hội tăng trưởng nằm ở đâu?](/vi/blog/thi-truong-game-viet-nam-2026-co-hoi-tang-truong-o-dau)",
+            "en": "[Vietnam gaming market 2026: where are the growth opportunities?](/en/blog/vietnam-gaming-market-2026-where-are-the-growth-opportunities)"
+          },
+          {
+            "vi": "[Esports tại Việt Nam đang mở ra cơ hội gì cho thương hiệu?](/vi/blog/esports-tai-viet-nam-dang-mo-ra-co-hoi-gi-cho-thuong-hieu)",
+            "en": "[What opportunities does esports in Vietnam offer brands?](/en/blog/what-opportunities-does-esports-in-vietnam-offer-brands)"
+          },
+          {
+            "vi": "[Xây dựng cộng đồng game mobile tại Việt Nam](/vi/blog/xay-dung-cong-dong-game-mobile-viet-nam)",
+            "en": "[Building mobile gaming communities in Vietnam](/en/blog/building-mobile-gaming-communities-vietnam-facebook-groups-liveops)"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794600000000-vn2026-cta.jpg",
+        "src_en": "/blog-media/1794600000000-vn2026-cta.jpg",
+        "alt": {
+          "vi": "ANBU hỗ trợ nhà phát hành game tại Việt Nam và Đông Nam Á",
+          "en": "ANBU: supporting game publishers in Vietnam and Southeast Asia"
+        },
+        "caption": {
+          "vi": "ANBU đồng hành cùng nhà phát hành game tại Việt Nam và Đông Nam Á.",
+          "en": "ANBU supports game publishers in Vietnam and Southeast Asia."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "ANBU đồng hành cùng nhà phát hành tại Việt Nam và Đông Nam Á",
+          "en": "ANBU supports publishers in Vietnam and Southeast Asia"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "ANBU hỗ trợ nhà phát hành nghiên cứu thị trường, phân tích hành vi game thủ và xây dựng chiến lược Game Marketing tại Việt Nam và Đông Nam Á.",
+          "en": "ANBU helps publishers with market research, player-behavior analysis and Game Marketing strategy in Vietnam and Southeast Asia."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với các việc ở phần 3, ANBU có thể tham gia ở khâu hợp tác với creator qua dịch vụ [Influencer & KOL/KOC Marketing](/vi/services/influencer-marketing), phát triển cộng đồng và triển khai chiến dịch ra mắt qua [Game & App Marketing](/vi/services/game-app-marketing), tối ưu hoạt động LiveOps, và triển khai creator, esports trong khu vực qua [Marketing Esports & Gaming Influencer Đông Nam Á](/vi/services/esports-gaming-marketing-sea). Điều kiện pháp lý ở mục đầu của phần 3 cần tư vấn pháp lý riêng.",
+          "en": "For the actions in part 3, ANBU can take part in creator partnerships through [Influencer & KOL/KOC Marketing](/en/services/influencer-marketing), community building and launch campaigns through [Game & App Marketing](/en/services/game-app-marketing), LiveOps optimization, and creator and esports work in the region through [Esports & Gaming Influencer Marketing Agency in Southeast Asia](/en/services/esports-gaming-marketing-sea). The legal conditions in the first item of part 3 need separate legal advice."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Liên hệ ANBU để cùng xây dựng chiến lược phát triển game tại Việt Nam.](/vi/contact)",
+          "en": "[Contact ANBU to build your game's growth strategy in Vietnam.](/en/contact)"
+        }
+      }
+    ]
+  },
+  {
     "slug": "esports-marketing-thailand-game-moi-co-nen-to-chuc-giai-dau-rieng",
     "slug_en": "esports-marketing-thailand-should-a-new-game-run-its-own-tournament",
     "title": {
@@ -2375,6 +2991,13 @@
         "text": {
           "vi": "Với những doanh nghiệp đang chuẩn bị phát hành game hoặc tìm hướng mở rộng tại Việt Nam, nghiên cứu thị trường có thể giúp kiểm chứng giả định trước khi phân bổ ngân sách, nhận diện nhu cầu chưa được đáp ứng và xác định những yếu tố cần ưu tiên trong chiến lược tiếp cận người chơi. **Các nhà phát hành đang chuẩn bị ra mắt hoặc mở rộng tại Việt Nam có thể liên hệ ANBU** để xây dựng kế hoạch tiếp cận người chơi thông qua KOL game, quản trị cộng đồng và nghiên cứu hành vi người chơi, phù hợp với từng thể loại và giai đoạn của sản phẩm.",
           "en": "For companies preparing to launch games or explore expansion opportunities in Vietnam, market research can help validate assumptions before budgets are allocated, identify unmet needs, and determine which factors should be prioritized in player acquisition strategies. **Publishers preparing to launch or expand in Vietnam can contact ANBU** to develop player acquisition strategies through gaming KOLs, community management, and player behavior research tailored to each game genre and product lifecycle stage."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Xem thêm:** [Doanh thu game Việt Nam tăng, lượt tải chững lại: vai trò của cộng đồng, creator, esports](/vi/blog/thi-truong-game-viet-nam-2026-giu-chan-nguoi-choi-cong-dong-creator-esports).",
+          "en": "**See also:** [Vietnam Gaming Revenue Up, Downloads Flat: The Role of Community, Creators and Esports](/en/blog/vietnam-gaming-market-2026-revenue-up-downloads-flat-community-creators-esports)."
         }
       },
       {
@@ -4833,6 +5456,13 @@
         "text": {
           "vi": "**Xem thêm:** [Esports Marketing Thailand: Game mới có nên tổ chức giải đấu riêng?](/vi/blog/esports-marketing-thailand-game-moi-co-nen-to-chuc-giai-dau-rieng).",
           "en": "**See also:** [Esports Marketing Thailand: Should a New Game Run Its Own Tournament?](/en/blog/esports-marketing-thailand-should-a-new-game-run-its-own-tournament)."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Xem thêm:** [Doanh thu game Việt Nam tăng, lượt tải chững lại: vai trò của cộng đồng, creator, esports](/vi/blog/thi-truong-game-viet-nam-2026-giu-chan-nguoi-choi-cong-dong-creator-esports).",
+          "en": "**See also:** [Vietnam Gaming Revenue Up, Downloads Flat: The Role of Community, Creators and Esports](/en/blog/vietnam-gaming-market-2026-revenue-up-downloads-flat-community-creators-esports)."
         }
       }
     ]

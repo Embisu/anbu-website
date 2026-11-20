@@ -74,6 +74,7 @@ export const blogViToEnSlug: Record<string, string> = {
   "tiktok-marketing-trends-game-mobile-viet-nam-noi-dung-viral-toi-uu-cpi": "tiktok-marketing-trends-mobile-games-vietnam-viral-content-cpi-organic-installs",
   "esports-marketing-thailand-game-moi-co-nen-to-chuc-giai-dau-rieng": "esports-marketing-thailand-should-a-new-game-run-its-own-tournament",
   "localization-vs-culturalization-nha-phat-hanh-game-quoc-te-tai-viet-nam": "localization-vs-culturalization-what-international-game-publishers-miss-in-vietnam",
+  "thi-truong-game-viet-nam-2026-giu-chan-nguoi-choi-cong-dong-creator-esports": "vietnam-gaming-market-2026-revenue-up-downloads-flat-community-creators-esports",
 };
 
 
