@@ -70,6 +70,7 @@ export async function generateMetadata({
     locale,
     path: `/blog/${activeSlug}`,
     title: t(post.title, locale),
+    seoTitle: post.seoTitle ? t(post.seoTitle, locale) : undefined,
     description: t(post.excerpt, locale),
     image: postCover,
     type: "article",

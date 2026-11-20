@@ -20,6 +20,7 @@ export type Post = {
   slug_en?: string;
   title: L10n;
   excerpt: L10n;
+  seoTitle?: L10n; // optional <title> override (<= ~53 chars) when the full title is long
   category: L10n;
   date: string; // ISO
   readingTime: number;

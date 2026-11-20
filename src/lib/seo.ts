@@ -140,6 +140,7 @@ type BuildMetaArgs = {
   locale: Locale;
   path?: string; // without locale, starts with "/"
   title: string;
+  seoTitle?: string; // overrides the auto-shortened <title>
   description: string;
   image?: string;
   type?: "website" | "article";
@@ -150,6 +151,7 @@ export function buildMetadata({
   locale,
   path = "",
   title,
+  seoTitle,
   description,
   image = "/og/og-default.png",
   type = "website",
@@ -159,7 +161,7 @@ export function buildMetadata({
   const isHome = path === "" || path === "/";
   // Strip duplicate trailing brand suffix if page title already ends with | ANBU or | ANBU Agency
   const cleanTitle = title.replace(/\s*[|\-–]\s*ANBU(?:\s+Agency)?\s*$/i, "").trim();
-  const metaTitle = isHome ? { absolute: title } : pageTitle(cleanTitle);
+  const metaTitle = isHome ? { absolute: title } : pageTitle(seoTitle ? seoTitle.trim() : cleanTitle);
   const fullTitle = isHome ? title : `${cleanTitle} | ${site.name}`;
   const url = `${siteUrl}/${locale}${path === "/" ? "" : path}`;
   const absoluteImage = image.startsWith("http")
