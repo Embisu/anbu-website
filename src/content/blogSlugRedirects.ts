@@ -75,6 +75,7 @@ export const blogViToEnSlug: Record<string, string> = {
   "esports-marketing-thailand-game-moi-co-nen-to-chuc-giai-dau-rieng": "esports-marketing-thailand-should-a-new-game-run-its-own-tournament",
   "localization-vs-culturalization-nha-phat-hanh-game-quoc-te-tai-viet-nam": "localization-vs-culturalization-what-international-game-publishers-miss-in-vietnam",
   "thi-truong-game-viet-nam-2026-giu-chan-nguoi-choi-cong-dong-creator-esports": "vietnam-gaming-market-2026-revenue-up-downloads-flat-community-creators-esports",
+  "tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat": "game-content-marketing-thailand-localization-beyond-translation",
 };
 
 

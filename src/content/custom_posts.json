@@ -1,5 +1,450 @@
 [
   {
+    "slug": "tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat",
+    "slug_en": "game-content-marketing-thailand-localization-beyond-translation",
+    "title": {
+      "vi": "Tiếp thị nội dung game tại Thái Lan: Vì sao bản địa hóa không thể chỉ dừng ở việc dịch thuật?",
+      "en": "Game Content Marketing in Thailand: Why Localization Goes Beyond Translation"
+    },
+    "seoTitle": {
+      "vi": "Bản địa hóa game Thái Lan: không chỉ là dịch thuật",
+      "en": "Game Localization in Thailand: Beyond Translation"
+    },
+    "excerpt": {
+      "vi": "Dịch nội dung quảng bá sang tiếng Thái mới chỉ là bước đầu. Bản địa hóa hiệu quả còn là cách kể chuyện, góc khai thác, creator địa phương và quá trình điều chỉnh liên tục sau launch.",
+      "en": "Translating promotional content into Thai is only the first step. Effective localization also covers storytelling, creative angles, local creators, and continuous adjustment after launch."
+    },
+    "category": {
+      "vi": "Marketing Game",
+      "en": "Game Marketing"
+    },
+    "date": "2026-11-23",
+    "readingTime": 7,
+    "cover": "/blog-media/1794700000000-thailoc-cover.jpg",
+    "focal": "50% 92%",
+    "author": "ANBU Team",
+    "color": "from-orange-600 to-navy-900",
+    "variant": "game",
+    "sources": [
+      {
+        "label": {
+          "vi": "Mahidol University - Games Beyond Borders: Game Localization Networks and Industry in Thailand",
+          "en": "Mahidol University - Games Beyond Borders: Game Localization Networks and Industry in Thailand"
+        },
+        "href": "https://lc.mahidol.ac.th/en/research-focus/games-beyond-borders-game-localization-networks-and-industry-in-thailand/"
+      },
+      {
+        "label": {
+          "vi": "Permpoon et al. - Transcending Cultural Barriers in Thai Mythology: The Translation of Home Sweet Home",
+          "en": "Permpoon et al. - Transcending Cultural Barriers in Thai Mythology: The Translation of Home Sweet Home"
+        },
+        "href": "https://so02.tci-thaijo.org/index.php/hasss/article/view/268631"
+      },
+      {
+        "label": {
+          "vi": "Tourism Authority of Thailand - Home Sweet Home and Thailand’s Deep Culture",
+          "en": "Tourism Authority of Thailand - Home Sweet Home and Thailand’s Deep Culture"
+        },
+        "href": "https://www.tatnews.org/2023/08/tat-backs-the-latest-home-sweet-home-game-to-promote-thailands-deep-culture/"
+      },
+      {
+        "label": {
+          "vi": "TikTok for Business - VNG Revelation",
+          "en": "TikTok for Business - VNG Revelation"
+        },
+        "href": "https://ads.tiktok.com/business/en/inspiration/vng-revelation"
+      },
+      {
+        "label": {
+          "vi": "MOONTON Games - MLBB’s 2026 Strategy in Thailand",
+          "en": "MOONTON Games - MLBB’s 2026 Strategy in Thailand"
+        },
+        "href": "https://en.moonton.com/news/295.html"
+      },
+      {
+        "label": {
+          "vi": "MOONTON - MSL Thailand and esports roadmap",
+          "en": "MOONTON - MSL Thailand and esports roadmap"
+        },
+        "href": "https://en.moonton.com/news/316.html"
+      },
+      {
+        "label": {
+          "vi": "Techawongstien - Network of Passion: Actor-Network in the Domain of Video Game Localization in Thailand",
+          "en": "Techawongstien - Network of Passion: Actor-Network in the Domain of Video Game Localization in Thailand"
+        },
+        "href": "https://benjamins.com/catalog/ts.25023.tec"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với các nhà phát hành muốn gia nhập thị trường Thái Lan, dịch nội dung quảng bá sang tiếng Thái mới chỉ là bước đầu. Một thông điệp được chuyển ngữ chính xác vẫn có thể chưa đủ sức thu hút người chơi nếu cách kể chuyện, góc khai thác và hình thức thể hiện chưa phù hợp với bối cảnh địa phương.",
+          "en": "For publishers looking to enter the Thai market, translating promotional content into Thai is only the first step. An accurately translated message may still fail to attract players if the storytelling, creative angle, and format do not fit the local context."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trong **tiếp thị nội dung game tại Thái Lan**, bản địa hóa không chỉ là điều chỉnh ngôn ngữ, mà còn là quá trình đảm bảo nội dung được hiểu đúng, tạo được sự quan tâm và phù hợp với cách người chơi tiếp nhận game.",
+          "en": "In **game content marketing in Thailand**, localization is not just about adjusting language. It is the process of ensuring that content is understood correctly, generates interest, and fits the way players engage with games."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nghiên cứu của [Mahidol University](https://lc.mahidol.ac.th/en/research-focus/games-beyond-borders-game-localization-networks-and-industry-in-thailand/) về bản địa hóa game tại Thái Lan cho thấy quá trình này cần cân nhắc đồng thời yếu tố ngôn ngữ, văn hóa và kỹ thuật, thay vì chỉ chuyển đổi câu chữ giữa các ngôn ngữ.",
+          "en": "Research by [Mahidol University](https://lc.mahidol.ac.th/en/research-focus/games-beyond-borders-game-localization-networks-and-industry-in-thailand/) on game localization in Thailand shows that the process must consider language, culture, and technical factors at the same time, rather than simply converting words between languages."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Dịch đúng chưa chắc đã truyền tải đúng sức hút của game",
+          "en": "An accurate translation does not necessarily convey a game’s appeal"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794700000000-thailoc-translation.jpg",
+        "src_en": "/blog-media/1794700000000-thailoc-translation.jpg",
+        "alt": {
+          "vi": "Bản dịch chính xác chưa chắc truyền tải được sức hút thực sự của game",
+          "en": "An accurate translation doesn't necessarily convey the true attraction of a game"
+        },
+        "caption": {
+          "vi": "Bản dịch đúng chưa chắc đã giữ được sức hút của game.",
+          "en": "An accurate translation does not always carry a game's appeal."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một bản dịch có thể giữ nguyên ý nghĩa nhưng chưa chắc giữ được sức hấp dẫn ban đầu. Điều này đặc biệt quan trọng với khẩu hiệu, quảng cáo ngắn và nội dung mạng xã hội, nơi người xem cần nhanh chóng hiểu game có gì đáng chú ý.",
+          "en": "A translation can preserve the meaning but not necessarily the original appeal. This matters especially for slogans, short ads, and social media content, where viewers need to quickly understand what makes a game worth their attention."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu nhà phát hành chỉ dịch nguyên văn thông điệp từ thị trường gốc, nội dung có thể đúng về ngôn ngữ nhưng chưa làm nổi bật được giá trị mà người chơi Thái Lan quan tâm.",
+          "en": "If a publisher only translates the original message word for word, the content may be linguistically correct but fail to highlight the value that Thai players care about."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Vì vậy, bản địa hóa cần bắt đầu từ câu hỏi: Điểm hấp dẫn nào của game nên được nhấn mạnh với người chơi Thái Lan, và cách truyền tải nào giúp họ nhận ra điều đó?",
+          "en": "Localization should therefore start with a question: Which appeal of the game should be emphasized to Thai players, and which way of communicating it helps them recognize it?"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Yếu tố văn hóa cần được chuyển tải đúng ngữ cảnh",
+          "en": "Cultural elements need to be conveyed in the right context"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794700000000-thailoc-culture.jpg",
+        "src_en": "/blog-media/1794700000000-thailoc-culture.jpg",
+        "alt": {
+          "vi": "Yếu tố văn hóa cần được chuyển tải đúng ngữ cảnh",
+          "en": "Cultural elements need to be conveyed in the right context"
+        },
+        "caption": {
+          "vi": "Yếu tố văn hóa chỉ phát huy khi được đặt đúng ngữ cảnh.",
+          "en": "Cultural elements only work when placed in the right context."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Truyền thuyết, tín ngưỡng, hình tượng nhân vật hay sự hài hước có thể mang ý nghĩa khác nhau giữa các thị trường. Dịch đúng tên gọi hoặc lời thoại chưa chắc đã truyền tải được sắc thái mà nội dung muốn thể hiện.",
+          "en": "Legends, beliefs, character imagery, and humor can carry different meanings across markets. Translating names or dialogue correctly does not necessarily convey the nuance the content intends to express."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "[Nghiên cứu về game kinh dị Home Sweet Home](https://so02.tci-thaijo.org/index.php/hasss/article/view/268631) của Thái Lan cho thấy việc chuyển tải các yếu tố liên quan đến tín ngưỡng, ma quỷ và văn hóa dân gian đòi hỏi nhiều lựa chọn dịch thuật và diễn giải khác nhau.",
+          "en": "[Research on the Thai horror game Home Sweet Home](https://so02.tci-thaijo.org/index.php/hasss/article/view/268631) shows that conveying elements related to belief, ghosts, and folklore requires many different translation and interpretation choices."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Với nội dung quảng bá, nhà phát hành cần cân nhắc cách sử dụng yếu tố văn hóa trong thông điệp, hình ảnh và cách kể chuyện để tránh sai lệch hoặc gượng ép.",
+          "en": "For promotional content, publishers need to consider how cultural elements are used in the message, visuals, and storytelling to avoid distortion or awkwardness."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa không phải đưa càng nhiều chi tiết địa phương vào nội dung càng tốt, mà là sử dụng chúng đúng ngữ cảnh và phù hợp với bản sắc game.",
+          "en": "Localization does not mean adding as many local details as possible. It means using them in the right context and in line with the game’s identity."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bản địa hóa có thể thay đổi cách xây dựng ý tưởng nội dung",
+          "en": "Localization can change how content ideas are built"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794700000000-thailoc-ideas.jpg",
+        "src_en": "/blog-media/1794700000000-thailoc-ideas.jpg",
+        "alt": {
+          "vi": "Bản địa hóa có thể thay đổi cách xây dựng ý tưởng nội dung",
+          "en": "Localization can change how to build idea content"
+        },
+        "caption": {
+          "vi": "Bản địa hóa có thể thay đổi cách phát triển ý tưởng nội dung.",
+          "en": "Localization can change how content ideas are built."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Một ý tưởng hiệu quả ở thị trường gốc chưa chắc là cách tiếp cận phù hợp nhất tại Thái Lan. Thay vì chỉ dịch một concept có sẵn, nhà phát hành có thể khai thác những dịp văn hóa, trải nghiệm đời sống hoặc chủ đề gần gũi với người chơi địa phương để phát triển ý tưởng mới.",
+          "en": "An idea that works in the home market is not necessarily the best approach in Thailand. Instead of simply translating an existing concept, publishers can draw on cultural occasions, everyday experiences, or topics familiar to local players to develop new ideas."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Điều quan trọng là yếu tố địa phương cần gắn với bản sắc game và mục tiêu truyền thông, thay vì chỉ xuất hiện như một lớp hình ảnh trang trí.",
+          "en": "What matters is that local elements are tied to the game’s identity and communication goals, rather than appearing as a decorative visual layer."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Câu hỏi cần đặt ra không chỉ là “Làm thế nào để dịch ý tưởng hiện có?”, mà còn là “Có góc khai thác nào phù hợp hơn với người chơi Thái Lan mà vẫn giữ đúng giá trị cốt lõi của game?”",
+          "en": "The question to ask is not only “How do we translate the existing idea?” but also “Is there an angle that fits Thai players better while keeping the game’s core value intact?”"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Creator địa phương giúp nội dung kết nối với cộng đồng",
+          "en": "Local creators help content connect with the community"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Creator địa phương có thể đóng góp nhiều hơn việc đăng tải nội dung theo yêu cầu. Họ hiểu cách cộng đồng tiếp nhận game, những chủ đề dễ tạo thảo luận và cách thể hiện phù hợp với khán giả của mình.",
+          "en": "Local creators can contribute more than posting content on request. They understand how the community receives games, which topics spark discussion, and what style suits their audience."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chỉ cung cấp kịch bản đã dịch, nhà phát hành có thể hợp tác với creator từ khâu phát triển ý tưởng, lựa chọn format đến cách thể hiện trải nghiệm game.",
+          "en": "Instead of only providing a translated script, publishers can collaborate with creators from idea development and format selection to how the gaming experience is presented."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Creator không chỉ là kênh phân phối thông điệp, mà còn là cầu nối giúp thương hiệu hiểu và kết nối với cộng đồng địa phương.",
+          "en": "Creators are not only a channel for distributing messages. They are also a bridge that helps a brand understand and connect with the local community."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Bản địa hóa là quá trình liên tục sau launch",
+          "en": "Localization is a continuous process after launch"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794700000000-thailoc-ongoing.jpg",
+        "src_en": "/blog-media/1794700000000-thailoc-ongoing.jpg",
+        "alt": {
+          "vi": "Bản địa hóa là quá trình liên tục sau khi ra mắt",
+          "en": "Localization is an ongoing process after launch"
+        },
+        "caption": {
+          "vi": "Bản địa hóa là quá trình liên tục sau khi ra mắt.",
+          "en": "Localization is an ongoing process after launch."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Nếu bản địa hóa chỉ tập trung vào trailer, quảng cáo và bài đăng trước ngày phát hành, nhà phát hành có thể tạo được sự chú ý ban đầu nhưng khó duy trì kết nối với người chơi.",
+          "en": "If localization focuses only on trailers, ads, and posts before the release date, a publisher may generate initial attention but struggle to maintain a connection with players."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Sau launch, nội dung cần tiếp tục được điều chỉnh thông qua cập nhật game, sự kiện, phản hồi người chơi và hoạt động cộng đồng.",
+          "en": "After launch, content needs to keep being adjusted through game updates, events, player feedback, and community activities."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa vì vậy không nên được xem là bước hoàn thành trước khi chiến dịch bắt đầu, mà là quá trình liên tục gắn với hoạt động marketing và vận hành game tại thị trường địa phương.",
+          "en": "Localization should therefore not be seen as a step completed before a campaign begins, but as a continuous process tied to marketing and game operations in the local market."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Một số case study minh họa",
+          "en": "Case studies"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Revelation: Điều chỉnh cách truyền tải nội dung theo nền tảng và thị trường",
+          "en": "Revelation: Adapting how content is delivered to the platform and the market"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Năm 2023, VNG triển khai chiến dịch ra mắt MMORPG *Revelation* tại sáu thị trường Đông Nam Á, trong đó có Thái Lan. TikTok được lựa chọn làm kênh truyền thông trọng tâm, với các nội dung quảng bá được thiết kế theo định dạng TikTok, kết hợp nhân vật game, gameplay và creator địa phương tại từng thị trường. (Nguồn: [TikTok for Business](https://ads.tiktok.com/business/en/inspiration/vng-revelation))",
+          "en": "In 2023, VNG ran the launch campaign for the MMORPG *Revelation* across six Southeast Asian markets, including Thailand. TikTok was chosen as the core channel, with promotional content designed in TikTok formats that combined game characters, gameplay, and local creators in each market. (Source: [TikTok for Business](https://ads.tiktok.com/business/en/inspiration/vng-revelation))"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Thay vì chỉ chuyển đổi tài liệu quảng cáo sang ngôn ngữ địa phương, chiến dịch phát triển các creative phù hợp với nền tảng video ngắn, nơi hình ảnh gameplay và cách thể hiện trực quan giúp giới thiệu trải nghiệm game. Việc sử dụng creator tại từng thị trường cũng mở rộng cách trò chơi được truyền tải đến người dùng địa phương.",
+          "en": "Instead of only converting advertising materials into local languages, the campaign developed creatives suited to the short-video platform, where gameplay footage and visual presentation help introduce the game experience. Using creators in each market also broadened how the game was communicated to local users."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Chiến dịch này đạt số lượt cài đặt cao gấp 1,8 lần KPI tại Thái Lan, Philippines, Indonesia và Việt Nam. Đây là kết quả tổng hợp của bốn thị trường, không phải số liệu riêng của Thái Lan.",
+          "en": "The campaign achieved installs 1.8 times the KPI across Thailand, the Philippines, Indonesia, and Vietnam. This is a combined result for four markets, not a figure for Thailand alone."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trường hợp *Revelation* cho thấy bản địa hóa nội dung không chỉ nằm ở chuyển ngữ, mà còn ở việc điều chỉnh cách thể hiện thông điệp theo nền tảng phân phối và sử dụng những gương mặt phù hợp với từng thị trường.",
+          "en": "The *Revelation* case shows that content localization is not only about translation. It also involves adapting how the message is expressed to the distribution platform and using faces that suit each market."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Mobile Legends: Bang Bang Thailand: Xây dựng kết nối nội dung dài hạn",
+          "en": "Mobile Legends: Bang Bang Thailand: Building long-term content connections"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tháng 1/2026, [MOONTON công bố chiến lược phát triển *Mobile Legends: Bang Bang* tại Thái Lan](https://en.moonton.com/news/295.html), với trọng tâm là bản địa hóa, hỗ trợ creator và phát triển esports. Một phần quan trọng của kế hoạch là hợp tác dài hạn với gaming creator GuyNgid, người sẽ đồng hành cùng thương hiệu trong hoạt động quảng bá game và phát triển nội dung.",
+          "en": "In January 2026, [MOONTON announced its development strategy for *Mobile Legends: Bang Bang* in Thailand](https://en.moonton.com/news/295.html), focusing on localization, creator support, and esports development. An important part of the plan is a long-term partnership with gaming creator GuyNgid, who will accompany the brand in game promotion and content development."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "MOONTON cho biết GuyNgid mang đến hiểu biết về hành vi, sở thích và văn hóa của cộng đồng game thủ Thái Lan. Cùng với đó, MLBB và GuyNgid dự kiến đầu tư hơn 20 triệu baht dưới dạng tiền thưởng và các hỗ trợ dành cho creator community, thông qua cuộc thi sáng tạo, chương trình tập trung vào TikTok và hợp tác KOL dài hạn.",
+          "en": "MOONTON said GuyNgid brings understanding of the behavior, preferences, and culture of the Thai gamer community. Together, MLBB and GuyNgid plan to invest more than 20 million baht in prizes and support for the creator community through creative contests, TikTok-focused programs, and long-term KOL partnerships."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Ở mảng esports, việc [công bố MSL Thailand](https://en.moonton.com/news/316.html) đánh dấu bước đưa Thái Lan trở lại hệ sinh thái thi đấu toàn cầu của MLBB. Hoạt động này mở rộng sự hiện diện của trò chơi từ nội dung quảng bá sang các sự kiện và hoạt động cạnh tranh gắn với cộng đồng trong nước.",
+          "en": "In esports, the [announcement of MSL Thailand](https://en.moonton.com/news/316.html) marks Thailand’s return to MLBB’s global competitive ecosystem. This extends the game’s presence from promotional content to events and competitive activities tied to the domestic community."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Trường hợp MLBB cho thấy bản địa hóa có thể được triển khai như một định hướng dài hạn: thay vì chỉ sử dụng creator trong từng đợt truyền thông, nhà phát hành đầu tư vào quan hệ hợp tác và các hoạt động cộng đồng để duy trì sự hiện diện của game tại thị trường.",
+          "en": "The MLBB case shows that localization can be pursued as a long-term direction: instead of using creators only for individual communication waves, the publisher invests in partnerships and community activities to maintain the game’s presence in the market."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Hai trường hợp cho thấy bản địa hóa nội dung game tại Thái Lan không chỉ nằm ở ngôn ngữ, mà còn ở cách truyền tải trên từng nền tảng và xây dựng kết nối với cộng đồng. Từ điều chỉnh creative đến hợp tác creator dài hạn, mục tiêu là giúp trò chơi trở nên gần gũi hơn với người chơi địa phương mà vẫn giữ được bản sắc riêng.",
+          "en": "These two cases show that game content localization in Thailand is not only about language, but also about how content is delivered on each platform and how connections with the community are built. From adjusting creatives to long-term creator partnerships, the goal is to make the game feel closer to local players while keeping its own identity."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "vi": "Kết luận",
+          "en": "Conclusion"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Tiếp thị nội dung game tại Thái Lan đòi hỏi nhiều hơn việc dịch tài liệu chiến dịch sang tiếng Thái. Nhà phát hành cần hiểu người chơi địa phương để lựa chọn thông điệp, hình thức thể hiện và cách kết nối phù hợp.",
+          "en": "Game content marketing in Thailand requires more than translating campaign materials into Thai. Publishers need to understand local players in order to choose the right message, format, and way of connecting."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "Bản địa hóa hiệu quả không chỉ giúp người chơi hiểu game, mà còn tạo lý do để họ quan tâm và tương tác với game.",
+          "en": "Effective localization does not only help players understand the game. It also gives them a reason to care about it and engage with it."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "ANBU đồng hành cùng nhà phát hành trong nghiên cứu thị trường, phân tích hành vi người chơi và xây dựng chiến lược tiếp thị game tại Đông Nam Á, kết nối insight, sáng tạo nội dung và hoạt động tăng trưởng.",
+          "en": "ANBU supports publishers with market research, player behavior analysis, and game marketing strategy in Southeast Asia, connecting insight, content creation, and growth activities."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "vi": "Đọc thêm",
+          "en": "Further reading"
+        }
+      },
+      {
+        "type": "ul",
+        "items": [
+          {
+            "vi": "[Game Content Marketing Thailand: Chiến Lược Nội Dung Tiếp Cận Game Thủ Thái Lan](/vi/blog/game-content-marketing-thailand-chien-luoc-noi-dung-tiep-can-game-thu-thai-lan)",
+            "en": "[Game Content Marketing Thailand: Strategic Content Approaches to Engage Thai Gamers](/en/blog/game-content-marketing-thailand-engaging-thai-gamers)"
+          },
+          {
+            "vi": "[Game Audience Research Thailand: Hiểu game thủ Thái Lan để tăng hiệu quả marketing](/vi/blog/game-audience-research-thailand-hieu-game-thu-thai-lan-de-tang-hieu-qua-marketing)",
+            "en": "[Game Audience Research Thailand: Understanding Thai Gamers to Boost Marketing Effectiveness](/en/blog/game-audience-research-thailand-understanding-thai-gamers)"
+          },
+          {
+            "vi": "[Tối ưu kênh game tại Thái Lan: Chiến lược Always-on](/vi/blog/toi-uu-kenh-game-tai-thai-lan-chien-luoc-always-on)",
+            "en": "[Game Channel Optimization in Thailand: The Always-on Strategy](/en/blog/game-channel-optimization-thailand-always-on-strategy)"
+          },
+          {
+            "vi": "[Bản địa hóa Từ khóa & Tiếng lóng Game tại Việt Nam: Từ 'Rush B', 'Lưu Tày' đến 'T-Doll Vợ Yêu' (2026)](/vi/blog/ban-dia-hoa-tu-khoa-va-tieng-long-game-tai-viet-nam)",
+            "en": "[Game Keyword & Slang Localization in Vietnam: Decoding Gamer Vernacular & Search Intent (2026)](/en/blog/game-keyword-slang-localization-vietnam-decoding-gamer-vernacular)"
+          },
+          {
+            "vi": "[Localization vs. Culturalization: Những điều nhà phát hành game quốc tế thường bỏ lỡ khi quảng bá tại Việt Nam](/vi/blog/localization-vs-culturalization-nha-phat-hanh-game-quoc-te-tai-viet-nam)",
+            "en": "[Localization vs. Culturalization: What International Game Publishers Miss in Vietnam](/en/blog/localization-vs-culturalization-what-international-game-publishers-miss-in-vietnam)"
+          }
+        ]
+      }
+    ],
+    "cover_en": "/blog-media/1794700000000-thailoc-cover.jpg"
+  },
+  {
     "slug": "thi-truong-game-viet-nam-2026-giu-chan-nguoi-choi-cong-dong-creator-esports",
     "slug_en": "vietnam-gaming-market-2026-revenue-up-downloads-flat-community-creators-esports",
     "title": {
@@ -6295,6 +6740,13 @@
           "vi": "Các nhà phát hành đang tìm kiếm cơ hội thâm nhập hoặc mở rộng tại Thái Lan có thể liên hệ ngay với ANBU Studio để nhận tư vấn chuyên sâu về nghiên cứu người chơi, bản địa hóa văn hóa nội dung và mạng lưới hợp tác gaming creator hàng đầu.",
           "en": "Publishers looking to conduct market research, player insight analysis, and content strategy development tailored to the Thai Gaming Market can contact ANBU Studio today for comprehensive strategic consultation."
         }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Xem thêm:** [Tiếp thị nội dung game tại Thái Lan: Vì sao bản địa hóa không thể chỉ dừng ở việc dịch thuật?](/vi/blog/tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat).",
+          "en": "**See also:** [Game Content Marketing in Thailand: Why Localization Goes Beyond Translation](/en/blog/game-content-marketing-thailand-localization-beyond-translation)."
+        }
       }
     ],
     "sources": [
@@ -9302,6 +9754,13 @@
         "text": {
           "vi": "Với thị trường Việt Nam, dịch tốt mới là bước đầu. Nhà phát hành cần hiểu cách game thủ Việt suy nghĩ, trò chuyện, giải trí và xây dựng cộng đồng, để người chơi cảm thấy trò chơi được làm cho chính họ.",
           "en": "For the Vietnamese market, a good translation is only the first step. Publishers need to understand how Vietnamese gamers think, talk, play and build community, so that players feel the game was made for them."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "vi": "**Xem thêm:** [Tiếp thị nội dung game tại Thái Lan: Vì sao bản địa hóa không thể chỉ dừng ở việc dịch thuật?](/vi/blog/tiep-thi-noi-dung-game-tai-thai-lan-ban-dia-hoa-khong-chi-dich-thuat).",
+          "en": "**See also:** [Game Content Marketing in Thailand: Why Localization Goes Beyond Translation](/en/blog/game-content-marketing-thailand-localization-beyond-translation)."
         }
       }
     ]
