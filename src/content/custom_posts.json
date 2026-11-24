@@ -9394,6 +9394,19 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1794800000000-locdoc-feel.jpg",
+        "src_en": "/blog-media/1794800000000-locdoc-feel.jpg",
+        "alt": {
+          "vi": "Game của bạn xứng đáng được cảm nhận, không chỉ được đọc: Localization và Culturalization",
+          "en": "Your game deserves to be felt, not just read: Localization and Culturalization"
+        },
+        "caption": {
+          "vi": "Localization giúp người chơi hiểu game, Culturalization giúp họ cảm nhận game.",
+          "en": "Localization helps players understand the game; Culturalization helps them feel it."
+        }
+      },
+      {
         "type": "p",
         "text": {
           "vi": "Có thể hiểu đơn giản: *Localization giúp người chơi hiểu game, còn Culturalization giúp họ cảm thấy game gần gũi và phù hợp với mình hơn.*",
@@ -9612,6 +9625,19 @@
         }
       },
       {
+        "type": "image",
+        "src": "/blog-media/1794800000000-locdoc-lost.jpg",
+        "src_en": "/blog-media/1794800000000-locdoc-lost.jpg",
+        "alt": {
+          "vi": "Bạn có đang lạc hướng khi vào thị trường game Việt Nam?",
+          "en": "Are you lost entering the Vietnamese gaming market?"
+        },
+        "caption": {
+          "vi": "Vào thị trường game Việt Nam cần hiểu người chơi, không chỉ dịch nội dung.",
+          "en": "Entering Vietnam's game market takes understanding players, not just translating content."
+        }
+      },
+      {
         "type": "p",
         "text": {
           "vi": "Từ các số liệu trên, nhà phát hành quốc tế cần nhìn lại ba vấn đề marketing:",
@@ -9651,6 +9677,19 @@
         "text": {
           "vi": "Thích ứng văn hóa không nhất thiết phải can thiệp sâu vào mã nguồn game. Nhà phát hành có thể bắt đầu từ các điểm tiếp xúc tiếp thị gần với người chơi nhất, theo 4 hướng sau.",
           "en": "Cultural adaptation does not necessarily mean deep changes to the game's source code. Publishers can start at the marketing touchpoints closest to players, in the following 4 directions."
+        }
+      },
+      {
+        "type": "image",
+        "src": "/blog-media/1794800000000-locdoc-accurate.jpg",
+        "src_en": "/blog-media/1794800000000-locdoc-accurate.jpg",
+        "alt": {
+          "vi": "100% chính xác nhưng vẫn chưa kết nối được với người chơi Việt?",
+          "en": "100% accurate, still disconnected from Vietnamese players?"
+        },
+        "caption": {
+          "vi": "Dịch chính xác chưa đủ để kết nối với người chơi Việt.",
+          "en": "An accurate translation is not enough to connect with Vietnamese players."
         }
       },
       {
