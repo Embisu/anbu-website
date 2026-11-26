@@ -15,11 +15,22 @@ const PREFERRED_EXT: Record<string, (typeof EXTS)[number]> = {
   "football-master-2": "webp",
   "life-makeover": "webp",
   "onmyoji-arena": "webp",
+  "maplestory-r-evolution": "webp",
+  "afk-arena": "webp",
   "nguyet-mong": "jpg",
   "focallure": "jpg",
 };
 
+// Projects that currently use the themed SVG Scene instead of a raster image
+// (avoids 3x 404 requests per card on /work). Remove a slug here once its image is added.
+const NO_IMAGE_SLUGS = new Set([
+  "summoners-war-chronicles",
+  "epic-war-thrones",
+  "silkroad-origin-mobile",
+]);
+
 function extensionsFor(slug: string) {
+  if (NO_IMAGE_SLUGS.has(slug)) return [];
   const preferred = PREFERRED_EXT[slug];
   return preferred ? [preferred, ...EXTS.filter((ext) => ext !== preferred)] : [...EXTS];
 }

@@ -136,7 +136,7 @@ const vi = {
     eyebrow: "Liên hệ",
     title: "Cùng bắt đầu một điều gì đó tuyệt vời",
     subtitle:
-      "Điền thông tin bên dưới, hoặc liên hệ trực tiếp qua email và hotline. Chúng tôi phản hồi trong vòng 24 giờ làm việc.",
+      "Liên hệ trực tiếp với ANBU qua email, hotline, Zalo hoặc WhatsApp. Chúng tôi phản hồi trong vòng 24 giờ làm việc.",
     infoTitle: "Thông tin liên hệ",
     office: "Văn phòng",
     email: "Email",

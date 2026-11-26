@@ -1,5 +1,6 @@
 ﻿import { NextResponse } from "next/server";
 import { submitToIndexNow, INDEXNOW_KEY, INDEXNOW_HOST } from "@/lib/indexnow";
+import { requireAdminSession } from "@/lib/admin-auth";
 import { posts } from "@/content/posts";
 
 export const runtime = "edge";
@@ -15,6 +16,9 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const auth = await requireAdminSession(request);
+  if (!auth.ok) return auth.response;
+
   try {
     const body = await request.json().catch(() => ({}));
     let urls: string[] = body.urls || [];

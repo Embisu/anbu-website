@@ -14,7 +14,7 @@ export default function CommentsManager({ locale = "vi" }: { locale: string }) {
   const fetchAllComments = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/comments?status=all");
+      const res = await adminFetch("/api/comments?status=all");
       const data = await res.json();
       if (data.ok && Array.isArray(data.comments)) {
         setComments(data.comments);

@@ -6,30 +6,55 @@ import {
   deleteComment,
   type Comment,
 } from "@/lib/supabase";
-import { requireAdminSession } from "@/lib/admin-auth";
+import { requireAdminSession, extractBearerToken, verifySessionToken } from "@/lib/admin-auth";
 
 export const runtime = "edge";
 
 // In-memory fallback
 let inMemoryComments: Comment[] = [];
 
+function stripPrivateFields(comments: Comment[]): Comment[] {
+  return comments.map(({ author_email: _email, ...publicFields }) => publicFields as Comment);
+}
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const slug = searchParams.get("slug") || undefined;
-    const status = (searchParams.get("status") as any) || undefined;
+    const requestedStatus = searchParams.get("status") || "approved";
 
-    const supaComments = await fetchComments(slug, status);
+    const adminSession = await verifySessionToken(extractBearerToken(request));
+    const isAdmin = Boolean(adminSession);
+
+    if (!isAdmin && requestedStatus !== "approved") {
+      return NextResponse.json(
+        { ok: false, error: "Unauthorized. Chỉ quản trị viên mới được xem bình luận chưa duyệt." },
+        { status: 401 }
+      );
+    }
+
+    const effectiveStatus = (isAdmin ? requestedStatus : "approved") as any;
+    const supaComments = await fetchComments(slug, effectiveStatus);
     if (supaComments.length > 0) {
-      return NextResponse.json({ ok: true, comments: supaComments, source: "supabase" });
+      return NextResponse.json({
+        ok: true,
+        comments: isAdmin ? supaComments : stripPrivateFields(supaComments),
+        source: "supabase",
+      });
     }
 
     // Fallback to in-memory
     let filtered = inMemoryComments;
     if (slug) filtered = filtered.filter((c) => c.post_slug === slug);
-    if (status && status !== "all") filtered = filtered.filter((c) => c.status === status);
+    if (effectiveStatus && effectiveStatus !== "all") {
+      filtered = filtered.filter((c) => c.status === effectiveStatus);
+    }
 
-    return NextResponse.json({ ok: true, comments: filtered, source: "memory" });
+    return NextResponse.json({
+      ok: true,
+      comments: isAdmin ? filtered : stripPrivateFields(filtered),
+      source: "memory",
+    });
   } catch (err: any) {
     return NextResponse.json({ ok: false, error: err.message }, { status: 500 });
   }

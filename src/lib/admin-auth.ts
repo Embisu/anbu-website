@@ -22,23 +22,35 @@ function toBase64Url(bytes: ArrayBuffer): string {
 
 export type AdminSession = { username: string; role: string };
 
-export async function getSessionSecret(): Promise<string> {
-  if (process.env.ADMIN_SESSION_SECRET) return process.env.ADMIN_SESSION_SECRET;
+async function getEnvSecret(name: string): Promise<string | undefined> {
+  if (process.env[name] && process.env[name]!.trim()) return process.env[name]!.trim();
   try {
     // @ts-ignore
     const { getRequestContext } = await import("@cloudflare/next-on-pages");
     const ctx: any = getRequestContext();
-    if (ctx?.env?.ADMIN_SESSION_SECRET) return String(ctx.env.ADMIN_SESSION_SECRET);
+    if (ctx?.env?.[name] && String(ctx.env[name]).trim()) return String(ctx.env[name]).trim();
   } catch {}
-  return "anbu-asia-admin-edge-session-secret-2026-fallback";
+  return undefined;
 }
 
-function atobSafe(str: string): string {
-  try {
-    return atob(str);
-  } catch {
-    return "";
+export async function getSessionSecret(): Promise<string> {
+  const explicit = await getEnvSecret("ADMIN_SESSION_SECRET");
+  if (explicit) return explicit;
+  const adminPass = await getEnvSecret("ADMIN_PASSWORD");
+  if (adminPass) return `anbu-session-derived:${adminPass}`;
+  if (process.env.NODE_ENV !== "production") {
+    return "anbu-local-dev-only-session-secret";
   }
+  throw new Error("ADMIN_SESSION_SECRET is not configured");
+}
+
+function timingSafeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) {
+    diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return diff === 0;
 }
 
 export async function createSessionToken(user: AdminSession): Promise<string> {
@@ -54,30 +66,21 @@ export async function createSessionToken(user: AdminSession): Promise<string> {
 export async function verifySessionToken(token: string | null | undefined): Promise<AdminSession | null> {
   if (!token) return null;
 
-  // 1. Try modern HMAC signed token
   const parts = token.split(".");
-  if (parts.length === 2) {
-    const [payloadB64, sigB64] = parts;
-    try {
-      const secret = await getSessionSecret();
-      const key = await hmacKey(secret);
-      const expectedSig = toBase64Url(await crypto.subtle.sign("HMAC", key, encoder.encode(payloadB64)));
-      if (expectedSig === sigB64) {
-        const payload = JSON.parse(atob(payloadB64)) as { u: string; r: string; exp: number };
-        if (payload.u && payload.exp && Date.now() <= payload.exp) {
-          return { username: payload.u, role: payload.r };
-        }
-      }
-    } catch {}
-  }
+  if (parts.length !== 2) return null;
 
-  // 2. Fallback for legacy session tokens (anbu-session-...)
-  const decoded = token.startsWith("anbu-session-") ? token : atobSafe(token);
-  if (decoded.startsWith("anbu-session-")) {
-    const segments = decoded.split("-");
-    const u = segments[2] || "admin";
-    return { username: u, role: "administrator" };
-  }
+  const [payloadB64, sigB64] = parts;
+  try {
+    const secret = await getSessionSecret();
+    const key = await hmacKey(secret);
+    const expectedSig = toBase64Url(await crypto.subtle.sign("HMAC", key, encoder.encode(payloadB64)));
+    if (timingSafeEqual(expectedSig, sigB64)) {
+      const payload = JSON.parse(atob(payloadB64)) as { u: string; r: string; exp: number };
+      if (payload.u && payload.r && payload.exp && Date.now() <= payload.exp) {
+        return { username: payload.u, role: payload.r };
+      }
+    }
+  } catch {}
 
   return null;
 }

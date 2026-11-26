@@ -11,6 +11,7 @@ export const approachBySlug: Record<string, L10n[]> = {
     { vi: "Lên kế hoạch & dự trù ngân sách chiến dịch khu vực", en: "Planned and budgeted the regional campaign" },
     { vi: "Chọn điểm tổ chức offline & vị trí biển LED toàn Đông Nam Á", en: "Selected offline venues and LED billboard spots across SEA" },
     { vi: "Xây dựng ý tưởng video tổng kết sinh nhật 3 năm", en: "Created the 3rd-anniversary wrap-up video concept" },
+    { vi: "Chuẩn bị quà cho sự kiện offline tại Việt Nam", en: "Prepared the gifts for the offline event in Vietnam" },
   ],
   "momo-influencer": [
     { vi: "Lên kế hoạch ý tưởng và dự trù ngân sách chiến dịch", en: "Planned campaign ideas and budget" },
@@ -50,6 +51,8 @@ export const approachBySlug: Record<string, L10n[]> = {
     { vi: "Xây dựng kiến trúc nội dung bám sát thế giới Hồn Sư và tinh thần nguyên tác", en: "Built a content architecture rooted in the Soul Master universe and original IP" },
     { vi: "Phát triển các trụ cột nội dung về đội hình, nhân vật và hành trình chinh phục", en: "Developed content pillars around team building, characters and progression" },
     { vi: "Thiết kế định dạng cho creator và cộng đồng để biến thảo luận thành động lực khám phá game", en: "Designed creator and community formats that turn conversation into game discovery" },
+    { vi: "Vận hành quản lý cộng đồng: fanpage, group, giftcode và minigame từ đăng ký trước đến Open Beta", en: "Ran community management: fanpage, groups, giftcodes and mini-games from pre-registration to Open Beta" },
+    { vi: "Seeding nội dung hướng dẫn tân thủ và đội hình, đồng thời đưa video creator và bài báo trở lại cộng đồng", en: "Seeded beginner and lineup guides while feeding creator videos and press back into the community" },
   ],
   "goi-ta-dai-chuong-quy": [
     { vi: "Chuyển hóa tính năng kinh doanh thành những câu chuyện ngắn, dễ nhớ và giàu tính giải trí", en: "Turned business mechanics into memorable, entertainment-led stories" },
@@ -57,6 +60,7 @@ export const approachBySlug: Record<string, L10n[]> = {
     { vi: "Tạo nhịp nội dung theo mùa để duy trì tương tác và khơi gợi tinh thần tranh tài", en: "Created seasonal content rhythms to sustain engagement and competitive energy" },
     { vi: "Phân nhóm KOL/KOC theo gaming, hài hước và lifestyle để mở rộng tệp tiếp cận", en: "Mapped gaming, comedy and lifestyle KOL/KOC groups to broaden audience reach" },
     { vi: "Kết hợp video trải nghiệm, tình huống nhập vai và bài PR trong giai đoạn ra mắt", en: "Combined gameplay videos, role-play scenarios and launch-period PR coverage" },
+    { vi: "Hợp tác nhân vật với Như Hexi, đưa hình ảnh của cô vào game dưới dạng nhân vật mỹ nhân mùa Giáng sinh", en: "Partnered with Như Hexi so her likeness became a Christmas-season beauty character in the game" },
   ],
   "thien-tai-kinh-doanh": [
     { vi: "Định vị trải nghiệm doanh nhân bằng ngôn ngữ hiện đại, tham vọng và gần gũi", en: "Positioned the entrepreneur experience with a modern, ambitious and relatable voice" },
@@ -99,5 +103,30 @@ export const approachBySlug: Record<string, L10n[]> = {
     { vi: "Thiết kế hoạt động cộng đồng giúp người chơi khoe kỹ năng, đội hình và khoảnh khắc nổi bật", en: "Designed community activations for players to showcase skill, lineups and standout moments" },
     { vi: "Kết hợp streamer, gaming KOL và creator chuyên từng vị trí để phủ nhiều cấp độ người chơi", en: "Combined streamers, gaming KOLs and role specialists across player skill levels" },
     { vi: "Phát triển livestream leo hạng, phân tích meta và highlight kỹ năng theo nhịp cập nhật", en: "Developed ranked livestreams, meta analysis and skill highlights around game updates" },
+  ],
+  "summoners-war-chronicles": [
+    { vi: "Triển khai chuỗi livestream Facebook cùng bốn kênh game vào tháng 03/2023", en: "Ran a Facebook livestream series with four gaming channels in March 2023" },
+    { vi: "Kèm bài CTA bonus để kéo người xem từ livestream về game", en: "Added bonus CTA posts to pull viewers from the livestream into the game" },
+    { vi: "Đưa sự kiện collab One Punch Man đến người chơi qua reel Facebook và video YouTube", en: "Took the One Punch Man crossover to players through a Facebook reel and a YouTube video" },
+  ],
+  "maplestory-r-evolution": [
+    { vi: "Triển khai báo chí từ đăng ký trước đến ngày ra mắt và ra mắt máy chủ", en: "Ran press from pre-registration to launch day and server opening" },
+    { vi: "Booking review YouTube, streamer chơi trực tiếp trên điện thoại và video TikTok", en: "Booked a YouTube review, a streamer's live phone gameplay and TikTok videos" },
+    { vi: "Lồng ghép ưu đãi và quà tặng ra mắt vào nội dung creator", en: "Wove launch offers and gifts into creator content" },
+  ],
+  "epic-war-thrones": [
+    { vi: "Xây độ phủ báo chí từ đầu 2021: tin về phiên bản quốc tế và bản tiếng Việt trên báo đại chúng", en: "Built press coverage from early 2021: international-version and Vietnamese-localization news in mainstream press" },
+    { vi: "Bài đánh giá và hướng dẫn chiến thuật trên báo game để người chơi hiểu độ khó và chiều sâu", en: "A review and tactics guides in gaming press so players understand the difficulty and depth" },
+    { vi: "Booking ba reviewer YouTube quanh thời điểm ra mắt tại Việt Nam", en: "Booked three YouTube reviewers around the Vietnam launch" },
+  ],
+  "silkroad-origin-mobile": [
+    { vi: "Triển khai báo chí theo từng cột mốc: Closed Beta, ra mắt Đông Nam Á và ra mắt Việt Nam", en: "Ran press for each milestone: Closed Beta, Southeast Asia launch and Vietnam launch" },
+    { vi: "Vận hành quản lý cộng đồng (CMM) cho các kênh chính thức", en: "Operated community management (CMM) for the official channels" },
+    { vi: "Xây nội dung hoài niệm Silkroad Online để kéo người chơi cũ quay lại", en: "Built Silkroad Online nostalgia content to bring lapsed players back" },
+  ],
+  "afk-arena": [
+    { vi: "Đóng gói gameplay của streamer trong khung thương hiệu có key art", en: "Packaged streamer gameplay in a branded frame with key art" },
+    { vi: "Dùng giftcode hiển thị trên màn hình làm nút chuyển đổi", en: "Used an on-screen giftcode as the conversion driver" },
+    { vi: "Thêm badge App Store / Google Play và phụ đề để video dẫn thẳng tới cài đặt", en: "Added App Store / Google Play badges and subtitles so every video leads to an install" },
   ],
 };

@@ -138,7 +138,7 @@ const en: typeof vi = {
     eyebrow: "Contact",
     title: "Let's start something great",
     subtitle:
-      "Reach us directly by email, Zalo or WhatsApp. We reply within one business day.",
+      "Reach us directly by email, hotline, Zalo or WhatsApp. We reply within one business day.",
     infoTitle: "Contact information",
     office: "Office",
     email: "Email",

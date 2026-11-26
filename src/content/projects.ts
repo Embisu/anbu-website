@@ -529,6 +529,178 @@ export const projects: Project[] = [
     services: ["game-app-marketing", "influencer-marketing", "social-media"],
     overview: true,
   },
+  {
+    slug: "summoners-war-chronicles",
+    client: "Summoners War: Chronicles (Com2uS)",
+    title: {
+      vi: "Livestream và collab One Punch Man, đưa sự kiện đến game thủ qua creator",
+      en: "Livestreams and a One Punch Man crossover, brought to players through creators",
+    },
+    category: { vi: "Game Marketing & Influencer", en: "Game Marketing & Influencer" },
+    year: "2023",
+    color: "from-orange-600 to-navy-800",
+    cover: {
+      vi: "ANBU triển khai chuỗi livestream Facebook và nội dung KOL cho sự kiện collab One Punch Man của Summoners War: Chronicles.",
+      en: "ANBU delivered a Facebook livestream series and creator content for the One Punch Man crossover in Summoners War: Chronicles.",
+    },
+    context: {
+      vi: "Summoners War: Chronicles mở đầu bằng chuỗi livestream Facebook cùng các kênh game vào tháng 3/2023, sau đó đưa sự kiện collab One Punch Man (từ bản cập nhật 27/04 đến bảo trì 25/05/2023) đến cộng đồng qua creator trên Facebook và YouTube. Collab đưa tám nhân vật One Punch Man vào game dưới dạng Elite monster, kèm một dungeon sự kiện.",
+      en: "Summoners War: Chronicles opened with a run of Facebook livestreams across gaming channels in March 2023, then took its One Punch Man crossover (27 April update to 25 May 2023 maintenance) to players through creators on Facebook and YouTube. The crossover brought eight One Punch Man heroes into the game as Elite monsters, with a dedicated event dungeon.",
+    },
+    challenge: {
+      vi: "Biến một sự kiện collab thành chủ đề thảo luận của cộng đồng game thủ, thay vì chỉ là một thông báo cập nhật.",
+      en: "Turn a crossover event into a community conversation rather than just an update notice.",
+    },
+    solution: {
+      vi: "ANBU kết nối các kênh livestream Facebook với creator Facebook và YouTube, mỗi nơi một định dạng: livestream trải nghiệm kèm bài CTA bonus, reel giới thiệu game và video giải thích những điều cần biết về sự kiện collab.",
+      en: "ANBU linked Facebook livestream channels with Facebook and YouTube creators, each in its own format: hands-on livestreams with bonus CTA posts, a game-introduction reel and an explainer video on what to know about the crossover.",
+    },
+    results: [
+      { value: "4", label: { vi: "Kênh livestream Facebook", en: "Facebook livestream channels" } },
+      { value: "6", label: { vi: "KOL & kênh hợp tác", en: "Creators and channels" } },
+      { value: "8", label: { vi: "Nhân vật One Punch Man trong collab", en: "One Punch Man heroes in the crossover" } },
+    ],
+    services: ["game-app-marketing", "influencer-marketing", "social-media"],
+    overview: true,
+  },
+  {
+    slug: "maplestory-r-evolution",
+    client: "MapleStory R: Evolution",
+    title: {
+      vi: "Hồi sinh ký ức Nấm Lùn cho thế hệ game thủ Việt",
+      en: "Reviving a childhood classic for Vietnamese players",
+    },
+    category: { vi: "Game Launch & Influencer", en: "Game Launch & Influencer" },
+    year: "2023",
+    color: "from-orange-500 to-navy-800",
+    cover: {
+      vi: "ANBU kết hợp báo chí, YouTube, livestream và TikTok để đưa MapleStory R: Evolution trở lại với thế hệ chơi Nấm Lùn năm xưa.",
+      en: "ANBU combined press, YouTube, live gameplay and TikTok to bring MapleStory R: Evolution back to the generation that grew up on Mushroom games.",
+    },
+    context: {
+      vi: "MapleStory R: Evolution là bản idle mobile kế thừa “Nấm Lùn Phiêu Lưu Ký”, do Wetaps phát hành tại Việt Nam. Điểm bán là hoài niệm cộng với sự tiện lợi: màn hình dọc chơi một tay, năm lớp nhân vật, tối đa bảy Pet, thời trang mix-match, PvP, boss thế giới và chế độ tự đánh.",
+      en: "MapleStory R: Evolution is the idle mobile successor to “Nấm Lùn Phiêu Lưu Ký”, published in Vietnam by Wetaps. Its pitch is nostalgia plus convenience: one-handed vertical play, five classes, up to seven pets, mix-and-match fashion, PvP, world bosses and auto-battle.",
+    },
+    challenge: {
+      vi: "Gợi lại ký ức Nấm Lùn cho người chơi cũ, đồng thời cho người mới thấy một game idle dễ vào và đủ chiều sâu.",
+      en: "Rekindle Mushroom-game memories for returning players while showing newcomers an idle game that is easy to start and still has depth.",
+    },
+    solution: {
+      vi: "ANBU triển khai báo chí từ giai đoạn đăng ký trước đến ngày ra mắt, review YouTube, livestream chơi trực tiếp trên điện thoại và video TikTok, lồng ghép ưu đãi và quà tặng ra mắt.",
+      en: "ANBU ran press from pre-registration to launch day, YouTube reviews, live phone gameplay and TikTok videos, weaving in launch offers and gifts.",
+    },
+    results: [
+      { value: "KOL/KOC", label: { vi: "YouTube, livestream & TikTok", en: "YouTube, live gameplay and TikTok" } },
+      { value: "PR", label: { vi: "3 bài báo, 07–12/2023", en: "3 press articles, Jul–Dec 2023" } },
+      { value: "4", label: { vi: "Creator hợp tác", en: "Partner creators" } },
+    ],
+    services: ["game-app-marketing", "influencer-marketing", "social-media"],
+    focal: "35% center",
+    overview: true,
+  },
+  {
+    slug: "epic-war-thrones",
+    client: "Epic War: Thrones (Hồng Đồ Chi Hạ)",
+    title: {
+      vi: "Xây kỳ vọng cho game chiến thuật Tam Quốc, từ tin phiên bản đến ngày ra mắt",
+      en: "Building anticipation for a Three Kingdoms strategy game, from version news to launch",
+    },
+    category: { vi: "Strategy Game Marketing", en: "Strategy Game Marketing" },
+    year: "2021",
+    color: "from-navy-900 to-orange-700",
+    cover: {
+      vi: "ANBU kết hợp báo chí đại chúng, báo game và reviewer YouTube để đưa Epic War: Thrones đến người chơi chiến thuật Việt Nam.",
+      en: "ANBU paired mainstream and gaming press with YouTube reviewers to bring Epic War: Thrones to Vietnamese strategy players.",
+    },
+    context: {
+      vi: "Epic War: Thrones (Hồng Đồ Chi Hạ) là game chiến thuật Tam Quốc đồ họa cao. Chiến dịch được xây dần: tin về phiên bản quốc tế và bản tiếng Việt đầu 2021, bài đánh giá và hướng dẫn chiến thuật giữa năm, rồi đỉnh điểm là đợt ra mắt tại Việt Nam cuối 2021.",
+      en: "Epic War: Thrones (Hồng Đồ Chi Hạ) is a high-fidelity Three Kingdoms strategy game. The campaign built gradually: international-version and Vietnamese-localization news in early 2021, reviews and tactics guides mid-year, peaking at the Vietnam launch in late 2021.",
+    },
+    challenge: {
+      vi: "Một game chiến thuật khó cần nhiều hơn một trailer để người chơi quyết định gắn bó.",
+      en: "A demanding strategy game needs more than a trailer before players commit.",
+    },
+    solution: {
+      vi: "ANBU kết hợp báo chí với reviewer YouTube: tin phiên bản, bài đánh giá, bài hướng dẫn cách làm bá chủ Tam Quốc, cùng video review trên các kênh game lớn quanh thời điểm ra mắt.",
+      en: "ANBU paired press with YouTube reviewers: version news, a review, a guide to ruling the Three Kingdoms and review videos on large gaming channels around launch.",
+    },
+    results: [
+      { value: "PR", label: { vi: "5 bài báo trong năm 2021", en: "5 press articles in 2021" } },
+      { value: "KOL", label: { vi: "3 reviewer YouTube", en: "3 YouTube reviewers" } },
+      { value: "2021", label: { vi: "Từ tin phiên bản đến ra mắt", en: "From version news to launch" } },
+    ],
+    services: ["game-app-marketing", "influencer-marketing", "social-media"],
+    overview: true,
+  },
+  {
+    slug: "silkroad-origin-mobile",
+    client: "Silkroad Origin Mobile (GOSU)",
+    title: {
+      vi: "Đưa huyền thoại Con Đường Tơ Lụa trở lại với game thủ Việt",
+      en: "Bringing a legendary MMORPG back to Vietnamese players",
+    },
+    category: { vi: "Game Launch & Community", en: "Game Launch & Community" },
+    year: "2024 – 2025",
+    color: "from-amber-700 to-navy-900",
+    cover: {
+      vi: "ANBU kết hợp báo chí và quản lý cộng đồng, dựa trên hoài niệm Silkroad Online, cho đợt ra mắt Silkroad Origin Mobile tại Việt Nam.",
+      en: "ANBU paired press with community management, built on Silkroad Online nostalgia, for the Vietnam launch of Silkroad Origin Mobile.",
+    },
+    context: {
+      vi: "Silkroad Origin Mobile (Huyền Thoại Lữ Khách) tái hiện MMORPG Silkroad Online ra mắt năm 2004, được cấp phép từ Wemade Max và phát hành bởi GOSU cùng Gamz. Game ra mắt tại Đông Nam Á ngày 03/07/2024, sau đó đến Việt Nam vào tháng 02/2025.",
+      en: "Silkroad Origin Mobile (Huyền Thoại Lữ Khách) reimagines the 2004 PC MMORPG Silkroad Online, licensed from Wemade Max and published by GOSU with Gamz. It launched in Southeast Asia on 3 July 2024 and reached Vietnam in February 2025.",
+    },
+    challenge: {
+      vi: "Khơi lại hoài niệm của người chơi Silkroad Online và biến nó thành lý do để họ quay lại với bản mobile.",
+      en: "Reawaken Silkroad Online nostalgia and turn it into a reason to return to the mobile version.",
+    },
+    solution: {
+      vi: "ANBU kết hợp báo chí theo từng cột mốc với quản lý cộng đồng: vận hành kênh chính thức, nội dung hoài niệm kéo người chơi cũ quay lại, kiểm duyệt và chuyển phản hồi của người chơi cho nhà phát hành.",
+      en: "ANBU paired milestone-based press with community management: running official channels, nostalgia content to win back lapsed players, moderation and a feedback loop to the publisher.",
+    },
+    results: [
+      { value: "PR", label: { vi: "5 bài báo, 2021–2025", en: "5 press articles, 2021–2025" } },
+      { value: "CMM", label: { vi: "Quản lý cộng đồng", en: "Community management" } },
+      { value: "2024–25", label: { vi: "Đông Nam Á rồi Việt Nam", en: "Southeast Asia, then Vietnam" } },
+    ],
+    services: ["game-app-marketing", "social-media"],
+    overview: true,
+  },
+  {
+    slug: "afk-arena",
+    client: "AFK Arena",
+    title: {
+      vi: "Biến video gameplay của streamer thành phễu cài đặt",
+      en: "Turning streamer gameplay into an install funnel",
+    },
+    category: { vi: "Game Marketing & Influencer", en: "Game Marketing & Influencer" },
+    year: "",
+    color: "from-teal-700 to-navy-900",
+    cover: {
+      vi: "ANBU đặt gameplay của streamer trong khung thương hiệu có giftcode và badge cửa hàng, để mỗi video đều dẫn thẳng tới cài đặt.",
+      en: "ANBU framed streamer gameplay with key art, a giftcode and store badges so every video leads straight to an install.",
+    },
+    context: {
+      vi: "AFK Arena là game idle sưu tầm anh hùng. Nội dung creator được đóng gói nhất quán: key art của game, giftcode hiển thị trên màn hình và badge App Store / Google Play bao quanh phần chơi của streamer.",
+      en: "AFK Arena is an idle hero-collecting RPG. Creator content was packaged consistently: key art, an on-screen giftcode and App Store / Google Play badges around the streamer's gameplay.",
+    },
+    challenge: {
+      vi: "Giữ video của creator vừa giải trí vừa có đường dẫn rõ ràng để người xem cài game ngay.",
+      en: "Keep creator videos entertaining while giving viewers a clear path to install right away.",
+    },
+    solution: {
+      vi: "Giftcode cho người xem một lý do để cài và chơi ngay hôm nay thay vì để sau; khung thương hiệu và phụ đề giúp video nhất quán và xem được cả khi tắt tiếng.",
+      en: "A giftcode gives viewers a reason to install today, not someday; the branded frame and subtitles keep videos consistent and watchable with the sound off.",
+    },
+    results: [
+      { value: "KOL", label: { vi: "Streamer gameplay", en: "Streamer gameplay" } },
+      { value: "Giftcode", label: { vi: "Mã quà làm nút chuyển đổi", en: "Giftcode as the conversion driver" } },
+      { value: "Install", label: { vi: "Badge cửa hàng ngay trong video", en: "Store badges inside the video" } },
+    ],
+    services: ["game-app-marketing", "influencer-marketing", "creative-design"],
+    focal: "center",
+    overview: true,
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {
@@ -552,6 +724,10 @@ export const brands = [
   "Football Master 2",
   "Life Makeover",
   "Onmyoji Arena",
+  "MapleStory R: Evolution",
+  "Epic War: Thrones",
+  "Silkroad Origin Mobile",
+  "AFK Arena",
   "Nguyệt Mộng",
   "Focallure",
   "HEPCO",

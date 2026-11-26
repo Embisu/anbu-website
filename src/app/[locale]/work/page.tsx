@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { localePath } from "@/lib/utils";
 import { isLocale, defaultLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { projects } from "@/content/projects";
@@ -68,6 +70,27 @@ export default async function WorkPage({ params }: { params: { locale: string } 
             </div>
           </Reveal>
         </div>
+      </section>
+      <section className="container-x pt-10 sm:pt-14">
+        <Link
+          href={localePath(locale, "/work/creative")}
+          className="group relative flex flex-col gap-4 overflow-hidden rounded-3xl bg-navy-900 p-6 text-white sm:flex-row sm:items-center sm:justify-between sm:p-8"
+        >
+          <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-orange-500/25 blur-2xl" />
+          <div className="relative max-w-2xl">
+            <span className="text-xs font-bold uppercase tracking-[0.18em] text-orange-400">
+              {locale === "vi" ? "Mẫu creative" : "Creative samples"}
+            </span>
+            <p className="mt-2 font-display text-xl font-extrabold sm:text-2xl">
+              {locale === "vi"
+                ? "Video quảng cáo game, phim live-action và phim tổng kết OOH"
+                : "Game video ads, live-action films and OOH recap films"}
+            </p>
+          </div>
+          <span className="relative inline-flex shrink-0 items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-sm font-semibold transition-colors group-hover:bg-orange-600">
+            {locale === "vi" ? "Xem mẫu creative" : "View creative samples"} <span aria-hidden="true">→</span>
+          </span>
+        </Link>
       </section>
       <section className="container-x py-10 sm:py-16 lg:py-20">
         <WorkGrid projects={projects} locale={locale} view={dict.workSection.view} />

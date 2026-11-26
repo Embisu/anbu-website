@@ -53,6 +53,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
       });
     }
+    {
+      const path = "/work/creative";
+      entries.push({
+        url: `${siteUrl}/${locale}${path}`,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: {
+          languages: {
+            ...Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}${path}`])),
+            "x-default": `${siteUrl}/vi${path}`,
+          },
+        },
+      });
+    }
     for (const pr of projects) {
       const path = `/work/${pr.slug}`;
       entries.push({

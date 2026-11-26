@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { site } from "@/content/site";
 import { posts } from "@/content/posts";
+import { adminFetch } from "@/lib/adminFetch";
 
 export default function SiteSettingsManager({ locale }: { locale: string }) {
   const [toast, setToast] = useState<{ msg: string; isError?: boolean } | null>(null);
@@ -75,13 +76,20 @@ export default function SiteSettingsManager({ locale }: { locale: string }) {
     showToast("Đã tải xuống tệp sao lưu toàn bộ bài viết (JSON)!");
   };
 
-  const handleExportUsers = () => {
+  const handleExportUsers = async () => {
     let usersData = [];
     try {
-      const saved = localStorage.getItem("anbu_custom_users");
-      if (saved) usersData = JSON.parse(saved);
-    } catch (e) {
-      console.error(e);
+      const res = await adminFetch("/api/admin/users");
+      const data = await res.json();
+      if (data?.ok && Array.isArray(data.users)) {
+        usersData = data.users;
+      } else {
+        showToast(data?.error || "Không thể tải danh sách thành viên từ máy chủ!", true);
+        return;
+      }
+    } catch (e: any) {
+      showToast(`Lỗi kết nối: ${e?.message || "Không xác định"}`, true);
+      return;
     }
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(usersData, null, 2));
     const downloadAnchor = document.createElement("a");

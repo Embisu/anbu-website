@@ -109,9 +109,15 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
         }
       })
       .catch(() => {});
+  }, []);
 
-    // Fetch pending comments count for badge
-    fetch("/api/comments?status=pending")
+  // Fetch pending comments count for badge once authenticated
+  useEffect(() => {
+    if (!isAuthenticated) {
+      setPendingCommentsCount(0);
+      return;
+    }
+    adminFetch("/api/comments?status=pending")
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data?.ok && Array.isArray(data.comments)) {
@@ -119,7 +125,7 @@ export default function AdminDashboardPage({ params }: { params: { locale: strin
         }
       })
       .catch(() => {});
-  }, []);
+  }, [isAuthenticated]);
 
   const handleLogout = () => {
     localStorage.removeItem("anbu_admin_token");

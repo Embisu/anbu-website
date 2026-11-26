@@ -16,10 +16,19 @@ export const runtime = "edge";
 // anyone log in as administrator by just inventing a username/password pair
 // in the POST body.
 const SYSTEM_ACCOUNTS = [
-  { username: "admin", name: "ANBU Master Admin", role: "administrator", passwordEnv: "ADMIN_PASSWORD", fallback: "anbu@2026" },
-  { username: "editor", name: "Ban Biên Tập ANBU", role: "editor", passwordEnv: "EDITOR_PASSWORD", fallback: "editor@anbu2026" },
-  { username: "author", name: "Tác giả Game Marketing", role: "author", passwordEnv: "AUTHOR_PASSWORD", fallback: "author@anbu2026" },
+  { username: "admin", name: "ANBU Master Admin", role: "administrator", passwordEnv: "ADMIN_PASSWORD" },
+  { username: "editor", name: "Ban Biên Tập ANBU", role: "editor", passwordEnv: "EDITOR_PASSWORD" },
+  { username: "author", name: "Tác giả Game Marketing", role: "author", passwordEnv: "AUTHOR_PASSWORD" },
 ] as const;
+
+function timingSafeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) {
+    diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return diff === 0;
+}
 
 async function getSecretVar(name: string): Promise<string | undefined> {
   if (process.env[name] && process.env[name].trim()) return process.env[name].trim();
@@ -35,10 +44,9 @@ async function getSecretVar(name: string): Promise<string | undefined> {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { username, password, customUsers } = body as {
+    const { username, password } = body as {
       username?: string;
       password?: string;
-      customUsers?: Array<{ username: string; password?: string; name?: string; role?: string }>;
     };
 
     if (!password || !password.trim()) {
@@ -48,14 +56,14 @@ export async function POST(request: Request) {
     const submittedPassword = password.trim();
     const submittedUsername = username?.toLowerCase().trim();
 
-    // 1. Check system accounts (match either custom Cloudflare secret OR standard team password)
+    // 1. Check system accounts (passwords come ONLY from Cloudflare Pages secrets / env)
     for (const account of SYSTEM_ACCOUNTS) {
       const configuredPassword = await getSecretVar(account.passwordEnv);
-      const isMatch =
-        (configuredPassword && configuredPassword === submittedPassword) ||
-        (account.fallback && account.fallback === submittedPassword);
-
-      if (isMatch && (!submittedUsername || submittedUsername === account.username)) {
+      if (
+        configuredPassword &&
+        timingSafeEqual(configuredPassword, submittedPassword) &&
+        (!submittedUsername || submittedUsername === account.username)
+      ) {
         const token = await createSessionToken({ username: account.username, role: account.role });
         return NextResponse.json({
           ok: true,
@@ -64,18 +72,6 @@ export async function POST(request: Request) {
         });
       }
     }
-
-    // Master fallback: "anbu@2026" or master secret always logs in as admin
-    const masterSecret = await getSecretVar("ADMIN_PASSWORD");
-    if (submittedPassword === "anbu@2026" || (masterSecret && submittedPassword === masterSecret)) {
-      const token = await createSessionToken({ username: "admin", role: "administrator" });
-      return NextResponse.json({
-        ok: true,
-        token,
-        user: { username: "admin", name: "ANBU Master Admin", role: "administrator" },
-      });
-    }
-
 
     // 2. Fall back to real team members in D1 (requires an explicit username).
     if (submittedUsername) {
@@ -94,21 +90,6 @@ export async function POST(request: Request) {
         }
       } catch (dbErr) {
         console.warn("D1 auth lookup warning:", dbErr);
-      }
-    }
-
-    // 3. Fall back to custom users stored locally in browser
-    if (Array.isArray(customUsers) && submittedUsername) {
-      const cUser = customUsers.find(
-        (u) => u.username?.toLowerCase().trim() === submittedUsername && u.password === submittedPassword
-      );
-      if (cUser) {
-        const token = await createSessionToken({ username: cUser.username, role: (cUser.role as any) || "author" });
-        return NextResponse.json({
-          ok: true,
-          token,
-          user: { username: cUser.username, name: cUser.name || cUser.username, role: cUser.role || "author" },
-        });
       }
     }
 

@@ -34,15 +34,6 @@ export default function AdminLogin({ onLoginSuccess, locale }: AdminLoginProps) 
     setLoading(true);
     setError(null);
 
-    // Get any locally added team members from localStorage to pass to auth endpoint
-    let customUsers: any[] = [];
-    try {
-      const saved = localStorage.getItem("anbu_custom_users");
-      if (saved) customUsers = JSON.parse(saved);
-    } catch (err) {
-      console.error(err);
-    }
-
     try {
       const res = await fetch("/api/admin/auth", {
         method: "POST",
@@ -50,7 +41,6 @@ export default function AdminLogin({ onLoginSuccess, locale }: AdminLoginProps) 
         body: JSON.stringify({
           username: username.trim(),
           password: password.trim(),
-          customUsers,
         }),
       });
 

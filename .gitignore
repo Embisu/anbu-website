@@ -34,5 +34,6 @@ next-env.d.ts
 /.vercel
 /.wrangler
 
+# local browser / tool caches
+/.playwright-cli/
 
-.vercel

@@ -6,6 +6,8 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { projects, getProject } from "@/content/projects";
 import { approachBySlug } from "@/content/projectApproach";
 import { projectNarrativeBySlug } from "@/content/projectNarrative";
+import { projectEvidenceBySlug } from "@/content/projectEvidence";
+import ProjectEvidence from "@/components/ProjectEvidence";
 import { videoBySlug } from "@/content/media";
 import { getService } from "@/content/services";
 import { t } from "@/content/site";
@@ -52,6 +54,7 @@ export default async function ProjectDetailPage({
   const project = getProject(params.slug);
   if (!project) notFound();
   const narrative = projectNarrativeBySlug[project.slug];
+  const evidence = projectEvidenceBySlug[project.slug];
 
   const caseLd = {
     "@context": "https://schema.org",
@@ -241,6 +244,8 @@ export default async function ProjectDetailPage({
           </div>
         </Reveal>
       </section>
+
+      {evidence && <ProjectEvidence evidence={evidence} locale={locale} />}
 
       <CTASection locale={locale} dict={dict} />
     </>
