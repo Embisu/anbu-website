@@ -9291,7 +9291,9 @@
     "author": "Lê Như Ngọc",
     "color": "from-blue-600 to-indigo-600",
     "variant": "game",
-    "cover": "/blog-covers/localization-translation-team.jpg",
+    "cover": "/blog-media/1794900000000-locdoc-cover.jpg",
+    "cover_en": "/blog-media/1794900000000-locdoc-cover.jpg",
+    "focal": "50% 38%",
     "sources": [
       {
         "label": {
